@@ -5,6 +5,7 @@
 import rdma;
 import rdma.IBA as IBA;
 import os,re,collections
+import codecs
 
 SYS_INFINIBAND = "/sys/class/infiniband/";
 SYS_INFINIBAND_MAD = "/sys/class/infiniband_mad/";
@@ -32,9 +33,16 @@ def _conv_int_desc(s):
 def _conv_unicode(s):
     "A unicode string"
     # The kernel puts a single \n on the description..
-    if s[-1] == '\n':
-        return s[:-1].decode("utf-8");
-    return s.decode("utf-8");
+
+    if isinstance(s, bytes):
+        if s[-1] == '\n':
+            sout =  codecs.decode(s[:-1], "utf8");
+        else:
+            sout = codecs.decode(s, "utf8");
+    else:
+        sout = s.strip()
+
+    return sout
 
 class SysFSCache(object):
     '''Cache queries from sysfs attributes. This class is used to make
