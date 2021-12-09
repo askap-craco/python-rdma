@@ -1072,7 +1072,7 @@ struct __pyx_vtabstruct_4rdma_7ibverbs_Context {
 static struct __pyx_vtabstruct_4rdma_7ibverbs_Context *__pyx_vtabptr_4rdma_7ibverbs_Context;
 
 
-/* "rdma/ibverbs.pyx":602
+/* "rdma/ibverbs.pyx":598
  *         return "Context('%s',fd=%u)"%(self.node,self._ctx.cmd_fd)
  * 
  * cdef class PD:             # <<<<<<<<<<<<<<
@@ -1086,7 +1086,7 @@ struct __pyx_vtabstruct_4rdma_7ibverbs_PD {
 static struct __pyx_vtabstruct_4rdma_7ibverbs_PD *__pyx_vtabptr_4rdma_7ibverbs_PD;
 
 
-/* "rdma/ibverbs.pyx":748
+/* "rdma/ibverbs.pyx":744
  *         return "PD(%r,0x%x)"%(self._context,self._pd.handle);
  * 
  * cdef class AH:             # <<<<<<<<<<<<<<
@@ -1100,7 +1100,7 @@ struct __pyx_vtabstruct_4rdma_7ibverbs_AH {
 static struct __pyx_vtabstruct_4rdma_7ibverbs_AH *__pyx_vtabptr_4rdma_7ibverbs_AH;
 
 
-/* "rdma/ibverbs.pyx":790
+/* "rdma/ibverbs.pyx":786
  *         return "AH(0x%x)"%(self._ah.handle);
  * 
  * cdef class CompChannel:             # <<<<<<<<<<<<<<
@@ -1114,7 +1114,7 @@ struct __pyx_vtabstruct_4rdma_7ibverbs_CompChannel {
 static struct __pyx_vtabstruct_4rdma_7ibverbs_CompChannel *__pyx_vtabptr_4rdma_7ibverbs_CompChannel;
 
 
-/* "rdma/ibverbs.pyx":872
+/* "rdma/ibverbs.pyx":868
  *         return "CompChannel(%r,%u)"%(self._context,self._chan.fd);
  * 
  * cdef class CQ:             # <<<<<<<<<<<<<<
@@ -1128,7 +1128,7 @@ struct __pyx_vtabstruct_4rdma_7ibverbs_CQ {
 static struct __pyx_vtabstruct_4rdma_7ibverbs_CQ *__pyx_vtabptr_4rdma_7ibverbs_CQ;
 
 
-/* "rdma/ibverbs.pyx":1135
+/* "rdma/ibverbs.pyx":1131
  *         return "SRQ(%r,0x%x)"%(self._pd,self._srq.handle);
  * 
  * cdef class MR:             # <<<<<<<<<<<<<<
@@ -1142,7 +1142,7 @@ struct __pyx_vtabstruct_4rdma_7ibverbs_MR {
 static struct __pyx_vtabstruct_4rdma_7ibverbs_MR *__pyx_vtabptr_4rdma_7ibverbs_MR;
 
 
-/* "rdma/ibverbs.pyx":1236
+/* "rdma/ibverbs.pyx":1232
  *             self.lkey,self.rkey);
  * 
  * cdef class QP:             # <<<<<<<<<<<<<<
@@ -1156,7 +1156,7 @@ struct __pyx_vtabstruct_4rdma_7ibverbs_QP {
 static struct __pyx_vtabstruct_4rdma_7ibverbs_QP *__pyx_vtabptr_4rdma_7ibverbs_QP;
 
 
-/* "rdma/ibverbs.pyx":983
+/* "rdma/ibverbs.pyx":979
  *         return "CQ(%r,0x%x)"%(self._context,self._cq.handle);
  * 
  * cdef class SRQ:             # <<<<<<<<<<<<<<
@@ -2206,7 +2206,6 @@ static const char __pyx_k_max_wr[] = "max_wr";
 static const char __pyx_k_modify[] = "modify";
 static const char __pyx_k_module[] = "__module__";
 static const char __pyx_k_mr_X_s[] = "mr:%X:%s";
-static const char __pyx_k_name_2[] = "name";
 static const char __pyx_k_nelems[] = "nelems";
 static const char __pyx_k_opcode[] = "opcode";
 static const char __pyx_k_parent[] = "parent";
@@ -2324,6 +2323,7 @@ static const char __pyx_k_max_sge_rd[] = "max_sge_rd";
 static const char __pyx_k_max_srq_wr[] = "max_srq_wr";
 static const char __pyx_k_max_vl_num[] = "max_vl_num";
 static const char __pyx_k_my_weakset[] = "_my_weakset";
+static const char __pyx_k_name_bytes[] = "name_bytes";
 static const char __pyx_k_namedtuple[] = "namedtuple";
 static const char __pyx_k_phys_state[] = "phys_state";
 static const char __pyx_k_pkey_index[] = "pkey_index";
@@ -2452,7 +2452,6 @@ static const char __pyx_k_IBV_WR_BIND_MW[] = "IBV_WR_BIND_MW";
 static const char __pyx_k_IBV_WR_DRIVER1[] = "IBV_WR_DRIVER1";
 static const char __pyx_k_IBV_WR_TAG_ADD[] = "IBV_WR_TAG_ADD";
 static const char __pyx_k_IBV_WR_TAG_DEL[] = "IBV_WR_TAG_DEL";
-static const char __pyx_k_Is_RDMA_Device[] = "Is RDMA Device";
 static const char __pyx_k_WCError___init[] = "WCError.__init__";
 static const char __pyx_k_WRError___init[] = "WRError.__init__";
 static const char __pyx_k_alt_pkey_index[] = "alt_pkey_index";
@@ -3347,7 +3346,6 @@ static PyObject *__pyx_n_s_IBV_WR_TSO;
 static PyObject *__pyx_n_s_IBV_XRCD_INIT_ATTR_FD;
 static PyObject *__pyx_n_s_IBV_XRCD_INIT_ATTR_OFLAGS;
 static PyObject *__pyx_n_s_IBV_XRCD_INIT_ATTR_RESERVED;
-static PyObject *__pyx_kp_s_Is_RDMA_Device;
 static PyObject *__pyx_kp_s_Length_is_too_long_u_u;
 static PyObject *__pyx_n_s_MASK;
 static PyObject *__pyx_n_s_MR;
@@ -3580,7 +3578,7 @@ static PyObject *__pyx_n_s_my_weakset;
 static PyObject *__pyx_n_s_my_weakset_add;
 static PyObject *__pyx_n_s_my_weakset_pop;
 static PyObject *__pyx_n_s_name;
-static PyObject *__pyx_n_s_name_2;
+static PyObject *__pyx_n_s_name_bytes;
 static PyObject *__pyx_n_s_namedtuple;
 static PyObject *__pyx_n_s_nelems;
 static PyObject *__pyx_kp_s_no_default___reduce___due_to_non;
@@ -7880,47 +7878,29 @@ static int __pyx_pf_4rdma_7ibverbs_7Context___cinit__(struct __pyx_obj_4rdma_7ib
   /* "rdma/ibverbs.pyx":317
  *         cdef int count
  * 
- *         print(parent, type(parent))             # <<<<<<<<<<<<<<
- * 
- *         if isinstance(parent,rdma.devices.RDMADevice):
- */
-  __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 317, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __Pyx_INCREF(__pyx_v_parent);
-  __Pyx_GIVEREF(__pyx_v_parent);
-  PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_v_parent);
-  __Pyx_INCREF(((PyObject *)Py_TYPE(__pyx_v_parent)));
-  __Pyx_GIVEREF(((PyObject *)Py_TYPE(__pyx_v_parent)));
-  PyTuple_SET_ITEM(__pyx_t_1, 1, ((PyObject *)Py_TYPE(__pyx_v_parent)));
-  if (__Pyx_PrintOne(0, __pyx_t_1) < 0) __PYX_ERR(0, 317, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-
-  /* "rdma/ibverbs.pyx":319
- *         print(parent, type(parent))
- * 
  *         if isinstance(parent,rdma.devices.RDMADevice):             # <<<<<<<<<<<<<<
  *             self.node = parent
  *             self.end_port = None
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_rdma); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 319, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_rdma); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 317, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_devices); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 319, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_devices); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 317, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_RDMADevice); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 319, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_RDMADevice); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 317, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_3 = PyObject_IsInstance(__pyx_v_parent, __pyx_t_1); if (unlikely(__pyx_t_3 == ((int)-1))) __PYX_ERR(0, 319, __pyx_L1_error)
+  __pyx_t_3 = PyObject_IsInstance(__pyx_v_parent, __pyx_t_1); if (unlikely(__pyx_t_3 == ((int)-1))) __PYX_ERR(0, 317, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_t_4 = (__pyx_t_3 != 0);
   if (__pyx_t_4) {
 
-    /* "rdma/ibverbs.pyx":320
+    /* "rdma/ibverbs.pyx":318
  * 
  *         if isinstance(parent,rdma.devices.RDMADevice):
  *             self.node = parent             # <<<<<<<<<<<<<<
  *             self.end_port = None
- *             print('Is RDMA Device')
+ *         else:
  */
     __Pyx_INCREF(__pyx_v_parent);
     __Pyx_GIVEREF(__pyx_v_parent);
@@ -7928,12 +7908,12 @@ static int __pyx_pf_4rdma_7ibverbs_7Context___cinit__(struct __pyx_obj_4rdma_7ib
     __Pyx_DECREF(__pyx_v_self->node);
     __pyx_v_self->node = __pyx_v_parent;
 
-    /* "rdma/ibverbs.pyx":321
+    /* "rdma/ibverbs.pyx":319
  *         if isinstance(parent,rdma.devices.RDMADevice):
  *             self.node = parent
  *             self.end_port = None             # <<<<<<<<<<<<<<
- *             print('Is RDMA Device')
  *         else:
+ *             self.node = parent.parent
  */
     __Pyx_INCREF(Py_None);
     __Pyx_GIVEREF(Py_None);
@@ -7941,17 +7921,8 @@ static int __pyx_pf_4rdma_7ibverbs_7Context___cinit__(struct __pyx_obj_4rdma_7ib
     __Pyx_DECREF(__pyx_v_self->end_port);
     __pyx_v_self->end_port = Py_None;
 
-    /* "rdma/ibverbs.pyx":322
- *             self.node = parent
- *             self.end_port = None
- *             print('Is RDMA Device')             # <<<<<<<<<<<<<<
- *         else:
- *             self.node = parent.parent
- */
-    if (__Pyx_PrintOne(0, __pyx_kp_s_Is_RDMA_Device) < 0) __PYX_ERR(0, 322, __pyx_L1_error)
-
-    /* "rdma/ibverbs.pyx":319
- *         print(parent, type(parent))
+    /* "rdma/ibverbs.pyx":317
+ *         cdef int count
  * 
  *         if isinstance(parent,rdma.devices.RDMADevice):             # <<<<<<<<<<<<<<
  *             self.node = parent
@@ -7960,15 +7931,15 @@ static int __pyx_pf_4rdma_7ibverbs_7Context___cinit__(struct __pyx_obj_4rdma_7ib
     goto __pyx_L3;
   }
 
-  /* "rdma/ibverbs.pyx":324
- *             print('Is RDMA Device')
+  /* "rdma/ibverbs.pyx":321
+ *             self.end_port = None
  *         else:
  *             self.node = parent.parent             # <<<<<<<<<<<<<<
  *             self.end_port = parent
  * 
  */
   /*else*/ {
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_parent, __pyx_n_s_parent); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 324, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_parent, __pyx_n_s_parent); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 321, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_GIVEREF(__pyx_t_1);
     __Pyx_GOTREF(__pyx_v_self->node);
@@ -7976,7 +7947,7 @@ static int __pyx_pf_4rdma_7ibverbs_7Context___cinit__(struct __pyx_obj_4rdma_7ib
     __pyx_v_self->node = __pyx_t_1;
     __pyx_t_1 = 0;
 
-    /* "rdma/ibverbs.pyx":325
+    /* "rdma/ibverbs.pyx":322
  *         else:
  *             self.node = parent.parent
  *             self.end_port = parent             # <<<<<<<<<<<<<<
@@ -7991,7 +7962,7 @@ static int __pyx_pf_4rdma_7ibverbs_7Context___cinit__(struct __pyx_obj_4rdma_7ib
   }
   __pyx_L3:;
 
-  /* "rdma/ibverbs.pyx":327
+  /* "rdma/ibverbs.pyx":324
  *             self.end_port = parent
  * 
  *         dev_list = c.ibv_get_device_list(&count)             # <<<<<<<<<<<<<<
@@ -8000,7 +7971,7 @@ static int __pyx_pf_4rdma_7ibverbs_7Context___cinit__(struct __pyx_obj_4rdma_7ib
  */
   __pyx_v_dev_list = ibv_get_device_list((&__pyx_v_count));
 
-  /* "rdma/ibverbs.pyx":328
+  /* "rdma/ibverbs.pyx":325
  * 
  *         dev_list = c.ibv_get_device_list(&count)
  *         if dev_list == NULL:             # <<<<<<<<<<<<<<
@@ -8010,19 +7981,19 @@ static int __pyx_pf_4rdma_7ibverbs_7Context___cinit__(struct __pyx_obj_4rdma_7ib
   __pyx_t_4 = ((__pyx_v_dev_list == NULL) != 0);
   if (unlikely(__pyx_t_4)) {
 
-    /* "rdma/ibverbs.pyx":329
+    /* "rdma/ibverbs.pyx":326
  *         dev_list = c.ibv_get_device_list(&count)
  *         if dev_list == NULL:
  *             raise rdma.SysError(errno,"ibv_get_device_list",             # <<<<<<<<<<<<<<
  *                                 "Failed to get device list")
  * 
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_rdma); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 329, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_rdma); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 326, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_SysError); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 329, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_SysError); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 326, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __pyx_t_2 = __Pyx_PyInt_From_int(errno); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 329, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyInt_From_int(errno); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 326, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __pyx_t_6 = NULL;
     __pyx_t_7 = 0;
@@ -8039,7 +8010,7 @@ static int __pyx_pf_4rdma_7ibverbs_7Context___cinit__(struct __pyx_obj_4rdma_7ib
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_5)) {
       PyObject *__pyx_temp[4] = {__pyx_t_6, __pyx_t_2, __pyx_n_s_ibv_get_device_list, __pyx_kp_s_Failed_to_get_device_list};
-      __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_7, 3+__pyx_t_7); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 329, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_7, 3+__pyx_t_7); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 326, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -8048,14 +8019,14 @@ static int __pyx_pf_4rdma_7ibverbs_7Context___cinit__(struct __pyx_obj_4rdma_7ib
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_5)) {
       PyObject *__pyx_temp[4] = {__pyx_t_6, __pyx_t_2, __pyx_n_s_ibv_get_device_list, __pyx_kp_s_Failed_to_get_device_list};
-      __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_7, 3+__pyx_t_7); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 329, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_7, 3+__pyx_t_7); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 326, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     } else
     #endif
     {
-      __pyx_t_8 = PyTuple_New(3+__pyx_t_7); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 329, __pyx_L1_error)
+      __pyx_t_8 = PyTuple_New(3+__pyx_t_7); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 326, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_8);
       if (__pyx_t_6) {
         __Pyx_GIVEREF(__pyx_t_6); PyTuple_SET_ITEM(__pyx_t_8, 0, __pyx_t_6); __pyx_t_6 = NULL;
@@ -8069,16 +8040,16 @@ static int __pyx_pf_4rdma_7ibverbs_7Context___cinit__(struct __pyx_obj_4rdma_7ib
       __Pyx_GIVEREF(__pyx_kp_s_Failed_to_get_device_list);
       PyTuple_SET_ITEM(__pyx_t_8, 2+__pyx_t_7, __pyx_kp_s_Failed_to_get_device_list);
       __pyx_t_2 = 0;
-      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_8, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 329, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_8, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 326, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
     }
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_Raise(__pyx_t_1, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __PYX_ERR(0, 329, __pyx_L1_error)
+    __PYX_ERR(0, 326, __pyx_L1_error)
 
-    /* "rdma/ibverbs.pyx":328
+    /* "rdma/ibverbs.pyx":325
  * 
  *         dev_list = c.ibv_get_device_list(&count)
  *         if dev_list == NULL:             # <<<<<<<<<<<<<<
@@ -8087,81 +8058,54 @@ static int __pyx_pf_4rdma_7ibverbs_7Context___cinit__(struct __pyx_obj_4rdma_7ib
  */
   }
 
-  /* "rdma/ibverbs.pyx":332
+  /* "rdma/ibverbs.pyx":329
  *                                 "Failed to get device list")
  * 
  *         try:             # <<<<<<<<<<<<<<
  *             for 0 <= i < count:
- *                 print(i, dev_list[i].name, self.node.name)
+ *                 if dev_list[i].name == self.node.name_bytes:
  */
   /*try:*/ {
 
-    /* "rdma/ibverbs.pyx":333
+    /* "rdma/ibverbs.pyx":330
  * 
  *         try:
  *             for 0 <= i < count:             # <<<<<<<<<<<<<<
- *                 print(i, dev_list[i].name, self.node.name)
- *                 if dev_list[i].name == self.node.name:
+ *                 if dev_list[i].name == self.node.name_bytes:
+ *                     break
  */
     __pyx_t_7 = __pyx_v_count;
     for (__pyx_v_i = 0; __pyx_v_i < __pyx_t_7; __pyx_v_i++) {
 
-      /* "rdma/ibverbs.pyx":334
+      /* "rdma/ibverbs.pyx":331
  *         try:
  *             for 0 <= i < count:
- *                 print(i, dev_list[i].name, self.node.name)             # <<<<<<<<<<<<<<
- *                 if dev_list[i].name == self.node.name:
- *                     break
- */
-      __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_i); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 334, __pyx_L6_error)
-      __Pyx_GOTREF(__pyx_t_1);
-      __pyx_t_5 = __Pyx_PyBytes_FromString((__pyx_v_dev_list[__pyx_v_i])->name); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 334, __pyx_L6_error)
-      __Pyx_GOTREF(__pyx_t_5);
-      __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->node, __pyx_n_s_name_2); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 334, __pyx_L6_error)
-      __Pyx_GOTREF(__pyx_t_8);
-      __pyx_t_2 = PyTuple_New(3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 334, __pyx_L6_error)
-      __Pyx_GOTREF(__pyx_t_2);
-      __Pyx_GIVEREF(__pyx_t_1);
-      PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_t_1);
-      __Pyx_GIVEREF(__pyx_t_5);
-      PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_t_5);
-      __Pyx_GIVEREF(__pyx_t_8);
-      PyTuple_SET_ITEM(__pyx_t_2, 2, __pyx_t_8);
-      __pyx_t_1 = 0;
-      __pyx_t_5 = 0;
-      __pyx_t_8 = 0;
-      if (__Pyx_PrintOne(0, __pyx_t_2) < 0) __PYX_ERR(0, 334, __pyx_L6_error)
-      __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-
-      /* "rdma/ibverbs.pyx":335
- *             for 0 <= i < count:
- *                 print(i, dev_list[i].name, self.node.name)
- *                 if dev_list[i].name == self.node.name:             # <<<<<<<<<<<<<<
+ *                 if dev_list[i].name == self.node.name_bytes:             # <<<<<<<<<<<<<<
  *                     break
  *             else:
  */
-      __pyx_t_2 = __Pyx_PyBytes_FromString((__pyx_v_dev_list[__pyx_v_i])->name); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 335, __pyx_L6_error)
-      __Pyx_GOTREF(__pyx_t_2);
-      __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->node, __pyx_n_s_name_2); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 335, __pyx_L6_error)
-      __Pyx_GOTREF(__pyx_t_8);
-      __pyx_t_4 = (__Pyx_PyBytes_Equals(__pyx_t_2, __pyx_t_8, Py_EQ)); if (unlikely(__pyx_t_4 < 0)) __PYX_ERR(0, 335, __pyx_L6_error)
-      __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-      __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
+      __pyx_t_1 = __Pyx_PyBytes_FromString((__pyx_v_dev_list[__pyx_v_i])->name); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 331, __pyx_L6_error)
+      __Pyx_GOTREF(__pyx_t_1);
+      __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->node, __pyx_n_s_name_bytes); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 331, __pyx_L6_error)
+      __Pyx_GOTREF(__pyx_t_5);
+      __pyx_t_4 = (__Pyx_PyBytes_Equals(__pyx_t_1, __pyx_t_5, Py_EQ)); if (unlikely(__pyx_t_4 < 0)) __PYX_ERR(0, 331, __pyx_L6_error)
+      __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+      __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
       if (__pyx_t_4) {
 
-        /* "rdma/ibverbs.pyx":336
- *                 print(i, dev_list[i].name, self.node.name)
- *                 if dev_list[i].name == self.node.name:
+        /* "rdma/ibverbs.pyx":332
+ *             for 0 <= i < count:
+ *                 if dev_list[i].name == self.node.name_bytes:
  *                     break             # <<<<<<<<<<<<<<
  *             else:
  *                 raise rdma.RDMAError("RDMA verbs device %r not found."%(self.node));
  */
         goto __pyx_L9_break;
 
-        /* "rdma/ibverbs.pyx":335
+        /* "rdma/ibverbs.pyx":331
+ *         try:
  *             for 0 <= i < count:
- *                 print(i, dev_list[i].name, self.node.name)
- *                 if dev_list[i].name == self.node.name:             # <<<<<<<<<<<<<<
+ *                 if dev_list[i].name == self.node.name_bytes:             # <<<<<<<<<<<<<<
  *                     break
  *             else:
  */
@@ -8169,43 +8113,43 @@ static int __pyx_pf_4rdma_7ibverbs_7Context___cinit__(struct __pyx_obj_4rdma_7ib
     }
     /*else*/ {
 
-      /* "rdma/ibverbs.pyx":338
+      /* "rdma/ibverbs.pyx":334
  *                     break
  *             else:
  *                 raise rdma.RDMAError("RDMA verbs device %r not found."%(self.node));             # <<<<<<<<<<<<<<
  * 
  *             self._ctx = c.ibv_open_device(dev_list[i])
  */
-      __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_rdma); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 338, __pyx_L6_error)
-      __Pyx_GOTREF(__pyx_t_2);
-      __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_RDMAError); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 338, __pyx_L6_error)
-      __Pyx_GOTREF(__pyx_t_5);
-      __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-      __pyx_t_2 = __Pyx_PyString_FormatSafe(__pyx_kp_s_RDMA_verbs_device_r_not_found, __pyx_v_self->node); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 338, __pyx_L6_error)
-      __Pyx_GOTREF(__pyx_t_2);
-      __pyx_t_1 = NULL;
-      if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_5))) {
-        __pyx_t_1 = PyMethod_GET_SELF(__pyx_t_5);
-        if (likely(__pyx_t_1)) {
-          PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_5);
-          __Pyx_INCREF(__pyx_t_1);
+      __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_rdma); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 334, __pyx_L6_error)
+      __Pyx_GOTREF(__pyx_t_1);
+      __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_RDMAError); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 334, __pyx_L6_error)
+      __Pyx_GOTREF(__pyx_t_8);
+      __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+      __pyx_t_1 = __Pyx_PyString_FormatSafe(__pyx_kp_s_RDMA_verbs_device_r_not_found, __pyx_v_self->node); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 334, __pyx_L6_error)
+      __Pyx_GOTREF(__pyx_t_1);
+      __pyx_t_2 = NULL;
+      if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_8))) {
+        __pyx_t_2 = PyMethod_GET_SELF(__pyx_t_8);
+        if (likely(__pyx_t_2)) {
+          PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_8);
+          __Pyx_INCREF(__pyx_t_2);
           __Pyx_INCREF(function);
-          __Pyx_DECREF_SET(__pyx_t_5, function);
+          __Pyx_DECREF_SET(__pyx_t_8, function);
         }
       }
-      __pyx_t_8 = (__pyx_t_1) ? __Pyx_PyObject_Call2Args(__pyx_t_5, __pyx_t_1, __pyx_t_2) : __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_2);
-      __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
-      __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-      if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 338, __pyx_L6_error)
-      __Pyx_GOTREF(__pyx_t_8);
-      __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-      __Pyx_Raise(__pyx_t_8, 0, 0, 0);
+      __pyx_t_5 = (__pyx_t_2) ? __Pyx_PyObject_Call2Args(__pyx_t_8, __pyx_t_2, __pyx_t_1) : __Pyx_PyObject_CallOneArg(__pyx_t_8, __pyx_t_1);
+      __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
+      __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+      if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 334, __pyx_L6_error)
+      __Pyx_GOTREF(__pyx_t_5);
       __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-      __PYX_ERR(0, 338, __pyx_L6_error)
+      __Pyx_Raise(__pyx_t_5, 0, 0, 0);
+      __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+      __PYX_ERR(0, 334, __pyx_L6_error)
     }
     __pyx_L9_break:;
 
-    /* "rdma/ibverbs.pyx":340
+    /* "rdma/ibverbs.pyx":336
  *                 raise rdma.RDMAError("RDMA verbs device %r not found."%(self.node));
  * 
  *             self._ctx = c.ibv_open_device(dev_list[i])             # <<<<<<<<<<<<<<
@@ -8214,7 +8158,7 @@ static int __pyx_pf_4rdma_7ibverbs_7Context___cinit__(struct __pyx_obj_4rdma_7ib
  */
     __pyx_v_self->_ctx = ibv_open_device((__pyx_v_dev_list[__pyx_v_i]));
 
-    /* "rdma/ibverbs.pyx":341
+    /* "rdma/ibverbs.pyx":337
  * 
  *             self._ctx = c.ibv_open_device(dev_list[i])
  *             if self._ctx == NULL:             # <<<<<<<<<<<<<<
@@ -8224,75 +8168,75 @@ static int __pyx_pf_4rdma_7ibverbs_7Context___cinit__(struct __pyx_obj_4rdma_7ib
     __pyx_t_4 = ((__pyx_v_self->_ctx == NULL) != 0);
     if (unlikely(__pyx_t_4)) {
 
-      /* "rdma/ibverbs.pyx":342
+      /* "rdma/ibverbs.pyx":338
  *             self._ctx = c.ibv_open_device(dev_list[i])
  *             if self._ctx == NULL:
  *                 raise rdma.SysError(errno,"ibv_open_device",             # <<<<<<<<<<<<<<
  *                                     "Failed to get device list")
  *         finally:
  */
-      __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_rdma); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 342, __pyx_L6_error)
-      __Pyx_GOTREF(__pyx_t_5);
-      __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_SysError); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 342, __pyx_L6_error)
-      __Pyx_GOTREF(__pyx_t_2);
-      __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-      __pyx_t_5 = __Pyx_PyInt_From_int(errno); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 342, __pyx_L6_error)
-      __Pyx_GOTREF(__pyx_t_5);
-      __pyx_t_1 = NULL;
+      __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_rdma); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 338, __pyx_L6_error)
+      __Pyx_GOTREF(__pyx_t_8);
+      __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_8, __pyx_n_s_SysError); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 338, __pyx_L6_error)
+      __Pyx_GOTREF(__pyx_t_1);
+      __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
+      __pyx_t_8 = __Pyx_PyInt_From_int(errno); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 338, __pyx_L6_error)
+      __Pyx_GOTREF(__pyx_t_8);
+      __pyx_t_2 = NULL;
       __pyx_t_7 = 0;
-      if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_2))) {
-        __pyx_t_1 = PyMethod_GET_SELF(__pyx_t_2);
-        if (likely(__pyx_t_1)) {
-          PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_2);
-          __Pyx_INCREF(__pyx_t_1);
+      if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_1))) {
+        __pyx_t_2 = PyMethod_GET_SELF(__pyx_t_1);
+        if (likely(__pyx_t_2)) {
+          PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_1);
+          __Pyx_INCREF(__pyx_t_2);
           __Pyx_INCREF(function);
-          __Pyx_DECREF_SET(__pyx_t_2, function);
+          __Pyx_DECREF_SET(__pyx_t_1, function);
           __pyx_t_7 = 1;
         }
       }
       #if CYTHON_FAST_PYCALL
-      if (PyFunction_Check(__pyx_t_2)) {
-        PyObject *__pyx_temp[4] = {__pyx_t_1, __pyx_t_5, __pyx_n_s_ibv_open_device, __pyx_kp_s_Failed_to_get_device_list};
-        __pyx_t_8 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_7, 3+__pyx_t_7); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 342, __pyx_L6_error)
-        __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
-        __Pyx_GOTREF(__pyx_t_8);
-        __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+      if (PyFunction_Check(__pyx_t_1)) {
+        PyObject *__pyx_temp[4] = {__pyx_t_2, __pyx_t_8, __pyx_n_s_ibv_open_device, __pyx_kp_s_Failed_to_get_device_list};
+        __pyx_t_5 = __Pyx_PyFunction_FastCall(__pyx_t_1, __pyx_temp+1-__pyx_t_7, 3+__pyx_t_7); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 338, __pyx_L6_error)
+        __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
+        __Pyx_GOTREF(__pyx_t_5);
+        __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
       } else
       #endif
       #if CYTHON_FAST_PYCCALL
-      if (__Pyx_PyFastCFunction_Check(__pyx_t_2)) {
-        PyObject *__pyx_temp[4] = {__pyx_t_1, __pyx_t_5, __pyx_n_s_ibv_open_device, __pyx_kp_s_Failed_to_get_device_list};
-        __pyx_t_8 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_7, 3+__pyx_t_7); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 342, __pyx_L6_error)
-        __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
-        __Pyx_GOTREF(__pyx_t_8);
-        __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+      if (__Pyx_PyFastCFunction_Check(__pyx_t_1)) {
+        PyObject *__pyx_temp[4] = {__pyx_t_2, __pyx_t_8, __pyx_n_s_ibv_open_device, __pyx_kp_s_Failed_to_get_device_list};
+        __pyx_t_5 = __Pyx_PyCFunction_FastCall(__pyx_t_1, __pyx_temp+1-__pyx_t_7, 3+__pyx_t_7); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 338, __pyx_L6_error)
+        __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
+        __Pyx_GOTREF(__pyx_t_5);
+        __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
       } else
       #endif
       {
-        __pyx_t_6 = PyTuple_New(3+__pyx_t_7); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 342, __pyx_L6_error)
+        __pyx_t_6 = PyTuple_New(3+__pyx_t_7); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 338, __pyx_L6_error)
         __Pyx_GOTREF(__pyx_t_6);
-        if (__pyx_t_1) {
-          __Pyx_GIVEREF(__pyx_t_1); PyTuple_SET_ITEM(__pyx_t_6, 0, __pyx_t_1); __pyx_t_1 = NULL;
+        if (__pyx_t_2) {
+          __Pyx_GIVEREF(__pyx_t_2); PyTuple_SET_ITEM(__pyx_t_6, 0, __pyx_t_2); __pyx_t_2 = NULL;
         }
-        __Pyx_GIVEREF(__pyx_t_5);
-        PyTuple_SET_ITEM(__pyx_t_6, 0+__pyx_t_7, __pyx_t_5);
+        __Pyx_GIVEREF(__pyx_t_8);
+        PyTuple_SET_ITEM(__pyx_t_6, 0+__pyx_t_7, __pyx_t_8);
         __Pyx_INCREF(__pyx_n_s_ibv_open_device);
         __Pyx_GIVEREF(__pyx_n_s_ibv_open_device);
         PyTuple_SET_ITEM(__pyx_t_6, 1+__pyx_t_7, __pyx_n_s_ibv_open_device);
         __Pyx_INCREF(__pyx_kp_s_Failed_to_get_device_list);
         __Pyx_GIVEREF(__pyx_kp_s_Failed_to_get_device_list);
         PyTuple_SET_ITEM(__pyx_t_6, 2+__pyx_t_7, __pyx_kp_s_Failed_to_get_device_list);
-        __pyx_t_5 = 0;
-        __pyx_t_8 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_6, NULL); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 342, __pyx_L6_error)
-        __Pyx_GOTREF(__pyx_t_8);
+        __pyx_t_8 = 0;
+        __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_6, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 338, __pyx_L6_error)
+        __Pyx_GOTREF(__pyx_t_5);
         __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
       }
-      __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-      __Pyx_Raise(__pyx_t_8, 0, 0, 0);
-      __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-      __PYX_ERR(0, 342, __pyx_L6_error)
+      __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+      __Pyx_Raise(__pyx_t_5, 0, 0, 0);
+      __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+      __PYX_ERR(0, 338, __pyx_L6_error)
 
-      /* "rdma/ibverbs.pyx":341
+      /* "rdma/ibverbs.pyx":337
  * 
  *             self._ctx = c.ibv_open_device(dev_list[i])
  *             if self._ctx == NULL:             # <<<<<<<<<<<<<<
@@ -8302,7 +8246,7 @@ static int __pyx_pf_4rdma_7ibverbs_7Context___cinit__(struct __pyx_obj_4rdma_7ib
     }
   }
 
-  /* "rdma/ibverbs.pyx":345
+  /* "rdma/ibverbs.pyx":341
  *                                     "Failed to get device list")
  *         finally:
  *             c.ibv_free_device_list(dev_list)             # <<<<<<<<<<<<<<
@@ -8353,97 +8297,97 @@ static int __pyx_pf_4rdma_7ibverbs_7Context___cinit__(struct __pyx_obj_4rdma_7ib
     __pyx_L7:;
   }
 
-  /* "rdma/ibverbs.pyx":347
+  /* "rdma/ibverbs.pyx":343
  *             c.ibv_free_device_list(dev_list)
  * 
  *         self._children_pd = WeakSet();             # <<<<<<<<<<<<<<
  *         self._children_cq = WeakSet();
  *         self._children_cc = WeakSet();
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_WeakSet); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 347, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_WeakSet); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 343, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
   __pyx_t_6 = NULL;
-  if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_2))) {
-    __pyx_t_6 = PyMethod_GET_SELF(__pyx_t_2);
+  if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_1))) {
+    __pyx_t_6 = PyMethod_GET_SELF(__pyx_t_1);
     if (likely(__pyx_t_6)) {
-      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_2);
+      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_1);
       __Pyx_INCREF(__pyx_t_6);
       __Pyx_INCREF(function);
-      __Pyx_DECREF_SET(__pyx_t_2, function);
+      __Pyx_DECREF_SET(__pyx_t_1, function);
     }
   }
-  __pyx_t_8 = (__pyx_t_6) ? __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_6) : __Pyx_PyObject_CallNoArg(__pyx_t_2);
+  __pyx_t_5 = (__pyx_t_6) ? __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_t_6) : __Pyx_PyObject_CallNoArg(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
-  if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 347, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_8);
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __Pyx_GIVEREF(__pyx_t_8);
+  if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 343, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __Pyx_GIVEREF(__pyx_t_5);
   __Pyx_GOTREF(__pyx_v_self->_children_pd);
   __Pyx_DECREF(__pyx_v_self->_children_pd);
-  __pyx_v_self->_children_pd = __pyx_t_8;
-  __pyx_t_8 = 0;
+  __pyx_v_self->_children_pd = __pyx_t_5;
+  __pyx_t_5 = 0;
 
-  /* "rdma/ibverbs.pyx":348
+  /* "rdma/ibverbs.pyx":344
  * 
  *         self._children_pd = WeakSet();
  *         self._children_cq = WeakSet();             # <<<<<<<<<<<<<<
  *         self._children_cc = WeakSet();
  * 
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_WeakSet); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 348, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_WeakSet); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 344, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
   __pyx_t_6 = NULL;
-  if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_2))) {
-    __pyx_t_6 = PyMethod_GET_SELF(__pyx_t_2);
+  if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_1))) {
+    __pyx_t_6 = PyMethod_GET_SELF(__pyx_t_1);
     if (likely(__pyx_t_6)) {
-      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_2);
+      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_1);
       __Pyx_INCREF(__pyx_t_6);
       __Pyx_INCREF(function);
-      __Pyx_DECREF_SET(__pyx_t_2, function);
+      __Pyx_DECREF_SET(__pyx_t_1, function);
     }
   }
-  __pyx_t_8 = (__pyx_t_6) ? __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_6) : __Pyx_PyObject_CallNoArg(__pyx_t_2);
+  __pyx_t_5 = (__pyx_t_6) ? __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_t_6) : __Pyx_PyObject_CallNoArg(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
-  if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 348, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_8);
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __Pyx_GIVEREF(__pyx_t_8);
+  if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 344, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __Pyx_GIVEREF(__pyx_t_5);
   __Pyx_GOTREF(__pyx_v_self->_children_cq);
   __Pyx_DECREF(__pyx_v_self->_children_cq);
-  __pyx_v_self->_children_cq = __pyx_t_8;
-  __pyx_t_8 = 0;
+  __pyx_v_self->_children_cq = __pyx_t_5;
+  __pyx_t_5 = 0;
 
-  /* "rdma/ibverbs.pyx":349
+  /* "rdma/ibverbs.pyx":345
  *         self._children_pd = WeakSet();
  *         self._children_cq = WeakSet();
  *         self._children_cc = WeakSet();             # <<<<<<<<<<<<<<
  * 
  *         if self.end_port is not None:
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_WeakSet); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 349, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_WeakSet); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 345, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
   __pyx_t_6 = NULL;
-  if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_2))) {
-    __pyx_t_6 = PyMethod_GET_SELF(__pyx_t_2);
+  if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_1))) {
+    __pyx_t_6 = PyMethod_GET_SELF(__pyx_t_1);
     if (likely(__pyx_t_6)) {
-      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_2);
+      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_1);
       __Pyx_INCREF(__pyx_t_6);
       __Pyx_INCREF(function);
-      __Pyx_DECREF_SET(__pyx_t_2, function);
+      __Pyx_DECREF_SET(__pyx_t_1, function);
     }
   }
-  __pyx_t_8 = (__pyx_t_6) ? __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_6) : __Pyx_PyObject_CallNoArg(__pyx_t_2);
+  __pyx_t_5 = (__pyx_t_6) ? __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_t_6) : __Pyx_PyObject_CallNoArg(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
-  if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 349, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_8);
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __Pyx_GIVEREF(__pyx_t_8);
+  if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 345, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __Pyx_GIVEREF(__pyx_t_5);
   __Pyx_GOTREF(__pyx_v_self->_children_cc);
   __Pyx_DECREF(__pyx_v_self->_children_cc);
-  __pyx_v_self->_children_cc = __pyx_t_8;
-  __pyx_t_8 = 0;
+  __pyx_v_self->_children_cc = __pyx_t_5;
+  __pyx_t_5 = 0;
 
-  /* "rdma/ibverbs.pyx":351
+  /* "rdma/ibverbs.pyx":347
  *         self._children_cc = WeakSet();
  * 
  *         if self.end_port is not None:             # <<<<<<<<<<<<<<
@@ -8454,33 +8398,33 @@ static int __pyx_pf_4rdma_7ibverbs_7Context___cinit__(struct __pyx_obj_4rdma_7ib
   __pyx_t_3 = (__pyx_t_4 != 0);
   if (__pyx_t_3) {
 
-    /* "rdma/ibverbs.pyx":353
+    /* "rdma/ibverbs.pyx":349
  *         if self.end_port is not None:
  *             # Fetch the subnet_timeout from verbs
  *             self.query_port()             # <<<<<<<<<<<<<<
  * 
  *     def __dealloc__(self):
  */
-    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_query_port); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 353, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_2);
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_query_port); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 349, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_1);
     __pyx_t_6 = NULL;
-    if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
-      __pyx_t_6 = PyMethod_GET_SELF(__pyx_t_2);
+    if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_1))) {
+      __pyx_t_6 = PyMethod_GET_SELF(__pyx_t_1);
       if (likely(__pyx_t_6)) {
-        PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_2);
+        PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_1);
         __Pyx_INCREF(__pyx_t_6);
         __Pyx_INCREF(function);
-        __Pyx_DECREF_SET(__pyx_t_2, function);
+        __Pyx_DECREF_SET(__pyx_t_1, function);
       }
     }
-    __pyx_t_8 = (__pyx_t_6) ? __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_6) : __Pyx_PyObject_CallNoArg(__pyx_t_2);
+    __pyx_t_5 = (__pyx_t_6) ? __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_t_6) : __Pyx_PyObject_CallNoArg(__pyx_t_1);
     __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
-    if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 353, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_8);
-    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
+    if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 349, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_5);
+    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+    __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-    /* "rdma/ibverbs.pyx":351
+    /* "rdma/ibverbs.pyx":347
  *         self._children_cc = WeakSet();
  * 
  *         if self.end_port is not None:             # <<<<<<<<<<<<<<
@@ -8513,7 +8457,7 @@ static int __pyx_pf_4rdma_7ibverbs_7Context___cinit__(struct __pyx_obj_4rdma_7ib
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":355
+/* "rdma/ibverbs.pyx":351
  *             self.query_port()
  * 
  *     def __dealloc__(self):             # <<<<<<<<<<<<<<
@@ -8540,18 +8484,18 @@ static void __pyx_pf_4rdma_7ibverbs_7Context_2__dealloc__(struct __pyx_obj_4rdma
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__dealloc__", 0);
 
-  /* "rdma/ibverbs.pyx":356
+  /* "rdma/ibverbs.pyx":352
  * 
  *     def __dealloc__(self):
  *         self._close();             # <<<<<<<<<<<<<<
  * 
  *     def __enter__(self):
  */
-  __pyx_t_1 = ((struct __pyx_vtabstruct_4rdma_7ibverbs_Context *)__pyx_v_self->__pyx_vtab)->_close(__pyx_v_self); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 356, __pyx_L1_error)
+  __pyx_t_1 = ((struct __pyx_vtabstruct_4rdma_7ibverbs_Context *)__pyx_v_self->__pyx_vtab)->_close(__pyx_v_self); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 352, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "rdma/ibverbs.pyx":355
+  /* "rdma/ibverbs.pyx":351
  *             self.query_port()
  * 
  *     def __dealloc__(self):             # <<<<<<<<<<<<<<
@@ -8568,7 +8512,7 @@ static void __pyx_pf_4rdma_7ibverbs_7Context_2__dealloc__(struct __pyx_obj_4rdma
   __Pyx_RefNannyFinishContext();
 }
 
-/* "rdma/ibverbs.pyx":358
+/* "rdma/ibverbs.pyx":354
  *         self._close();
  * 
  *     def __enter__(self):             # <<<<<<<<<<<<<<
@@ -8594,7 +8538,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_4__enter__(struct __pyx_obj_4r
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__enter__", 0);
 
-  /* "rdma/ibverbs.pyx":359
+  /* "rdma/ibverbs.pyx":355
  * 
  *     def __enter__(self):
  *         return self;             # <<<<<<<<<<<<<<
@@ -8606,7 +8550,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_4__enter__(struct __pyx_obj_4r
   __pyx_r = ((PyObject *)__pyx_v_self);
   goto __pyx_L0;
 
-  /* "rdma/ibverbs.pyx":358
+  /* "rdma/ibverbs.pyx":354
  *         self._close();
  * 
  *     def __enter__(self):             # <<<<<<<<<<<<<<
@@ -8621,7 +8565,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_4__enter__(struct __pyx_obj_4r
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":361
+/* "rdma/ibverbs.pyx":357
  *         return self;
  * 
  *     def __exit__(self,*exc_info):             # <<<<<<<<<<<<<<
@@ -8656,18 +8600,18 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_6__exit__(struct __pyx_obj_4rd
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__exit__", 0);
 
-  /* "rdma/ibverbs.pyx":362
+  /* "rdma/ibverbs.pyx":358
  * 
  *     def __exit__(self,*exc_info):
  *         self._close();             # <<<<<<<<<<<<<<
  * 
  *     def close(self):
  */
-  __pyx_t_1 = ((struct __pyx_vtabstruct_4rdma_7ibverbs_Context *)__pyx_v_self->__pyx_vtab)->_close(__pyx_v_self); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 362, __pyx_L1_error)
+  __pyx_t_1 = ((struct __pyx_vtabstruct_4rdma_7ibverbs_Context *)__pyx_v_self->__pyx_vtab)->_close(__pyx_v_self); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 358, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "rdma/ibverbs.pyx":361
+  /* "rdma/ibverbs.pyx":357
  *         return self;
  * 
  *     def __exit__(self,*exc_info):             # <<<<<<<<<<<<<<
@@ -8688,7 +8632,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_6__exit__(struct __pyx_obj_4rd
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":364
+/* "rdma/ibverbs.pyx":360
  *         self._close();
  * 
  *     def close(self):             # <<<<<<<<<<<<<<
@@ -8719,18 +8663,18 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_8close(struct __pyx_obj_4rdma_
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("close", 0);
 
-  /* "rdma/ibverbs.pyx":366
+  /* "rdma/ibverbs.pyx":362
  *     def close(self):
  *         """Free the verbs context handle and all resources allocated by it."""
  *         self._close();             # <<<<<<<<<<<<<<
  * 
  *     cdef _close(self):
  */
-  __pyx_t_1 = ((struct __pyx_vtabstruct_4rdma_7ibverbs_Context *)__pyx_v_self->__pyx_vtab)->_close(__pyx_v_self); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 366, __pyx_L1_error)
+  __pyx_t_1 = ((struct __pyx_vtabstruct_4rdma_7ibverbs_Context *)__pyx_v_self->__pyx_vtab)->_close(__pyx_v_self); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 362, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "rdma/ibverbs.pyx":364
+  /* "rdma/ibverbs.pyx":360
  *         self._close();
  * 
  *     def close(self):             # <<<<<<<<<<<<<<
@@ -8751,7 +8695,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_8close(struct __pyx_obj_4rdma_
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":368
+/* "rdma/ibverbs.pyx":364
  *         self._close();
  * 
  *     cdef _close(self):             # <<<<<<<<<<<<<<
@@ -8776,7 +8720,7 @@ static PyObject *__pyx_f_4rdma_7ibverbs_7Context__close(struct __pyx_obj_4rdma_7
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("_close", 0);
 
-  /* "rdma/ibverbs.pyx":370
+  /* "rdma/ibverbs.pyx":366
  *     cdef _close(self):
  *         cdef int e
  *         while self._children_pd:             # <<<<<<<<<<<<<<
@@ -8784,17 +8728,99 @@ static PyObject *__pyx_f_4rdma_7ibverbs_7Context__close(struct __pyx_obj_4rdma_7
  *         while self._children_cq:
  */
   while (1) {
-    __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_v_self->_children_pd); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 370, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_v_self->_children_pd); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 366, __pyx_L1_error)
     if (!__pyx_t_1) break;
 
-    /* "rdma/ibverbs.pyx":371
+    /* "rdma/ibverbs.pyx":367
  *         cdef int e
  *         while self._children_pd:
  *             self._children_pd.pop().close();             # <<<<<<<<<<<<<<
  *         while self._children_cq:
  *             self._children_cq.pop().close();
  */
-    __pyx_t_3 = __Pyx_PyObject_Pop(__pyx_v_self->_children_pd); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 371, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_Pop(__pyx_v_self->_children_pd); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 367, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_3);
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_close); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 367, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_4);
+    __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+    __pyx_t_3 = NULL;
+    if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_4))) {
+      __pyx_t_3 = PyMethod_GET_SELF(__pyx_t_4);
+      if (likely(__pyx_t_3)) {
+        PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_4);
+        __Pyx_INCREF(__pyx_t_3);
+        __Pyx_INCREF(function);
+        __Pyx_DECREF_SET(__pyx_t_4, function);
+      }
+    }
+    __pyx_t_2 = (__pyx_t_3) ? __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_3) : __Pyx_PyObject_CallNoArg(__pyx_t_4);
+    __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
+    if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 367, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_2);
+    __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  }
+
+  /* "rdma/ibverbs.pyx":368
+ *         while self._children_pd:
+ *             self._children_pd.pop().close();
+ *         while self._children_cq:             # <<<<<<<<<<<<<<
+ *             self._children_cq.pop().close();
+ *         while self._children_cc:
+ */
+  while (1) {
+    __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_v_self->_children_cq); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 368, __pyx_L1_error)
+    if (!__pyx_t_1) break;
+
+    /* "rdma/ibverbs.pyx":369
+ *             self._children_pd.pop().close();
+ *         while self._children_cq:
+ *             self._children_cq.pop().close();             # <<<<<<<<<<<<<<
+ *         while self._children_cc:
+ *             self._children_cc.pop().close();
+ */
+    __pyx_t_4 = __Pyx_PyObject_Pop(__pyx_v_self->_children_cq); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 369, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_4);
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_close); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 369, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_3);
+    __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+    __pyx_t_4 = NULL;
+    if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_3))) {
+      __pyx_t_4 = PyMethod_GET_SELF(__pyx_t_3);
+      if (likely(__pyx_t_4)) {
+        PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_3);
+        __Pyx_INCREF(__pyx_t_4);
+        __Pyx_INCREF(function);
+        __Pyx_DECREF_SET(__pyx_t_3, function);
+      }
+    }
+    __pyx_t_2 = (__pyx_t_4) ? __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_4) : __Pyx_PyObject_CallNoArg(__pyx_t_3);
+    __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
+    if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 369, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_2);
+    __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  }
+
+  /* "rdma/ibverbs.pyx":370
+ *         while self._children_cq:
+ *             self._children_cq.pop().close();
+ *         while self._children_cc:             # <<<<<<<<<<<<<<
+ *             self._children_cc.pop().close();
+ *         if self._ctx != NULL:
+ */
+  while (1) {
+    __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_v_self->_children_cc); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 370, __pyx_L1_error)
+    if (!__pyx_t_1) break;
+
+    /* "rdma/ibverbs.pyx":371
+ *             self._children_cq.pop().close();
+ *         while self._children_cc:
+ *             self._children_cc.pop().close();             # <<<<<<<<<<<<<<
+ *         if self._ctx != NULL:
+ *             e = c.ibv_close_device(self._ctx)
+ */
+    __pyx_t_3 = __Pyx_PyObject_Pop(__pyx_v_self->_children_cc); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 371, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_close); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 371, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
@@ -8818,88 +8844,6 @@ static PyObject *__pyx_f_4rdma_7ibverbs_7Context__close(struct __pyx_obj_4rdma_7
   }
 
   /* "rdma/ibverbs.pyx":372
- *         while self._children_pd:
- *             self._children_pd.pop().close();
- *         while self._children_cq:             # <<<<<<<<<<<<<<
- *             self._children_cq.pop().close();
- *         while self._children_cc:
- */
-  while (1) {
-    __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_v_self->_children_cq); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 372, __pyx_L1_error)
-    if (!__pyx_t_1) break;
-
-    /* "rdma/ibverbs.pyx":373
- *             self._children_pd.pop().close();
- *         while self._children_cq:
- *             self._children_cq.pop().close();             # <<<<<<<<<<<<<<
- *         while self._children_cc:
- *             self._children_cc.pop().close();
- */
-    __pyx_t_4 = __Pyx_PyObject_Pop(__pyx_v_self->_children_cq); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 373, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_close); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 373, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_3);
-    __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __pyx_t_4 = NULL;
-    if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_3))) {
-      __pyx_t_4 = PyMethod_GET_SELF(__pyx_t_3);
-      if (likely(__pyx_t_4)) {
-        PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_3);
-        __Pyx_INCREF(__pyx_t_4);
-        __Pyx_INCREF(function);
-        __Pyx_DECREF_SET(__pyx_t_3, function);
-      }
-    }
-    __pyx_t_2 = (__pyx_t_4) ? __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_4) : __Pyx_PyObject_CallNoArg(__pyx_t_3);
-    __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-    if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 373, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_2);
-    __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  }
-
-  /* "rdma/ibverbs.pyx":374
- *         while self._children_cq:
- *             self._children_cq.pop().close();
- *         while self._children_cc:             # <<<<<<<<<<<<<<
- *             self._children_cc.pop().close();
- *         if self._ctx != NULL:
- */
-  while (1) {
-    __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_v_self->_children_cc); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 374, __pyx_L1_error)
-    if (!__pyx_t_1) break;
-
-    /* "rdma/ibverbs.pyx":375
- *             self._children_cq.pop().close();
- *         while self._children_cc:
- *             self._children_cc.pop().close();             # <<<<<<<<<<<<<<
- *         if self._ctx != NULL:
- *             e = c.ibv_close_device(self._ctx)
- */
-    __pyx_t_3 = __Pyx_PyObject_Pop(__pyx_v_self->_children_cc); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 375, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_close); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 375, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_4);
-    __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __pyx_t_3 = NULL;
-    if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_4))) {
-      __pyx_t_3 = PyMethod_GET_SELF(__pyx_t_4);
-      if (likely(__pyx_t_3)) {
-        PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_4);
-        __Pyx_INCREF(__pyx_t_3);
-        __Pyx_INCREF(function);
-        __Pyx_DECREF_SET(__pyx_t_4, function);
-      }
-    }
-    __pyx_t_2 = (__pyx_t_3) ? __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_3) : __Pyx_PyObject_CallNoArg(__pyx_t_4);
-    __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
-    if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 375, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_2);
-    __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  }
-
-  /* "rdma/ibverbs.pyx":376
  *         while self._children_cc:
  *             self._children_cc.pop().close();
  *         if self._ctx != NULL:             # <<<<<<<<<<<<<<
@@ -8909,7 +8853,7 @@ static PyObject *__pyx_f_4rdma_7ibverbs_7Context__close(struct __pyx_obj_4rdma_7
   __pyx_t_1 = ((__pyx_v_self->_ctx != NULL) != 0);
   if (__pyx_t_1) {
 
-    /* "rdma/ibverbs.pyx":377
+    /* "rdma/ibverbs.pyx":373
  *             self._children_cc.pop().close();
  *         if self._ctx != NULL:
  *             e = c.ibv_close_device(self._ctx)             # <<<<<<<<<<<<<<
@@ -8918,7 +8862,7 @@ static PyObject *__pyx_f_4rdma_7ibverbs_7Context__close(struct __pyx_obj_4rdma_7
  */
     __pyx_v_e = ibv_close_device(__pyx_v_self->_ctx);
 
-    /* "rdma/ibverbs.pyx":378
+    /* "rdma/ibverbs.pyx":374
  *         if self._ctx != NULL:
  *             e = c.ibv_close_device(self._ctx)
  *             if e != 0:             # <<<<<<<<<<<<<<
@@ -8928,31 +8872,31 @@ static PyObject *__pyx_f_4rdma_7ibverbs_7Context__close(struct __pyx_obj_4rdma_7
     __pyx_t_1 = ((__pyx_v_e != 0) != 0);
     if (unlikely(__pyx_t_1)) {
 
-      /* "rdma/ibverbs.pyx":379
+      /* "rdma/ibverbs.pyx":375
  *             e = c.ibv_close_device(self._ctx)
  *             if e != 0:
  *                 raise rdma.SysError(e,"ibv_close_device",             # <<<<<<<<<<<<<<
  *                                     "Failed to close device %s"%self._ctx.device.name)
  *             self._ctx = NULL
  */
-      __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_rdma); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 379, __pyx_L1_error)
+      __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_rdma); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 375, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
-      __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_SysError); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 379, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_SysError); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 375, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-      __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_e); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 379, __pyx_L1_error)
+      __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_e); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 375, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
 
-      /* "rdma/ibverbs.pyx":380
+      /* "rdma/ibverbs.pyx":376
  *             if e != 0:
  *                 raise rdma.SysError(e,"ibv_close_device",
  *                                     "Failed to close device %s"%self._ctx.device.name)             # <<<<<<<<<<<<<<
  *             self._ctx = NULL
  * 
  */
-      __pyx_t_5 = __Pyx_PyBytes_FromString(__pyx_v_self->_ctx->device->name); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 380, __pyx_L1_error)
+      __pyx_t_5 = __Pyx_PyBytes_FromString(__pyx_v_self->_ctx->device->name); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 376, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
-      __pyx_t_6 = __Pyx_PyString_Format(__pyx_kp_s_Failed_to_close_device_s, __pyx_t_5); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 380, __pyx_L1_error)
+      __pyx_t_6 = __Pyx_PyString_Format(__pyx_kp_s_Failed_to_close_device_s, __pyx_t_5); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 376, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_6);
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
       __pyx_t_5 = NULL;
@@ -8970,7 +8914,7 @@ static PyObject *__pyx_f_4rdma_7ibverbs_7Context__close(struct __pyx_obj_4rdma_7
       #if CYTHON_FAST_PYCALL
       if (PyFunction_Check(__pyx_t_3)) {
         PyObject *__pyx_temp[4] = {__pyx_t_5, __pyx_t_4, __pyx_n_s_ibv_close_device, __pyx_t_6};
-        __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_7, 3+__pyx_t_7); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 379, __pyx_L1_error)
+        __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_7, 3+__pyx_t_7); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 375, __pyx_L1_error)
         __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -8980,7 +8924,7 @@ static PyObject *__pyx_f_4rdma_7ibverbs_7Context__close(struct __pyx_obj_4rdma_7
       #if CYTHON_FAST_PYCCALL
       if (__Pyx_PyFastCFunction_Check(__pyx_t_3)) {
         PyObject *__pyx_temp[4] = {__pyx_t_5, __pyx_t_4, __pyx_n_s_ibv_close_device, __pyx_t_6};
-        __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_7, 3+__pyx_t_7); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 379, __pyx_L1_error)
+        __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_7, 3+__pyx_t_7); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 375, __pyx_L1_error)
         __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -8988,7 +8932,7 @@ static PyObject *__pyx_f_4rdma_7ibverbs_7Context__close(struct __pyx_obj_4rdma_7
       } else
       #endif
       {
-        __pyx_t_8 = PyTuple_New(3+__pyx_t_7); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 379, __pyx_L1_error)
+        __pyx_t_8 = PyTuple_New(3+__pyx_t_7); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 375, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_8);
         if (__pyx_t_5) {
           __Pyx_GIVEREF(__pyx_t_5); PyTuple_SET_ITEM(__pyx_t_8, 0, __pyx_t_5); __pyx_t_5 = NULL;
@@ -9002,16 +8946,16 @@ static PyObject *__pyx_f_4rdma_7ibverbs_7Context__close(struct __pyx_obj_4rdma_7
         PyTuple_SET_ITEM(__pyx_t_8, 2+__pyx_t_7, __pyx_t_6);
         __pyx_t_4 = 0;
         __pyx_t_6 = 0;
-        __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_8, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 379, __pyx_L1_error)
+        __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_8, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 375, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
       }
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
       __Pyx_Raise(__pyx_t_2, 0, 0, 0);
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-      __PYX_ERR(0, 379, __pyx_L1_error)
+      __PYX_ERR(0, 375, __pyx_L1_error)
 
-      /* "rdma/ibverbs.pyx":378
+      /* "rdma/ibverbs.pyx":374
  *         if self._ctx != NULL:
  *             e = c.ibv_close_device(self._ctx)
  *             if e != 0:             # <<<<<<<<<<<<<<
@@ -9020,7 +8964,7 @@ static PyObject *__pyx_f_4rdma_7ibverbs_7Context__close(struct __pyx_obj_4rdma_7
  */
     }
 
-    /* "rdma/ibverbs.pyx":381
+    /* "rdma/ibverbs.pyx":377
  *                 raise rdma.SysError(e,"ibv_close_device",
  *                                     "Failed to close device %s"%self._ctx.device.name)
  *             self._ctx = NULL             # <<<<<<<<<<<<<<
@@ -9029,7 +8973,7 @@ static PyObject *__pyx_f_4rdma_7ibverbs_7Context__close(struct __pyx_obj_4rdma_7
  */
     __pyx_v_self->_ctx = NULL;
 
-    /* "rdma/ibverbs.pyx":376
+    /* "rdma/ibverbs.pyx":372
  *         while self._children_cc:
  *             self._children_cc.pop().close();
  *         if self._ctx != NULL:             # <<<<<<<<<<<<<<
@@ -9038,7 +8982,7 @@ static PyObject *__pyx_f_4rdma_7ibverbs_7Context__close(struct __pyx_obj_4rdma_7
  */
   }
 
-  /* "rdma/ibverbs.pyx":368
+  /* "rdma/ibverbs.pyx":364
  *         self._close();
  * 
  *     cdef _close(self):             # <<<<<<<<<<<<<<
@@ -9064,7 +9008,7 @@ static PyObject *__pyx_f_4rdma_7ibverbs_7Context__close(struct __pyx_obj_4rdma_7
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":383
+/* "rdma/ibverbs.pyx":379
  *             self._ctx = NULL
  * 
  *     def query_device(self):             # <<<<<<<<<<<<<<
@@ -9107,7 +9051,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_10query_device(struct __pyx_ob
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("query_device", 0);
 
-  /* "rdma/ibverbs.pyx":390
+  /* "rdma/ibverbs.pyx":386
  *         cdef int e
  * 
  *         e = c.ibv_query_device(self._ctx, &dattr)             # <<<<<<<<<<<<<<
@@ -9116,7 +9060,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_10query_device(struct __pyx_ob
  */
   __pyx_v_e = ibv_query_device(__pyx_v_self->_ctx, (&__pyx_v_dattr));
 
-  /* "rdma/ibverbs.pyx":391
+  /* "rdma/ibverbs.pyx":387
  * 
  *         e = c.ibv_query_device(self._ctx, &dattr)
  *         if e != 0:             # <<<<<<<<<<<<<<
@@ -9126,19 +9070,19 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_10query_device(struct __pyx_ob
   __pyx_t_1 = ((__pyx_v_e != 0) != 0);
   if (unlikely(__pyx_t_1)) {
 
-    /* "rdma/ibverbs.pyx":392
+    /* "rdma/ibverbs.pyx":388
  *         e = c.ibv_query_device(self._ctx, &dattr)
  *         if e != 0:
  *             raise rdma.SysError(e,"ibv_query_device",             # <<<<<<<<<<<<<<
  *                                 "Failed to query port")
  *         return device_attr(fw_ver = dattr.fw_ver,
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_rdma); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 392, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_rdma); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 388, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_SysError); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 392, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_SysError); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 388, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_e); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 392, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_e); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 388, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __pyx_t_5 = NULL;
     __pyx_t_6 = 0;
@@ -9155,7 +9099,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_10query_device(struct __pyx_ob
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_4)) {
       PyObject *__pyx_temp[4] = {__pyx_t_5, __pyx_t_3, __pyx_n_s_ibv_query_device, __pyx_kp_s_Failed_to_query_port};
-      __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_6, 3+__pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 392, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_6, 3+__pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 388, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -9164,14 +9108,14 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_10query_device(struct __pyx_ob
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_4)) {
       PyObject *__pyx_temp[4] = {__pyx_t_5, __pyx_t_3, __pyx_n_s_ibv_query_device, __pyx_kp_s_Failed_to_query_port};
-      __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_6, 3+__pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 392, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_6, 3+__pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 388, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     } else
     #endif
     {
-      __pyx_t_7 = PyTuple_New(3+__pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 392, __pyx_L1_error)
+      __pyx_t_7 = PyTuple_New(3+__pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 388, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_7);
       if (__pyx_t_5) {
         __Pyx_GIVEREF(__pyx_t_5); PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_t_5); __pyx_t_5 = NULL;
@@ -9185,16 +9129,16 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_10query_device(struct __pyx_ob
       __Pyx_GIVEREF(__pyx_kp_s_Failed_to_query_port);
       PyTuple_SET_ITEM(__pyx_t_7, 2+__pyx_t_6, __pyx_kp_s_Failed_to_query_port);
       __pyx_t_3 = 0;
-      __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_7, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 392, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_7, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 388, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
     }
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_Raise(__pyx_t_2, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __PYX_ERR(0, 392, __pyx_L1_error)
+    __PYX_ERR(0, 388, __pyx_L1_error)
 
-    /* "rdma/ibverbs.pyx":391
+    /* "rdma/ibverbs.pyx":387
  * 
  *         e = c.ibv_query_device(self._ctx, &dattr)
  *         if e != 0:             # <<<<<<<<<<<<<<
@@ -9203,7 +9147,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_10query_device(struct __pyx_ob
  */
   }
 
-  /* "rdma/ibverbs.pyx":394
+  /* "rdma/ibverbs.pyx":390
  *             raise rdma.SysError(e,"ibv_query_device",
  *                                 "Failed to query port")
  *         return device_attr(fw_ver = dattr.fw_ver,             # <<<<<<<<<<<<<<
@@ -9211,33 +9155,33 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_10query_device(struct __pyx_ob
  *                            sys_image_guid = IBA.GUID(struct.pack("=Q",dattr.sys_image_guid),True),
  */
   __Pyx_XDECREF(__pyx_r);
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_device_attr); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 394, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_device_attr); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 390, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_4 = __Pyx_PyDict_NewPresized(40); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 394, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyDict_NewPresized(40); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 390, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_7 = __Pyx_PyObject_FromString(__pyx_v_dattr.fw_ver); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 394, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyObject_FromString(__pyx_v_dattr.fw_ver); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 390, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_fw_ver, __pyx_t_7) < 0) __PYX_ERR(0, 394, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_fw_ver, __pyx_t_7) < 0) __PYX_ERR(0, 390, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-  /* "rdma/ibverbs.pyx":395
+  /* "rdma/ibverbs.pyx":391
  *                                 "Failed to query port")
  *         return device_attr(fw_ver = dattr.fw_ver,
  *                            node_guid = IBA.GUID(struct.pack("=Q",dattr.node_guid),True),             # <<<<<<<<<<<<<<
  *                            sys_image_guid = IBA.GUID(struct.pack("=Q",dattr.sys_image_guid),True),
  *                            max_mr_size = dattr.max_mr_size,
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_IBA); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 395, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_IBA); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 391, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_GUID); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 395, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_GUID); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 391, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_struct); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 395, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_struct); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 391, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
-  __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_t_8, __pyx_n_s_pack); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 395, __pyx_L1_error)
+  __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_t_8, __pyx_n_s_pack); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 391, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_9);
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-  __pyx_t_8 = __Pyx_PyInt_From_unsigned_long(__pyx_v_dattr.node_guid); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 395, __pyx_L1_error)
+  __pyx_t_8 = __Pyx_PyInt_From_unsigned_long(__pyx_v_dattr.node_guid); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 391, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
   __pyx_t_10 = NULL;
   __pyx_t_6 = 0;
@@ -9254,7 +9198,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_10query_device(struct __pyx_ob
   #if CYTHON_FAST_PYCALL
   if (PyFunction_Check(__pyx_t_9)) {
     PyObject *__pyx_temp[3] = {__pyx_t_10, __pyx_kp_s_Q, __pyx_t_8};
-    __pyx_t_3 = __Pyx_PyFunction_FastCall(__pyx_t_9, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 395, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyFunction_FastCall(__pyx_t_9, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 391, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_10); __pyx_t_10 = 0;
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
@@ -9263,14 +9207,14 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_10query_device(struct __pyx_ob
   #if CYTHON_FAST_PYCCALL
   if (__Pyx_PyFastCFunction_Check(__pyx_t_9)) {
     PyObject *__pyx_temp[3] = {__pyx_t_10, __pyx_kp_s_Q, __pyx_t_8};
-    __pyx_t_3 = __Pyx_PyCFunction_FastCall(__pyx_t_9, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 395, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyCFunction_FastCall(__pyx_t_9, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 391, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_10); __pyx_t_10 = 0;
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
   } else
   #endif
   {
-    __pyx_t_11 = PyTuple_New(2+__pyx_t_6); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 395, __pyx_L1_error)
+    __pyx_t_11 = PyTuple_New(2+__pyx_t_6); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 391, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_11);
     if (__pyx_t_10) {
       __Pyx_GIVEREF(__pyx_t_10); PyTuple_SET_ITEM(__pyx_t_11, 0, __pyx_t_10); __pyx_t_10 = NULL;
@@ -9281,7 +9225,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_10query_device(struct __pyx_ob
     __Pyx_GIVEREF(__pyx_t_8);
     PyTuple_SET_ITEM(__pyx_t_11, 1+__pyx_t_6, __pyx_t_8);
     __pyx_t_8 = 0;
-    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_9, __pyx_t_11, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 395, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_9, __pyx_t_11, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 391, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
   }
@@ -9301,7 +9245,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_10query_device(struct __pyx_ob
   #if CYTHON_FAST_PYCALL
   if (PyFunction_Check(__pyx_t_5)) {
     PyObject *__pyx_temp[3] = {__pyx_t_9, __pyx_t_3, Py_True};
-    __pyx_t_7 = __Pyx_PyFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 395, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 391, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_9); __pyx_t_9 = 0;
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -9310,14 +9254,14 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_10query_device(struct __pyx_ob
   #if CYTHON_FAST_PYCCALL
   if (__Pyx_PyFastCFunction_Check(__pyx_t_5)) {
     PyObject *__pyx_temp[3] = {__pyx_t_9, __pyx_t_3, Py_True};
-    __pyx_t_7 = __Pyx_PyCFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 395, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyCFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 391, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_9); __pyx_t_9 = 0;
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   } else
   #endif
   {
-    __pyx_t_11 = PyTuple_New(2+__pyx_t_6); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 395, __pyx_L1_error)
+    __pyx_t_11 = PyTuple_New(2+__pyx_t_6); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 391, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_11);
     if (__pyx_t_9) {
       __Pyx_GIVEREF(__pyx_t_9); PyTuple_SET_ITEM(__pyx_t_11, 0, __pyx_t_9); __pyx_t_9 = NULL;
@@ -9328,32 +9272,32 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_10query_device(struct __pyx_ob
     __Pyx_GIVEREF(Py_True);
     PyTuple_SET_ITEM(__pyx_t_11, 1+__pyx_t_6, Py_True);
     __pyx_t_3 = 0;
-    __pyx_t_7 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_11, NULL); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 395, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_11, NULL); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 391, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
   }
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_node_guid, __pyx_t_7) < 0) __PYX_ERR(0, 394, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_node_guid, __pyx_t_7) < 0) __PYX_ERR(0, 390, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-  /* "rdma/ibverbs.pyx":396
+  /* "rdma/ibverbs.pyx":392
  *         return device_attr(fw_ver = dattr.fw_ver,
  *                            node_guid = IBA.GUID(struct.pack("=Q",dattr.node_guid),True),
  *                            sys_image_guid = IBA.GUID(struct.pack("=Q",dattr.sys_image_guid),True),             # <<<<<<<<<<<<<<
  *                            max_mr_size = dattr.max_mr_size,
  *                            page_size_cap = dattr.page_size_cap,
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_IBA); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 396, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_IBA); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 392, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_GUID); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 396, __pyx_L1_error)
+  __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_GUID); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 392, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_11);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_struct); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 396, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_struct); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 392, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_pack); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 396, __pyx_L1_error)
+  __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_pack); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 392, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_9);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_3 = __Pyx_PyInt_From_unsigned_long(__pyx_v_dattr.sys_image_guid); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 396, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyInt_From_unsigned_long(__pyx_v_dattr.sys_image_guid); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 392, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_t_8 = NULL;
   __pyx_t_6 = 0;
@@ -9370,7 +9314,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_10query_device(struct __pyx_ob
   #if CYTHON_FAST_PYCALL
   if (PyFunction_Check(__pyx_t_9)) {
     PyObject *__pyx_temp[3] = {__pyx_t_8, __pyx_kp_s_Q, __pyx_t_3};
-    __pyx_t_5 = __Pyx_PyFunction_FastCall(__pyx_t_9, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 396, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyFunction_FastCall(__pyx_t_9, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 392, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_8); __pyx_t_8 = 0;
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -9379,14 +9323,14 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_10query_device(struct __pyx_ob
   #if CYTHON_FAST_PYCCALL
   if (__Pyx_PyFastCFunction_Check(__pyx_t_9)) {
     PyObject *__pyx_temp[3] = {__pyx_t_8, __pyx_kp_s_Q, __pyx_t_3};
-    __pyx_t_5 = __Pyx_PyCFunction_FastCall(__pyx_t_9, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 396, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyCFunction_FastCall(__pyx_t_9, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 392, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_8); __pyx_t_8 = 0;
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   } else
   #endif
   {
-    __pyx_t_10 = PyTuple_New(2+__pyx_t_6); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 396, __pyx_L1_error)
+    __pyx_t_10 = PyTuple_New(2+__pyx_t_6); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 392, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_10);
     if (__pyx_t_8) {
       __Pyx_GIVEREF(__pyx_t_8); PyTuple_SET_ITEM(__pyx_t_10, 0, __pyx_t_8); __pyx_t_8 = NULL;
@@ -9397,7 +9341,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_10query_device(struct __pyx_ob
     __Pyx_GIVEREF(__pyx_t_3);
     PyTuple_SET_ITEM(__pyx_t_10, 1+__pyx_t_6, __pyx_t_3);
     __pyx_t_3 = 0;
-    __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_9, __pyx_t_10, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 396, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_9, __pyx_t_10, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 392, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
   }
@@ -9417,7 +9361,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_10query_device(struct __pyx_ob
   #if CYTHON_FAST_PYCALL
   if (PyFunction_Check(__pyx_t_11)) {
     PyObject *__pyx_temp[3] = {__pyx_t_9, __pyx_t_5, Py_True};
-    __pyx_t_7 = __Pyx_PyFunction_FastCall(__pyx_t_11, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 396, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyFunction_FastCall(__pyx_t_11, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 392, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_9); __pyx_t_9 = 0;
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
@@ -9426,14 +9370,14 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_10query_device(struct __pyx_ob
   #if CYTHON_FAST_PYCCALL
   if (__Pyx_PyFastCFunction_Check(__pyx_t_11)) {
     PyObject *__pyx_temp[3] = {__pyx_t_9, __pyx_t_5, Py_True};
-    __pyx_t_7 = __Pyx_PyCFunction_FastCall(__pyx_t_11, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 396, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyCFunction_FastCall(__pyx_t_11, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 392, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_9); __pyx_t_9 = 0;
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   } else
   #endif
   {
-    __pyx_t_10 = PyTuple_New(2+__pyx_t_6); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 396, __pyx_L1_error)
+    __pyx_t_10 = PyTuple_New(2+__pyx_t_6); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 392, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_10);
     if (__pyx_t_9) {
       __Pyx_GIVEREF(__pyx_t_9); PyTuple_SET_ITEM(__pyx_t_10, 0, __pyx_t_9); __pyx_t_9 = NULL;
@@ -9444,466 +9388,466 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_10query_device(struct __pyx_ob
     __Pyx_GIVEREF(Py_True);
     PyTuple_SET_ITEM(__pyx_t_10, 1+__pyx_t_6, Py_True);
     __pyx_t_5 = 0;
-    __pyx_t_7 = __Pyx_PyObject_Call(__pyx_t_11, __pyx_t_10, NULL); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 396, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyObject_Call(__pyx_t_11, __pyx_t_10, NULL); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 392, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
   }
   __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_sys_image_guid, __pyx_t_7) < 0) __PYX_ERR(0, 394, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_sys_image_guid, __pyx_t_7) < 0) __PYX_ERR(0, 390, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-  /* "rdma/ibverbs.pyx":397
+  /* "rdma/ibverbs.pyx":393
  *                            node_guid = IBA.GUID(struct.pack("=Q",dattr.node_guid),True),
  *                            sys_image_guid = IBA.GUID(struct.pack("=Q",dattr.sys_image_guid),True),
  *                            max_mr_size = dattr.max_mr_size,             # <<<<<<<<<<<<<<
  *                            page_size_cap = dattr.page_size_cap,
  *                            vendor_id = dattr.vendor_id,
  */
-  __pyx_t_7 = __Pyx_PyInt_From_unsigned_long(__pyx_v_dattr.max_mr_size); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 397, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyInt_From_unsigned_long(__pyx_v_dattr.max_mr_size); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 393, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_mr_size, __pyx_t_7) < 0) __PYX_ERR(0, 394, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_mr_size, __pyx_t_7) < 0) __PYX_ERR(0, 390, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-  /* "rdma/ibverbs.pyx":398
+  /* "rdma/ibverbs.pyx":394
  *                            sys_image_guid = IBA.GUID(struct.pack("=Q",dattr.sys_image_guid),True),
  *                            max_mr_size = dattr.max_mr_size,
  *                            page_size_cap = dattr.page_size_cap,             # <<<<<<<<<<<<<<
  *                            vendor_id = dattr.vendor_id,
  *                            vendor_part_id = dattr.vendor_part_id,
  */
-  __pyx_t_7 = __Pyx_PyInt_From_unsigned_long(__pyx_v_dattr.page_size_cap); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 398, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyInt_From_unsigned_long(__pyx_v_dattr.page_size_cap); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 394, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_page_size_cap, __pyx_t_7) < 0) __PYX_ERR(0, 394, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_page_size_cap, __pyx_t_7) < 0) __PYX_ERR(0, 390, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-  /* "rdma/ibverbs.pyx":399
+  /* "rdma/ibverbs.pyx":395
  *                            max_mr_size = dattr.max_mr_size,
  *                            page_size_cap = dattr.page_size_cap,
  *                            vendor_id = dattr.vendor_id,             # <<<<<<<<<<<<<<
  *                            vendor_part_id = dattr.vendor_part_id,
  *                            hw_ver = dattr.hw_ver,
  */
-  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_dattr.vendor_id); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 399, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_dattr.vendor_id); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 395, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_vendor_id, __pyx_t_7) < 0) __PYX_ERR(0, 394, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_vendor_id, __pyx_t_7) < 0) __PYX_ERR(0, 390, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-  /* "rdma/ibverbs.pyx":400
+  /* "rdma/ibverbs.pyx":396
  *                            page_size_cap = dattr.page_size_cap,
  *                            vendor_id = dattr.vendor_id,
  *                            vendor_part_id = dattr.vendor_part_id,             # <<<<<<<<<<<<<<
  *                            hw_ver = dattr.hw_ver,
  *                            max_qp = dattr.max_qp,
  */
-  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_dattr.vendor_part_id); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 400, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_dattr.vendor_part_id); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 396, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_vendor_part_id, __pyx_t_7) < 0) __PYX_ERR(0, 394, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_vendor_part_id, __pyx_t_7) < 0) __PYX_ERR(0, 390, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-  /* "rdma/ibverbs.pyx":401
+  /* "rdma/ibverbs.pyx":397
  *                            vendor_id = dattr.vendor_id,
  *                            vendor_part_id = dattr.vendor_part_id,
  *                            hw_ver = dattr.hw_ver,             # <<<<<<<<<<<<<<
  *                            max_qp = dattr.max_qp,
  *                            max_qp_wr = dattr.max_qp_wr,
  */
-  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_dattr.hw_ver); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 401, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_dattr.hw_ver); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 397, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_hw_ver, __pyx_t_7) < 0) __PYX_ERR(0, 394, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_hw_ver, __pyx_t_7) < 0) __PYX_ERR(0, 390, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-  /* "rdma/ibverbs.pyx":402
+  /* "rdma/ibverbs.pyx":398
  *                            vendor_part_id = dattr.vendor_part_id,
  *                            hw_ver = dattr.hw_ver,
  *                            max_qp = dattr.max_qp,             # <<<<<<<<<<<<<<
  *                            max_qp_wr = dattr.max_qp_wr,
  *                            device_cap_flags = dattr.device_cap_flags,
  */
-  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_dattr.max_qp); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 402, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_dattr.max_qp); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 398, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_qp, __pyx_t_7) < 0) __PYX_ERR(0, 394, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_qp, __pyx_t_7) < 0) __PYX_ERR(0, 390, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-  /* "rdma/ibverbs.pyx":403
+  /* "rdma/ibverbs.pyx":399
  *                            hw_ver = dattr.hw_ver,
  *                            max_qp = dattr.max_qp,
  *                            max_qp_wr = dattr.max_qp_wr,             # <<<<<<<<<<<<<<
  *                            device_cap_flags = dattr.device_cap_flags,
  *                            max_sge = dattr.max_sge,
  */
-  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_dattr.max_qp_wr); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 403, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_dattr.max_qp_wr); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 399, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_qp_wr, __pyx_t_7) < 0) __PYX_ERR(0, 394, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_qp_wr, __pyx_t_7) < 0) __PYX_ERR(0, 390, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-  /* "rdma/ibverbs.pyx":404
+  /* "rdma/ibverbs.pyx":400
  *                            max_qp = dattr.max_qp,
  *                            max_qp_wr = dattr.max_qp_wr,
  *                            device_cap_flags = dattr.device_cap_flags,             # <<<<<<<<<<<<<<
  *                            max_sge = dattr.max_sge,
  *                            max_sge_rd = dattr.max_sge_rd,
  */
-  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_dattr.device_cap_flags); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 404, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_dattr.device_cap_flags); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 400, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_device_cap_flags, __pyx_t_7) < 0) __PYX_ERR(0, 394, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_device_cap_flags, __pyx_t_7) < 0) __PYX_ERR(0, 390, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-  /* "rdma/ibverbs.pyx":405
+  /* "rdma/ibverbs.pyx":401
  *                            max_qp_wr = dattr.max_qp_wr,
  *                            device_cap_flags = dattr.device_cap_flags,
  *                            max_sge = dattr.max_sge,             # <<<<<<<<<<<<<<
  *                            max_sge_rd = dattr.max_sge_rd,
  *                            max_cq = dattr.max_cq,
  */
-  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_dattr.max_sge); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 405, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_dattr.max_sge); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 401, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_sge, __pyx_t_7) < 0) __PYX_ERR(0, 394, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_sge, __pyx_t_7) < 0) __PYX_ERR(0, 390, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-  /* "rdma/ibverbs.pyx":406
+  /* "rdma/ibverbs.pyx":402
  *                            device_cap_flags = dattr.device_cap_flags,
  *                            max_sge = dattr.max_sge,
  *                            max_sge_rd = dattr.max_sge_rd,             # <<<<<<<<<<<<<<
  *                            max_cq = dattr.max_cq,
  *                            max_cqe = dattr.max_cqe,
  */
-  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_dattr.max_sge_rd); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 406, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_dattr.max_sge_rd); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 402, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_sge_rd, __pyx_t_7) < 0) __PYX_ERR(0, 394, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_sge_rd, __pyx_t_7) < 0) __PYX_ERR(0, 390, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-  /* "rdma/ibverbs.pyx":407
+  /* "rdma/ibverbs.pyx":403
  *                            max_sge = dattr.max_sge,
  *                            max_sge_rd = dattr.max_sge_rd,
  *                            max_cq = dattr.max_cq,             # <<<<<<<<<<<<<<
  *                            max_cqe = dattr.max_cqe,
  *                            max_mr = dattr.max_mr,
  */
-  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_dattr.max_cq); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 407, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_dattr.max_cq); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 403, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_cq, __pyx_t_7) < 0) __PYX_ERR(0, 394, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_cq, __pyx_t_7) < 0) __PYX_ERR(0, 390, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-  /* "rdma/ibverbs.pyx":408
+  /* "rdma/ibverbs.pyx":404
  *                            max_sge_rd = dattr.max_sge_rd,
  *                            max_cq = dattr.max_cq,
  *                            max_cqe = dattr.max_cqe,             # <<<<<<<<<<<<<<
  *                            max_mr = dattr.max_mr,
  *                            max_pd = dattr.max_pd,
  */
-  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_dattr.max_cqe); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 408, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_dattr.max_cqe); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 404, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_cqe, __pyx_t_7) < 0) __PYX_ERR(0, 394, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_cqe, __pyx_t_7) < 0) __PYX_ERR(0, 390, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-  /* "rdma/ibverbs.pyx":409
+  /* "rdma/ibverbs.pyx":405
  *                            max_cq = dattr.max_cq,
  *                            max_cqe = dattr.max_cqe,
  *                            max_mr = dattr.max_mr,             # <<<<<<<<<<<<<<
  *                            max_pd = dattr.max_pd,
  *                            max_qp_rd_atom = dattr.max_qp_rd_atom,
  */
-  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_dattr.max_mr); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 409, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_dattr.max_mr); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 405, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_mr, __pyx_t_7) < 0) __PYX_ERR(0, 394, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_mr, __pyx_t_7) < 0) __PYX_ERR(0, 390, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-  /* "rdma/ibverbs.pyx":410
+  /* "rdma/ibverbs.pyx":406
  *                            max_cqe = dattr.max_cqe,
  *                            max_mr = dattr.max_mr,
  *                            max_pd = dattr.max_pd,             # <<<<<<<<<<<<<<
  *                            max_qp_rd_atom = dattr.max_qp_rd_atom,
  *                            max_ee_rd_atom = dattr.max_ee_rd_atom,
  */
-  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_dattr.max_pd); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 410, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_dattr.max_pd); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 406, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_pd, __pyx_t_7) < 0) __PYX_ERR(0, 394, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_pd, __pyx_t_7) < 0) __PYX_ERR(0, 390, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-  /* "rdma/ibverbs.pyx":411
+  /* "rdma/ibverbs.pyx":407
  *                            max_mr = dattr.max_mr,
  *                            max_pd = dattr.max_pd,
  *                            max_qp_rd_atom = dattr.max_qp_rd_atom,             # <<<<<<<<<<<<<<
  *                            max_ee_rd_atom = dattr.max_ee_rd_atom,
  *                            max_res_rd_atom = dattr.max_res_rd_atom,
  */
-  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_dattr.max_qp_rd_atom); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 411, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_dattr.max_qp_rd_atom); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 407, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_qp_rd_atom, __pyx_t_7) < 0) __PYX_ERR(0, 394, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_qp_rd_atom, __pyx_t_7) < 0) __PYX_ERR(0, 390, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-  /* "rdma/ibverbs.pyx":412
+  /* "rdma/ibverbs.pyx":408
  *                            max_pd = dattr.max_pd,
  *                            max_qp_rd_atom = dattr.max_qp_rd_atom,
  *                            max_ee_rd_atom = dattr.max_ee_rd_atom,             # <<<<<<<<<<<<<<
  *                            max_res_rd_atom = dattr.max_res_rd_atom,
  *                            max_qp_init_rd_atom = dattr.max_qp_init_rd_atom,
  */
-  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_dattr.max_ee_rd_atom); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 412, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_dattr.max_ee_rd_atom); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 408, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_ee_rd_atom, __pyx_t_7) < 0) __PYX_ERR(0, 394, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_ee_rd_atom, __pyx_t_7) < 0) __PYX_ERR(0, 390, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-  /* "rdma/ibverbs.pyx":413
+  /* "rdma/ibverbs.pyx":409
  *                            max_qp_rd_atom = dattr.max_qp_rd_atom,
  *                            max_ee_rd_atom = dattr.max_ee_rd_atom,
  *                            max_res_rd_atom = dattr.max_res_rd_atom,             # <<<<<<<<<<<<<<
  *                            max_qp_init_rd_atom = dattr.max_qp_init_rd_atom,
  *                            max_ee_init_rd_atom = dattr.max_ee_init_rd_atom,
  */
-  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_dattr.max_res_rd_atom); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 413, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_dattr.max_res_rd_atom); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 409, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_res_rd_atom, __pyx_t_7) < 0) __PYX_ERR(0, 394, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_res_rd_atom, __pyx_t_7) < 0) __PYX_ERR(0, 390, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-  /* "rdma/ibverbs.pyx":414
+  /* "rdma/ibverbs.pyx":410
  *                            max_ee_rd_atom = dattr.max_ee_rd_atom,
  *                            max_res_rd_atom = dattr.max_res_rd_atom,
  *                            max_qp_init_rd_atom = dattr.max_qp_init_rd_atom,             # <<<<<<<<<<<<<<
  *                            max_ee_init_rd_atom = dattr.max_ee_init_rd_atom,
  *                            atomic_cap = dattr.atomic_cap,
  */
-  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_dattr.max_qp_init_rd_atom); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 414, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_dattr.max_qp_init_rd_atom); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 410, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_qp_init_rd_atom, __pyx_t_7) < 0) __PYX_ERR(0, 394, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_qp_init_rd_atom, __pyx_t_7) < 0) __PYX_ERR(0, 390, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-  /* "rdma/ibverbs.pyx":415
+  /* "rdma/ibverbs.pyx":411
  *                            max_res_rd_atom = dattr.max_res_rd_atom,
  *                            max_qp_init_rd_atom = dattr.max_qp_init_rd_atom,
  *                            max_ee_init_rd_atom = dattr.max_ee_init_rd_atom,             # <<<<<<<<<<<<<<
  *                            atomic_cap = dattr.atomic_cap,
  *                            max_ee = dattr.max_ee,
  */
-  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_dattr.max_ee_init_rd_atom); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 415, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_dattr.max_ee_init_rd_atom); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 411, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_ee_init_rd_atom, __pyx_t_7) < 0) __PYX_ERR(0, 394, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_ee_init_rd_atom, __pyx_t_7) < 0) __PYX_ERR(0, 390, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-  /* "rdma/ibverbs.pyx":416
+  /* "rdma/ibverbs.pyx":412
  *                            max_qp_init_rd_atom = dattr.max_qp_init_rd_atom,
  *                            max_ee_init_rd_atom = dattr.max_ee_init_rd_atom,
  *                            atomic_cap = dattr.atomic_cap,             # <<<<<<<<<<<<<<
  *                            max_ee = dattr.max_ee,
  *                            max_rdd = dattr.max_rdd,
  */
-  __pyx_t_7 = __Pyx_PyInt_From_enum__ibv_atomic_cap(__pyx_v_dattr.atomic_cap); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 416, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyInt_From_enum__ibv_atomic_cap(__pyx_v_dattr.atomic_cap); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 412, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_atomic_cap, __pyx_t_7) < 0) __PYX_ERR(0, 394, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_atomic_cap, __pyx_t_7) < 0) __PYX_ERR(0, 390, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-  /* "rdma/ibverbs.pyx":417
+  /* "rdma/ibverbs.pyx":413
  *                            max_ee_init_rd_atom = dattr.max_ee_init_rd_atom,
  *                            atomic_cap = dattr.atomic_cap,
  *                            max_ee = dattr.max_ee,             # <<<<<<<<<<<<<<
  *                            max_rdd = dattr.max_rdd,
  *                            max_mw = dattr.max_mw,
  */
-  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_dattr.max_ee); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 417, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_dattr.max_ee); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 413, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_ee, __pyx_t_7) < 0) __PYX_ERR(0, 394, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_ee, __pyx_t_7) < 0) __PYX_ERR(0, 390, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-  /* "rdma/ibverbs.pyx":418
+  /* "rdma/ibverbs.pyx":414
  *                            atomic_cap = dattr.atomic_cap,
  *                            max_ee = dattr.max_ee,
  *                            max_rdd = dattr.max_rdd,             # <<<<<<<<<<<<<<
  *                            max_mw = dattr.max_mw,
  *                            max_raw_ipv6_qp = dattr.max_raw_ipv6_qp,
  */
-  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_dattr.max_rdd); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 418, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_dattr.max_rdd); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 414, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_rdd, __pyx_t_7) < 0) __PYX_ERR(0, 394, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_rdd, __pyx_t_7) < 0) __PYX_ERR(0, 390, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-  /* "rdma/ibverbs.pyx":419
+  /* "rdma/ibverbs.pyx":415
  *                            max_ee = dattr.max_ee,
  *                            max_rdd = dattr.max_rdd,
  *                            max_mw = dattr.max_mw,             # <<<<<<<<<<<<<<
  *                            max_raw_ipv6_qp = dattr.max_raw_ipv6_qp,
  *                            max_raw_ethy_qp = dattr.max_raw_ethy_qp,
  */
-  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_dattr.max_mw); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 419, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_dattr.max_mw); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 415, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_mw, __pyx_t_7) < 0) __PYX_ERR(0, 394, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_mw, __pyx_t_7) < 0) __PYX_ERR(0, 390, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-  /* "rdma/ibverbs.pyx":420
+  /* "rdma/ibverbs.pyx":416
  *                            max_rdd = dattr.max_rdd,
  *                            max_mw = dattr.max_mw,
  *                            max_raw_ipv6_qp = dattr.max_raw_ipv6_qp,             # <<<<<<<<<<<<<<
  *                            max_raw_ethy_qp = dattr.max_raw_ethy_qp,
  *                            max_mcast_grp = dattr.max_mcast_grp,
  */
-  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_dattr.max_raw_ipv6_qp); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 420, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_dattr.max_raw_ipv6_qp); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 416, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_raw_ipv6_qp, __pyx_t_7) < 0) __PYX_ERR(0, 394, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_raw_ipv6_qp, __pyx_t_7) < 0) __PYX_ERR(0, 390, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-  /* "rdma/ibverbs.pyx":421
+  /* "rdma/ibverbs.pyx":417
  *                            max_mw = dattr.max_mw,
  *                            max_raw_ipv6_qp = dattr.max_raw_ipv6_qp,
  *                            max_raw_ethy_qp = dattr.max_raw_ethy_qp,             # <<<<<<<<<<<<<<
  *                            max_mcast_grp = dattr.max_mcast_grp,
  *                            max_mcast_qp_attach = dattr.max_mcast_qp_attach,
  */
-  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_dattr.max_raw_ethy_qp); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 421, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_dattr.max_raw_ethy_qp); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 417, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_raw_ethy_qp, __pyx_t_7) < 0) __PYX_ERR(0, 394, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_raw_ethy_qp, __pyx_t_7) < 0) __PYX_ERR(0, 390, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-  /* "rdma/ibverbs.pyx":422
+  /* "rdma/ibverbs.pyx":418
  *                            max_raw_ipv6_qp = dattr.max_raw_ipv6_qp,
  *                            max_raw_ethy_qp = dattr.max_raw_ethy_qp,
  *                            max_mcast_grp = dattr.max_mcast_grp,             # <<<<<<<<<<<<<<
  *                            max_mcast_qp_attach = dattr.max_mcast_qp_attach,
  *                            max_total_mcast_qp_attach = dattr.max_total_mcast_qp_attach,
  */
-  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_dattr.max_mcast_grp); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 422, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_dattr.max_mcast_grp); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 418, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_mcast_grp, __pyx_t_7) < 0) __PYX_ERR(0, 394, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_mcast_grp, __pyx_t_7) < 0) __PYX_ERR(0, 390, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-  /* "rdma/ibverbs.pyx":423
+  /* "rdma/ibverbs.pyx":419
  *                            max_raw_ethy_qp = dattr.max_raw_ethy_qp,
  *                            max_mcast_grp = dattr.max_mcast_grp,
  *                            max_mcast_qp_attach = dattr.max_mcast_qp_attach,             # <<<<<<<<<<<<<<
  *                            max_total_mcast_qp_attach = dattr.max_total_mcast_qp_attach,
  *                            max_ah = dattr.max_ah,
  */
-  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_dattr.max_mcast_qp_attach); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 423, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_dattr.max_mcast_qp_attach); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 419, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_mcast_qp_attach, __pyx_t_7) < 0) __PYX_ERR(0, 394, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_mcast_qp_attach, __pyx_t_7) < 0) __PYX_ERR(0, 390, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-  /* "rdma/ibverbs.pyx":424
+  /* "rdma/ibverbs.pyx":420
  *                            max_mcast_grp = dattr.max_mcast_grp,
  *                            max_mcast_qp_attach = dattr.max_mcast_qp_attach,
  *                            max_total_mcast_qp_attach = dattr.max_total_mcast_qp_attach,             # <<<<<<<<<<<<<<
  *                            max_ah = dattr.max_ah,
  *                            max_fmr = dattr.max_fmr,
  */
-  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_dattr.max_total_mcast_qp_attach); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 424, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_dattr.max_total_mcast_qp_attach); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 420, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_total_mcast_qp_attach, __pyx_t_7) < 0) __PYX_ERR(0, 394, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_total_mcast_qp_attach, __pyx_t_7) < 0) __PYX_ERR(0, 390, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-  /* "rdma/ibverbs.pyx":425
+  /* "rdma/ibverbs.pyx":421
  *                            max_mcast_qp_attach = dattr.max_mcast_qp_attach,
  *                            max_total_mcast_qp_attach = dattr.max_total_mcast_qp_attach,
  *                            max_ah = dattr.max_ah,             # <<<<<<<<<<<<<<
  *                            max_fmr = dattr.max_fmr,
  *                            max_map_per_fmr = dattr.max_map_per_fmr,
  */
-  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_dattr.max_ah); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 425, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_dattr.max_ah); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 421, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_ah, __pyx_t_7) < 0) __PYX_ERR(0, 394, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_ah, __pyx_t_7) < 0) __PYX_ERR(0, 390, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-  /* "rdma/ibverbs.pyx":426
+  /* "rdma/ibverbs.pyx":422
  *                            max_total_mcast_qp_attach = dattr.max_total_mcast_qp_attach,
  *                            max_ah = dattr.max_ah,
  *                            max_fmr = dattr.max_fmr,             # <<<<<<<<<<<<<<
  *                            max_map_per_fmr = dattr.max_map_per_fmr,
  *                            max_srq = dattr.max_srq,
  */
-  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_dattr.max_fmr); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 426, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_dattr.max_fmr); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 422, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_fmr, __pyx_t_7) < 0) __PYX_ERR(0, 394, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_fmr, __pyx_t_7) < 0) __PYX_ERR(0, 390, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-  /* "rdma/ibverbs.pyx":427
+  /* "rdma/ibverbs.pyx":423
  *                            max_ah = dattr.max_ah,
  *                            max_fmr = dattr.max_fmr,
  *                            max_map_per_fmr = dattr.max_map_per_fmr,             # <<<<<<<<<<<<<<
  *                            max_srq = dattr.max_srq,
  *                            max_srq_wr = dattr.max_srq_wr,
  */
-  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_dattr.max_map_per_fmr); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 427, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_dattr.max_map_per_fmr); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 423, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_map_per_fmr, __pyx_t_7) < 0) __PYX_ERR(0, 394, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_map_per_fmr, __pyx_t_7) < 0) __PYX_ERR(0, 390, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-  /* "rdma/ibverbs.pyx":428
+  /* "rdma/ibverbs.pyx":424
  *                            max_fmr = dattr.max_fmr,
  *                            max_map_per_fmr = dattr.max_map_per_fmr,
  *                            max_srq = dattr.max_srq,             # <<<<<<<<<<<<<<
  *                            max_srq_wr = dattr.max_srq_wr,
  *                            max_srq_sge = dattr.max_srq_sge,
  */
-  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_dattr.max_srq); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 428, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_dattr.max_srq); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 424, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_srq, __pyx_t_7) < 0) __PYX_ERR(0, 394, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_srq, __pyx_t_7) < 0) __PYX_ERR(0, 390, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-  /* "rdma/ibverbs.pyx":429
+  /* "rdma/ibverbs.pyx":425
  *                            max_map_per_fmr = dattr.max_map_per_fmr,
  *                            max_srq = dattr.max_srq,
  *                            max_srq_wr = dattr.max_srq_wr,             # <<<<<<<<<<<<<<
  *                            max_srq_sge = dattr.max_srq_sge,
  *                            max_pkeys = dattr.max_pkeys,
  */
-  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_dattr.max_srq_wr); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 429, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_dattr.max_srq_wr); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 425, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_srq_wr, __pyx_t_7) < 0) __PYX_ERR(0, 394, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_srq_wr, __pyx_t_7) < 0) __PYX_ERR(0, 390, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-  /* "rdma/ibverbs.pyx":430
+  /* "rdma/ibverbs.pyx":426
  *                            max_srq = dattr.max_srq,
  *                            max_srq_wr = dattr.max_srq_wr,
  *                            max_srq_sge = dattr.max_srq_sge,             # <<<<<<<<<<<<<<
  *                            max_pkeys = dattr.max_pkeys,
  *                            local_ca_ack_delay = dattr.local_ca_ack_delay,
  */
-  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_dattr.max_srq_sge); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 430, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_dattr.max_srq_sge); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 426, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_srq_sge, __pyx_t_7) < 0) __PYX_ERR(0, 394, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_srq_sge, __pyx_t_7) < 0) __PYX_ERR(0, 390, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-  /* "rdma/ibverbs.pyx":431
+  /* "rdma/ibverbs.pyx":427
  *                            max_srq_wr = dattr.max_srq_wr,
  *                            max_srq_sge = dattr.max_srq_sge,
  *                            max_pkeys = dattr.max_pkeys,             # <<<<<<<<<<<<<<
  *                            local_ca_ack_delay = dattr.local_ca_ack_delay,
  *                            phys_port_cnt = dattr.phys_port_cnt);
  */
-  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_dattr.max_pkeys); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 431, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_dattr.max_pkeys); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 427, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_pkeys, __pyx_t_7) < 0) __PYX_ERR(0, 394, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_pkeys, __pyx_t_7) < 0) __PYX_ERR(0, 390, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-  /* "rdma/ibverbs.pyx":432
+  /* "rdma/ibverbs.pyx":428
  *                            max_srq_sge = dattr.max_srq_sge,
  *                            max_pkeys = dattr.max_pkeys,
  *                            local_ca_ack_delay = dattr.local_ca_ack_delay,             # <<<<<<<<<<<<<<
  *                            phys_port_cnt = dattr.phys_port_cnt);
  * 
  */
-  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_dattr.local_ca_ack_delay); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 432, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_dattr.local_ca_ack_delay); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 428, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_local_ca_ack_delay, __pyx_t_7) < 0) __PYX_ERR(0, 394, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_local_ca_ack_delay, __pyx_t_7) < 0) __PYX_ERR(0, 390, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-  /* "rdma/ibverbs.pyx":433
+  /* "rdma/ibverbs.pyx":429
  *                            max_pkeys = dattr.max_pkeys,
  *                            local_ca_ack_delay = dattr.local_ca_ack_delay,
  *                            phys_port_cnt = dattr.phys_port_cnt);             # <<<<<<<<<<<<<<
  * 
  *     def query_port(self,port_id=None):
  */
-  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_dattr.phys_port_cnt); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 433, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_dattr.phys_port_cnt); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 429, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_phys_port_cnt, __pyx_t_7) < 0) __PYX_ERR(0, 394, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_phys_port_cnt, __pyx_t_7) < 0) __PYX_ERR(0, 390, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-  /* "rdma/ibverbs.pyx":394
+  /* "rdma/ibverbs.pyx":390
  *             raise rdma.SysError(e,"ibv_query_device",
  *                                 "Failed to query port")
  *         return device_attr(fw_ver = dattr.fw_ver,             # <<<<<<<<<<<<<<
  *                            node_guid = IBA.GUID(struct.pack("=Q",dattr.node_guid),True),
  *                            sys_image_guid = IBA.GUID(struct.pack("=Q",dattr.sys_image_guid),True),
  */
-  __pyx_t_7 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_empty_tuple, __pyx_t_4); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 394, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_empty_tuple, __pyx_t_4); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 390, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -9911,7 +9855,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_10query_device(struct __pyx_ob
   __pyx_t_7 = 0;
   goto __pyx_L0;
 
-  /* "rdma/ibverbs.pyx":383
+  /* "rdma/ibverbs.pyx":379
  *             self._ctx = NULL
  * 
  *     def query_device(self):             # <<<<<<<<<<<<<<
@@ -9938,7 +9882,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_10query_device(struct __pyx_ob
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":435
+/* "rdma/ibverbs.pyx":431
  *                            phys_port_cnt = dattr.phys_port_cnt);
  * 
  *     def query_port(self,port_id=None):             # <<<<<<<<<<<<<<
@@ -9979,7 +9923,7 @@ static PyObject *__pyx_pw_4rdma_7ibverbs_7Context_13query_port(PyObject *__pyx_v
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "query_port") < 0)) __PYX_ERR(0, 435, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "query_port") < 0)) __PYX_ERR(0, 431, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -9993,7 +9937,7 @@ static PyObject *__pyx_pw_4rdma_7ibverbs_7Context_13query_port(PyObject *__pyx_v
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("query_port", 0, 0, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 435, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("query_port", 0, 0, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 431, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("rdma.ibverbs.Context.query_port", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -10027,7 +9971,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_12query_port(struct __pyx_obj_
   __Pyx_RefNannySetupContext("query_port", 0);
   __Pyx_INCREF(__pyx_v_port_id);
 
-  /* "rdma/ibverbs.pyx":443
+  /* "rdma/ibverbs.pyx":439
  *         cdef c.ibv_port_attr cattr
  *         cdef int e
  *         if port_id is None:             # <<<<<<<<<<<<<<
@@ -10038,19 +9982,19 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_12query_port(struct __pyx_obj_
   __pyx_t_2 = (__pyx_t_1 != 0);
   if (__pyx_t_2) {
 
-    /* "rdma/ibverbs.pyx":444
+    /* "rdma/ibverbs.pyx":440
  *         cdef int e
  *         if port_id is None:
  *             port_id = self.end_port.port_id;             # <<<<<<<<<<<<<<
  * 
  *         e = c.ibv_query_port(self._ctx, port_id, &cattr)
  */
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->end_port, __pyx_n_s_port_id); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 444, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->end_port, __pyx_n_s_port_id); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 440, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF_SET(__pyx_v_port_id, __pyx_t_3);
     __pyx_t_3 = 0;
 
-    /* "rdma/ibverbs.pyx":443
+    /* "rdma/ibverbs.pyx":439
  *         cdef c.ibv_port_attr cattr
  *         cdef int e
  *         if port_id is None:             # <<<<<<<<<<<<<<
@@ -10059,17 +10003,17 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_12query_port(struct __pyx_obj_
  */
   }
 
-  /* "rdma/ibverbs.pyx":446
+  /* "rdma/ibverbs.pyx":442
  *             port_id = self.end_port.port_id;
  * 
  *         e = c.ibv_query_port(self._ctx, port_id, &cattr)             # <<<<<<<<<<<<<<
  *         if e != 0:
  *             raise rdma.SysError(e,"ibv_query_port",
  */
-  __pyx_t_4 = __Pyx_PyInt_As_unsigned_int(__pyx_v_port_id); if (unlikely((__pyx_t_4 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 446, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyInt_As_unsigned_int(__pyx_v_port_id); if (unlikely((__pyx_t_4 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 442, __pyx_L1_error)
   __pyx_v_e = ibv_query_port(__pyx_v_self->_ctx, __pyx_t_4, (&__pyx_v_cattr));
 
-  /* "rdma/ibverbs.pyx":447
+  /* "rdma/ibverbs.pyx":443
  * 
  *         e = c.ibv_query_port(self._ctx, port_id, &cattr)
  *         if e != 0:             # <<<<<<<<<<<<<<
@@ -10079,29 +10023,29 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_12query_port(struct __pyx_obj_
   __pyx_t_2 = ((__pyx_v_e != 0) != 0);
   if (unlikely(__pyx_t_2)) {
 
-    /* "rdma/ibverbs.pyx":448
+    /* "rdma/ibverbs.pyx":444
  *         e = c.ibv_query_port(self._ctx, port_id, &cattr)
  *         if e != 0:
  *             raise rdma.SysError(e,"ibv_query_port",             # <<<<<<<<<<<<<<
  *                                 "Failed to query port %r"%(port_id))
  * 
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_rdma); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 448, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_rdma); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 444, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_SysError); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 448, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_SysError); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 444, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    __pyx_t_5 = __Pyx_PyInt_From_int(__pyx_v_e); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 448, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyInt_From_int(__pyx_v_e); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 444, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
 
-    /* "rdma/ibverbs.pyx":449
+    /* "rdma/ibverbs.pyx":445
  *         if e != 0:
  *             raise rdma.SysError(e,"ibv_query_port",
  *                                 "Failed to query port %r"%(port_id))             # <<<<<<<<<<<<<<
  * 
  *         # Update the end_port's subnet timeout..
  */
-    __pyx_t_7 = __Pyx_PyString_FormatSafe(__pyx_kp_s_Failed_to_query_port_r, __pyx_v_port_id); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 449, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyString_FormatSafe(__pyx_kp_s_Failed_to_query_port_r, __pyx_v_port_id); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 445, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __pyx_t_8 = NULL;
     __pyx_t_9 = 0;
@@ -10118,7 +10062,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_12query_port(struct __pyx_obj_
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_6)) {
       PyObject *__pyx_temp[4] = {__pyx_t_8, __pyx_t_5, __pyx_n_s_ibv_query_port, __pyx_t_7};
-      __pyx_t_3 = __Pyx_PyFunction_FastCall(__pyx_t_6, __pyx_temp+1-__pyx_t_9, 3+__pyx_t_9); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 448, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyFunction_FastCall(__pyx_t_6, __pyx_temp+1-__pyx_t_9, 3+__pyx_t_9); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 444, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_8); __pyx_t_8 = 0;
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
@@ -10128,7 +10072,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_12query_port(struct __pyx_obj_
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_6)) {
       PyObject *__pyx_temp[4] = {__pyx_t_8, __pyx_t_5, __pyx_n_s_ibv_query_port, __pyx_t_7};
-      __pyx_t_3 = __Pyx_PyCFunction_FastCall(__pyx_t_6, __pyx_temp+1-__pyx_t_9, 3+__pyx_t_9); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 448, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyCFunction_FastCall(__pyx_t_6, __pyx_temp+1-__pyx_t_9, 3+__pyx_t_9); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 444, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_8); __pyx_t_8 = 0;
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
@@ -10136,7 +10080,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_12query_port(struct __pyx_obj_
     } else
     #endif
     {
-      __pyx_t_10 = PyTuple_New(3+__pyx_t_9); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 448, __pyx_L1_error)
+      __pyx_t_10 = PyTuple_New(3+__pyx_t_9); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 444, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_10);
       if (__pyx_t_8) {
         __Pyx_GIVEREF(__pyx_t_8); PyTuple_SET_ITEM(__pyx_t_10, 0, __pyx_t_8); __pyx_t_8 = NULL;
@@ -10150,16 +10094,16 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_12query_port(struct __pyx_obj_
       PyTuple_SET_ITEM(__pyx_t_10, 2+__pyx_t_9, __pyx_t_7);
       __pyx_t_5 = 0;
       __pyx_t_7 = 0;
-      __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_6, __pyx_t_10, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 448, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_6, __pyx_t_10, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 444, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
     }
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __Pyx_Raise(__pyx_t_3, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __PYX_ERR(0, 448, __pyx_L1_error)
+    __PYX_ERR(0, 444, __pyx_L1_error)
 
-    /* "rdma/ibverbs.pyx":447
+    /* "rdma/ibverbs.pyx":443
  * 
  *         e = c.ibv_query_port(self._ctx, port_id, &cattr)
  *         if e != 0:             # <<<<<<<<<<<<<<
@@ -10168,25 +10112,25 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_12query_port(struct __pyx_obj_
  */
   }
 
-  /* "rdma/ibverbs.pyx":452
+  /* "rdma/ibverbs.pyx":448
  * 
  *         # Update the end_port's subnet timeout..
  *         self.node.end_ports[port_id]._cached_subnet_timeout = cattr.subnet_timeout;             # <<<<<<<<<<<<<<
  * 
  *         return port_attr(state = cattr.state,
  */
-  __pyx_t_3 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.subnet_timeout); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 452, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.subnet_timeout); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 448, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->node, __pyx_n_s_end_ports); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 452, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->node, __pyx_n_s_end_ports); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 448, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  __pyx_t_10 = __Pyx_PyObject_GetItem(__pyx_t_6, __pyx_v_port_id); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 452, __pyx_L1_error)
+  __pyx_t_10 = __Pyx_PyObject_GetItem(__pyx_t_6, __pyx_v_port_id); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 448, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-  if (__Pyx_PyObject_SetAttrStr(__pyx_t_10, __pyx_n_s_cached_subnet_timeout, __pyx_t_3) < 0) __PYX_ERR(0, 452, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_t_10, __pyx_n_s_cached_subnet_timeout, __pyx_t_3) < 0) __PYX_ERR(0, 448, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
 
-  /* "rdma/ibverbs.pyx":454
+  /* "rdma/ibverbs.pyx":450
  *         self.node.end_ports[port_id]._cached_subnet_timeout = cattr.subnet_timeout;
  * 
  *         return port_attr(state = cattr.state,             # <<<<<<<<<<<<<<
@@ -10194,239 +10138,239 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_12query_port(struct __pyx_obj_
  *                          active_mtu = cattr.active_mtu,
  */
   __Pyx_XDECREF(__pyx_r);
-  __Pyx_GetModuleGlobalName(__pyx_t_10, __pyx_n_s_port_attr); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 454, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_10, __pyx_n_s_port_attr); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 450, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
-  __pyx_t_3 = __Pyx_PyDict_NewPresized(19); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 454, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyDict_NewPresized(19); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 450, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_6 = __Pyx_PyInt_From_enum__ibv_port_state(__pyx_v_cattr.state); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 454, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyInt_From_enum__ibv_port_state(__pyx_v_cattr.state); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 450, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_state, __pyx_t_6) < 0) __PYX_ERR(0, 454, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_state, __pyx_t_6) < 0) __PYX_ERR(0, 450, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-  /* "rdma/ibverbs.pyx":455
+  /* "rdma/ibverbs.pyx":451
  * 
  *         return port_attr(state = cattr.state,
  *                          max_mtu = cattr.max_mtu,             # <<<<<<<<<<<<<<
  *                          active_mtu = cattr.active_mtu,
  *                          gid_tbl_len = cattr.gid_tbl_len,
  */
-  __pyx_t_6 = __Pyx_PyInt_From_enum__ibv_mtu(__pyx_v_cattr.max_mtu); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 455, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyInt_From_enum__ibv_mtu(__pyx_v_cattr.max_mtu); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 451, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_max_mtu, __pyx_t_6) < 0) __PYX_ERR(0, 454, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_max_mtu, __pyx_t_6) < 0) __PYX_ERR(0, 450, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-  /* "rdma/ibverbs.pyx":456
+  /* "rdma/ibverbs.pyx":452
  *         return port_attr(state = cattr.state,
  *                          max_mtu = cattr.max_mtu,
  *                          active_mtu = cattr.active_mtu,             # <<<<<<<<<<<<<<
  *                          gid_tbl_len = cattr.gid_tbl_len,
  *                          port_cap_flags = cattr.port_cap_flags,
  */
-  __pyx_t_6 = __Pyx_PyInt_From_enum__ibv_mtu(__pyx_v_cattr.active_mtu); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 456, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyInt_From_enum__ibv_mtu(__pyx_v_cattr.active_mtu); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 452, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_active_mtu, __pyx_t_6) < 0) __PYX_ERR(0, 454, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_active_mtu, __pyx_t_6) < 0) __PYX_ERR(0, 450, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-  /* "rdma/ibverbs.pyx":457
+  /* "rdma/ibverbs.pyx":453
  *                          max_mtu = cattr.max_mtu,
  *                          active_mtu = cattr.active_mtu,
  *                          gid_tbl_len = cattr.gid_tbl_len,             # <<<<<<<<<<<<<<
  *                          port_cap_flags = cattr.port_cap_flags,
  *                          max_msg_sz = cattr.max_msg_sz,
  */
-  __pyx_t_6 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.gid_tbl_len); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 457, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.gid_tbl_len); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 453, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_gid_tbl_len, __pyx_t_6) < 0) __PYX_ERR(0, 454, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_gid_tbl_len, __pyx_t_6) < 0) __PYX_ERR(0, 450, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-  /* "rdma/ibverbs.pyx":458
+  /* "rdma/ibverbs.pyx":454
  *                          active_mtu = cattr.active_mtu,
  *                          gid_tbl_len = cattr.gid_tbl_len,
  *                          port_cap_flags = cattr.port_cap_flags,             # <<<<<<<<<<<<<<
  *                          max_msg_sz = cattr.max_msg_sz,
  *                          bad_pkey_cntr = cattr.bad_pkey_cntr,
  */
-  __pyx_t_6 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.port_cap_flags); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 458, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.port_cap_flags); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 454, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_port_cap_flags, __pyx_t_6) < 0) __PYX_ERR(0, 454, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_port_cap_flags, __pyx_t_6) < 0) __PYX_ERR(0, 450, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-  /* "rdma/ibverbs.pyx":459
+  /* "rdma/ibverbs.pyx":455
  *                          gid_tbl_len = cattr.gid_tbl_len,
  *                          port_cap_flags = cattr.port_cap_flags,
  *                          max_msg_sz = cattr.max_msg_sz,             # <<<<<<<<<<<<<<
  *                          bad_pkey_cntr = cattr.bad_pkey_cntr,
  *                          qkey_viol_cntr = cattr.qkey_viol_cntr,
  */
-  __pyx_t_6 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.max_msg_sz); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 459, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.max_msg_sz); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 455, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_max_msg_sz, __pyx_t_6) < 0) __PYX_ERR(0, 454, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_max_msg_sz, __pyx_t_6) < 0) __PYX_ERR(0, 450, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-  /* "rdma/ibverbs.pyx":460
+  /* "rdma/ibverbs.pyx":456
  *                          port_cap_flags = cattr.port_cap_flags,
  *                          max_msg_sz = cattr.max_msg_sz,
  *                          bad_pkey_cntr = cattr.bad_pkey_cntr,             # <<<<<<<<<<<<<<
  *                          qkey_viol_cntr = cattr.qkey_viol_cntr,
  *                          pkey_tbl_len = cattr.pkey_tbl_len,
  */
-  __pyx_t_6 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.bad_pkey_cntr); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 460, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.bad_pkey_cntr); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 456, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_bad_pkey_cntr, __pyx_t_6) < 0) __PYX_ERR(0, 454, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_bad_pkey_cntr, __pyx_t_6) < 0) __PYX_ERR(0, 450, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-  /* "rdma/ibverbs.pyx":461
+  /* "rdma/ibverbs.pyx":457
  *                          max_msg_sz = cattr.max_msg_sz,
  *                          bad_pkey_cntr = cattr.bad_pkey_cntr,
  *                          qkey_viol_cntr = cattr.qkey_viol_cntr,             # <<<<<<<<<<<<<<
  *                          pkey_tbl_len = cattr.pkey_tbl_len,
  *                          lid = cattr.lid,
  */
-  __pyx_t_6 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.qkey_viol_cntr); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 461, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.qkey_viol_cntr); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 457, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_qkey_viol_cntr, __pyx_t_6) < 0) __PYX_ERR(0, 454, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_qkey_viol_cntr, __pyx_t_6) < 0) __PYX_ERR(0, 450, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-  /* "rdma/ibverbs.pyx":462
+  /* "rdma/ibverbs.pyx":458
  *                          bad_pkey_cntr = cattr.bad_pkey_cntr,
  *                          qkey_viol_cntr = cattr.qkey_viol_cntr,
  *                          pkey_tbl_len = cattr.pkey_tbl_len,             # <<<<<<<<<<<<<<
  *                          lid = cattr.lid,
  *                          sm_lid = cattr.sm_lid,
  */
-  __pyx_t_6 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.pkey_tbl_len); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 462, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.pkey_tbl_len); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 458, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_pkey_tbl_len, __pyx_t_6) < 0) __PYX_ERR(0, 454, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_pkey_tbl_len, __pyx_t_6) < 0) __PYX_ERR(0, 450, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-  /* "rdma/ibverbs.pyx":463
+  /* "rdma/ibverbs.pyx":459
  *                          qkey_viol_cntr = cattr.qkey_viol_cntr,
  *                          pkey_tbl_len = cattr.pkey_tbl_len,
  *                          lid = cattr.lid,             # <<<<<<<<<<<<<<
  *                          sm_lid = cattr.sm_lid,
  *                          lmc = cattr.lmc,
  */
-  __pyx_t_6 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.lid); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 463, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.lid); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 459, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_lid, __pyx_t_6) < 0) __PYX_ERR(0, 454, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_lid, __pyx_t_6) < 0) __PYX_ERR(0, 450, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-  /* "rdma/ibverbs.pyx":464
+  /* "rdma/ibverbs.pyx":460
  *                          pkey_tbl_len = cattr.pkey_tbl_len,
  *                          lid = cattr.lid,
  *                          sm_lid = cattr.sm_lid,             # <<<<<<<<<<<<<<
  *                          lmc = cattr.lmc,
  *                          max_vl_num = cattr.max_vl_num,
  */
-  __pyx_t_6 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.sm_lid); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 464, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.sm_lid); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 460, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_sm_lid, __pyx_t_6) < 0) __PYX_ERR(0, 454, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_sm_lid, __pyx_t_6) < 0) __PYX_ERR(0, 450, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-  /* "rdma/ibverbs.pyx":465
+  /* "rdma/ibverbs.pyx":461
  *                          lid = cattr.lid,
  *                          sm_lid = cattr.sm_lid,
  *                          lmc = cattr.lmc,             # <<<<<<<<<<<<<<
  *                          max_vl_num = cattr.max_vl_num,
  *                          sm_sl = cattr.sm_sl,
  */
-  __pyx_t_6 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.lmc); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 465, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.lmc); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 461, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_lmc, __pyx_t_6) < 0) __PYX_ERR(0, 454, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_lmc, __pyx_t_6) < 0) __PYX_ERR(0, 450, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-  /* "rdma/ibverbs.pyx":466
+  /* "rdma/ibverbs.pyx":462
  *                          sm_lid = cattr.sm_lid,
  *                          lmc = cattr.lmc,
  *                          max_vl_num = cattr.max_vl_num,             # <<<<<<<<<<<<<<
  *                          sm_sl = cattr.sm_sl,
  *                          subnet_timeout = cattr.subnet_timeout,
  */
-  __pyx_t_6 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.max_vl_num); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 466, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.max_vl_num); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 462, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_max_vl_num, __pyx_t_6) < 0) __PYX_ERR(0, 454, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_max_vl_num, __pyx_t_6) < 0) __PYX_ERR(0, 450, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-  /* "rdma/ibverbs.pyx":467
+  /* "rdma/ibverbs.pyx":463
  *                          lmc = cattr.lmc,
  *                          max_vl_num = cattr.max_vl_num,
  *                          sm_sl = cattr.sm_sl,             # <<<<<<<<<<<<<<
  *                          subnet_timeout = cattr.subnet_timeout,
  *                          init_type_reply = cattr.init_type_reply,
  */
-  __pyx_t_6 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.sm_sl); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 467, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.sm_sl); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 463, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_sm_sl, __pyx_t_6) < 0) __PYX_ERR(0, 454, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_sm_sl, __pyx_t_6) < 0) __PYX_ERR(0, 450, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-  /* "rdma/ibverbs.pyx":468
+  /* "rdma/ibverbs.pyx":464
  *                          max_vl_num = cattr.max_vl_num,
  *                          sm_sl = cattr.sm_sl,
  *                          subnet_timeout = cattr.subnet_timeout,             # <<<<<<<<<<<<<<
  *                          init_type_reply = cattr.init_type_reply,
  *                          active_width = cattr.active_width,
  */
-  __pyx_t_6 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.subnet_timeout); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 468, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.subnet_timeout); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 464, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_subnet_timeout, __pyx_t_6) < 0) __PYX_ERR(0, 454, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_subnet_timeout, __pyx_t_6) < 0) __PYX_ERR(0, 450, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-  /* "rdma/ibverbs.pyx":469
+  /* "rdma/ibverbs.pyx":465
  *                          sm_sl = cattr.sm_sl,
  *                          subnet_timeout = cattr.subnet_timeout,
  *                          init_type_reply = cattr.init_type_reply,             # <<<<<<<<<<<<<<
  *                          active_width = cattr.active_width,
  *                          active_speed = cattr.active_speed,
  */
-  __pyx_t_6 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.init_type_reply); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 469, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.init_type_reply); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 465, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_init_type_reply, __pyx_t_6) < 0) __PYX_ERR(0, 454, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_init_type_reply, __pyx_t_6) < 0) __PYX_ERR(0, 450, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-  /* "rdma/ibverbs.pyx":470
+  /* "rdma/ibverbs.pyx":466
  *                          subnet_timeout = cattr.subnet_timeout,
  *                          init_type_reply = cattr.init_type_reply,
  *                          active_width = cattr.active_width,             # <<<<<<<<<<<<<<
  *                          active_speed = cattr.active_speed,
  *                          phys_state = cattr.phys_state)
  */
-  __pyx_t_6 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.active_width); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 470, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.active_width); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 466, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_active_width, __pyx_t_6) < 0) __PYX_ERR(0, 454, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_active_width, __pyx_t_6) < 0) __PYX_ERR(0, 450, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-  /* "rdma/ibverbs.pyx":471
+  /* "rdma/ibverbs.pyx":467
  *                          init_type_reply = cattr.init_type_reply,
  *                          active_width = cattr.active_width,
  *                          active_speed = cattr.active_speed,             # <<<<<<<<<<<<<<
  *                          phys_state = cattr.phys_state)
  * 
  */
-  __pyx_t_6 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.active_speed); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 471, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.active_speed); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 467, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_active_speed, __pyx_t_6) < 0) __PYX_ERR(0, 454, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_active_speed, __pyx_t_6) < 0) __PYX_ERR(0, 450, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-  /* "rdma/ibverbs.pyx":472
+  /* "rdma/ibverbs.pyx":468
  *                          active_width = cattr.active_width,
  *                          active_speed = cattr.active_speed,
  *                          phys_state = cattr.phys_state)             # <<<<<<<<<<<<<<
  * 
  *     def from_qp_num(self,int num):
  */
-  __pyx_t_6 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.phys_state); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 472, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.phys_state); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 468, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_phys_state, __pyx_t_6) < 0) __PYX_ERR(0, 454, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_phys_state, __pyx_t_6) < 0) __PYX_ERR(0, 450, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-  /* "rdma/ibverbs.pyx":454
+  /* "rdma/ibverbs.pyx":450
  *         self.node.end_ports[port_id]._cached_subnet_timeout = cattr.subnet_timeout;
  * 
  *         return port_attr(state = cattr.state,             # <<<<<<<<<<<<<<
  *                          max_mtu = cattr.max_mtu,
  *                          active_mtu = cattr.active_mtu,
  */
-  __pyx_t_6 = __Pyx_PyObject_Call(__pyx_t_10, __pyx_empty_tuple, __pyx_t_3); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 454, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_Call(__pyx_t_10, __pyx_empty_tuple, __pyx_t_3); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 450, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -10434,7 +10378,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_12query_port(struct __pyx_obj_
   __pyx_t_6 = 0;
   goto __pyx_L0;
 
-  /* "rdma/ibverbs.pyx":435
+  /* "rdma/ibverbs.pyx":431
  *                            phys_port_cnt = dattr.phys_port_cnt);
  * 
  *     def query_port(self,port_id=None):             # <<<<<<<<<<<<<<
@@ -10459,7 +10403,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_12query_port(struct __pyx_obj_
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":474
+/* "rdma/ibverbs.pyx":470
  *                          phys_state = cattr.phys_state)
  * 
  *     def from_qp_num(self,int num):             # <<<<<<<<<<<<<<
@@ -10479,7 +10423,7 @@ static PyObject *__pyx_pw_4rdma_7ibverbs_7Context_15from_qp_num(PyObject *__pyx_
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("from_qp_num (wrapper)", 0);
   assert(__pyx_arg_num); {
-    __pyx_v_num = __Pyx_PyInt_As_int(__pyx_arg_num); if (unlikely((__pyx_v_num == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 474, __pyx_L3_error)
+    __pyx_v_num = __Pyx_PyInt_As_int(__pyx_arg_num); if (unlikely((__pyx_v_num == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 470, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -10514,7 +10458,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_14from_qp_num(struct __pyx_obj
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("from_qp_num", 0);
 
-  /* "rdma/ibverbs.pyx":478
+  /* "rdma/ibverbs.pyx":474
  *         if one was not found."""
  *         cdef PD pd
  *         for I in self._children_pd:             # <<<<<<<<<<<<<<
@@ -10525,26 +10469,26 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_14from_qp_num(struct __pyx_obj
     __pyx_t_1 = __pyx_v_self->_children_pd; __Pyx_INCREF(__pyx_t_1); __pyx_t_2 = 0;
     __pyx_t_3 = NULL;
   } else {
-    __pyx_t_2 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_v_self->_children_pd); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 478, __pyx_L1_error)
+    __pyx_t_2 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_v_self->_children_pd); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 474, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_3 = Py_TYPE(__pyx_t_1)->tp_iternext; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 478, __pyx_L1_error)
+    __pyx_t_3 = Py_TYPE(__pyx_t_1)->tp_iternext; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 474, __pyx_L1_error)
   }
   for (;;) {
     if (likely(!__pyx_t_3)) {
       if (likely(PyList_CheckExact(__pyx_t_1))) {
         if (__pyx_t_2 >= PyList_GET_SIZE(__pyx_t_1)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_4 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(0, 478, __pyx_L1_error)
+        __pyx_t_4 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(0, 474, __pyx_L1_error)
         #else
-        __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 478, __pyx_L1_error)
+        __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 474, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
         #endif
       } else {
         if (__pyx_t_2 >= PyTuple_GET_SIZE(__pyx_t_1)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_4 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(0, 478, __pyx_L1_error)
+        __pyx_t_4 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(0, 474, __pyx_L1_error)
         #else
-        __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 478, __pyx_L1_error)
+        __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 474, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
         #endif
       }
@@ -10554,7 +10498,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_14from_qp_num(struct __pyx_obj
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else __PYX_ERR(0, 478, __pyx_L1_error)
+          else __PYX_ERR(0, 474, __pyx_L1_error)
         }
         break;
       }
@@ -10563,29 +10507,29 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_14from_qp_num(struct __pyx_obj
     __Pyx_XDECREF_SET(__pyx_v_I, __pyx_t_4);
     __pyx_t_4 = 0;
 
-    /* "rdma/ibverbs.pyx":479
+    /* "rdma/ibverbs.pyx":475
  *         cdef PD pd
  *         for I in self._children_pd:
  *             pd = I             # <<<<<<<<<<<<<<
  *             ret = pd.from_qp_num(num)
  *             if ret is not None:
  */
-    if (!(likely(((__pyx_v_I) == Py_None) || likely(__Pyx_TypeTest(__pyx_v_I, __pyx_ptype_4rdma_7ibverbs_PD))))) __PYX_ERR(0, 479, __pyx_L1_error)
+    if (!(likely(((__pyx_v_I) == Py_None) || likely(__Pyx_TypeTest(__pyx_v_I, __pyx_ptype_4rdma_7ibverbs_PD))))) __PYX_ERR(0, 475, __pyx_L1_error)
     __pyx_t_4 = __pyx_v_I;
     __Pyx_INCREF(__pyx_t_4);
     __Pyx_XDECREF_SET(__pyx_v_pd, ((struct __pyx_obj_4rdma_7ibverbs_PD *)__pyx_t_4));
     __pyx_t_4 = 0;
 
-    /* "rdma/ibverbs.pyx":480
+    /* "rdma/ibverbs.pyx":476
  *         for I in self._children_pd:
  *             pd = I
  *             ret = pd.from_qp_num(num)             # <<<<<<<<<<<<<<
  *             if ret is not None:
  *                 return ret;
  */
-    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_pd), __pyx_n_s_from_qp_num); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 480, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_pd), __pyx_n_s_from_qp_num); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 476, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_6 = __Pyx_PyInt_From_int(__pyx_v_num); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 480, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyInt_From_int(__pyx_v_num); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 476, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __pyx_t_7 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_5))) {
@@ -10600,13 +10544,13 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_14from_qp_num(struct __pyx_obj
     __pyx_t_4 = (__pyx_t_7) ? __Pyx_PyObject_Call2Args(__pyx_t_5, __pyx_t_7, __pyx_t_6) : __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_6);
     __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-    if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 480, __pyx_L1_error)
+    if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 476, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_XDECREF_SET(__pyx_v_ret, __pyx_t_4);
     __pyx_t_4 = 0;
 
-    /* "rdma/ibverbs.pyx":481
+    /* "rdma/ibverbs.pyx":477
  *             pd = I
  *             ret = pd.from_qp_num(num)
  *             if ret is not None:             # <<<<<<<<<<<<<<
@@ -10617,7 +10561,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_14from_qp_num(struct __pyx_obj
     __pyx_t_9 = (__pyx_t_8 != 0);
     if (__pyx_t_9) {
 
-      /* "rdma/ibverbs.pyx":482
+      /* "rdma/ibverbs.pyx":478
  *             ret = pd.from_qp_num(num)
  *             if ret is not None:
  *                 return ret;             # <<<<<<<<<<<<<<
@@ -10630,7 +10574,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_14from_qp_num(struct __pyx_obj
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
       goto __pyx_L0;
 
-      /* "rdma/ibverbs.pyx":481
+      /* "rdma/ibverbs.pyx":477
  *             pd = I
  *             ret = pd.from_qp_num(num)
  *             if ret is not None:             # <<<<<<<<<<<<<<
@@ -10639,7 +10583,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_14from_qp_num(struct __pyx_obj
  */
     }
 
-    /* "rdma/ibverbs.pyx":478
+    /* "rdma/ibverbs.pyx":474
  *         if one was not found."""
  *         cdef PD pd
  *         for I in self._children_pd:             # <<<<<<<<<<<<<<
@@ -10649,7 +10593,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_14from_qp_num(struct __pyx_obj
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "rdma/ibverbs.pyx":483
+  /* "rdma/ibverbs.pyx":479
  *             if ret is not None:
  *                 return ret;
  *         return None;             # <<<<<<<<<<<<<<
@@ -10660,7 +10604,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_14from_qp_num(struct __pyx_obj
   __pyx_r = Py_None; __Pyx_INCREF(Py_None);
   goto __pyx_L0;
 
-  /* "rdma/ibverbs.pyx":474
+  /* "rdma/ibverbs.pyx":470
  *                          phys_state = cattr.phys_state)
  * 
  *     def from_qp_num(self,int num):             # <<<<<<<<<<<<<<
@@ -10686,7 +10630,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_14from_qp_num(struct __pyx_obj
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":485
+/* "rdma/ibverbs.pyx":481
  *         return None;
  * 
  *     def pd(self):             # <<<<<<<<<<<<<<
@@ -10720,26 +10664,26 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_16pd(struct __pyx_obj_4rdma_7i
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("pd", 0);
 
-  /* "rdma/ibverbs.pyx":487
+  /* "rdma/ibverbs.pyx":483
  *     def pd(self):
  *         """Create a new :class:`rdma.ibverbs.PD` for this context."""
  *         ret = PD(self);             # <<<<<<<<<<<<<<
  *         self._children_pd.add(ret);
  *         return ret;
  */
-  __pyx_t_1 = __Pyx_PyObject_CallOneArg(((PyObject *)__pyx_ptype_4rdma_7ibverbs_PD), ((PyObject *)__pyx_v_self)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 487, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_CallOneArg(((PyObject *)__pyx_ptype_4rdma_7ibverbs_PD), ((PyObject *)__pyx_v_self)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 483, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_v_ret = ((struct __pyx_obj_4rdma_7ibverbs_PD *)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "rdma/ibverbs.pyx":488
+  /* "rdma/ibverbs.pyx":484
  *         """Create a new :class:`rdma.ibverbs.PD` for this context."""
  *         ret = PD(self);
  *         self._children_pd.add(ret);             # <<<<<<<<<<<<<<
  *         return ret;
  * 
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->_children_pd, __pyx_n_s_add); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 488, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->_children_pd, __pyx_n_s_add); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 484, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_t_3 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
@@ -10753,12 +10697,12 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_16pd(struct __pyx_obj_4rdma_7i
   }
   __pyx_t_1 = (__pyx_t_3) ? __Pyx_PyObject_Call2Args(__pyx_t_2, __pyx_t_3, ((PyObject *)__pyx_v_ret)) : __Pyx_PyObject_CallOneArg(__pyx_t_2, ((PyObject *)__pyx_v_ret));
   __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 488, __pyx_L1_error)
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 484, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "rdma/ibverbs.pyx":489
+  /* "rdma/ibverbs.pyx":485
  *         ret = PD(self);
  *         self._children_pd.add(ret);
  *         return ret;             # <<<<<<<<<<<<<<
@@ -10770,7 +10714,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_16pd(struct __pyx_obj_4rdma_7i
   __pyx_r = ((PyObject *)__pyx_v_ret);
   goto __pyx_L0;
 
-  /* "rdma/ibverbs.pyx":485
+  /* "rdma/ibverbs.pyx":481
  *         return None;
  * 
  *     def pd(self):             # <<<<<<<<<<<<<<
@@ -10792,7 +10736,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_16pd(struct __pyx_obj_4rdma_7i
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":491
+/* "rdma/ibverbs.pyx":487
  *         return ret;
  * 
  *     def cq(self,int nelems=100,cc=None,int vec=0):             # <<<<<<<<<<<<<<
@@ -10851,7 +10795,7 @@ static PyObject *__pyx_pw_4rdma_7ibverbs_7Context_19cq(PyObject *__pyx_v_self, P
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "cq") < 0)) __PYX_ERR(0, 491, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "cq") < 0)) __PYX_ERR(0, 487, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -10866,20 +10810,20 @@ static PyObject *__pyx_pw_4rdma_7ibverbs_7Context_19cq(PyObject *__pyx_v_self, P
       }
     }
     if (values[0]) {
-      __pyx_v_nelems = __Pyx_PyInt_As_int(values[0]); if (unlikely((__pyx_v_nelems == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 491, __pyx_L3_error)
+      __pyx_v_nelems = __Pyx_PyInt_As_int(values[0]); if (unlikely((__pyx_v_nelems == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 487, __pyx_L3_error)
     } else {
       __pyx_v_nelems = ((int)0x64);
     }
     __pyx_v_cc = values[1];
     if (values[2]) {
-      __pyx_v_vec = __Pyx_PyInt_As_int(values[2]); if (unlikely((__pyx_v_vec == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 491, __pyx_L3_error)
+      __pyx_v_vec = __Pyx_PyInt_As_int(values[2]); if (unlikely((__pyx_v_vec == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 487, __pyx_L3_error)
     } else {
       __pyx_v_vec = ((int)0);
     }
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("cq", 0, 0, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 491, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("cq", 0, 0, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 487, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("rdma.ibverbs.Context.cq", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -10904,18 +10848,18 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_18cq(struct __pyx_obj_4rdma_7i
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("cq", 0);
 
-  /* "rdma/ibverbs.pyx":493
+  /* "rdma/ibverbs.pyx":489
  *     def cq(self,int nelems=100,cc=None,int vec=0):
  *         """Create a new :class:`rdma.ibverbs.CQ` for this context."""
  *         ret = CQ(self,nelems,cc,vec);             # <<<<<<<<<<<<<<
  *         self._children_cq.add(ret);
  *         return ret;
  */
-  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_nelems); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 493, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_nelems); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 489, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_vec); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 493, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_vec); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 489, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = PyTuple_New(4); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 493, __pyx_L1_error)
+  __pyx_t_3 = PyTuple_New(4); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 489, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_INCREF(((PyObject *)__pyx_v_self));
   __Pyx_GIVEREF(((PyObject *)__pyx_v_self));
@@ -10929,20 +10873,20 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_18cq(struct __pyx_obj_4rdma_7i
   PyTuple_SET_ITEM(__pyx_t_3, 3, __pyx_t_2);
   __pyx_t_1 = 0;
   __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyObject_Call(((PyObject *)__pyx_ptype_4rdma_7ibverbs_CQ), __pyx_t_3, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 493, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_Call(((PyObject *)__pyx_ptype_4rdma_7ibverbs_CQ), __pyx_t_3, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 489, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_v_ret = ((struct __pyx_obj_4rdma_7ibverbs_CQ *)__pyx_t_2);
   __pyx_t_2 = 0;
 
-  /* "rdma/ibverbs.pyx":494
+  /* "rdma/ibverbs.pyx":490
  *         """Create a new :class:`rdma.ibverbs.CQ` for this context."""
  *         ret = CQ(self,nelems,cc,vec);
  *         self._children_cq.add(ret);             # <<<<<<<<<<<<<<
  *         return ret;
  * 
  */
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->_children_cq, __pyx_n_s_add); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 494, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->_children_cq, __pyx_n_s_add); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 490, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_t_1 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_3))) {
@@ -10956,12 +10900,12 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_18cq(struct __pyx_obj_4rdma_7i
   }
   __pyx_t_2 = (__pyx_t_1) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_1, ((PyObject *)__pyx_v_ret)) : __Pyx_PyObject_CallOneArg(__pyx_t_3, ((PyObject *)__pyx_v_ret));
   __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
-  if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 494, __pyx_L1_error)
+  if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 490, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "rdma/ibverbs.pyx":495
+  /* "rdma/ibverbs.pyx":491
  *         ret = CQ(self,nelems,cc,vec);
  *         self._children_cq.add(ret);
  *         return ret;             # <<<<<<<<<<<<<<
@@ -10973,7 +10917,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_18cq(struct __pyx_obj_4rdma_7i
   __pyx_r = ((PyObject *)__pyx_v_ret);
   goto __pyx_L0;
 
-  /* "rdma/ibverbs.pyx":491
+  /* "rdma/ibverbs.pyx":487
  *         return ret;
  * 
  *     def cq(self,int nelems=100,cc=None,int vec=0):             # <<<<<<<<<<<<<<
@@ -10995,7 +10939,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_18cq(struct __pyx_obj_4rdma_7i
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":497
+/* "rdma/ibverbs.pyx":493
  *         return ret;
  * 
  *     def comp_channel(self):             # <<<<<<<<<<<<<<
@@ -11029,26 +10973,26 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_20comp_channel(struct __pyx_ob
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("comp_channel", 0);
 
-  /* "rdma/ibverbs.pyx":499
+  /* "rdma/ibverbs.pyx":495
  *     def comp_channel(self):
  *         """Create a new :class:`rdma.ibverbs.CompChannel` for this context."""
  *         ret = CompChannel(self);             # <<<<<<<<<<<<<<
  *         self._children_cc.add(ret);
  *         return ret;
  */
-  __pyx_t_1 = __Pyx_PyObject_CallOneArg(((PyObject *)__pyx_ptype_4rdma_7ibverbs_CompChannel), ((PyObject *)__pyx_v_self)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 499, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_CallOneArg(((PyObject *)__pyx_ptype_4rdma_7ibverbs_CompChannel), ((PyObject *)__pyx_v_self)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 495, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_v_ret = ((struct __pyx_obj_4rdma_7ibverbs_CompChannel *)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "rdma/ibverbs.pyx":500
+  /* "rdma/ibverbs.pyx":496
  *         """Create a new :class:`rdma.ibverbs.CompChannel` for this context."""
  *         ret = CompChannel(self);
  *         self._children_cc.add(ret);             # <<<<<<<<<<<<<<
  *         return ret;
  * 
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->_children_cc, __pyx_n_s_add); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 500, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->_children_cc, __pyx_n_s_add); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 496, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_t_3 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
@@ -11062,12 +11006,12 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_20comp_channel(struct __pyx_ob
   }
   __pyx_t_1 = (__pyx_t_3) ? __Pyx_PyObject_Call2Args(__pyx_t_2, __pyx_t_3, ((PyObject *)__pyx_v_ret)) : __Pyx_PyObject_CallOneArg(__pyx_t_2, ((PyObject *)__pyx_v_ret));
   __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 500, __pyx_L1_error)
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 496, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "rdma/ibverbs.pyx":501
+  /* "rdma/ibverbs.pyx":497
  *         ret = CompChannel(self);
  *         self._children_cc.add(ret);
  *         return ret;             # <<<<<<<<<<<<<<
@@ -11079,7 +11023,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_20comp_channel(struct __pyx_ob
   __pyx_r = ((PyObject *)__pyx_v_ret);
   goto __pyx_L0;
 
-  /* "rdma/ibverbs.pyx":497
+  /* "rdma/ibverbs.pyx":493
  *         return ret;
  * 
  *     def comp_channel(self):             # <<<<<<<<<<<<<<
@@ -11101,7 +11045,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_20comp_channel(struct __pyx_ob
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":503
+/* "rdma/ibverbs.pyx":499
  *         return ret;
  * 
  *     def get_async_event(self):             # <<<<<<<<<<<<<<
@@ -11142,7 +11086,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_22get_async_event(struct __pyx
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("get_async_event", 0);
 
-  /* "rdma/ibverbs.pyx":512
+  /* "rdma/ibverbs.pyx":508
  *         cdef int rc
  * 
  *         rc = c.ibv_get_async_event(self._ctx,&event)             # <<<<<<<<<<<<<<
@@ -11151,7 +11095,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_22get_async_event(struct __pyx
  */
   __pyx_v_rc = ibv_get_async_event(__pyx_v_self->_ctx, (&__pyx_v_event));
 
-  /* "rdma/ibverbs.pyx":513
+  /* "rdma/ibverbs.pyx":509
  * 
  *         rc = c.ibv_get_async_event(self._ctx,&event)
  *         if rc != 0:             # <<<<<<<<<<<<<<
@@ -11161,28 +11105,28 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_22get_async_event(struct __pyx
   __pyx_t_1 = ((__pyx_v_rc != 0) != 0);
   if (__pyx_t_1) {
 
-    /* "rdma/ibverbs.pyx":514
+    /* "rdma/ibverbs.pyx":510
  *         rc = c.ibv_get_async_event(self._ctx,&event)
  *         if rc != 0:
  *             if rc == mod_errno.EAGAIN:             # <<<<<<<<<<<<<<
  *                 return None;
  *             raise rdma.SysError(rc,"ibv_get_async_event",
  */
-    __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_rc); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 514, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_rc); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 510, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_mod_errno); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 514, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_mod_errno); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 510, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_EAGAIN); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 514, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_EAGAIN); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 510, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __pyx_t_3 = PyObject_RichCompare(__pyx_t_2, __pyx_t_4, Py_EQ); __Pyx_XGOTREF(__pyx_t_3); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 514, __pyx_L1_error)
+    __pyx_t_3 = PyObject_RichCompare(__pyx_t_2, __pyx_t_4, Py_EQ); __Pyx_XGOTREF(__pyx_t_3); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 510, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_t_3); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 514, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_t_3); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 510, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     if (__pyx_t_1) {
 
-      /* "rdma/ibverbs.pyx":515
+      /* "rdma/ibverbs.pyx":511
  *         if rc != 0:
  *             if rc == mod_errno.EAGAIN:
  *                 return None;             # <<<<<<<<<<<<<<
@@ -11193,7 +11137,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_22get_async_event(struct __pyx
       __pyx_r = Py_None; __Pyx_INCREF(Py_None);
       goto __pyx_L0;
 
-      /* "rdma/ibverbs.pyx":514
+      /* "rdma/ibverbs.pyx":510
  *         rc = c.ibv_get_async_event(self._ctx,&event)
  *         if rc != 0:
  *             if rc == mod_errno.EAGAIN:             # <<<<<<<<<<<<<<
@@ -11202,19 +11146,19 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_22get_async_event(struct __pyx
  */
     }
 
-    /* "rdma/ibverbs.pyx":516
+    /* "rdma/ibverbs.pyx":512
  *             if rc == mod_errno.EAGAIN:
  *                 return None;
  *             raise rdma.SysError(rc,"ibv_get_async_event",             # <<<<<<<<<<<<<<
  *                                 "Failed to get an asynchronous event");
  * 
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_rdma); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 516, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_rdma); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 512, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_SysError); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 516, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_SysError); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 512, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_rc); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 516, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_rc); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 512, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __pyx_t_5 = NULL;
     __pyx_t_6 = 0;
@@ -11231,7 +11175,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_22get_async_event(struct __pyx
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_2)) {
       PyObject *__pyx_temp[4] = {__pyx_t_5, __pyx_t_4, __pyx_n_s_ibv_get_async_event, __pyx_kp_s_Failed_to_get_an_asynchronous_ev};
-      __pyx_t_3 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_6, 3+__pyx_t_6); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 516, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_6, 3+__pyx_t_6); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 512, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -11240,14 +11184,14 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_22get_async_event(struct __pyx
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_2)) {
       PyObject *__pyx_temp[4] = {__pyx_t_5, __pyx_t_4, __pyx_n_s_ibv_get_async_event, __pyx_kp_s_Failed_to_get_an_asynchronous_ev};
-      __pyx_t_3 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_6, 3+__pyx_t_6); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 516, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_6, 3+__pyx_t_6); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 512, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     } else
     #endif
     {
-      __pyx_t_7 = PyTuple_New(3+__pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 516, __pyx_L1_error)
+      __pyx_t_7 = PyTuple_New(3+__pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 512, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_7);
       if (__pyx_t_5) {
         __Pyx_GIVEREF(__pyx_t_5); PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_t_5); __pyx_t_5 = NULL;
@@ -11261,16 +11205,16 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_22get_async_event(struct __pyx
       __Pyx_GIVEREF(__pyx_kp_s_Failed_to_get_an_asynchronous_ev);
       PyTuple_SET_ITEM(__pyx_t_7, 2+__pyx_t_6, __pyx_kp_s_Failed_to_get_an_asynchronous_ev);
       __pyx_t_4 = 0;
-      __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_7, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 516, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_7, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 512, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
     }
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_Raise(__pyx_t_3, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __PYX_ERR(0, 516, __pyx_L1_error)
+    __PYX_ERR(0, 512, __pyx_L1_error)
 
-    /* "rdma/ibverbs.pyx":513
+    /* "rdma/ibverbs.pyx":509
  * 
  *         rc = c.ibv_get_async_event(self._ctx,&event)
  *         if rc != 0:             # <<<<<<<<<<<<<<
@@ -11279,7 +11223,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_22get_async_event(struct __pyx
  */
   }
 
-  /* "rdma/ibverbs.pyx":519
+  /* "rdma/ibverbs.pyx":515
  *                                 "Failed to get an asynchronous event");
  * 
  *         if event.event_type == c.IBV_EVENT_DEVICE_FATAL:             # <<<<<<<<<<<<<<
@@ -11289,16 +11233,16 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_22get_async_event(struct __pyx
   switch (__pyx_v_event.event_type) {
     case IBV_EVENT_DEVICE_FATAL:
 
-    /* "rdma/ibverbs.pyx":520
+    /* "rdma/ibverbs.pyx":516
  * 
  *         if event.event_type == c.IBV_EVENT_DEVICE_FATAL:
  *             ret = async_event(event.event_type,self.node);             # <<<<<<<<<<<<<<
  *         elif (event.event_type == c.IBV_EVENT_PORT_ACTIVE or
  *               event.event_type == c.IBV_EVENT_PORT_ERR or
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_async_event); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 520, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_async_event); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 516, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_event.event_type); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 520, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_event.event_type); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 516, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __pyx_t_4 = NULL;
     __pyx_t_6 = 0;
@@ -11315,7 +11259,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_22get_async_event(struct __pyx
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_2)) {
       PyObject *__pyx_temp[3] = {__pyx_t_4, __pyx_t_7, __pyx_v_self->node};
-      __pyx_t_3 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 520, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 516, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
@@ -11324,14 +11268,14 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_22get_async_event(struct __pyx
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_2)) {
       PyObject *__pyx_temp[3] = {__pyx_t_4, __pyx_t_7, __pyx_v_self->node};
-      __pyx_t_3 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 520, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 516, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
     } else
     #endif
     {
-      __pyx_t_5 = PyTuple_New(2+__pyx_t_6); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 520, __pyx_L1_error)
+      __pyx_t_5 = PyTuple_New(2+__pyx_t_6); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 516, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
       if (__pyx_t_4) {
         __Pyx_GIVEREF(__pyx_t_4); PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_4); __pyx_t_4 = NULL;
@@ -11342,7 +11286,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_22get_async_event(struct __pyx
       __Pyx_GIVEREF(__pyx_v_self->node);
       PyTuple_SET_ITEM(__pyx_t_5, 1+__pyx_t_6, __pyx_v_self->node);
       __pyx_t_7 = 0;
-      __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_5, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 520, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_5, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 516, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     }
@@ -11350,7 +11294,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_22get_async_event(struct __pyx
     __pyx_v_ret = __pyx_t_3;
     __pyx_t_3 = 0;
 
-    /* "rdma/ibverbs.pyx":519
+    /* "rdma/ibverbs.pyx":515
  *                                 "Failed to get an asynchronous event");
  * 
  *         if event.event_type == c.IBV_EVENT_DEVICE_FATAL:             # <<<<<<<<<<<<<<
@@ -11360,7 +11304,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_22get_async_event(struct __pyx
     break;
     case IBV_EVENT_PORT_ACTIVE:
 
-    /* "rdma/ibverbs.pyx":521
+    /* "rdma/ibverbs.pyx":517
  *         if event.event_type == c.IBV_EVENT_DEVICE_FATAL:
  *             ret = async_event(event.event_type,self.node);
  *         elif (event.event_type == c.IBV_EVENT_PORT_ACTIVE or             # <<<<<<<<<<<<<<
@@ -11369,7 +11313,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_22get_async_event(struct __pyx
  */
     case IBV_EVENT_PORT_ERR:
 
-    /* "rdma/ibverbs.pyx":522
+    /* "rdma/ibverbs.pyx":518
  *             ret = async_event(event.event_type,self.node);
  *         elif (event.event_type == c.IBV_EVENT_PORT_ACTIVE or
  *               event.event_type == c.IBV_EVENT_PORT_ERR or             # <<<<<<<<<<<<<<
@@ -11378,7 +11322,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_22get_async_event(struct __pyx
  */
     case IBV_EVENT_LID_CHANGE:
 
-    /* "rdma/ibverbs.pyx":523
+    /* "rdma/ibverbs.pyx":519
  *         elif (event.event_type == c.IBV_EVENT_PORT_ACTIVE or
  *               event.event_type == c.IBV_EVENT_PORT_ERR or
  *               event.event_type == c.IBV_EVENT_LID_CHANGE or             # <<<<<<<<<<<<<<
@@ -11387,7 +11331,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_22get_async_event(struct __pyx
  */
     case IBV_EVENT_PKEY_CHANGE:
 
-    /* "rdma/ibverbs.pyx":524
+    /* "rdma/ibverbs.pyx":520
  *               event.event_type == c.IBV_EVENT_PORT_ERR or
  *               event.event_type == c.IBV_EVENT_LID_CHANGE or
  *               event.event_type == c.IBV_EVENT_PKEY_CHANGE or             # <<<<<<<<<<<<<<
@@ -11396,7 +11340,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_22get_async_event(struct __pyx
  */
     case IBV_EVENT_SM_CHANGE:
 
-    /* "rdma/ibverbs.pyx":525
+    /* "rdma/ibverbs.pyx":521
  *               event.event_type == c.IBV_EVENT_LID_CHANGE or
  *               event.event_type == c.IBV_EVENT_PKEY_CHANGE or
  *               event.event_type == c.IBV_EVENT_SM_CHANGE or             # <<<<<<<<<<<<<<
@@ -11405,28 +11349,28 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_22get_async_event(struct __pyx
  */
     case IBV_EVENT_CLIENT_REREGISTER:
 
-    /* "rdma/ibverbs.pyx":527
+    /* "rdma/ibverbs.pyx":523
  *               event.event_type == c.IBV_EVENT_SM_CHANGE or
  *               event.event_type == c.IBV_EVENT_CLIENT_REREGISTER):
  *             ret = async_event(event.event_type,             # <<<<<<<<<<<<<<
  *                               self.node.end_ports[event.element.port_num]);
  *         elif (event.event_type == c.IBV_EVENT_SRQ_ERR or
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_async_event); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 527, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_async_event); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 523, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_5 = __Pyx_PyInt_From_unsigned_int(__pyx_v_event.event_type); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 527, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyInt_From_unsigned_int(__pyx_v_event.event_type); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 523, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
 
-    /* "rdma/ibverbs.pyx":528
+    /* "rdma/ibverbs.pyx":524
  *               event.event_type == c.IBV_EVENT_CLIENT_REREGISTER):
  *             ret = async_event(event.event_type,
  *                               self.node.end_ports[event.element.port_num]);             # <<<<<<<<<<<<<<
  *         elif (event.event_type == c.IBV_EVENT_SRQ_ERR or
  *               event.event_type == c.IBV_EVENT_SRQ_LIMIT_REACHED):
  */
-    __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->node, __pyx_n_s_end_ports); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 528, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->node, __pyx_n_s_end_ports); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 524, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
-    __pyx_t_4 = __Pyx_GetItemInt(__pyx_t_7, __pyx_v_event.element.port_num, unsigned int, 0, __Pyx_PyInt_From_unsigned_int, 0, 0, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 528, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_GetItemInt(__pyx_t_7, __pyx_v_event.element.port_num, unsigned int, 0, __Pyx_PyInt_From_unsigned_int, 0, 0, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 524, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
     __pyx_t_7 = NULL;
@@ -11444,7 +11388,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_22get_async_event(struct __pyx
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_2)) {
       PyObject *__pyx_temp[3] = {__pyx_t_7, __pyx_t_5, __pyx_t_4};
-      __pyx_t_3 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 527, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 523, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
@@ -11454,7 +11398,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_22get_async_event(struct __pyx
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_2)) {
       PyObject *__pyx_temp[3] = {__pyx_t_7, __pyx_t_5, __pyx_t_4};
-      __pyx_t_3 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 527, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 523, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
@@ -11462,7 +11406,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_22get_async_event(struct __pyx
     } else
     #endif
     {
-      __pyx_t_8 = PyTuple_New(2+__pyx_t_6); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 527, __pyx_L1_error)
+      __pyx_t_8 = PyTuple_New(2+__pyx_t_6); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 523, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_8);
       if (__pyx_t_7) {
         __Pyx_GIVEREF(__pyx_t_7); PyTuple_SET_ITEM(__pyx_t_8, 0, __pyx_t_7); __pyx_t_7 = NULL;
@@ -11473,7 +11417,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_22get_async_event(struct __pyx
       PyTuple_SET_ITEM(__pyx_t_8, 1+__pyx_t_6, __pyx_t_4);
       __pyx_t_5 = 0;
       __pyx_t_4 = 0;
-      __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_8, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 527, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_8, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 523, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
     }
@@ -11481,7 +11425,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_22get_async_event(struct __pyx
     __pyx_v_ret = __pyx_t_3;
     __pyx_t_3 = 0;
 
-    /* "rdma/ibverbs.pyx":521
+    /* "rdma/ibverbs.pyx":517
  *         if event.event_type == c.IBV_EVENT_DEVICE_FATAL:
  *             ret = async_event(event.event_type,self.node);
  *         elif (event.event_type == c.IBV_EVENT_PORT_ACTIVE or             # <<<<<<<<<<<<<<
@@ -11491,7 +11435,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_22get_async_event(struct __pyx
     break;
     case IBV_EVENT_SRQ_ERR:
 
-    /* "rdma/ibverbs.pyx":529
+    /* "rdma/ibverbs.pyx":525
  *             ret = async_event(event.event_type,
  *                               self.node.end_ports[event.element.port_num]);
  *         elif (event.event_type == c.IBV_EVENT_SRQ_ERR or             # <<<<<<<<<<<<<<
@@ -11500,26 +11444,26 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_22get_async_event(struct __pyx
  */
     case IBV_EVENT_SRQ_LIMIT_REACHED:
 
-    /* "rdma/ibverbs.pyx":531
+    /* "rdma/ibverbs.pyx":527
  *         elif (event.event_type == c.IBV_EVENT_SRQ_ERR or
  *               event.event_type == c.IBV_EVENT_SRQ_LIMIT_REACHED):
  *             ret = async_event(event.event_type,             # <<<<<<<<<<<<<<
  *                               get_srq(event.element.srq));
  *         elif event.event_type == c.IBV_EVENT_CQ_ERR:
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_async_event); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 531, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_async_event); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 527, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_8 = __Pyx_PyInt_From_unsigned_int(__pyx_v_event.event_type); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 531, __pyx_L1_error)
+    __pyx_t_8 = __Pyx_PyInt_From_unsigned_int(__pyx_v_event.event_type); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 527, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
 
-    /* "rdma/ibverbs.pyx":532
+    /* "rdma/ibverbs.pyx":528
  *               event.event_type == c.IBV_EVENT_SRQ_LIMIT_REACHED):
  *             ret = async_event(event.event_type,
  *                               get_srq(event.element.srq));             # <<<<<<<<<<<<<<
  *         elif event.event_type == c.IBV_EVENT_CQ_ERR:
  *              ret = async_event(event.event_type,
  */
-    __pyx_t_4 = ((PyObject *)__pyx_f_4rdma_7ibverbs_get_srq(__pyx_v_event.element.srq)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 532, __pyx_L1_error)
+    __pyx_t_4 = ((PyObject *)__pyx_f_4rdma_7ibverbs_get_srq(__pyx_v_event.element.srq)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 528, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __pyx_t_5 = NULL;
     __pyx_t_6 = 0;
@@ -11536,7 +11480,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_22get_async_event(struct __pyx
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_2)) {
       PyObject *__pyx_temp[3] = {__pyx_t_5, __pyx_t_8, __pyx_t_4};
-      __pyx_t_3 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 531, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 527, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
@@ -11546,7 +11490,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_22get_async_event(struct __pyx
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_2)) {
       PyObject *__pyx_temp[3] = {__pyx_t_5, __pyx_t_8, __pyx_t_4};
-      __pyx_t_3 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 531, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 527, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
@@ -11554,7 +11498,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_22get_async_event(struct __pyx
     } else
     #endif
     {
-      __pyx_t_7 = PyTuple_New(2+__pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 531, __pyx_L1_error)
+      __pyx_t_7 = PyTuple_New(2+__pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 527, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_7);
       if (__pyx_t_5) {
         __Pyx_GIVEREF(__pyx_t_5); PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_t_5); __pyx_t_5 = NULL;
@@ -11565,7 +11509,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_22get_async_event(struct __pyx
       PyTuple_SET_ITEM(__pyx_t_7, 1+__pyx_t_6, __pyx_t_4);
       __pyx_t_8 = 0;
       __pyx_t_4 = 0;
-      __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_7, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 531, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_7, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 527, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
     }
@@ -11573,7 +11517,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_22get_async_event(struct __pyx
     __pyx_v_ret = __pyx_t_3;
     __pyx_t_3 = 0;
 
-    /* "rdma/ibverbs.pyx":529
+    /* "rdma/ibverbs.pyx":525
  *             ret = async_event(event.event_type,
  *                               self.node.end_ports[event.element.port_num]);
  *         elif (event.event_type == c.IBV_EVENT_SRQ_ERR or             # <<<<<<<<<<<<<<
@@ -11583,26 +11527,26 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_22get_async_event(struct __pyx
     break;
     case IBV_EVENT_CQ_ERR:
 
-    /* "rdma/ibverbs.pyx":534
+    /* "rdma/ibverbs.pyx":530
  *                               get_srq(event.element.srq));
  *         elif event.event_type == c.IBV_EVENT_CQ_ERR:
  *              ret = async_event(event.event_type,             # <<<<<<<<<<<<<<
  *                                get_cq(event.element.cq));
  *         elif (event.event_type == c.IBV_EVENT_QP_FATAL or
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_async_event); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 534, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_async_event); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 530, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_event.event_type); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 534, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_event.event_type); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 530, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
 
-    /* "rdma/ibverbs.pyx":535
+    /* "rdma/ibverbs.pyx":531
  *         elif event.event_type == c.IBV_EVENT_CQ_ERR:
  *              ret = async_event(event.event_type,
  *                                get_cq(event.element.cq));             # <<<<<<<<<<<<<<
  *         elif (event.event_type == c.IBV_EVENT_QP_FATAL or
  *               event.event_type == c.IBV_EVENT_QP_REQ_ERR or
  */
-    __pyx_t_4 = ((PyObject *)__pyx_f_4rdma_7ibverbs_get_cq(__pyx_v_event.element.cq)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 535, __pyx_L1_error)
+    __pyx_t_4 = ((PyObject *)__pyx_f_4rdma_7ibverbs_get_cq(__pyx_v_event.element.cq)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 531, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __pyx_t_8 = NULL;
     __pyx_t_6 = 0;
@@ -11619,7 +11563,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_22get_async_event(struct __pyx
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_2)) {
       PyObject *__pyx_temp[3] = {__pyx_t_8, __pyx_t_7, __pyx_t_4};
-      __pyx_t_3 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 534, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 530, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_8); __pyx_t_8 = 0;
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
@@ -11629,7 +11573,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_22get_async_event(struct __pyx
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_2)) {
       PyObject *__pyx_temp[3] = {__pyx_t_8, __pyx_t_7, __pyx_t_4};
-      __pyx_t_3 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 534, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 530, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_8); __pyx_t_8 = 0;
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
@@ -11637,7 +11581,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_22get_async_event(struct __pyx
     } else
     #endif
     {
-      __pyx_t_5 = PyTuple_New(2+__pyx_t_6); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 534, __pyx_L1_error)
+      __pyx_t_5 = PyTuple_New(2+__pyx_t_6); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 530, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
       if (__pyx_t_8) {
         __Pyx_GIVEREF(__pyx_t_8); PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_8); __pyx_t_8 = NULL;
@@ -11648,7 +11592,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_22get_async_event(struct __pyx
       PyTuple_SET_ITEM(__pyx_t_5, 1+__pyx_t_6, __pyx_t_4);
       __pyx_t_7 = 0;
       __pyx_t_4 = 0;
-      __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_5, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 534, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_5, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 530, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     }
@@ -11656,7 +11600,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_22get_async_event(struct __pyx
     __pyx_v_ret = __pyx_t_3;
     __pyx_t_3 = 0;
 
-    /* "rdma/ibverbs.pyx":533
+    /* "rdma/ibverbs.pyx":529
  *             ret = async_event(event.event_type,
  *                               get_srq(event.element.srq));
  *         elif event.event_type == c.IBV_EVENT_CQ_ERR:             # <<<<<<<<<<<<<<
@@ -11666,7 +11610,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_22get_async_event(struct __pyx
     break;
     case IBV_EVENT_QP_FATAL:
 
-    /* "rdma/ibverbs.pyx":536
+    /* "rdma/ibverbs.pyx":532
  *              ret = async_event(event.event_type,
  *                                get_cq(event.element.cq));
  *         elif (event.event_type == c.IBV_EVENT_QP_FATAL or             # <<<<<<<<<<<<<<
@@ -11675,7 +11619,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_22get_async_event(struct __pyx
  */
     case IBV_EVENT_QP_REQ_ERR:
 
-    /* "rdma/ibverbs.pyx":537
+    /* "rdma/ibverbs.pyx":533
  *                                get_cq(event.element.cq));
  *         elif (event.event_type == c.IBV_EVENT_QP_FATAL or
  *               event.event_type == c.IBV_EVENT_QP_REQ_ERR or             # <<<<<<<<<<<<<<
@@ -11684,7 +11628,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_22get_async_event(struct __pyx
  */
     case IBV_EVENT_QP_ACCESS_ERR:
 
-    /* "rdma/ibverbs.pyx":538
+    /* "rdma/ibverbs.pyx":534
  *         elif (event.event_type == c.IBV_EVENT_QP_FATAL or
  *               event.event_type == c.IBV_EVENT_QP_REQ_ERR or
  *               event.event_type == c.IBV_EVENT_QP_ACCESS_ERR or             # <<<<<<<<<<<<<<
@@ -11693,7 +11637,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_22get_async_event(struct __pyx
  */
     case IBV_EVENT_COMM_EST:
 
-    /* "rdma/ibverbs.pyx":539
+    /* "rdma/ibverbs.pyx":535
  *               event.event_type == c.IBV_EVENT_QP_REQ_ERR or
  *               event.event_type == c.IBV_EVENT_QP_ACCESS_ERR or
  *               event.event_type == c.IBV_EVENT_COMM_EST or             # <<<<<<<<<<<<<<
@@ -11702,7 +11646,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_22get_async_event(struct __pyx
  */
     case IBV_EVENT_SQ_DRAINED:
 
-    /* "rdma/ibverbs.pyx":540
+    /* "rdma/ibverbs.pyx":536
  *               event.event_type == c.IBV_EVENT_QP_ACCESS_ERR or
  *               event.event_type == c.IBV_EVENT_COMM_EST or
  *               event.event_type == c.IBV_EVENT_SQ_DRAINED or             # <<<<<<<<<<<<<<
@@ -11711,7 +11655,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_22get_async_event(struct __pyx
  */
     case IBV_EVENT_PATH_MIG:
 
-    /* "rdma/ibverbs.pyx":541
+    /* "rdma/ibverbs.pyx":537
  *               event.event_type == c.IBV_EVENT_COMM_EST or
  *               event.event_type == c.IBV_EVENT_SQ_DRAINED or
  *               event.event_type == c.IBV_EVENT_PATH_MIG or             # <<<<<<<<<<<<<<
@@ -11720,7 +11664,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_22get_async_event(struct __pyx
  */
     case IBV_EVENT_PATH_MIG_ERR:
 
-    /* "rdma/ibverbs.pyx":542
+    /* "rdma/ibverbs.pyx":538
  *               event.event_type == c.IBV_EVENT_SQ_DRAINED or
  *               event.event_type == c.IBV_EVENT_PATH_MIG or
  *               event.event_type == c.IBV_EVENT_PATH_MIG_ERR or             # <<<<<<<<<<<<<<
@@ -11729,26 +11673,26 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_22get_async_event(struct __pyx
  */
     case IBV_EVENT_QP_LAST_WQE_REACHED:
 
-    /* "rdma/ibverbs.pyx":544
+    /* "rdma/ibverbs.pyx":540
  *               event.event_type == c.IBV_EVENT_PATH_MIG_ERR or
  *               event.event_type == c.IBV_EVENT_QP_LAST_WQE_REACHED):
  *             ret = async_event(event.event_type,             # <<<<<<<<<<<<<<
  *                               get_qp(event.element.qp));
  *         else:
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_async_event); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 544, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_async_event); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 540, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_5 = __Pyx_PyInt_From_unsigned_int(__pyx_v_event.event_type); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 544, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyInt_From_unsigned_int(__pyx_v_event.event_type); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 540, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
 
-    /* "rdma/ibverbs.pyx":545
+    /* "rdma/ibverbs.pyx":541
  *               event.event_type == c.IBV_EVENT_QP_LAST_WQE_REACHED):
  *             ret = async_event(event.event_type,
  *                               get_qp(event.element.qp));             # <<<<<<<<<<<<<<
  *         else:
  *             # Hmm. We don't know what member of the enum to decode, so we can't
  */
-    __pyx_t_4 = ((PyObject *)__pyx_f_4rdma_7ibverbs_get_qp(__pyx_v_event.element.qp)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 545, __pyx_L1_error)
+    __pyx_t_4 = ((PyObject *)__pyx_f_4rdma_7ibverbs_get_qp(__pyx_v_event.element.qp)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 541, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __pyx_t_7 = NULL;
     __pyx_t_6 = 0;
@@ -11765,7 +11709,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_22get_async_event(struct __pyx
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_2)) {
       PyObject *__pyx_temp[3] = {__pyx_t_7, __pyx_t_5, __pyx_t_4};
-      __pyx_t_3 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 544, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 540, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
@@ -11775,7 +11719,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_22get_async_event(struct __pyx
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_2)) {
       PyObject *__pyx_temp[3] = {__pyx_t_7, __pyx_t_5, __pyx_t_4};
-      __pyx_t_3 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 544, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 540, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
@@ -11783,7 +11727,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_22get_async_event(struct __pyx
     } else
     #endif
     {
-      __pyx_t_8 = PyTuple_New(2+__pyx_t_6); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 544, __pyx_L1_error)
+      __pyx_t_8 = PyTuple_New(2+__pyx_t_6); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 540, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_8);
       if (__pyx_t_7) {
         __Pyx_GIVEREF(__pyx_t_7); PyTuple_SET_ITEM(__pyx_t_8, 0, __pyx_t_7); __pyx_t_7 = NULL;
@@ -11794,7 +11738,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_22get_async_event(struct __pyx
       PyTuple_SET_ITEM(__pyx_t_8, 1+__pyx_t_6, __pyx_t_4);
       __pyx_t_5 = 0;
       __pyx_t_4 = 0;
-      __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_8, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 544, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_8, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 540, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
     }
@@ -11802,7 +11746,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_22get_async_event(struct __pyx
     __pyx_v_ret = __pyx_t_3;
     __pyx_t_3 = 0;
 
-    /* "rdma/ibverbs.pyx":536
+    /* "rdma/ibverbs.pyx":532
  *              ret = async_event(event.event_type,
  *                                get_cq(event.element.cq));
  *         elif (event.event_type == c.IBV_EVENT_QP_FATAL or             # <<<<<<<<<<<<<<
@@ -11812,16 +11756,16 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_22get_async_event(struct __pyx
     break;
     default:
 
-    /* "rdma/ibverbs.pyx":549
+    /* "rdma/ibverbs.pyx":545
  *             # Hmm. We don't know what member of the enum to decode, so we can't
  *             # really do anything.
  *             ret = async_event(event.event_type,None);             # <<<<<<<<<<<<<<
  *         c.ibv_ack_async_event(&event)
  *         return ret
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_async_event); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 549, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_async_event); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 545, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_8 = __Pyx_PyInt_From_unsigned_int(__pyx_v_event.event_type); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 549, __pyx_L1_error)
+    __pyx_t_8 = __Pyx_PyInt_From_unsigned_int(__pyx_v_event.event_type); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 545, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
     __pyx_t_4 = NULL;
     __pyx_t_6 = 0;
@@ -11838,7 +11782,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_22get_async_event(struct __pyx
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_2)) {
       PyObject *__pyx_temp[3] = {__pyx_t_4, __pyx_t_8, Py_None};
-      __pyx_t_3 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 549, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 545, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
@@ -11847,14 +11791,14 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_22get_async_event(struct __pyx
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_2)) {
       PyObject *__pyx_temp[3] = {__pyx_t_4, __pyx_t_8, Py_None};
-      __pyx_t_3 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 549, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 545, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
     } else
     #endif
     {
-      __pyx_t_5 = PyTuple_New(2+__pyx_t_6); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 549, __pyx_L1_error)
+      __pyx_t_5 = PyTuple_New(2+__pyx_t_6); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 545, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
       if (__pyx_t_4) {
         __Pyx_GIVEREF(__pyx_t_4); PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_4); __pyx_t_4 = NULL;
@@ -11865,7 +11809,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_22get_async_event(struct __pyx
       __Pyx_GIVEREF(Py_None);
       PyTuple_SET_ITEM(__pyx_t_5, 1+__pyx_t_6, Py_None);
       __pyx_t_8 = 0;
-      __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_5, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 549, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_5, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 545, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     }
@@ -11875,7 +11819,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_22get_async_event(struct __pyx
     break;
   }
 
-  /* "rdma/ibverbs.pyx":550
+  /* "rdma/ibverbs.pyx":546
  *             # really do anything.
  *             ret = async_event(event.event_type,None);
  *         c.ibv_ack_async_event(&event)             # <<<<<<<<<<<<<<
@@ -11884,7 +11828,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_22get_async_event(struct __pyx
  */
   ibv_ack_async_event((&__pyx_v_event));
 
-  /* "rdma/ibverbs.pyx":551
+  /* "rdma/ibverbs.pyx":547
  *             ret = async_event(event.event_type,None);
  *         c.ibv_ack_async_event(&event)
  *         return ret             # <<<<<<<<<<<<<<
@@ -11896,7 +11840,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_22get_async_event(struct __pyx
   __pyx_r = __pyx_v_ret;
   goto __pyx_L0;
 
-  /* "rdma/ibverbs.pyx":503
+  /* "rdma/ibverbs.pyx":499
  *         return ret;
  * 
  *     def get_async_event(self):             # <<<<<<<<<<<<<<
@@ -11921,7 +11865,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_22get_async_event(struct __pyx
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":553
+/* "rdma/ibverbs.pyx":549
  *         return ret
  * 
  *     def handle_async_event(self,event):             # <<<<<<<<<<<<<<
@@ -11958,20 +11902,20 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_24handle_async_event(struct __
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("handle_async_event", 0);
 
-  /* "rdma/ibverbs.pyx":559
+  /* "rdma/ibverbs.pyx":555
  *         - Reload cached information in the end port"""
  *         cdef int ty
  *         ty = event[0]             # <<<<<<<<<<<<<<
  * 
  *         if ty == c.IBV_EVENT_DEVICE_FATAL:
  */
-  __pyx_t_1 = __Pyx_GetItemInt(__pyx_v_event, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 559, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_GetItemInt(__pyx_v_event, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 555, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_2 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 559, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_2 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 555, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_ty = __pyx_t_2;
 
-  /* "rdma/ibverbs.pyx":561
+  /* "rdma/ibverbs.pyx":557
  *         ty = event[0]
  * 
  *         if ty == c.IBV_EVENT_DEVICE_FATAL:             # <<<<<<<<<<<<<<
@@ -11981,14 +11925,14 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_24handle_async_event(struct __
   __pyx_t_3 = ((__pyx_v_ty == IBV_EVENT_DEVICE_FATAL) != 0);
   if (unlikely(__pyx_t_3)) {
 
-    /* "rdma/ibverbs.pyx":562
+    /* "rdma/ibverbs.pyx":558
  * 
  *         if ty == c.IBV_EVENT_DEVICE_FATAL:
  *             raise AsyncError(event);             # <<<<<<<<<<<<<<
  *         if ty == c.IBV_EVENT_LID_CHANGE:
  *             event[1].lid_change();
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_AsyncError); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 562, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_AsyncError); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 558, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __pyx_t_5 = NULL;
     if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_4))) {
@@ -12002,14 +11946,14 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_24handle_async_event(struct __
     }
     __pyx_t_1 = (__pyx_t_5) ? __Pyx_PyObject_Call2Args(__pyx_t_4, __pyx_t_5, __pyx_v_event) : __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_v_event);
     __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 562, __pyx_L1_error)
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 558, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_Raise(__pyx_t_1, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __PYX_ERR(0, 562, __pyx_L1_error)
+    __PYX_ERR(0, 558, __pyx_L1_error)
 
-    /* "rdma/ibverbs.pyx":561
+    /* "rdma/ibverbs.pyx":557
  *         ty = event[0]
  * 
  *         if ty == c.IBV_EVENT_DEVICE_FATAL:             # <<<<<<<<<<<<<<
@@ -12018,7 +11962,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_24handle_async_event(struct __
  */
   }
 
-  /* "rdma/ibverbs.pyx":563
+  /* "rdma/ibverbs.pyx":559
  *         if ty == c.IBV_EVENT_DEVICE_FATAL:
  *             raise AsyncError(event);
  *         if ty == c.IBV_EVENT_LID_CHANGE:             # <<<<<<<<<<<<<<
@@ -12028,16 +11972,16 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_24handle_async_event(struct __
   __pyx_t_3 = ((__pyx_v_ty == IBV_EVENT_LID_CHANGE) != 0);
   if (__pyx_t_3) {
 
-    /* "rdma/ibverbs.pyx":564
+    /* "rdma/ibverbs.pyx":560
  *             raise AsyncError(event);
  *         if ty == c.IBV_EVENT_LID_CHANGE:
  *             event[1].lid_change();             # <<<<<<<<<<<<<<
  *         if ty == c.IBV_EVENT_PKEY_CHANGE:
  *             event[1].pkey_change();
  */
-    __pyx_t_4 = __Pyx_GetItemInt(__pyx_v_event, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 564, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_GetItemInt(__pyx_v_event, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 560, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_lid_change); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 564, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_lid_change); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 560, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __pyx_t_4 = NULL;
@@ -12052,12 +11996,12 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_24handle_async_event(struct __
     }
     __pyx_t_1 = (__pyx_t_4) ? __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_4) : __Pyx_PyObject_CallNoArg(__pyx_t_5);
     __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 564, __pyx_L1_error)
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 560, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "rdma/ibverbs.pyx":563
+    /* "rdma/ibverbs.pyx":559
  *         if ty == c.IBV_EVENT_DEVICE_FATAL:
  *             raise AsyncError(event);
  *         if ty == c.IBV_EVENT_LID_CHANGE:             # <<<<<<<<<<<<<<
@@ -12066,7 +12010,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_24handle_async_event(struct __
  */
   }
 
-  /* "rdma/ibverbs.pyx":565
+  /* "rdma/ibverbs.pyx":561
  *         if ty == c.IBV_EVENT_LID_CHANGE:
  *             event[1].lid_change();
  *         if ty == c.IBV_EVENT_PKEY_CHANGE:             # <<<<<<<<<<<<<<
@@ -12076,16 +12020,16 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_24handle_async_event(struct __
   __pyx_t_3 = ((__pyx_v_ty == IBV_EVENT_PKEY_CHANGE) != 0);
   if (__pyx_t_3) {
 
-    /* "rdma/ibverbs.pyx":566
+    /* "rdma/ibverbs.pyx":562
  *             event[1].lid_change();
  *         if ty == c.IBV_EVENT_PKEY_CHANGE:
  *             event[1].pkey_change();             # <<<<<<<<<<<<<<
  *         if ty == c.IBV_EVENT_SM_CHANGE:
  *             self.query_port(event[1].port_id);
  */
-    __pyx_t_5 = __Pyx_GetItemInt(__pyx_v_event, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 566, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_GetItemInt(__pyx_v_event, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 562, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_pkey_change); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 566, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_pkey_change); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 562, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __pyx_t_5 = NULL;
@@ -12100,12 +12044,12 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_24handle_async_event(struct __
     }
     __pyx_t_1 = (__pyx_t_5) ? __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_5) : __Pyx_PyObject_CallNoArg(__pyx_t_4);
     __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 566, __pyx_L1_error)
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 562, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "rdma/ibverbs.pyx":565
+    /* "rdma/ibverbs.pyx":561
  *         if ty == c.IBV_EVENT_LID_CHANGE:
  *             event[1].lid_change();
  *         if ty == c.IBV_EVENT_PKEY_CHANGE:             # <<<<<<<<<<<<<<
@@ -12114,7 +12058,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_24handle_async_event(struct __
  */
   }
 
-  /* "rdma/ibverbs.pyx":567
+  /* "rdma/ibverbs.pyx":563
  *         if ty == c.IBV_EVENT_PKEY_CHANGE:
  *             event[1].pkey_change();
  *         if ty == c.IBV_EVENT_SM_CHANGE:             # <<<<<<<<<<<<<<
@@ -12124,18 +12068,18 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_24handle_async_event(struct __
   __pyx_t_3 = ((__pyx_v_ty == IBV_EVENT_SM_CHANGE) != 0);
   if (__pyx_t_3) {
 
-    /* "rdma/ibverbs.pyx":568
+    /* "rdma/ibverbs.pyx":564
  *             event[1].pkey_change();
  *         if ty == c.IBV_EVENT_SM_CHANGE:
  *             self.query_port(event[1].port_id);             # <<<<<<<<<<<<<<
  *             event[1].sm_change();
  *         if ty == c.IBV_EVENT_SRQ_ERR:
  */
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_query_port); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 568, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_query_port); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 564, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_5 = __Pyx_GetItemInt(__pyx_v_event, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 568, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_GetItemInt(__pyx_v_event, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 564, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_port_id); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 568, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_port_id); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 564, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __pyx_t_5 = NULL;
@@ -12151,21 +12095,21 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_24handle_async_event(struct __
     __pyx_t_1 = (__pyx_t_5) ? __Pyx_PyObject_Call2Args(__pyx_t_4, __pyx_t_5, __pyx_t_6) : __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_6);
     __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 568, __pyx_L1_error)
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 564, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "rdma/ibverbs.pyx":569
+    /* "rdma/ibverbs.pyx":565
  *         if ty == c.IBV_EVENT_SM_CHANGE:
  *             self.query_port(event[1].port_id);
  *             event[1].sm_change();             # <<<<<<<<<<<<<<
  *         if ty == c.IBV_EVENT_SRQ_ERR:
  *             raise AsyncError(event);
  */
-    __pyx_t_4 = __Pyx_GetItemInt(__pyx_v_event, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 569, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_GetItemInt(__pyx_v_event, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 565, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_sm_change); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 569, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_sm_change); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 565, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __pyx_t_4 = NULL;
@@ -12180,12 +12124,12 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_24handle_async_event(struct __
     }
     __pyx_t_1 = (__pyx_t_4) ? __Pyx_PyObject_CallOneArg(__pyx_t_6, __pyx_t_4) : __Pyx_PyObject_CallNoArg(__pyx_t_6);
     __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 569, __pyx_L1_error)
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 565, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "rdma/ibverbs.pyx":567
+    /* "rdma/ibverbs.pyx":563
  *         if ty == c.IBV_EVENT_PKEY_CHANGE:
  *             event[1].pkey_change();
  *         if ty == c.IBV_EVENT_SM_CHANGE:             # <<<<<<<<<<<<<<
@@ -12194,7 +12138,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_24handle_async_event(struct __
  */
   }
 
-  /* "rdma/ibverbs.pyx":570
+  /* "rdma/ibverbs.pyx":566
  *             self.query_port(event[1].port_id);
  *             event[1].sm_change();
  *         if ty == c.IBV_EVENT_SRQ_ERR:             # <<<<<<<<<<<<<<
@@ -12204,11 +12148,105 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_24handle_async_event(struct __
   __pyx_t_3 = ((__pyx_v_ty == IBV_EVENT_SRQ_ERR) != 0);
   if (unlikely(__pyx_t_3)) {
 
-    /* "rdma/ibverbs.pyx":571
+    /* "rdma/ibverbs.pyx":567
  *             event[1].sm_change();
  *         if ty == c.IBV_EVENT_SRQ_ERR:
  *             raise AsyncError(event);             # <<<<<<<<<<<<<<
  *         if ty == c.IBV_EVENT_CQ_ERR:
+ *             raise AsyncError(event);
+ */
+    __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_AsyncError); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 567, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_6);
+    __pyx_t_4 = NULL;
+    if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_6))) {
+      __pyx_t_4 = PyMethod_GET_SELF(__pyx_t_6);
+      if (likely(__pyx_t_4)) {
+        PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_6);
+        __Pyx_INCREF(__pyx_t_4);
+        __Pyx_INCREF(function);
+        __Pyx_DECREF_SET(__pyx_t_6, function);
+      }
+    }
+    __pyx_t_1 = (__pyx_t_4) ? __Pyx_PyObject_Call2Args(__pyx_t_6, __pyx_t_4, __pyx_v_event) : __Pyx_PyObject_CallOneArg(__pyx_t_6, __pyx_v_event);
+    __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 567, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_1);
+    __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
+    __Pyx_Raise(__pyx_t_1, 0, 0, 0);
+    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+    __PYX_ERR(0, 567, __pyx_L1_error)
+
+    /* "rdma/ibverbs.pyx":566
+ *             self.query_port(event[1].port_id);
+ *             event[1].sm_change();
+ *         if ty == c.IBV_EVENT_SRQ_ERR:             # <<<<<<<<<<<<<<
+ *             raise AsyncError(event);
+ *         if ty == c.IBV_EVENT_CQ_ERR:
+ */
+  }
+
+  /* "rdma/ibverbs.pyx":568
+ *         if ty == c.IBV_EVENT_SRQ_ERR:
+ *             raise AsyncError(event);
+ *         if ty == c.IBV_EVENT_CQ_ERR:             # <<<<<<<<<<<<<<
+ *             raise AsyncError(event);
+ *         if ty == c.IBV_EVENT_QP_FATAL:
+ */
+  __pyx_t_3 = ((__pyx_v_ty == IBV_EVENT_CQ_ERR) != 0);
+  if (unlikely(__pyx_t_3)) {
+
+    /* "rdma/ibverbs.pyx":569
+ *             raise AsyncError(event);
+ *         if ty == c.IBV_EVENT_CQ_ERR:
+ *             raise AsyncError(event);             # <<<<<<<<<<<<<<
+ *         if ty == c.IBV_EVENT_QP_FATAL:
+ *             raise AsyncError(event);
+ */
+    __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_AsyncError); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 569, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_6);
+    __pyx_t_4 = NULL;
+    if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_6))) {
+      __pyx_t_4 = PyMethod_GET_SELF(__pyx_t_6);
+      if (likely(__pyx_t_4)) {
+        PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_6);
+        __Pyx_INCREF(__pyx_t_4);
+        __Pyx_INCREF(function);
+        __Pyx_DECREF_SET(__pyx_t_6, function);
+      }
+    }
+    __pyx_t_1 = (__pyx_t_4) ? __Pyx_PyObject_Call2Args(__pyx_t_6, __pyx_t_4, __pyx_v_event) : __Pyx_PyObject_CallOneArg(__pyx_t_6, __pyx_v_event);
+    __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 569, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_1);
+    __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
+    __Pyx_Raise(__pyx_t_1, 0, 0, 0);
+    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+    __PYX_ERR(0, 569, __pyx_L1_error)
+
+    /* "rdma/ibverbs.pyx":568
+ *         if ty == c.IBV_EVENT_SRQ_ERR:
+ *             raise AsyncError(event);
+ *         if ty == c.IBV_EVENT_CQ_ERR:             # <<<<<<<<<<<<<<
+ *             raise AsyncError(event);
+ *         if ty == c.IBV_EVENT_QP_FATAL:
+ */
+  }
+
+  /* "rdma/ibverbs.pyx":570
+ *         if ty == c.IBV_EVENT_CQ_ERR:
+ *             raise AsyncError(event);
+ *         if ty == c.IBV_EVENT_QP_FATAL:             # <<<<<<<<<<<<<<
+ *             raise AsyncError(event);
+ *         if ty == c.IBV_EVENT_QP_REQ_ERR:
+ */
+  __pyx_t_3 = ((__pyx_v_ty == IBV_EVENT_QP_FATAL) != 0);
+  if (unlikely(__pyx_t_3)) {
+
+    /* "rdma/ibverbs.pyx":571
+ *             raise AsyncError(event);
+ *         if ty == c.IBV_EVENT_QP_FATAL:
+ *             raise AsyncError(event);             # <<<<<<<<<<<<<<
+ *         if ty == c.IBV_EVENT_QP_REQ_ERR:
  *             raise AsyncError(event);
  */
     __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_AsyncError); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 571, __pyx_L1_error)
@@ -12233,29 +12271,29 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_24handle_async_event(struct __
     __PYX_ERR(0, 571, __pyx_L1_error)
 
     /* "rdma/ibverbs.pyx":570
- *             self.query_port(event[1].port_id);
- *             event[1].sm_change();
- *         if ty == c.IBV_EVENT_SRQ_ERR:             # <<<<<<<<<<<<<<
- *             raise AsyncError(event);
  *         if ty == c.IBV_EVENT_CQ_ERR:
+ *             raise AsyncError(event);
+ *         if ty == c.IBV_EVENT_QP_FATAL:             # <<<<<<<<<<<<<<
+ *             raise AsyncError(event);
+ *         if ty == c.IBV_EVENT_QP_REQ_ERR:
  */
   }
 
   /* "rdma/ibverbs.pyx":572
- *         if ty == c.IBV_EVENT_SRQ_ERR:
- *             raise AsyncError(event);
- *         if ty == c.IBV_EVENT_CQ_ERR:             # <<<<<<<<<<<<<<
- *             raise AsyncError(event);
  *         if ty == c.IBV_EVENT_QP_FATAL:
+ *             raise AsyncError(event);
+ *         if ty == c.IBV_EVENT_QP_REQ_ERR:             # <<<<<<<<<<<<<<
+ *             raise AsyncError(event);
+ *         if ty == c.IBV_EVENT_QP_ACCESS_ERR:
  */
-  __pyx_t_3 = ((__pyx_v_ty == IBV_EVENT_CQ_ERR) != 0);
+  __pyx_t_3 = ((__pyx_v_ty == IBV_EVENT_QP_REQ_ERR) != 0);
   if (unlikely(__pyx_t_3)) {
 
     /* "rdma/ibverbs.pyx":573
  *             raise AsyncError(event);
- *         if ty == c.IBV_EVENT_CQ_ERR:
+ *         if ty == c.IBV_EVENT_QP_REQ_ERR:
  *             raise AsyncError(event);             # <<<<<<<<<<<<<<
- *         if ty == c.IBV_EVENT_QP_FATAL:
+ *         if ty == c.IBV_EVENT_QP_ACCESS_ERR:
  *             raise AsyncError(event);
  */
     __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_AsyncError); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 573, __pyx_L1_error)
@@ -12280,29 +12318,29 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_24handle_async_event(struct __
     __PYX_ERR(0, 573, __pyx_L1_error)
 
     /* "rdma/ibverbs.pyx":572
- *         if ty == c.IBV_EVENT_SRQ_ERR:
- *             raise AsyncError(event);
- *         if ty == c.IBV_EVENT_CQ_ERR:             # <<<<<<<<<<<<<<
- *             raise AsyncError(event);
  *         if ty == c.IBV_EVENT_QP_FATAL:
+ *             raise AsyncError(event);
+ *         if ty == c.IBV_EVENT_QP_REQ_ERR:             # <<<<<<<<<<<<<<
+ *             raise AsyncError(event);
+ *         if ty == c.IBV_EVENT_QP_ACCESS_ERR:
  */
   }
 
   /* "rdma/ibverbs.pyx":574
- *         if ty == c.IBV_EVENT_CQ_ERR:
- *             raise AsyncError(event);
- *         if ty == c.IBV_EVENT_QP_FATAL:             # <<<<<<<<<<<<<<
- *             raise AsyncError(event);
  *         if ty == c.IBV_EVENT_QP_REQ_ERR:
+ *             raise AsyncError(event);
+ *         if ty == c.IBV_EVENT_QP_ACCESS_ERR:             # <<<<<<<<<<<<<<
+ *             raise AsyncError(event);
+ *         if ty == c.IBV_EVENT_PATH_MIG_ERR:
  */
-  __pyx_t_3 = ((__pyx_v_ty == IBV_EVENT_QP_FATAL) != 0);
+  __pyx_t_3 = ((__pyx_v_ty == IBV_EVENT_QP_ACCESS_ERR) != 0);
   if (unlikely(__pyx_t_3)) {
 
     /* "rdma/ibverbs.pyx":575
  *             raise AsyncError(event);
- *         if ty == c.IBV_EVENT_QP_FATAL:
+ *         if ty == c.IBV_EVENT_QP_ACCESS_ERR:
  *             raise AsyncError(event);             # <<<<<<<<<<<<<<
- *         if ty == c.IBV_EVENT_QP_REQ_ERR:
+ *         if ty == c.IBV_EVENT_PATH_MIG_ERR:
  *             raise AsyncError(event);
  */
     __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_AsyncError); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 575, __pyx_L1_error)
@@ -12327,30 +12365,30 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_24handle_async_event(struct __
     __PYX_ERR(0, 575, __pyx_L1_error)
 
     /* "rdma/ibverbs.pyx":574
- *         if ty == c.IBV_EVENT_CQ_ERR:
- *             raise AsyncError(event);
- *         if ty == c.IBV_EVENT_QP_FATAL:             # <<<<<<<<<<<<<<
- *             raise AsyncError(event);
  *         if ty == c.IBV_EVENT_QP_REQ_ERR:
+ *             raise AsyncError(event);
+ *         if ty == c.IBV_EVENT_QP_ACCESS_ERR:             # <<<<<<<<<<<<<<
+ *             raise AsyncError(event);
+ *         if ty == c.IBV_EVENT_PATH_MIG_ERR:
  */
   }
 
   /* "rdma/ibverbs.pyx":576
- *         if ty == c.IBV_EVENT_QP_FATAL:
- *             raise AsyncError(event);
- *         if ty == c.IBV_EVENT_QP_REQ_ERR:             # <<<<<<<<<<<<<<
- *             raise AsyncError(event);
  *         if ty == c.IBV_EVENT_QP_ACCESS_ERR:
+ *             raise AsyncError(event);
+ *         if ty == c.IBV_EVENT_PATH_MIG_ERR:             # <<<<<<<<<<<<<<
+ *             raise AsyncError(event);
+ * 
  */
-  __pyx_t_3 = ((__pyx_v_ty == IBV_EVENT_QP_REQ_ERR) != 0);
+  __pyx_t_3 = ((__pyx_v_ty == IBV_EVENT_PATH_MIG_ERR) != 0);
   if (unlikely(__pyx_t_3)) {
 
     /* "rdma/ibverbs.pyx":577
  *             raise AsyncError(event);
- *         if ty == c.IBV_EVENT_QP_REQ_ERR:
+ *         if ty == c.IBV_EVENT_PATH_MIG_ERR:
  *             raise AsyncError(event);             # <<<<<<<<<<<<<<
- *         if ty == c.IBV_EVENT_QP_ACCESS_ERR:
- *             raise AsyncError(event);
+ * 
+ *     def register_poll(self,poll):
  */
     __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_AsyncError); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 577, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
@@ -12374,100 +12412,6 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_24handle_async_event(struct __
     __PYX_ERR(0, 577, __pyx_L1_error)
 
     /* "rdma/ibverbs.pyx":576
- *         if ty == c.IBV_EVENT_QP_FATAL:
- *             raise AsyncError(event);
- *         if ty == c.IBV_EVENT_QP_REQ_ERR:             # <<<<<<<<<<<<<<
- *             raise AsyncError(event);
- *         if ty == c.IBV_EVENT_QP_ACCESS_ERR:
- */
-  }
-
-  /* "rdma/ibverbs.pyx":578
- *         if ty == c.IBV_EVENT_QP_REQ_ERR:
- *             raise AsyncError(event);
- *         if ty == c.IBV_EVENT_QP_ACCESS_ERR:             # <<<<<<<<<<<<<<
- *             raise AsyncError(event);
- *         if ty == c.IBV_EVENT_PATH_MIG_ERR:
- */
-  __pyx_t_3 = ((__pyx_v_ty == IBV_EVENT_QP_ACCESS_ERR) != 0);
-  if (unlikely(__pyx_t_3)) {
-
-    /* "rdma/ibverbs.pyx":579
- *             raise AsyncError(event);
- *         if ty == c.IBV_EVENT_QP_ACCESS_ERR:
- *             raise AsyncError(event);             # <<<<<<<<<<<<<<
- *         if ty == c.IBV_EVENT_PATH_MIG_ERR:
- *             raise AsyncError(event);
- */
-    __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_AsyncError); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 579, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_6);
-    __pyx_t_4 = NULL;
-    if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_6))) {
-      __pyx_t_4 = PyMethod_GET_SELF(__pyx_t_6);
-      if (likely(__pyx_t_4)) {
-        PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_6);
-        __Pyx_INCREF(__pyx_t_4);
-        __Pyx_INCREF(function);
-        __Pyx_DECREF_SET(__pyx_t_6, function);
-      }
-    }
-    __pyx_t_1 = (__pyx_t_4) ? __Pyx_PyObject_Call2Args(__pyx_t_6, __pyx_t_4, __pyx_v_event) : __Pyx_PyObject_CallOneArg(__pyx_t_6, __pyx_v_event);
-    __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 579, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_1);
-    __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-    __Pyx_Raise(__pyx_t_1, 0, 0, 0);
-    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __PYX_ERR(0, 579, __pyx_L1_error)
-
-    /* "rdma/ibverbs.pyx":578
- *         if ty == c.IBV_EVENT_QP_REQ_ERR:
- *             raise AsyncError(event);
- *         if ty == c.IBV_EVENT_QP_ACCESS_ERR:             # <<<<<<<<<<<<<<
- *             raise AsyncError(event);
- *         if ty == c.IBV_EVENT_PATH_MIG_ERR:
- */
-  }
-
-  /* "rdma/ibverbs.pyx":580
- *         if ty == c.IBV_EVENT_QP_ACCESS_ERR:
- *             raise AsyncError(event);
- *         if ty == c.IBV_EVENT_PATH_MIG_ERR:             # <<<<<<<<<<<<<<
- *             raise AsyncError(event);
- * 
- */
-  __pyx_t_3 = ((__pyx_v_ty == IBV_EVENT_PATH_MIG_ERR) != 0);
-  if (unlikely(__pyx_t_3)) {
-
-    /* "rdma/ibverbs.pyx":581
- *             raise AsyncError(event);
- *         if ty == c.IBV_EVENT_PATH_MIG_ERR:
- *             raise AsyncError(event);             # <<<<<<<<<<<<<<
- * 
- *     def register_poll(self,poll):
- */
-    __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_AsyncError); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 581, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_6);
-    __pyx_t_4 = NULL;
-    if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_6))) {
-      __pyx_t_4 = PyMethod_GET_SELF(__pyx_t_6);
-      if (likely(__pyx_t_4)) {
-        PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_6);
-        __Pyx_INCREF(__pyx_t_4);
-        __Pyx_INCREF(function);
-        __Pyx_DECREF_SET(__pyx_t_6, function);
-      }
-    }
-    __pyx_t_1 = (__pyx_t_4) ? __Pyx_PyObject_Call2Args(__pyx_t_6, __pyx_t_4, __pyx_v_event) : __Pyx_PyObject_CallOneArg(__pyx_t_6, __pyx_v_event);
-    __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 581, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_1);
-    __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-    __Pyx_Raise(__pyx_t_1, 0, 0, 0);
-    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __PYX_ERR(0, 581, __pyx_L1_error)
-
-    /* "rdma/ibverbs.pyx":580
  *         if ty == c.IBV_EVENT_QP_ACCESS_ERR:
  *             raise AsyncError(event);
  *         if ty == c.IBV_EVENT_PATH_MIG_ERR:             # <<<<<<<<<<<<<<
@@ -12476,7 +12420,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_24handle_async_event(struct __
  */
   }
 
-  /* "rdma/ibverbs.pyx":553
+  /* "rdma/ibverbs.pyx":549
  *         return ret
  * 
  *     def handle_async_event(self,event):             # <<<<<<<<<<<<<<
@@ -12500,7 +12444,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_24handle_async_event(struct __
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":583
+/* "rdma/ibverbs.pyx":579
  *             raise AsyncError(event);
  * 
  *     def register_poll(self,poll):             # <<<<<<<<<<<<<<
@@ -12537,20 +12481,20 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_26register_poll(struct __pyx_o
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("register_poll", 0);
 
-  /* "rdma/ibverbs.pyx":586
+  /* "rdma/ibverbs.pyx":582
  *         """Add the async event FD associated with this object to
  *         :class:`select.poll` object *poll*."""
  *         poll.register(self._ctx.async_fd,select.POLLIN);             # <<<<<<<<<<<<<<
  * 
  *     def check_poll(self,pevent):
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_poll, __pyx_n_s_register); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 586, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_poll, __pyx_n_s_register); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 582, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->_ctx->async_fd); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 586, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->_ctx->async_fd); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 582, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_select); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 586, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_select); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 582, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_POLLIN); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 586, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_POLLIN); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 582, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_t_4 = NULL;
@@ -12568,7 +12512,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_26register_poll(struct __pyx_o
   #if CYTHON_FAST_PYCALL
   if (PyFunction_Check(__pyx_t_2)) {
     PyObject *__pyx_temp[3] = {__pyx_t_4, __pyx_t_3, __pyx_t_5};
-    __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 586, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 582, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -12578,7 +12522,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_26register_poll(struct __pyx_o
   #if CYTHON_FAST_PYCCALL
   if (__Pyx_PyFastCFunction_Check(__pyx_t_2)) {
     PyObject *__pyx_temp[3] = {__pyx_t_4, __pyx_t_3, __pyx_t_5};
-    __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 586, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 582, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -12586,7 +12530,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_26register_poll(struct __pyx_o
   } else
   #endif
   {
-    __pyx_t_7 = PyTuple_New(2+__pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 586, __pyx_L1_error)
+    __pyx_t_7 = PyTuple_New(2+__pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 582, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     if (__pyx_t_4) {
       __Pyx_GIVEREF(__pyx_t_4); PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_t_4); __pyx_t_4 = NULL;
@@ -12597,14 +12541,14 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_26register_poll(struct __pyx_o
     PyTuple_SET_ITEM(__pyx_t_7, 1+__pyx_t_6, __pyx_t_5);
     __pyx_t_3 = 0;
     __pyx_t_5 = 0;
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_7, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 586, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_7, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 582, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
   }
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "rdma/ibverbs.pyx":583
+  /* "rdma/ibverbs.pyx":579
  *             raise AsyncError(event);
  * 
  *     def register_poll(self,poll):             # <<<<<<<<<<<<<<
@@ -12630,7 +12574,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_26register_poll(struct __pyx_o
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":588
+/* "rdma/ibverbs.pyx":584
  *         poll.register(self._ctx.async_fd,select.POLLIN);
  * 
  *     def check_poll(self,pevent):             # <<<<<<<<<<<<<<
@@ -12664,25 +12608,25 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_28check_poll(struct __pyx_obj_
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("check_poll", 0);
 
-  /* "rdma/ibverbs.pyx":591
+  /* "rdma/ibverbs.pyx":587
  *         """Return `True` if *pevent* indicates that :meth:`get_async_event`
  *         will return data."""
  *         if pevent[0] != self._ctx.async_fd:             # <<<<<<<<<<<<<<
  *             return False;
  *         if pevent[1] & select.POLLIN == 0:
  */
-  __pyx_t_1 = __Pyx_GetItemInt(__pyx_v_pevent, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 591, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_GetItemInt(__pyx_v_pevent, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 587, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->_ctx->async_fd); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 591, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->_ctx->async_fd); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 587, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = PyObject_RichCompare(__pyx_t_1, __pyx_t_2, Py_NE); __Pyx_XGOTREF(__pyx_t_3); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 591, __pyx_L1_error)
+  __pyx_t_3 = PyObject_RichCompare(__pyx_t_1, __pyx_t_2, Py_NE); __Pyx_XGOTREF(__pyx_t_3); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 587, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_4 = __Pyx_PyObject_IsTrue(__pyx_t_3); if (unlikely(__pyx_t_4 < 0)) __PYX_ERR(0, 591, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_IsTrue(__pyx_t_3); if (unlikely(__pyx_t_4 < 0)) __PYX_ERR(0, 587, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   if (__pyx_t_4) {
 
-    /* "rdma/ibverbs.pyx":592
+    /* "rdma/ibverbs.pyx":588
  *         will return data."""
  *         if pevent[0] != self._ctx.async_fd:
  *             return False;             # <<<<<<<<<<<<<<
@@ -12694,7 +12638,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_28check_poll(struct __pyx_obj_
     __pyx_r = Py_False;
     goto __pyx_L0;
 
-    /* "rdma/ibverbs.pyx":591
+    /* "rdma/ibverbs.pyx":587
  *         """Return `True` if *pevent* indicates that :meth:`get_async_event`
  *         will return data."""
  *         if pevent[0] != self._ctx.async_fd:             # <<<<<<<<<<<<<<
@@ -12703,32 +12647,32 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_28check_poll(struct __pyx_obj_
  */
   }
 
-  /* "rdma/ibverbs.pyx":593
+  /* "rdma/ibverbs.pyx":589
  *         if pevent[0] != self._ctx.async_fd:
  *             return False;
  *         if pevent[1] & select.POLLIN == 0:             # <<<<<<<<<<<<<<
  *             return False;
  *         return True;
  */
-  __pyx_t_3 = __Pyx_GetItemInt(__pyx_v_pevent, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 593, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_GetItemInt(__pyx_v_pevent, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 589, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_select); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 593, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_select); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 589, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_POLLIN); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 593, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_POLLIN); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 589, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = PyNumber_And(__pyx_t_3, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 593, __pyx_L1_error)
+  __pyx_t_2 = PyNumber_And(__pyx_t_3, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 589, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyInt_EqObjC(__pyx_t_2, __pyx_int_0, 0, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 593, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_EqObjC(__pyx_t_2, __pyx_int_0, 0, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 589, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_4 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely(__pyx_t_4 < 0)) __PYX_ERR(0, 593, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely(__pyx_t_4 < 0)) __PYX_ERR(0, 589, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   if (__pyx_t_4) {
 
-    /* "rdma/ibverbs.pyx":594
+    /* "rdma/ibverbs.pyx":590
  *             return False;
  *         if pevent[1] & select.POLLIN == 0:
  *             return False;             # <<<<<<<<<<<<<<
@@ -12740,7 +12684,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_28check_poll(struct __pyx_obj_
     __pyx_r = Py_False;
     goto __pyx_L0;
 
-    /* "rdma/ibverbs.pyx":593
+    /* "rdma/ibverbs.pyx":589
  *         if pevent[0] != self._ctx.async_fd:
  *             return False;
  *         if pevent[1] & select.POLLIN == 0:             # <<<<<<<<<<<<<<
@@ -12749,7 +12693,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_28check_poll(struct __pyx_obj_
  */
   }
 
-  /* "rdma/ibverbs.pyx":595
+  /* "rdma/ibverbs.pyx":591
  *         if pevent[1] & select.POLLIN == 0:
  *             return False;
  *         return True;             # <<<<<<<<<<<<<<
@@ -12761,7 +12705,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_28check_poll(struct __pyx_obj_
   __pyx_r = Py_True;
   goto __pyx_L0;
 
-  /* "rdma/ibverbs.pyx":588
+  /* "rdma/ibverbs.pyx":584
  *         poll.register(self._ctx.async_fd,select.POLLIN);
  * 
  *     def check_poll(self,pevent):             # <<<<<<<<<<<<<<
@@ -12782,7 +12726,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_28check_poll(struct __pyx_obj_
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":597
+/* "rdma/ibverbs.pyx":593
  *         return True;
  * 
  *     def __str__(self):             # <<<<<<<<<<<<<<
@@ -12812,7 +12756,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_30__str__(struct __pyx_obj_4rd
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__str__", 0);
 
-  /* "rdma/ibverbs.pyx":598
+  /* "rdma/ibverbs.pyx":594
  * 
  *     def __str__(self):
  *         return "context:%s"%(self.node)             # <<<<<<<<<<<<<<
@@ -12820,13 +12764,13 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_30__str__(struct __pyx_obj_4rd
  *         return "Context('%s',fd=%u)"%(self.node,self._ctx.cmd_fd)
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyString_FormatSafe(__pyx_kp_s_context_s, __pyx_v_self->node); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 598, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyString_FormatSafe(__pyx_kp_s_context_s, __pyx_v_self->node); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 594, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "rdma/ibverbs.pyx":597
+  /* "rdma/ibverbs.pyx":593
  *         return True;
  * 
  *     def __str__(self):             # <<<<<<<<<<<<<<
@@ -12845,7 +12789,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_30__str__(struct __pyx_obj_4rd
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":599
+/* "rdma/ibverbs.pyx":595
  *     def __str__(self):
  *         return "context:%s"%(self.node)
  *     def __repr__(self):             # <<<<<<<<<<<<<<
@@ -12876,7 +12820,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_32__repr__(struct __pyx_obj_4r
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__repr__", 0);
 
-  /* "rdma/ibverbs.pyx":600
+  /* "rdma/ibverbs.pyx":596
  *         return "context:%s"%(self.node)
  *     def __repr__(self):
  *         return "Context('%s',fd=%u)"%(self.node,self._ctx.cmd_fd)             # <<<<<<<<<<<<<<
@@ -12884,9 +12828,9 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_32__repr__(struct __pyx_obj_4r
  * cdef class PD:
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->_ctx->cmd_fd); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 600, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->_ctx->cmd_fd); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 596, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 600, __pyx_L1_error)
+  __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 596, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_INCREF(__pyx_v_self->node);
   __Pyx_GIVEREF(__pyx_v_self->node);
@@ -12894,14 +12838,14 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_32__repr__(struct __pyx_obj_4r
   __Pyx_GIVEREF(__pyx_t_1);
   PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_t_1);
   __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyString_Format(__pyx_kp_s_Context_s_fd_u, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 600, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyString_Format(__pyx_kp_s_Context_s_fd_u, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 596, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "rdma/ibverbs.pyx":599
+  /* "rdma/ibverbs.pyx":595
  *     def __str__(self):
  *         return "context:%s"%(self.node)
  *     def __repr__(self):             # <<<<<<<<<<<<<<
@@ -13224,7 +13168,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_7Context_36__setstate_cython__(CYTHON_U
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":614
+/* "rdma/ibverbs.pyx":610
  * 
  *     property ctx:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -13250,7 +13194,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2PD_3ctx___get__(struct __pyx_obj_4rdma
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "rdma/ibverbs.pyx":615
+  /* "rdma/ibverbs.pyx":611
  *     property ctx:
  *         def __get__(self):
  *             return self._context;             # <<<<<<<<<<<<<<
@@ -13262,7 +13206,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2PD_3ctx___get__(struct __pyx_obj_4rdma
   __pyx_r = ((PyObject *)__pyx_v_self->_context);
   goto __pyx_L0;
 
-  /* "rdma/ibverbs.pyx":614
+  /* "rdma/ibverbs.pyx":610
  * 
  *     property ctx:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -13277,7 +13221,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2PD_3ctx___get__(struct __pyx_obj_4rdma
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":617
+/* "rdma/ibverbs.pyx":613
  *             return self._context;
  * 
  *     def __cinit__(self, Context ctx not None):             # <<<<<<<<<<<<<<
@@ -13314,7 +13258,7 @@ static int __pyx_pw_4rdma_7ibverbs_2PD_1__cinit__(PyObject *__pyx_v_self, PyObje
         else goto __pyx_L5_argtuple_error;
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__cinit__") < 0)) __PYX_ERR(0, 617, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__cinit__") < 0)) __PYX_ERR(0, 613, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 1) {
       goto __pyx_L5_argtuple_error;
@@ -13325,13 +13269,13 @@ static int __pyx_pw_4rdma_7ibverbs_2PD_1__cinit__(PyObject *__pyx_v_self, PyObje
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 1, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 617, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 1, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 613, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("rdma.ibverbs.PD.__cinit__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return -1;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_ctx), __pyx_ptype_4rdma_7ibverbs_Context, 0, "ctx", 0))) __PYX_ERR(0, 617, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_ctx), __pyx_ptype_4rdma_7ibverbs_Context, 0, "ctx", 0))) __PYX_ERR(0, 613, __pyx_L1_error)
   __pyx_r = __pyx_pf_4rdma_7ibverbs_2PD___cinit__(((struct __pyx_obj_4rdma_7ibverbs_PD *)__pyx_v_self), __pyx_v_ctx);
 
   /* function exit code */
@@ -13358,7 +13302,7 @@ static int __pyx_pf_4rdma_7ibverbs_2PD___cinit__(struct __pyx_obj_4rdma_7ibverbs
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__cinit__", 0);
 
-  /* "rdma/ibverbs.pyx":618
+  /* "rdma/ibverbs.pyx":614
  * 
  *     def __cinit__(self, Context ctx not None):
  *         self._context = ctx             # <<<<<<<<<<<<<<
@@ -13371,7 +13315,7 @@ static int __pyx_pf_4rdma_7ibverbs_2PD___cinit__(struct __pyx_obj_4rdma_7ibverbs
   __Pyx_DECREF(((PyObject *)__pyx_v_self->_context));
   __pyx_v_self->_context = __pyx_v_ctx;
 
-  /* "rdma/ibverbs.pyx":619
+  /* "rdma/ibverbs.pyx":615
  *     def __cinit__(self, Context ctx not None):
  *         self._context = ctx
  *         self._pd = c.ibv_alloc_pd(ctx._ctx)             # <<<<<<<<<<<<<<
@@ -13380,7 +13324,7 @@ static int __pyx_pf_4rdma_7ibverbs_2PD___cinit__(struct __pyx_obj_4rdma_7ibverbs
  */
   __pyx_v_self->_pd = ibv_alloc_pd(__pyx_v_ctx->_ctx);
 
-  /* "rdma/ibverbs.pyx":620
+  /* "rdma/ibverbs.pyx":616
  *         self._context = ctx
  *         self._pd = c.ibv_alloc_pd(ctx._ctx)
  *         if self._pd == NULL:             # <<<<<<<<<<<<<<
@@ -13390,19 +13334,19 @@ static int __pyx_pf_4rdma_7ibverbs_2PD___cinit__(struct __pyx_obj_4rdma_7ibverbs
   __pyx_t_1 = ((__pyx_v_self->_pd == NULL) != 0);
   if (unlikely(__pyx_t_1)) {
 
-    /* "rdma/ibverbs.pyx":621
+    /* "rdma/ibverbs.pyx":617
  *         self._pd = c.ibv_alloc_pd(ctx._ctx)
  *         if self._pd == NULL:
  *             raise rdma.SysError(errno,"ibv_alloc_pd",             # <<<<<<<<<<<<<<
  *                                 "Failed to allocate protection domain")
  *         self._children_qp = WeakSet();
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_rdma); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 621, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_rdma); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 617, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_SysError); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 621, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_SysError); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 617, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __pyx_t_3 = __Pyx_PyInt_From_int(errno); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 621, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyInt_From_int(errno); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 617, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __pyx_t_5 = NULL;
     __pyx_t_6 = 0;
@@ -13419,7 +13363,7 @@ static int __pyx_pf_4rdma_7ibverbs_2PD___cinit__(struct __pyx_obj_4rdma_7ibverbs
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_4)) {
       PyObject *__pyx_temp[4] = {__pyx_t_5, __pyx_t_3, __pyx_n_s_ibv_alloc_pd, __pyx_kp_s_Failed_to_allocate_protection_do};
-      __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_6, 3+__pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 621, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_6, 3+__pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 617, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -13428,14 +13372,14 @@ static int __pyx_pf_4rdma_7ibverbs_2PD___cinit__(struct __pyx_obj_4rdma_7ibverbs
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_4)) {
       PyObject *__pyx_temp[4] = {__pyx_t_5, __pyx_t_3, __pyx_n_s_ibv_alloc_pd, __pyx_kp_s_Failed_to_allocate_protection_do};
-      __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_6, 3+__pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 621, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_6, 3+__pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 617, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     } else
     #endif
     {
-      __pyx_t_7 = PyTuple_New(3+__pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 621, __pyx_L1_error)
+      __pyx_t_7 = PyTuple_New(3+__pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 617, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_7);
       if (__pyx_t_5) {
         __Pyx_GIVEREF(__pyx_t_5); PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_t_5); __pyx_t_5 = NULL;
@@ -13449,16 +13393,16 @@ static int __pyx_pf_4rdma_7ibverbs_2PD___cinit__(struct __pyx_obj_4rdma_7ibverbs
       __Pyx_GIVEREF(__pyx_kp_s_Failed_to_allocate_protection_do);
       PyTuple_SET_ITEM(__pyx_t_7, 2+__pyx_t_6, __pyx_kp_s_Failed_to_allocate_protection_do);
       __pyx_t_3 = 0;
-      __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_7, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 621, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_7, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 617, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
     }
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_Raise(__pyx_t_2, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __PYX_ERR(0, 621, __pyx_L1_error)
+    __PYX_ERR(0, 617, __pyx_L1_error)
 
-    /* "rdma/ibverbs.pyx":620
+    /* "rdma/ibverbs.pyx":616
  *         self._context = ctx
  *         self._pd = c.ibv_alloc_pd(ctx._ctx)
  *         if self._pd == NULL:             # <<<<<<<<<<<<<<
@@ -13467,14 +13411,14 @@ static int __pyx_pf_4rdma_7ibverbs_2PD___cinit__(struct __pyx_obj_4rdma_7ibverbs
  */
   }
 
-  /* "rdma/ibverbs.pyx":623
+  /* "rdma/ibverbs.pyx":619
  *             raise rdma.SysError(errno,"ibv_alloc_pd",
  *                                 "Failed to allocate protection domain")
  *         self._children_qp = WeakSet();             # <<<<<<<<<<<<<<
  *         self._children_srq = WeakSet();
  *         self._children_mr = WeakSet();
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_WeakSet); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 623, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_WeakSet); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 619, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __pyx_t_7 = NULL;
   if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_4))) {
@@ -13488,7 +13432,7 @@ static int __pyx_pf_4rdma_7ibverbs_2PD___cinit__(struct __pyx_obj_4rdma_7ibverbs
   }
   __pyx_t_2 = (__pyx_t_7) ? __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_7) : __Pyx_PyObject_CallNoArg(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
-  if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 623, __pyx_L1_error)
+  if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 619, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_GIVEREF(__pyx_t_2);
@@ -13497,14 +13441,14 @@ static int __pyx_pf_4rdma_7ibverbs_2PD___cinit__(struct __pyx_obj_4rdma_7ibverbs
   __pyx_v_self->_children_qp = __pyx_t_2;
   __pyx_t_2 = 0;
 
-  /* "rdma/ibverbs.pyx":624
+  /* "rdma/ibverbs.pyx":620
  *                                 "Failed to allocate protection domain")
  *         self._children_qp = WeakSet();
  *         self._children_srq = WeakSet();             # <<<<<<<<<<<<<<
  *         self._children_mr = WeakSet();
  *         self._children_ah = WeakSet();
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_WeakSet); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 624, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_WeakSet); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 620, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __pyx_t_7 = NULL;
   if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_4))) {
@@ -13518,7 +13462,7 @@ static int __pyx_pf_4rdma_7ibverbs_2PD___cinit__(struct __pyx_obj_4rdma_7ibverbs
   }
   __pyx_t_2 = (__pyx_t_7) ? __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_7) : __Pyx_PyObject_CallNoArg(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
-  if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 624, __pyx_L1_error)
+  if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 620, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_GIVEREF(__pyx_t_2);
@@ -13527,14 +13471,14 @@ static int __pyx_pf_4rdma_7ibverbs_2PD___cinit__(struct __pyx_obj_4rdma_7ibverbs
   __pyx_v_self->_children_srq = __pyx_t_2;
   __pyx_t_2 = 0;
 
-  /* "rdma/ibverbs.pyx":625
+  /* "rdma/ibverbs.pyx":621
  *         self._children_qp = WeakSet();
  *         self._children_srq = WeakSet();
  *         self._children_mr = WeakSet();             # <<<<<<<<<<<<<<
  *         self._children_ah = WeakSet();
  *         self._path_ah = "_cached_pd%x_ah"%(id(self));
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_WeakSet); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 625, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_WeakSet); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 621, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __pyx_t_7 = NULL;
   if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_4))) {
@@ -13548,7 +13492,7 @@ static int __pyx_pf_4rdma_7ibverbs_2PD___cinit__(struct __pyx_obj_4rdma_7ibverbs
   }
   __pyx_t_2 = (__pyx_t_7) ? __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_7) : __Pyx_PyObject_CallNoArg(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
-  if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 625, __pyx_L1_error)
+  if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 621, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_GIVEREF(__pyx_t_2);
@@ -13557,14 +13501,14 @@ static int __pyx_pf_4rdma_7ibverbs_2PD___cinit__(struct __pyx_obj_4rdma_7ibverbs
   __pyx_v_self->_children_mr = __pyx_t_2;
   __pyx_t_2 = 0;
 
-  /* "rdma/ibverbs.pyx":626
+  /* "rdma/ibverbs.pyx":622
  *         self._children_srq = WeakSet();
  *         self._children_mr = WeakSet();
  *         self._children_ah = WeakSet();             # <<<<<<<<<<<<<<
  *         self._path_ah = "_cached_pd%x_ah"%(id(self));
  * 
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_WeakSet); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 626, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_WeakSet); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 622, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __pyx_t_7 = NULL;
   if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_4))) {
@@ -13578,7 +13522,7 @@ static int __pyx_pf_4rdma_7ibverbs_2PD___cinit__(struct __pyx_obj_4rdma_7ibverbs
   }
   __pyx_t_2 = (__pyx_t_7) ? __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_7) : __Pyx_PyObject_CallNoArg(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
-  if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 626, __pyx_L1_error)
+  if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 622, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_GIVEREF(__pyx_t_2);
@@ -13587,16 +13531,16 @@ static int __pyx_pf_4rdma_7ibverbs_2PD___cinit__(struct __pyx_obj_4rdma_7ibverbs
   __pyx_v_self->_children_ah = __pyx_t_2;
   __pyx_t_2 = 0;
 
-  /* "rdma/ibverbs.pyx":627
+  /* "rdma/ibverbs.pyx":623
  *         self._children_mr = WeakSet();
  *         self._children_ah = WeakSet();
  *         self._path_ah = "_cached_pd%x_ah"%(id(self));             # <<<<<<<<<<<<<<
  * 
  *     def __dealloc__(self):
  */
-  __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_builtin_id, ((PyObject *)__pyx_v_self)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 627, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_builtin_id, ((PyObject *)__pyx_v_self)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 623, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_4 = __Pyx_PyString_FormatSafe(__pyx_kp_s_cached_pd_x_ah, __pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 627, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyString_FormatSafe(__pyx_kp_s_cached_pd_x_ah, __pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 623, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_GIVEREF(__pyx_t_4);
@@ -13605,7 +13549,7 @@ static int __pyx_pf_4rdma_7ibverbs_2PD___cinit__(struct __pyx_obj_4rdma_7ibverbs
   __pyx_v_self->_path_ah = __pyx_t_4;
   __pyx_t_4 = 0;
 
-  /* "rdma/ibverbs.pyx":617
+  /* "rdma/ibverbs.pyx":613
  *             return self._context;
  * 
  *     def __cinit__(self, Context ctx not None):             # <<<<<<<<<<<<<<
@@ -13629,7 +13573,7 @@ static int __pyx_pf_4rdma_7ibverbs_2PD___cinit__(struct __pyx_obj_4rdma_7ibverbs
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":629
+/* "rdma/ibverbs.pyx":625
  *         self._path_ah = "_cached_pd%x_ah"%(id(self));
  * 
  *     def __dealloc__(self):             # <<<<<<<<<<<<<<
@@ -13656,18 +13600,18 @@ static void __pyx_pf_4rdma_7ibverbs_2PD_2__dealloc__(struct __pyx_obj_4rdma_7ibv
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__dealloc__", 0);
 
-  /* "rdma/ibverbs.pyx":630
+  /* "rdma/ibverbs.pyx":626
  * 
  *     def __dealloc__(self):
  *         self._close();             # <<<<<<<<<<<<<<
  * 
  *     def __enter__(self):
  */
-  __pyx_t_1 = ((struct __pyx_vtabstruct_4rdma_7ibverbs_PD *)__pyx_v_self->__pyx_vtab)->_close(__pyx_v_self); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 630, __pyx_L1_error)
+  __pyx_t_1 = ((struct __pyx_vtabstruct_4rdma_7ibverbs_PD *)__pyx_v_self->__pyx_vtab)->_close(__pyx_v_self); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 626, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "rdma/ibverbs.pyx":629
+  /* "rdma/ibverbs.pyx":625
  *         self._path_ah = "_cached_pd%x_ah"%(id(self));
  * 
  *     def __dealloc__(self):             # <<<<<<<<<<<<<<
@@ -13684,7 +13628,7 @@ static void __pyx_pf_4rdma_7ibverbs_2PD_2__dealloc__(struct __pyx_obj_4rdma_7ibv
   __Pyx_RefNannyFinishContext();
 }
 
-/* "rdma/ibverbs.pyx":632
+/* "rdma/ibverbs.pyx":628
  *         self._close();
  * 
  *     def __enter__(self):             # <<<<<<<<<<<<<<
@@ -13710,7 +13654,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2PD_4__enter__(struct __pyx_obj_4rdma_7
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__enter__", 0);
 
-  /* "rdma/ibverbs.pyx":633
+  /* "rdma/ibverbs.pyx":629
  * 
  *     def __enter__(self):
  *         return self             # <<<<<<<<<<<<<<
@@ -13722,7 +13666,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2PD_4__enter__(struct __pyx_obj_4rdma_7
   __pyx_r = ((PyObject *)__pyx_v_self);
   goto __pyx_L0;
 
-  /* "rdma/ibverbs.pyx":632
+  /* "rdma/ibverbs.pyx":628
  *         self._close();
  * 
  *     def __enter__(self):             # <<<<<<<<<<<<<<
@@ -13737,7 +13681,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2PD_4__enter__(struct __pyx_obj_4rdma_7
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":635
+/* "rdma/ibverbs.pyx":631
  *         return self
  * 
  *     def __exit__(self,*exc_info):             # <<<<<<<<<<<<<<
@@ -13772,18 +13716,18 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2PD_6__exit__(struct __pyx_obj_4rdma_7i
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__exit__", 0);
 
-  /* "rdma/ibverbs.pyx":636
+  /* "rdma/ibverbs.pyx":632
  * 
  *     def __exit__(self,*exc_info):
  *         self._close();             # <<<<<<<<<<<<<<
  * 
  *     def close(self):
  */
-  __pyx_t_1 = ((struct __pyx_vtabstruct_4rdma_7ibverbs_PD *)__pyx_v_self->__pyx_vtab)->_close(__pyx_v_self); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 636, __pyx_L1_error)
+  __pyx_t_1 = ((struct __pyx_vtabstruct_4rdma_7ibverbs_PD *)__pyx_v_self->__pyx_vtab)->_close(__pyx_v_self); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 632, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "rdma/ibverbs.pyx":635
+  /* "rdma/ibverbs.pyx":631
  *         return self
  * 
  *     def __exit__(self,*exc_info):             # <<<<<<<<<<<<<<
@@ -13804,7 +13748,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2PD_6__exit__(struct __pyx_obj_4rdma_7i
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":638
+/* "rdma/ibverbs.pyx":634
  *         self._close();
  * 
  *     def close(self):             # <<<<<<<<<<<<<<
@@ -13835,18 +13779,18 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2PD_8close(struct __pyx_obj_4rdma_7ibve
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("close", 0);
 
-  /* "rdma/ibverbs.pyx":640
+  /* "rdma/ibverbs.pyx":636
  *     def close(self):
  *         """Free the verbs pd handle."""
  *         self._close();             # <<<<<<<<<<<<<<
  * 
  *     cdef _close(self):
  */
-  __pyx_t_1 = ((struct __pyx_vtabstruct_4rdma_7ibverbs_PD *)__pyx_v_self->__pyx_vtab)->_close(__pyx_v_self); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 640, __pyx_L1_error)
+  __pyx_t_1 = ((struct __pyx_vtabstruct_4rdma_7ibverbs_PD *)__pyx_v_self->__pyx_vtab)->_close(__pyx_v_self); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 636, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "rdma/ibverbs.pyx":638
+  /* "rdma/ibverbs.pyx":634
  *         self._close();
  * 
  *     def close(self):             # <<<<<<<<<<<<<<
@@ -13867,7 +13811,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2PD_8close(struct __pyx_obj_4rdma_7ibve
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":642
+/* "rdma/ibverbs.pyx":638
  *         self._close();
  * 
  *     cdef _close(self):             # <<<<<<<<<<<<<<
@@ -13891,7 +13835,7 @@ static PyObject *__pyx_f_4rdma_7ibverbs_2PD__close(struct __pyx_obj_4rdma_7ibver
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("_close", 0);
 
-  /* "rdma/ibverbs.pyx":644
+  /* "rdma/ibverbs.pyx":640
  *     cdef _close(self):
  *         cdef int rc
  *         while self._children_qp:             # <<<<<<<<<<<<<<
@@ -13899,17 +13843,99 @@ static PyObject *__pyx_f_4rdma_7ibverbs_2PD__close(struct __pyx_obj_4rdma_7ibver
  *         while self._children_ah:
  */
   while (1) {
-    __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_v_self->_children_qp); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 644, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_v_self->_children_qp); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 640, __pyx_L1_error)
     if (!__pyx_t_1) break;
 
-    /* "rdma/ibverbs.pyx":645
+    /* "rdma/ibverbs.pyx":641
  *         cdef int rc
  *         while self._children_qp:
  *             self._children_qp.pop().close();             # <<<<<<<<<<<<<<
  *         while self._children_ah:
  *             self._children_ah.pop().close();
  */
-    __pyx_t_3 = __Pyx_PyObject_Pop(__pyx_v_self->_children_qp); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 645, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_Pop(__pyx_v_self->_children_qp); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 641, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_3);
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_close); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 641, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_4);
+    __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+    __pyx_t_3 = NULL;
+    if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_4))) {
+      __pyx_t_3 = PyMethod_GET_SELF(__pyx_t_4);
+      if (likely(__pyx_t_3)) {
+        PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_4);
+        __Pyx_INCREF(__pyx_t_3);
+        __Pyx_INCREF(function);
+        __Pyx_DECREF_SET(__pyx_t_4, function);
+      }
+    }
+    __pyx_t_2 = (__pyx_t_3) ? __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_3) : __Pyx_PyObject_CallNoArg(__pyx_t_4);
+    __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
+    if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 641, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_2);
+    __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  }
+
+  /* "rdma/ibverbs.pyx":642
+ *         while self._children_qp:
+ *             self._children_qp.pop().close();
+ *         while self._children_ah:             # <<<<<<<<<<<<<<
+ *             self._children_ah.pop().close();
+ *         while self._children_srq:
+ */
+  while (1) {
+    __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_v_self->_children_ah); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 642, __pyx_L1_error)
+    if (!__pyx_t_1) break;
+
+    /* "rdma/ibverbs.pyx":643
+ *             self._children_qp.pop().close();
+ *         while self._children_ah:
+ *             self._children_ah.pop().close();             # <<<<<<<<<<<<<<
+ *         while self._children_srq:
+ *             self._children_srq.pop().close();
+ */
+    __pyx_t_4 = __Pyx_PyObject_Pop(__pyx_v_self->_children_ah); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 643, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_4);
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_close); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 643, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_3);
+    __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+    __pyx_t_4 = NULL;
+    if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_3))) {
+      __pyx_t_4 = PyMethod_GET_SELF(__pyx_t_3);
+      if (likely(__pyx_t_4)) {
+        PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_3);
+        __Pyx_INCREF(__pyx_t_4);
+        __Pyx_INCREF(function);
+        __Pyx_DECREF_SET(__pyx_t_3, function);
+      }
+    }
+    __pyx_t_2 = (__pyx_t_4) ? __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_4) : __Pyx_PyObject_CallNoArg(__pyx_t_3);
+    __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
+    if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 643, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_2);
+    __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  }
+
+  /* "rdma/ibverbs.pyx":644
+ *         while self._children_ah:
+ *             self._children_ah.pop().close();
+ *         while self._children_srq:             # <<<<<<<<<<<<<<
+ *             self._children_srq.pop().close();
+ *         while self._children_mr:
+ */
+  while (1) {
+    __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_v_self->_children_srq); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 644, __pyx_L1_error)
+    if (!__pyx_t_1) break;
+
+    /* "rdma/ibverbs.pyx":645
+ *             self._children_ah.pop().close();
+ *         while self._children_srq:
+ *             self._children_srq.pop().close();             # <<<<<<<<<<<<<<
+ *         while self._children_mr:
+ *             self._children_mr.pop().close();
+ */
+    __pyx_t_3 = __Pyx_PyObject_Pop(__pyx_v_self->_children_srq); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 645, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_close); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 645, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
@@ -13933,24 +13959,24 @@ static PyObject *__pyx_f_4rdma_7ibverbs_2PD__close(struct __pyx_obj_4rdma_7ibver
   }
 
   /* "rdma/ibverbs.pyx":646
- *         while self._children_qp:
- *             self._children_qp.pop().close();
- *         while self._children_ah:             # <<<<<<<<<<<<<<
- *             self._children_ah.pop().close();
  *         while self._children_srq:
+ *             self._children_srq.pop().close();
+ *         while self._children_mr:             # <<<<<<<<<<<<<<
+ *             self._children_mr.pop().close();
+ *         if self._pd != NULL:
  */
   while (1) {
-    __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_v_self->_children_ah); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 646, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_v_self->_children_mr); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 646, __pyx_L1_error)
     if (!__pyx_t_1) break;
 
     /* "rdma/ibverbs.pyx":647
- *             self._children_qp.pop().close();
- *         while self._children_ah:
- *             self._children_ah.pop().close();             # <<<<<<<<<<<<<<
- *         while self._children_srq:
  *             self._children_srq.pop().close();
+ *         while self._children_mr:
+ *             self._children_mr.pop().close();             # <<<<<<<<<<<<<<
+ *         if self._pd != NULL:
+ *             if self._context._ctx == NULL:
  */
-    __pyx_t_4 = __Pyx_PyObject_Pop(__pyx_v_self->_children_ah); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 647, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_Pop(__pyx_v_self->_children_mr); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 647, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_close); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 647, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
@@ -13974,88 +14000,6 @@ static PyObject *__pyx_f_4rdma_7ibverbs_2PD__close(struct __pyx_obj_4rdma_7ibver
   }
 
   /* "rdma/ibverbs.pyx":648
- *         while self._children_ah:
- *             self._children_ah.pop().close();
- *         while self._children_srq:             # <<<<<<<<<<<<<<
- *             self._children_srq.pop().close();
- *         while self._children_mr:
- */
-  while (1) {
-    __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_v_self->_children_srq); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 648, __pyx_L1_error)
-    if (!__pyx_t_1) break;
-
-    /* "rdma/ibverbs.pyx":649
- *             self._children_ah.pop().close();
- *         while self._children_srq:
- *             self._children_srq.pop().close();             # <<<<<<<<<<<<<<
- *         while self._children_mr:
- *             self._children_mr.pop().close();
- */
-    __pyx_t_3 = __Pyx_PyObject_Pop(__pyx_v_self->_children_srq); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 649, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_close); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 649, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_4);
-    __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __pyx_t_3 = NULL;
-    if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_4))) {
-      __pyx_t_3 = PyMethod_GET_SELF(__pyx_t_4);
-      if (likely(__pyx_t_3)) {
-        PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_4);
-        __Pyx_INCREF(__pyx_t_3);
-        __Pyx_INCREF(function);
-        __Pyx_DECREF_SET(__pyx_t_4, function);
-      }
-    }
-    __pyx_t_2 = (__pyx_t_3) ? __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_3) : __Pyx_PyObject_CallNoArg(__pyx_t_4);
-    __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
-    if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 649, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_2);
-    __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  }
-
-  /* "rdma/ibverbs.pyx":650
- *         while self._children_srq:
- *             self._children_srq.pop().close();
- *         while self._children_mr:             # <<<<<<<<<<<<<<
- *             self._children_mr.pop().close();
- *         if self._pd != NULL:
- */
-  while (1) {
-    __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_v_self->_children_mr); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 650, __pyx_L1_error)
-    if (!__pyx_t_1) break;
-
-    /* "rdma/ibverbs.pyx":651
- *             self._children_srq.pop().close();
- *         while self._children_mr:
- *             self._children_mr.pop().close();             # <<<<<<<<<<<<<<
- *         if self._pd != NULL:
- *             if self._context._ctx == NULL:
- */
-    __pyx_t_4 = __Pyx_PyObject_Pop(__pyx_v_self->_children_mr); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 651, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_close); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 651, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_3);
-    __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __pyx_t_4 = NULL;
-    if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_3))) {
-      __pyx_t_4 = PyMethod_GET_SELF(__pyx_t_3);
-      if (likely(__pyx_t_4)) {
-        PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_3);
-        __Pyx_INCREF(__pyx_t_4);
-        __Pyx_INCREF(function);
-        __Pyx_DECREF_SET(__pyx_t_3, function);
-      }
-    }
-    __pyx_t_2 = (__pyx_t_4) ? __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_4) : __Pyx_PyObject_CallNoArg(__pyx_t_3);
-    __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-    if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 651, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_2);
-    __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  }
-
-  /* "rdma/ibverbs.pyx":652
  *         while self._children_mr:
  *             self._children_mr.pop().close();
  *         if self._pd != NULL:             # <<<<<<<<<<<<<<
@@ -14065,7 +14009,7 @@ static PyObject *__pyx_f_4rdma_7ibverbs_2PD__close(struct __pyx_obj_4rdma_7ibver
   __pyx_t_1 = ((__pyx_v_self->_pd != NULL) != 0);
   if (__pyx_t_1) {
 
-    /* "rdma/ibverbs.pyx":653
+    /* "rdma/ibverbs.pyx":649
  *             self._children_mr.pop().close();
  *         if self._pd != NULL:
  *             if self._context._ctx == NULL:             # <<<<<<<<<<<<<<
@@ -14075,16 +14019,16 @@ static PyObject *__pyx_f_4rdma_7ibverbs_2PD__close(struct __pyx_obj_4rdma_7ibver
     __pyx_t_1 = ((__pyx_v_self->_context->_ctx == NULL) != 0);
     if (unlikely(__pyx_t_1)) {
 
-      /* "rdma/ibverbs.pyx":654
+      /* "rdma/ibverbs.pyx":650
  *         if self._pd != NULL:
  *             if self._context._ctx == NULL:
  *                 raise rdma.RDMAError("Context closed before owned object");             # <<<<<<<<<<<<<<
  *             rc = c.ibv_dealloc_pd(self._pd)
  *             if rc != 0:
  */
-      __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_rdma); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 654, __pyx_L1_error)
+      __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_rdma); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 650, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
-      __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_RDMAError); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 654, __pyx_L1_error)
+      __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_RDMAError); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 650, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
       __pyx_t_3 = NULL;
@@ -14099,14 +14043,14 @@ static PyObject *__pyx_f_4rdma_7ibverbs_2PD__close(struct __pyx_obj_4rdma_7ibver
       }
       __pyx_t_2 = (__pyx_t_3) ? __Pyx_PyObject_Call2Args(__pyx_t_4, __pyx_t_3, __pyx_kp_s_Context_closed_before_owned_obje) : __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_kp_s_Context_closed_before_owned_obje);
       __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
-      if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 654, __pyx_L1_error)
+      if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 650, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       __Pyx_Raise(__pyx_t_2, 0, 0, 0);
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-      __PYX_ERR(0, 654, __pyx_L1_error)
+      __PYX_ERR(0, 650, __pyx_L1_error)
 
-      /* "rdma/ibverbs.pyx":653
+      /* "rdma/ibverbs.pyx":649
  *             self._children_mr.pop().close();
  *         if self._pd != NULL:
  *             if self._context._ctx == NULL:             # <<<<<<<<<<<<<<
@@ -14115,7 +14059,7 @@ static PyObject *__pyx_f_4rdma_7ibverbs_2PD__close(struct __pyx_obj_4rdma_7ibver
  */
     }
 
-    /* "rdma/ibverbs.pyx":655
+    /* "rdma/ibverbs.pyx":651
  *             if self._context._ctx == NULL:
  *                 raise rdma.RDMAError("Context closed before owned object");
  *             rc = c.ibv_dealloc_pd(self._pd)             # <<<<<<<<<<<<<<
@@ -14124,7 +14068,7 @@ static PyObject *__pyx_f_4rdma_7ibverbs_2PD__close(struct __pyx_obj_4rdma_7ibver
  */
     __pyx_v_rc = ibv_dealloc_pd(__pyx_v_self->_pd);
 
-    /* "rdma/ibverbs.pyx":656
+    /* "rdma/ibverbs.pyx":652
  *                 raise rdma.RDMAError("Context closed before owned object");
  *             rc = c.ibv_dealloc_pd(self._pd)
  *             if rc != 0:             # <<<<<<<<<<<<<<
@@ -14134,19 +14078,19 @@ static PyObject *__pyx_f_4rdma_7ibverbs_2PD__close(struct __pyx_obj_4rdma_7ibver
     __pyx_t_1 = ((__pyx_v_rc != 0) != 0);
     if (unlikely(__pyx_t_1)) {
 
-      /* "rdma/ibverbs.pyx":657
+      /* "rdma/ibverbs.pyx":653
  *             rc = c.ibv_dealloc_pd(self._pd)
  *             if rc != 0:
  *                 raise rdma.SysError(rc,"ibv_dealloc_pd",             # <<<<<<<<<<<<<<
  *                                     "Failed to deallocate protection domain")
  *             self._pd = NULL
  */
-      __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_rdma); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 657, __pyx_L1_error)
+      __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_rdma); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 653, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
-      __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_SysError); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 657, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_SysError); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 653, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-      __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_rc); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 657, __pyx_L1_error)
+      __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_rc); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 653, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
       __pyx_t_5 = NULL;
       __pyx_t_6 = 0;
@@ -14163,7 +14107,7 @@ static PyObject *__pyx_f_4rdma_7ibverbs_2PD__close(struct __pyx_obj_4rdma_7ibver
       #if CYTHON_FAST_PYCALL
       if (PyFunction_Check(__pyx_t_3)) {
         PyObject *__pyx_temp[4] = {__pyx_t_5, __pyx_t_4, __pyx_n_s_ibv_dealloc_pd, __pyx_kp_s_Failed_to_deallocate_protection};
-        __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_6, 3+__pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 657, __pyx_L1_error)
+        __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_6, 3+__pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 653, __pyx_L1_error)
         __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -14172,14 +14116,14 @@ static PyObject *__pyx_f_4rdma_7ibverbs_2PD__close(struct __pyx_obj_4rdma_7ibver
       #if CYTHON_FAST_PYCCALL
       if (__Pyx_PyFastCFunction_Check(__pyx_t_3)) {
         PyObject *__pyx_temp[4] = {__pyx_t_5, __pyx_t_4, __pyx_n_s_ibv_dealloc_pd, __pyx_kp_s_Failed_to_deallocate_protection};
-        __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_6, 3+__pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 657, __pyx_L1_error)
+        __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_6, 3+__pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 653, __pyx_L1_error)
         __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       } else
       #endif
       {
-        __pyx_t_7 = PyTuple_New(3+__pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 657, __pyx_L1_error)
+        __pyx_t_7 = PyTuple_New(3+__pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 653, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_7);
         if (__pyx_t_5) {
           __Pyx_GIVEREF(__pyx_t_5); PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_t_5); __pyx_t_5 = NULL;
@@ -14193,16 +14137,16 @@ static PyObject *__pyx_f_4rdma_7ibverbs_2PD__close(struct __pyx_obj_4rdma_7ibver
         __Pyx_GIVEREF(__pyx_kp_s_Failed_to_deallocate_protection);
         PyTuple_SET_ITEM(__pyx_t_7, 2+__pyx_t_6, __pyx_kp_s_Failed_to_deallocate_protection);
         __pyx_t_4 = 0;
-        __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_7, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 657, __pyx_L1_error)
+        __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_7, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 653, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
       }
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
       __Pyx_Raise(__pyx_t_2, 0, 0, 0);
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-      __PYX_ERR(0, 657, __pyx_L1_error)
+      __PYX_ERR(0, 653, __pyx_L1_error)
 
-      /* "rdma/ibverbs.pyx":656
+      /* "rdma/ibverbs.pyx":652
  *                 raise rdma.RDMAError("Context closed before owned object");
  *             rc = c.ibv_dealloc_pd(self._pd)
  *             if rc != 0:             # <<<<<<<<<<<<<<
@@ -14211,7 +14155,7 @@ static PyObject *__pyx_f_4rdma_7ibverbs_2PD__close(struct __pyx_obj_4rdma_7ibver
  */
     }
 
-    /* "rdma/ibverbs.pyx":659
+    /* "rdma/ibverbs.pyx":655
  *                 raise rdma.SysError(rc,"ibv_dealloc_pd",
  *                                     "Failed to deallocate protection domain")
  *             self._pd = NULL             # <<<<<<<<<<<<<<
@@ -14220,7 +14164,7 @@ static PyObject *__pyx_f_4rdma_7ibverbs_2PD__close(struct __pyx_obj_4rdma_7ibver
  */
     __pyx_v_self->_pd = NULL;
 
-    /* "rdma/ibverbs.pyx":660
+    /* "rdma/ibverbs.pyx":656
  *                                     "Failed to deallocate protection domain")
  *             self._pd = NULL
  *             self._context = None;             # <<<<<<<<<<<<<<
@@ -14233,7 +14177,7 @@ static PyObject *__pyx_f_4rdma_7ibverbs_2PD__close(struct __pyx_obj_4rdma_7ibver
     __Pyx_DECREF(((PyObject *)__pyx_v_self->_context));
     __pyx_v_self->_context = ((struct __pyx_obj_4rdma_7ibverbs_Context *)Py_None);
 
-    /* "rdma/ibverbs.pyx":652
+    /* "rdma/ibverbs.pyx":648
  *         while self._children_mr:
  *             self._children_mr.pop().close();
  *         if self._pd != NULL:             # <<<<<<<<<<<<<<
@@ -14242,7 +14186,7 @@ static PyObject *__pyx_f_4rdma_7ibverbs_2PD__close(struct __pyx_obj_4rdma_7ibver
  */
   }
 
-  /* "rdma/ibverbs.pyx":642
+  /* "rdma/ibverbs.pyx":638
  *         self._close();
  * 
  *     cdef _close(self):             # <<<<<<<<<<<<<<
@@ -14267,7 +14211,7 @@ static PyObject *__pyx_f_4rdma_7ibverbs_2PD__close(struct __pyx_obj_4rdma_7ibver
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":662
+/* "rdma/ibverbs.pyx":658
  *             self._context = None;
  * 
  *     def from_qp_num(self,int num):             # <<<<<<<<<<<<<<
@@ -14287,7 +14231,7 @@ static PyObject *__pyx_pw_4rdma_7ibverbs_2PD_11from_qp_num(PyObject *__pyx_v_sel
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("from_qp_num (wrapper)", 0);
   assert(__pyx_arg_num); {
-    __pyx_v_num = __Pyx_PyInt_As_int(__pyx_arg_num); if (unlikely((__pyx_v_num == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 662, __pyx_L3_error)
+    __pyx_v_num = __Pyx_PyInt_As_int(__pyx_arg_num); if (unlikely((__pyx_v_num == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 658, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -14317,7 +14261,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2PD_10from_qp_num(struct __pyx_obj_4rdm
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("from_qp_num", 0);
 
-  /* "rdma/ibverbs.pyx":666
+  /* "rdma/ibverbs.pyx":662
  *         if one was not found."""
  *         cdef QP qp
  *         for I in self._children_qp:             # <<<<<<<<<<<<<<
@@ -14328,26 +14272,26 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2PD_10from_qp_num(struct __pyx_obj_4rdm
     __pyx_t_1 = __pyx_v_self->_children_qp; __Pyx_INCREF(__pyx_t_1); __pyx_t_2 = 0;
     __pyx_t_3 = NULL;
   } else {
-    __pyx_t_2 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_v_self->_children_qp); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 666, __pyx_L1_error)
+    __pyx_t_2 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_v_self->_children_qp); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 662, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_3 = Py_TYPE(__pyx_t_1)->tp_iternext; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 666, __pyx_L1_error)
+    __pyx_t_3 = Py_TYPE(__pyx_t_1)->tp_iternext; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 662, __pyx_L1_error)
   }
   for (;;) {
     if (likely(!__pyx_t_3)) {
       if (likely(PyList_CheckExact(__pyx_t_1))) {
         if (__pyx_t_2 >= PyList_GET_SIZE(__pyx_t_1)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_4 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(0, 666, __pyx_L1_error)
+        __pyx_t_4 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(0, 662, __pyx_L1_error)
         #else
-        __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 666, __pyx_L1_error)
+        __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 662, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
         #endif
       } else {
         if (__pyx_t_2 >= PyTuple_GET_SIZE(__pyx_t_1)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_4 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(0, 666, __pyx_L1_error)
+        __pyx_t_4 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(0, 662, __pyx_L1_error)
         #else
-        __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 666, __pyx_L1_error)
+        __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 662, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
         #endif
       }
@@ -14357,7 +14301,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2PD_10from_qp_num(struct __pyx_obj_4rdm
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else __PYX_ERR(0, 666, __pyx_L1_error)
+          else __PYX_ERR(0, 662, __pyx_L1_error)
         }
         break;
       }
@@ -14366,20 +14310,20 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2PD_10from_qp_num(struct __pyx_obj_4rdm
     __Pyx_XDECREF_SET(__pyx_v_I, __pyx_t_4);
     __pyx_t_4 = 0;
 
-    /* "rdma/ibverbs.pyx":667
+    /* "rdma/ibverbs.pyx":663
  *         cdef QP qp
  *         for I in self._children_qp:
  *             qp = I;             # <<<<<<<<<<<<<<
  *             if qp._qp.qp_num == num:
  *                 return qp;
  */
-    if (!(likely(((__pyx_v_I) == Py_None) || likely(__Pyx_TypeTest(__pyx_v_I, __pyx_ptype_4rdma_7ibverbs_QP))))) __PYX_ERR(0, 667, __pyx_L1_error)
+    if (!(likely(((__pyx_v_I) == Py_None) || likely(__Pyx_TypeTest(__pyx_v_I, __pyx_ptype_4rdma_7ibverbs_QP))))) __PYX_ERR(0, 663, __pyx_L1_error)
     __pyx_t_4 = __pyx_v_I;
     __Pyx_INCREF(__pyx_t_4);
     __Pyx_XDECREF_SET(__pyx_v_qp, ((struct __pyx_obj_4rdma_7ibverbs_QP *)__pyx_t_4));
     __pyx_t_4 = 0;
 
-    /* "rdma/ibverbs.pyx":668
+    /* "rdma/ibverbs.pyx":664
  *         for I in self._children_qp:
  *             qp = I;
  *             if qp._qp.qp_num == num:             # <<<<<<<<<<<<<<
@@ -14389,7 +14333,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2PD_10from_qp_num(struct __pyx_obj_4rdm
     __pyx_t_5 = ((__pyx_v_qp->_qp->qp_num == __pyx_v_num) != 0);
     if (__pyx_t_5) {
 
-      /* "rdma/ibverbs.pyx":669
+      /* "rdma/ibverbs.pyx":665
  *             qp = I;
  *             if qp._qp.qp_num == num:
  *                 return qp;             # <<<<<<<<<<<<<<
@@ -14402,7 +14346,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2PD_10from_qp_num(struct __pyx_obj_4rdm
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
       goto __pyx_L0;
 
-      /* "rdma/ibverbs.pyx":668
+      /* "rdma/ibverbs.pyx":664
  *         for I in self._children_qp:
  *             qp = I;
  *             if qp._qp.qp_num == num:             # <<<<<<<<<<<<<<
@@ -14411,7 +14355,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2PD_10from_qp_num(struct __pyx_obj_4rdm
  */
     }
 
-    /* "rdma/ibverbs.pyx":666
+    /* "rdma/ibverbs.pyx":662
  *         if one was not found."""
  *         cdef QP qp
  *         for I in self._children_qp:             # <<<<<<<<<<<<<<
@@ -14421,7 +14365,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2PD_10from_qp_num(struct __pyx_obj_4rdm
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "rdma/ibverbs.pyx":670
+  /* "rdma/ibverbs.pyx":666
  *             if qp._qp.qp_num == num:
  *                 return qp;
  *         return None;             # <<<<<<<<<<<<<<
@@ -14432,7 +14376,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2PD_10from_qp_num(struct __pyx_obj_4rdm
   __pyx_r = Py_None; __Pyx_INCREF(Py_None);
   goto __pyx_L0;
 
-  /* "rdma/ibverbs.pyx":662
+  /* "rdma/ibverbs.pyx":658
  *             self._context = None;
  * 
  *     def from_qp_num(self,int num):             # <<<<<<<<<<<<<<
@@ -14454,7 +14398,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2PD_10from_qp_num(struct __pyx_obj_4rdm
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":672
+/* "rdma/ibverbs.pyx":668
  *         return None;
  * 
  *     def qp_raw(self,init):             # <<<<<<<<<<<<<<
@@ -14488,14 +14432,14 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2PD_12qp_raw(struct __pyx_obj_4rdma_7ib
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("qp_raw", 0);
 
-  /* "rdma/ibverbs.pyx":675
+  /* "rdma/ibverbs.pyx":671
  *         """Create a new :class:`rdma.ibverbs.QP` for this protection
  *         domain. *init* is a :class:`rdma.ibverbs.qp_init_attr`."""
  *         ret = QP(self,init);             # <<<<<<<<<<<<<<
  *         self._children_qp.add(ret);
  *         return ret;
  */
-  __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 675, __pyx_L1_error)
+  __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 671, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_INCREF(((PyObject *)__pyx_v_self));
   __Pyx_GIVEREF(((PyObject *)__pyx_v_self));
@@ -14503,20 +14447,20 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2PD_12qp_raw(struct __pyx_obj_4rdma_7ib
   __Pyx_INCREF(__pyx_v_init);
   __Pyx_GIVEREF(__pyx_v_init);
   PyTuple_SET_ITEM(__pyx_t_1, 1, __pyx_v_init);
-  __pyx_t_2 = __Pyx_PyObject_Call(((PyObject *)__pyx_ptype_4rdma_7ibverbs_QP), __pyx_t_1, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 675, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_Call(((PyObject *)__pyx_ptype_4rdma_7ibverbs_QP), __pyx_t_1, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 671, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_ret = ((struct __pyx_obj_4rdma_7ibverbs_QP *)__pyx_t_2);
   __pyx_t_2 = 0;
 
-  /* "rdma/ibverbs.pyx":676
+  /* "rdma/ibverbs.pyx":672
  *         domain. *init* is a :class:`rdma.ibverbs.qp_init_attr`."""
  *         ret = QP(self,init);
  *         self._children_qp.add(ret);             # <<<<<<<<<<<<<<
  *         return ret;
  * 
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->_children_qp, __pyx_n_s_add); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 676, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->_children_qp, __pyx_n_s_add); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 672, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_t_3 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_1))) {
@@ -14530,12 +14474,12 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2PD_12qp_raw(struct __pyx_obj_4rdma_7ib
   }
   __pyx_t_2 = (__pyx_t_3) ? __Pyx_PyObject_Call2Args(__pyx_t_1, __pyx_t_3, ((PyObject *)__pyx_v_ret)) : __Pyx_PyObject_CallOneArg(__pyx_t_1, ((PyObject *)__pyx_v_ret));
   __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 676, __pyx_L1_error)
+  if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 672, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "rdma/ibverbs.pyx":677
+  /* "rdma/ibverbs.pyx":673
  *         ret = QP(self,init);
  *         self._children_qp.add(ret);
  *         return ret;             # <<<<<<<<<<<<<<
@@ -14547,7 +14491,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2PD_12qp_raw(struct __pyx_obj_4rdma_7ib
   __pyx_r = ((PyObject *)__pyx_v_ret);
   goto __pyx_L0;
 
-  /* "rdma/ibverbs.pyx":672
+  /* "rdma/ibverbs.pyx":668
  *         return None;
  * 
  *     def qp_raw(self,init):             # <<<<<<<<<<<<<<
@@ -14569,7 +14513,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2PD_12qp_raw(struct __pyx_obj_4rdma_7ib
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":679
+/* "rdma/ibverbs.pyx":675
  *         return ret;
  * 
  *     def qp(self,             # <<<<<<<<<<<<<<
@@ -14601,7 +14545,7 @@ static PyObject *__pyx_pw_4rdma_7ibverbs_2PD_15qp(PyObject *__pyx_v_self, PyObje
     static PyObject **__pyx_pyargnames[] = {&__pyx_n_s_qp_type,&__pyx_n_s_max_send_wr,&__pyx_n_s_send_cq,&__pyx_n_s_max_recv_wr,&__pyx_n_s_recv_cq,&__pyx_n_s_srq,&__pyx_n_s_sq_sig_all,&__pyx_n_s_max_send_sge,&__pyx_n_s_max_recv_sge,&__pyx_n_s_max_inline_data,0};
     PyObject* values[10] = {0,0,0,0,0,0,0,0,0,0};
 
-    /* "rdma/ibverbs.pyx":685
+    /* "rdma/ibverbs.pyx":681
  *            int max_recv_wr,
  *            recv_cq,
  *            srq=None,             # <<<<<<<<<<<<<<
@@ -14645,25 +14589,25 @@ static PyObject *__pyx_pw_4rdma_7ibverbs_2PD_15qp(PyObject *__pyx_v_self, PyObje
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_max_send_wr)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("qp", 0, 5, 10, 1); __PYX_ERR(0, 679, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("qp", 0, 5, 10, 1); __PYX_ERR(0, 675, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
         if (likely((values[2] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_send_cq)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("qp", 0, 5, 10, 2); __PYX_ERR(0, 679, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("qp", 0, 5, 10, 2); __PYX_ERR(0, 675, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  3:
         if (likely((values[3] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_max_recv_wr)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("qp", 0, 5, 10, 3); __PYX_ERR(0, 679, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("qp", 0, 5, 10, 3); __PYX_ERR(0, 675, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  4:
         if (likely((values[4] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_recv_cq)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("qp", 0, 5, 10, 4); __PYX_ERR(0, 679, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("qp", 0, 5, 10, 4); __PYX_ERR(0, 675, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  5:
@@ -14697,7 +14641,7 @@ static PyObject *__pyx_pw_4rdma_7ibverbs_2PD_15qp(PyObject *__pyx_v_self, PyObje
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "qp") < 0)) __PYX_ERR(0, 679, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "qp") < 0)) __PYX_ERR(0, 675, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -14720,36 +14664,36 @@ static PyObject *__pyx_pw_4rdma_7ibverbs_2PD_15qp(PyObject *__pyx_v_self, PyObje
         default: goto __pyx_L5_argtuple_error;
       }
     }
-    __pyx_v_qp_type = __Pyx_PyInt_As_int(values[0]); if (unlikely((__pyx_v_qp_type == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 680, __pyx_L3_error)
-    __pyx_v_max_send_wr = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_max_send_wr == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 681, __pyx_L3_error)
+    __pyx_v_qp_type = __Pyx_PyInt_As_int(values[0]); if (unlikely((__pyx_v_qp_type == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 676, __pyx_L3_error)
+    __pyx_v_max_send_wr = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_max_send_wr == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 677, __pyx_L3_error)
     __pyx_v_send_cq = values[2];
-    __pyx_v_max_recv_wr = __Pyx_PyInt_As_int(values[3]); if (unlikely((__pyx_v_max_recv_wr == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 683, __pyx_L3_error)
+    __pyx_v_max_recv_wr = __Pyx_PyInt_As_int(values[3]); if (unlikely((__pyx_v_max_recv_wr == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 679, __pyx_L3_error)
     __pyx_v_recv_cq = values[4];
     __pyx_v_srq = values[5];
     if (values[6]) {
-      __pyx_v_sq_sig_all = __Pyx_PyInt_As_int(values[6]); if (unlikely((__pyx_v_sq_sig_all == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 686, __pyx_L3_error)
+      __pyx_v_sq_sig_all = __Pyx_PyInt_As_int(values[6]); if (unlikely((__pyx_v_sq_sig_all == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 682, __pyx_L3_error)
     } else {
       __pyx_v_sq_sig_all = ((int)1);
     }
     if (values[7]) {
-      __pyx_v_max_send_sge = __Pyx_PyInt_As_int(values[7]); if (unlikely((__pyx_v_max_send_sge == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 687, __pyx_L3_error)
+      __pyx_v_max_send_sge = __Pyx_PyInt_As_int(values[7]); if (unlikely((__pyx_v_max_send_sge == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 683, __pyx_L3_error)
     } else {
       __pyx_v_max_send_sge = ((int)1);
     }
     if (values[8]) {
-      __pyx_v_max_recv_sge = __Pyx_PyInt_As_int(values[8]); if (unlikely((__pyx_v_max_recv_sge == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 688, __pyx_L3_error)
+      __pyx_v_max_recv_sge = __Pyx_PyInt_As_int(values[8]); if (unlikely((__pyx_v_max_recv_sge == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 684, __pyx_L3_error)
     } else {
       __pyx_v_max_recv_sge = ((int)1);
     }
     if (values[9]) {
-      __pyx_v_max_inline_data = __Pyx_PyInt_As_int(values[9]); if (unlikely((__pyx_v_max_inline_data == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 689, __pyx_L3_error)
+      __pyx_v_max_inline_data = __Pyx_PyInt_As_int(values[9]); if (unlikely((__pyx_v_max_inline_data == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 685, __pyx_L3_error)
     } else {
       __pyx_v_max_inline_data = ((int)0);
     }
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("qp", 0, 5, 10, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 679, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("qp", 0, 5, 10, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 675, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("rdma.ibverbs.PD.qp", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -14757,7 +14701,7 @@ static PyObject *__pyx_pw_4rdma_7ibverbs_2PD_15qp(PyObject *__pyx_v_self, PyObje
   __pyx_L4_argument_unpacking_done:;
   __pyx_r = __pyx_pf_4rdma_7ibverbs_2PD_14qp(((struct __pyx_obj_4rdma_7ibverbs_PD *)__pyx_v_self), __pyx_v_qp_type, __pyx_v_max_send_wr, __pyx_v_send_cq, __pyx_v_max_recv_wr, __pyx_v_recv_cq, __pyx_v_srq, __pyx_v_sq_sig_all, __pyx_v_max_send_sge, __pyx_v_max_recv_sge, __pyx_v_max_inline_data);
 
-  /* "rdma/ibverbs.pyx":679
+  /* "rdma/ibverbs.pyx":675
  *         return ret;
  * 
  *     def qp(self,             # <<<<<<<<<<<<<<
@@ -14784,170 +14728,170 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2PD_14qp(struct __pyx_obj_4rdma_7ibverb
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("qp", 0);
 
-  /* "rdma/ibverbs.pyx":693
+  /* "rdma/ibverbs.pyx":689
  *         This version expresses the QP creation attributes as keyword
  *         arguments."""
  *         cap = qp_cap(max_send_wr=max_send_wr,             # <<<<<<<<<<<<<<
  *                      max_recv_wr=max_recv_wr,
  *                      max_send_sge=max_send_sge,
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_qp_cap); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 693, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_qp_cap); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 689, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyDict_NewPresized(5); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 693, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyDict_NewPresized(5); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 689, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_max_send_wr); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 693, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_max_send_wr); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 689, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_max_send_wr, __pyx_t_3) < 0) __PYX_ERR(0, 693, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_max_send_wr, __pyx_t_3) < 0) __PYX_ERR(0, 689, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "rdma/ibverbs.pyx":694
+  /* "rdma/ibverbs.pyx":690
  *         arguments."""
  *         cap = qp_cap(max_send_wr=max_send_wr,
  *                      max_recv_wr=max_recv_wr,             # <<<<<<<<<<<<<<
  *                      max_send_sge=max_send_sge,
  *                      max_recv_sge=max_recv_sge,
  */
-  __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_max_recv_wr); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 694, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_max_recv_wr); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 690, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_max_recv_wr, __pyx_t_3) < 0) __PYX_ERR(0, 693, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_max_recv_wr, __pyx_t_3) < 0) __PYX_ERR(0, 689, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "rdma/ibverbs.pyx":695
+  /* "rdma/ibverbs.pyx":691
  *         cap = qp_cap(max_send_wr=max_send_wr,
  *                      max_recv_wr=max_recv_wr,
  *                      max_send_sge=max_send_sge,             # <<<<<<<<<<<<<<
  *                      max_recv_sge=max_recv_sge,
  *                      max_inline_data=max_inline_data)
  */
-  __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_max_send_sge); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 695, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_max_send_sge); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 691, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_max_send_sge, __pyx_t_3) < 0) __PYX_ERR(0, 693, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_max_send_sge, __pyx_t_3) < 0) __PYX_ERR(0, 689, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "rdma/ibverbs.pyx":696
+  /* "rdma/ibverbs.pyx":692
  *                      max_recv_wr=max_recv_wr,
  *                      max_send_sge=max_send_sge,
  *                      max_recv_sge=max_recv_sge,             # <<<<<<<<<<<<<<
  *                      max_inline_data=max_inline_data)
  *         init = qp_init_attr(send_cq=send_cq,
  */
-  __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_max_recv_sge); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 696, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_max_recv_sge); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 692, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_max_recv_sge, __pyx_t_3) < 0) __PYX_ERR(0, 693, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_max_recv_sge, __pyx_t_3) < 0) __PYX_ERR(0, 689, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "rdma/ibverbs.pyx":697
+  /* "rdma/ibverbs.pyx":693
  *                      max_send_sge=max_send_sge,
  *                      max_recv_sge=max_recv_sge,
  *                      max_inline_data=max_inline_data)             # <<<<<<<<<<<<<<
  *         init = qp_init_attr(send_cq=send_cq,
  *                             recv_cq=recv_cq,
  */
-  __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_max_inline_data); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 697, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_max_inline_data); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 693, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_max_inline_data, __pyx_t_3) < 0) __PYX_ERR(0, 693, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_max_inline_data, __pyx_t_3) < 0) __PYX_ERR(0, 689, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "rdma/ibverbs.pyx":693
+  /* "rdma/ibverbs.pyx":689
  *         This version expresses the QP creation attributes as keyword
  *         arguments."""
  *         cap = qp_cap(max_send_wr=max_send_wr,             # <<<<<<<<<<<<<<
  *                      max_recv_wr=max_recv_wr,
  *                      max_send_sge=max_send_sge,
  */
-  __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_empty_tuple, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 693, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_empty_tuple, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 689, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_cap = __pyx_t_3;
   __pyx_t_3 = 0;
 
-  /* "rdma/ibverbs.pyx":698
+  /* "rdma/ibverbs.pyx":694
  *                      max_recv_sge=max_recv_sge,
  *                      max_inline_data=max_inline_data)
  *         init = qp_init_attr(send_cq=send_cq,             # <<<<<<<<<<<<<<
  *                             recv_cq=recv_cq,
  *                             srq=srq,
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_qp_init_attr); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 698, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_qp_init_attr); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 694, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_2 = __Pyx_PyDict_NewPresized(6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 698, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyDict_NewPresized(6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 694, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_send_cq, __pyx_v_send_cq) < 0) __PYX_ERR(0, 698, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_send_cq, __pyx_v_send_cq) < 0) __PYX_ERR(0, 694, __pyx_L1_error)
 
-  /* "rdma/ibverbs.pyx":699
+  /* "rdma/ibverbs.pyx":695
  *                      max_inline_data=max_inline_data)
  *         init = qp_init_attr(send_cq=send_cq,
  *                             recv_cq=recv_cq,             # <<<<<<<<<<<<<<
  *                             srq=srq,
  *                             cap=cap,
  */
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_recv_cq, __pyx_v_recv_cq) < 0) __PYX_ERR(0, 698, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_recv_cq, __pyx_v_recv_cq) < 0) __PYX_ERR(0, 694, __pyx_L1_error)
 
-  /* "rdma/ibverbs.pyx":700
+  /* "rdma/ibverbs.pyx":696
  *         init = qp_init_attr(send_cq=send_cq,
  *                             recv_cq=recv_cq,
  *                             srq=srq,             # <<<<<<<<<<<<<<
  *                             cap=cap,
  *                             qp_type=qp_type,
  */
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_srq, __pyx_v_srq) < 0) __PYX_ERR(0, 698, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_srq, __pyx_v_srq) < 0) __PYX_ERR(0, 694, __pyx_L1_error)
 
-  /* "rdma/ibverbs.pyx":701
+  /* "rdma/ibverbs.pyx":697
  *                             recv_cq=recv_cq,
  *                             srq=srq,
  *                             cap=cap,             # <<<<<<<<<<<<<<
  *                             qp_type=qp_type,
  *                             sq_sig_all=sq_sig_all)
  */
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_cap, __pyx_v_cap) < 0) __PYX_ERR(0, 698, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_cap, __pyx_v_cap) < 0) __PYX_ERR(0, 694, __pyx_L1_error)
 
-  /* "rdma/ibverbs.pyx":702
+  /* "rdma/ibverbs.pyx":698
  *                             srq=srq,
  *                             cap=cap,
  *                             qp_type=qp_type,             # <<<<<<<<<<<<<<
  *                             sq_sig_all=sq_sig_all)
  *         ret = QP(self,init);
  */
-  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_qp_type); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 702, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_qp_type); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 698, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_qp_type, __pyx_t_1) < 0) __PYX_ERR(0, 698, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_qp_type, __pyx_t_1) < 0) __PYX_ERR(0, 694, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "rdma/ibverbs.pyx":703
+  /* "rdma/ibverbs.pyx":699
  *                             cap=cap,
  *                             qp_type=qp_type,
  *                             sq_sig_all=sq_sig_all)             # <<<<<<<<<<<<<<
  *         ret = QP(self,init);
  *         self._children_qp.add(ret);
  */
-  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_sq_sig_all); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 703, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_sq_sig_all); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 699, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_sq_sig_all, __pyx_t_1) < 0) __PYX_ERR(0, 698, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_sq_sig_all, __pyx_t_1) < 0) __PYX_ERR(0, 694, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "rdma/ibverbs.pyx":698
+  /* "rdma/ibverbs.pyx":694
  *                      max_recv_sge=max_recv_sge,
  *                      max_inline_data=max_inline_data)
  *         init = qp_init_attr(send_cq=send_cq,             # <<<<<<<<<<<<<<
  *                             recv_cq=recv_cq,
  *                             srq=srq,
  */
-  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_empty_tuple, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 698, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_empty_tuple, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 694, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_init = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "rdma/ibverbs.pyx":704
+  /* "rdma/ibverbs.pyx":700
  *                             qp_type=qp_type,
  *                             sq_sig_all=sq_sig_all)
  *         ret = QP(self,init);             # <<<<<<<<<<<<<<
  *         self._children_qp.add(ret);
  *         return ret;
  */
-  __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 704, __pyx_L1_error)
+  __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 700, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_INCREF(((PyObject *)__pyx_v_self));
   __Pyx_GIVEREF(((PyObject *)__pyx_v_self));
@@ -14955,20 +14899,20 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2PD_14qp(struct __pyx_obj_4rdma_7ibverb
   __Pyx_INCREF(__pyx_v_init);
   __Pyx_GIVEREF(__pyx_v_init);
   PyTuple_SET_ITEM(__pyx_t_1, 1, __pyx_v_init);
-  __pyx_t_2 = __Pyx_PyObject_Call(((PyObject *)__pyx_ptype_4rdma_7ibverbs_QP), __pyx_t_1, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 704, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_Call(((PyObject *)__pyx_ptype_4rdma_7ibverbs_QP), __pyx_t_1, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 700, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_ret = ((struct __pyx_obj_4rdma_7ibverbs_QP *)__pyx_t_2);
   __pyx_t_2 = 0;
 
-  /* "rdma/ibverbs.pyx":705
+  /* "rdma/ibverbs.pyx":701
  *                             sq_sig_all=sq_sig_all)
  *         ret = QP(self,init);
  *         self._children_qp.add(ret);             # <<<<<<<<<<<<<<
  *         return ret;
  * 
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->_children_qp, __pyx_n_s_add); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 705, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->_children_qp, __pyx_n_s_add); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 701, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_t_3 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_1))) {
@@ -14982,12 +14926,12 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2PD_14qp(struct __pyx_obj_4rdma_7ibverb
   }
   __pyx_t_2 = (__pyx_t_3) ? __Pyx_PyObject_Call2Args(__pyx_t_1, __pyx_t_3, ((PyObject *)__pyx_v_ret)) : __Pyx_PyObject_CallOneArg(__pyx_t_1, ((PyObject *)__pyx_v_ret));
   __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 705, __pyx_L1_error)
+  if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 701, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "rdma/ibverbs.pyx":706
+  /* "rdma/ibverbs.pyx":702
  *         ret = QP(self,init);
  *         self._children_qp.add(ret);
  *         return ret;             # <<<<<<<<<<<<<<
@@ -14999,7 +14943,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2PD_14qp(struct __pyx_obj_4rdma_7ibverb
   __pyx_r = ((PyObject *)__pyx_v_ret);
   goto __pyx_L0;
 
-  /* "rdma/ibverbs.pyx":679
+  /* "rdma/ibverbs.pyx":675
  *         return ret;
  * 
  *     def qp(self,             # <<<<<<<<<<<<<<
@@ -15023,7 +14967,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2PD_14qp(struct __pyx_obj_4rdma_7ibverb
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":708
+/* "rdma/ibverbs.pyx":704
  *         return ret;
  * 
  *     def srq(self,int max_wr=100,int max_sge=1):             # <<<<<<<<<<<<<<
@@ -15072,7 +15016,7 @@ static PyObject *__pyx_pw_4rdma_7ibverbs_2PD_17srq(PyObject *__pyx_v_self, PyObj
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "srq") < 0)) __PYX_ERR(0, 708, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "srq") < 0)) __PYX_ERR(0, 704, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -15085,19 +15029,19 @@ static PyObject *__pyx_pw_4rdma_7ibverbs_2PD_17srq(PyObject *__pyx_v_self, PyObj
       }
     }
     if (values[0]) {
-      __pyx_v_max_wr = __Pyx_PyInt_As_int(values[0]); if (unlikely((__pyx_v_max_wr == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 708, __pyx_L3_error)
+      __pyx_v_max_wr = __Pyx_PyInt_As_int(values[0]); if (unlikely((__pyx_v_max_wr == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 704, __pyx_L3_error)
     } else {
       __pyx_v_max_wr = ((int)0x64);
     }
     if (values[1]) {
-      __pyx_v_max_sge = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_max_sge == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 708, __pyx_L3_error)
+      __pyx_v_max_sge = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_max_sge == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 704, __pyx_L3_error)
     } else {
       __pyx_v_max_sge = ((int)1);
     }
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("srq", 0, 0, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 708, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("srq", 0, 0, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 704, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("rdma.ibverbs.PD.srq", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -15122,43 +15066,43 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2PD_16srq(struct __pyx_obj_4rdma_7ibver
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("srq", 0);
 
-  /* "rdma/ibverbs.pyx":711
+  /* "rdma/ibverbs.pyx":707
  *         """Create a new :class:`rdma.ibverbs.SRQ` for this protection
  *         domain. *init* is a :class:`rdma.ibverbs.srq_init_attr`."""
  *         ret = SRQ(self,max_wr=max_wr,max_sge=max_sge);             # <<<<<<<<<<<<<<
  *         self._children_srq.add(ret);
  *         return ret;
  */
-  __pyx_t_1 = PyTuple_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 711, __pyx_L1_error)
+  __pyx_t_1 = PyTuple_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 707, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_INCREF(((PyObject *)__pyx_v_self));
   __Pyx_GIVEREF(((PyObject *)__pyx_v_self));
   PyTuple_SET_ITEM(__pyx_t_1, 0, ((PyObject *)__pyx_v_self));
-  __pyx_t_2 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 711, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 707, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_max_wr); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 711, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_max_wr); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 707, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_max_wr, __pyx_t_3) < 0) __PYX_ERR(0, 711, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_max_wr, __pyx_t_3) < 0) __PYX_ERR(0, 707, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_max_sge); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 711, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_max_sge); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 707, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_max_sge, __pyx_t_3) < 0) __PYX_ERR(0, 711, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_max_sge, __pyx_t_3) < 0) __PYX_ERR(0, 707, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_3 = __Pyx_PyObject_Call(((PyObject *)__pyx_ptype_4rdma_7ibverbs_SRQ), __pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 711, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_Call(((PyObject *)__pyx_ptype_4rdma_7ibverbs_SRQ), __pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 707, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_ret = ((struct __pyx_obj_4rdma_7ibverbs_SRQ *)__pyx_t_3);
   __pyx_t_3 = 0;
 
-  /* "rdma/ibverbs.pyx":712
+  /* "rdma/ibverbs.pyx":708
  *         domain. *init* is a :class:`rdma.ibverbs.srq_init_attr`."""
  *         ret = SRQ(self,max_wr=max_wr,max_sge=max_sge);
  *         self._children_srq.add(ret);             # <<<<<<<<<<<<<<
  *         return ret;
  * 
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->_children_srq, __pyx_n_s_add); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 712, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->_children_srq, __pyx_n_s_add); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 708, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_t_1 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
@@ -15172,12 +15116,12 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2PD_16srq(struct __pyx_obj_4rdma_7ibver
   }
   __pyx_t_3 = (__pyx_t_1) ? __Pyx_PyObject_Call2Args(__pyx_t_2, __pyx_t_1, ((PyObject *)__pyx_v_ret)) : __Pyx_PyObject_CallOneArg(__pyx_t_2, ((PyObject *)__pyx_v_ret));
   __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
-  if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 712, __pyx_L1_error)
+  if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 708, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "rdma/ibverbs.pyx":713
+  /* "rdma/ibverbs.pyx":709
  *         ret = SRQ(self,max_wr=max_wr,max_sge=max_sge);
  *         self._children_srq.add(ret);
  *         return ret;             # <<<<<<<<<<<<<<
@@ -15189,7 +15133,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2PD_16srq(struct __pyx_obj_4rdma_7ibver
   __pyx_r = ((PyObject *)__pyx_v_ret);
   goto __pyx_L0;
 
-  /* "rdma/ibverbs.pyx":708
+  /* "rdma/ibverbs.pyx":704
  *         return ret;
  * 
  *     def srq(self,int max_wr=100,int max_sge=1):             # <<<<<<<<<<<<<<
@@ -15211,7 +15155,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2PD_16srq(struct __pyx_obj_4rdma_7ibver
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":715
+/* "rdma/ibverbs.pyx":711
  *         return ret;
  * 
  *     def mr(self,buf,int access=0):             # <<<<<<<<<<<<<<
@@ -15258,7 +15202,7 @@ static PyObject *__pyx_pw_4rdma_7ibverbs_2PD_19mr(PyObject *__pyx_v_self, PyObje
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "mr") < 0)) __PYX_ERR(0, 715, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "mr") < 0)) __PYX_ERR(0, 711, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -15271,14 +15215,14 @@ static PyObject *__pyx_pw_4rdma_7ibverbs_2PD_19mr(PyObject *__pyx_v_self, PyObje
     }
     __pyx_v_buf = values[0];
     if (values[1]) {
-      __pyx_v_access = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_access == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 715, __pyx_L3_error)
+      __pyx_v_access = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_access == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 711, __pyx_L3_error)
     } else {
       __pyx_v_access = ((int)0);
     }
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("mr", 0, 1, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 715, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("mr", 0, 1, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 711, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("rdma.ibverbs.PD.mr", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -15303,16 +15247,16 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2PD_18mr(struct __pyx_obj_4rdma_7ibverb
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("mr", 0);
 
-  /* "rdma/ibverbs.pyx":717
+  /* "rdma/ibverbs.pyx":713
  *     def mr(self,buf,int access=0):
  *         """Create a new :class:`rdma.ibverbs.MR` for this protection domain."""
  *         ret = MR(self,buf,access);             # <<<<<<<<<<<<<<
  *         self._children_mr.add(ret);
  *         return ret;
  */
-  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_access); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 717, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_access); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 713, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = PyTuple_New(3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 717, __pyx_L1_error)
+  __pyx_t_2 = PyTuple_New(3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 713, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_INCREF(((PyObject *)__pyx_v_self));
   __Pyx_GIVEREF(((PyObject *)__pyx_v_self));
@@ -15323,20 +15267,20 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2PD_18mr(struct __pyx_obj_4rdma_7ibverb
   __Pyx_GIVEREF(__pyx_t_1);
   PyTuple_SET_ITEM(__pyx_t_2, 2, __pyx_t_1);
   __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyObject_Call(((PyObject *)__pyx_ptype_4rdma_7ibverbs_MR), __pyx_t_2, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 717, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_Call(((PyObject *)__pyx_ptype_4rdma_7ibverbs_MR), __pyx_t_2, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 713, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_ret = ((struct __pyx_obj_4rdma_7ibverbs_MR *)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "rdma/ibverbs.pyx":718
+  /* "rdma/ibverbs.pyx":714
  *         """Create a new :class:`rdma.ibverbs.MR` for this protection domain."""
  *         ret = MR(self,buf,access);
  *         self._children_mr.add(ret);             # <<<<<<<<<<<<<<
  *         return ret;
  * 
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->_children_mr, __pyx_n_s_add); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 718, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->_children_mr, __pyx_n_s_add); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 714, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_t_3 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
@@ -15350,12 +15294,12 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2PD_18mr(struct __pyx_obj_4rdma_7ibverb
   }
   __pyx_t_1 = (__pyx_t_3) ? __Pyx_PyObject_Call2Args(__pyx_t_2, __pyx_t_3, ((PyObject *)__pyx_v_ret)) : __Pyx_PyObject_CallOneArg(__pyx_t_2, ((PyObject *)__pyx_v_ret));
   __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 718, __pyx_L1_error)
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 714, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "rdma/ibverbs.pyx":719
+  /* "rdma/ibverbs.pyx":715
  *         ret = MR(self,buf,access);
  *         self._children_mr.add(ret);
  *         return ret;             # <<<<<<<<<<<<<<
@@ -15367,7 +15311,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2PD_18mr(struct __pyx_obj_4rdma_7ibverb
   __pyx_r = ((PyObject *)__pyx_v_ret);
   goto __pyx_L0;
 
-  /* "rdma/ibverbs.pyx":715
+  /* "rdma/ibverbs.pyx":711
  *         return ret;
  * 
  *     def mr(self,buf,int access=0):             # <<<<<<<<<<<<<<
@@ -15389,7 +15333,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2PD_18mr(struct __pyx_obj_4rdma_7ibverb
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":721
+/* "rdma/ibverbs.pyx":717
  *         return ret;
  * 
  *     def ah(self,attr):             # <<<<<<<<<<<<<<
@@ -15427,36 +15371,36 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2PD_20ah(struct __pyx_obj_4rdma_7ibverb
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("ah", 0);
 
-  /* "rdma/ibverbs.pyx":729
+  /* "rdma/ibverbs.pyx":725
  *         all references to the AH."""
  *         cdef AH ret
  *         if isinstance(attr,rdma.path.IBPath):             # <<<<<<<<<<<<<<
  *             # We cache the AH in the  onto the AH in the path
  *             # FIXME: should be getattr but the 3 argument version won't compile
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_rdma); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 729, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_rdma); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 725, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_path); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 729, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_path); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 725, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_IBPath); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 729, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_IBPath); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 725, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_3 = PyObject_IsInstance(__pyx_v_attr, __pyx_t_1); if (unlikely(__pyx_t_3 == ((int)-1))) __PYX_ERR(0, 729, __pyx_L1_error)
+  __pyx_t_3 = PyObject_IsInstance(__pyx_v_attr, __pyx_t_1); if (unlikely(__pyx_t_3 == ((int)-1))) __PYX_ERR(0, 725, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_t_4 = (__pyx_t_3 != 0);
   if (__pyx_t_4) {
 
-    /* "rdma/ibverbs.pyx":732
+    /* "rdma/ibverbs.pyx":728
  *             # We cache the AH in the  onto the AH in the path
  *             # FIXME: should be getattr but the 3 argument version won't compile
  *             ret = attr.__dict__.get(self._path_ah);             # <<<<<<<<<<<<<<
  *             if ret is None or ret._ah == NULL:
  *                 ret = AH(self,attr);
  */
-    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_attr, __pyx_n_s_dict); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 732, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_attr, __pyx_n_s_dict); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 728, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_get); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 732, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_get); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 728, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __pyx_t_2 = NULL;
@@ -15471,14 +15415,14 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2PD_20ah(struct __pyx_obj_4rdma_7ibverb
     }
     __pyx_t_1 = (__pyx_t_2) ? __Pyx_PyObject_Call2Args(__pyx_t_5, __pyx_t_2, __pyx_v_self->_path_ah) : __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_v_self->_path_ah);
     __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 732, __pyx_L1_error)
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 728, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    if (!(likely(((__pyx_t_1) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_1, __pyx_ptype_4rdma_7ibverbs_AH))))) __PYX_ERR(0, 732, __pyx_L1_error)
+    if (!(likely(((__pyx_t_1) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_1, __pyx_ptype_4rdma_7ibverbs_AH))))) __PYX_ERR(0, 728, __pyx_L1_error)
     __pyx_v_ret = ((struct __pyx_obj_4rdma_7ibverbs_AH *)__pyx_t_1);
     __pyx_t_1 = 0;
 
-    /* "rdma/ibverbs.pyx":733
+    /* "rdma/ibverbs.pyx":729
  *             # FIXME: should be getattr but the 3 argument version won't compile
  *             ret = attr.__dict__.get(self._path_ah);
  *             if ret is None or ret._ah == NULL:             # <<<<<<<<<<<<<<
@@ -15497,14 +15441,14 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2PD_20ah(struct __pyx_obj_4rdma_7ibverb
     __pyx_L5_bool_binop_done:;
     if (__pyx_t_4) {
 
-      /* "rdma/ibverbs.pyx":734
+      /* "rdma/ibverbs.pyx":730
  *             ret = attr.__dict__.get(self._path_ah);
  *             if ret is None or ret._ah == NULL:
  *                 ret = AH(self,attr);             # <<<<<<<<<<<<<<
  *                 setattr(attr,self._path_ah,ret);
  *                 self._children_ah.add(ret);
  */
-      __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 734, __pyx_L1_error)
+      __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 730, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_INCREF(((PyObject *)__pyx_v_self));
       __Pyx_GIVEREF(((PyObject *)__pyx_v_self));
@@ -15512,13 +15456,13 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2PD_20ah(struct __pyx_obj_4rdma_7ibverb
       __Pyx_INCREF(__pyx_v_attr);
       __Pyx_GIVEREF(__pyx_v_attr);
       PyTuple_SET_ITEM(__pyx_t_1, 1, __pyx_v_attr);
-      __pyx_t_5 = __Pyx_PyObject_Call(((PyObject *)__pyx_ptype_4rdma_7ibverbs_AH), __pyx_t_1, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 734, __pyx_L1_error)
+      __pyx_t_5 = __Pyx_PyObject_Call(((PyObject *)__pyx_ptype_4rdma_7ibverbs_AH), __pyx_t_1, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 730, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
       __Pyx_DECREF_SET(__pyx_v_ret, ((struct __pyx_obj_4rdma_7ibverbs_AH *)__pyx_t_5));
       __pyx_t_5 = 0;
 
-      /* "rdma/ibverbs.pyx":735
+      /* "rdma/ibverbs.pyx":731
  *             if ret is None or ret._ah == NULL:
  *                 ret = AH(self,attr);
  *                 setattr(attr,self._path_ah,ret);             # <<<<<<<<<<<<<<
@@ -15527,17 +15471,17 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2PD_20ah(struct __pyx_obj_4rdma_7ibverb
  */
       __pyx_t_5 = __pyx_v_self->_path_ah;
       __Pyx_INCREF(__pyx_t_5);
-      __pyx_t_7 = PyObject_SetAttr(__pyx_v_attr, __pyx_t_5, ((PyObject *)__pyx_v_ret)); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 735, __pyx_L1_error)
+      __pyx_t_7 = PyObject_SetAttr(__pyx_v_attr, __pyx_t_5, ((PyObject *)__pyx_v_ret)); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 731, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-      /* "rdma/ibverbs.pyx":736
+      /* "rdma/ibverbs.pyx":732
  *                 ret = AH(self,attr);
  *                 setattr(attr,self._path_ah,ret);
  *                 self._children_ah.add(ret);             # <<<<<<<<<<<<<<
  *             return ret;
  *         else:
  */
-      __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->_children_ah, __pyx_n_s_add); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 736, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->_children_ah, __pyx_n_s_add); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 732, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __pyx_t_2 = NULL;
       if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_1))) {
@@ -15551,12 +15495,12 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2PD_20ah(struct __pyx_obj_4rdma_7ibverb
       }
       __pyx_t_5 = (__pyx_t_2) ? __Pyx_PyObject_Call2Args(__pyx_t_1, __pyx_t_2, ((PyObject *)__pyx_v_ret)) : __Pyx_PyObject_CallOneArg(__pyx_t_1, ((PyObject *)__pyx_v_ret));
       __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
-      if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 736, __pyx_L1_error)
+      if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 732, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-      /* "rdma/ibverbs.pyx":733
+      /* "rdma/ibverbs.pyx":729
  *             # FIXME: should be getattr but the 3 argument version won't compile
  *             ret = attr.__dict__.get(self._path_ah);
  *             if ret is None or ret._ah == NULL:             # <<<<<<<<<<<<<<
@@ -15565,7 +15509,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2PD_20ah(struct __pyx_obj_4rdma_7ibverb
  */
     }
 
-    /* "rdma/ibverbs.pyx":737
+    /* "rdma/ibverbs.pyx":733
  *                 setattr(attr,self._path_ah,ret);
  *                 self._children_ah.add(ret);
  *             return ret;             # <<<<<<<<<<<<<<
@@ -15577,7 +15521,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2PD_20ah(struct __pyx_obj_4rdma_7ibverb
     __pyx_r = ((PyObject *)__pyx_v_ret);
     goto __pyx_L0;
 
-    /* "rdma/ibverbs.pyx":729
+    /* "rdma/ibverbs.pyx":725
  *         all references to the AH."""
  *         cdef AH ret
  *         if isinstance(attr,rdma.path.IBPath):             # <<<<<<<<<<<<<<
@@ -15586,7 +15530,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2PD_20ah(struct __pyx_obj_4rdma_7ibverb
  */
   }
 
-  /* "rdma/ibverbs.pyx":739
+  /* "rdma/ibverbs.pyx":735
  *             return ret;
  *         else:
  *             ret = AH(self,attr);             # <<<<<<<<<<<<<<
@@ -15594,7 +15538,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2PD_20ah(struct __pyx_obj_4rdma_7ibverb
  *         return ret;
  */
   /*else*/ {
-    __pyx_t_5 = PyTuple_New(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 739, __pyx_L1_error)
+    __pyx_t_5 = PyTuple_New(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 735, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_INCREF(((PyObject *)__pyx_v_self));
     __Pyx_GIVEREF(((PyObject *)__pyx_v_self));
@@ -15602,20 +15546,20 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2PD_20ah(struct __pyx_obj_4rdma_7ibverb
     __Pyx_INCREF(__pyx_v_attr);
     __Pyx_GIVEREF(__pyx_v_attr);
     PyTuple_SET_ITEM(__pyx_t_5, 1, __pyx_v_attr);
-    __pyx_t_1 = __Pyx_PyObject_Call(((PyObject *)__pyx_ptype_4rdma_7ibverbs_AH), __pyx_t_5, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 739, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(((PyObject *)__pyx_ptype_4rdma_7ibverbs_AH), __pyx_t_5, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 735, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __pyx_v_ret = ((struct __pyx_obj_4rdma_7ibverbs_AH *)__pyx_t_1);
     __pyx_t_1 = 0;
 
-    /* "rdma/ibverbs.pyx":740
+    /* "rdma/ibverbs.pyx":736
  *         else:
  *             ret = AH(self,attr);
  *             self._children_ah.add(ret);             # <<<<<<<<<<<<<<
  *         return ret;
  * 
  */
-    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->_children_ah, __pyx_n_s_add); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 740, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->_children_ah, __pyx_n_s_add); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 736, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __pyx_t_2 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_5))) {
@@ -15629,13 +15573,13 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2PD_20ah(struct __pyx_obj_4rdma_7ibverb
     }
     __pyx_t_1 = (__pyx_t_2) ? __Pyx_PyObject_Call2Args(__pyx_t_5, __pyx_t_2, ((PyObject *)__pyx_v_ret)) : __Pyx_PyObject_CallOneArg(__pyx_t_5, ((PyObject *)__pyx_v_ret));
     __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 740, __pyx_L1_error)
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 736, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   }
 
-  /* "rdma/ibverbs.pyx":741
+  /* "rdma/ibverbs.pyx":737
  *             ret = AH(self,attr);
  *             self._children_ah.add(ret);
  *         return ret;             # <<<<<<<<<<<<<<
@@ -15647,7 +15591,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2PD_20ah(struct __pyx_obj_4rdma_7ibverb
   __pyx_r = ((PyObject *)__pyx_v_ret);
   goto __pyx_L0;
 
-  /* "rdma/ibverbs.pyx":721
+  /* "rdma/ibverbs.pyx":717
  *         return ret;
  * 
  *     def ah(self,attr):             # <<<<<<<<<<<<<<
@@ -15669,7 +15613,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2PD_20ah(struct __pyx_obj_4rdma_7ibverb
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":743
+/* "rdma/ibverbs.pyx":739
  *         return ret;
  * 
  *     def __str__(self):             # <<<<<<<<<<<<<<
@@ -15701,7 +15645,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2PD_22__str__(struct __pyx_obj_4rdma_7i
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__str__", 0);
 
-  /* "rdma/ibverbs.pyx":744
+  /* "rdma/ibverbs.pyx":740
  * 
  *     def __str__(self):
  *         return "pd:%X:%s"%(self._pd.handle,self.ctx.node);             # <<<<<<<<<<<<<<
@@ -15709,14 +15653,14 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2PD_22__str__(struct __pyx_obj_4rdma_7i
  *         return "PD(%r,0x%x)"%(self._context,self._pd.handle);
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->_pd->handle); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 744, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->_pd->handle); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 740, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_ctx); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 744, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_ctx); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 740, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_node); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 744, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_node); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 740, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 744, __pyx_L1_error)
+  __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 740, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_GIVEREF(__pyx_t_1);
   PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_t_1);
@@ -15724,14 +15668,14 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2PD_22__str__(struct __pyx_obj_4rdma_7i
   PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_t_3);
   __pyx_t_1 = 0;
   __pyx_t_3 = 0;
-  __pyx_t_3 = __Pyx_PyString_Format(__pyx_kp_s_pd_X_s, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 744, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyString_Format(__pyx_kp_s_pd_X_s, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 740, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_r = __pyx_t_3;
   __pyx_t_3 = 0;
   goto __pyx_L0;
 
-  /* "rdma/ibverbs.pyx":743
+  /* "rdma/ibverbs.pyx":739
  *         return ret;
  * 
  *     def __str__(self):             # <<<<<<<<<<<<<<
@@ -15752,7 +15696,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2PD_22__str__(struct __pyx_obj_4rdma_7i
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":745
+/* "rdma/ibverbs.pyx":741
  *     def __str__(self):
  *         return "pd:%X:%s"%(self._pd.handle,self.ctx.node);
  *     def __repr__(self):             # <<<<<<<<<<<<<<
@@ -15783,7 +15727,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2PD_24__repr__(struct __pyx_obj_4rdma_7
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__repr__", 0);
 
-  /* "rdma/ibverbs.pyx":746
+  /* "rdma/ibverbs.pyx":742
  *         return "pd:%X:%s"%(self._pd.handle,self.ctx.node);
  *     def __repr__(self):
  *         return "PD(%r,0x%x)"%(self._context,self._pd.handle);             # <<<<<<<<<<<<<<
@@ -15791,9 +15735,9 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2PD_24__repr__(struct __pyx_obj_4rdma_7
  * cdef class AH:
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->_pd->handle); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 746, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->_pd->handle); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 742, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 746, __pyx_L1_error)
+  __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 742, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_INCREF(((PyObject *)__pyx_v_self->_context));
   __Pyx_GIVEREF(((PyObject *)__pyx_v_self->_context));
@@ -15801,14 +15745,14 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2PD_24__repr__(struct __pyx_obj_4rdma_7
   __Pyx_GIVEREF(__pyx_t_1);
   PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_t_1);
   __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyString_Format(__pyx_kp_s_PD_r_0x_x, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 746, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyString_Format(__pyx_kp_s_PD_r_0x_x, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 742, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "rdma/ibverbs.pyx":745
+  /* "rdma/ibverbs.pyx":741
  *     def __str__(self):
  *         return "pd:%X:%s"%(self._pd.handle,self.ctx.node);
  *     def __repr__(self):             # <<<<<<<<<<<<<<
@@ -15941,7 +15885,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2PD_28__setstate_cython__(CYTHON_UNUSED
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":753
+/* "rdma/ibverbs.pyx":749
  *     cdef c.ibv_ah *_ah
  * 
  *     def __cinit__(self, PD pd not None, attr):             # <<<<<<<<<<<<<<
@@ -15983,11 +15927,11 @@ static int __pyx_pw_4rdma_7ibverbs_2AH_1__cinit__(PyObject *__pyx_v_self, PyObje
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_attr)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 2, 2, 1); __PYX_ERR(0, 753, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 2, 2, 1); __PYX_ERR(0, 749, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__cinit__") < 0)) __PYX_ERR(0, 753, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__cinit__") < 0)) __PYX_ERR(0, 749, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -16000,13 +15944,13 @@ static int __pyx_pw_4rdma_7ibverbs_2AH_1__cinit__(PyObject *__pyx_v_self, PyObje
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 753, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 749, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("rdma.ibverbs.AH.__cinit__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return -1;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_pd), __pyx_ptype_4rdma_7ibverbs_PD, 0, "pd", 0))) __PYX_ERR(0, 753, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_pd), __pyx_ptype_4rdma_7ibverbs_PD, 0, "pd", 0))) __PYX_ERR(0, 749, __pyx_L1_error)
   __pyx_r = __pyx_pf_4rdma_7ibverbs_2AH___cinit__(((struct __pyx_obj_4rdma_7ibverbs_AH *)__pyx_v_self), __pyx_v_pd, __pyx_v_attr);
 
   /* function exit code */
@@ -16034,7 +15978,7 @@ static int __pyx_pf_4rdma_7ibverbs_2AH___cinit__(struct __pyx_obj_4rdma_7ibverbs
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__cinit__", 0);
 
-  /* "rdma/ibverbs.pyx":756
+  /* "rdma/ibverbs.pyx":752
  *         cdef c.ibv_ah_attr cattr
  * 
  *         memset(&cattr,0,sizeof(cattr));             # <<<<<<<<<<<<<<
@@ -16043,18 +15987,18 @@ static int __pyx_pf_4rdma_7ibverbs_2AH___cinit__(struct __pyx_obj_4rdma_7ibverbs
  */
   (void)(memset((&__pyx_v_cattr), 0, (sizeof(__pyx_v_cattr))));
 
-  /* "rdma/ibverbs.pyx":757
+  /* "rdma/ibverbs.pyx":753
  * 
  *         memset(&cattr,0,sizeof(cattr));
  *         to_ah_attr(&cattr, attr)             # <<<<<<<<<<<<<<
  *         self._ah = c.ibv_create_ah(pd._pd, &cattr)
  *         if self._ah == NULL:
  */
-  __pyx_t_1 = __pyx_f_4rdma_7ibverbs_to_ah_attr((&__pyx_v_cattr), __pyx_v_attr); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 757, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_4rdma_7ibverbs_to_ah_attr((&__pyx_v_cattr), __pyx_v_attr); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 753, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "rdma/ibverbs.pyx":758
+  /* "rdma/ibverbs.pyx":754
  *         memset(&cattr,0,sizeof(cattr));
  *         to_ah_attr(&cattr, attr)
  *         self._ah = c.ibv_create_ah(pd._pd, &cattr)             # <<<<<<<<<<<<<<
@@ -16063,7 +16007,7 @@ static int __pyx_pf_4rdma_7ibverbs_2AH___cinit__(struct __pyx_obj_4rdma_7ibverbs
  */
   __pyx_v_self->_ah = ibv_create_ah(__pyx_v_pd->_pd, (&__pyx_v_cattr));
 
-  /* "rdma/ibverbs.pyx":759
+  /* "rdma/ibverbs.pyx":755
  *         to_ah_attr(&cattr, attr)
  *         self._ah = c.ibv_create_ah(pd._pd, &cattr)
  *         if self._ah == NULL:             # <<<<<<<<<<<<<<
@@ -16073,19 +16017,19 @@ static int __pyx_pf_4rdma_7ibverbs_2AH___cinit__(struct __pyx_obj_4rdma_7ibverbs
   __pyx_t_2 = ((__pyx_v_self->_ah == NULL) != 0);
   if (unlikely(__pyx_t_2)) {
 
-    /* "rdma/ibverbs.pyx":760
+    /* "rdma/ibverbs.pyx":756
  *         self._ah = c.ibv_create_ah(pd._pd, &cattr)
  *         if self._ah == NULL:
  *             raise rdma.SysError(errno,"ibv_create_ah",             # <<<<<<<<<<<<<<
  *                                 "Failed to create address handle")
  * 
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_rdma); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 760, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_rdma); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 756, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_SysError); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 760, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_SysError); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 756, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __pyx_t_3 = __Pyx_PyInt_From_int(errno); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 760, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyInt_From_int(errno); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 756, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __pyx_t_5 = NULL;
     __pyx_t_6 = 0;
@@ -16102,7 +16046,7 @@ static int __pyx_pf_4rdma_7ibverbs_2AH___cinit__(struct __pyx_obj_4rdma_7ibverbs
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_4)) {
       PyObject *__pyx_temp[4] = {__pyx_t_5, __pyx_t_3, __pyx_n_s_ibv_create_ah, __pyx_kp_s_Failed_to_create_address_handle};
-      __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_6, 3+__pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 760, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_6, 3+__pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 756, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -16111,14 +16055,14 @@ static int __pyx_pf_4rdma_7ibverbs_2AH___cinit__(struct __pyx_obj_4rdma_7ibverbs
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_4)) {
       PyObject *__pyx_temp[4] = {__pyx_t_5, __pyx_t_3, __pyx_n_s_ibv_create_ah, __pyx_kp_s_Failed_to_create_address_handle};
-      __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_6, 3+__pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 760, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_6, 3+__pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 756, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     } else
     #endif
     {
-      __pyx_t_7 = PyTuple_New(3+__pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 760, __pyx_L1_error)
+      __pyx_t_7 = PyTuple_New(3+__pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 756, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_7);
       if (__pyx_t_5) {
         __Pyx_GIVEREF(__pyx_t_5); PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_t_5); __pyx_t_5 = NULL;
@@ -16132,16 +16076,16 @@ static int __pyx_pf_4rdma_7ibverbs_2AH___cinit__(struct __pyx_obj_4rdma_7ibverbs
       __Pyx_GIVEREF(__pyx_kp_s_Failed_to_create_address_handle);
       PyTuple_SET_ITEM(__pyx_t_7, 2+__pyx_t_6, __pyx_kp_s_Failed_to_create_address_handle);
       __pyx_t_3 = 0;
-      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_7, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 760, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_7, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 756, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
     }
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_Raise(__pyx_t_1, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __PYX_ERR(0, 760, __pyx_L1_error)
+    __PYX_ERR(0, 756, __pyx_L1_error)
 
-    /* "rdma/ibverbs.pyx":759
+    /* "rdma/ibverbs.pyx":755
  *         to_ah_attr(&cattr, attr)
  *         self._ah = c.ibv_create_ah(pd._pd, &cattr)
  *         if self._ah == NULL:             # <<<<<<<<<<<<<<
@@ -16150,7 +16094,7 @@ static int __pyx_pf_4rdma_7ibverbs_2AH___cinit__(struct __pyx_obj_4rdma_7ibverbs
  */
   }
 
-  /* "rdma/ibverbs.pyx":753
+  /* "rdma/ibverbs.pyx":749
  *     cdef c.ibv_ah *_ah
  * 
  *     def __cinit__(self, PD pd not None, attr):             # <<<<<<<<<<<<<<
@@ -16174,7 +16118,7 @@ static int __pyx_pf_4rdma_7ibverbs_2AH___cinit__(struct __pyx_obj_4rdma_7ibverbs
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":763
+/* "rdma/ibverbs.pyx":759
  *                                 "Failed to create address handle")
  * 
  *     def __dealloc__(self):             # <<<<<<<<<<<<<<
@@ -16201,18 +16145,18 @@ static void __pyx_pf_4rdma_7ibverbs_2AH_2__dealloc__(struct __pyx_obj_4rdma_7ibv
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__dealloc__", 0);
 
-  /* "rdma/ibverbs.pyx":764
+  /* "rdma/ibverbs.pyx":760
  * 
  *     def __dealloc__(self):
  *         self._close();             # <<<<<<<<<<<<<<
  * 
  *     def __enter__(self):
  */
-  __pyx_t_1 = ((struct __pyx_vtabstruct_4rdma_7ibverbs_AH *)__pyx_v_self->__pyx_vtab)->_close(__pyx_v_self); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 764, __pyx_L1_error)
+  __pyx_t_1 = ((struct __pyx_vtabstruct_4rdma_7ibverbs_AH *)__pyx_v_self->__pyx_vtab)->_close(__pyx_v_self); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 760, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "rdma/ibverbs.pyx":763
+  /* "rdma/ibverbs.pyx":759
  *                                 "Failed to create address handle")
  * 
  *     def __dealloc__(self):             # <<<<<<<<<<<<<<
@@ -16229,7 +16173,7 @@ static void __pyx_pf_4rdma_7ibverbs_2AH_2__dealloc__(struct __pyx_obj_4rdma_7ibv
   __Pyx_RefNannyFinishContext();
 }
 
-/* "rdma/ibverbs.pyx":766
+/* "rdma/ibverbs.pyx":762
  *         self._close();
  * 
  *     def __enter__(self):             # <<<<<<<<<<<<<<
@@ -16255,7 +16199,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2AH_4__enter__(struct __pyx_obj_4rdma_7
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__enter__", 0);
 
-  /* "rdma/ibverbs.pyx":767
+  /* "rdma/ibverbs.pyx":763
  * 
  *     def __enter__(self):
  *         return self             # <<<<<<<<<<<<<<
@@ -16267,7 +16211,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2AH_4__enter__(struct __pyx_obj_4rdma_7
   __pyx_r = ((PyObject *)__pyx_v_self);
   goto __pyx_L0;
 
-  /* "rdma/ibverbs.pyx":766
+  /* "rdma/ibverbs.pyx":762
  *         self._close();
  * 
  *     def __enter__(self):             # <<<<<<<<<<<<<<
@@ -16282,7 +16226,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2AH_4__enter__(struct __pyx_obj_4rdma_7
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":769
+/* "rdma/ibverbs.pyx":765
  *         return self
  * 
  *     def __exit__(self,*exc_info):             # <<<<<<<<<<<<<<
@@ -16317,18 +16261,18 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2AH_6__exit__(struct __pyx_obj_4rdma_7i
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__exit__", 0);
 
-  /* "rdma/ibverbs.pyx":770
+  /* "rdma/ibverbs.pyx":766
  * 
  *     def __exit__(self,*exc_info):
  *         self._close();             # <<<<<<<<<<<<<<
  * 
  *     def close(self):
  */
-  __pyx_t_1 = ((struct __pyx_vtabstruct_4rdma_7ibverbs_AH *)__pyx_v_self->__pyx_vtab)->_close(__pyx_v_self); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 770, __pyx_L1_error)
+  __pyx_t_1 = ((struct __pyx_vtabstruct_4rdma_7ibverbs_AH *)__pyx_v_self->__pyx_vtab)->_close(__pyx_v_self); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 766, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "rdma/ibverbs.pyx":769
+  /* "rdma/ibverbs.pyx":765
  *         return self
  * 
  *     def __exit__(self,*exc_info):             # <<<<<<<<<<<<<<
@@ -16349,7 +16293,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2AH_6__exit__(struct __pyx_obj_4rdma_7i
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":772
+/* "rdma/ibverbs.pyx":768
  *         self._close();
  * 
  *     def close(self):             # <<<<<<<<<<<<<<
@@ -16380,18 +16324,18 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2AH_8close(struct __pyx_obj_4rdma_7ibve
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("close", 0);
 
-  /* "rdma/ibverbs.pyx":774
+  /* "rdma/ibverbs.pyx":770
  *     def close(self):
  *         """Free the verbs AH handle."""
  *         self._close();             # <<<<<<<<<<<<<<
  * 
  *     cdef _close(self):
  */
-  __pyx_t_1 = ((struct __pyx_vtabstruct_4rdma_7ibverbs_AH *)__pyx_v_self->__pyx_vtab)->_close(__pyx_v_self); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 774, __pyx_L1_error)
+  __pyx_t_1 = ((struct __pyx_vtabstruct_4rdma_7ibverbs_AH *)__pyx_v_self->__pyx_vtab)->_close(__pyx_v_self); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 770, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "rdma/ibverbs.pyx":772
+  /* "rdma/ibverbs.pyx":768
  *         self._close();
  * 
  *     def close(self):             # <<<<<<<<<<<<<<
@@ -16412,7 +16356,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2AH_8close(struct __pyx_obj_4rdma_7ibve
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":776
+/* "rdma/ibverbs.pyx":772
  *         self._close();
  * 
  *     cdef _close(self):             # <<<<<<<<<<<<<<
@@ -16436,7 +16380,7 @@ static PyObject *__pyx_f_4rdma_7ibverbs_2AH__close(struct __pyx_obj_4rdma_7ibver
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("_close", 0);
 
-  /* "rdma/ibverbs.pyx":778
+  /* "rdma/ibverbs.pyx":774
  *     cdef _close(self):
  *         cdef int rc
  *         if self._ah != NULL:             # <<<<<<<<<<<<<<
@@ -16446,7 +16390,7 @@ static PyObject *__pyx_f_4rdma_7ibverbs_2AH__close(struct __pyx_obj_4rdma_7ibver
   __pyx_t_1 = ((__pyx_v_self->_ah != NULL) != 0);
   if (__pyx_t_1) {
 
-    /* "rdma/ibverbs.pyx":779
+    /* "rdma/ibverbs.pyx":775
  *         cdef int rc
  *         if self._ah != NULL:
  *             rc = c.ibv_destroy_ah(self._ah)             # <<<<<<<<<<<<<<
@@ -16455,7 +16399,7 @@ static PyObject *__pyx_f_4rdma_7ibverbs_2AH__close(struct __pyx_obj_4rdma_7ibver
  */
     __pyx_v_rc = ibv_destroy_ah(__pyx_v_self->_ah);
 
-    /* "rdma/ibverbs.pyx":780
+    /* "rdma/ibverbs.pyx":776
  *         if self._ah != NULL:
  *             rc = c.ibv_destroy_ah(self._ah)
  *             if rc != 0:             # <<<<<<<<<<<<<<
@@ -16465,19 +16409,19 @@ static PyObject *__pyx_f_4rdma_7ibverbs_2AH__close(struct __pyx_obj_4rdma_7ibver
     __pyx_t_1 = ((__pyx_v_rc != 0) != 0);
     if (unlikely(__pyx_t_1)) {
 
-      /* "rdma/ibverbs.pyx":781
+      /* "rdma/ibverbs.pyx":777
  *             rc = c.ibv_destroy_ah(self._ah)
  *             if rc != 0:
  *                 raise rdma.SysError(rc,"ibv_destroy_ah",             # <<<<<<<<<<<<<<
  *                                     "Failed to destroy address handle")
  *             self._ah = NULL
  */
-      __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_rdma); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 781, __pyx_L1_error)
+      __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_rdma); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 777, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
-      __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_SysError); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 781, __pyx_L1_error)
+      __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_SysError); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 777, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-      __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_rc); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 781, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_rc); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 777, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
       __pyx_t_5 = NULL;
       __pyx_t_6 = 0;
@@ -16494,7 +16438,7 @@ static PyObject *__pyx_f_4rdma_7ibverbs_2AH__close(struct __pyx_obj_4rdma_7ibver
       #if CYTHON_FAST_PYCALL
       if (PyFunction_Check(__pyx_t_4)) {
         PyObject *__pyx_temp[4] = {__pyx_t_5, __pyx_t_3, __pyx_n_s_ibv_destroy_ah, __pyx_kp_s_Failed_to_destroy_address_handle};
-        __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_6, 3+__pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 781, __pyx_L1_error)
+        __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_6, 3+__pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 777, __pyx_L1_error)
         __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -16503,14 +16447,14 @@ static PyObject *__pyx_f_4rdma_7ibverbs_2AH__close(struct __pyx_obj_4rdma_7ibver
       #if CYTHON_FAST_PYCCALL
       if (__Pyx_PyFastCFunction_Check(__pyx_t_4)) {
         PyObject *__pyx_temp[4] = {__pyx_t_5, __pyx_t_3, __pyx_n_s_ibv_destroy_ah, __pyx_kp_s_Failed_to_destroy_address_handle};
-        __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_6, 3+__pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 781, __pyx_L1_error)
+        __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_6, 3+__pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 777, __pyx_L1_error)
         __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
       } else
       #endif
       {
-        __pyx_t_7 = PyTuple_New(3+__pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 781, __pyx_L1_error)
+        __pyx_t_7 = PyTuple_New(3+__pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 777, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_7);
         if (__pyx_t_5) {
           __Pyx_GIVEREF(__pyx_t_5); PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_t_5); __pyx_t_5 = NULL;
@@ -16524,16 +16468,16 @@ static PyObject *__pyx_f_4rdma_7ibverbs_2AH__close(struct __pyx_obj_4rdma_7ibver
         __Pyx_GIVEREF(__pyx_kp_s_Failed_to_destroy_address_handle);
         PyTuple_SET_ITEM(__pyx_t_7, 2+__pyx_t_6, __pyx_kp_s_Failed_to_destroy_address_handle);
         __pyx_t_3 = 0;
-        __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_7, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 781, __pyx_L1_error)
+        __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_7, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 777, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
       }
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       __Pyx_Raise(__pyx_t_2, 0, 0, 0);
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-      __PYX_ERR(0, 781, __pyx_L1_error)
+      __PYX_ERR(0, 777, __pyx_L1_error)
 
-      /* "rdma/ibverbs.pyx":780
+      /* "rdma/ibverbs.pyx":776
  *         if self._ah != NULL:
  *             rc = c.ibv_destroy_ah(self._ah)
  *             if rc != 0:             # <<<<<<<<<<<<<<
@@ -16542,7 +16486,7 @@ static PyObject *__pyx_f_4rdma_7ibverbs_2AH__close(struct __pyx_obj_4rdma_7ibver
  */
     }
 
-    /* "rdma/ibverbs.pyx":783
+    /* "rdma/ibverbs.pyx":779
  *                 raise rdma.SysError(rc,"ibv_destroy_ah",
  *                                     "Failed to destroy address handle")
  *             self._ah = NULL             # <<<<<<<<<<<<<<
@@ -16551,7 +16495,7 @@ static PyObject *__pyx_f_4rdma_7ibverbs_2AH__close(struct __pyx_obj_4rdma_7ibver
  */
     __pyx_v_self->_ah = NULL;
 
-    /* "rdma/ibverbs.pyx":778
+    /* "rdma/ibverbs.pyx":774
  *     cdef _close(self):
  *         cdef int rc
  *         if self._ah != NULL:             # <<<<<<<<<<<<<<
@@ -16560,7 +16504,7 @@ static PyObject *__pyx_f_4rdma_7ibverbs_2AH__close(struct __pyx_obj_4rdma_7ibver
  */
   }
 
-  /* "rdma/ibverbs.pyx":776
+  /* "rdma/ibverbs.pyx":772
  *         self._close();
  * 
  *     cdef _close(self):             # <<<<<<<<<<<<<<
@@ -16585,7 +16529,7 @@ static PyObject *__pyx_f_4rdma_7ibverbs_2AH__close(struct __pyx_obj_4rdma_7ibver
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":785
+/* "rdma/ibverbs.pyx":781
  *             self._ah = NULL
  * 
  *     def __str__(self):             # <<<<<<<<<<<<<<
@@ -16616,7 +16560,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2AH_10__str__(struct __pyx_obj_4rdma_7i
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__str__", 0);
 
-  /* "rdma/ibverbs.pyx":786
+  /* "rdma/ibverbs.pyx":782
  * 
  *     def __str__(self):
  *         return "ah:%X"%(self._ah.handle)             # <<<<<<<<<<<<<<
@@ -16624,16 +16568,16 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2AH_10__str__(struct __pyx_obj_4rdma_7i
  *         return "AH(0x%x)"%(self._ah.handle);
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->_ah->handle); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 786, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->_ah->handle); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 782, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyString_Format(__pyx_kp_s_ah_X, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 786, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyString_Format(__pyx_kp_s_ah_X, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 782, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_r = __pyx_t_2;
   __pyx_t_2 = 0;
   goto __pyx_L0;
 
-  /* "rdma/ibverbs.pyx":785
+  /* "rdma/ibverbs.pyx":781
  *             self._ah = NULL
  * 
  *     def __str__(self):             # <<<<<<<<<<<<<<
@@ -16653,7 +16597,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2AH_10__str__(struct __pyx_obj_4rdma_7i
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":787
+/* "rdma/ibverbs.pyx":783
  *     def __str__(self):
  *         return "ah:%X"%(self._ah.handle)
  *     def __repr__(self):             # <<<<<<<<<<<<<<
@@ -16684,7 +16628,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2AH_12__repr__(struct __pyx_obj_4rdma_7
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__repr__", 0);
 
-  /* "rdma/ibverbs.pyx":788
+  /* "rdma/ibverbs.pyx":784
  *         return "ah:%X"%(self._ah.handle)
  *     def __repr__(self):
  *         return "AH(0x%x)"%(self._ah.handle);             # <<<<<<<<<<<<<<
@@ -16692,16 +16636,16 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2AH_12__repr__(struct __pyx_obj_4rdma_7
  * cdef class CompChannel:
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->_ah->handle); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 788, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->_ah->handle); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 784, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyString_Format(__pyx_kp_s_AH_0x_x, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 788, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyString_Format(__pyx_kp_s_AH_0x_x, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 784, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_r = __pyx_t_2;
   __pyx_t_2 = 0;
   goto __pyx_L0;
 
-  /* "rdma/ibverbs.pyx":787
+  /* "rdma/ibverbs.pyx":783
  *     def __str__(self):
  *         return "ah:%X"%(self._ah.handle)
  *     def __repr__(self):             # <<<<<<<<<<<<<<
@@ -16834,7 +16778,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2AH_16__setstate_cython__(CYTHON_UNUSED
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":797
+/* "rdma/ibverbs.pyx":793
  * 
  *     property ctx:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -16860,7 +16804,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_11CompChannel_3ctx___get__(struct __pyx
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "rdma/ibverbs.pyx":798
+  /* "rdma/ibverbs.pyx":794
  *     property ctx:
  *         def __get__(self):
  *             return self._context;             # <<<<<<<<<<<<<<
@@ -16872,7 +16816,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_11CompChannel_3ctx___get__(struct __pyx
   __pyx_r = ((PyObject *)__pyx_v_self->_context);
   goto __pyx_L0;
 
-  /* "rdma/ibverbs.pyx":797
+  /* "rdma/ibverbs.pyx":793
  * 
  *     property ctx:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -16887,7 +16831,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_11CompChannel_3ctx___get__(struct __pyx
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":800
+/* "rdma/ibverbs.pyx":796
  *             return self._context;
  * 
  *     def __cinit__(self, Context ctx not None):             # <<<<<<<<<<<<<<
@@ -16924,7 +16868,7 @@ static int __pyx_pw_4rdma_7ibverbs_11CompChannel_1__cinit__(PyObject *__pyx_v_se
         else goto __pyx_L5_argtuple_error;
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__cinit__") < 0)) __PYX_ERR(0, 800, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__cinit__") < 0)) __PYX_ERR(0, 796, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 1) {
       goto __pyx_L5_argtuple_error;
@@ -16935,13 +16879,13 @@ static int __pyx_pw_4rdma_7ibverbs_11CompChannel_1__cinit__(PyObject *__pyx_v_se
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 1, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 800, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 1, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 796, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("rdma.ibverbs.CompChannel.__cinit__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return -1;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_ctx), __pyx_ptype_4rdma_7ibverbs_Context, 0, "ctx", 0))) __PYX_ERR(0, 800, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_ctx), __pyx_ptype_4rdma_7ibverbs_Context, 0, "ctx", 0))) __PYX_ERR(0, 796, __pyx_L1_error)
   __pyx_r = __pyx_pf_4rdma_7ibverbs_11CompChannel___cinit__(((struct __pyx_obj_4rdma_7ibverbs_CompChannel *)__pyx_v_self), __pyx_v_ctx);
 
   /* function exit code */
@@ -16968,7 +16912,7 @@ static int __pyx_pf_4rdma_7ibverbs_11CompChannel___cinit__(struct __pyx_obj_4rdm
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__cinit__", 0);
 
-  /* "rdma/ibverbs.pyx":801
+  /* "rdma/ibverbs.pyx":797
  * 
  *     def __cinit__(self, Context ctx not None):
  *         self._context = ctx             # <<<<<<<<<<<<<<
@@ -16981,7 +16925,7 @@ static int __pyx_pf_4rdma_7ibverbs_11CompChannel___cinit__(struct __pyx_obj_4rdm
   __Pyx_DECREF(((PyObject *)__pyx_v_self->_context));
   __pyx_v_self->_context = __pyx_v_ctx;
 
-  /* "rdma/ibverbs.pyx":802
+  /* "rdma/ibverbs.pyx":798
  *     def __cinit__(self, Context ctx not None):
  *         self._context = ctx
  *         self._chan = c.ibv_create_comp_channel(ctx._ctx)             # <<<<<<<<<<<<<<
@@ -16990,7 +16934,7 @@ static int __pyx_pf_4rdma_7ibverbs_11CompChannel___cinit__(struct __pyx_obj_4rdm
  */
   __pyx_v_self->_chan = ibv_create_comp_channel(__pyx_v_ctx->_ctx);
 
-  /* "rdma/ibverbs.pyx":803
+  /* "rdma/ibverbs.pyx":799
  *         self._context = ctx
  *         self._chan = c.ibv_create_comp_channel(ctx._ctx)
  *         if self._chan == NULL:             # <<<<<<<<<<<<<<
@@ -17000,19 +16944,19 @@ static int __pyx_pf_4rdma_7ibverbs_11CompChannel___cinit__(struct __pyx_obj_4rdm
   __pyx_t_1 = ((__pyx_v_self->_chan == NULL) != 0);
   if (unlikely(__pyx_t_1)) {
 
-    /* "rdma/ibverbs.pyx":804
+    /* "rdma/ibverbs.pyx":800
  *         self._chan = c.ibv_create_comp_channel(ctx._ctx)
  *         if self._chan == NULL:
  *             raise rdma.SysError(errno,"ibv_create_comp_channel",             # <<<<<<<<<<<<<<
  *                                 "Failed to create completion channel")
  * 
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_rdma); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 804, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_rdma); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 800, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_SysError); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 804, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_SysError); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 800, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __pyx_t_3 = __Pyx_PyInt_From_int(errno); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 804, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyInt_From_int(errno); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 800, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __pyx_t_5 = NULL;
     __pyx_t_6 = 0;
@@ -17029,7 +16973,7 @@ static int __pyx_pf_4rdma_7ibverbs_11CompChannel___cinit__(struct __pyx_obj_4rdm
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_4)) {
       PyObject *__pyx_temp[4] = {__pyx_t_5, __pyx_t_3, __pyx_n_s_ibv_create_comp_channel, __pyx_kp_s_Failed_to_create_completion_chan};
-      __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_6, 3+__pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 804, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_6, 3+__pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 800, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -17038,14 +16982,14 @@ static int __pyx_pf_4rdma_7ibverbs_11CompChannel___cinit__(struct __pyx_obj_4rdm
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_4)) {
       PyObject *__pyx_temp[4] = {__pyx_t_5, __pyx_t_3, __pyx_n_s_ibv_create_comp_channel, __pyx_kp_s_Failed_to_create_completion_chan};
-      __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_6, 3+__pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 804, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_6, 3+__pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 800, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     } else
     #endif
     {
-      __pyx_t_7 = PyTuple_New(3+__pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 804, __pyx_L1_error)
+      __pyx_t_7 = PyTuple_New(3+__pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 800, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_7);
       if (__pyx_t_5) {
         __Pyx_GIVEREF(__pyx_t_5); PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_t_5); __pyx_t_5 = NULL;
@@ -17059,16 +17003,16 @@ static int __pyx_pf_4rdma_7ibverbs_11CompChannel___cinit__(struct __pyx_obj_4rdm
       __Pyx_GIVEREF(__pyx_kp_s_Failed_to_create_completion_chan);
       PyTuple_SET_ITEM(__pyx_t_7, 2+__pyx_t_6, __pyx_kp_s_Failed_to_create_completion_chan);
       __pyx_t_3 = 0;
-      __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_7, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 804, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_7, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 800, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
     }
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_Raise(__pyx_t_2, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __PYX_ERR(0, 804, __pyx_L1_error)
+    __PYX_ERR(0, 800, __pyx_L1_error)
 
-    /* "rdma/ibverbs.pyx":803
+    /* "rdma/ibverbs.pyx":799
  *         self._context = ctx
  *         self._chan = c.ibv_create_comp_channel(ctx._ctx)
  *         if self._chan == NULL:             # <<<<<<<<<<<<<<
@@ -17077,7 +17021,7 @@ static int __pyx_pf_4rdma_7ibverbs_11CompChannel___cinit__(struct __pyx_obj_4rdm
  */
   }
 
-  /* "rdma/ibverbs.pyx":800
+  /* "rdma/ibverbs.pyx":796
  *             return self._context;
  * 
  *     def __cinit__(self, Context ctx not None):             # <<<<<<<<<<<<<<
@@ -17101,7 +17045,7 @@ static int __pyx_pf_4rdma_7ibverbs_11CompChannel___cinit__(struct __pyx_obj_4rdm
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":807
+/* "rdma/ibverbs.pyx":803
  *                                 "Failed to create completion channel")
  * 
  *     def __dealloc__(self):             # <<<<<<<<<<<<<<
@@ -17128,18 +17072,18 @@ static void __pyx_pf_4rdma_7ibverbs_11CompChannel_2__dealloc__(struct __pyx_obj_
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__dealloc__", 0);
 
-  /* "rdma/ibverbs.pyx":808
+  /* "rdma/ibverbs.pyx":804
  * 
  *     def __dealloc__(self):
  *         self._close();             # <<<<<<<<<<<<<<
  * 
  *     def __enter__(self):
  */
-  __pyx_t_1 = ((struct __pyx_vtabstruct_4rdma_7ibverbs_CompChannel *)__pyx_v_self->__pyx_vtab)->_close(__pyx_v_self); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 808, __pyx_L1_error)
+  __pyx_t_1 = ((struct __pyx_vtabstruct_4rdma_7ibverbs_CompChannel *)__pyx_v_self->__pyx_vtab)->_close(__pyx_v_self); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 804, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "rdma/ibverbs.pyx":807
+  /* "rdma/ibverbs.pyx":803
  *                                 "Failed to create completion channel")
  * 
  *     def __dealloc__(self):             # <<<<<<<<<<<<<<
@@ -17156,7 +17100,7 @@ static void __pyx_pf_4rdma_7ibverbs_11CompChannel_2__dealloc__(struct __pyx_obj_
   __Pyx_RefNannyFinishContext();
 }
 
-/* "rdma/ibverbs.pyx":810
+/* "rdma/ibverbs.pyx":806
  *         self._close();
  * 
  *     def __enter__(self):             # <<<<<<<<<<<<<<
@@ -17182,7 +17126,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_11CompChannel_4__enter__(struct __pyx_o
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__enter__", 0);
 
-  /* "rdma/ibverbs.pyx":811
+  /* "rdma/ibverbs.pyx":807
  * 
  *     def __enter__(self):
  *         return self             # <<<<<<<<<<<<<<
@@ -17194,7 +17138,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_11CompChannel_4__enter__(struct __pyx_o
   __pyx_r = ((PyObject *)__pyx_v_self);
   goto __pyx_L0;
 
-  /* "rdma/ibverbs.pyx":810
+  /* "rdma/ibverbs.pyx":806
  *         self._close();
  * 
  *     def __enter__(self):             # <<<<<<<<<<<<<<
@@ -17209,7 +17153,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_11CompChannel_4__enter__(struct __pyx_o
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":813
+/* "rdma/ibverbs.pyx":809
  *         return self
  * 
  *     def __exit__(self,*exc_info):             # <<<<<<<<<<<<<<
@@ -17244,18 +17188,18 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_11CompChannel_6__exit__(struct __pyx_ob
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__exit__", 0);
 
-  /* "rdma/ibverbs.pyx":814
+  /* "rdma/ibverbs.pyx":810
  * 
  *     def __exit__(self,*exc_info):
  *         self._close();             # <<<<<<<<<<<<<<
  * 
  *     def close(self):
  */
-  __pyx_t_1 = ((struct __pyx_vtabstruct_4rdma_7ibverbs_CompChannel *)__pyx_v_self->__pyx_vtab)->_close(__pyx_v_self); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 814, __pyx_L1_error)
+  __pyx_t_1 = ((struct __pyx_vtabstruct_4rdma_7ibverbs_CompChannel *)__pyx_v_self->__pyx_vtab)->_close(__pyx_v_self); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 810, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "rdma/ibverbs.pyx":813
+  /* "rdma/ibverbs.pyx":809
  *         return self
  * 
  *     def __exit__(self,*exc_info):             # <<<<<<<<<<<<<<
@@ -17276,7 +17220,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_11CompChannel_6__exit__(struct __pyx_ob
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":816
+/* "rdma/ibverbs.pyx":812
  *         self._close();
  * 
  *     def close(self):             # <<<<<<<<<<<<<<
@@ -17307,18 +17251,18 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_11CompChannel_8close(struct __pyx_obj_4
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("close", 0);
 
-  /* "rdma/ibverbs.pyx":818
+  /* "rdma/ibverbs.pyx":814
  *     def close(self):
  *         """Free the verbs completion channel handle."""
  *         self._close();             # <<<<<<<<<<<<<<
  * 
  *     cdef _close(self):
  */
-  __pyx_t_1 = ((struct __pyx_vtabstruct_4rdma_7ibverbs_CompChannel *)__pyx_v_self->__pyx_vtab)->_close(__pyx_v_self); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 818, __pyx_L1_error)
+  __pyx_t_1 = ((struct __pyx_vtabstruct_4rdma_7ibverbs_CompChannel *)__pyx_v_self->__pyx_vtab)->_close(__pyx_v_self); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 814, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "rdma/ibverbs.pyx":816
+  /* "rdma/ibverbs.pyx":812
  *         self._close();
  * 
  *     def close(self):             # <<<<<<<<<<<<<<
@@ -17339,7 +17283,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_11CompChannel_8close(struct __pyx_obj_4
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":820
+/* "rdma/ibverbs.pyx":816
  *         self._close();
  * 
  *     cdef _close(self):             # <<<<<<<<<<<<<<
@@ -17363,7 +17307,7 @@ static PyObject *__pyx_f_4rdma_7ibverbs_11CompChannel__close(struct __pyx_obj_4r
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("_close", 0);
 
-  /* "rdma/ibverbs.pyx":822
+  /* "rdma/ibverbs.pyx":818
  *     cdef _close(self):
  *         cdef int rc
  *         if self._chan != NULL:             # <<<<<<<<<<<<<<
@@ -17373,7 +17317,7 @@ static PyObject *__pyx_f_4rdma_7ibverbs_11CompChannel__close(struct __pyx_obj_4r
   __pyx_t_1 = ((__pyx_v_self->_chan != NULL) != 0);
   if (__pyx_t_1) {
 
-    /* "rdma/ibverbs.pyx":823
+    /* "rdma/ibverbs.pyx":819
  *         cdef int rc
  *         if self._chan != NULL:
  *             if self._context._ctx == NULL:             # <<<<<<<<<<<<<<
@@ -17383,16 +17327,16 @@ static PyObject *__pyx_f_4rdma_7ibverbs_11CompChannel__close(struct __pyx_obj_4r
     __pyx_t_1 = ((__pyx_v_self->_context->_ctx == NULL) != 0);
     if (unlikely(__pyx_t_1)) {
 
-      /* "rdma/ibverbs.pyx":824
+      /* "rdma/ibverbs.pyx":820
  *         if self._chan != NULL:
  *             if self._context._ctx == NULL:
  *                 raise rdma.RDMAError("Context closed before owned object");             # <<<<<<<<<<<<<<
  *             rc = c.ibv_destroy_comp_channel(self._chan)
  *             if rc != 0:
  */
-      __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_rdma); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 824, __pyx_L1_error)
+      __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_rdma); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 820, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
-      __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_RDMAError); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 824, __pyx_L1_error)
+      __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_RDMAError); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 820, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
       __pyx_t_3 = NULL;
@@ -17407,14 +17351,14 @@ static PyObject *__pyx_f_4rdma_7ibverbs_11CompChannel__close(struct __pyx_obj_4r
       }
       __pyx_t_2 = (__pyx_t_3) ? __Pyx_PyObject_Call2Args(__pyx_t_4, __pyx_t_3, __pyx_kp_s_Context_closed_before_owned_obje) : __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_kp_s_Context_closed_before_owned_obje);
       __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
-      if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 824, __pyx_L1_error)
+      if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 820, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       __Pyx_Raise(__pyx_t_2, 0, 0, 0);
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-      __PYX_ERR(0, 824, __pyx_L1_error)
+      __PYX_ERR(0, 820, __pyx_L1_error)
 
-      /* "rdma/ibverbs.pyx":823
+      /* "rdma/ibverbs.pyx":819
  *         cdef int rc
  *         if self._chan != NULL:
  *             if self._context._ctx == NULL:             # <<<<<<<<<<<<<<
@@ -17423,7 +17367,7 @@ static PyObject *__pyx_f_4rdma_7ibverbs_11CompChannel__close(struct __pyx_obj_4r
  */
     }
 
-    /* "rdma/ibverbs.pyx":825
+    /* "rdma/ibverbs.pyx":821
  *             if self._context._ctx == NULL:
  *                 raise rdma.RDMAError("Context closed before owned object");
  *             rc = c.ibv_destroy_comp_channel(self._chan)             # <<<<<<<<<<<<<<
@@ -17432,7 +17376,7 @@ static PyObject *__pyx_f_4rdma_7ibverbs_11CompChannel__close(struct __pyx_obj_4r
  */
     __pyx_v_rc = ibv_destroy_comp_channel(__pyx_v_self->_chan);
 
-    /* "rdma/ibverbs.pyx":826
+    /* "rdma/ibverbs.pyx":822
  *                 raise rdma.RDMAError("Context closed before owned object");
  *             rc = c.ibv_destroy_comp_channel(self._chan)
  *             if rc != 0:             # <<<<<<<<<<<<<<
@@ -17442,19 +17386,19 @@ static PyObject *__pyx_f_4rdma_7ibverbs_11CompChannel__close(struct __pyx_obj_4r
     __pyx_t_1 = ((__pyx_v_rc != 0) != 0);
     if (unlikely(__pyx_t_1)) {
 
-      /* "rdma/ibverbs.pyx":827
+      /* "rdma/ibverbs.pyx":823
  *             rc = c.ibv_destroy_comp_channel(self._chan)
  *             if rc != 0:
  *                 raise rdma.SysError(rc,"ibv_destroy_comp_channel",             # <<<<<<<<<<<<<<
  *                                     "Failed to destroy completion channel")
  *             self._chan = NULL
  */
-      __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_rdma); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 827, __pyx_L1_error)
+      __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_rdma); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 823, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
-      __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_SysError); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 827, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_SysError); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 823, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-      __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_rc); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 827, __pyx_L1_error)
+      __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_rc); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 823, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
       __pyx_t_5 = NULL;
       __pyx_t_6 = 0;
@@ -17471,7 +17415,7 @@ static PyObject *__pyx_f_4rdma_7ibverbs_11CompChannel__close(struct __pyx_obj_4r
       #if CYTHON_FAST_PYCALL
       if (PyFunction_Check(__pyx_t_3)) {
         PyObject *__pyx_temp[4] = {__pyx_t_5, __pyx_t_4, __pyx_n_s_ibv_destroy_comp_channel, __pyx_kp_s_Failed_to_destroy_completion_cha};
-        __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_6, 3+__pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 827, __pyx_L1_error)
+        __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_6, 3+__pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 823, __pyx_L1_error)
         __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -17480,14 +17424,14 @@ static PyObject *__pyx_f_4rdma_7ibverbs_11CompChannel__close(struct __pyx_obj_4r
       #if CYTHON_FAST_PYCCALL
       if (__Pyx_PyFastCFunction_Check(__pyx_t_3)) {
         PyObject *__pyx_temp[4] = {__pyx_t_5, __pyx_t_4, __pyx_n_s_ibv_destroy_comp_channel, __pyx_kp_s_Failed_to_destroy_completion_cha};
-        __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_6, 3+__pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 827, __pyx_L1_error)
+        __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_6, 3+__pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 823, __pyx_L1_error)
         __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       } else
       #endif
       {
-        __pyx_t_7 = PyTuple_New(3+__pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 827, __pyx_L1_error)
+        __pyx_t_7 = PyTuple_New(3+__pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 823, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_7);
         if (__pyx_t_5) {
           __Pyx_GIVEREF(__pyx_t_5); PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_t_5); __pyx_t_5 = NULL;
@@ -17501,16 +17445,16 @@ static PyObject *__pyx_f_4rdma_7ibverbs_11CompChannel__close(struct __pyx_obj_4r
         __Pyx_GIVEREF(__pyx_kp_s_Failed_to_destroy_completion_cha);
         PyTuple_SET_ITEM(__pyx_t_7, 2+__pyx_t_6, __pyx_kp_s_Failed_to_destroy_completion_cha);
         __pyx_t_4 = 0;
-        __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_7, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 827, __pyx_L1_error)
+        __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_7, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 823, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
       }
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
       __Pyx_Raise(__pyx_t_2, 0, 0, 0);
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-      __PYX_ERR(0, 827, __pyx_L1_error)
+      __PYX_ERR(0, 823, __pyx_L1_error)
 
-      /* "rdma/ibverbs.pyx":826
+      /* "rdma/ibverbs.pyx":822
  *                 raise rdma.RDMAError("Context closed before owned object");
  *             rc = c.ibv_destroy_comp_channel(self._chan)
  *             if rc != 0:             # <<<<<<<<<<<<<<
@@ -17519,7 +17463,7 @@ static PyObject *__pyx_f_4rdma_7ibverbs_11CompChannel__close(struct __pyx_obj_4r
  */
     }
 
-    /* "rdma/ibverbs.pyx":829
+    /* "rdma/ibverbs.pyx":825
  *                 raise rdma.SysError(rc,"ibv_destroy_comp_channel",
  *                                     "Failed to destroy completion channel")
  *             self._chan = NULL             # <<<<<<<<<<<<<<
@@ -17528,7 +17472,7 @@ static PyObject *__pyx_f_4rdma_7ibverbs_11CompChannel__close(struct __pyx_obj_4r
  */
     __pyx_v_self->_chan = NULL;
 
-    /* "rdma/ibverbs.pyx":830
+    /* "rdma/ibverbs.pyx":826
  *                                     "Failed to destroy completion channel")
  *             self._chan = NULL
  *             self._context = None;             # <<<<<<<<<<<<<<
@@ -17541,7 +17485,7 @@ static PyObject *__pyx_f_4rdma_7ibverbs_11CompChannel__close(struct __pyx_obj_4r
     __Pyx_DECREF(((PyObject *)__pyx_v_self->_context));
     __pyx_v_self->_context = ((struct __pyx_obj_4rdma_7ibverbs_Context *)Py_None);
 
-    /* "rdma/ibverbs.pyx":822
+    /* "rdma/ibverbs.pyx":818
  *     cdef _close(self):
  *         cdef int rc
  *         if self._chan != NULL:             # <<<<<<<<<<<<<<
@@ -17550,7 +17494,7 @@ static PyObject *__pyx_f_4rdma_7ibverbs_11CompChannel__close(struct __pyx_obj_4r
  */
   }
 
-  /* "rdma/ibverbs.pyx":820
+  /* "rdma/ibverbs.pyx":816
  *         self._close();
  * 
  *     cdef _close(self):             # <<<<<<<<<<<<<<
@@ -17575,7 +17519,7 @@ static PyObject *__pyx_f_4rdma_7ibverbs_11CompChannel__close(struct __pyx_obj_4r
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":832
+/* "rdma/ibverbs.pyx":828
  *             self._context = None;
  * 
  *     def fileno(self):             # <<<<<<<<<<<<<<
@@ -17606,7 +17550,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_11CompChannel_10fileno(struct __pyx_obj
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("fileno", 0);
 
-  /* "rdma/ibverbs.pyx":834
+  /* "rdma/ibverbs.pyx":830
  *     def fileno(self):
  *         """Return the FD associated with this completion channel."""
  *         return self._chan.fd;             # <<<<<<<<<<<<<<
@@ -17614,13 +17558,13 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_11CompChannel_10fileno(struct __pyx_obj
  *     def register_poll(self,poll):
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->_chan->fd); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 834, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->_chan->fd); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 830, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "rdma/ibverbs.pyx":832
+  /* "rdma/ibverbs.pyx":828
  *             self._context = None;
  * 
  *     def fileno(self):             # <<<<<<<<<<<<<<
@@ -17639,7 +17583,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_11CompChannel_10fileno(struct __pyx_obj
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":836
+/* "rdma/ibverbs.pyx":832
  *         return self._chan.fd;
  * 
  *     def register_poll(self,poll):             # <<<<<<<<<<<<<<
@@ -17676,20 +17620,20 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_11CompChannel_12register_poll(struct __
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("register_poll", 0);
 
-  /* "rdma/ibverbs.pyx":839
+  /* "rdma/ibverbs.pyx":835
  *         """Add the FD associated with this object to :class:`select.poll`
  *         object *poll*."""
  *         poll.register(self._chan.fd,select.POLLIN);             # <<<<<<<<<<<<<<
  * 
  *     def check_poll(self,pevent):
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_poll, __pyx_n_s_register); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 839, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_poll, __pyx_n_s_register); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 835, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_self->_chan->fd); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 839, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_self->_chan->fd); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 835, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_select); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 839, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_select); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 835, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_POLLIN); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 839, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_POLLIN); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 835, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_t_4 = NULL;
@@ -17707,7 +17651,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_11CompChannel_12register_poll(struct __
   #if CYTHON_FAST_PYCALL
   if (PyFunction_Check(__pyx_t_2)) {
     PyObject *__pyx_temp[3] = {__pyx_t_4, __pyx_t_3, __pyx_t_5};
-    __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 839, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 835, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -17717,7 +17661,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_11CompChannel_12register_poll(struct __
   #if CYTHON_FAST_PYCCALL
   if (__Pyx_PyFastCFunction_Check(__pyx_t_2)) {
     PyObject *__pyx_temp[3] = {__pyx_t_4, __pyx_t_3, __pyx_t_5};
-    __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 839, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 835, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -17725,7 +17669,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_11CompChannel_12register_poll(struct __
   } else
   #endif
   {
-    __pyx_t_7 = PyTuple_New(2+__pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 839, __pyx_L1_error)
+    __pyx_t_7 = PyTuple_New(2+__pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 835, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     if (__pyx_t_4) {
       __Pyx_GIVEREF(__pyx_t_4); PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_t_4); __pyx_t_4 = NULL;
@@ -17736,14 +17680,14 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_11CompChannel_12register_poll(struct __
     PyTuple_SET_ITEM(__pyx_t_7, 1+__pyx_t_6, __pyx_t_5);
     __pyx_t_3 = 0;
     __pyx_t_5 = 0;
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_7, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 839, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_7, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 835, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
   }
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "rdma/ibverbs.pyx":836
+  /* "rdma/ibverbs.pyx":832
  *         return self._chan.fd;
  * 
  *     def register_poll(self,poll):             # <<<<<<<<<<<<<<
@@ -17769,7 +17713,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_11CompChannel_12register_poll(struct __
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":841
+/* "rdma/ibverbs.pyx":837
  *         poll.register(self._chan.fd,select.POLLIN);
  * 
  *     def check_poll(self,pevent):             # <<<<<<<<<<<<<<
@@ -17806,25 +17750,25 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_11CompChannel_14check_poll(struct __pyx
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("check_poll", 0);
 
-  /* "rdma/ibverbs.pyx":852
+  /* "rdma/ibverbs.pyx":848
  *         cdef int rc
  * 
  *         if pevent[0] != self._chan.fd:             # <<<<<<<<<<<<<<
  *             return None;
  *         if pevent[1] & select.POLLIN == 0:
  */
-  __pyx_t_1 = __Pyx_GetItemInt(__pyx_v_pevent, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 852, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_GetItemInt(__pyx_v_pevent, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 848, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_self->_chan->fd); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 852, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_self->_chan->fd); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 848, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = PyObject_RichCompare(__pyx_t_1, __pyx_t_2, Py_NE); __Pyx_XGOTREF(__pyx_t_3); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 852, __pyx_L1_error)
+  __pyx_t_3 = PyObject_RichCompare(__pyx_t_1, __pyx_t_2, Py_NE); __Pyx_XGOTREF(__pyx_t_3); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 848, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_4 = __Pyx_PyObject_IsTrue(__pyx_t_3); if (unlikely(__pyx_t_4 < 0)) __PYX_ERR(0, 852, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_IsTrue(__pyx_t_3); if (unlikely(__pyx_t_4 < 0)) __PYX_ERR(0, 848, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   if (__pyx_t_4) {
 
-    /* "rdma/ibverbs.pyx":853
+    /* "rdma/ibverbs.pyx":849
  * 
  *         if pevent[0] != self._chan.fd:
  *             return None;             # <<<<<<<<<<<<<<
@@ -17835,7 +17779,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_11CompChannel_14check_poll(struct __pyx
     __pyx_r = Py_None; __Pyx_INCREF(Py_None);
     goto __pyx_L0;
 
-    /* "rdma/ibverbs.pyx":852
+    /* "rdma/ibverbs.pyx":848
  *         cdef int rc
  * 
  *         if pevent[0] != self._chan.fd:             # <<<<<<<<<<<<<<
@@ -17844,32 +17788,32 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_11CompChannel_14check_poll(struct __pyx
  */
   }
 
-  /* "rdma/ibverbs.pyx":854
+  /* "rdma/ibverbs.pyx":850
  *         if pevent[0] != self._chan.fd:
  *             return None;
  *         if pevent[1] & select.POLLIN == 0:             # <<<<<<<<<<<<<<
  *             return None;
  * 
  */
-  __pyx_t_3 = __Pyx_GetItemInt(__pyx_v_pevent, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 854, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_GetItemInt(__pyx_v_pevent, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 850, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_select); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 854, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_select); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 850, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_POLLIN); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 854, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_POLLIN); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 850, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = PyNumber_And(__pyx_t_3, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 854, __pyx_L1_error)
+  __pyx_t_2 = PyNumber_And(__pyx_t_3, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 850, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyInt_EqObjC(__pyx_t_2, __pyx_int_0, 0, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 854, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_EqObjC(__pyx_t_2, __pyx_int_0, 0, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 850, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_4 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely(__pyx_t_4 < 0)) __PYX_ERR(0, 854, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely(__pyx_t_4 < 0)) __PYX_ERR(0, 850, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   if (__pyx_t_4) {
 
-    /* "rdma/ibverbs.pyx":855
+    /* "rdma/ibverbs.pyx":851
  *             return None;
  *         if pevent[1] & select.POLLIN == 0:
  *             return None;             # <<<<<<<<<<<<<<
@@ -17880,7 +17824,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_11CompChannel_14check_poll(struct __pyx
     __pyx_r = Py_None; __Pyx_INCREF(Py_None);
     goto __pyx_L0;
 
-    /* "rdma/ibverbs.pyx":854
+    /* "rdma/ibverbs.pyx":850
  *         if pevent[0] != self._chan.fd:
  *             return None;
  *         if pevent[1] & select.POLLIN == 0:             # <<<<<<<<<<<<<<
@@ -17889,7 +17833,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_11CompChannel_14check_poll(struct __pyx
  */
   }
 
-  /* "rdma/ibverbs.pyx":857
+  /* "rdma/ibverbs.pyx":853
  *             return None;
  * 
  *         if c.ibv_get_cq_event(self._chan,&_cq,&p_cq) != 0:             # <<<<<<<<<<<<<<
@@ -17899,16 +17843,16 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_11CompChannel_14check_poll(struct __pyx
   __pyx_t_4 = ((ibv_get_cq_event(__pyx_v_self->_chan, (&__pyx_v__cq), (&__pyx_v_p_cq)) != 0) != 0);
   if (unlikely(__pyx_t_4)) {
 
-    /* "rdma/ibverbs.pyx":858
+    /* "rdma/ibverbs.pyx":854
  * 
  *         if c.ibv_get_cq_event(self._chan,&_cq,&p_cq) != 0:
  *             raise rdma.RDMAError("ibv_get_cq_event failed");             # <<<<<<<<<<<<<<
  *         cq = <CQ>p_cq;
  * 
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_rdma); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 858, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_rdma); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 854, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_RDMAError); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 858, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_RDMAError); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 854, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __pyx_t_2 = NULL;
@@ -17923,14 +17867,14 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_11CompChannel_14check_poll(struct __pyx
     }
     __pyx_t_1 = (__pyx_t_2) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_2, __pyx_kp_s_ibv_get_cq_event_failed) : __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_kp_s_ibv_get_cq_event_failed);
     __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 858, __pyx_L1_error)
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 854, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_Raise(__pyx_t_1, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __PYX_ERR(0, 858, __pyx_L1_error)
+    __PYX_ERR(0, 854, __pyx_L1_error)
 
-    /* "rdma/ibverbs.pyx":857
+    /* "rdma/ibverbs.pyx":853
  *             return None;
  * 
  *         if c.ibv_get_cq_event(self._chan,&_cq,&p_cq) != 0:             # <<<<<<<<<<<<<<
@@ -17939,7 +17883,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_11CompChannel_14check_poll(struct __pyx
  */
   }
 
-  /* "rdma/ibverbs.pyx":859
+  /* "rdma/ibverbs.pyx":855
  *         if c.ibv_get_cq_event(self._chan,&_cq,&p_cq) != 0:
  *             raise rdma.RDMAError("ibv_get_cq_event failed");
  *         cq = <CQ>p_cq;             # <<<<<<<<<<<<<<
@@ -17951,7 +17895,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_11CompChannel_14check_poll(struct __pyx
   __pyx_v_cq = ((struct __pyx_obj_4rdma_7ibverbs_CQ *)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "rdma/ibverbs.pyx":861
+  /* "rdma/ibverbs.pyx":857
  *         cq = <CQ>p_cq;
  * 
  *         cq.comp_events = cq.comp_events + 1;             # <<<<<<<<<<<<<<
@@ -17960,7 +17904,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_11CompChannel_14check_poll(struct __pyx
  */
   __pyx_v_cq->comp_events = (__pyx_v_cq->comp_events + 1);
 
-  /* "rdma/ibverbs.pyx":862
+  /* "rdma/ibverbs.pyx":858
  * 
  *         cq.comp_events = cq.comp_events + 1;
  *         if cq.comp_events >= (1<<30):             # <<<<<<<<<<<<<<
@@ -17970,7 +17914,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_11CompChannel_14check_poll(struct __pyx
   __pyx_t_4 = ((__pyx_v_cq->comp_events >= 0x40000000) != 0);
   if (__pyx_t_4) {
 
-    /* "rdma/ibverbs.pyx":863
+    /* "rdma/ibverbs.pyx":859
  *         cq.comp_events = cq.comp_events + 1;
  *         if cq.comp_events >= (1<<30):
  *             c.ibv_ack_cq_events(_cq,cq.comp_events);             # <<<<<<<<<<<<<<
@@ -17979,7 +17923,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_11CompChannel_14check_poll(struct __pyx
  */
     ibv_ack_cq_events(__pyx_v__cq, __pyx_v_cq->comp_events);
 
-    /* "rdma/ibverbs.pyx":864
+    /* "rdma/ibverbs.pyx":860
  *         if cq.comp_events >= (1<<30):
  *             c.ibv_ack_cq_events(_cq,cq.comp_events);
  *             cq.comp_events = 0;             # <<<<<<<<<<<<<<
@@ -17988,7 +17932,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_11CompChannel_14check_poll(struct __pyx
  */
     __pyx_v_cq->comp_events = 0;
 
-    /* "rdma/ibverbs.pyx":862
+    /* "rdma/ibverbs.pyx":858
  * 
  *         cq.comp_events = cq.comp_events + 1;
  *         if cq.comp_events >= (1<<30):             # <<<<<<<<<<<<<<
@@ -17997,7 +17941,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_11CompChannel_14check_poll(struct __pyx
  */
   }
 
-  /* "rdma/ibverbs.pyx":865
+  /* "rdma/ibverbs.pyx":861
  *             c.ibv_ack_cq_events(_cq,cq.comp_events);
  *             cq.comp_events = 0;
  *         return cq;             # <<<<<<<<<<<<<<
@@ -18009,7 +17953,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_11CompChannel_14check_poll(struct __pyx
   __pyx_r = ((PyObject *)__pyx_v_cq);
   goto __pyx_L0;
 
-  /* "rdma/ibverbs.pyx":841
+  /* "rdma/ibverbs.pyx":837
  *         poll.register(self._chan.fd,select.POLLIN);
  * 
  *     def check_poll(self,pevent):             # <<<<<<<<<<<<<<
@@ -18031,7 +17975,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_11CompChannel_14check_poll(struct __pyx
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":867
+/* "rdma/ibverbs.pyx":863
  *         return cq;
  * 
  *     def __str__(self):             # <<<<<<<<<<<<<<
@@ -18063,7 +18007,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_11CompChannel_16__str__(struct __pyx_ob
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__str__", 0);
 
-  /* "rdma/ibverbs.pyx":868
+  /* "rdma/ibverbs.pyx":864
  * 
  *     def __str__(self):
  *         return "comp_channel:%u:%s"%(self._chan.fd,self.ctx.node);             # <<<<<<<<<<<<<<
@@ -18071,14 +18015,14 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_11CompChannel_16__str__(struct __pyx_ob
  *         return "CompChannel(%r,%u)"%(self._context,self._chan.fd);
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->_chan->fd); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 868, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->_chan->fd); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 864, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_ctx); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 868, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_ctx); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 864, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_node); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 868, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_node); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 864, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 868, __pyx_L1_error)
+  __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 864, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_GIVEREF(__pyx_t_1);
   PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_t_1);
@@ -18086,14 +18030,14 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_11CompChannel_16__str__(struct __pyx_ob
   PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_t_3);
   __pyx_t_1 = 0;
   __pyx_t_3 = 0;
-  __pyx_t_3 = __Pyx_PyString_Format(__pyx_kp_s_comp_channel_u_s, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 868, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyString_Format(__pyx_kp_s_comp_channel_u_s, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 864, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_r = __pyx_t_3;
   __pyx_t_3 = 0;
   goto __pyx_L0;
 
-  /* "rdma/ibverbs.pyx":867
+  /* "rdma/ibverbs.pyx":863
  *         return cq;
  * 
  *     def __str__(self):             # <<<<<<<<<<<<<<
@@ -18114,7 +18058,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_11CompChannel_16__str__(struct __pyx_ob
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":869
+/* "rdma/ibverbs.pyx":865
  *     def __str__(self):
  *         return "comp_channel:%u:%s"%(self._chan.fd,self.ctx.node);
  *     def __repr__(self):             # <<<<<<<<<<<<<<
@@ -18145,7 +18089,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_11CompChannel_18__repr__(struct __pyx_o
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__repr__", 0);
 
-  /* "rdma/ibverbs.pyx":870
+  /* "rdma/ibverbs.pyx":866
  *         return "comp_channel:%u:%s"%(self._chan.fd,self.ctx.node);
  *     def __repr__(self):
  *         return "CompChannel(%r,%u)"%(self._context,self._chan.fd);             # <<<<<<<<<<<<<<
@@ -18153,9 +18097,9 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_11CompChannel_18__repr__(struct __pyx_o
  * cdef class CQ:
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->_chan->fd); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 870, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->_chan->fd); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 866, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 870, __pyx_L1_error)
+  __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 866, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_INCREF(((PyObject *)__pyx_v_self->_context));
   __Pyx_GIVEREF(((PyObject *)__pyx_v_self->_context));
@@ -18163,14 +18107,14 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_11CompChannel_18__repr__(struct __pyx_o
   __Pyx_GIVEREF(__pyx_t_1);
   PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_t_1);
   __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyString_Format(__pyx_kp_s_CompChannel_r_u, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 870, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyString_Format(__pyx_kp_s_CompChannel_r_u, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 866, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "rdma/ibverbs.pyx":869
+  /* "rdma/ibverbs.pyx":865
  *     def __str__(self):
  *         return "comp_channel:%u:%s"%(self._chan.fd,self.ctx.node);
  *     def __repr__(self):             # <<<<<<<<<<<<<<
@@ -18303,7 +18247,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_11CompChannel_22__setstate_cython__(CYT
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":881
+/* "rdma/ibverbs.pyx":877
  * 
  *     property ctx:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -18329,7 +18273,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2CQ_3ctx___get__(struct __pyx_obj_4rdma
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "rdma/ibverbs.pyx":882
+  /* "rdma/ibverbs.pyx":878
  *     property ctx:
  *         def __get__(self):
  *             return self._context;             # <<<<<<<<<<<<<<
@@ -18341,7 +18285,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2CQ_3ctx___get__(struct __pyx_obj_4rdma
   __pyx_r = ((PyObject *)__pyx_v_self->_context);
   goto __pyx_L0;
 
-  /* "rdma/ibverbs.pyx":881
+  /* "rdma/ibverbs.pyx":877
  * 
  *     property ctx:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -18356,7 +18300,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2CQ_3ctx___get__(struct __pyx_obj_4rdma
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":885
+/* "rdma/ibverbs.pyx":881
  * 
  *     property comp_chan:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -18382,7 +18326,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2CQ_9comp_chan___get__(struct __pyx_obj
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "rdma/ibverbs.pyx":886
+  /* "rdma/ibverbs.pyx":882
  *     property comp_chan:
  *         def __get__(self):
  *             return self._chan;             # <<<<<<<<<<<<<<
@@ -18394,7 +18338,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2CQ_9comp_chan___get__(struct __pyx_obj
   __pyx_r = ((PyObject *)__pyx_v_self->_chan);
   goto __pyx_L0;
 
-  /* "rdma/ibverbs.pyx":885
+  /* "rdma/ibverbs.pyx":881
  * 
  *     property comp_chan:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -18409,7 +18353,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2CQ_9comp_chan___get__(struct __pyx_obj
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":888
+/* "rdma/ibverbs.pyx":884
  *             return self._chan;
  * 
  *     def __cinit__(self, Context ctx not None, int nelems=100,             # <<<<<<<<<<<<<<
@@ -18434,7 +18378,7 @@ static int __pyx_pw_4rdma_7ibverbs_2CQ_1__cinit__(PyObject *__pyx_v_self, PyObje
     static PyObject **__pyx_pyargnames[] = {&__pyx_n_s_ctx,&__pyx_n_s_nelems,&__pyx_n_s_chan,&__pyx_n_s_vec,0};
     PyObject* values[4] = {0,0,0,0};
 
-    /* "rdma/ibverbs.pyx":889
+    /* "rdma/ibverbs.pyx":885
  * 
  *     def __cinit__(self, Context ctx not None, int nelems=100,
  *                   CompChannel chan or None=None, int vec=0):             # <<<<<<<<<<<<<<
@@ -18482,7 +18426,7 @@ static int __pyx_pw_4rdma_7ibverbs_2CQ_1__cinit__(PyObject *__pyx_v_self, PyObje
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__cinit__") < 0)) __PYX_ERR(0, 888, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__cinit__") < 0)) __PYX_ERR(0, 884, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -18499,30 +18443,30 @@ static int __pyx_pw_4rdma_7ibverbs_2CQ_1__cinit__(PyObject *__pyx_v_self, PyObje
     }
     __pyx_v_ctx = ((struct __pyx_obj_4rdma_7ibverbs_Context *)values[0]);
     if (values[1]) {
-      __pyx_v_nelems = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_nelems == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 888, __pyx_L3_error)
+      __pyx_v_nelems = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_nelems == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 884, __pyx_L3_error)
     } else {
       __pyx_v_nelems = ((int)0x64);
     }
     __pyx_v_chan = ((struct __pyx_obj_4rdma_7ibverbs_CompChannel *)values[2]);
     if (values[3]) {
-      __pyx_v_vec = __Pyx_PyInt_As_int(values[3]); if (unlikely((__pyx_v_vec == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 889, __pyx_L3_error)
+      __pyx_v_vec = __Pyx_PyInt_As_int(values[3]); if (unlikely((__pyx_v_vec == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 885, __pyx_L3_error)
     } else {
       __pyx_v_vec = ((int)0);
     }
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__cinit__", 0, 1, 4, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 888, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("__cinit__", 0, 1, 4, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 884, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("rdma.ibverbs.CQ.__cinit__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return -1;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_ctx), __pyx_ptype_4rdma_7ibverbs_Context, 0, "ctx", 0))) __PYX_ERR(0, 888, __pyx_L1_error)
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_chan), __pyx_ptype_4rdma_7ibverbs_CompChannel, 1, "chan", 0))) __PYX_ERR(0, 889, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_ctx), __pyx_ptype_4rdma_7ibverbs_Context, 0, "ctx", 0))) __PYX_ERR(0, 884, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_chan), __pyx_ptype_4rdma_7ibverbs_CompChannel, 1, "chan", 0))) __PYX_ERR(0, 885, __pyx_L1_error)
   __pyx_r = __pyx_pf_4rdma_7ibverbs_2CQ___cinit__(((struct __pyx_obj_4rdma_7ibverbs_CQ *)__pyx_v_self), __pyx_v_ctx, __pyx_v_nelems, __pyx_v_chan, __pyx_v_vec);
 
-  /* "rdma/ibverbs.pyx":888
+  /* "rdma/ibverbs.pyx":884
  *             return self._chan;
  * 
  *     def __cinit__(self, Context ctx not None, int nelems=100,             # <<<<<<<<<<<<<<
@@ -18557,7 +18501,7 @@ static int __pyx_pf_4rdma_7ibverbs_2CQ___cinit__(struct __pyx_obj_4rdma_7ibverbs
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__cinit__", 0);
 
-  /* "rdma/ibverbs.pyx":891
+  /* "rdma/ibverbs.pyx":887
  *                   CompChannel chan or None=None, int vec=0):
  *         cdef c.ibv_comp_channel *c_chan
  *         if chan is None:             # <<<<<<<<<<<<<<
@@ -18568,7 +18512,7 @@ static int __pyx_pf_4rdma_7ibverbs_2CQ___cinit__(struct __pyx_obj_4rdma_7ibverbs
   __pyx_t_2 = (__pyx_t_1 != 0);
   if (__pyx_t_2) {
 
-    /* "rdma/ibverbs.pyx":892
+    /* "rdma/ibverbs.pyx":888
  *         cdef c.ibv_comp_channel *c_chan
  *         if chan is None:
  *             c_chan = NULL             # <<<<<<<<<<<<<<
@@ -18577,7 +18521,7 @@ static int __pyx_pf_4rdma_7ibverbs_2CQ___cinit__(struct __pyx_obj_4rdma_7ibverbs
  */
     __pyx_v_c_chan = NULL;
 
-    /* "rdma/ibverbs.pyx":891
+    /* "rdma/ibverbs.pyx":887
  *                   CompChannel chan or None=None, int vec=0):
  *         cdef c.ibv_comp_channel *c_chan
  *         if chan is None:             # <<<<<<<<<<<<<<
@@ -18587,7 +18531,7 @@ static int __pyx_pf_4rdma_7ibverbs_2CQ___cinit__(struct __pyx_obj_4rdma_7ibverbs
     goto __pyx_L3;
   }
 
-  /* "rdma/ibverbs.pyx":894
+  /* "rdma/ibverbs.pyx":890
  *             c_chan = NULL
  *         else:
  *             c_chan = chan._chan             # <<<<<<<<<<<<<<
@@ -18600,7 +18544,7 @@ static int __pyx_pf_4rdma_7ibverbs_2CQ___cinit__(struct __pyx_obj_4rdma_7ibverbs
   }
   __pyx_L3:;
 
-  /* "rdma/ibverbs.pyx":895
+  /* "rdma/ibverbs.pyx":891
  *         else:
  *             c_chan = chan._chan
  *         self._context = ctx             # <<<<<<<<<<<<<<
@@ -18613,7 +18557,7 @@ static int __pyx_pf_4rdma_7ibverbs_2CQ___cinit__(struct __pyx_obj_4rdma_7ibverbs
   __Pyx_DECREF(((PyObject *)__pyx_v_self->_context));
   __pyx_v_self->_context = __pyx_v_ctx;
 
-  /* "rdma/ibverbs.pyx":896
+  /* "rdma/ibverbs.pyx":892
  *             c_chan = chan._chan
  *         self._context = ctx
  *         self._chan = chan;             # <<<<<<<<<<<<<<
@@ -18626,7 +18570,7 @@ static int __pyx_pf_4rdma_7ibverbs_2CQ___cinit__(struct __pyx_obj_4rdma_7ibverbs
   __Pyx_DECREF(((PyObject *)__pyx_v_self->_chan));
   __pyx_v_self->_chan = __pyx_v_chan;
 
-  /* "rdma/ibverbs.pyx":897
+  /* "rdma/ibverbs.pyx":893
  *         self._context = ctx
  *         self._chan = chan;
  *         self.comp_events = 0;             # <<<<<<<<<<<<<<
@@ -18635,7 +18579,7 @@ static int __pyx_pf_4rdma_7ibverbs_2CQ___cinit__(struct __pyx_obj_4rdma_7ibverbs
  */
   __pyx_v_self->comp_events = 0;
 
-  /* "rdma/ibverbs.pyx":898
+  /* "rdma/ibverbs.pyx":894
  *         self._chan = chan;
  *         self.comp_events = 0;
  *         self._cq = c.ibv_create_cq(ctx._ctx, nelems, <void*>self, c_chan, vec)             # <<<<<<<<<<<<<<
@@ -18644,7 +18588,7 @@ static int __pyx_pf_4rdma_7ibverbs_2CQ___cinit__(struct __pyx_obj_4rdma_7ibverbs
  */
   __pyx_v_self->_cq = ibv_create_cq(__pyx_v_ctx->_ctx, __pyx_v_nelems, ((void *)__pyx_v_self), __pyx_v_c_chan, __pyx_v_vec);
 
-  /* "rdma/ibverbs.pyx":899
+  /* "rdma/ibverbs.pyx":895
  *         self.comp_events = 0;
  *         self._cq = c.ibv_create_cq(ctx._ctx, nelems, <void*>self, c_chan, vec)
  *         if self._cq == NULL:             # <<<<<<<<<<<<<<
@@ -18654,19 +18598,19 @@ static int __pyx_pf_4rdma_7ibverbs_2CQ___cinit__(struct __pyx_obj_4rdma_7ibverbs
   __pyx_t_2 = ((__pyx_v_self->_cq == NULL) != 0);
   if (unlikely(__pyx_t_2)) {
 
-    /* "rdma/ibverbs.pyx":900
+    /* "rdma/ibverbs.pyx":896
  *         self._cq = c.ibv_create_cq(ctx._ctx, nelems, <void*>self, c_chan, vec)
  *         if self._cq == NULL:
  *             raise rdma.SysError(errno,"ibv_create_cq",             # <<<<<<<<<<<<<<
  *                                 "Failed to create completion queue")
  * 
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_rdma); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 900, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_rdma); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 896, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_SysError); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 900, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_SysError); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 896, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    __pyx_t_5 = __Pyx_PyInt_From_int(errno); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 900, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyInt_From_int(errno); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 896, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __pyx_t_7 = NULL;
     __pyx_t_8 = 0;
@@ -18683,7 +18627,7 @@ static int __pyx_pf_4rdma_7ibverbs_2CQ___cinit__(struct __pyx_obj_4rdma_7ibverbs
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_6)) {
       PyObject *__pyx_temp[4] = {__pyx_t_7, __pyx_t_5, __pyx_n_s_ibv_create_cq, __pyx_kp_s_Failed_to_create_completion_queu};
-      __pyx_t_4 = __Pyx_PyFunction_FastCall(__pyx_t_6, __pyx_temp+1-__pyx_t_8, 3+__pyx_t_8); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 900, __pyx_L1_error)
+      __pyx_t_4 = __Pyx_PyFunction_FastCall(__pyx_t_6, __pyx_temp+1-__pyx_t_8, 3+__pyx_t_8); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 896, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
       __Pyx_GOTREF(__pyx_t_4);
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
@@ -18692,14 +18636,14 @@ static int __pyx_pf_4rdma_7ibverbs_2CQ___cinit__(struct __pyx_obj_4rdma_7ibverbs
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_6)) {
       PyObject *__pyx_temp[4] = {__pyx_t_7, __pyx_t_5, __pyx_n_s_ibv_create_cq, __pyx_kp_s_Failed_to_create_completion_queu};
-      __pyx_t_4 = __Pyx_PyCFunction_FastCall(__pyx_t_6, __pyx_temp+1-__pyx_t_8, 3+__pyx_t_8); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 900, __pyx_L1_error)
+      __pyx_t_4 = __Pyx_PyCFunction_FastCall(__pyx_t_6, __pyx_temp+1-__pyx_t_8, 3+__pyx_t_8); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 896, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
       __Pyx_GOTREF(__pyx_t_4);
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     } else
     #endif
     {
-      __pyx_t_9 = PyTuple_New(3+__pyx_t_8); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 900, __pyx_L1_error)
+      __pyx_t_9 = PyTuple_New(3+__pyx_t_8); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 896, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_9);
       if (__pyx_t_7) {
         __Pyx_GIVEREF(__pyx_t_7); PyTuple_SET_ITEM(__pyx_t_9, 0, __pyx_t_7); __pyx_t_7 = NULL;
@@ -18713,16 +18657,16 @@ static int __pyx_pf_4rdma_7ibverbs_2CQ___cinit__(struct __pyx_obj_4rdma_7ibverbs
       __Pyx_GIVEREF(__pyx_kp_s_Failed_to_create_completion_queu);
       PyTuple_SET_ITEM(__pyx_t_9, 2+__pyx_t_8, __pyx_kp_s_Failed_to_create_completion_queu);
       __pyx_t_5 = 0;
-      __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_6, __pyx_t_9, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 900, __pyx_L1_error)
+      __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_6, __pyx_t_9, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 896, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
       __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
     }
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __Pyx_Raise(__pyx_t_4, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __PYX_ERR(0, 900, __pyx_L1_error)
+    __PYX_ERR(0, 896, __pyx_L1_error)
 
-    /* "rdma/ibverbs.pyx":899
+    /* "rdma/ibverbs.pyx":895
  *         self.comp_events = 0;
  *         self._cq = c.ibv_create_cq(ctx._ctx, nelems, <void*>self, c_chan, vec)
  *         if self._cq == NULL:             # <<<<<<<<<<<<<<
@@ -18731,7 +18675,7 @@ static int __pyx_pf_4rdma_7ibverbs_2CQ___cinit__(struct __pyx_obj_4rdma_7ibverbs
  */
   }
 
-  /* "rdma/ibverbs.pyx":888
+  /* "rdma/ibverbs.pyx":884
  *             return self._chan;
  * 
  *     def __cinit__(self, Context ctx not None, int nelems=100,             # <<<<<<<<<<<<<<
@@ -18755,7 +18699,7 @@ static int __pyx_pf_4rdma_7ibverbs_2CQ___cinit__(struct __pyx_obj_4rdma_7ibverbs
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":903
+/* "rdma/ibverbs.pyx":899
  *                                 "Failed to create completion queue")
  * 
  *     def __dealloc__(self):             # <<<<<<<<<<<<<<
@@ -18782,18 +18726,18 @@ static void __pyx_pf_4rdma_7ibverbs_2CQ_2__dealloc__(struct __pyx_obj_4rdma_7ibv
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__dealloc__", 0);
 
-  /* "rdma/ibverbs.pyx":904
+  /* "rdma/ibverbs.pyx":900
  * 
  *     def __dealloc__(self):
  *         self._close();             # <<<<<<<<<<<<<<
  * 
  *     def __enter__(self):
  */
-  __pyx_t_1 = ((struct __pyx_vtabstruct_4rdma_7ibverbs_CQ *)__pyx_v_self->__pyx_vtab)->_close(__pyx_v_self); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 904, __pyx_L1_error)
+  __pyx_t_1 = ((struct __pyx_vtabstruct_4rdma_7ibverbs_CQ *)__pyx_v_self->__pyx_vtab)->_close(__pyx_v_self); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 900, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "rdma/ibverbs.pyx":903
+  /* "rdma/ibverbs.pyx":899
  *                                 "Failed to create completion queue")
  * 
  *     def __dealloc__(self):             # <<<<<<<<<<<<<<
@@ -18810,7 +18754,7 @@ static void __pyx_pf_4rdma_7ibverbs_2CQ_2__dealloc__(struct __pyx_obj_4rdma_7ibv
   __Pyx_RefNannyFinishContext();
 }
 
-/* "rdma/ibverbs.pyx":906
+/* "rdma/ibverbs.pyx":902
  *         self._close();
  * 
  *     def __enter__(self):             # <<<<<<<<<<<<<<
@@ -18836,7 +18780,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2CQ_4__enter__(struct __pyx_obj_4rdma_7
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__enter__", 0);
 
-  /* "rdma/ibverbs.pyx":907
+  /* "rdma/ibverbs.pyx":903
  * 
  *     def __enter__(self):
  *         return self             # <<<<<<<<<<<<<<
@@ -18848,7 +18792,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2CQ_4__enter__(struct __pyx_obj_4rdma_7
   __pyx_r = ((PyObject *)__pyx_v_self);
   goto __pyx_L0;
 
-  /* "rdma/ibverbs.pyx":906
+  /* "rdma/ibverbs.pyx":902
  *         self._close();
  * 
  *     def __enter__(self):             # <<<<<<<<<<<<<<
@@ -18863,7 +18807,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2CQ_4__enter__(struct __pyx_obj_4rdma_7
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":909
+/* "rdma/ibverbs.pyx":905
  *         return self
  * 
  *     def __exit__(self,*exc_info):             # <<<<<<<<<<<<<<
@@ -18898,18 +18842,18 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2CQ_6__exit__(struct __pyx_obj_4rdma_7i
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__exit__", 0);
 
-  /* "rdma/ibverbs.pyx":910
+  /* "rdma/ibverbs.pyx":906
  * 
  *     def __exit__(self,*exc_info):
  *         self._close();             # <<<<<<<<<<<<<<
  * 
  *     def close(self):
  */
-  __pyx_t_1 = ((struct __pyx_vtabstruct_4rdma_7ibverbs_CQ *)__pyx_v_self->__pyx_vtab)->_close(__pyx_v_self); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 910, __pyx_L1_error)
+  __pyx_t_1 = ((struct __pyx_vtabstruct_4rdma_7ibverbs_CQ *)__pyx_v_self->__pyx_vtab)->_close(__pyx_v_self); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 906, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "rdma/ibverbs.pyx":909
+  /* "rdma/ibverbs.pyx":905
  *         return self
  * 
  *     def __exit__(self,*exc_info):             # <<<<<<<<<<<<<<
@@ -18930,7 +18874,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2CQ_6__exit__(struct __pyx_obj_4rdma_7i
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":912
+/* "rdma/ibverbs.pyx":908
  *         self._close();
  * 
  *     def close(self):             # <<<<<<<<<<<<<<
@@ -18961,18 +18905,18 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2CQ_8close(struct __pyx_obj_4rdma_7ibve
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("close", 0);
 
-  /* "rdma/ibverbs.pyx":914
+  /* "rdma/ibverbs.pyx":910
  *     def close(self):
  *         """Free the verbs CQ handle."""
  *         self._close();             # <<<<<<<<<<<<<<
  * 
  *     cdef _close(self):
  */
-  __pyx_t_1 = ((struct __pyx_vtabstruct_4rdma_7ibverbs_CQ *)__pyx_v_self->__pyx_vtab)->_close(__pyx_v_self); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 914, __pyx_L1_error)
+  __pyx_t_1 = ((struct __pyx_vtabstruct_4rdma_7ibverbs_CQ *)__pyx_v_self->__pyx_vtab)->_close(__pyx_v_self); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 910, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "rdma/ibverbs.pyx":912
+  /* "rdma/ibverbs.pyx":908
  *         self._close();
  * 
  *     def close(self):             # <<<<<<<<<<<<<<
@@ -18993,7 +18937,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2CQ_8close(struct __pyx_obj_4rdma_7ibve
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":916
+/* "rdma/ibverbs.pyx":912
  *         self._close();
  * 
  *     cdef _close(self):             # <<<<<<<<<<<<<<
@@ -19017,7 +18961,7 @@ static PyObject *__pyx_f_4rdma_7ibverbs_2CQ__close(struct __pyx_obj_4rdma_7ibver
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("_close", 0);
 
-  /* "rdma/ibverbs.pyx":918
+  /* "rdma/ibverbs.pyx":914
  *     cdef _close(self):
  *         cdef int rc
  *         if self._cq != NULL:             # <<<<<<<<<<<<<<
@@ -19027,7 +18971,7 @@ static PyObject *__pyx_f_4rdma_7ibverbs_2CQ__close(struct __pyx_obj_4rdma_7ibver
   __pyx_t_1 = ((__pyx_v_self->_cq != NULL) != 0);
   if (__pyx_t_1) {
 
-    /* "rdma/ibverbs.pyx":919
+    /* "rdma/ibverbs.pyx":915
  *         cdef int rc
  *         if self._cq != NULL:
  *             if self._context._ctx == NULL:             # <<<<<<<<<<<<<<
@@ -19037,16 +18981,16 @@ static PyObject *__pyx_f_4rdma_7ibverbs_2CQ__close(struct __pyx_obj_4rdma_7ibver
     __pyx_t_1 = ((__pyx_v_self->_context->_ctx == NULL) != 0);
     if (unlikely(__pyx_t_1)) {
 
-      /* "rdma/ibverbs.pyx":920
+      /* "rdma/ibverbs.pyx":916
  *         if self._cq != NULL:
  *             if self._context._ctx == NULL:
  *                 raise rdma.RDMAError("Context closed before owned object");             # <<<<<<<<<<<<<<
  *             if self.comp_events != 0:
  *                 c.ibv_ack_cq_events(self._cq,self.comp_events);
  */
-      __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_rdma); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 920, __pyx_L1_error)
+      __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_rdma); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 916, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
-      __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_RDMAError); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 920, __pyx_L1_error)
+      __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_RDMAError); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 916, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
       __pyx_t_3 = NULL;
@@ -19061,14 +19005,14 @@ static PyObject *__pyx_f_4rdma_7ibverbs_2CQ__close(struct __pyx_obj_4rdma_7ibver
       }
       __pyx_t_2 = (__pyx_t_3) ? __Pyx_PyObject_Call2Args(__pyx_t_4, __pyx_t_3, __pyx_kp_s_Context_closed_before_owned_obje) : __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_kp_s_Context_closed_before_owned_obje);
       __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
-      if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 920, __pyx_L1_error)
+      if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 916, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       __Pyx_Raise(__pyx_t_2, 0, 0, 0);
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-      __PYX_ERR(0, 920, __pyx_L1_error)
+      __PYX_ERR(0, 916, __pyx_L1_error)
 
-      /* "rdma/ibverbs.pyx":919
+      /* "rdma/ibverbs.pyx":915
  *         cdef int rc
  *         if self._cq != NULL:
  *             if self._context._ctx == NULL:             # <<<<<<<<<<<<<<
@@ -19077,7 +19021,7 @@ static PyObject *__pyx_f_4rdma_7ibverbs_2CQ__close(struct __pyx_obj_4rdma_7ibver
  */
     }
 
-    /* "rdma/ibverbs.pyx":921
+    /* "rdma/ibverbs.pyx":917
  *             if self._context._ctx == NULL:
  *                 raise rdma.RDMAError("Context closed before owned object");
  *             if self.comp_events != 0:             # <<<<<<<<<<<<<<
@@ -19087,7 +19031,7 @@ static PyObject *__pyx_f_4rdma_7ibverbs_2CQ__close(struct __pyx_obj_4rdma_7ibver
     __pyx_t_1 = ((__pyx_v_self->comp_events != 0) != 0);
     if (__pyx_t_1) {
 
-      /* "rdma/ibverbs.pyx":922
+      /* "rdma/ibverbs.pyx":918
  *                 raise rdma.RDMAError("Context closed before owned object");
  *             if self.comp_events != 0:
  *                 c.ibv_ack_cq_events(self._cq,self.comp_events);             # <<<<<<<<<<<<<<
@@ -19096,7 +19040,7 @@ static PyObject *__pyx_f_4rdma_7ibverbs_2CQ__close(struct __pyx_obj_4rdma_7ibver
  */
       ibv_ack_cq_events(__pyx_v_self->_cq, __pyx_v_self->comp_events);
 
-      /* "rdma/ibverbs.pyx":923
+      /* "rdma/ibverbs.pyx":919
  *             if self.comp_events != 0:
  *                 c.ibv_ack_cq_events(self._cq,self.comp_events);
  *                 self.comp_events = 0;             # <<<<<<<<<<<<<<
@@ -19105,7 +19049,7 @@ static PyObject *__pyx_f_4rdma_7ibverbs_2CQ__close(struct __pyx_obj_4rdma_7ibver
  */
       __pyx_v_self->comp_events = 0;
 
-      /* "rdma/ibverbs.pyx":921
+      /* "rdma/ibverbs.pyx":917
  *             if self._context._ctx == NULL:
  *                 raise rdma.RDMAError("Context closed before owned object");
  *             if self.comp_events != 0:             # <<<<<<<<<<<<<<
@@ -19114,7 +19058,7 @@ static PyObject *__pyx_f_4rdma_7ibverbs_2CQ__close(struct __pyx_obj_4rdma_7ibver
  */
     }
 
-    /* "rdma/ibverbs.pyx":924
+    /* "rdma/ibverbs.pyx":920
  *                 c.ibv_ack_cq_events(self._cq,self.comp_events);
  *                 self.comp_events = 0;
  *             rc = c.ibv_destroy_cq(self._cq)             # <<<<<<<<<<<<<<
@@ -19123,7 +19067,7 @@ static PyObject *__pyx_f_4rdma_7ibverbs_2CQ__close(struct __pyx_obj_4rdma_7ibver
  */
     __pyx_v_rc = ibv_destroy_cq(__pyx_v_self->_cq);
 
-    /* "rdma/ibverbs.pyx":925
+    /* "rdma/ibverbs.pyx":921
  *                 self.comp_events = 0;
  *             rc = c.ibv_destroy_cq(self._cq)
  *             if rc != 0:             # <<<<<<<<<<<<<<
@@ -19133,19 +19077,19 @@ static PyObject *__pyx_f_4rdma_7ibverbs_2CQ__close(struct __pyx_obj_4rdma_7ibver
     __pyx_t_1 = ((__pyx_v_rc != 0) != 0);
     if (unlikely(__pyx_t_1)) {
 
-      /* "rdma/ibverbs.pyx":926
+      /* "rdma/ibverbs.pyx":922
  *             rc = c.ibv_destroy_cq(self._cq)
  *             if rc != 0:
  *                 raise rdma.SysError(rc,"ibv_destroy_cq",             # <<<<<<<<<<<<<<
  *                                     "Failed to destroy completion queue")
  *             self._cq = NULL
  */
-      __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_rdma); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 926, __pyx_L1_error)
+      __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_rdma); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 922, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
-      __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_SysError); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 926, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_SysError); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 922, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-      __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_rc); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 926, __pyx_L1_error)
+      __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_rc); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 922, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
       __pyx_t_5 = NULL;
       __pyx_t_6 = 0;
@@ -19162,7 +19106,7 @@ static PyObject *__pyx_f_4rdma_7ibverbs_2CQ__close(struct __pyx_obj_4rdma_7ibver
       #if CYTHON_FAST_PYCALL
       if (PyFunction_Check(__pyx_t_3)) {
         PyObject *__pyx_temp[4] = {__pyx_t_5, __pyx_t_4, __pyx_n_s_ibv_destroy_cq, __pyx_kp_s_Failed_to_destroy_completion_que};
-        __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_6, 3+__pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 926, __pyx_L1_error)
+        __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_6, 3+__pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 922, __pyx_L1_error)
         __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -19171,14 +19115,14 @@ static PyObject *__pyx_f_4rdma_7ibverbs_2CQ__close(struct __pyx_obj_4rdma_7ibver
       #if CYTHON_FAST_PYCCALL
       if (__Pyx_PyFastCFunction_Check(__pyx_t_3)) {
         PyObject *__pyx_temp[4] = {__pyx_t_5, __pyx_t_4, __pyx_n_s_ibv_destroy_cq, __pyx_kp_s_Failed_to_destroy_completion_que};
-        __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_6, 3+__pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 926, __pyx_L1_error)
+        __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_6, 3+__pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 922, __pyx_L1_error)
         __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       } else
       #endif
       {
-        __pyx_t_7 = PyTuple_New(3+__pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 926, __pyx_L1_error)
+        __pyx_t_7 = PyTuple_New(3+__pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 922, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_7);
         if (__pyx_t_5) {
           __Pyx_GIVEREF(__pyx_t_5); PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_t_5); __pyx_t_5 = NULL;
@@ -19192,16 +19136,16 @@ static PyObject *__pyx_f_4rdma_7ibverbs_2CQ__close(struct __pyx_obj_4rdma_7ibver
         __Pyx_GIVEREF(__pyx_kp_s_Failed_to_destroy_completion_que);
         PyTuple_SET_ITEM(__pyx_t_7, 2+__pyx_t_6, __pyx_kp_s_Failed_to_destroy_completion_que);
         __pyx_t_4 = 0;
-        __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_7, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 926, __pyx_L1_error)
+        __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_7, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 922, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
       }
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
       __Pyx_Raise(__pyx_t_2, 0, 0, 0);
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-      __PYX_ERR(0, 926, __pyx_L1_error)
+      __PYX_ERR(0, 922, __pyx_L1_error)
 
-      /* "rdma/ibverbs.pyx":925
+      /* "rdma/ibverbs.pyx":921
  *                 self.comp_events = 0;
  *             rc = c.ibv_destroy_cq(self._cq)
  *             if rc != 0:             # <<<<<<<<<<<<<<
@@ -19210,7 +19154,7 @@ static PyObject *__pyx_f_4rdma_7ibverbs_2CQ__close(struct __pyx_obj_4rdma_7ibver
  */
     }
 
-    /* "rdma/ibverbs.pyx":928
+    /* "rdma/ibverbs.pyx":924
  *                 raise rdma.SysError(rc,"ibv_destroy_cq",
  *                                     "Failed to destroy completion queue")
  *             self._cq = NULL             # <<<<<<<<<<<<<<
@@ -19219,7 +19163,7 @@ static PyObject *__pyx_f_4rdma_7ibverbs_2CQ__close(struct __pyx_obj_4rdma_7ibver
  */
     __pyx_v_self->_cq = NULL;
 
-    /* "rdma/ibverbs.pyx":929
+    /* "rdma/ibverbs.pyx":925
  *                                     "Failed to destroy completion queue")
  *             self._cq = NULL
  *             self._context = None;             # <<<<<<<<<<<<<<
@@ -19232,7 +19176,7 @@ static PyObject *__pyx_f_4rdma_7ibverbs_2CQ__close(struct __pyx_obj_4rdma_7ibver
     __Pyx_DECREF(((PyObject *)__pyx_v_self->_context));
     __pyx_v_self->_context = ((struct __pyx_obj_4rdma_7ibverbs_Context *)Py_None);
 
-    /* "rdma/ibverbs.pyx":930
+    /* "rdma/ibverbs.pyx":926
  *             self._cq = NULL
  *             self._context = None;
  *             self._chan = None;             # <<<<<<<<<<<<<<
@@ -19245,7 +19189,7 @@ static PyObject *__pyx_f_4rdma_7ibverbs_2CQ__close(struct __pyx_obj_4rdma_7ibver
     __Pyx_DECREF(((PyObject *)__pyx_v_self->_chan));
     __pyx_v_self->_chan = ((struct __pyx_obj_4rdma_7ibverbs_CompChannel *)Py_None);
 
-    /* "rdma/ibverbs.pyx":918
+    /* "rdma/ibverbs.pyx":914
  *     cdef _close(self):
  *         cdef int rc
  *         if self._cq != NULL:             # <<<<<<<<<<<<<<
@@ -19254,7 +19198,7 @@ static PyObject *__pyx_f_4rdma_7ibverbs_2CQ__close(struct __pyx_obj_4rdma_7ibver
  */
   }
 
-  /* "rdma/ibverbs.pyx":916
+  /* "rdma/ibverbs.pyx":912
  *         self._close();
  * 
  *     cdef _close(self):             # <<<<<<<<<<<<<<
@@ -19279,7 +19223,7 @@ static PyObject *__pyx_f_4rdma_7ibverbs_2CQ__close(struct __pyx_obj_4rdma_7ibver
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":932
+/* "rdma/ibverbs.pyx":928
  *             self._chan = None;
  * 
  *     def req_notify(self,int solicited_only=False):             # <<<<<<<<<<<<<<
@@ -19319,7 +19263,7 @@ static PyObject *__pyx_pw_4rdma_7ibverbs_2CQ_11req_notify(PyObject *__pyx_v_self
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "req_notify") < 0)) __PYX_ERR(0, 932, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "req_notify") < 0)) __PYX_ERR(0, 928, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -19330,14 +19274,14 @@ static PyObject *__pyx_pw_4rdma_7ibverbs_2CQ_11req_notify(PyObject *__pyx_v_self
       }
     }
     if (values[0]) {
-      __pyx_v_solicited_only = __Pyx_PyInt_As_int(values[0]); if (unlikely((__pyx_v_solicited_only == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 932, __pyx_L3_error)
+      __pyx_v_solicited_only = __Pyx_PyInt_As_int(values[0]); if (unlikely((__pyx_v_solicited_only == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 928, __pyx_L3_error)
     } else {
       __pyx_v_solicited_only = ((int)0);
     }
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("req_notify", 0, 0, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 932, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("req_notify", 0, 0, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 928, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("rdma.ibverbs.CQ.req_notify", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -19366,7 +19310,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2CQ_10req_notify(struct __pyx_obj_4rdma
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("req_notify", 0);
 
-  /* "rdma/ibverbs.pyx":935
+  /* "rdma/ibverbs.pyx":931
  *         """Request event notification for CQEs added to the CQ."""
  *         cdef int rc
  *         rc = c.ibv_req_notify_cq(self._cq,solicited_only);             # <<<<<<<<<<<<<<
@@ -19375,7 +19319,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2CQ_10req_notify(struct __pyx_obj_4rdma
  */
   __pyx_v_rc = ibv_req_notify_cq(__pyx_v_self->_cq, __pyx_v_solicited_only);
 
-  /* "rdma/ibverbs.pyx":936
+  /* "rdma/ibverbs.pyx":932
  *         cdef int rc
  *         rc = c.ibv_req_notify_cq(self._cq,solicited_only);
  *         if rc != 0:             # <<<<<<<<<<<<<<
@@ -19385,19 +19329,19 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2CQ_10req_notify(struct __pyx_obj_4rdma
   __pyx_t_1 = ((__pyx_v_rc != 0) != 0);
   if (unlikely(__pyx_t_1)) {
 
-    /* "rdma/ibverbs.pyx":937
+    /* "rdma/ibverbs.pyx":933
  *         rc = c.ibv_req_notify_cq(self._cq,solicited_only);
  *         if rc != 0:
  *             raise rdma.SysError(rc,"ibv_req_notify_cq",             # <<<<<<<<<<<<<<
  *                                 "Failed to request notification");
  * 
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_rdma); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 937, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_rdma); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 933, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_SysError); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 937, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_SysError); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 933, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_rc); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 937, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_rc); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 933, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __pyx_t_5 = NULL;
     __pyx_t_6 = 0;
@@ -19414,7 +19358,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2CQ_10req_notify(struct __pyx_obj_4rdma
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_4)) {
       PyObject *__pyx_temp[4] = {__pyx_t_5, __pyx_t_3, __pyx_n_s_ibv_req_notify_cq, __pyx_kp_s_Failed_to_request_notification};
-      __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_6, 3+__pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 937, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_6, 3+__pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 933, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -19423,14 +19367,14 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2CQ_10req_notify(struct __pyx_obj_4rdma
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_4)) {
       PyObject *__pyx_temp[4] = {__pyx_t_5, __pyx_t_3, __pyx_n_s_ibv_req_notify_cq, __pyx_kp_s_Failed_to_request_notification};
-      __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_6, 3+__pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 937, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_6, 3+__pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 933, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     } else
     #endif
     {
-      __pyx_t_7 = PyTuple_New(3+__pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 937, __pyx_L1_error)
+      __pyx_t_7 = PyTuple_New(3+__pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 933, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_7);
       if (__pyx_t_5) {
         __Pyx_GIVEREF(__pyx_t_5); PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_t_5); __pyx_t_5 = NULL;
@@ -19444,16 +19388,16 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2CQ_10req_notify(struct __pyx_obj_4rdma
       __Pyx_GIVEREF(__pyx_kp_s_Failed_to_request_notification);
       PyTuple_SET_ITEM(__pyx_t_7, 2+__pyx_t_6, __pyx_kp_s_Failed_to_request_notification);
       __pyx_t_3 = 0;
-      __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_7, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 937, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_7, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 933, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
     }
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_Raise(__pyx_t_2, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __PYX_ERR(0, 937, __pyx_L1_error)
+    __PYX_ERR(0, 933, __pyx_L1_error)
 
-    /* "rdma/ibverbs.pyx":936
+    /* "rdma/ibverbs.pyx":932
  *         cdef int rc
  *         rc = c.ibv_req_notify_cq(self._cq,solicited_only);
  *         if rc != 0:             # <<<<<<<<<<<<<<
@@ -19462,7 +19406,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2CQ_10req_notify(struct __pyx_obj_4rdma
  */
   }
 
-  /* "rdma/ibverbs.pyx":932
+  /* "rdma/ibverbs.pyx":928
  *             self._chan = None;
  * 
  *     def req_notify(self,int solicited_only=False):             # <<<<<<<<<<<<<<
@@ -19487,7 +19431,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2CQ_10req_notify(struct __pyx_obj_4rdma
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":940
+/* "rdma/ibverbs.pyx":936
  *                                 "Failed to request notification");
  * 
  *     def resize(self,int cqes):             # <<<<<<<<<<<<<<
@@ -19507,7 +19451,7 @@ static PyObject *__pyx_pw_4rdma_7ibverbs_2CQ_13resize(PyObject *__pyx_v_self, Py
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("resize (wrapper)", 0);
   assert(__pyx_arg_cqes); {
-    __pyx_v_cqes = __Pyx_PyInt_As_int(__pyx_arg_cqes); if (unlikely((__pyx_v_cqes == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 940, __pyx_L3_error)
+    __pyx_v_cqes = __Pyx_PyInt_As_int(__pyx_arg_cqes); if (unlikely((__pyx_v_cqes == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 936, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -19538,7 +19482,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2CQ_12resize(struct __pyx_obj_4rdma_7ib
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("resize", 0);
 
-  /* "rdma/ibverbs.pyx":943
+  /* "rdma/ibverbs.pyx":939
  *         """Resize the CQ to have at least *cqes* entries."""
  *         cdef int rc
  *         rc = c.ibv_resize_cq(self._cq,cqes);             # <<<<<<<<<<<<<<
@@ -19547,7 +19491,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2CQ_12resize(struct __pyx_obj_4rdma_7ib
  */
   __pyx_v_rc = ibv_resize_cq(__pyx_v_self->_cq, __pyx_v_cqes);
 
-  /* "rdma/ibverbs.pyx":944
+  /* "rdma/ibverbs.pyx":940
  *         cdef int rc
  *         rc = c.ibv_resize_cq(self._cq,cqes);
  *         if rc != 0:             # <<<<<<<<<<<<<<
@@ -19557,19 +19501,19 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2CQ_12resize(struct __pyx_obj_4rdma_7ib
   __pyx_t_1 = ((__pyx_v_rc != 0) != 0);
   if (unlikely(__pyx_t_1)) {
 
-    /* "rdma/ibverbs.pyx":945
+    /* "rdma/ibverbs.pyx":941
  *         rc = c.ibv_resize_cq(self._cq,cqes);
  *         if rc != 0:
  *             raise rdma.SysError(rc,"ibv_resize_cq",             # <<<<<<<<<<<<<<
  *                                 "Failed to resize the CQ");
  * 
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_rdma); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 945, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_rdma); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 941, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_SysError); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 945, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_SysError); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 941, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_rc); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 945, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_rc); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 941, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __pyx_t_5 = NULL;
     __pyx_t_6 = 0;
@@ -19586,7 +19530,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2CQ_12resize(struct __pyx_obj_4rdma_7ib
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_4)) {
       PyObject *__pyx_temp[4] = {__pyx_t_5, __pyx_t_3, __pyx_n_s_ibv_resize_cq, __pyx_kp_s_Failed_to_resize_the_CQ};
-      __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_6, 3+__pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 945, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_6, 3+__pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 941, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -19595,14 +19539,14 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2CQ_12resize(struct __pyx_obj_4rdma_7ib
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_4)) {
       PyObject *__pyx_temp[4] = {__pyx_t_5, __pyx_t_3, __pyx_n_s_ibv_resize_cq, __pyx_kp_s_Failed_to_resize_the_CQ};
-      __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_6, 3+__pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 945, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_6, 3+__pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 941, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     } else
     #endif
     {
-      __pyx_t_7 = PyTuple_New(3+__pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 945, __pyx_L1_error)
+      __pyx_t_7 = PyTuple_New(3+__pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 941, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_7);
       if (__pyx_t_5) {
         __Pyx_GIVEREF(__pyx_t_5); PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_t_5); __pyx_t_5 = NULL;
@@ -19616,16 +19560,16 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2CQ_12resize(struct __pyx_obj_4rdma_7ib
       __Pyx_GIVEREF(__pyx_kp_s_Failed_to_resize_the_CQ);
       PyTuple_SET_ITEM(__pyx_t_7, 2+__pyx_t_6, __pyx_kp_s_Failed_to_resize_the_CQ);
       __pyx_t_3 = 0;
-      __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_7, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 945, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_7, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 941, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
     }
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_Raise(__pyx_t_2, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __PYX_ERR(0, 945, __pyx_L1_error)
+    __PYX_ERR(0, 941, __pyx_L1_error)
 
-    /* "rdma/ibverbs.pyx":944
+    /* "rdma/ibverbs.pyx":940
  *         cdef int rc
  *         rc = c.ibv_resize_cq(self._cq,cqes);
  *         if rc != 0:             # <<<<<<<<<<<<<<
@@ -19634,7 +19578,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2CQ_12resize(struct __pyx_obj_4rdma_7ib
  */
   }
 
-  /* "rdma/ibverbs.pyx":940
+  /* "rdma/ibverbs.pyx":936
  *                                 "Failed to request notification");
  * 
  *     def resize(self,int cqes):             # <<<<<<<<<<<<<<
@@ -19659,7 +19603,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2CQ_12resize(struct __pyx_obj_4rdma_7ib
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":948
+/* "rdma/ibverbs.pyx":944
  *                                 "Failed to resize the CQ");
  * 
  *     def poll(self,int limit=-1):             # <<<<<<<<<<<<<<
@@ -19699,7 +19643,7 @@ static PyObject *__pyx_pw_4rdma_7ibverbs_2CQ_15poll(PyObject *__pyx_v_self, PyOb
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "poll") < 0)) __PYX_ERR(0, 948, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "poll") < 0)) __PYX_ERR(0, 944, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -19710,14 +19654,14 @@ static PyObject *__pyx_pw_4rdma_7ibverbs_2CQ_15poll(PyObject *__pyx_v_self, PyOb
       }
     }
     if (values[0]) {
-      __pyx_v_limit = __Pyx_PyInt_As_int(values[0]); if (unlikely((__pyx_v_limit == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 948, __pyx_L3_error)
+      __pyx_v_limit = __Pyx_PyInt_As_int(values[0]); if (unlikely((__pyx_v_limit == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 944, __pyx_L3_error)
     } else {
       __pyx_v_limit = ((int)-1);
     }
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("poll", 0, 0, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 948, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("poll", 0, 0, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 944, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("rdma.ibverbs.CQ.poll", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -19749,19 +19693,19 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2CQ_14poll(struct __pyx_obj_4rdma_7ibve
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("poll", 0);
 
-  /* "rdma/ibverbs.pyx":953
+  /* "rdma/ibverbs.pyx":949
  *         cdef int n
  *         cdef list L
  *         L = []             # <<<<<<<<<<<<<<
  *         while limit != 0:
  *             n = c.ibv_poll_cq(self._cq, 1, &lwc)
  */
-  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 953, __pyx_L1_error)
+  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 949, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_v_L = ((PyObject*)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "rdma/ibverbs.pyx":954
+  /* "rdma/ibverbs.pyx":950
  *         cdef list L
  *         L = []
  *         while limit != 0:             # <<<<<<<<<<<<<<
@@ -19772,7 +19716,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2CQ_14poll(struct __pyx_obj_4rdma_7ibve
     __pyx_t_2 = ((__pyx_v_limit != 0) != 0);
     if (!__pyx_t_2) break;
 
-    /* "rdma/ibverbs.pyx":955
+    /* "rdma/ibverbs.pyx":951
  *         L = []
  *         while limit != 0:
  *             n = c.ibv_poll_cq(self._cq, 1, &lwc)             # <<<<<<<<<<<<<<
@@ -19781,7 +19725,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2CQ_14poll(struct __pyx_obj_4rdma_7ibve
  */
     __pyx_v_n = ibv_poll_cq(__pyx_v_self->_cq, 1, (&__pyx_v_lwc));
 
-    /* "rdma/ibverbs.pyx":956
+    /* "rdma/ibverbs.pyx":952
  *         while limit != 0:
  *             n = c.ibv_poll_cq(self._cq, 1, &lwc)
  *             if n == 0:             # <<<<<<<<<<<<<<
@@ -19791,7 +19735,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2CQ_14poll(struct __pyx_obj_4rdma_7ibve
     __pyx_t_2 = ((__pyx_v_n == 0) != 0);
     if (__pyx_t_2) {
 
-      /* "rdma/ibverbs.pyx":957
+      /* "rdma/ibverbs.pyx":953
  *             n = c.ibv_poll_cq(self._cq, 1, &lwc)
  *             if n == 0:
  *                 break             # <<<<<<<<<<<<<<
@@ -19800,7 +19744,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2CQ_14poll(struct __pyx_obj_4rdma_7ibve
  */
       goto __pyx_L4_break;
 
-      /* "rdma/ibverbs.pyx":956
+      /* "rdma/ibverbs.pyx":952
  *         while limit != 0:
  *             n = c.ibv_poll_cq(self._cq, 1, &lwc)
  *             if n == 0:             # <<<<<<<<<<<<<<
@@ -19809,7 +19753,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2CQ_14poll(struct __pyx_obj_4rdma_7ibve
  */
     }
 
-    /* "rdma/ibverbs.pyx":958
+    /* "rdma/ibverbs.pyx":954
  *             if n == 0:
  *                 break
  *             elif n < 0:             # <<<<<<<<<<<<<<
@@ -19819,19 +19763,19 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2CQ_14poll(struct __pyx_obj_4rdma_7ibve
     __pyx_t_2 = ((__pyx_v_n < 0) != 0);
     if (unlikely(__pyx_t_2)) {
 
-      /* "rdma/ibverbs.pyx":959
+      /* "rdma/ibverbs.pyx":955
  *                 break
  *             elif n < 0:
  *                 raise rdma.SysError(errno,"ibv_poll_cq");             # <<<<<<<<<<<<<<
  *             else:
  *                 L.append(wc(wr_id = lwc.wr_id,
  */
-      __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_rdma); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 959, __pyx_L1_error)
+      __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_rdma); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 955, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
-      __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_SysError); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 959, __pyx_L1_error)
+      __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_SysError); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 955, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-      __pyx_t_3 = __Pyx_PyInt_From_int(errno); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 959, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyInt_From_int(errno); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 955, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
       __pyx_t_5 = NULL;
       __pyx_t_6 = 0;
@@ -19848,7 +19792,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2CQ_14poll(struct __pyx_obj_4rdma_7ibve
       #if CYTHON_FAST_PYCALL
       if (PyFunction_Check(__pyx_t_4)) {
         PyObject *__pyx_temp[3] = {__pyx_t_5, __pyx_t_3, __pyx_n_s_ibv_poll_cq};
-        __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 959, __pyx_L1_error)
+        __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 955, __pyx_L1_error)
         __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
         __Pyx_GOTREF(__pyx_t_1);
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -19857,14 +19801,14 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2CQ_14poll(struct __pyx_obj_4rdma_7ibve
       #if CYTHON_FAST_PYCCALL
       if (__Pyx_PyFastCFunction_Check(__pyx_t_4)) {
         PyObject *__pyx_temp[3] = {__pyx_t_5, __pyx_t_3, __pyx_n_s_ibv_poll_cq};
-        __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 959, __pyx_L1_error)
+        __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 955, __pyx_L1_error)
         __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
         __Pyx_GOTREF(__pyx_t_1);
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
       } else
       #endif
       {
-        __pyx_t_7 = PyTuple_New(2+__pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 959, __pyx_L1_error)
+        __pyx_t_7 = PyTuple_New(2+__pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 955, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_7);
         if (__pyx_t_5) {
           __Pyx_GIVEREF(__pyx_t_5); PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_t_5); __pyx_t_5 = NULL;
@@ -19875,16 +19819,16 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2CQ_14poll(struct __pyx_obj_4rdma_7ibve
         __Pyx_GIVEREF(__pyx_n_s_ibv_poll_cq);
         PyTuple_SET_ITEM(__pyx_t_7, 1+__pyx_t_6, __pyx_n_s_ibv_poll_cq);
         __pyx_t_3 = 0;
-        __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_7, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 959, __pyx_L1_error)
+        __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_7, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 955, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
         __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
       }
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       __Pyx_Raise(__pyx_t_1, 0, 0, 0);
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-      __PYX_ERR(0, 959, __pyx_L1_error)
+      __PYX_ERR(0, 955, __pyx_L1_error)
 
-      /* "rdma/ibverbs.pyx":958
+      /* "rdma/ibverbs.pyx":954
  *             if n == 0:
  *                 break
  *             elif n < 0:             # <<<<<<<<<<<<<<
@@ -19893,7 +19837,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2CQ_14poll(struct __pyx_obj_4rdma_7ibve
  */
     }
 
-    /* "rdma/ibverbs.pyx":961
+    /* "rdma/ibverbs.pyx":957
  *                 raise rdma.SysError(errno,"ibv_poll_cq");
  *             else:
  *                 L.append(wc(wr_id = lwc.wr_id,             # <<<<<<<<<<<<<<
@@ -19901,174 +19845,174 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2CQ_14poll(struct __pyx_obj_4rdma_7ibve
  *                             opcode = lwc.opcode,
  */
     /*else*/ {
-      __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_wc); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 961, __pyx_L1_error)
+      __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_wc); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 957, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
-      __pyx_t_4 = __Pyx_PyDict_NewPresized(13); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 961, __pyx_L1_error)
+      __pyx_t_4 = __Pyx_PyDict_NewPresized(13); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 957, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
-      __pyx_t_7 = __Pyx_PyInt_From_unsigned_long(__pyx_v_lwc.wr_id); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 961, __pyx_L1_error)
+      __pyx_t_7 = __Pyx_PyInt_From_unsigned_long(__pyx_v_lwc.wr_id); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 957, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_7);
-      if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_wr_id, __pyx_t_7) < 0) __PYX_ERR(0, 961, __pyx_L1_error)
+      if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_wr_id, __pyx_t_7) < 0) __PYX_ERR(0, 957, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-      /* "rdma/ibverbs.pyx":962
+      /* "rdma/ibverbs.pyx":958
  *             else:
  *                 L.append(wc(wr_id = lwc.wr_id,
  *                             status = lwc.status,             # <<<<<<<<<<<<<<
  *                             opcode = lwc.opcode,
  *                             vendor_err = lwc.vendor_err,
  */
-      __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_lwc.status); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 962, __pyx_L1_error)
+      __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_lwc.status); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 958, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_7);
-      if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_status, __pyx_t_7) < 0) __PYX_ERR(0, 961, __pyx_L1_error)
+      if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_status, __pyx_t_7) < 0) __PYX_ERR(0, 957, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-      /* "rdma/ibverbs.pyx":963
+      /* "rdma/ibverbs.pyx":959
  *                 L.append(wc(wr_id = lwc.wr_id,
  *                             status = lwc.status,
  *                             opcode = lwc.opcode,             # <<<<<<<<<<<<<<
  *                             vendor_err = lwc.vendor_err,
  *                             byte_len = lwc.byte_len,
  */
-      __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_lwc.opcode); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 963, __pyx_L1_error)
+      __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_lwc.opcode); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 959, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_7);
-      if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_opcode, __pyx_t_7) < 0) __PYX_ERR(0, 961, __pyx_L1_error)
+      if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_opcode, __pyx_t_7) < 0) __PYX_ERR(0, 957, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-      /* "rdma/ibverbs.pyx":964
+      /* "rdma/ibverbs.pyx":960
  *                             status = lwc.status,
  *                             opcode = lwc.opcode,
  *                             vendor_err = lwc.vendor_err,             # <<<<<<<<<<<<<<
  *                             byte_len = lwc.byte_len,
  *                             imm_data = lwc.imm_data,
  */
-      __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_lwc.vendor_err); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 964, __pyx_L1_error)
+      __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_lwc.vendor_err); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 960, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_7);
-      if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_vendor_err, __pyx_t_7) < 0) __PYX_ERR(0, 961, __pyx_L1_error)
+      if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_vendor_err, __pyx_t_7) < 0) __PYX_ERR(0, 957, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-      /* "rdma/ibverbs.pyx":965
+      /* "rdma/ibverbs.pyx":961
  *                             opcode = lwc.opcode,
  *                             vendor_err = lwc.vendor_err,
  *                             byte_len = lwc.byte_len,             # <<<<<<<<<<<<<<
  *                             imm_data = lwc.imm_data,
  *                             qp_num = lwc.qp_num,
  */
-      __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_lwc.byte_len); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 965, __pyx_L1_error)
+      __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_lwc.byte_len); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 961, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_7);
-      if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_byte_len, __pyx_t_7) < 0) __PYX_ERR(0, 961, __pyx_L1_error)
+      if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_byte_len, __pyx_t_7) < 0) __PYX_ERR(0, 957, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-      /* "rdma/ibverbs.pyx":966
+      /* "rdma/ibverbs.pyx":962
  *                             vendor_err = lwc.vendor_err,
  *                             byte_len = lwc.byte_len,
  *                             imm_data = lwc.imm_data,             # <<<<<<<<<<<<<<
  *                             qp_num = lwc.qp_num,
  *                             src_qp = lwc.src_qp,
  */
-      __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_lwc.imm_data); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 966, __pyx_L1_error)
+      __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_lwc.imm_data); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 962, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_7);
-      if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_imm_data, __pyx_t_7) < 0) __PYX_ERR(0, 961, __pyx_L1_error)
+      if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_imm_data, __pyx_t_7) < 0) __PYX_ERR(0, 957, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-      /* "rdma/ibverbs.pyx":967
+      /* "rdma/ibverbs.pyx":963
  *                             byte_len = lwc.byte_len,
  *                             imm_data = lwc.imm_data,
  *                             qp_num = lwc.qp_num,             # <<<<<<<<<<<<<<
  *                             src_qp = lwc.src_qp,
  *                             wc_flags = lwc.wc_flags,
  */
-      __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_lwc.qp_num); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 967, __pyx_L1_error)
+      __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_lwc.qp_num); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 963, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_7);
-      if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_qp_num, __pyx_t_7) < 0) __PYX_ERR(0, 961, __pyx_L1_error)
+      if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_qp_num, __pyx_t_7) < 0) __PYX_ERR(0, 957, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-      /* "rdma/ibverbs.pyx":968
+      /* "rdma/ibverbs.pyx":964
  *                             imm_data = lwc.imm_data,
  *                             qp_num = lwc.qp_num,
  *                             src_qp = lwc.src_qp,             # <<<<<<<<<<<<<<
  *                             wc_flags = lwc.wc_flags,
  *                             pkey_index = lwc.pkey_index,
  */
-      __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_lwc.src_qp); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 968, __pyx_L1_error)
+      __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_lwc.src_qp); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 964, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_7);
-      if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_src_qp, __pyx_t_7) < 0) __PYX_ERR(0, 961, __pyx_L1_error)
+      if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_src_qp, __pyx_t_7) < 0) __PYX_ERR(0, 957, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-      /* "rdma/ibverbs.pyx":969
+      /* "rdma/ibverbs.pyx":965
  *                             qp_num = lwc.qp_num,
  *                             src_qp = lwc.src_qp,
  *                             wc_flags = lwc.wc_flags,             # <<<<<<<<<<<<<<
  *                             pkey_index = lwc.pkey_index,
  *                             slid = lwc.slid,
  */
-      __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_lwc.wc_flags); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 969, __pyx_L1_error)
+      __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_lwc.wc_flags); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 965, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_7);
-      if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_wc_flags, __pyx_t_7) < 0) __PYX_ERR(0, 961, __pyx_L1_error)
+      if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_wc_flags, __pyx_t_7) < 0) __PYX_ERR(0, 957, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-      /* "rdma/ibverbs.pyx":970
+      /* "rdma/ibverbs.pyx":966
  *                             src_qp = lwc.src_qp,
  *                             wc_flags = lwc.wc_flags,
  *                             pkey_index = lwc.pkey_index,             # <<<<<<<<<<<<<<
  *                             slid = lwc.slid,
  *                             sl = lwc.sl,
  */
-      __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_lwc.pkey_index); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 970, __pyx_L1_error)
+      __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_lwc.pkey_index); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 966, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_7);
-      if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_pkey_index, __pyx_t_7) < 0) __PYX_ERR(0, 961, __pyx_L1_error)
+      if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_pkey_index, __pyx_t_7) < 0) __PYX_ERR(0, 957, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-      /* "rdma/ibverbs.pyx":971
+      /* "rdma/ibverbs.pyx":967
  *                             wc_flags = lwc.wc_flags,
  *                             pkey_index = lwc.pkey_index,
  *                             slid = lwc.slid,             # <<<<<<<<<<<<<<
  *                             sl = lwc.sl,
  *                             dlid_path_bits = lwc.dlid_path_bits))
  */
-      __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_lwc.slid); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 971, __pyx_L1_error)
+      __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_lwc.slid); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 967, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_7);
-      if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_slid, __pyx_t_7) < 0) __PYX_ERR(0, 961, __pyx_L1_error)
+      if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_slid, __pyx_t_7) < 0) __PYX_ERR(0, 957, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-      /* "rdma/ibverbs.pyx":972
+      /* "rdma/ibverbs.pyx":968
  *                             pkey_index = lwc.pkey_index,
  *                             slid = lwc.slid,
  *                             sl = lwc.sl,             # <<<<<<<<<<<<<<
  *                             dlid_path_bits = lwc.dlid_path_bits))
  *                 if limit > 0:
  */
-      __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_lwc.sl); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 972, __pyx_L1_error)
+      __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_lwc.sl); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 968, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_7);
-      if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_sl, __pyx_t_7) < 0) __PYX_ERR(0, 961, __pyx_L1_error)
+      if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_sl, __pyx_t_7) < 0) __PYX_ERR(0, 957, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-      /* "rdma/ibverbs.pyx":973
+      /* "rdma/ibverbs.pyx":969
  *                             slid = lwc.slid,
  *                             sl = lwc.sl,
  *                             dlid_path_bits = lwc.dlid_path_bits))             # <<<<<<<<<<<<<<
  *                 if limit > 0:
  *                     limit = limit - 1;
  */
-      __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_lwc.dlid_path_bits); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 973, __pyx_L1_error)
+      __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_lwc.dlid_path_bits); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 969, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_7);
-      if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_dlid_path_bits, __pyx_t_7) < 0) __PYX_ERR(0, 961, __pyx_L1_error)
+      if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_dlid_path_bits, __pyx_t_7) < 0) __PYX_ERR(0, 957, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-      /* "rdma/ibverbs.pyx":961
+      /* "rdma/ibverbs.pyx":957
  *                 raise rdma.SysError(errno,"ibv_poll_cq");
  *             else:
  *                 L.append(wc(wr_id = lwc.wr_id,             # <<<<<<<<<<<<<<
  *                             status = lwc.status,
  *                             opcode = lwc.opcode,
  */
-      __pyx_t_7 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_empty_tuple, __pyx_t_4); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 961, __pyx_L1_error)
+      __pyx_t_7 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_empty_tuple, __pyx_t_4); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 957, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_7);
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-      __pyx_t_8 = __Pyx_PyList_Append(__pyx_v_L, __pyx_t_7); if (unlikely(__pyx_t_8 == ((int)-1))) __PYX_ERR(0, 961, __pyx_L1_error)
+      __pyx_t_8 = __Pyx_PyList_Append(__pyx_v_L, __pyx_t_7); if (unlikely(__pyx_t_8 == ((int)-1))) __PYX_ERR(0, 957, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-      /* "rdma/ibverbs.pyx":974
+      /* "rdma/ibverbs.pyx":970
  *                             sl = lwc.sl,
  *                             dlid_path_bits = lwc.dlid_path_bits))
  *                 if limit > 0:             # <<<<<<<<<<<<<<
@@ -20078,7 +20022,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2CQ_14poll(struct __pyx_obj_4rdma_7ibve
       __pyx_t_2 = ((__pyx_v_limit > 0) != 0);
       if (__pyx_t_2) {
 
-        /* "rdma/ibverbs.pyx":975
+        /* "rdma/ibverbs.pyx":971
  *                             dlid_path_bits = lwc.dlid_path_bits))
  *                 if limit > 0:
  *                     limit = limit - 1;             # <<<<<<<<<<<<<<
@@ -20087,7 +20031,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2CQ_14poll(struct __pyx_obj_4rdma_7ibve
  */
         __pyx_v_limit = (__pyx_v_limit - 1);
 
-        /* "rdma/ibverbs.pyx":974
+        /* "rdma/ibverbs.pyx":970
  *                             sl = lwc.sl,
  *                             dlid_path_bits = lwc.dlid_path_bits))
  *                 if limit > 0:             # <<<<<<<<<<<<<<
@@ -20099,7 +20043,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2CQ_14poll(struct __pyx_obj_4rdma_7ibve
   }
   __pyx_L4_break:;
 
-  /* "rdma/ibverbs.pyx":976
+  /* "rdma/ibverbs.pyx":972
  *                 if limit > 0:
  *                     limit = limit - 1;
  *         return L             # <<<<<<<<<<<<<<
@@ -20111,7 +20055,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2CQ_14poll(struct __pyx_obj_4rdma_7ibve
   __pyx_r = __pyx_v_L;
   goto __pyx_L0;
 
-  /* "rdma/ibverbs.pyx":948
+  /* "rdma/ibverbs.pyx":944
  *                                 "Failed to resize the CQ");
  * 
  *     def poll(self,int limit=-1):             # <<<<<<<<<<<<<<
@@ -20135,7 +20079,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2CQ_14poll(struct __pyx_obj_4rdma_7ibve
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":978
+/* "rdma/ibverbs.pyx":974
  *         return L
  * 
  *     def __str__(self):             # <<<<<<<<<<<<<<
@@ -20167,7 +20111,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2CQ_16__str__(struct __pyx_obj_4rdma_7i
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__str__", 0);
 
-  /* "rdma/ibverbs.pyx":979
+  /* "rdma/ibverbs.pyx":975
  * 
  *     def __str__(self):
  *         return "cq:%X:%s"%(self._cq.handle,self.ctx.node);             # <<<<<<<<<<<<<<
@@ -20175,14 +20119,14 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2CQ_16__str__(struct __pyx_obj_4rdma_7i
  *         return "CQ(%r,0x%x)"%(self._context,self._cq.handle);
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->_cq->handle); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 979, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->_cq->handle); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 975, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_ctx); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 979, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_ctx); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 975, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_node); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 979, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_node); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 975, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 979, __pyx_L1_error)
+  __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 975, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_GIVEREF(__pyx_t_1);
   PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_t_1);
@@ -20190,14 +20134,14 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2CQ_16__str__(struct __pyx_obj_4rdma_7i
   PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_t_3);
   __pyx_t_1 = 0;
   __pyx_t_3 = 0;
-  __pyx_t_3 = __Pyx_PyString_Format(__pyx_kp_s_cq_X_s, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 979, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyString_Format(__pyx_kp_s_cq_X_s, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 975, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_r = __pyx_t_3;
   __pyx_t_3 = 0;
   goto __pyx_L0;
 
-  /* "rdma/ibverbs.pyx":978
+  /* "rdma/ibverbs.pyx":974
  *         return L
  * 
  *     def __str__(self):             # <<<<<<<<<<<<<<
@@ -20218,7 +20162,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2CQ_16__str__(struct __pyx_obj_4rdma_7i
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":980
+/* "rdma/ibverbs.pyx":976
  *     def __str__(self):
  *         return "cq:%X:%s"%(self._cq.handle,self.ctx.node);
  *     def __repr__(self):             # <<<<<<<<<<<<<<
@@ -20249,7 +20193,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2CQ_18__repr__(struct __pyx_obj_4rdma_7
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__repr__", 0);
 
-  /* "rdma/ibverbs.pyx":981
+  /* "rdma/ibverbs.pyx":977
  *         return "cq:%X:%s"%(self._cq.handle,self.ctx.node);
  *     def __repr__(self):
  *         return "CQ(%r,0x%x)"%(self._context,self._cq.handle);             # <<<<<<<<<<<<<<
@@ -20257,9 +20201,9 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2CQ_18__repr__(struct __pyx_obj_4rdma_7
  * cdef class SRQ:
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->_cq->handle); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 981, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->_cq->handle); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 977, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 981, __pyx_L1_error)
+  __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 977, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_INCREF(((PyObject *)__pyx_v_self->_context));
   __Pyx_GIVEREF(((PyObject *)__pyx_v_self->_context));
@@ -20267,14 +20211,14 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2CQ_18__repr__(struct __pyx_obj_4rdma_7
   __Pyx_GIVEREF(__pyx_t_1);
   PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_t_1);
   __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyString_Format(__pyx_kp_s_CQ_r_0x_x, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 981, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyString_Format(__pyx_kp_s_CQ_r_0x_x, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 977, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "rdma/ibverbs.pyx":980
+  /* "rdma/ibverbs.pyx":976
  *     def __str__(self):
  *         return "cq:%X:%s"%(self._cq.handle,self.ctx.node);
  *     def __repr__(self):             # <<<<<<<<<<<<<<
@@ -20294,7 +20238,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2CQ_18__repr__(struct __pyx_obj_4rdma_7
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":878
+/* "rdma/ibverbs.pyx":874
  *     cdef c.ibv_cq *_cq
  *     cdef CompChannel _chan
  *     cdef public int comp_events             # <<<<<<<<<<<<<<
@@ -20324,7 +20268,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2CQ_11comp_events___get__(struct __pyx_
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__get__", 0);
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->comp_events); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 878, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->comp_events); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 874, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -20362,7 +20306,7 @@ static int __pyx_pf_4rdma_7ibverbs_2CQ_11comp_events_2__set__(struct __pyx_obj_4
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__set__", 0);
-  __pyx_t_1 = __Pyx_PyInt_As_int(__pyx_v_value); if (unlikely((__pyx_t_1 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 878, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_As_int(__pyx_v_value); if (unlikely((__pyx_t_1 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 874, __pyx_L1_error)
   __pyx_v_self->comp_events = __pyx_t_1;
 
   /* function exit code */
@@ -20489,7 +20433,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2CQ_22__setstate_cython__(CYTHON_UNUSED
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":991
+/* "rdma/ibverbs.pyx":987
  * 
  *     property pd:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -20515,7 +20459,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_2pd___get__(struct __pyx_obj_4rdma
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "rdma/ibverbs.pyx":992
+  /* "rdma/ibverbs.pyx":988
  *     property pd:
  *         def __get__(self):
  *             return self._pd;             # <<<<<<<<<<<<<<
@@ -20527,7 +20471,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_2pd___get__(struct __pyx_obj_4rdma
   __pyx_r = ((PyObject *)__pyx_v_self->_pd);
   goto __pyx_L0;
 
-  /* "rdma/ibverbs.pyx":991
+  /* "rdma/ibverbs.pyx":987
  * 
  *     property pd:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -20542,7 +20486,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_2pd___get__(struct __pyx_obj_4rdma
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":995
+/* "rdma/ibverbs.pyx":991
  * 
  *     property ctx:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -20568,7 +20512,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_3ctx___get__(struct __pyx_obj_4rdm
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "rdma/ibverbs.pyx":996
+  /* "rdma/ibverbs.pyx":992
  *     property ctx:
  *         def __get__(self):
  *             return self._pd._context;             # <<<<<<<<<<<<<<
@@ -20580,7 +20524,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_3ctx___get__(struct __pyx_obj_4rdm
   __pyx_r = ((PyObject *)__pyx_v_self->_pd->_context);
   goto __pyx_L0;
 
-  /* "rdma/ibverbs.pyx":995
+  /* "rdma/ibverbs.pyx":991
  * 
  *     property ctx:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -20595,7 +20539,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_3ctx___get__(struct __pyx_obj_4rdm
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":998
+/* "rdma/ibverbs.pyx":994
  *             return self._pd._context;
  * 
  *     def __cinit__(self,PD pd not None,int max_wr,int max_sge):             # <<<<<<<<<<<<<<
@@ -20640,17 +20584,17 @@ static int __pyx_pw_4rdma_7ibverbs_3SRQ_1__cinit__(PyObject *__pyx_v_self, PyObj
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_max_wr)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 3, 3, 1); __PYX_ERR(0, 998, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 3, 3, 1); __PYX_ERR(0, 994, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
         if (likely((values[2] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_max_sge)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 3, 3, 2); __PYX_ERR(0, 998, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 3, 3, 2); __PYX_ERR(0, 994, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__cinit__") < 0)) __PYX_ERR(0, 998, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__cinit__") < 0)) __PYX_ERR(0, 994, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 3) {
       goto __pyx_L5_argtuple_error;
@@ -20660,18 +20604,18 @@ static int __pyx_pw_4rdma_7ibverbs_3SRQ_1__cinit__(PyObject *__pyx_v_self, PyObj
       values[2] = PyTuple_GET_ITEM(__pyx_args, 2);
     }
     __pyx_v_pd = ((struct __pyx_obj_4rdma_7ibverbs_PD *)values[0]);
-    __pyx_v_max_wr = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_max_wr == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 998, __pyx_L3_error)
-    __pyx_v_max_sge = __Pyx_PyInt_As_int(values[2]); if (unlikely((__pyx_v_max_sge == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 998, __pyx_L3_error)
+    __pyx_v_max_wr = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_max_wr == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 994, __pyx_L3_error)
+    __pyx_v_max_sge = __Pyx_PyInt_As_int(values[2]); if (unlikely((__pyx_v_max_sge == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 994, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 998, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 994, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("rdma.ibverbs.SRQ.__cinit__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return -1;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_pd), __pyx_ptype_4rdma_7ibverbs_PD, 0, "pd", 0))) __PYX_ERR(0, 998, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_pd), __pyx_ptype_4rdma_7ibverbs_PD, 0, "pd", 0))) __PYX_ERR(0, 994, __pyx_L1_error)
   __pyx_r = __pyx_pf_4rdma_7ibverbs_3SRQ___cinit__(((struct __pyx_obj_4rdma_7ibverbs_SRQ *)__pyx_v_self), __pyx_v_pd, __pyx_v_max_wr, __pyx_v_max_sge);
 
   /* function exit code */
@@ -20699,7 +20643,7 @@ static int __pyx_pf_4rdma_7ibverbs_3SRQ___cinit__(struct __pyx_obj_4rdma_7ibverb
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__cinit__", 0);
 
-  /* "rdma/ibverbs.pyx":1001
+  /* "rdma/ibverbs.pyx":997
  *         cdef c.ibv_srq_init_attr attr
  * 
  *         memset(&attr,0,sizeof(attr));             # <<<<<<<<<<<<<<
@@ -20708,7 +20652,7 @@ static int __pyx_pf_4rdma_7ibverbs_3SRQ___cinit__(struct __pyx_obj_4rdma_7ibverb
  */
   (void)(memset((&__pyx_v_attr), 0, (sizeof(__pyx_v_attr))));
 
-  /* "rdma/ibverbs.pyx":1002
+  /* "rdma/ibverbs.pyx":998
  * 
  *         memset(&attr,0,sizeof(attr));
  *         self._pd = pd             # <<<<<<<<<<<<<<
@@ -20721,7 +20665,7 @@ static int __pyx_pf_4rdma_7ibverbs_3SRQ___cinit__(struct __pyx_obj_4rdma_7ibverb
   __Pyx_DECREF(((PyObject *)__pyx_v_self->_pd));
   __pyx_v_self->_pd = __pyx_v_pd;
 
-  /* "rdma/ibverbs.pyx":1003
+  /* "rdma/ibverbs.pyx":999
  *         memset(&attr,0,sizeof(attr));
  *         self._pd = pd
  *         attr.srq_context = <void *>self;             # <<<<<<<<<<<<<<
@@ -20730,7 +20674,7 @@ static int __pyx_pf_4rdma_7ibverbs_3SRQ___cinit__(struct __pyx_obj_4rdma_7ibverb
  */
   __pyx_v_attr.srq_context = ((void *)__pyx_v_self);
 
-  /* "rdma/ibverbs.pyx":1004
+  /* "rdma/ibverbs.pyx":1000
  *         self._pd = pd
  *         attr.srq_context = <void *>self;
  *         attr.attr.max_wr = max_wr;             # <<<<<<<<<<<<<<
@@ -20739,7 +20683,7 @@ static int __pyx_pf_4rdma_7ibverbs_3SRQ___cinit__(struct __pyx_obj_4rdma_7ibverb
  */
   __pyx_v_attr.attr.max_wr = __pyx_v_max_wr;
 
-  /* "rdma/ibverbs.pyx":1005
+  /* "rdma/ibverbs.pyx":1001
  *         attr.srq_context = <void *>self;
  *         attr.attr.max_wr = max_wr;
  *         attr.attr.max_sge = max_sge;             # <<<<<<<<<<<<<<
@@ -20748,7 +20692,7 @@ static int __pyx_pf_4rdma_7ibverbs_3SRQ___cinit__(struct __pyx_obj_4rdma_7ibverb
  */
   __pyx_v_attr.attr.max_sge = __pyx_v_max_sge;
 
-  /* "rdma/ibverbs.pyx":1006
+  /* "rdma/ibverbs.pyx":1002
  *         attr.attr.max_wr = max_wr;
  *         attr.attr.max_sge = max_sge;
  *         self._max_sge = max_sge             # <<<<<<<<<<<<<<
@@ -20757,7 +20701,7 @@ static int __pyx_pf_4rdma_7ibverbs_3SRQ___cinit__(struct __pyx_obj_4rdma_7ibverb
  */
   __pyx_v_self->_max_sge = __pyx_v_max_sge;
 
-  /* "rdma/ibverbs.pyx":1007
+  /* "rdma/ibverbs.pyx":1003
  *         attr.attr.max_sge = max_sge;
  *         self._max_sge = max_sge
  *         self._srq = c.ibv_create_srq(pd._pd,&attr);             # <<<<<<<<<<<<<<
@@ -20766,7 +20710,7 @@ static int __pyx_pf_4rdma_7ibverbs_3SRQ___cinit__(struct __pyx_obj_4rdma_7ibverb
  */
   __pyx_v_self->_srq = ibv_create_srq(__pyx_v_pd->_pd, (&__pyx_v_attr));
 
-  /* "rdma/ibverbs.pyx":1008
+  /* "rdma/ibverbs.pyx":1004
  *         self._max_sge = max_sge
  *         self._srq = c.ibv_create_srq(pd._pd,&attr);
  *         if self._srq == NULL:             # <<<<<<<<<<<<<<
@@ -20776,19 +20720,19 @@ static int __pyx_pf_4rdma_7ibverbs_3SRQ___cinit__(struct __pyx_obj_4rdma_7ibverb
   __pyx_t_1 = ((__pyx_v_self->_srq == NULL) != 0);
   if (unlikely(__pyx_t_1)) {
 
-    /* "rdma/ibverbs.pyx":1009
+    /* "rdma/ibverbs.pyx":1005
  *         self._srq = c.ibv_create_srq(pd._pd,&attr);
  *         if self._srq == NULL:
  *             raise rdma.SysError(errno,"ibv_create_srq",             # <<<<<<<<<<<<<<
  *                                 "Failed to create SRQ")
  * 
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_rdma); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1009, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_rdma); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1005, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_SysError); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1009, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_SysError); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1005, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __pyx_t_3 = __Pyx_PyInt_From_int(errno); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1009, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyInt_From_int(errno); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1005, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __pyx_t_5 = NULL;
     __pyx_t_6 = 0;
@@ -20805,7 +20749,7 @@ static int __pyx_pf_4rdma_7ibverbs_3SRQ___cinit__(struct __pyx_obj_4rdma_7ibverb
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_4)) {
       PyObject *__pyx_temp[4] = {__pyx_t_5, __pyx_t_3, __pyx_n_s_ibv_create_srq, __pyx_kp_s_Failed_to_create_SRQ};
-      __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_6, 3+__pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1009, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_6, 3+__pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1005, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -20814,14 +20758,14 @@ static int __pyx_pf_4rdma_7ibverbs_3SRQ___cinit__(struct __pyx_obj_4rdma_7ibverb
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_4)) {
       PyObject *__pyx_temp[4] = {__pyx_t_5, __pyx_t_3, __pyx_n_s_ibv_create_srq, __pyx_kp_s_Failed_to_create_SRQ};
-      __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_6, 3+__pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1009, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_6, 3+__pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1005, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     } else
     #endif
     {
-      __pyx_t_7 = PyTuple_New(3+__pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1009, __pyx_L1_error)
+      __pyx_t_7 = PyTuple_New(3+__pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1005, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_7);
       if (__pyx_t_5) {
         __Pyx_GIVEREF(__pyx_t_5); PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_t_5); __pyx_t_5 = NULL;
@@ -20835,16 +20779,16 @@ static int __pyx_pf_4rdma_7ibverbs_3SRQ___cinit__(struct __pyx_obj_4rdma_7ibverb
       __Pyx_GIVEREF(__pyx_kp_s_Failed_to_create_SRQ);
       PyTuple_SET_ITEM(__pyx_t_7, 2+__pyx_t_6, __pyx_kp_s_Failed_to_create_SRQ);
       __pyx_t_3 = 0;
-      __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_7, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1009, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_7, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1005, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
     }
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_Raise(__pyx_t_2, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __PYX_ERR(0, 1009, __pyx_L1_error)
+    __PYX_ERR(0, 1005, __pyx_L1_error)
 
-    /* "rdma/ibverbs.pyx":1008
+    /* "rdma/ibverbs.pyx":1004
  *         self._max_sge = max_sge
  *         self._srq = c.ibv_create_srq(pd._pd,&attr);
  *         if self._srq == NULL:             # <<<<<<<<<<<<<<
@@ -20853,7 +20797,7 @@ static int __pyx_pf_4rdma_7ibverbs_3SRQ___cinit__(struct __pyx_obj_4rdma_7ibverb
  */
   }
 
-  /* "rdma/ibverbs.pyx":998
+  /* "rdma/ibverbs.pyx":994
  *             return self._pd._context;
  * 
  *     def __cinit__(self,PD pd not None,int max_wr,int max_sge):             # <<<<<<<<<<<<<<
@@ -20877,7 +20821,7 @@ static int __pyx_pf_4rdma_7ibverbs_3SRQ___cinit__(struct __pyx_obj_4rdma_7ibverb
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":1012
+/* "rdma/ibverbs.pyx":1008
  *                                 "Failed to create SRQ")
  * 
  *     def __dealloc__(self):             # <<<<<<<<<<<<<<
@@ -20904,18 +20848,18 @@ static void __pyx_pf_4rdma_7ibverbs_3SRQ_2__dealloc__(struct __pyx_obj_4rdma_7ib
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__dealloc__", 0);
 
-  /* "rdma/ibverbs.pyx":1013
+  /* "rdma/ibverbs.pyx":1009
  * 
  *     def __dealloc__(self):
  *         self._close();             # <<<<<<<<<<<<<<
  * 
  *     def __enter__(self):
  */
-  __pyx_t_1 = ((struct __pyx_vtabstruct_4rdma_7ibverbs_SRQ *)__pyx_v_self->__pyx_vtab)->_close(__pyx_v_self); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1013, __pyx_L1_error)
+  __pyx_t_1 = ((struct __pyx_vtabstruct_4rdma_7ibverbs_SRQ *)__pyx_v_self->__pyx_vtab)->_close(__pyx_v_self); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1009, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "rdma/ibverbs.pyx":1012
+  /* "rdma/ibverbs.pyx":1008
  *                                 "Failed to create SRQ")
  * 
  *     def __dealloc__(self):             # <<<<<<<<<<<<<<
@@ -20932,7 +20876,7 @@ static void __pyx_pf_4rdma_7ibverbs_3SRQ_2__dealloc__(struct __pyx_obj_4rdma_7ib
   __Pyx_RefNannyFinishContext();
 }
 
-/* "rdma/ibverbs.pyx":1015
+/* "rdma/ibverbs.pyx":1011
  *         self._close();
  * 
  *     def __enter__(self):             # <<<<<<<<<<<<<<
@@ -20958,7 +20902,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_4__enter__(struct __pyx_obj_4rdma_
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__enter__", 0);
 
-  /* "rdma/ibverbs.pyx":1016
+  /* "rdma/ibverbs.pyx":1012
  * 
  *     def __enter__(self):
  *         return self             # <<<<<<<<<<<<<<
@@ -20970,7 +20914,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_4__enter__(struct __pyx_obj_4rdma_
   __pyx_r = ((PyObject *)__pyx_v_self);
   goto __pyx_L0;
 
-  /* "rdma/ibverbs.pyx":1015
+  /* "rdma/ibverbs.pyx":1011
  *         self._close();
  * 
  *     def __enter__(self):             # <<<<<<<<<<<<<<
@@ -20985,7 +20929,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_4__enter__(struct __pyx_obj_4rdma_
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":1018
+/* "rdma/ibverbs.pyx":1014
  *         return self
  * 
  *     def __exit__(self,*exc_info):             # <<<<<<<<<<<<<<
@@ -21020,18 +20964,18 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_6__exit__(struct __pyx_obj_4rdma_7
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__exit__", 0);
 
-  /* "rdma/ibverbs.pyx":1019
+  /* "rdma/ibverbs.pyx":1015
  * 
  *     def __exit__(self,*exc_info):
  *         self._close();             # <<<<<<<<<<<<<<
  * 
  *     def close(self):
  */
-  __pyx_t_1 = ((struct __pyx_vtabstruct_4rdma_7ibverbs_SRQ *)__pyx_v_self->__pyx_vtab)->_close(__pyx_v_self); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1019, __pyx_L1_error)
+  __pyx_t_1 = ((struct __pyx_vtabstruct_4rdma_7ibverbs_SRQ *)__pyx_v_self->__pyx_vtab)->_close(__pyx_v_self); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1015, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "rdma/ibverbs.pyx":1018
+  /* "rdma/ibverbs.pyx":1014
  *         return self
  * 
  *     def __exit__(self,*exc_info):             # <<<<<<<<<<<<<<
@@ -21052,7 +20996,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_6__exit__(struct __pyx_obj_4rdma_7
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":1021
+/* "rdma/ibverbs.pyx":1017
  *         self._close();
  * 
  *     def close(self):             # <<<<<<<<<<<<<<
@@ -21083,18 +21027,18 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_8close(struct __pyx_obj_4rdma_7ibv
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("close", 0);
 
-  /* "rdma/ibverbs.pyx":1023
+  /* "rdma/ibverbs.pyx":1019
  *     def close(self):
  *         """Free the verbs SRQ handle."""
  *         self._close();             # <<<<<<<<<<<<<<
  * 
  *     cdef _close(self):
  */
-  __pyx_t_1 = ((struct __pyx_vtabstruct_4rdma_7ibverbs_SRQ *)__pyx_v_self->__pyx_vtab)->_close(__pyx_v_self); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1023, __pyx_L1_error)
+  __pyx_t_1 = ((struct __pyx_vtabstruct_4rdma_7ibverbs_SRQ *)__pyx_v_self->__pyx_vtab)->_close(__pyx_v_self); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1019, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "rdma/ibverbs.pyx":1021
+  /* "rdma/ibverbs.pyx":1017
  *         self._close();
  * 
  *     def close(self):             # <<<<<<<<<<<<<<
@@ -21115,7 +21059,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_8close(struct __pyx_obj_4rdma_7ibv
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":1025
+/* "rdma/ibverbs.pyx":1021
  *         self._close();
  * 
  *     cdef _close(self):             # <<<<<<<<<<<<<<
@@ -21139,7 +21083,7 @@ static PyObject *__pyx_f_4rdma_7ibverbs_3SRQ__close(struct __pyx_obj_4rdma_7ibve
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("_close", 0);
 
-  /* "rdma/ibverbs.pyx":1027
+  /* "rdma/ibverbs.pyx":1023
  *     cdef _close(self):
  *         cdef int rc
  *         if self._srq != NULL:             # <<<<<<<<<<<<<<
@@ -21149,7 +21093,7 @@ static PyObject *__pyx_f_4rdma_7ibverbs_3SRQ__close(struct __pyx_obj_4rdma_7ibve
   __pyx_t_1 = ((__pyx_v_self->_srq != NULL) != 0);
   if (__pyx_t_1) {
 
-    /* "rdma/ibverbs.pyx":1028
+    /* "rdma/ibverbs.pyx":1024
  *         cdef int rc
  *         if self._srq != NULL:
  *             rc = c.ibv_destroy_srq(self._srq)             # <<<<<<<<<<<<<<
@@ -21158,7 +21102,7 @@ static PyObject *__pyx_f_4rdma_7ibverbs_3SRQ__close(struct __pyx_obj_4rdma_7ibve
  */
     __pyx_v_rc = ibv_destroy_srq(__pyx_v_self->_srq);
 
-    /* "rdma/ibverbs.pyx":1029
+    /* "rdma/ibverbs.pyx":1025
  *         if self._srq != NULL:
  *             rc = c.ibv_destroy_srq(self._srq)
  *             if rc != 0:             # <<<<<<<<<<<<<<
@@ -21168,19 +21112,19 @@ static PyObject *__pyx_f_4rdma_7ibverbs_3SRQ__close(struct __pyx_obj_4rdma_7ibve
     __pyx_t_1 = ((__pyx_v_rc != 0) != 0);
     if (unlikely(__pyx_t_1)) {
 
-      /* "rdma/ibverbs.pyx":1030
+      /* "rdma/ibverbs.pyx":1026
  *             rc = c.ibv_destroy_srq(self._srq)
  *             if rc != 0:
  *                 raise rdma.SysError(errno,"ibv_destroy_srq",             # <<<<<<<<<<<<<<
  *                                     "Failed to destroy SRQ")
  *             self._srq = NULL
  */
-      __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_rdma); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1030, __pyx_L1_error)
+      __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_rdma); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1026, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
-      __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_SysError); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1030, __pyx_L1_error)
+      __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_SysError); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1026, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-      __pyx_t_3 = __Pyx_PyInt_From_int(errno); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1030, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyInt_From_int(errno); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1026, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
       __pyx_t_5 = NULL;
       __pyx_t_6 = 0;
@@ -21197,7 +21141,7 @@ static PyObject *__pyx_f_4rdma_7ibverbs_3SRQ__close(struct __pyx_obj_4rdma_7ibve
       #if CYTHON_FAST_PYCALL
       if (PyFunction_Check(__pyx_t_4)) {
         PyObject *__pyx_temp[4] = {__pyx_t_5, __pyx_t_3, __pyx_n_s_ibv_destroy_srq, __pyx_kp_s_Failed_to_destroy_SRQ};
-        __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_6, 3+__pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1030, __pyx_L1_error)
+        __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_6, 3+__pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1026, __pyx_L1_error)
         __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -21206,14 +21150,14 @@ static PyObject *__pyx_f_4rdma_7ibverbs_3SRQ__close(struct __pyx_obj_4rdma_7ibve
       #if CYTHON_FAST_PYCCALL
       if (__Pyx_PyFastCFunction_Check(__pyx_t_4)) {
         PyObject *__pyx_temp[4] = {__pyx_t_5, __pyx_t_3, __pyx_n_s_ibv_destroy_srq, __pyx_kp_s_Failed_to_destroy_SRQ};
-        __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_6, 3+__pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1030, __pyx_L1_error)
+        __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_6, 3+__pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1026, __pyx_L1_error)
         __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
       } else
       #endif
       {
-        __pyx_t_7 = PyTuple_New(3+__pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1030, __pyx_L1_error)
+        __pyx_t_7 = PyTuple_New(3+__pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1026, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_7);
         if (__pyx_t_5) {
           __Pyx_GIVEREF(__pyx_t_5); PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_t_5); __pyx_t_5 = NULL;
@@ -21227,16 +21171,16 @@ static PyObject *__pyx_f_4rdma_7ibverbs_3SRQ__close(struct __pyx_obj_4rdma_7ibve
         __Pyx_GIVEREF(__pyx_kp_s_Failed_to_destroy_SRQ);
         PyTuple_SET_ITEM(__pyx_t_7, 2+__pyx_t_6, __pyx_kp_s_Failed_to_destroy_SRQ);
         __pyx_t_3 = 0;
-        __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_7, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1030, __pyx_L1_error)
+        __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_7, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1026, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
       }
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       __Pyx_Raise(__pyx_t_2, 0, 0, 0);
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-      __PYX_ERR(0, 1030, __pyx_L1_error)
+      __PYX_ERR(0, 1026, __pyx_L1_error)
 
-      /* "rdma/ibverbs.pyx":1029
+      /* "rdma/ibverbs.pyx":1025
  *         if self._srq != NULL:
  *             rc = c.ibv_destroy_srq(self._srq)
  *             if rc != 0:             # <<<<<<<<<<<<<<
@@ -21245,7 +21189,7 @@ static PyObject *__pyx_f_4rdma_7ibverbs_3SRQ__close(struct __pyx_obj_4rdma_7ibve
  */
     }
 
-    /* "rdma/ibverbs.pyx":1032
+    /* "rdma/ibverbs.pyx":1028
  *                 raise rdma.SysError(errno,"ibv_destroy_srq",
  *                                     "Failed to destroy SRQ")
  *             self._srq = NULL             # <<<<<<<<<<<<<<
@@ -21254,7 +21198,7 @@ static PyObject *__pyx_f_4rdma_7ibverbs_3SRQ__close(struct __pyx_obj_4rdma_7ibve
  */
     __pyx_v_self->_srq = NULL;
 
-    /* "rdma/ibverbs.pyx":1027
+    /* "rdma/ibverbs.pyx":1023
  *     cdef _close(self):
  *         cdef int rc
  *         if self._srq != NULL:             # <<<<<<<<<<<<<<
@@ -21263,7 +21207,7 @@ static PyObject *__pyx_f_4rdma_7ibverbs_3SRQ__close(struct __pyx_obj_4rdma_7ibve
  */
   }
 
-  /* "rdma/ibverbs.pyx":1025
+  /* "rdma/ibverbs.pyx":1021
  *         self._close();
  * 
  *     cdef _close(self):             # <<<<<<<<<<<<<<
@@ -21288,7 +21232,7 @@ static PyObject *__pyx_f_4rdma_7ibverbs_3SRQ__close(struct __pyx_obj_4rdma_7ibve
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":1034
+/* "rdma/ibverbs.pyx":1030
  *             self._srq = NULL
  * 
  *     def modify(self,srq_limit=None,max_wr=None):             # <<<<<<<<<<<<<<
@@ -21339,7 +21283,7 @@ static PyObject *__pyx_pw_4rdma_7ibverbs_3SRQ_11modify(PyObject *__pyx_v_self, P
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "modify") < 0)) __PYX_ERR(0, 1034, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "modify") < 0)) __PYX_ERR(0, 1030, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -21356,7 +21300,7 @@ static PyObject *__pyx_pw_4rdma_7ibverbs_3SRQ_11modify(PyObject *__pyx_v_self, P
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("modify", 0, 0, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 1034, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("modify", 0, 0, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 1030, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("rdma.ibverbs.SRQ.modify", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -21389,7 +21333,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_10modify(struct __pyx_obj_4rdma_7i
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("modify", 0);
 
-  /* "rdma/ibverbs.pyx":1040
+  /* "rdma/ibverbs.pyx":1036
  *         cdef int cmask
  * 
  *         memset(&cattr,0,sizeof(cattr))             # <<<<<<<<<<<<<<
@@ -21398,7 +21342,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_10modify(struct __pyx_obj_4rdma_7i
  */
   (void)(memset((&__pyx_v_cattr), 0, (sizeof(__pyx_v_cattr))));
 
-  /* "rdma/ibverbs.pyx":1041
+  /* "rdma/ibverbs.pyx":1037
  * 
  *         memset(&cattr,0,sizeof(cattr))
  *         cmask = 0             # <<<<<<<<<<<<<<
@@ -21407,7 +21351,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_10modify(struct __pyx_obj_4rdma_7i
  */
   __pyx_v_cmask = 0;
 
-  /* "rdma/ibverbs.pyx":1042
+  /* "rdma/ibverbs.pyx":1038
  *         memset(&cattr,0,sizeof(cattr))
  *         cmask = 0
  *         if max_wr is not None:             # <<<<<<<<<<<<<<
@@ -21418,17 +21362,17 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_10modify(struct __pyx_obj_4rdma_7i
   __pyx_t_2 = (__pyx_t_1 != 0);
   if (__pyx_t_2) {
 
-    /* "rdma/ibverbs.pyx":1043
+    /* "rdma/ibverbs.pyx":1039
  *         cmask = 0
  *         if max_wr is not None:
  *             cattr.max_wr = max_wr             # <<<<<<<<<<<<<<
  *             cmask |= c.IBV_SRQ_MAX_WR
  *         if srq_limit is not None:
  */
-    __pyx_t_3 = __Pyx_PyInt_As_unsigned_int(__pyx_v_max_wr); if (unlikely((__pyx_t_3 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1043, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyInt_As_unsigned_int(__pyx_v_max_wr); if (unlikely((__pyx_t_3 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1039, __pyx_L1_error)
     __pyx_v_cattr.max_wr = __pyx_t_3;
 
-    /* "rdma/ibverbs.pyx":1044
+    /* "rdma/ibverbs.pyx":1040
  *         if max_wr is not None:
  *             cattr.max_wr = max_wr
  *             cmask |= c.IBV_SRQ_MAX_WR             # <<<<<<<<<<<<<<
@@ -21437,7 +21381,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_10modify(struct __pyx_obj_4rdma_7i
  */
     __pyx_v_cmask = (__pyx_v_cmask | IBV_SRQ_MAX_WR);
 
-    /* "rdma/ibverbs.pyx":1042
+    /* "rdma/ibverbs.pyx":1038
  *         memset(&cattr,0,sizeof(cattr))
  *         cmask = 0
  *         if max_wr is not None:             # <<<<<<<<<<<<<<
@@ -21446,7 +21390,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_10modify(struct __pyx_obj_4rdma_7i
  */
   }
 
-  /* "rdma/ibverbs.pyx":1045
+  /* "rdma/ibverbs.pyx":1041
  *             cattr.max_wr = max_wr
  *             cmask |= c.IBV_SRQ_MAX_WR
  *         if srq_limit is not None:             # <<<<<<<<<<<<<<
@@ -21457,17 +21401,17 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_10modify(struct __pyx_obj_4rdma_7i
   __pyx_t_1 = (__pyx_t_2 != 0);
   if (__pyx_t_1) {
 
-    /* "rdma/ibverbs.pyx":1046
+    /* "rdma/ibverbs.pyx":1042
  *             cmask |= c.IBV_SRQ_MAX_WR
  *         if srq_limit is not None:
  *             cattr.srq_limit = srq_limit             # <<<<<<<<<<<<<<
  *             cmask |= c.IBV_SRQ_LIMIT
  * 
  */
-    __pyx_t_3 = __Pyx_PyInt_As_unsigned_int(__pyx_v_srq_limit); if (unlikely((__pyx_t_3 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1046, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyInt_As_unsigned_int(__pyx_v_srq_limit); if (unlikely((__pyx_t_3 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1042, __pyx_L1_error)
     __pyx_v_cattr.srq_limit = __pyx_t_3;
 
-    /* "rdma/ibverbs.pyx":1047
+    /* "rdma/ibverbs.pyx":1043
  *         if srq_limit is not None:
  *             cattr.srq_limit = srq_limit
  *             cmask |= c.IBV_SRQ_LIMIT             # <<<<<<<<<<<<<<
@@ -21476,7 +21420,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_10modify(struct __pyx_obj_4rdma_7i
  */
     __pyx_v_cmask = (__pyx_v_cmask | IBV_SRQ_LIMIT);
 
-    /* "rdma/ibverbs.pyx":1045
+    /* "rdma/ibverbs.pyx":1041
  *             cattr.max_wr = max_wr
  *             cmask |= c.IBV_SRQ_MAX_WR
  *         if srq_limit is not None:             # <<<<<<<<<<<<<<
@@ -21485,7 +21429,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_10modify(struct __pyx_obj_4rdma_7i
  */
   }
 
-  /* "rdma/ibverbs.pyx":1049
+  /* "rdma/ibverbs.pyx":1045
  *             cmask |= c.IBV_SRQ_LIMIT
  * 
  *         rc = c.ibv_modify_srq(self._srq, &cattr, cmask)             # <<<<<<<<<<<<<<
@@ -21494,7 +21438,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_10modify(struct __pyx_obj_4rdma_7i
  */
   __pyx_v_rc = ibv_modify_srq(__pyx_v_self->_srq, (&__pyx_v_cattr), __pyx_v_cmask);
 
-  /* "rdma/ibverbs.pyx":1050
+  /* "rdma/ibverbs.pyx":1046
  * 
  *         rc = c.ibv_modify_srq(self._srq, &cattr, cmask)
  *         if rc != 0:             # <<<<<<<<<<<<<<
@@ -21504,19 +21448,19 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_10modify(struct __pyx_obj_4rdma_7i
   __pyx_t_1 = ((__pyx_v_rc != 0) != 0);
   if (unlikely(__pyx_t_1)) {
 
-    /* "rdma/ibverbs.pyx":1051
+    /* "rdma/ibverbs.pyx":1047
  *         rc = c.ibv_modify_srq(self._srq, &cattr, cmask)
  *         if rc != 0:
  *             raise rdma.SysError(errno,"ibv_modify_srq",             # <<<<<<<<<<<<<<
  *                                 "Failed to modify a SRQ")
  * 
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_rdma); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 1051, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_rdma); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 1047, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_SysError); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 1051, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_SysError); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 1047, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    __pyx_t_5 = __Pyx_PyInt_From_int(errno); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 1051, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyInt_From_int(errno); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 1047, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __pyx_t_7 = NULL;
     __pyx_t_8 = 0;
@@ -21533,7 +21477,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_10modify(struct __pyx_obj_4rdma_7i
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_6)) {
       PyObject *__pyx_temp[4] = {__pyx_t_7, __pyx_t_5, __pyx_n_s_ibv_modify_srq, __pyx_kp_s_Failed_to_modify_a_SRQ};
-      __pyx_t_4 = __Pyx_PyFunction_FastCall(__pyx_t_6, __pyx_temp+1-__pyx_t_8, 3+__pyx_t_8); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1051, __pyx_L1_error)
+      __pyx_t_4 = __Pyx_PyFunction_FastCall(__pyx_t_6, __pyx_temp+1-__pyx_t_8, 3+__pyx_t_8); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1047, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
       __Pyx_GOTREF(__pyx_t_4);
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
@@ -21542,14 +21486,14 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_10modify(struct __pyx_obj_4rdma_7i
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_6)) {
       PyObject *__pyx_temp[4] = {__pyx_t_7, __pyx_t_5, __pyx_n_s_ibv_modify_srq, __pyx_kp_s_Failed_to_modify_a_SRQ};
-      __pyx_t_4 = __Pyx_PyCFunction_FastCall(__pyx_t_6, __pyx_temp+1-__pyx_t_8, 3+__pyx_t_8); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1051, __pyx_L1_error)
+      __pyx_t_4 = __Pyx_PyCFunction_FastCall(__pyx_t_6, __pyx_temp+1-__pyx_t_8, 3+__pyx_t_8); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1047, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
       __Pyx_GOTREF(__pyx_t_4);
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     } else
     #endif
     {
-      __pyx_t_9 = PyTuple_New(3+__pyx_t_8); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 1051, __pyx_L1_error)
+      __pyx_t_9 = PyTuple_New(3+__pyx_t_8); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 1047, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_9);
       if (__pyx_t_7) {
         __Pyx_GIVEREF(__pyx_t_7); PyTuple_SET_ITEM(__pyx_t_9, 0, __pyx_t_7); __pyx_t_7 = NULL;
@@ -21563,16 +21507,16 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_10modify(struct __pyx_obj_4rdma_7i
       __Pyx_GIVEREF(__pyx_kp_s_Failed_to_modify_a_SRQ);
       PyTuple_SET_ITEM(__pyx_t_9, 2+__pyx_t_8, __pyx_kp_s_Failed_to_modify_a_SRQ);
       __pyx_t_5 = 0;
-      __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_6, __pyx_t_9, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1051, __pyx_L1_error)
+      __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_6, __pyx_t_9, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1047, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
       __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
     }
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __Pyx_Raise(__pyx_t_4, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __PYX_ERR(0, 1051, __pyx_L1_error)
+    __PYX_ERR(0, 1047, __pyx_L1_error)
 
-    /* "rdma/ibverbs.pyx":1050
+    /* "rdma/ibverbs.pyx":1046
  * 
  *         rc = c.ibv_modify_srq(self._srq, &cattr, cmask)
  *         if rc != 0:             # <<<<<<<<<<<<<<
@@ -21581,7 +21525,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_10modify(struct __pyx_obj_4rdma_7i
  */
   }
 
-  /* "rdma/ibverbs.pyx":1034
+  /* "rdma/ibverbs.pyx":1030
  *             self._srq = NULL
  * 
  *     def modify(self,srq_limit=None,max_wr=None):             # <<<<<<<<<<<<<<
@@ -21606,7 +21550,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_10modify(struct __pyx_obj_4rdma_7i
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":1054
+/* "rdma/ibverbs.pyx":1050
  *                                 "Failed to modify a SRQ")
  * 
  *     def query(self):             # <<<<<<<<<<<<<<
@@ -21646,7 +21590,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_12query(struct __pyx_obj_4rdma_7ib
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("query", 0);
 
-  /* "rdma/ibverbs.pyx":1058
+  /* "rdma/ibverbs.pyx":1054
  *         cdef c.ibv_srq_attr cattr
  * 
  *         rc = c.ibv_query_srq(self._srq, &cattr)             # <<<<<<<<<<<<<<
@@ -21655,7 +21599,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_12query(struct __pyx_obj_4rdma_7ib
  */
   __pyx_v_rc = ibv_query_srq(__pyx_v_self->_srq, (&__pyx_v_cattr));
 
-  /* "rdma/ibverbs.pyx":1059
+  /* "rdma/ibverbs.pyx":1055
  * 
  *         rc = c.ibv_query_srq(self._srq, &cattr)
  *         if rc != 0:             # <<<<<<<<<<<<<<
@@ -21665,19 +21609,19 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_12query(struct __pyx_obj_4rdma_7ib
   __pyx_t_1 = ((__pyx_v_rc != 0) != 0);
   if (unlikely(__pyx_t_1)) {
 
-    /* "rdma/ibverbs.pyx":1060
+    /* "rdma/ibverbs.pyx":1056
  *         rc = c.ibv_query_srq(self._srq, &cattr)
  *         if rc != 0:
  *             raise rdma.SysError(errno,"ibv_query_srq",             # <<<<<<<<<<<<<<
  *                                 "Failed to query a SRQ")
  * 
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_rdma); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1060, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_rdma); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1056, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_SysError); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1060, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_SysError); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1056, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __pyx_t_3 = __Pyx_PyInt_From_int(errno); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1060, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyInt_From_int(errno); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1056, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __pyx_t_5 = NULL;
     __pyx_t_6 = 0;
@@ -21694,7 +21638,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_12query(struct __pyx_obj_4rdma_7ib
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_4)) {
       PyObject *__pyx_temp[4] = {__pyx_t_5, __pyx_t_3, __pyx_n_s_ibv_query_srq, __pyx_kp_s_Failed_to_query_a_SRQ};
-      __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_6, 3+__pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1060, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_6, 3+__pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1056, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -21703,14 +21647,14 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_12query(struct __pyx_obj_4rdma_7ib
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_4)) {
       PyObject *__pyx_temp[4] = {__pyx_t_5, __pyx_t_3, __pyx_n_s_ibv_query_srq, __pyx_kp_s_Failed_to_query_a_SRQ};
-      __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_6, 3+__pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1060, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_6, 3+__pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1056, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     } else
     #endif
     {
-      __pyx_t_7 = PyTuple_New(3+__pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1060, __pyx_L1_error)
+      __pyx_t_7 = PyTuple_New(3+__pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1056, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_7);
       if (__pyx_t_5) {
         __Pyx_GIVEREF(__pyx_t_5); PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_t_5); __pyx_t_5 = NULL;
@@ -21724,16 +21668,16 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_12query(struct __pyx_obj_4rdma_7ib
       __Pyx_GIVEREF(__pyx_kp_s_Failed_to_query_a_SRQ);
       PyTuple_SET_ITEM(__pyx_t_7, 2+__pyx_t_6, __pyx_kp_s_Failed_to_query_a_SRQ);
       __pyx_t_3 = 0;
-      __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_7, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1060, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_7, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1056, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
     }
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_Raise(__pyx_t_2, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __PYX_ERR(0, 1060, __pyx_L1_error)
+    __PYX_ERR(0, 1056, __pyx_L1_error)
 
-    /* "rdma/ibverbs.pyx":1059
+    /* "rdma/ibverbs.pyx":1055
  * 
  *         rc = c.ibv_query_srq(self._srq, &cattr)
  *         if rc != 0:             # <<<<<<<<<<<<<<
@@ -21742,7 +21686,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_12query(struct __pyx_obj_4rdma_7ib
  */
   }
 
-  /* "rdma/ibverbs.pyx":1063
+  /* "rdma/ibverbs.pyx":1059
  *                                 "Failed to query a SRQ")
  * 
  *         self._max_sge = cattr.max_sge;             # <<<<<<<<<<<<<<
@@ -21752,7 +21696,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_12query(struct __pyx_obj_4rdma_7ib
   __pyx_t_8 = __pyx_v_cattr.max_sge;
   __pyx_v_self->_max_sge = __pyx_t_8;
 
-  /* "rdma/ibverbs.pyx":1064
+  /* "rdma/ibverbs.pyx":1060
  * 
  *         self._max_sge = cattr.max_sge;
  *         return srq_attr(max_wr=cattr.max_wr,             # <<<<<<<<<<<<<<
@@ -21760,47 +21704,47 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_12query(struct __pyx_obj_4rdma_7ib
  *                         srq_limit=cattr.srq_limit);
  */
   __Pyx_XDECREF(__pyx_r);
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_srq_attr); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1064, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_srq_attr); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1060, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_4 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1064, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1060, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.max_wr); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1064, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.max_wr); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1060, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_wr, __pyx_t_7) < 0) __PYX_ERR(0, 1064, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_wr, __pyx_t_7) < 0) __PYX_ERR(0, 1060, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-  /* "rdma/ibverbs.pyx":1065
+  /* "rdma/ibverbs.pyx":1061
  *         self._max_sge = cattr.max_sge;
  *         return srq_attr(max_wr=cattr.max_wr,
  *                         max_sge=cattr.max_sge,             # <<<<<<<<<<<<<<
  *                         srq_limit=cattr.srq_limit);
  * 
  */
-  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.max_sge); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1065, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.max_sge); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1061, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_sge, __pyx_t_7) < 0) __PYX_ERR(0, 1064, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_sge, __pyx_t_7) < 0) __PYX_ERR(0, 1060, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-  /* "rdma/ibverbs.pyx":1066
+  /* "rdma/ibverbs.pyx":1062
  *         return srq_attr(max_wr=cattr.max_wr,
  *                         max_sge=cattr.max_sge,
  *                         srq_limit=cattr.srq_limit);             # <<<<<<<<<<<<<<
  * 
  *     def post_recv(self, arg):
  */
-  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.srq_limit); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1066, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.srq_limit); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1062, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_srq_limit, __pyx_t_7) < 0) __PYX_ERR(0, 1064, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_srq_limit, __pyx_t_7) < 0) __PYX_ERR(0, 1060, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-  /* "rdma/ibverbs.pyx":1064
+  /* "rdma/ibverbs.pyx":1060
  * 
  *         self._max_sge = cattr.max_sge;
  *         return srq_attr(max_wr=cattr.max_wr,             # <<<<<<<<<<<<<<
  *                         max_sge=cattr.max_sge,
  *                         srq_limit=cattr.srq_limit);
  */
-  __pyx_t_7 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_empty_tuple, __pyx_t_4); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1064, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_empty_tuple, __pyx_t_4); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1060, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -21808,7 +21752,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_12query(struct __pyx_obj_4rdma_7ib
   __pyx_t_7 = 0;
   goto __pyx_L0;
 
-  /* "rdma/ibverbs.pyx":1054
+  /* "rdma/ibverbs.pyx":1050
  *                                 "Failed to modify a SRQ")
  * 
  *     def query(self):             # <<<<<<<<<<<<<<
@@ -21831,7 +21775,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_12query(struct __pyx_obj_4rdma_7ib
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":1068
+/* "rdma/ibverbs.pyx":1064
  *                         srq_limit=cattr.srq_limit);
  * 
  *     def post_recv(self, arg):             # <<<<<<<<<<<<<<
@@ -21898,23 +21842,23 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_14post_recv(struct __pyx_obj_4rdma
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("post_recv", 0);
 
-  /* "rdma/ibverbs.pyx":1083
+  /* "rdma/ibverbs.pyx":1079
  * 
  *         # NOTE: A copy of this is in QP.post_recv
  *         wrlist = _post_check(arg, recv_wr, self._max_sge, &num_sge)             # <<<<<<<<<<<<<<
  * 
  *         n = len(wrlist)
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_recv_wr); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1083, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_recv_wr); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1079, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __pyx_f_4rdma_7ibverbs__post_check(__pyx_v_arg, __pyx_t_1, __pyx_v_self->_max_sge, (&__pyx_v_num_sge)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1083, __pyx_L1_error)
+  __pyx_t_2 = __pyx_f_4rdma_7ibverbs__post_check(__pyx_v_arg, __pyx_t_1, __pyx_v_self->_max_sge, (&__pyx_v_num_sge)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1079, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  if (!(likely(PyList_CheckExact(__pyx_t_2))||((__pyx_t_2) == Py_None)||(PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "list", Py_TYPE(__pyx_t_2)->tp_name), 0))) __PYX_ERR(0, 1083, __pyx_L1_error)
+  if (!(likely(PyList_CheckExact(__pyx_t_2))||((__pyx_t_2) == Py_None)||(PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "list", Py_TYPE(__pyx_t_2)->tp_name), 0))) __PYX_ERR(0, 1079, __pyx_L1_error)
   __pyx_v_wrlist = ((PyObject*)__pyx_t_2);
   __pyx_t_2 = 0;
 
-  /* "rdma/ibverbs.pyx":1085
+  /* "rdma/ibverbs.pyx":1081
  *         wrlist = _post_check(arg, recv_wr, self._max_sge, &num_sge)
  * 
  *         n = len(wrlist)             # <<<<<<<<<<<<<<
@@ -21923,12 +21867,12 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_14post_recv(struct __pyx_obj_4rdma
  */
   if (unlikely(__pyx_v_wrlist == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "object of type 'NoneType' has no len()");
-    __PYX_ERR(0, 1085, __pyx_L1_error)
+    __PYX_ERR(0, 1081, __pyx_L1_error)
   }
-  __pyx_t_3 = PyList_GET_SIZE(__pyx_v_wrlist); if (unlikely(__pyx_t_3 == ((Py_ssize_t)-1))) __PYX_ERR(0, 1085, __pyx_L1_error)
+  __pyx_t_3 = PyList_GET_SIZE(__pyx_v_wrlist); if (unlikely(__pyx_t_3 == ((Py_ssize_t)-1))) __PYX_ERR(0, 1081, __pyx_L1_error)
   __pyx_v_n = __pyx_t_3;
 
-  /* "rdma/ibverbs.pyx":1086
+  /* "rdma/ibverbs.pyx":1082
  * 
  *         n = len(wrlist)
  *         mem = <unsigned char *>calloc(1,sizeof(dummy_wr)*n + sizeof(dummy_sge)*num_sge);             # <<<<<<<<<<<<<<
@@ -21937,7 +21881,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_14post_recv(struct __pyx_obj_4rdma
  */
   __pyx_v_mem = ((unsigned char *)calloc(1, (((sizeof(__pyx_v_dummy_wr)) * __pyx_v_n) + ((sizeof(__pyx_v_dummy_sge)) * __pyx_v_num_sge))));
 
-  /* "rdma/ibverbs.pyx":1087
+  /* "rdma/ibverbs.pyx":1083
  *         n = len(wrlist)
  *         mem = <unsigned char *>calloc(1,sizeof(dummy_wr)*n + sizeof(dummy_sge)*num_sge);
  *         if mem == NULL:             # <<<<<<<<<<<<<<
@@ -21947,16 +21891,16 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_14post_recv(struct __pyx_obj_4rdma
   __pyx_t_4 = ((__pyx_v_mem == NULL) != 0);
   if (unlikely(__pyx_t_4)) {
 
-    /* "rdma/ibverbs.pyx":1088
+    /* "rdma/ibverbs.pyx":1084
  *         mem = <unsigned char *>calloc(1,sizeof(dummy_wr)*n + sizeof(dummy_sge)*num_sge);
  *         if mem == NULL:
  *             raise MemoryError()             # <<<<<<<<<<<<<<
  *         try:
  *             cwr = <c.ibv_recv_wr *>(mem);
  */
-    PyErr_NoMemory(); __PYX_ERR(0, 1088, __pyx_L1_error)
+    PyErr_NoMemory(); __PYX_ERR(0, 1084, __pyx_L1_error)
 
-    /* "rdma/ibverbs.pyx":1087
+    /* "rdma/ibverbs.pyx":1083
  *         n = len(wrlist)
  *         mem = <unsigned char *>calloc(1,sizeof(dummy_wr)*n + sizeof(dummy_sge)*num_sge);
  *         if mem == NULL:             # <<<<<<<<<<<<<<
@@ -21965,7 +21909,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_14post_recv(struct __pyx_obj_4rdma
  */
   }
 
-  /* "rdma/ibverbs.pyx":1089
+  /* "rdma/ibverbs.pyx":1085
  *         if mem == NULL:
  *             raise MemoryError()
  *         try:             # <<<<<<<<<<<<<<
@@ -21974,7 +21918,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_14post_recv(struct __pyx_obj_4rdma
  */
   /*try:*/ {
 
-    /* "rdma/ibverbs.pyx":1090
+    /* "rdma/ibverbs.pyx":1086
  *             raise MemoryError()
  *         try:
  *             cwr = <c.ibv_recv_wr *>(mem);             # <<<<<<<<<<<<<<
@@ -21983,7 +21927,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_14post_recv(struct __pyx_obj_4rdma
  */
     __pyx_v_cwr = ((struct ibv_recv_wr *)__pyx_v_mem);
 
-    /* "rdma/ibverbs.pyx":1091
+    /* "rdma/ibverbs.pyx":1087
  *         try:
  *             cwr = <c.ibv_recv_wr *>(mem);
  *             csge = <c.ibv_sge *>(cwr + n);             # <<<<<<<<<<<<<<
@@ -21992,7 +21936,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_14post_recv(struct __pyx_obj_4rdma
  */
     __pyx_v_csge = ((struct ibv_sge *)(__pyx_v_cwr + __pyx_v_n));
 
-    /* "rdma/ibverbs.pyx":1092
+    /* "rdma/ibverbs.pyx":1088
  *             cwr = <c.ibv_recv_wr *>(mem);
  *             csge = <c.ibv_sge *>(cwr + n);
  *             for 0 <= i < n:             # <<<<<<<<<<<<<<
@@ -22002,7 +21946,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_14post_recv(struct __pyx_obj_4rdma
     __pyx_t_5 = __pyx_v_n;
     for (__pyx_v_i = 0; __pyx_v_i < __pyx_t_5; __pyx_v_i++) {
 
-      /* "rdma/ibverbs.pyx":1093
+      /* "rdma/ibverbs.pyx":1089
  *             csge = <c.ibv_sge *>(cwr + n);
  *             for 0 <= i < n:
  *                 wr = wrlist[i]             # <<<<<<<<<<<<<<
@@ -22011,27 +21955,27 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_14post_recv(struct __pyx_obj_4rdma
  */
       if (unlikely(__pyx_v_wrlist == Py_None)) {
         PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-        __PYX_ERR(0, 1093, __pyx_L5_error)
+        __PYX_ERR(0, 1089, __pyx_L5_error)
       }
-      __pyx_t_2 = __Pyx_GetItemInt_List(__pyx_v_wrlist, __pyx_v_i, int, 1, __Pyx_PyInt_From_int, 1, 1, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1093, __pyx_L5_error)
+      __pyx_t_2 = __Pyx_GetItemInt_List(__pyx_v_wrlist, __pyx_v_i, int, 1, __Pyx_PyInt_From_int, 1, 1, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1089, __pyx_L5_error)
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_XDECREF_SET(__pyx_v_wr, __pyx_t_2);
       __pyx_t_2 = 0;
 
-      /* "rdma/ibverbs.pyx":1094
+      /* "rdma/ibverbs.pyx":1090
  *             for 0 <= i < n:
  *                 wr = wrlist[i]
  *                 wr_id = wr.wr_id;             # <<<<<<<<<<<<<<
  *                 cwr.wr_id = <uintptr_t>wr_id
  *                 if i == n - 1:
  */
-      __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_wr, __pyx_n_s_wr_id); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1094, __pyx_L5_error)
+      __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_wr, __pyx_n_s_wr_id); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1090, __pyx_L5_error)
       __Pyx_GOTREF(__pyx_t_2);
-      __pyx_t_6 = __Pyx_PyInt_As_int(__pyx_t_2); if (unlikely((__pyx_t_6 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1094, __pyx_L5_error)
+      __pyx_t_6 = __Pyx_PyInt_As_int(__pyx_t_2); if (unlikely((__pyx_t_6 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1090, __pyx_L5_error)
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
       __pyx_v_wr_id = __pyx_t_6;
 
-      /* "rdma/ibverbs.pyx":1095
+      /* "rdma/ibverbs.pyx":1091
  *                 wr = wrlist[i]
  *                 wr_id = wr.wr_id;
  *                 cwr.wr_id = <uintptr_t>wr_id             # <<<<<<<<<<<<<<
@@ -22040,7 +21984,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_14post_recv(struct __pyx_obj_4rdma
  */
       __pyx_v_cwr->wr_id = ((uintptr_t)__pyx_v_wr_id);
 
-      /* "rdma/ibverbs.pyx":1096
+      /* "rdma/ibverbs.pyx":1092
  *                 wr_id = wr.wr_id;
  *                 cwr.wr_id = <uintptr_t>wr_id
  *                 if i == n - 1:             # <<<<<<<<<<<<<<
@@ -22050,7 +21994,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_14post_recv(struct __pyx_obj_4rdma
       __pyx_t_4 = ((__pyx_v_i == (__pyx_v_n - 1)) != 0);
       if (__pyx_t_4) {
 
-        /* "rdma/ibverbs.pyx":1097
+        /* "rdma/ibverbs.pyx":1093
  *                 cwr.wr_id = <uintptr_t>wr_id
  *                 if i == n - 1:
  *                     cwr.next = NULL             # <<<<<<<<<<<<<<
@@ -22059,7 +22003,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_14post_recv(struct __pyx_obj_4rdma
  */
         __pyx_v_cwr->next = NULL;
 
-        /* "rdma/ibverbs.pyx":1096
+        /* "rdma/ibverbs.pyx":1092
  *                 wr_id = wr.wr_id;
  *                 cwr.wr_id = <uintptr_t>wr_id
  *                 if i == n - 1:             # <<<<<<<<<<<<<<
@@ -22069,7 +22013,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_14post_recv(struct __pyx_obj_4rdma
         goto __pyx_L9;
       }
 
-      /* "rdma/ibverbs.pyx":1099
+      /* "rdma/ibverbs.pyx":1095
  *                     cwr.next = NULL
  *                 else:
  *                     cwr.next = cwr + 1             # <<<<<<<<<<<<<<
@@ -22081,7 +22025,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_14post_recv(struct __pyx_obj_4rdma
       }
       __pyx_L9:;
 
-      /* "rdma/ibverbs.pyx":1101
+      /* "rdma/ibverbs.pyx":1097
  *                     cwr.next = cwr + 1
  * 
  *                 cwr.sg_list = csge             # <<<<<<<<<<<<<<
@@ -22090,14 +22034,14 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_14post_recv(struct __pyx_obj_4rdma
  */
       __pyx_v_cwr->sg_list = __pyx_v_csge;
 
-      /* "rdma/ibverbs.pyx":1102
+      /* "rdma/ibverbs.pyx":1098
  * 
  *                 cwr.sg_list = csge
  *                 if isinstance(wr.sg_list, list) or isinstance(wr.sg_list, tuple):             # <<<<<<<<<<<<<<
  *                     cwr.num_sge = len(wr.sg_list)
  *                     for 0 <= j < cwr.num_sge:
  */
-      __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_wr, __pyx_n_s_sg_list); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1102, __pyx_L5_error)
+      __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_wr, __pyx_n_s_sg_list); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1098, __pyx_L5_error)
       __Pyx_GOTREF(__pyx_t_2);
       __pyx_t_7 = PyList_Check(__pyx_t_2); 
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -22107,7 +22051,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_14post_recv(struct __pyx_obj_4rdma
         __pyx_t_4 = __pyx_t_8;
         goto __pyx_L11_bool_binop_done;
       }
-      __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_wr, __pyx_n_s_sg_list); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1102, __pyx_L5_error)
+      __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_wr, __pyx_n_s_sg_list); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1098, __pyx_L5_error)
       __Pyx_GOTREF(__pyx_t_2);
       __pyx_t_8 = PyTuple_Check(__pyx_t_2); 
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -22116,20 +22060,20 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_14post_recv(struct __pyx_obj_4rdma
       __pyx_L11_bool_binop_done:;
       if (__pyx_t_4) {
 
-        /* "rdma/ibverbs.pyx":1103
+        /* "rdma/ibverbs.pyx":1099
  *                 cwr.sg_list = csge
  *                 if isinstance(wr.sg_list, list) or isinstance(wr.sg_list, tuple):
  *                     cwr.num_sge = len(wr.sg_list)             # <<<<<<<<<<<<<<
  *                     for 0 <= j < cwr.num_sge:
  *                         sge = wr.sg_list[j]
  */
-        __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_wr, __pyx_n_s_sg_list); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1103, __pyx_L5_error)
+        __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_wr, __pyx_n_s_sg_list); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1099, __pyx_L5_error)
         __Pyx_GOTREF(__pyx_t_2);
-        __pyx_t_3 = PyObject_Length(__pyx_t_2); if (unlikely(__pyx_t_3 == ((Py_ssize_t)-1))) __PYX_ERR(0, 1103, __pyx_L5_error)
+        __pyx_t_3 = PyObject_Length(__pyx_t_2); if (unlikely(__pyx_t_3 == ((Py_ssize_t)-1))) __PYX_ERR(0, 1099, __pyx_L5_error)
         __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
         __pyx_v_cwr->num_sge = __pyx_t_3;
 
-        /* "rdma/ibverbs.pyx":1104
+        /* "rdma/ibverbs.pyx":1100
  *                 if isinstance(wr.sg_list, list) or isinstance(wr.sg_list, tuple):
  *                     cwr.num_sge = len(wr.sg_list)
  *                     for 0 <= j < cwr.num_sge:             # <<<<<<<<<<<<<<
@@ -22139,61 +22083,61 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_14post_recv(struct __pyx_obj_4rdma
         __pyx_t_9 = __pyx_v_cwr->num_sge;
         for (__pyx_v_j = 0; __pyx_v_j < __pyx_t_9; __pyx_v_j++) {
 
-          /* "rdma/ibverbs.pyx":1105
+          /* "rdma/ibverbs.pyx":1101
  *                     cwr.num_sge = len(wr.sg_list)
  *                     for 0 <= j < cwr.num_sge:
  *                         sge = wr.sg_list[j]             # <<<<<<<<<<<<<<
  *                         csge.addr = sge.addr
  *                         csge.length = sge.length
  */
-          __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_wr, __pyx_n_s_sg_list); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1105, __pyx_L5_error)
+          __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_wr, __pyx_n_s_sg_list); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1101, __pyx_L5_error)
           __Pyx_GOTREF(__pyx_t_2);
-          __pyx_t_1 = __Pyx_GetItemInt(__pyx_t_2, __pyx_v_j, int, 1, __Pyx_PyInt_From_int, 0, 1, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1105, __pyx_L5_error)
+          __pyx_t_1 = __Pyx_GetItemInt(__pyx_t_2, __pyx_v_j, int, 1, __Pyx_PyInt_From_int, 0, 1, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1101, __pyx_L5_error)
           __Pyx_GOTREF(__pyx_t_1);
           __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
           __Pyx_XDECREF_SET(__pyx_v_sge, __pyx_t_1);
           __pyx_t_1 = 0;
 
-          /* "rdma/ibverbs.pyx":1106
+          /* "rdma/ibverbs.pyx":1102
  *                     for 0 <= j < cwr.num_sge:
  *                         sge = wr.sg_list[j]
  *                         csge.addr = sge.addr             # <<<<<<<<<<<<<<
  *                         csge.length = sge.length
  *                         csge.lkey = sge.lkey
  */
-          __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_sge, __pyx_n_s_addr); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1106, __pyx_L5_error)
+          __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_sge, __pyx_n_s_addr); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1102, __pyx_L5_error)
           __Pyx_GOTREF(__pyx_t_1);
-          __pyx_t_10 = __Pyx_PyInt_As_unsigned_long(__pyx_t_1); if (unlikely((__pyx_t_10 == (unsigned long)-1) && PyErr_Occurred())) __PYX_ERR(0, 1106, __pyx_L5_error)
+          __pyx_t_10 = __Pyx_PyInt_As_unsigned_long(__pyx_t_1); if (unlikely((__pyx_t_10 == (unsigned long)-1) && PyErr_Occurred())) __PYX_ERR(0, 1102, __pyx_L5_error)
           __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
           __pyx_v_csge->addr = __pyx_t_10;
 
-          /* "rdma/ibverbs.pyx":1107
+          /* "rdma/ibverbs.pyx":1103
  *                         sge = wr.sg_list[j]
  *                         csge.addr = sge.addr
  *                         csge.length = sge.length             # <<<<<<<<<<<<<<
  *                         csge.lkey = sge.lkey
  *                         csge += 1
  */
-          __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_sge, __pyx_n_s_length); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1107, __pyx_L5_error)
+          __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_sge, __pyx_n_s_length); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1103, __pyx_L5_error)
           __Pyx_GOTREF(__pyx_t_1);
-          __pyx_t_11 = __Pyx_PyInt_As_unsigned_int(__pyx_t_1); if (unlikely((__pyx_t_11 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1107, __pyx_L5_error)
+          __pyx_t_11 = __Pyx_PyInt_As_unsigned_int(__pyx_t_1); if (unlikely((__pyx_t_11 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1103, __pyx_L5_error)
           __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
           __pyx_v_csge->length = __pyx_t_11;
 
-          /* "rdma/ibverbs.pyx":1108
+          /* "rdma/ibverbs.pyx":1104
  *                         csge.addr = sge.addr
  *                         csge.length = sge.length
  *                         csge.lkey = sge.lkey             # <<<<<<<<<<<<<<
  *                         csge += 1
  *                 elif wr.sg_list is not None:
  */
-          __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_sge, __pyx_n_s_lkey); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1108, __pyx_L5_error)
+          __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_sge, __pyx_n_s_lkey); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1104, __pyx_L5_error)
           __Pyx_GOTREF(__pyx_t_1);
-          __pyx_t_11 = __Pyx_PyInt_As_unsigned_int(__pyx_t_1); if (unlikely((__pyx_t_11 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1108, __pyx_L5_error)
+          __pyx_t_11 = __Pyx_PyInt_As_unsigned_int(__pyx_t_1); if (unlikely((__pyx_t_11 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1104, __pyx_L5_error)
           __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
           __pyx_v_csge->lkey = __pyx_t_11;
 
-          /* "rdma/ibverbs.pyx":1109
+          /* "rdma/ibverbs.pyx":1105
  *                         csge.length = sge.length
  *                         csge.lkey = sge.lkey
  *                         csge += 1             # <<<<<<<<<<<<<<
@@ -22203,7 +22147,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_14post_recv(struct __pyx_obj_4rdma
           __pyx_v_csge = (__pyx_v_csge + 1);
         }
 
-        /* "rdma/ibverbs.pyx":1102
+        /* "rdma/ibverbs.pyx":1098
  * 
  *                 cwr.sg_list = csge
  *                 if isinstance(wr.sg_list, list) or isinstance(wr.sg_list, tuple):             # <<<<<<<<<<<<<<
@@ -22213,21 +22157,21 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_14post_recv(struct __pyx_obj_4rdma
         goto __pyx_L10;
       }
 
-      /* "rdma/ibverbs.pyx":1110
+      /* "rdma/ibverbs.pyx":1106
  *                         csge.lkey = sge.lkey
  *                         csge += 1
  *                 elif wr.sg_list is not None:             # <<<<<<<<<<<<<<
  *                     cwr.num_sge = 1
  *                     sge = wr.sg_list;
  */
-      __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_wr, __pyx_n_s_sg_list); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1110, __pyx_L5_error)
+      __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_wr, __pyx_n_s_sg_list); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1106, __pyx_L5_error)
       __Pyx_GOTREF(__pyx_t_1);
       __pyx_t_4 = (__pyx_t_1 != Py_None);
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
       __pyx_t_7 = (__pyx_t_4 != 0);
       if (__pyx_t_7) {
 
-        /* "rdma/ibverbs.pyx":1111
+        /* "rdma/ibverbs.pyx":1107
  *                         csge += 1
  *                 elif wr.sg_list is not None:
  *                     cwr.num_sge = 1             # <<<<<<<<<<<<<<
@@ -22236,58 +22180,58 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_14post_recv(struct __pyx_obj_4rdma
  */
         __pyx_v_cwr->num_sge = 1;
 
-        /* "rdma/ibverbs.pyx":1112
+        /* "rdma/ibverbs.pyx":1108
  *                 elif wr.sg_list is not None:
  *                     cwr.num_sge = 1
  *                     sge = wr.sg_list;             # <<<<<<<<<<<<<<
  *                     csge.addr = sge.addr
  *                     csge.length = sge.length
  */
-        __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_wr, __pyx_n_s_sg_list); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1112, __pyx_L5_error)
+        __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_wr, __pyx_n_s_sg_list); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1108, __pyx_L5_error)
         __Pyx_GOTREF(__pyx_t_1);
         __Pyx_XDECREF_SET(__pyx_v_sge, __pyx_t_1);
         __pyx_t_1 = 0;
 
-        /* "rdma/ibverbs.pyx":1113
+        /* "rdma/ibverbs.pyx":1109
  *                     cwr.num_sge = 1
  *                     sge = wr.sg_list;
  *                     csge.addr = sge.addr             # <<<<<<<<<<<<<<
  *                     csge.length = sge.length
  *                     csge.lkey = sge.lkey
  */
-        __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_sge, __pyx_n_s_addr); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1113, __pyx_L5_error)
+        __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_sge, __pyx_n_s_addr); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1109, __pyx_L5_error)
         __Pyx_GOTREF(__pyx_t_1);
-        __pyx_t_10 = __Pyx_PyInt_As_unsigned_long(__pyx_t_1); if (unlikely((__pyx_t_10 == (unsigned long)-1) && PyErr_Occurred())) __PYX_ERR(0, 1113, __pyx_L5_error)
+        __pyx_t_10 = __Pyx_PyInt_As_unsigned_long(__pyx_t_1); if (unlikely((__pyx_t_10 == (unsigned long)-1) && PyErr_Occurred())) __PYX_ERR(0, 1109, __pyx_L5_error)
         __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
         __pyx_v_csge->addr = __pyx_t_10;
 
-        /* "rdma/ibverbs.pyx":1114
+        /* "rdma/ibverbs.pyx":1110
  *                     sge = wr.sg_list;
  *                     csge.addr = sge.addr
  *                     csge.length = sge.length             # <<<<<<<<<<<<<<
  *                     csge.lkey = sge.lkey
  *                     csge += 1
  */
-        __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_sge, __pyx_n_s_length); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1114, __pyx_L5_error)
+        __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_sge, __pyx_n_s_length); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1110, __pyx_L5_error)
         __Pyx_GOTREF(__pyx_t_1);
-        __pyx_t_9 = __Pyx_PyInt_As_unsigned_int(__pyx_t_1); if (unlikely((__pyx_t_9 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1114, __pyx_L5_error)
+        __pyx_t_9 = __Pyx_PyInt_As_unsigned_int(__pyx_t_1); if (unlikely((__pyx_t_9 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1110, __pyx_L5_error)
         __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
         __pyx_v_csge->length = __pyx_t_9;
 
-        /* "rdma/ibverbs.pyx":1115
+        /* "rdma/ibverbs.pyx":1111
  *                     csge.addr = sge.addr
  *                     csge.length = sge.length
  *                     csge.lkey = sge.lkey             # <<<<<<<<<<<<<<
  *                     csge += 1
  *                 cwr = cwr + 1;
  */
-        __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_sge, __pyx_n_s_lkey); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1115, __pyx_L5_error)
+        __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_sge, __pyx_n_s_lkey); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1111, __pyx_L5_error)
         __Pyx_GOTREF(__pyx_t_1);
-        __pyx_t_9 = __Pyx_PyInt_As_unsigned_int(__pyx_t_1); if (unlikely((__pyx_t_9 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1115, __pyx_L5_error)
+        __pyx_t_9 = __Pyx_PyInt_As_unsigned_int(__pyx_t_1); if (unlikely((__pyx_t_9 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1111, __pyx_L5_error)
         __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
         __pyx_v_csge->lkey = __pyx_t_9;
 
-        /* "rdma/ibverbs.pyx":1116
+        /* "rdma/ibverbs.pyx":1112
  *                     csge.length = sge.length
  *                     csge.lkey = sge.lkey
  *                     csge += 1             # <<<<<<<<<<<<<<
@@ -22296,7 +22240,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_14post_recv(struct __pyx_obj_4rdma
  */
         __pyx_v_csge = (__pyx_v_csge + 1);
 
-        /* "rdma/ibverbs.pyx":1110
+        /* "rdma/ibverbs.pyx":1106
  *                         csge.lkey = sge.lkey
  *                         csge += 1
  *                 elif wr.sg_list is not None:             # <<<<<<<<<<<<<<
@@ -22306,7 +22250,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_14post_recv(struct __pyx_obj_4rdma
       }
       __pyx_L10:;
 
-      /* "rdma/ibverbs.pyx":1117
+      /* "rdma/ibverbs.pyx":1113
  *                     csge.lkey = sge.lkey
  *                     csge += 1
  *                 cwr = cwr + 1;             # <<<<<<<<<<<<<<
@@ -22316,7 +22260,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_14post_recv(struct __pyx_obj_4rdma
       __pyx_v_cwr = (__pyx_v_cwr + 1);
     }
 
-    /* "rdma/ibverbs.pyx":1119
+    /* "rdma/ibverbs.pyx":1115
  *                 cwr = cwr + 1;
  * 
  *             cwr = <c.ibv_recv_wr *>(mem);             # <<<<<<<<<<<<<<
@@ -22325,7 +22269,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_14post_recv(struct __pyx_obj_4rdma
  */
     __pyx_v_cwr = ((struct ibv_recv_wr *)__pyx_v_mem);
 
-    /* "rdma/ibverbs.pyx":1120
+    /* "rdma/ibverbs.pyx":1116
  * 
  *             cwr = <c.ibv_recv_wr *>(mem);
  *             rc = c.ibv_post_srq_recv(self._srq, <c.ibv_recv_wr *>mem, &cbad_wr)             # <<<<<<<<<<<<<<
@@ -22334,7 +22278,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_14post_recv(struct __pyx_obj_4rdma
  */
     __pyx_v_rc = ibv_post_srq_recv(__pyx_v_self->_srq, ((struct ibv_recv_wr *)__pyx_v_mem), (&__pyx_v_cbad_wr));
 
-    /* "rdma/ibverbs.pyx":1121
+    /* "rdma/ibverbs.pyx":1117
  *             cwr = <c.ibv_recv_wr *>(mem);
  *             rc = c.ibv_post_srq_recv(self._srq, <c.ibv_recv_wr *>mem, &cbad_wr)
  *             if rc != 0:             # <<<<<<<<<<<<<<
@@ -22344,7 +22288,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_14post_recv(struct __pyx_obj_4rdma
     __pyx_t_7 = ((__pyx_v_rc != 0) != 0);
     if (__pyx_t_7) {
 
-      /* "rdma/ibverbs.pyx":1122
+      /* "rdma/ibverbs.pyx":1118
  *             rc = c.ibv_post_srq_recv(self._srq, <c.ibv_recv_wr *>mem, &cbad_wr)
  *             if rc != 0:
  *                 cwr = <c.ibv_recv_wr *>(mem);             # <<<<<<<<<<<<<<
@@ -22353,7 +22297,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_14post_recv(struct __pyx_obj_4rdma
  */
       __pyx_v_cwr = ((struct ibv_recv_wr *)__pyx_v_mem);
 
-      /* "rdma/ibverbs.pyx":1123
+      /* "rdma/ibverbs.pyx":1119
  *             if rc != 0:
  *                 cwr = <c.ibv_recv_wr *>(mem);
  *                 for 0 <= i < n:             # <<<<<<<<<<<<<<
@@ -22363,7 +22307,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_14post_recv(struct __pyx_obj_4rdma
       __pyx_t_5 = __pyx_v_n;
       for (__pyx_v_i = 0; __pyx_v_i < __pyx_t_5; __pyx_v_i++) {
 
-        /* "rdma/ibverbs.pyx":1124
+        /* "rdma/ibverbs.pyx":1120
  *                 cwr = <c.ibv_recv_wr *>(mem);
  *                 for 0 <= i < n:
  *                     if cwr+i == cbad_wr:             # <<<<<<<<<<<<<<
@@ -22373,7 +22317,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_14post_recv(struct __pyx_obj_4rdma
         __pyx_t_7 = (((__pyx_v_cwr + __pyx_v_i) == __pyx_v_cbad_wr) != 0);
         if (__pyx_t_7) {
 
-          /* "rdma/ibverbs.pyx":1125
+          /* "rdma/ibverbs.pyx":1121
  *                 for 0 <= i < n:
  *                     if cwr+i == cbad_wr:
  *                         break;             # <<<<<<<<<<<<<<
@@ -22382,7 +22326,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_14post_recv(struct __pyx_obj_4rdma
  */
           goto __pyx_L17_break;
 
-          /* "rdma/ibverbs.pyx":1124
+          /* "rdma/ibverbs.pyx":1120
  *                 cwr = <c.ibv_recv_wr *>(mem);
  *                 for 0 <= i < n:
  *                     if cwr+i == cbad_wr:             # <<<<<<<<<<<<<<
@@ -22393,18 +22337,18 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_14post_recv(struct __pyx_obj_4rdma
       }
       __pyx_L17_break:;
 
-      /* "rdma/ibverbs.pyx":1126
+      /* "rdma/ibverbs.pyx":1122
  *                     if cwr+i == cbad_wr:
  *                         break;
  *                 raise WRError(rc,"ibv_post_srq_recv","Failed to post work request",n);             # <<<<<<<<<<<<<<
  *         finally:
  *             free(mem)
  */
-      __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_WRError); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1126, __pyx_L5_error)
+      __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_WRError); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1122, __pyx_L5_error)
       __Pyx_GOTREF(__pyx_t_2);
-      __pyx_t_12 = __Pyx_PyInt_From_int(__pyx_v_rc); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 1126, __pyx_L5_error)
+      __pyx_t_12 = __Pyx_PyInt_From_int(__pyx_v_rc); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 1122, __pyx_L5_error)
       __Pyx_GOTREF(__pyx_t_12);
-      __pyx_t_13 = __Pyx_PyInt_From_int(__pyx_v_n); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 1126, __pyx_L5_error)
+      __pyx_t_13 = __Pyx_PyInt_From_int(__pyx_v_n); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 1122, __pyx_L5_error)
       __Pyx_GOTREF(__pyx_t_13);
       __pyx_t_14 = NULL;
       __pyx_t_5 = 0;
@@ -22421,7 +22365,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_14post_recv(struct __pyx_obj_4rdma
       #if CYTHON_FAST_PYCALL
       if (PyFunction_Check(__pyx_t_2)) {
         PyObject *__pyx_temp[5] = {__pyx_t_14, __pyx_t_12, __pyx_n_s_ibv_post_srq_recv, __pyx_kp_s_Failed_to_post_work_request, __pyx_t_13};
-        __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_5, 4+__pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1126, __pyx_L5_error)
+        __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_5, 4+__pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1122, __pyx_L5_error)
         __Pyx_XDECREF(__pyx_t_14); __pyx_t_14 = 0;
         __Pyx_GOTREF(__pyx_t_1);
         __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
@@ -22431,7 +22375,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_14post_recv(struct __pyx_obj_4rdma
       #if CYTHON_FAST_PYCCALL
       if (__Pyx_PyFastCFunction_Check(__pyx_t_2)) {
         PyObject *__pyx_temp[5] = {__pyx_t_14, __pyx_t_12, __pyx_n_s_ibv_post_srq_recv, __pyx_kp_s_Failed_to_post_work_request, __pyx_t_13};
-        __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_5, 4+__pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1126, __pyx_L5_error)
+        __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_5, 4+__pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1122, __pyx_L5_error)
         __Pyx_XDECREF(__pyx_t_14); __pyx_t_14 = 0;
         __Pyx_GOTREF(__pyx_t_1);
         __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
@@ -22439,7 +22383,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_14post_recv(struct __pyx_obj_4rdma
       } else
       #endif
       {
-        __pyx_t_15 = PyTuple_New(4+__pyx_t_5); if (unlikely(!__pyx_t_15)) __PYX_ERR(0, 1126, __pyx_L5_error)
+        __pyx_t_15 = PyTuple_New(4+__pyx_t_5); if (unlikely(!__pyx_t_15)) __PYX_ERR(0, 1122, __pyx_L5_error)
         __Pyx_GOTREF(__pyx_t_15);
         if (__pyx_t_14) {
           __Pyx_GIVEREF(__pyx_t_14); PyTuple_SET_ITEM(__pyx_t_15, 0, __pyx_t_14); __pyx_t_14 = NULL;
@@ -22456,16 +22400,16 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_14post_recv(struct __pyx_obj_4rdma
         PyTuple_SET_ITEM(__pyx_t_15, 3+__pyx_t_5, __pyx_t_13);
         __pyx_t_12 = 0;
         __pyx_t_13 = 0;
-        __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_15, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1126, __pyx_L5_error)
+        __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_15, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1122, __pyx_L5_error)
         __Pyx_GOTREF(__pyx_t_1);
         __Pyx_DECREF(__pyx_t_15); __pyx_t_15 = 0;
       }
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
       __Pyx_Raise(__pyx_t_1, 0, 0, 0);
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-      __PYX_ERR(0, 1126, __pyx_L5_error)
+      __PYX_ERR(0, 1122, __pyx_L5_error)
 
-      /* "rdma/ibverbs.pyx":1121
+      /* "rdma/ibverbs.pyx":1117
  *             cwr = <c.ibv_recv_wr *>(mem);
  *             rc = c.ibv_post_srq_recv(self._srq, <c.ibv_recv_wr *>mem, &cbad_wr)
  *             if rc != 0:             # <<<<<<<<<<<<<<
@@ -22475,7 +22419,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_14post_recv(struct __pyx_obj_4rdma
     }
   }
 
-  /* "rdma/ibverbs.pyx":1128
+  /* "rdma/ibverbs.pyx":1124
  *                 raise WRError(rc,"ibv_post_srq_recv","Failed to post work request",n);
  *         finally:
  *             free(mem)             # <<<<<<<<<<<<<<
@@ -22527,7 +22471,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_14post_recv(struct __pyx_obj_4rdma
     __pyx_L6:;
   }
 
-  /* "rdma/ibverbs.pyx":1068
+  /* "rdma/ibverbs.pyx":1064
  *                         srq_limit=cattr.srq_limit);
  * 
  *     def post_recv(self, arg):             # <<<<<<<<<<<<<<
@@ -22556,7 +22500,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_14post_recv(struct __pyx_obj_4rdma
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":1130
+/* "rdma/ibverbs.pyx":1126
  *             free(mem)
  * 
  *     def __str__(self):             # <<<<<<<<<<<<<<
@@ -22587,7 +22531,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_16__str__(struct __pyx_obj_4rdma_7
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__str__", 0);
 
-  /* "rdma/ibverbs.pyx":1131
+  /* "rdma/ibverbs.pyx":1127
  * 
  *     def __str__(self):
  *         return "srq:%X:%s"%(self._srq.handle,self._pd);             # <<<<<<<<<<<<<<
@@ -22595,9 +22539,9 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_16__str__(struct __pyx_obj_4rdma_7
  *         return "SRQ(%r,0x%x)"%(self._pd,self._srq.handle);
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->_srq->handle); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1131, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->_srq->handle); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1127, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1131, __pyx_L1_error)
+  __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1127, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_GIVEREF(__pyx_t_1);
   PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_t_1);
@@ -22605,14 +22549,14 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_16__str__(struct __pyx_obj_4rdma_7
   __Pyx_GIVEREF(((PyObject *)__pyx_v_self->_pd));
   PyTuple_SET_ITEM(__pyx_t_2, 1, ((PyObject *)__pyx_v_self->_pd));
   __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyString_Format(__pyx_kp_s_srq_X_s, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1131, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyString_Format(__pyx_kp_s_srq_X_s, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1127, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "rdma/ibverbs.pyx":1130
+  /* "rdma/ibverbs.pyx":1126
  *             free(mem)
  * 
  *     def __str__(self):             # <<<<<<<<<<<<<<
@@ -22632,7 +22576,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_16__str__(struct __pyx_obj_4rdma_7
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":1132
+/* "rdma/ibverbs.pyx":1128
  *     def __str__(self):
  *         return "srq:%X:%s"%(self._srq.handle,self._pd);
  *     def __repr__(self):             # <<<<<<<<<<<<<<
@@ -22663,7 +22607,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_18__repr__(struct __pyx_obj_4rdma_
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__repr__", 0);
 
-  /* "rdma/ibverbs.pyx":1133
+  /* "rdma/ibverbs.pyx":1129
  *         return "srq:%X:%s"%(self._srq.handle,self._pd);
  *     def __repr__(self):
  *         return "SRQ(%r,0x%x)"%(self._pd,self._srq.handle);             # <<<<<<<<<<<<<<
@@ -22671,9 +22615,9 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_18__repr__(struct __pyx_obj_4rdma_
  * cdef class MR:
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->_srq->handle); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1133, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->_srq->handle); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1129, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1133, __pyx_L1_error)
+  __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1129, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_INCREF(((PyObject *)__pyx_v_self->_pd));
   __Pyx_GIVEREF(((PyObject *)__pyx_v_self->_pd));
@@ -22681,14 +22625,14 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_18__repr__(struct __pyx_obj_4rdma_
   __Pyx_GIVEREF(__pyx_t_1);
   PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_t_1);
   __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyString_Format(__pyx_kp_s_SRQ_r_0x_x, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1133, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyString_Format(__pyx_kp_s_SRQ_r_0x_x, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1129, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "rdma/ibverbs.pyx":1132
+  /* "rdma/ibverbs.pyx":1128
  *     def __str__(self):
  *         return "srq:%X:%s"%(self._srq.handle,self._pd);
  *     def __repr__(self):             # <<<<<<<<<<<<<<
@@ -22821,7 +22765,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_3SRQ_22__setstate_cython__(CYTHON_UNUSE
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":1143
+/* "rdma/ibverbs.pyx":1139
  * 
  *     property pd:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -22847,7 +22791,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2MR_2pd___get__(struct __pyx_obj_4rdma_
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "rdma/ibverbs.pyx":1144
+  /* "rdma/ibverbs.pyx":1140
  *     property pd:
  *         def __get__(self):
  *             return self._pd;             # <<<<<<<<<<<<<<
@@ -22859,7 +22803,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2MR_2pd___get__(struct __pyx_obj_4rdma_
   __pyx_r = ((PyObject *)__pyx_v_self->_pd);
   goto __pyx_L0;
 
-  /* "rdma/ibverbs.pyx":1143
+  /* "rdma/ibverbs.pyx":1139
  * 
  *     property pd:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -22874,7 +22818,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2MR_2pd___get__(struct __pyx_obj_4rdma_
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":1147
+/* "rdma/ibverbs.pyx":1143
  * 
  *     property ctx:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -22900,7 +22844,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2MR_3ctx___get__(struct __pyx_obj_4rdma
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "rdma/ibverbs.pyx":1148
+  /* "rdma/ibverbs.pyx":1144
  *     property ctx:
  *         def __get__(self):
  *             return self._pd._context;             # <<<<<<<<<<<<<<
@@ -22912,7 +22856,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2MR_3ctx___get__(struct __pyx_obj_4rdma
   __pyx_r = ((PyObject *)__pyx_v_self->_pd->_context);
   goto __pyx_L0;
 
-  /* "rdma/ibverbs.pyx":1147
+  /* "rdma/ibverbs.pyx":1143
  * 
  *     property ctx:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -22927,7 +22871,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2MR_3ctx___get__(struct __pyx_obj_4rdma
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":1151
+/* "rdma/ibverbs.pyx":1147
  * 
  *     property addr:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -22957,7 +22901,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2MR_4addr___get__(struct __pyx_obj_4rdm
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "rdma/ibverbs.pyx":1152
+  /* "rdma/ibverbs.pyx":1148
  *     property addr:
  *         def __get__(self):
  *             return <uintptr_t>self._mr.addr             # <<<<<<<<<<<<<<
@@ -22965,13 +22909,13 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2MR_4addr___get__(struct __pyx_obj_4rdm
  *     property length:
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_uintptr_t(((uintptr_t)__pyx_v_self->_mr->addr)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1152, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_uintptr_t(((uintptr_t)__pyx_v_self->_mr->addr)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1148, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "rdma/ibverbs.pyx":1151
+  /* "rdma/ibverbs.pyx":1147
  * 
  *     property addr:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -22990,7 +22934,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2MR_4addr___get__(struct __pyx_obj_4rdm
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":1155
+/* "rdma/ibverbs.pyx":1151
  * 
  *     property length:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -23020,7 +22964,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2MR_6length___get__(struct __pyx_obj_4r
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "rdma/ibverbs.pyx":1156
+  /* "rdma/ibverbs.pyx":1152
  *     property length:
  *         def __get__(self):
  *             return self._mr.length             # <<<<<<<<<<<<<<
@@ -23028,13 +22972,13 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2MR_6length___get__(struct __pyx_obj_4r
  *     property lkey:
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_FromSize_t(__pyx_v_self->_mr->length); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1156, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_FromSize_t(__pyx_v_self->_mr->length); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1152, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "rdma/ibverbs.pyx":1155
+  /* "rdma/ibverbs.pyx":1151
  * 
  *     property length:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -23053,7 +22997,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2MR_6length___get__(struct __pyx_obj_4r
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":1159
+/* "rdma/ibverbs.pyx":1155
  * 
  *     property lkey:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -23083,7 +23027,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2MR_4lkey___get__(struct __pyx_obj_4rdm
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "rdma/ibverbs.pyx":1160
+  /* "rdma/ibverbs.pyx":1156
  *     property lkey:
  *         def __get__(self):
  *             return self._mr.lkey             # <<<<<<<<<<<<<<
@@ -23091,13 +23035,13 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2MR_4lkey___get__(struct __pyx_obj_4rdm
  *     property rkey:
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->_mr->lkey); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1160, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->_mr->lkey); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1156, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "rdma/ibverbs.pyx":1159
+  /* "rdma/ibverbs.pyx":1155
  * 
  *     property lkey:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -23116,7 +23060,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2MR_4lkey___get__(struct __pyx_obj_4rdm
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":1163
+/* "rdma/ibverbs.pyx":1159
  * 
  *     property rkey:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -23146,7 +23090,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2MR_4rkey___get__(struct __pyx_obj_4rdm
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "rdma/ibverbs.pyx":1164
+  /* "rdma/ibverbs.pyx":1160
  *     property rkey:
  *         def __get__(self):
  *             return self._mr.rkey             # <<<<<<<<<<<<<<
@@ -23154,13 +23098,13 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2MR_4rkey___get__(struct __pyx_obj_4rdm
  *     def __cinit__(self, PD pd not None, buf, int access=0):
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->_mr->rkey); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1164, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->_mr->rkey); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1160, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "rdma/ibverbs.pyx":1163
+  /* "rdma/ibverbs.pyx":1159
  * 
  *     property rkey:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -23179,7 +23123,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2MR_4rkey___get__(struct __pyx_obj_4rdm
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":1166
+/* "rdma/ibverbs.pyx":1162
  *             return self._mr.rkey
  * 
  *     def __cinit__(self, PD pd not None, buf, int access=0):             # <<<<<<<<<<<<<<
@@ -23224,7 +23168,7 @@ static int __pyx_pw_4rdma_7ibverbs_2MR_1__cinit__(PyObject *__pyx_v_self, PyObje
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_buf)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__cinit__", 0, 2, 3, 1); __PYX_ERR(0, 1166, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__cinit__", 0, 2, 3, 1); __PYX_ERR(0, 1162, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
@@ -23234,7 +23178,7 @@ static int __pyx_pw_4rdma_7ibverbs_2MR_1__cinit__(PyObject *__pyx_v_self, PyObje
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__cinit__") < 0)) __PYX_ERR(0, 1166, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__cinit__") < 0)) __PYX_ERR(0, 1162, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -23249,20 +23193,20 @@ static int __pyx_pw_4rdma_7ibverbs_2MR_1__cinit__(PyObject *__pyx_v_self, PyObje
     __pyx_v_pd = ((struct __pyx_obj_4rdma_7ibverbs_PD *)values[0]);
     __pyx_v_buf = values[1];
     if (values[2]) {
-      __pyx_v_access = __Pyx_PyInt_As_int(values[2]); if (unlikely((__pyx_v_access == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1166, __pyx_L3_error)
+      __pyx_v_access = __Pyx_PyInt_As_int(values[2]); if (unlikely((__pyx_v_access == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1162, __pyx_L3_error)
     } else {
       __pyx_v_access = ((int)0);
     }
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__cinit__", 0, 2, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 1166, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("__cinit__", 0, 2, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 1162, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("rdma.ibverbs.MR.__cinit__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return -1;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_pd), __pyx_ptype_4rdma_7ibverbs_PD, 0, "pd", 0))) __PYX_ERR(0, 1166, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_pd), __pyx_ptype_4rdma_7ibverbs_PD, 0, "pd", 0))) __PYX_ERR(0, 1162, __pyx_L1_error)
   __pyx_r = __pyx_pf_4rdma_7ibverbs_2MR___cinit__(((struct __pyx_obj_4rdma_7ibverbs_MR *)__pyx_v_self), __pyx_v_pd, __pyx_v_buf, __pyx_v_access);
 
   /* function exit code */
@@ -23292,7 +23236,7 @@ static int __pyx_pf_4rdma_7ibverbs_2MR___cinit__(struct __pyx_obj_4rdma_7ibverbs
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__cinit__", 0);
 
-  /* "rdma/ibverbs.pyx":1171
+  /* "rdma/ibverbs.pyx":1167
  *         cdef int rc
  * 
  *         if access & (c.IBV_ACCESS_LOCAL_WRITE | c.IBV_ACCESS_REMOTE_WRITE) != 0:             # <<<<<<<<<<<<<<
@@ -23302,7 +23246,7 @@ static int __pyx_pf_4rdma_7ibverbs_2MR___cinit__(struct __pyx_obj_4rdma_7ibverbs
   __pyx_t_1 = (((__pyx_v_access & (IBV_ACCESS_LOCAL_WRITE | IBV_ACCESS_REMOTE_WRITE)) != 0) != 0);
   if (__pyx_t_1) {
 
-    /* "rdma/ibverbs.pyx":1172
+    /* "rdma/ibverbs.pyx":1168
  * 
  *         if access & (c.IBV_ACCESS_LOCAL_WRITE | c.IBV_ACCESS_REMOTE_WRITE) != 0:
  *             rc = PyObject_AsWriteBuffer(buf, &addr, &length)             # <<<<<<<<<<<<<<
@@ -23311,7 +23255,7 @@ static int __pyx_pf_4rdma_7ibverbs_2MR___cinit__(struct __pyx_obj_4rdma_7ibverbs
  */
     __pyx_v_rc = PyObject_AsWriteBuffer(__pyx_v_buf, (&__pyx_v_addr), (&__pyx_v_length));
 
-    /* "rdma/ibverbs.pyx":1173
+    /* "rdma/ibverbs.pyx":1169
  *         if access & (c.IBV_ACCESS_LOCAL_WRITE | c.IBV_ACCESS_REMOTE_WRITE) != 0:
  *             rc = PyObject_AsWriteBuffer(buf, &addr, &length)
  *             if rc != 0:             # <<<<<<<<<<<<<<
@@ -23321,20 +23265,20 @@ static int __pyx_pf_4rdma_7ibverbs_2MR___cinit__(struct __pyx_obj_4rdma_7ibverbs
     __pyx_t_1 = ((__pyx_v_rc != 0) != 0);
     if (unlikely(__pyx_t_1)) {
 
-      /* "rdma/ibverbs.pyx":1174
+      /* "rdma/ibverbs.pyx":1170
  *             rc = PyObject_AsWriteBuffer(buf, &addr, &length)
  *             if rc != 0:
  *                 raise TypeError("Expected mutable buffer")             # <<<<<<<<<<<<<<
  *         else:
  *             rc = PyObject_AsReadBuffer(buf, <const_void_ptr_ptr>&addr, &length)
  */
-      __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_tuple__23, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1174, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_tuple__23, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1170, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_Raise(__pyx_t_2, 0, 0, 0);
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-      __PYX_ERR(0, 1174, __pyx_L1_error)
+      __PYX_ERR(0, 1170, __pyx_L1_error)
 
-      /* "rdma/ibverbs.pyx":1173
+      /* "rdma/ibverbs.pyx":1169
  *         if access & (c.IBV_ACCESS_LOCAL_WRITE | c.IBV_ACCESS_REMOTE_WRITE) != 0:
  *             rc = PyObject_AsWriteBuffer(buf, &addr, &length)
  *             if rc != 0:             # <<<<<<<<<<<<<<
@@ -23343,7 +23287,7 @@ static int __pyx_pf_4rdma_7ibverbs_2MR___cinit__(struct __pyx_obj_4rdma_7ibverbs
  */
     }
 
-    /* "rdma/ibverbs.pyx":1171
+    /* "rdma/ibverbs.pyx":1167
  *         cdef int rc
  * 
  *         if access & (c.IBV_ACCESS_LOCAL_WRITE | c.IBV_ACCESS_REMOTE_WRITE) != 0:             # <<<<<<<<<<<<<<
@@ -23353,7 +23297,7 @@ static int __pyx_pf_4rdma_7ibverbs_2MR___cinit__(struct __pyx_obj_4rdma_7ibverbs
     goto __pyx_L3;
   }
 
-  /* "rdma/ibverbs.pyx":1176
+  /* "rdma/ibverbs.pyx":1172
  *                 raise TypeError("Expected mutable buffer")
  *         else:
  *             rc = PyObject_AsReadBuffer(buf, <const_void_ptr_ptr>&addr, &length)             # <<<<<<<<<<<<<<
@@ -23363,7 +23307,7 @@ static int __pyx_pf_4rdma_7ibverbs_2MR___cinit__(struct __pyx_obj_4rdma_7ibverbs
   /*else*/ {
     __pyx_v_rc = PyObject_AsReadBuffer(__pyx_v_buf, ((const_void_ptr_ptr)(&__pyx_v_addr)), (&__pyx_v_length));
 
-    /* "rdma/ibverbs.pyx":1177
+    /* "rdma/ibverbs.pyx":1173
  *         else:
  *             rc = PyObject_AsReadBuffer(buf, <const_void_ptr_ptr>&addr, &length)
  *             if rc != 0:             # <<<<<<<<<<<<<<
@@ -23373,20 +23317,20 @@ static int __pyx_pf_4rdma_7ibverbs_2MR___cinit__(struct __pyx_obj_4rdma_7ibverbs
     __pyx_t_1 = ((__pyx_v_rc != 0) != 0);
     if (unlikely(__pyx_t_1)) {
 
-      /* "rdma/ibverbs.pyx":1178
+      /* "rdma/ibverbs.pyx":1174
  *             rc = PyObject_AsReadBuffer(buf, <const_void_ptr_ptr>&addr, &length)
  *             if rc != 0:
  *                 raise TypeError("Expected buffer")             # <<<<<<<<<<<<<<
  * 
  *         self._pd = pd
  */
-      __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_tuple__9, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1178, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_tuple__9, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1174, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_Raise(__pyx_t_2, 0, 0, 0);
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-      __PYX_ERR(0, 1178, __pyx_L1_error)
+      __PYX_ERR(0, 1174, __pyx_L1_error)
 
-      /* "rdma/ibverbs.pyx":1177
+      /* "rdma/ibverbs.pyx":1173
  *         else:
  *             rc = PyObject_AsReadBuffer(buf, <const_void_ptr_ptr>&addr, &length)
  *             if rc != 0:             # <<<<<<<<<<<<<<
@@ -23397,7 +23341,7 @@ static int __pyx_pf_4rdma_7ibverbs_2MR___cinit__(struct __pyx_obj_4rdma_7ibverbs
   }
   __pyx_L3:;
 
-  /* "rdma/ibverbs.pyx":1180
+  /* "rdma/ibverbs.pyx":1176
  *                 raise TypeError("Expected buffer")
  * 
  *         self._pd = pd             # <<<<<<<<<<<<<<
@@ -23410,7 +23354,7 @@ static int __pyx_pf_4rdma_7ibverbs_2MR___cinit__(struct __pyx_obj_4rdma_7ibverbs
   __Pyx_DECREF(((PyObject *)__pyx_v_self->_pd));
   __pyx_v_self->_pd = __pyx_v_pd;
 
-  /* "rdma/ibverbs.pyx":1181
+  /* "rdma/ibverbs.pyx":1177
  * 
  *         self._pd = pd
  *         self._buf = buf             # <<<<<<<<<<<<<<
@@ -23423,7 +23367,7 @@ static int __pyx_pf_4rdma_7ibverbs_2MR___cinit__(struct __pyx_obj_4rdma_7ibverbs
   __Pyx_DECREF(__pyx_v_self->_buf);
   __pyx_v_self->_buf = __pyx_v_buf;
 
-  /* "rdma/ibverbs.pyx":1182
+  /* "rdma/ibverbs.pyx":1178
  *         self._pd = pd
  *         self._buf = buf
  *         self._mr = c.ibv_reg_mr(pd._pd, addr, length, access)             # <<<<<<<<<<<<<<
@@ -23432,7 +23376,7 @@ static int __pyx_pf_4rdma_7ibverbs_2MR___cinit__(struct __pyx_obj_4rdma_7ibverbs
  */
   __pyx_v_self->_mr = ibv_reg_mr(__pyx_v_pd->_pd, __pyx_v_addr, __pyx_v_length, __pyx_v_access);
 
-  /* "rdma/ibverbs.pyx":1183
+  /* "rdma/ibverbs.pyx":1179
  *         self._buf = buf
  *         self._mr = c.ibv_reg_mr(pd._pd, addr, length, access)
  *         if self._mr == NULL:             # <<<<<<<<<<<<<<
@@ -23442,19 +23386,19 @@ static int __pyx_pf_4rdma_7ibverbs_2MR___cinit__(struct __pyx_obj_4rdma_7ibverbs
   __pyx_t_1 = ((__pyx_v_self->_mr == NULL) != 0);
   if (unlikely(__pyx_t_1)) {
 
-    /* "rdma/ibverbs.pyx":1184
+    /* "rdma/ibverbs.pyx":1180
  *         self._mr = c.ibv_reg_mr(pd._pd, addr, length, access)
  *         if self._mr == NULL:
  *             raise rdma.SysError(errno,"ibv_reg_mr",             # <<<<<<<<<<<<<<
  *                                 "Failed to register memory region")
  * 
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_rdma); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1184, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_rdma); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1180, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_SysError); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1184, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_SysError); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1180, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __pyx_t_3 = __Pyx_PyInt_From_int(errno); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1184, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyInt_From_int(errno); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1180, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __pyx_t_5 = NULL;
     __pyx_t_6 = 0;
@@ -23471,7 +23415,7 @@ static int __pyx_pf_4rdma_7ibverbs_2MR___cinit__(struct __pyx_obj_4rdma_7ibverbs
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_4)) {
       PyObject *__pyx_temp[4] = {__pyx_t_5, __pyx_t_3, __pyx_n_s_ibv_reg_mr, __pyx_kp_s_Failed_to_register_memory_region};
-      __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_6, 3+__pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1184, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_6, 3+__pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1180, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -23480,14 +23424,14 @@ static int __pyx_pf_4rdma_7ibverbs_2MR___cinit__(struct __pyx_obj_4rdma_7ibverbs
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_4)) {
       PyObject *__pyx_temp[4] = {__pyx_t_5, __pyx_t_3, __pyx_n_s_ibv_reg_mr, __pyx_kp_s_Failed_to_register_memory_region};
-      __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_6, 3+__pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1184, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_6, 3+__pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1180, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     } else
     #endif
     {
-      __pyx_t_7 = PyTuple_New(3+__pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1184, __pyx_L1_error)
+      __pyx_t_7 = PyTuple_New(3+__pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1180, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_7);
       if (__pyx_t_5) {
         __Pyx_GIVEREF(__pyx_t_5); PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_t_5); __pyx_t_5 = NULL;
@@ -23501,16 +23445,16 @@ static int __pyx_pf_4rdma_7ibverbs_2MR___cinit__(struct __pyx_obj_4rdma_7ibverbs
       __Pyx_GIVEREF(__pyx_kp_s_Failed_to_register_memory_region);
       PyTuple_SET_ITEM(__pyx_t_7, 2+__pyx_t_6, __pyx_kp_s_Failed_to_register_memory_region);
       __pyx_t_3 = 0;
-      __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_7, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1184, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_7, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1180, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
     }
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_Raise(__pyx_t_2, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __PYX_ERR(0, 1184, __pyx_L1_error)
+    __PYX_ERR(0, 1180, __pyx_L1_error)
 
-    /* "rdma/ibverbs.pyx":1183
+    /* "rdma/ibverbs.pyx":1179
  *         self._buf = buf
  *         self._mr = c.ibv_reg_mr(pd._pd, addr, length, access)
  *         if self._mr == NULL:             # <<<<<<<<<<<<<<
@@ -23519,7 +23463,7 @@ static int __pyx_pf_4rdma_7ibverbs_2MR___cinit__(struct __pyx_obj_4rdma_7ibverbs
  */
   }
 
-  /* "rdma/ibverbs.pyx":1166
+  /* "rdma/ibverbs.pyx":1162
  *             return self._mr.rkey
  * 
  *     def __cinit__(self, PD pd not None, buf, int access=0):             # <<<<<<<<<<<<<<
@@ -23543,7 +23487,7 @@ static int __pyx_pf_4rdma_7ibverbs_2MR___cinit__(struct __pyx_obj_4rdma_7ibverbs
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":1187
+/* "rdma/ibverbs.pyx":1183
  *                                 "Failed to register memory region")
  * 
  *     def __dealloc__(self):             # <<<<<<<<<<<<<<
@@ -23570,18 +23514,18 @@ static void __pyx_pf_4rdma_7ibverbs_2MR_2__dealloc__(struct __pyx_obj_4rdma_7ibv
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__dealloc__", 0);
 
-  /* "rdma/ibverbs.pyx":1188
+  /* "rdma/ibverbs.pyx":1184
  * 
  *     def __dealloc__(self):
  *         self._close();             # <<<<<<<<<<<<<<
  * 
  *     def __enter__(self):
  */
-  __pyx_t_1 = ((struct __pyx_vtabstruct_4rdma_7ibverbs_MR *)__pyx_v_self->__pyx_vtab)->_close(__pyx_v_self); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1188, __pyx_L1_error)
+  __pyx_t_1 = ((struct __pyx_vtabstruct_4rdma_7ibverbs_MR *)__pyx_v_self->__pyx_vtab)->_close(__pyx_v_self); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1184, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "rdma/ibverbs.pyx":1187
+  /* "rdma/ibverbs.pyx":1183
  *                                 "Failed to register memory region")
  * 
  *     def __dealloc__(self):             # <<<<<<<<<<<<<<
@@ -23598,7 +23542,7 @@ static void __pyx_pf_4rdma_7ibverbs_2MR_2__dealloc__(struct __pyx_obj_4rdma_7ibv
   __Pyx_RefNannyFinishContext();
 }
 
-/* "rdma/ibverbs.pyx":1190
+/* "rdma/ibverbs.pyx":1186
  *         self._close();
  * 
  *     def __enter__(self):             # <<<<<<<<<<<<<<
@@ -23624,7 +23568,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2MR_4__enter__(struct __pyx_obj_4rdma_7
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__enter__", 0);
 
-  /* "rdma/ibverbs.pyx":1191
+  /* "rdma/ibverbs.pyx":1187
  * 
  *     def __enter__(self):
  *         return self             # <<<<<<<<<<<<<<
@@ -23636,7 +23580,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2MR_4__enter__(struct __pyx_obj_4rdma_7
   __pyx_r = ((PyObject *)__pyx_v_self);
   goto __pyx_L0;
 
-  /* "rdma/ibverbs.pyx":1190
+  /* "rdma/ibverbs.pyx":1186
  *         self._close();
  * 
  *     def __enter__(self):             # <<<<<<<<<<<<<<
@@ -23651,7 +23595,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2MR_4__enter__(struct __pyx_obj_4rdma_7
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":1193
+/* "rdma/ibverbs.pyx":1189
  *         return self
  * 
  *     def __exit__(self,*exc_info):             # <<<<<<<<<<<<<<
@@ -23686,18 +23630,18 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2MR_6__exit__(struct __pyx_obj_4rdma_7i
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__exit__", 0);
 
-  /* "rdma/ibverbs.pyx":1194
+  /* "rdma/ibverbs.pyx":1190
  * 
  *     def __exit__(self,*exc_info):
  *         self._close();             # <<<<<<<<<<<<<<
  * 
  *     def close(self):
  */
-  __pyx_t_1 = ((struct __pyx_vtabstruct_4rdma_7ibverbs_MR *)__pyx_v_self->__pyx_vtab)->_close(__pyx_v_self); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1194, __pyx_L1_error)
+  __pyx_t_1 = ((struct __pyx_vtabstruct_4rdma_7ibverbs_MR *)__pyx_v_self->__pyx_vtab)->_close(__pyx_v_self); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1190, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "rdma/ibverbs.pyx":1193
+  /* "rdma/ibverbs.pyx":1189
  *         return self
  * 
  *     def __exit__(self,*exc_info):             # <<<<<<<<<<<<<<
@@ -23718,7 +23662,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2MR_6__exit__(struct __pyx_obj_4rdma_7i
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":1196
+/* "rdma/ibverbs.pyx":1192
  *         self._close();
  * 
  *     def close(self):             # <<<<<<<<<<<<<<
@@ -23749,18 +23693,18 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2MR_8close(struct __pyx_obj_4rdma_7ibve
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("close", 0);
 
-  /* "rdma/ibverbs.pyx":1198
+  /* "rdma/ibverbs.pyx":1194
  *     def close(self):
  *         """Free the verbs MR handle."""
  *         self._close();             # <<<<<<<<<<<<<<
  * 
  *     cdef _close(self):
  */
-  __pyx_t_1 = ((struct __pyx_vtabstruct_4rdma_7ibverbs_MR *)__pyx_v_self->__pyx_vtab)->_close(__pyx_v_self); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1198, __pyx_L1_error)
+  __pyx_t_1 = ((struct __pyx_vtabstruct_4rdma_7ibverbs_MR *)__pyx_v_self->__pyx_vtab)->_close(__pyx_v_self); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1194, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "rdma/ibverbs.pyx":1196
+  /* "rdma/ibverbs.pyx":1192
  *         self._close();
  * 
  *     def close(self):             # <<<<<<<<<<<<<<
@@ -23781,7 +23725,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2MR_8close(struct __pyx_obj_4rdma_7ibve
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":1200
+/* "rdma/ibverbs.pyx":1196
  *         self._close();
  * 
  *     cdef _close(self):             # <<<<<<<<<<<<<<
@@ -23805,7 +23749,7 @@ static PyObject *__pyx_f_4rdma_7ibverbs_2MR__close(struct __pyx_obj_4rdma_7ibver
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("_close", 0);
 
-  /* "rdma/ibverbs.pyx":1202
+  /* "rdma/ibverbs.pyx":1198
  *     cdef _close(self):
  *         cdef int rc
  *         if self._mr != NULL:             # <<<<<<<<<<<<<<
@@ -23815,7 +23759,7 @@ static PyObject *__pyx_f_4rdma_7ibverbs_2MR__close(struct __pyx_obj_4rdma_7ibver
   __pyx_t_1 = ((__pyx_v_self->_mr != NULL) != 0);
   if (__pyx_t_1) {
 
-    /* "rdma/ibverbs.pyx":1203
+    /* "rdma/ibverbs.pyx":1199
  *         cdef int rc
  *         if self._mr != NULL:
  *             rc = c.ibv_dereg_mr(self._mr)             # <<<<<<<<<<<<<<
@@ -23824,7 +23768,7 @@ static PyObject *__pyx_f_4rdma_7ibverbs_2MR__close(struct __pyx_obj_4rdma_7ibver
  */
     __pyx_v_rc = ibv_dereg_mr(__pyx_v_self->_mr);
 
-    /* "rdma/ibverbs.pyx":1204
+    /* "rdma/ibverbs.pyx":1200
  *         if self._mr != NULL:
  *             rc = c.ibv_dereg_mr(self._mr)
  *             if rc != 0:             # <<<<<<<<<<<<<<
@@ -23834,19 +23778,19 @@ static PyObject *__pyx_f_4rdma_7ibverbs_2MR__close(struct __pyx_obj_4rdma_7ibver
     __pyx_t_1 = ((__pyx_v_rc != 0) != 0);
     if (unlikely(__pyx_t_1)) {
 
-      /* "rdma/ibverbs.pyx":1205
+      /* "rdma/ibverbs.pyx":1201
  *             rc = c.ibv_dereg_mr(self._mr)
  *             if rc != 0:
  *                 raise rdma.SysError(errno,"ibv_dereg_mr",             # <<<<<<<<<<<<<<
  *                                     "Failed to deregister memory region")
  *             self._mr = NULL
  */
-      __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_rdma); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1205, __pyx_L1_error)
+      __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_rdma); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1201, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
-      __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_SysError); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1205, __pyx_L1_error)
+      __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_SysError); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1201, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-      __pyx_t_3 = __Pyx_PyInt_From_int(errno); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1205, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyInt_From_int(errno); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1201, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
       __pyx_t_5 = NULL;
       __pyx_t_6 = 0;
@@ -23863,7 +23807,7 @@ static PyObject *__pyx_f_4rdma_7ibverbs_2MR__close(struct __pyx_obj_4rdma_7ibver
       #if CYTHON_FAST_PYCALL
       if (PyFunction_Check(__pyx_t_4)) {
         PyObject *__pyx_temp[4] = {__pyx_t_5, __pyx_t_3, __pyx_n_s_ibv_dereg_mr, __pyx_kp_s_Failed_to_deregister_memory_regi};
-        __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_6, 3+__pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1205, __pyx_L1_error)
+        __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_6, 3+__pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1201, __pyx_L1_error)
         __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -23872,14 +23816,14 @@ static PyObject *__pyx_f_4rdma_7ibverbs_2MR__close(struct __pyx_obj_4rdma_7ibver
       #if CYTHON_FAST_PYCCALL
       if (__Pyx_PyFastCFunction_Check(__pyx_t_4)) {
         PyObject *__pyx_temp[4] = {__pyx_t_5, __pyx_t_3, __pyx_n_s_ibv_dereg_mr, __pyx_kp_s_Failed_to_deregister_memory_regi};
-        __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_6, 3+__pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1205, __pyx_L1_error)
+        __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_6, 3+__pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1201, __pyx_L1_error)
         __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
       } else
       #endif
       {
-        __pyx_t_7 = PyTuple_New(3+__pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1205, __pyx_L1_error)
+        __pyx_t_7 = PyTuple_New(3+__pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1201, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_7);
         if (__pyx_t_5) {
           __Pyx_GIVEREF(__pyx_t_5); PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_t_5); __pyx_t_5 = NULL;
@@ -23893,16 +23837,16 @@ static PyObject *__pyx_f_4rdma_7ibverbs_2MR__close(struct __pyx_obj_4rdma_7ibver
         __Pyx_GIVEREF(__pyx_kp_s_Failed_to_deregister_memory_regi);
         PyTuple_SET_ITEM(__pyx_t_7, 2+__pyx_t_6, __pyx_kp_s_Failed_to_deregister_memory_regi);
         __pyx_t_3 = 0;
-        __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_7, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1205, __pyx_L1_error)
+        __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_7, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1201, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
       }
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       __Pyx_Raise(__pyx_t_2, 0, 0, 0);
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-      __PYX_ERR(0, 1205, __pyx_L1_error)
+      __PYX_ERR(0, 1201, __pyx_L1_error)
 
-      /* "rdma/ibverbs.pyx":1204
+      /* "rdma/ibverbs.pyx":1200
  *         if self._mr != NULL:
  *             rc = c.ibv_dereg_mr(self._mr)
  *             if rc != 0:             # <<<<<<<<<<<<<<
@@ -23911,7 +23855,7 @@ static PyObject *__pyx_f_4rdma_7ibverbs_2MR__close(struct __pyx_obj_4rdma_7ibver
  */
     }
 
-    /* "rdma/ibverbs.pyx":1207
+    /* "rdma/ibverbs.pyx":1203
  *                 raise rdma.SysError(errno,"ibv_dereg_mr",
  *                                     "Failed to deregister memory region")
  *             self._mr = NULL             # <<<<<<<<<<<<<<
@@ -23920,7 +23864,7 @@ static PyObject *__pyx_f_4rdma_7ibverbs_2MR__close(struct __pyx_obj_4rdma_7ibver
  */
     __pyx_v_self->_mr = NULL;
 
-    /* "rdma/ibverbs.pyx":1202
+    /* "rdma/ibverbs.pyx":1198
  *     cdef _close(self):
  *         cdef int rc
  *         if self._mr != NULL:             # <<<<<<<<<<<<<<
@@ -23929,7 +23873,7 @@ static PyObject *__pyx_f_4rdma_7ibverbs_2MR__close(struct __pyx_obj_4rdma_7ibver
  */
   }
 
-  /* "rdma/ibverbs.pyx":1200
+  /* "rdma/ibverbs.pyx":1196
  *         self._close();
  * 
  *     cdef _close(self):             # <<<<<<<<<<<<<<
@@ -23954,7 +23898,7 @@ static PyObject *__pyx_f_4rdma_7ibverbs_2MR__close(struct __pyx_obj_4rdma_7ibver
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":1209
+/* "rdma/ibverbs.pyx":1205
  *             self._mr = NULL
  * 
  *     def sge(self,int length=-1,int off=0):             # <<<<<<<<<<<<<<
@@ -24003,7 +23947,7 @@ static PyObject *__pyx_pw_4rdma_7ibverbs_2MR_11sge(PyObject *__pyx_v_self, PyObj
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "sge") < 0)) __PYX_ERR(0, 1209, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "sge") < 0)) __PYX_ERR(0, 1205, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -24016,19 +23960,19 @@ static PyObject *__pyx_pw_4rdma_7ibverbs_2MR_11sge(PyObject *__pyx_v_self, PyObj
       }
     }
     if (values[0]) {
-      __pyx_v_length = __Pyx_PyInt_As_int(values[0]); if (unlikely((__pyx_v_length == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1209, __pyx_L3_error)
+      __pyx_v_length = __Pyx_PyInt_As_int(values[0]); if (unlikely((__pyx_v_length == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1205, __pyx_L3_error)
     } else {
       __pyx_v_length = ((int)-1);
     }
     if (values[1]) {
-      __pyx_v_off = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_off == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1209, __pyx_L3_error)
+      __pyx_v_off = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_off == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1205, __pyx_L3_error)
     } else {
       __pyx_v_off = ((int)0);
     }
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("sge", 0, 0, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 1209, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("sge", 0, 0, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 1205, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("rdma.ibverbs.MR.sge", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -24055,7 +23999,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2MR_10sge(struct __pyx_obj_4rdma_7ibver
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("sge", 0);
 
-  /* "rdma/ibverbs.pyx":1216
+  /* "rdma/ibverbs.pyx":1212
  *         cdef int _off
  * 
  *         _length = length             # <<<<<<<<<<<<<<
@@ -24064,7 +24008,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2MR_10sge(struct __pyx_obj_4rdma_7ibver
  */
   __pyx_v__length = __pyx_v_length;
 
-  /* "rdma/ibverbs.pyx":1217
+  /* "rdma/ibverbs.pyx":1213
  * 
  *         _length = length
  *         _off = off             # <<<<<<<<<<<<<<
@@ -24073,7 +24017,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2MR_10sge(struct __pyx_obj_4rdma_7ibver
  */
   __pyx_v__off = __pyx_v_off;
 
-  /* "rdma/ibverbs.pyx":1218
+  /* "rdma/ibverbs.pyx":1214
  *         _length = length
  *         _off = off
  *         if _off < 0:             # <<<<<<<<<<<<<<
@@ -24083,26 +24027,26 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2MR_10sge(struct __pyx_obj_4rdma_7ibver
   __pyx_t_1 = ((__pyx_v__off < 0) != 0);
   if (unlikely(__pyx_t_1)) {
 
-    /* "rdma/ibverbs.pyx":1219
+    /* "rdma/ibverbs.pyx":1215
  *         _off = off
  *         if _off < 0:
  *             raise ValueError("off %r cannot be negative"%off);             # <<<<<<<<<<<<<<
  *         if _length == -1:
  *             _length = self._mr.length - _off;
  */
-    __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_off); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1219, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_off); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1215, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_3 = __Pyx_PyString_Format(__pyx_kp_s_off_r_cannot_be_negative, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1219, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyString_Format(__pyx_kp_s_off_r_cannot_be_negative, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1215, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_builtin_ValueError, __pyx_t_3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1219, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_builtin_ValueError, __pyx_t_3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1215, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_Raise(__pyx_t_2, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __PYX_ERR(0, 1219, __pyx_L1_error)
+    __PYX_ERR(0, 1215, __pyx_L1_error)
 
-    /* "rdma/ibverbs.pyx":1218
+    /* "rdma/ibverbs.pyx":1214
  *         _length = length
  *         _off = off
  *         if _off < 0:             # <<<<<<<<<<<<<<
@@ -24111,7 +24055,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2MR_10sge(struct __pyx_obj_4rdma_7ibver
  */
   }
 
-  /* "rdma/ibverbs.pyx":1220
+  /* "rdma/ibverbs.pyx":1216
  *         if _off < 0:
  *             raise ValueError("off %r cannot be negative"%off);
  *         if _length == -1:             # <<<<<<<<<<<<<<
@@ -24121,7 +24065,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2MR_10sge(struct __pyx_obj_4rdma_7ibver
   __pyx_t_1 = ((__pyx_v__length == -1L) != 0);
   if (__pyx_t_1) {
 
-    /* "rdma/ibverbs.pyx":1221
+    /* "rdma/ibverbs.pyx":1217
  *             raise ValueError("off %r cannot be negative"%off);
  *         if _length == -1:
  *             _length = self._mr.length - _off;             # <<<<<<<<<<<<<<
@@ -24130,7 +24074,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2MR_10sge(struct __pyx_obj_4rdma_7ibver
  */
     __pyx_v__length = (__pyx_v_self->_mr->length - __pyx_v__off);
 
-    /* "rdma/ibverbs.pyx":1220
+    /* "rdma/ibverbs.pyx":1216
  *         if _off < 0:
  *             raise ValueError("off %r cannot be negative"%off);
  *         if _length == -1:             # <<<<<<<<<<<<<<
@@ -24139,7 +24083,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2MR_10sge(struct __pyx_obj_4rdma_7ibver
  */
   }
 
-  /* "rdma/ibverbs.pyx":1222
+  /* "rdma/ibverbs.pyx":1218
  *         if _length == -1:
  *             _length = self._mr.length - _off;
  *         if _length + _off > self._mr.length:             # <<<<<<<<<<<<<<
@@ -24149,34 +24093,34 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2MR_10sge(struct __pyx_obj_4rdma_7ibver
   __pyx_t_1 = (((__pyx_v__length + __pyx_v__off) > __pyx_v_self->_mr->length) != 0);
   if (unlikely(__pyx_t_1)) {
 
-    /* "rdma/ibverbs.pyx":1223
+    /* "rdma/ibverbs.pyx":1219
  *             _length = self._mr.length - _off;
  *         if _length + _off > self._mr.length:
  *             raise ValueError("Length is too long %u > %u"%(_length + _off,             # <<<<<<<<<<<<<<
  *                                                            self._mr.length));
  *         return sge(addr=<uintptr_t>(self._mr.addr + _off),
  */
-    __pyx_t_2 = __Pyx_PyInt_From_int((__pyx_v__length + __pyx_v__off)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1223, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyInt_From_int((__pyx_v__length + __pyx_v__off)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1219, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
 
-    /* "rdma/ibverbs.pyx":1224
+    /* "rdma/ibverbs.pyx":1220
  *         if _length + _off > self._mr.length:
  *             raise ValueError("Length is too long %u > %u"%(_length + _off,
  *                                                            self._mr.length));             # <<<<<<<<<<<<<<
  *         return sge(addr=<uintptr_t>(self._mr.addr + _off),
  *                    lkey=self._mr.lkey,
  */
-    __pyx_t_3 = __Pyx_PyInt_FromSize_t(__pyx_v_self->_mr->length); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1224, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyInt_FromSize_t(__pyx_v_self->_mr->length); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1220, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
 
-    /* "rdma/ibverbs.pyx":1223
+    /* "rdma/ibverbs.pyx":1219
  *             _length = self._mr.length - _off;
  *         if _length + _off > self._mr.length:
  *             raise ValueError("Length is too long %u > %u"%(_length + _off,             # <<<<<<<<<<<<<<
  *                                                            self._mr.length));
  *         return sge(addr=<uintptr_t>(self._mr.addr + _off),
  */
-    __pyx_t_4 = PyTuple_New(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1223, __pyx_L1_error)
+    __pyx_t_4 = PyTuple_New(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1219, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_GIVEREF(__pyx_t_2);
     PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_2);
@@ -24184,17 +24128,17 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2MR_10sge(struct __pyx_obj_4rdma_7ibver
     PyTuple_SET_ITEM(__pyx_t_4, 1, __pyx_t_3);
     __pyx_t_2 = 0;
     __pyx_t_3 = 0;
-    __pyx_t_3 = __Pyx_PyString_Format(__pyx_kp_s_Length_is_too_long_u_u, __pyx_t_4); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1223, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyString_Format(__pyx_kp_s_Length_is_too_long_u_u, __pyx_t_4); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1219, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __pyx_t_4 = __Pyx_PyObject_CallOneArg(__pyx_builtin_ValueError, __pyx_t_3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1223, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_CallOneArg(__pyx_builtin_ValueError, __pyx_t_3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1219, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_Raise(__pyx_t_4, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __PYX_ERR(0, 1223, __pyx_L1_error)
+    __PYX_ERR(0, 1219, __pyx_L1_error)
 
-    /* "rdma/ibverbs.pyx":1222
+    /* "rdma/ibverbs.pyx":1218
  *         if _length == -1:
  *             _length = self._mr.length - _off;
  *         if _length + _off > self._mr.length:             # <<<<<<<<<<<<<<
@@ -24203,7 +24147,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2MR_10sge(struct __pyx_obj_4rdma_7ibver
  */
   }
 
-  /* "rdma/ibverbs.pyx":1225
+  /* "rdma/ibverbs.pyx":1221
  *             raise ValueError("Length is too long %u > %u"%(_length + _off,
  *                                                            self._mr.length));
  *         return sge(addr=<uintptr_t>(self._mr.addr + _off),             # <<<<<<<<<<<<<<
@@ -24211,47 +24155,47 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2MR_10sge(struct __pyx_obj_4rdma_7ibver
  *                    length=_length);
  */
   __Pyx_XDECREF(__pyx_r);
-  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_sge); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1225, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_sge); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1221, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_3 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1225, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1221, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_2 = __Pyx_PyInt_From_uintptr_t(((uintptr_t)(__pyx_v_self->_mr->addr + __pyx_v__off))); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1225, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyInt_From_uintptr_t(((uintptr_t)(__pyx_v_self->_mr->addr + __pyx_v__off))); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1221, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_addr, __pyx_t_2) < 0) __PYX_ERR(0, 1225, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_addr, __pyx_t_2) < 0) __PYX_ERR(0, 1221, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "rdma/ibverbs.pyx":1226
+  /* "rdma/ibverbs.pyx":1222
  *                                                            self._mr.length));
  *         return sge(addr=<uintptr_t>(self._mr.addr + _off),
  *                    lkey=self._mr.lkey,             # <<<<<<<<<<<<<<
  *                    length=_length);
  * 
  */
-  __pyx_t_2 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->_mr->lkey); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1226, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->_mr->lkey); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1222, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_lkey, __pyx_t_2) < 0) __PYX_ERR(0, 1225, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_lkey, __pyx_t_2) < 0) __PYX_ERR(0, 1221, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "rdma/ibverbs.pyx":1227
+  /* "rdma/ibverbs.pyx":1223
  *         return sge(addr=<uintptr_t>(self._mr.addr + _off),
  *                    lkey=self._mr.lkey,
  *                    length=_length);             # <<<<<<<<<<<<<<
  * 
  *     def __str__(self):
  */
-  __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v__length); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1227, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v__length); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1223, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_length, __pyx_t_2) < 0) __PYX_ERR(0, 1225, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_length, __pyx_t_2) < 0) __PYX_ERR(0, 1221, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "rdma/ibverbs.pyx":1225
+  /* "rdma/ibverbs.pyx":1221
  *             raise ValueError("Length is too long %u > %u"%(_length + _off,
  *                                                            self._mr.length));
  *         return sge(addr=<uintptr_t>(self._mr.addr + _off),             # <<<<<<<<<<<<<<
  *                    lkey=self._mr.lkey,
  *                    length=_length);
  */
-  __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_empty_tuple, __pyx_t_3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1225, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_empty_tuple, __pyx_t_3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1221, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -24259,7 +24203,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2MR_10sge(struct __pyx_obj_4rdma_7ibver
   __pyx_t_2 = 0;
   goto __pyx_L0;
 
-  /* "rdma/ibverbs.pyx":1209
+  /* "rdma/ibverbs.pyx":1205
  *             self._mr = NULL
  * 
  *     def sge(self,int length=-1,int off=0):             # <<<<<<<<<<<<<<
@@ -24280,7 +24224,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2MR_10sge(struct __pyx_obj_4rdma_7ibver
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":1229
+/* "rdma/ibverbs.pyx":1225
  *                    length=_length);
  * 
  *     def __str__(self):             # <<<<<<<<<<<<<<
@@ -24311,7 +24255,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2MR_12__str__(struct __pyx_obj_4rdma_7i
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__str__", 0);
 
-  /* "rdma/ibverbs.pyx":1230
+  /* "rdma/ibverbs.pyx":1226
  * 
  *     def __str__(self):
  *         return "mr:%X:%s"%(self._mr.handle,self._pd);             # <<<<<<<<<<<<<<
@@ -24319,9 +24263,9 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2MR_12__str__(struct __pyx_obj_4rdma_7i
  *         return "MR(%r,0x%x,0x%x,%u,lkey=0x%x,rkey=0x%x)"%(
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->_mr->handle); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1230, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->_mr->handle); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1226, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1230, __pyx_L1_error)
+  __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1226, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_GIVEREF(__pyx_t_1);
   PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_t_1);
@@ -24329,14 +24273,14 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2MR_12__str__(struct __pyx_obj_4rdma_7i
   __Pyx_GIVEREF(((PyObject *)__pyx_v_self->_pd));
   PyTuple_SET_ITEM(__pyx_t_2, 1, ((PyObject *)__pyx_v_self->_pd));
   __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyString_Format(__pyx_kp_s_mr_X_s, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1230, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyString_Format(__pyx_kp_s_mr_X_s, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1226, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "rdma/ibverbs.pyx":1229
+  /* "rdma/ibverbs.pyx":1225
  *                    length=_length);
  * 
  *     def __str__(self):             # <<<<<<<<<<<<<<
@@ -24356,7 +24300,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2MR_12__str__(struct __pyx_obj_4rdma_7i
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":1231
+/* "rdma/ibverbs.pyx":1227
  *     def __str__(self):
  *         return "mr:%X:%s"%(self._mr.handle,self._pd);
  *     def __repr__(self):             # <<<<<<<<<<<<<<
@@ -24391,7 +24335,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2MR_14__repr__(struct __pyx_obj_4rdma_7
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__repr__", 0);
 
-  /* "rdma/ibverbs.pyx":1232
+  /* "rdma/ibverbs.pyx":1228
  *         return "mr:%X:%s"%(self._mr.handle,self._pd);
  *     def __repr__(self):
  *         return "MR(%r,0x%x,0x%x,%u,lkey=0x%x,rkey=0x%x)"%(             # <<<<<<<<<<<<<<
@@ -24400,40 +24344,40 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2MR_14__repr__(struct __pyx_obj_4rdma_7
  */
   __Pyx_XDECREF(__pyx_r);
 
-  /* "rdma/ibverbs.pyx":1233
+  /* "rdma/ibverbs.pyx":1229
  *     def __repr__(self):
  *         return "MR(%r,0x%x,0x%x,%u,lkey=0x%x,rkey=0x%x)"%(
  *             self._pd,self._mr.handle,self.addr,self.length,             # <<<<<<<<<<<<<<
  *             self.lkey,self.rkey);
  * 
  */
-  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->_mr->handle); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1233, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->_mr->handle); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1229, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_addr); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1233, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_addr); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1229, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_length); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1233, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_length); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1229, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
 
-  /* "rdma/ibverbs.pyx":1234
+  /* "rdma/ibverbs.pyx":1230
  *         return "MR(%r,0x%x,0x%x,%u,lkey=0x%x,rkey=0x%x)"%(
  *             self._pd,self._mr.handle,self.addr,self.length,
  *             self.lkey,self.rkey);             # <<<<<<<<<<<<<<
  * 
  * cdef class QP:
  */
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_lkey); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1234, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_lkey); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1230, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_rkey); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 1234, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_rkey); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 1230, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
 
-  /* "rdma/ibverbs.pyx":1233
+  /* "rdma/ibverbs.pyx":1229
  *     def __repr__(self):
  *         return "MR(%r,0x%x,0x%x,%u,lkey=0x%x,rkey=0x%x)"%(
  *             self._pd,self._mr.handle,self.addr,self.length,             # <<<<<<<<<<<<<<
  *             self.lkey,self.rkey);
  * 
  */
-  __pyx_t_6 = PyTuple_New(6); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 1233, __pyx_L1_error)
+  __pyx_t_6 = PyTuple_New(6); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 1229, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_INCREF(((PyObject *)__pyx_v_self->_pd));
   __Pyx_GIVEREF(((PyObject *)__pyx_v_self->_pd));
@@ -24454,21 +24398,21 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2MR_14__repr__(struct __pyx_obj_4rdma_7
   __pyx_t_4 = 0;
   __pyx_t_5 = 0;
 
-  /* "rdma/ibverbs.pyx":1232
+  /* "rdma/ibverbs.pyx":1228
  *         return "mr:%X:%s"%(self._mr.handle,self._pd);
  *     def __repr__(self):
  *         return "MR(%r,0x%x,0x%x,%u,lkey=0x%x,rkey=0x%x)"%(             # <<<<<<<<<<<<<<
  *             self._pd,self._mr.handle,self.addr,self.length,
  *             self.lkey,self.rkey);
  */
-  __pyx_t_5 = __Pyx_PyString_Format(__pyx_kp_s_MR_r_0x_x_0x_x_u_lkey_0x_x_rkey, __pyx_t_6); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 1232, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyString_Format(__pyx_kp_s_MR_r_0x_x_0x_x_u_lkey_0x_x_rkey, __pyx_t_6); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 1228, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   __pyx_r = __pyx_t_5;
   __pyx_t_5 = 0;
   goto __pyx_L0;
 
-  /* "rdma/ibverbs.pyx":1231
+  /* "rdma/ibverbs.pyx":1227
  *     def __str__(self):
  *         return "mr:%X:%s"%(self._mr.handle,self._pd);
  *     def __repr__(self):             # <<<<<<<<<<<<<<
@@ -24605,7 +24549,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2MR_18__setstate_cython__(CYTHON_UNUSED
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":1249
+/* "rdma/ibverbs.pyx":1245
  * 
  *     property pd:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -24631,7 +24575,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_2pd___get__(struct __pyx_obj_4rdma_
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "rdma/ibverbs.pyx":1250
+  /* "rdma/ibverbs.pyx":1246
  *     property pd:
  *         def __get__(self):
  *             return self._pd;             # <<<<<<<<<<<<<<
@@ -24643,7 +24587,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_2pd___get__(struct __pyx_obj_4rdma_
   __pyx_r = ((PyObject *)__pyx_v_self->_pd);
   goto __pyx_L0;
 
-  /* "rdma/ibverbs.pyx":1249
+  /* "rdma/ibverbs.pyx":1245
  * 
  *     property pd:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -24658,7 +24602,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_2pd___get__(struct __pyx_obj_4rdma_
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":1253
+/* "rdma/ibverbs.pyx":1249
  * 
  *     property ctx:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -24684,7 +24628,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_3ctx___get__(struct __pyx_obj_4rdma
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "rdma/ibverbs.pyx":1254
+  /* "rdma/ibverbs.pyx":1250
  *     property ctx:
  *         def __get__(self):
  *             return self._pd._context;             # <<<<<<<<<<<<<<
@@ -24696,7 +24640,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_3ctx___get__(struct __pyx_obj_4rdma
   __pyx_r = ((PyObject *)__pyx_v_self->_pd->_context);
   goto __pyx_L0;
 
-  /* "rdma/ibverbs.pyx":1253
+  /* "rdma/ibverbs.pyx":1249
  * 
  *     property ctx:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -24711,7 +24655,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_3ctx___get__(struct __pyx_obj_4rdma
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":1257
+/* "rdma/ibverbs.pyx":1253
  * 
  *     property qp_num:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -24741,7 +24685,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_6qp_num___get__(struct __pyx_obj_4r
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "rdma/ibverbs.pyx":1258
+  /* "rdma/ibverbs.pyx":1254
  *     property qp_num:
  *         def __get__(self):
  *             return self._qp.qp_num             # <<<<<<<<<<<<<<
@@ -24749,13 +24693,13 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_6qp_num___get__(struct __pyx_obj_4r
  *         def __get__(self):
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->_qp->qp_num); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1258, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->_qp->qp_num); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1254, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "rdma/ibverbs.pyx":1257
+  /* "rdma/ibverbs.pyx":1253
  * 
  *     property qp_num:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -24774,7 +24718,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_6qp_num___get__(struct __pyx_obj_4r
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":1260
+/* "rdma/ibverbs.pyx":1256
  *             return self._qp.qp_num
  *     property qp_type:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -24804,7 +24748,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_7qp_type___get__(struct __pyx_obj_4
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "rdma/ibverbs.pyx":1261
+  /* "rdma/ibverbs.pyx":1257
  *     property qp_type:
  *         def __get__(self):
  *             return self._qp.qp_type             # <<<<<<<<<<<<<<
@@ -24812,13 +24756,13 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_7qp_type___get__(struct __pyx_obj_4
  *         def __get__(self):
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->_qp->qp_type); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1261, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->_qp->qp_type); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1257, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "rdma/ibverbs.pyx":1260
+  /* "rdma/ibverbs.pyx":1256
  *             return self._qp.qp_num
  *     property qp_type:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -24837,7 +24781,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_7qp_type___get__(struct __pyx_obj_4
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":1263
+/* "rdma/ibverbs.pyx":1259
  *             return self._qp.qp_type
  *     property state:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -24867,7 +24811,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_5state___get__(struct __pyx_obj_4rd
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "rdma/ibverbs.pyx":1264
+  /* "rdma/ibverbs.pyx":1260
  *     property state:
  *         def __get__(self):
  *             return self._qp.state             # <<<<<<<<<<<<<<
@@ -24875,13 +24819,13 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_5state___get__(struct __pyx_obj_4rd
  *         def __get__(self):
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->_qp->state); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1264, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->_qp->state); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1260, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "rdma/ibverbs.pyx":1263
+  /* "rdma/ibverbs.pyx":1259
  *             return self._qp.qp_type
  *     property state:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -24900,7 +24844,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_5state___get__(struct __pyx_obj_4rd
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":1266
+/* "rdma/ibverbs.pyx":1262
  *             return self._qp.state
  *     property max_send_wr:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -24930,7 +24874,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_11max_send_wr___get__(struct __pyx_
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "rdma/ibverbs.pyx":1267
+  /* "rdma/ibverbs.pyx":1263
  *     property max_send_wr:
  *         def __get__(self):
  *             return self._cap.max_send_wr;             # <<<<<<<<<<<<<<
@@ -24938,13 +24882,13 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_11max_send_wr___get__(struct __pyx_
  *         def __get__(self):
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->_cap.max_send_wr); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1267, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->_cap.max_send_wr); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1263, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "rdma/ibverbs.pyx":1266
+  /* "rdma/ibverbs.pyx":1262
  *             return self._qp.state
  *     property max_send_wr:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -24963,7 +24907,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_11max_send_wr___get__(struct __pyx_
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":1269
+/* "rdma/ibverbs.pyx":1265
  *             return self._cap.max_send_wr;
  *     property max_send_sge:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -24993,7 +24937,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_12max_send_sge___get__(struct __pyx
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "rdma/ibverbs.pyx":1270
+  /* "rdma/ibverbs.pyx":1266
  *     property max_send_sge:
  *         def __get__(self):
  *             return self._cap.max_send_sge;             # <<<<<<<<<<<<<<
@@ -25001,13 +24945,13 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_12max_send_sge___get__(struct __pyx
  *         def __get__(self):
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->_cap.max_send_sge); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1270, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->_cap.max_send_sge); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1266, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "rdma/ibverbs.pyx":1269
+  /* "rdma/ibverbs.pyx":1265
  *             return self._cap.max_send_wr;
  *     property max_send_sge:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -25026,7 +24970,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_12max_send_sge___get__(struct __pyx
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":1272
+/* "rdma/ibverbs.pyx":1268
  *             return self._cap.max_send_sge;
  *     property max_recv_wr:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -25056,7 +25000,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_11max_recv_wr___get__(struct __pyx_
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "rdma/ibverbs.pyx":1273
+  /* "rdma/ibverbs.pyx":1269
  *     property max_recv_wr:
  *         def __get__(self):
  *             return self._cap.max_recv_wr;             # <<<<<<<<<<<<<<
@@ -25064,13 +25008,13 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_11max_recv_wr___get__(struct __pyx_
  *         def __get__(self):
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->_cap.max_recv_wr); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1273, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->_cap.max_recv_wr); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1269, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "rdma/ibverbs.pyx":1272
+  /* "rdma/ibverbs.pyx":1268
  *             return self._cap.max_send_sge;
  *     property max_recv_wr:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -25089,7 +25033,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_11max_recv_wr___get__(struct __pyx_
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":1275
+/* "rdma/ibverbs.pyx":1271
  *             return self._cap.max_recv_wr;
  *     property max_recv_sge:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -25119,7 +25063,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_12max_recv_sge___get__(struct __pyx
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "rdma/ibverbs.pyx":1276
+  /* "rdma/ibverbs.pyx":1272
  *     property max_recv_sge:
  *         def __get__(self):
  *             return self._cap.max_recv_sge;             # <<<<<<<<<<<<<<
@@ -25127,13 +25071,13 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_12max_recv_sge___get__(struct __pyx
  *     def __cinit__(self,
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->_cap.max_recv_sge); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1276, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->_cap.max_recv_sge); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1272, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "rdma/ibverbs.pyx":1275
+  /* "rdma/ibverbs.pyx":1271
  *             return self._cap.max_recv_wr;
  *     property max_recv_sge:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -25152,7 +25096,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_12max_recv_sge___get__(struct __pyx
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":1278
+/* "rdma/ibverbs.pyx":1274
  *             return self._cap.max_recv_sge;
  * 
  *     def __cinit__(self,             # <<<<<<<<<<<<<<
@@ -25194,11 +25138,11 @@ static int __pyx_pw_4rdma_7ibverbs_2QP_1__cinit__(PyObject *__pyx_v_self, PyObje
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_init_2)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 2, 2, 1); __PYX_ERR(0, 1278, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 2, 2, 1); __PYX_ERR(0, 1274, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__cinit__") < 0)) __PYX_ERR(0, 1278, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__cinit__") < 0)) __PYX_ERR(0, 1274, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -25211,13 +25155,13 @@ static int __pyx_pw_4rdma_7ibverbs_2QP_1__cinit__(PyObject *__pyx_v_self, PyObje
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 1278, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 1274, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("rdma.ibverbs.QP.__cinit__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return -1;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_pd), __pyx_ptype_4rdma_7ibverbs_PD, 0, "pd", 0))) __PYX_ERR(0, 1279, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_pd), __pyx_ptype_4rdma_7ibverbs_PD, 0, "pd", 0))) __PYX_ERR(0, 1275, __pyx_L1_error)
   __pyx_r = __pyx_pf_4rdma_7ibverbs_2QP___cinit__(((struct __pyx_obj_4rdma_7ibverbs_QP *)__pyx_v_self), __pyx_v_pd, __pyx_v_init);
 
   /* function exit code */
@@ -25252,7 +25196,7 @@ static int __pyx_pf_4rdma_7ibverbs_2QP___cinit__(struct __pyx_obj_4rdma_7ibverbs
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__cinit__", 0);
 
-  /* "rdma/ibverbs.pyx":1284
+  /* "rdma/ibverbs.pyx":1280
  *         cdef CQ scq, rcq
  * 
  *         memset(&cinit,0,sizeof(cinit));             # <<<<<<<<<<<<<<
@@ -25261,34 +25205,34 @@ static int __pyx_pf_4rdma_7ibverbs_2QP___cinit__(struct __pyx_obj_4rdma_7ibverbs
  */
   (void)(memset((&__pyx_v_cinit), 0, (sizeof(__pyx_v_cinit))));
 
-  /* "rdma/ibverbs.pyx":1286
+  /* "rdma/ibverbs.pyx":1282
  *         memset(&cinit,0,sizeof(cinit));
  * 
  *         if not isinstance(init.send_cq, CQ):             # <<<<<<<<<<<<<<
  *             raise TypeError("send_cq must be a cq")
  *         if not isinstance(init.recv_cq, CQ):
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_init, __pyx_n_s_send_cq); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1286, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_init, __pyx_n_s_send_cq); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1282, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_t_2 = __Pyx_TypeCheck(__pyx_t_1, __pyx_ptype_4rdma_7ibverbs_CQ); 
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_t_3 = ((!(__pyx_t_2 != 0)) != 0);
   if (unlikely(__pyx_t_3)) {
 
-    /* "rdma/ibverbs.pyx":1287
+    /* "rdma/ibverbs.pyx":1283
  * 
  *         if not isinstance(init.send_cq, CQ):
  *             raise TypeError("send_cq must be a cq")             # <<<<<<<<<<<<<<
  *         if not isinstance(init.recv_cq, CQ):
  *             raise TypeError("recv_cq must be a cq")
  */
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_tuple__26, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1287, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_tuple__26, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1283, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_Raise(__pyx_t_1, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __PYX_ERR(0, 1287, __pyx_L1_error)
+    __PYX_ERR(0, 1283, __pyx_L1_error)
 
-    /* "rdma/ibverbs.pyx":1286
+    /* "rdma/ibverbs.pyx":1282
  *         memset(&cinit,0,sizeof(cinit));
  * 
  *         if not isinstance(init.send_cq, CQ):             # <<<<<<<<<<<<<<
@@ -25297,34 +25241,34 @@ static int __pyx_pf_4rdma_7ibverbs_2QP___cinit__(struct __pyx_obj_4rdma_7ibverbs
  */
   }
 
-  /* "rdma/ibverbs.pyx":1288
+  /* "rdma/ibverbs.pyx":1284
  *         if not isinstance(init.send_cq, CQ):
  *             raise TypeError("send_cq must be a cq")
  *         if not isinstance(init.recv_cq, CQ):             # <<<<<<<<<<<<<<
  *             raise TypeError("recv_cq must be a cq")
  *         if not isinstance(init.cap, qp_cap):
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_init, __pyx_n_s_recv_cq); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1288, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_init, __pyx_n_s_recv_cq); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1284, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_t_3 = __Pyx_TypeCheck(__pyx_t_1, __pyx_ptype_4rdma_7ibverbs_CQ); 
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_t_2 = ((!(__pyx_t_3 != 0)) != 0);
   if (unlikely(__pyx_t_2)) {
 
-    /* "rdma/ibverbs.pyx":1289
+    /* "rdma/ibverbs.pyx":1285
  *             raise TypeError("send_cq must be a cq")
  *         if not isinstance(init.recv_cq, CQ):
  *             raise TypeError("recv_cq must be a cq")             # <<<<<<<<<<<<<<
  *         if not isinstance(init.cap, qp_cap):
  *             raise TypeError("cap must be a qp_cap")
  */
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_tuple__27, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1289, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_tuple__27, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1285, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_Raise(__pyx_t_1, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __PYX_ERR(0, 1289, __pyx_L1_error)
+    __PYX_ERR(0, 1285, __pyx_L1_error)
 
-    /* "rdma/ibverbs.pyx":1288
+    /* "rdma/ibverbs.pyx":1284
  *         if not isinstance(init.send_cq, CQ):
  *             raise TypeError("send_cq must be a cq")
  *         if not isinstance(init.recv_cq, CQ):             # <<<<<<<<<<<<<<
@@ -25333,37 +25277,37 @@ static int __pyx_pf_4rdma_7ibverbs_2QP___cinit__(struct __pyx_obj_4rdma_7ibverbs
  */
   }
 
-  /* "rdma/ibverbs.pyx":1290
+  /* "rdma/ibverbs.pyx":1286
  *         if not isinstance(init.recv_cq, CQ):
  *             raise TypeError("recv_cq must be a cq")
  *         if not isinstance(init.cap, qp_cap):             # <<<<<<<<<<<<<<
  *             raise TypeError("cap must be a qp_cap")
  *         if init.srq is not None and not isinstance(init.srq, SRQ):
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_init, __pyx_n_s_cap); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1290, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_init, __pyx_n_s_cap); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1286, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_qp_cap); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1290, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_qp_cap); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1286, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_2 = PyObject_IsInstance(__pyx_t_1, __pyx_t_4); if (unlikely(__pyx_t_2 == ((int)-1))) __PYX_ERR(0, 1290, __pyx_L1_error)
+  __pyx_t_2 = PyObject_IsInstance(__pyx_t_1, __pyx_t_4); if (unlikely(__pyx_t_2 == ((int)-1))) __PYX_ERR(0, 1286, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_t_3 = ((!(__pyx_t_2 != 0)) != 0);
   if (unlikely(__pyx_t_3)) {
 
-    /* "rdma/ibverbs.pyx":1291
+    /* "rdma/ibverbs.pyx":1287
  *             raise TypeError("recv_cq must be a cq")
  *         if not isinstance(init.cap, qp_cap):
  *             raise TypeError("cap must be a qp_cap")             # <<<<<<<<<<<<<<
  *         if init.srq is not None and not isinstance(init.srq, SRQ):
  *             raise TypeError("srq must be a SRQ")
  */
-    __pyx_t_4 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_tuple__28, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1291, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_tuple__28, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1287, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_Raise(__pyx_t_4, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __PYX_ERR(0, 1291, __pyx_L1_error)
+    __PYX_ERR(0, 1287, __pyx_L1_error)
 
-    /* "rdma/ibverbs.pyx":1290
+    /* "rdma/ibverbs.pyx":1286
  *         if not isinstance(init.recv_cq, CQ):
  *             raise TypeError("recv_cq must be a cq")
  *         if not isinstance(init.cap, qp_cap):             # <<<<<<<<<<<<<<
@@ -25372,14 +25316,14 @@ static int __pyx_pf_4rdma_7ibverbs_2QP___cinit__(struct __pyx_obj_4rdma_7ibverbs
  */
   }
 
-  /* "rdma/ibverbs.pyx":1292
+  /* "rdma/ibverbs.pyx":1288
  *         if not isinstance(init.cap, qp_cap):
  *             raise TypeError("cap must be a qp_cap")
  *         if init.srq is not None and not isinstance(init.srq, SRQ):             # <<<<<<<<<<<<<<
  *             raise TypeError("srq must be a SRQ")
  * 
  */
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_init, __pyx_n_s_srq); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1292, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_init, __pyx_n_s_srq); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1288, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __pyx_t_2 = (__pyx_t_4 != Py_None);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -25389,7 +25333,7 @@ static int __pyx_pf_4rdma_7ibverbs_2QP___cinit__(struct __pyx_obj_4rdma_7ibverbs
     __pyx_t_3 = __pyx_t_5;
     goto __pyx_L7_bool_binop_done;
   }
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_init, __pyx_n_s_srq); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1292, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_init, __pyx_n_s_srq); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1288, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __pyx_t_5 = __Pyx_TypeCheck(__pyx_t_4, __pyx_ptype_4rdma_7ibverbs_SRQ); 
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -25398,20 +25342,20 @@ static int __pyx_pf_4rdma_7ibverbs_2QP___cinit__(struct __pyx_obj_4rdma_7ibverbs
   __pyx_L7_bool_binop_done:;
   if (unlikely(__pyx_t_3)) {
 
-    /* "rdma/ibverbs.pyx":1293
+    /* "rdma/ibverbs.pyx":1289
  *             raise TypeError("cap must be a qp_cap")
  *         if init.srq is not None and not isinstance(init.srq, SRQ):
  *             raise TypeError("srq must be a SRQ")             # <<<<<<<<<<<<<<
  * 
  *         self._scq = init.send_cq
  */
-    __pyx_t_4 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_tuple__29, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1293, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_tuple__29, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1289, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_Raise(__pyx_t_4, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __PYX_ERR(0, 1293, __pyx_L1_error)
+    __PYX_ERR(0, 1289, __pyx_L1_error)
 
-    /* "rdma/ibverbs.pyx":1292
+    /* "rdma/ibverbs.pyx":1288
  *         if not isinstance(init.cap, qp_cap):
  *             raise TypeError("cap must be a qp_cap")
  *         if init.srq is not None and not isinstance(init.srq, SRQ):             # <<<<<<<<<<<<<<
@@ -25420,39 +25364,39 @@ static int __pyx_pf_4rdma_7ibverbs_2QP___cinit__(struct __pyx_obj_4rdma_7ibverbs
  */
   }
 
-  /* "rdma/ibverbs.pyx":1295
+  /* "rdma/ibverbs.pyx":1291
  *             raise TypeError("srq must be a SRQ")
  * 
  *         self._scq = init.send_cq             # <<<<<<<<<<<<<<
  *         self._rcq = init.recv_cq
  * 
  */
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_init, __pyx_n_s_send_cq); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1295, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_init, __pyx_n_s_send_cq); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1291, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  if (!(likely(((__pyx_t_4) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_4, __pyx_ptype_4rdma_7ibverbs_CQ))))) __PYX_ERR(0, 1295, __pyx_L1_error)
+  if (!(likely(((__pyx_t_4) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_4, __pyx_ptype_4rdma_7ibverbs_CQ))))) __PYX_ERR(0, 1291, __pyx_L1_error)
   __Pyx_GIVEREF(__pyx_t_4);
   __Pyx_GOTREF(__pyx_v_self->_scq);
   __Pyx_DECREF(((PyObject *)__pyx_v_self->_scq));
   __pyx_v_self->_scq = ((struct __pyx_obj_4rdma_7ibverbs_CQ *)__pyx_t_4);
   __pyx_t_4 = 0;
 
-  /* "rdma/ibverbs.pyx":1296
+  /* "rdma/ibverbs.pyx":1292
  * 
  *         self._scq = init.send_cq
  *         self._rcq = init.recv_cq             # <<<<<<<<<<<<<<
  * 
  *         cinit.send_cq = self._scq._cq
  */
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_init, __pyx_n_s_recv_cq); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1296, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_init, __pyx_n_s_recv_cq); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1292, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  if (!(likely(((__pyx_t_4) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_4, __pyx_ptype_4rdma_7ibverbs_CQ))))) __PYX_ERR(0, 1296, __pyx_L1_error)
+  if (!(likely(((__pyx_t_4) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_4, __pyx_ptype_4rdma_7ibverbs_CQ))))) __PYX_ERR(0, 1292, __pyx_L1_error)
   __Pyx_GIVEREF(__pyx_t_4);
   __Pyx_GOTREF(__pyx_v_self->_rcq);
   __Pyx_DECREF(((PyObject *)__pyx_v_self->_rcq));
   __pyx_v_self->_rcq = ((struct __pyx_obj_4rdma_7ibverbs_CQ *)__pyx_t_4);
   __pyx_t_4 = 0;
 
-  /* "rdma/ibverbs.pyx":1298
+  /* "rdma/ibverbs.pyx":1294
  *         self._rcq = init.recv_cq
  * 
  *         cinit.send_cq = self._scq._cq             # <<<<<<<<<<<<<<
@@ -25462,7 +25406,7 @@ static int __pyx_pf_4rdma_7ibverbs_2QP___cinit__(struct __pyx_obj_4rdma_7ibverbs
   __pyx_t_6 = __pyx_v_self->_scq->_cq;
   __pyx_v_cinit.send_cq = __pyx_t_6;
 
-  /* "rdma/ibverbs.pyx":1299
+  /* "rdma/ibverbs.pyx":1295
  * 
  *         cinit.send_cq = self._scq._cq
  *         cinit.recv_cq = self._rcq._cq             # <<<<<<<<<<<<<<
@@ -25472,37 +25416,37 @@ static int __pyx_pf_4rdma_7ibverbs_2QP___cinit__(struct __pyx_obj_4rdma_7ibverbs
   __pyx_t_6 = __pyx_v_self->_rcq->_cq;
   __pyx_v_cinit.recv_cq = __pyx_t_6;
 
-  /* "rdma/ibverbs.pyx":1300
+  /* "rdma/ibverbs.pyx":1296
  *         cinit.send_cq = self._scq._cq
  *         cinit.recv_cq = self._rcq._cq
  *         if init.srq is not None:             # <<<<<<<<<<<<<<
  *             self._srq = init.srq
  *             cinit.srq = self._srq._srq
  */
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_init, __pyx_n_s_srq); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1300, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_init, __pyx_n_s_srq); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1296, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __pyx_t_3 = (__pyx_t_4 != Py_None);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_t_2 = (__pyx_t_3 != 0);
   if (__pyx_t_2) {
 
-    /* "rdma/ibverbs.pyx":1301
+    /* "rdma/ibverbs.pyx":1297
  *         cinit.recv_cq = self._rcq._cq
  *         if init.srq is not None:
  *             self._srq = init.srq             # <<<<<<<<<<<<<<
  *             cinit.srq = self._srq._srq
  *         cinit.cap.max_send_wr = init.cap.max_send_wr
  */
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_init, __pyx_n_s_srq); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1301, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_init, __pyx_n_s_srq); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1297, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    if (!(likely(((__pyx_t_4) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_4, __pyx_ptype_4rdma_7ibverbs_SRQ))))) __PYX_ERR(0, 1301, __pyx_L1_error)
+    if (!(likely(((__pyx_t_4) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_4, __pyx_ptype_4rdma_7ibverbs_SRQ))))) __PYX_ERR(0, 1297, __pyx_L1_error)
     __Pyx_GIVEREF(__pyx_t_4);
     __Pyx_GOTREF(__pyx_v_self->_srq);
     __Pyx_DECREF(((PyObject *)__pyx_v_self->_srq));
     __pyx_v_self->_srq = ((struct __pyx_obj_4rdma_7ibverbs_SRQ *)__pyx_t_4);
     __pyx_t_4 = 0;
 
-    /* "rdma/ibverbs.pyx":1302
+    /* "rdma/ibverbs.pyx":1298
  *         if init.srq is not None:
  *             self._srq = init.srq
  *             cinit.srq = self._srq._srq             # <<<<<<<<<<<<<<
@@ -25512,7 +25456,7 @@ static int __pyx_pf_4rdma_7ibverbs_2QP___cinit__(struct __pyx_obj_4rdma_7ibverbs
     __pyx_t_7 = __pyx_v_self->_srq->_srq;
     __pyx_v_cinit.srq = __pyx_t_7;
 
-    /* "rdma/ibverbs.pyx":1300
+    /* "rdma/ibverbs.pyx":1296
  *         cinit.send_cq = self._scq._cq
  *         cinit.recv_cq = self._rcq._cq
  *         if init.srq is not None:             # <<<<<<<<<<<<<<
@@ -25521,113 +25465,113 @@ static int __pyx_pf_4rdma_7ibverbs_2QP___cinit__(struct __pyx_obj_4rdma_7ibverbs
  */
   }
 
-  /* "rdma/ibverbs.pyx":1303
+  /* "rdma/ibverbs.pyx":1299
  *             self._srq = init.srq
  *             cinit.srq = self._srq._srq
  *         cinit.cap.max_send_wr = init.cap.max_send_wr             # <<<<<<<<<<<<<<
  *         cinit.cap.max_recv_wr = init.cap.max_recv_wr
  *         cinit.cap.max_send_sge = init.cap.max_send_sge
  */
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_init, __pyx_n_s_cap); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1303, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_init, __pyx_n_s_cap); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1299, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_max_send_wr); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1303, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_max_send_wr); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1299, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_8 = __Pyx_PyInt_As_unsigned_int(__pyx_t_1); if (unlikely((__pyx_t_8 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1303, __pyx_L1_error)
+  __pyx_t_8 = __Pyx_PyInt_As_unsigned_int(__pyx_t_1); if (unlikely((__pyx_t_8 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1299, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_cinit.cap.max_send_wr = __pyx_t_8;
 
-  /* "rdma/ibverbs.pyx":1304
+  /* "rdma/ibverbs.pyx":1300
  *             cinit.srq = self._srq._srq
  *         cinit.cap.max_send_wr = init.cap.max_send_wr
  *         cinit.cap.max_recv_wr = init.cap.max_recv_wr             # <<<<<<<<<<<<<<
  *         cinit.cap.max_send_sge = init.cap.max_send_sge
  *         cinit.cap.max_recv_sge = init.cap.max_recv_sge
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_init, __pyx_n_s_cap); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1304, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_init, __pyx_n_s_cap); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1300, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_max_recv_wr); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1304, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_max_recv_wr); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1300, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_8 = __Pyx_PyInt_As_unsigned_int(__pyx_t_4); if (unlikely((__pyx_t_8 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1304, __pyx_L1_error)
+  __pyx_t_8 = __Pyx_PyInt_As_unsigned_int(__pyx_t_4); if (unlikely((__pyx_t_8 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1300, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_v_cinit.cap.max_recv_wr = __pyx_t_8;
 
-  /* "rdma/ibverbs.pyx":1305
+  /* "rdma/ibverbs.pyx":1301
  *         cinit.cap.max_send_wr = init.cap.max_send_wr
  *         cinit.cap.max_recv_wr = init.cap.max_recv_wr
  *         cinit.cap.max_send_sge = init.cap.max_send_sge             # <<<<<<<<<<<<<<
  *         cinit.cap.max_recv_sge = init.cap.max_recv_sge
  *         cinit.cap.max_inline_data = init.cap.max_inline_data
  */
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_init, __pyx_n_s_cap); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1305, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_init, __pyx_n_s_cap); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1301, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_max_send_sge); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1305, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_max_send_sge); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1301, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_8 = __Pyx_PyInt_As_unsigned_int(__pyx_t_1); if (unlikely((__pyx_t_8 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1305, __pyx_L1_error)
+  __pyx_t_8 = __Pyx_PyInt_As_unsigned_int(__pyx_t_1); if (unlikely((__pyx_t_8 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1301, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_cinit.cap.max_send_sge = __pyx_t_8;
 
-  /* "rdma/ibverbs.pyx":1306
+  /* "rdma/ibverbs.pyx":1302
  *         cinit.cap.max_recv_wr = init.cap.max_recv_wr
  *         cinit.cap.max_send_sge = init.cap.max_send_sge
  *         cinit.cap.max_recv_sge = init.cap.max_recv_sge             # <<<<<<<<<<<<<<
  *         cinit.cap.max_inline_data = init.cap.max_inline_data
  *         cinit.qp_type = init.qp_type
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_init, __pyx_n_s_cap); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1306, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_init, __pyx_n_s_cap); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1302, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_max_recv_sge); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1306, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_max_recv_sge); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1302, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_8 = __Pyx_PyInt_As_unsigned_int(__pyx_t_4); if (unlikely((__pyx_t_8 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1306, __pyx_L1_error)
+  __pyx_t_8 = __Pyx_PyInt_As_unsigned_int(__pyx_t_4); if (unlikely((__pyx_t_8 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1302, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_v_cinit.cap.max_recv_sge = __pyx_t_8;
 
-  /* "rdma/ibverbs.pyx":1307
+  /* "rdma/ibverbs.pyx":1303
  *         cinit.cap.max_send_sge = init.cap.max_send_sge
  *         cinit.cap.max_recv_sge = init.cap.max_recv_sge
  *         cinit.cap.max_inline_data = init.cap.max_inline_data             # <<<<<<<<<<<<<<
  *         cinit.qp_type = init.qp_type
  *         cinit.sq_sig_all = init.sq_sig_all
  */
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_init, __pyx_n_s_cap); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1307, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_init, __pyx_n_s_cap); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1303, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_max_inline_data); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1307, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_max_inline_data); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1303, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_8 = __Pyx_PyInt_As_unsigned_int(__pyx_t_1); if (unlikely((__pyx_t_8 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1307, __pyx_L1_error)
+  __pyx_t_8 = __Pyx_PyInt_As_unsigned_int(__pyx_t_1); if (unlikely((__pyx_t_8 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1303, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_cinit.cap.max_inline_data = __pyx_t_8;
 
-  /* "rdma/ibverbs.pyx":1308
+  /* "rdma/ibverbs.pyx":1304
  *         cinit.cap.max_recv_sge = init.cap.max_recv_sge
  *         cinit.cap.max_inline_data = init.cap.max_inline_data
  *         cinit.qp_type = init.qp_type             # <<<<<<<<<<<<<<
  *         cinit.sq_sig_all = init.sq_sig_all
  *         cinit.qp_context = <void *>self
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_init, __pyx_n_s_qp_type); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1308, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_init, __pyx_n_s_qp_type); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1304, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_9 = ((enum ibv_qp_type)__Pyx_PyInt_As_enum__ibv_qp_type(__pyx_t_1)); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 1308, __pyx_L1_error)
+  __pyx_t_9 = ((enum ibv_qp_type)__Pyx_PyInt_As_enum__ibv_qp_type(__pyx_t_1)); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 1304, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_cinit.qp_type = __pyx_t_9;
 
-  /* "rdma/ibverbs.pyx":1309
+  /* "rdma/ibverbs.pyx":1305
  *         cinit.cap.max_inline_data = init.cap.max_inline_data
  *         cinit.qp_type = init.qp_type
  *         cinit.sq_sig_all = init.sq_sig_all             # <<<<<<<<<<<<<<
  *         cinit.qp_context = <void *>self
  * 
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_init, __pyx_n_s_sq_sig_all); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1309, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_init, __pyx_n_s_sq_sig_all); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1305, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_8 = __Pyx_PyInt_As_unsigned_int(__pyx_t_1); if (unlikely((__pyx_t_8 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1309, __pyx_L1_error)
+  __pyx_t_8 = __Pyx_PyInt_As_unsigned_int(__pyx_t_1); if (unlikely((__pyx_t_8 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1305, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_cinit.sq_sig_all = __pyx_t_8;
 
-  /* "rdma/ibverbs.pyx":1310
+  /* "rdma/ibverbs.pyx":1306
  *         cinit.qp_type = init.qp_type
  *         cinit.sq_sig_all = init.sq_sig_all
  *         cinit.qp_context = <void *>self             # <<<<<<<<<<<<<<
@@ -25636,7 +25580,7 @@ static int __pyx_pf_4rdma_7ibverbs_2QP___cinit__(struct __pyx_obj_4rdma_7ibverbs
  */
   __pyx_v_cinit.qp_context = ((void *)__pyx_v_self);
 
-  /* "rdma/ibverbs.pyx":1312
+  /* "rdma/ibverbs.pyx":1308
  *         cinit.qp_context = <void *>self
  * 
  *         self._pd = pd             # <<<<<<<<<<<<<<
@@ -25649,7 +25593,7 @@ static int __pyx_pf_4rdma_7ibverbs_2QP___cinit__(struct __pyx_obj_4rdma_7ibverbs
   __Pyx_DECREF(((PyObject *)__pyx_v_self->_pd));
   __pyx_v_self->_pd = __pyx_v_pd;
 
-  /* "rdma/ibverbs.pyx":1313
+  /* "rdma/ibverbs.pyx":1309
  * 
  *         self._pd = pd
  *         self._qp = c.ibv_create_qp(pd._pd, &cinit)             # <<<<<<<<<<<<<<
@@ -25658,7 +25602,7 @@ static int __pyx_pf_4rdma_7ibverbs_2QP___cinit__(struct __pyx_obj_4rdma_7ibverbs
  */
   __pyx_v_self->_qp = ibv_create_qp(__pyx_v_pd->_pd, (&__pyx_v_cinit));
 
-  /* "rdma/ibverbs.pyx":1314
+  /* "rdma/ibverbs.pyx":1310
  *         self._pd = pd
  *         self._qp = c.ibv_create_qp(pd._pd, &cinit)
  *         if self._qp == NULL:             # <<<<<<<<<<<<<<
@@ -25668,19 +25612,19 @@ static int __pyx_pf_4rdma_7ibverbs_2QP___cinit__(struct __pyx_obj_4rdma_7ibverbs
   __pyx_t_2 = ((__pyx_v_self->_qp == NULL) != 0);
   if (unlikely(__pyx_t_2)) {
 
-    /* "rdma/ibverbs.pyx":1315
+    /* "rdma/ibverbs.pyx":1311
  *         self._qp = c.ibv_create_qp(pd._pd, &cinit)
  *         if self._qp == NULL:
  *             raise rdma.SysError(errno,"ibv_create_qp",             # <<<<<<<<<<<<<<
  *                                 "Failed to create queue pair")
  *         self._qp_type = cinit.qp_type
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_rdma); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1315, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_rdma); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1311, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_SysError); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 1315, __pyx_L1_error)
+    __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_SysError); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 1311, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_10);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __pyx_t_4 = __Pyx_PyInt_From_int(errno); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1315, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyInt_From_int(errno); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1311, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __pyx_t_11 = NULL;
     __pyx_t_12 = 0;
@@ -25697,7 +25641,7 @@ static int __pyx_pf_4rdma_7ibverbs_2QP___cinit__(struct __pyx_obj_4rdma_7ibverbs
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_10)) {
       PyObject *__pyx_temp[4] = {__pyx_t_11, __pyx_t_4, __pyx_n_s_ibv_create_qp, __pyx_kp_s_Failed_to_create_queue_pair};
-      __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_10, __pyx_temp+1-__pyx_t_12, 3+__pyx_t_12); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1315, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_10, __pyx_temp+1-__pyx_t_12, 3+__pyx_t_12); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1311, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_11); __pyx_t_11 = 0;
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -25706,14 +25650,14 @@ static int __pyx_pf_4rdma_7ibverbs_2QP___cinit__(struct __pyx_obj_4rdma_7ibverbs
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_10)) {
       PyObject *__pyx_temp[4] = {__pyx_t_11, __pyx_t_4, __pyx_n_s_ibv_create_qp, __pyx_kp_s_Failed_to_create_queue_pair};
-      __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_10, __pyx_temp+1-__pyx_t_12, 3+__pyx_t_12); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1315, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_10, __pyx_temp+1-__pyx_t_12, 3+__pyx_t_12); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1311, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_11); __pyx_t_11 = 0;
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     } else
     #endif
     {
-      __pyx_t_13 = PyTuple_New(3+__pyx_t_12); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 1315, __pyx_L1_error)
+      __pyx_t_13 = PyTuple_New(3+__pyx_t_12); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 1311, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_13);
       if (__pyx_t_11) {
         __Pyx_GIVEREF(__pyx_t_11); PyTuple_SET_ITEM(__pyx_t_13, 0, __pyx_t_11); __pyx_t_11 = NULL;
@@ -25727,16 +25671,16 @@ static int __pyx_pf_4rdma_7ibverbs_2QP___cinit__(struct __pyx_obj_4rdma_7ibverbs
       __Pyx_GIVEREF(__pyx_kp_s_Failed_to_create_queue_pair);
       PyTuple_SET_ITEM(__pyx_t_13, 2+__pyx_t_12, __pyx_kp_s_Failed_to_create_queue_pair);
       __pyx_t_4 = 0;
-      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_10, __pyx_t_13, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1315, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_10, __pyx_t_13, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1311, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_13); __pyx_t_13 = 0;
     }
     __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
     __Pyx_Raise(__pyx_t_1, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __PYX_ERR(0, 1315, __pyx_L1_error)
+    __PYX_ERR(0, 1311, __pyx_L1_error)
 
-    /* "rdma/ibverbs.pyx":1314
+    /* "rdma/ibverbs.pyx":1310
  *         self._pd = pd
  *         self._qp = c.ibv_create_qp(pd._pd, &cinit)
  *         if self._qp == NULL:             # <<<<<<<<<<<<<<
@@ -25745,7 +25689,7 @@ static int __pyx_pf_4rdma_7ibverbs_2QP___cinit__(struct __pyx_obj_4rdma_7ibverbs
  */
   }
 
-  /* "rdma/ibverbs.pyx":1317
+  /* "rdma/ibverbs.pyx":1313
  *             raise rdma.SysError(errno,"ibv_create_qp",
  *                                 "Failed to create queue pair")
  *         self._qp_type = cinit.qp_type             # <<<<<<<<<<<<<<
@@ -25755,7 +25699,7 @@ static int __pyx_pf_4rdma_7ibverbs_2QP___cinit__(struct __pyx_obj_4rdma_7ibverbs
   __pyx_t_9 = __pyx_v_cinit.qp_type;
   __pyx_v_self->_qp_type = __pyx_t_9;
 
-  /* "rdma/ibverbs.pyx":1318
+  /* "rdma/ibverbs.pyx":1314
  *                                 "Failed to create queue pair")
  *         self._qp_type = cinit.qp_type
  *         self._cap = cinit.cap             # <<<<<<<<<<<<<<
@@ -25765,7 +25709,7 @@ static int __pyx_pf_4rdma_7ibverbs_2QP___cinit__(struct __pyx_obj_4rdma_7ibverbs
   __pyx_t_14 = __pyx_v_cinit.cap;
   __pyx_v_self->_cap = __pyx_t_14;
 
-  /* "rdma/ibverbs.pyx":1278
+  /* "rdma/ibverbs.pyx":1274
  *             return self._cap.max_recv_sge;
  * 
  *     def __cinit__(self,             # <<<<<<<<<<<<<<
@@ -25789,7 +25733,7 @@ static int __pyx_pf_4rdma_7ibverbs_2QP___cinit__(struct __pyx_obj_4rdma_7ibverbs
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":1320
+/* "rdma/ibverbs.pyx":1316
  *         self._cap = cinit.cap
  * 
  *     def __dealloc__(self):             # <<<<<<<<<<<<<<
@@ -25816,18 +25760,18 @@ static void __pyx_pf_4rdma_7ibverbs_2QP_2__dealloc__(struct __pyx_obj_4rdma_7ibv
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__dealloc__", 0);
 
-  /* "rdma/ibverbs.pyx":1321
+  /* "rdma/ibverbs.pyx":1317
  * 
  *     def __dealloc__(self):
  *         self._close();             # <<<<<<<<<<<<<<
  * 
  *     def __enter__(self):
  */
-  __pyx_t_1 = ((struct __pyx_vtabstruct_4rdma_7ibverbs_QP *)__pyx_v_self->__pyx_vtab)->_close(__pyx_v_self); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1321, __pyx_L1_error)
+  __pyx_t_1 = ((struct __pyx_vtabstruct_4rdma_7ibverbs_QP *)__pyx_v_self->__pyx_vtab)->_close(__pyx_v_self); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1317, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "rdma/ibverbs.pyx":1320
+  /* "rdma/ibverbs.pyx":1316
  *         self._cap = cinit.cap
  * 
  *     def __dealloc__(self):             # <<<<<<<<<<<<<<
@@ -25844,7 +25788,7 @@ static void __pyx_pf_4rdma_7ibverbs_2QP_2__dealloc__(struct __pyx_obj_4rdma_7ibv
   __Pyx_RefNannyFinishContext();
 }
 
-/* "rdma/ibverbs.pyx":1323
+/* "rdma/ibverbs.pyx":1319
  *         self._close();
  * 
  *     def __enter__(self):             # <<<<<<<<<<<<<<
@@ -25870,7 +25814,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_4__enter__(struct __pyx_obj_4rdma_7
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__enter__", 0);
 
-  /* "rdma/ibverbs.pyx":1324
+  /* "rdma/ibverbs.pyx":1320
  * 
  *     def __enter__(self):
  *         return self;             # <<<<<<<<<<<<<<
@@ -25882,7 +25826,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_4__enter__(struct __pyx_obj_4rdma_7
   __pyx_r = ((PyObject *)__pyx_v_self);
   goto __pyx_L0;
 
-  /* "rdma/ibverbs.pyx":1323
+  /* "rdma/ibverbs.pyx":1319
  *         self._close();
  * 
  *     def __enter__(self):             # <<<<<<<<<<<<<<
@@ -25897,7 +25841,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_4__enter__(struct __pyx_obj_4rdma_7
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":1326
+/* "rdma/ibverbs.pyx":1322
  *         return self;
  * 
  *     def __exit__(self,*exc_info):             # <<<<<<<<<<<<<<
@@ -25932,18 +25876,18 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_6__exit__(struct __pyx_obj_4rdma_7i
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__exit__", 0);
 
-  /* "rdma/ibverbs.pyx":1327
+  /* "rdma/ibverbs.pyx":1323
  * 
  *     def __exit__(self,*exc_info):
  *         self._close();             # <<<<<<<<<<<<<<
  * 
  *     def close(self):
  */
-  __pyx_t_1 = ((struct __pyx_vtabstruct_4rdma_7ibverbs_QP *)__pyx_v_self->__pyx_vtab)->_close(__pyx_v_self); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1327, __pyx_L1_error)
+  __pyx_t_1 = ((struct __pyx_vtabstruct_4rdma_7ibverbs_QP *)__pyx_v_self->__pyx_vtab)->_close(__pyx_v_self); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1323, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "rdma/ibverbs.pyx":1326
+  /* "rdma/ibverbs.pyx":1322
  *         return self;
  * 
  *     def __exit__(self,*exc_info):             # <<<<<<<<<<<<<<
@@ -25964,7 +25908,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_6__exit__(struct __pyx_obj_4rdma_7i
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":1329
+/* "rdma/ibverbs.pyx":1325
  *         self._close();
  * 
  *     def close(self):             # <<<<<<<<<<<<<<
@@ -25995,18 +25939,18 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_8close(struct __pyx_obj_4rdma_7ibve
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("close", 0);
 
-  /* "rdma/ibverbs.pyx":1331
+  /* "rdma/ibverbs.pyx":1327
  *     def close(self):
  *         """Free the verbs QP handle."""
  *         self._close();             # <<<<<<<<<<<<<<
  * 
  *     cdef _close(self):
  */
-  __pyx_t_1 = ((struct __pyx_vtabstruct_4rdma_7ibverbs_QP *)__pyx_v_self->__pyx_vtab)->_close(__pyx_v_self); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1331, __pyx_L1_error)
+  __pyx_t_1 = ((struct __pyx_vtabstruct_4rdma_7ibverbs_QP *)__pyx_v_self->__pyx_vtab)->_close(__pyx_v_self); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1327, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "rdma/ibverbs.pyx":1329
+  /* "rdma/ibverbs.pyx":1325
  *         self._close();
  * 
  *     def close(self):             # <<<<<<<<<<<<<<
@@ -26027,7 +25971,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_8close(struct __pyx_obj_4rdma_7ibve
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":1333
+/* "rdma/ibverbs.pyx":1329
  *         self._close();
  * 
  *     cdef _close(self):             # <<<<<<<<<<<<<<
@@ -26052,7 +25996,7 @@ static PyObject *__pyx_f_4rdma_7ibverbs_2QP__close(struct __pyx_obj_4rdma_7ibver
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("_close", 0);
 
-  /* "rdma/ibverbs.pyx":1335
+  /* "rdma/ibverbs.pyx":1331
  *     cdef _close(self):
  *         cdef int rc
  *         if self._qp != NULL:             # <<<<<<<<<<<<<<
@@ -26062,7 +26006,7 @@ static PyObject *__pyx_f_4rdma_7ibverbs_2QP__close(struct __pyx_obj_4rdma_7ibver
   __pyx_t_1 = ((__pyx_v_self->_qp != NULL) != 0);
   if (__pyx_t_1) {
 
-    /* "rdma/ibverbs.pyx":1336
+    /* "rdma/ibverbs.pyx":1332
  *         cdef int rc
  *         if self._qp != NULL:
  *             while self._groups:             # <<<<<<<<<<<<<<
@@ -26073,7 +26017,7 @@ static PyObject *__pyx_f_4rdma_7ibverbs_2QP__close(struct __pyx_obj_4rdma_7ibver
       __pyx_t_1 = (__pyx_v_self->_groups != Py_None)&&(PyList_GET_SIZE(__pyx_v_self->_groups) != 0);
       if (!__pyx_t_1) break;
 
-      /* "rdma/ibverbs.pyx":1337
+      /* "rdma/ibverbs.pyx":1333
  *         if self._qp != NULL:
  *             while self._groups:
  *                 g = self._groups[0];             # <<<<<<<<<<<<<<
@@ -26082,41 +26026,41 @@ static PyObject *__pyx_f_4rdma_7ibverbs_2QP__close(struct __pyx_obj_4rdma_7ibver
  */
       if (unlikely(__pyx_v_self->_groups == Py_None)) {
         PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-        __PYX_ERR(0, 1337, __pyx_L1_error)
+        __PYX_ERR(0, 1333, __pyx_L1_error)
       }
-      __pyx_t_2 = __Pyx_GetItemInt_List(__pyx_v_self->_groups, 0, long, 1, __Pyx_PyInt_From_long, 1, 0, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1337, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_GetItemInt_List(__pyx_v_self->_groups, 0, long, 1, __Pyx_PyInt_From_long, 1, 0, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1333, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_XDECREF_SET(__pyx_v_g, __pyx_t_2);
       __pyx_t_2 = 0;
 
-      /* "rdma/ibverbs.pyx":1338
+      /* "rdma/ibverbs.pyx":1334
  *             while self._groups:
  *                 g = self._groups[0];
  *                 self.detach_mcast(rdma.path.IBPath(None,DGID=g[0],DLID=g[1]));             # <<<<<<<<<<<<<<
  *             rc = c.ibv_destroy_qp(self._qp)
  *             if rc != 0:
  */
-      __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_detach_mcast); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1338, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_detach_mcast); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1334, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
-      __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_rdma); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1338, __pyx_L1_error)
+      __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_rdma); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1334, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
-      __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_path); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 1338, __pyx_L1_error)
+      __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_path); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 1334, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-      __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_IBPath); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1338, __pyx_L1_error)
+      __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_IBPath); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1334, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-      __pyx_t_5 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 1338, __pyx_L1_error)
+      __pyx_t_5 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 1334, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
-      __pyx_t_6 = __Pyx_GetItemInt(__pyx_v_g, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 1338, __pyx_L1_error)
+      __pyx_t_6 = __Pyx_GetItemInt(__pyx_v_g, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 1334, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_6);
-      if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_DGID, __pyx_t_6) < 0) __PYX_ERR(0, 1338, __pyx_L1_error)
+      if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_DGID, __pyx_t_6) < 0) __PYX_ERR(0, 1334, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-      __pyx_t_6 = __Pyx_GetItemInt(__pyx_v_g, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 1338, __pyx_L1_error)
+      __pyx_t_6 = __Pyx_GetItemInt(__pyx_v_g, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 1334, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_6);
-      if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_DLID, __pyx_t_6) < 0) __PYX_ERR(0, 1338, __pyx_L1_error)
+      if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_DLID, __pyx_t_6) < 0) __PYX_ERR(0, 1334, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-      __pyx_t_6 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_tuple__30, __pyx_t_5); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 1338, __pyx_L1_error)
+      __pyx_t_6 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_tuple__30, __pyx_t_5); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 1334, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_6);
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
@@ -26133,13 +26077,13 @@ static PyObject *__pyx_f_4rdma_7ibverbs_2QP__close(struct __pyx_obj_4rdma_7ibver
       __pyx_t_2 = (__pyx_t_5) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_5, __pyx_t_6) : __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_6);
       __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-      if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1338, __pyx_L1_error)
+      if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1334, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     }
 
-    /* "rdma/ibverbs.pyx":1339
+    /* "rdma/ibverbs.pyx":1335
  *                 g = self._groups[0];
  *                 self.detach_mcast(rdma.path.IBPath(None,DGID=g[0],DLID=g[1]));
  *             rc = c.ibv_destroy_qp(self._qp)             # <<<<<<<<<<<<<<
@@ -26148,7 +26092,7 @@ static PyObject *__pyx_f_4rdma_7ibverbs_2QP__close(struct __pyx_obj_4rdma_7ibver
  */
     __pyx_v_rc = ibv_destroy_qp(__pyx_v_self->_qp);
 
-    /* "rdma/ibverbs.pyx":1340
+    /* "rdma/ibverbs.pyx":1336
  *                 self.detach_mcast(rdma.path.IBPath(None,DGID=g[0],DLID=g[1]));
  *             rc = c.ibv_destroy_qp(self._qp)
  *             if rc != 0:             # <<<<<<<<<<<<<<
@@ -26158,19 +26102,19 @@ static PyObject *__pyx_f_4rdma_7ibverbs_2QP__close(struct __pyx_obj_4rdma_7ibver
     __pyx_t_1 = ((__pyx_v_rc != 0) != 0);
     if (unlikely(__pyx_t_1)) {
 
-      /* "rdma/ibverbs.pyx":1341
+      /* "rdma/ibverbs.pyx":1337
  *             rc = c.ibv_destroy_qp(self._qp)
  *             if rc != 0:
  *                 raise rdma.SysError(errno,"ibv_destroy_qp",             # <<<<<<<<<<<<<<
  *                                     "Failed to destroy queue pair")
  *             self._qp = NULL;
  */
-      __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_rdma); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1341, __pyx_L1_error)
+      __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_rdma); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1337, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
-      __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_SysError); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 1341, __pyx_L1_error)
+      __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_SysError); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 1337, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_6);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-      __pyx_t_3 = __Pyx_PyInt_From_int(errno); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1341, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyInt_From_int(errno); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1337, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
       __pyx_t_5 = NULL;
       __pyx_t_7 = 0;
@@ -26187,7 +26131,7 @@ static PyObject *__pyx_f_4rdma_7ibverbs_2QP__close(struct __pyx_obj_4rdma_7ibver
       #if CYTHON_FAST_PYCALL
       if (PyFunction_Check(__pyx_t_6)) {
         PyObject *__pyx_temp[4] = {__pyx_t_5, __pyx_t_3, __pyx_n_s_ibv_destroy_qp, __pyx_kp_s_Failed_to_destroy_queue_pair};
-        __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_6, __pyx_temp+1-__pyx_t_7, 3+__pyx_t_7); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1341, __pyx_L1_error)
+        __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_6, __pyx_temp+1-__pyx_t_7, 3+__pyx_t_7); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1337, __pyx_L1_error)
         __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -26196,14 +26140,14 @@ static PyObject *__pyx_f_4rdma_7ibverbs_2QP__close(struct __pyx_obj_4rdma_7ibver
       #if CYTHON_FAST_PYCCALL
       if (__Pyx_PyFastCFunction_Check(__pyx_t_6)) {
         PyObject *__pyx_temp[4] = {__pyx_t_5, __pyx_t_3, __pyx_n_s_ibv_destroy_qp, __pyx_kp_s_Failed_to_destroy_queue_pair};
-        __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_6, __pyx_temp+1-__pyx_t_7, 3+__pyx_t_7); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1341, __pyx_L1_error)
+        __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_6, __pyx_temp+1-__pyx_t_7, 3+__pyx_t_7); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1337, __pyx_L1_error)
         __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
       } else
       #endif
       {
-        __pyx_t_4 = PyTuple_New(3+__pyx_t_7); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1341, __pyx_L1_error)
+        __pyx_t_4 = PyTuple_New(3+__pyx_t_7); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1337, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
         if (__pyx_t_5) {
           __Pyx_GIVEREF(__pyx_t_5); PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_5); __pyx_t_5 = NULL;
@@ -26217,16 +26161,16 @@ static PyObject *__pyx_f_4rdma_7ibverbs_2QP__close(struct __pyx_obj_4rdma_7ibver
         __Pyx_GIVEREF(__pyx_kp_s_Failed_to_destroy_queue_pair);
         PyTuple_SET_ITEM(__pyx_t_4, 2+__pyx_t_7, __pyx_kp_s_Failed_to_destroy_queue_pair);
         __pyx_t_3 = 0;
-        __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_6, __pyx_t_4, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1341, __pyx_L1_error)
+        __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_6, __pyx_t_4, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1337, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       }
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
       __Pyx_Raise(__pyx_t_2, 0, 0, 0);
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-      __PYX_ERR(0, 1341, __pyx_L1_error)
+      __PYX_ERR(0, 1337, __pyx_L1_error)
 
-      /* "rdma/ibverbs.pyx":1340
+      /* "rdma/ibverbs.pyx":1336
  *                 self.detach_mcast(rdma.path.IBPath(None,DGID=g[0],DLID=g[1]));
  *             rc = c.ibv_destroy_qp(self._qp)
  *             if rc != 0:             # <<<<<<<<<<<<<<
@@ -26235,7 +26179,7 @@ static PyObject *__pyx_f_4rdma_7ibverbs_2QP__close(struct __pyx_obj_4rdma_7ibver
  */
     }
 
-    /* "rdma/ibverbs.pyx":1343
+    /* "rdma/ibverbs.pyx":1339
  *                 raise rdma.SysError(errno,"ibv_destroy_qp",
  *                                     "Failed to destroy queue pair")
  *             self._qp = NULL;             # <<<<<<<<<<<<<<
@@ -26244,7 +26188,7 @@ static PyObject *__pyx_f_4rdma_7ibverbs_2QP__close(struct __pyx_obj_4rdma_7ibver
  */
     __pyx_v_self->_qp = NULL;
 
-    /* "rdma/ibverbs.pyx":1344
+    /* "rdma/ibverbs.pyx":1340
  *                                     "Failed to destroy queue pair")
  *             self._qp = NULL;
  *             self._pd = None;             # <<<<<<<<<<<<<<
@@ -26257,7 +26201,7 @@ static PyObject *__pyx_f_4rdma_7ibverbs_2QP__close(struct __pyx_obj_4rdma_7ibver
     __Pyx_DECREF(((PyObject *)__pyx_v_self->_pd));
     __pyx_v_self->_pd = ((struct __pyx_obj_4rdma_7ibverbs_PD *)Py_None);
 
-    /* "rdma/ibverbs.pyx":1345
+    /* "rdma/ibverbs.pyx":1341
  *             self._qp = NULL;
  *             self._pd = None;
  *             self._scq = None;             # <<<<<<<<<<<<<<
@@ -26270,7 +26214,7 @@ static PyObject *__pyx_f_4rdma_7ibverbs_2QP__close(struct __pyx_obj_4rdma_7ibver
     __Pyx_DECREF(((PyObject *)__pyx_v_self->_scq));
     __pyx_v_self->_scq = ((struct __pyx_obj_4rdma_7ibverbs_CQ *)Py_None);
 
-    /* "rdma/ibverbs.pyx":1346
+    /* "rdma/ibverbs.pyx":1342
  *             self._pd = None;
  *             self._scq = None;
  *             self._rcq = None;             # <<<<<<<<<<<<<<
@@ -26283,7 +26227,7 @@ static PyObject *__pyx_f_4rdma_7ibverbs_2QP__close(struct __pyx_obj_4rdma_7ibver
     __Pyx_DECREF(((PyObject *)__pyx_v_self->_rcq));
     __pyx_v_self->_rcq = ((struct __pyx_obj_4rdma_7ibverbs_CQ *)Py_None);
 
-    /* "rdma/ibverbs.pyx":1347
+    /* "rdma/ibverbs.pyx":1343
  *             self._scq = None;
  *             self._rcq = None;
  *             self._srq = None;             # <<<<<<<<<<<<<<
@@ -26296,7 +26240,7 @@ static PyObject *__pyx_f_4rdma_7ibverbs_2QP__close(struct __pyx_obj_4rdma_7ibver
     __Pyx_DECREF(((PyObject *)__pyx_v_self->_srq));
     __pyx_v_self->_srq = ((struct __pyx_obj_4rdma_7ibverbs_SRQ *)Py_None);
 
-    /* "rdma/ibverbs.pyx":1335
+    /* "rdma/ibverbs.pyx":1331
  *     cdef _close(self):
  *         cdef int rc
  *         if self._qp != NULL:             # <<<<<<<<<<<<<<
@@ -26305,7 +26249,7 @@ static PyObject *__pyx_f_4rdma_7ibverbs_2QP__close(struct __pyx_obj_4rdma_7ibver
  */
   }
 
-  /* "rdma/ibverbs.pyx":1333
+  /* "rdma/ibverbs.pyx":1329
  *         self._close();
  * 
  *     cdef _close(self):             # <<<<<<<<<<<<<<
@@ -26331,7 +26275,7 @@ static PyObject *__pyx_f_4rdma_7ibverbs_2QP__close(struct __pyx_obj_4rdma_7ibver
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":1349
+/* "rdma/ibverbs.pyx":1345
  *             self._srq = None;
  * 
  *     def modify(self,attr,int mask):             # <<<<<<<<<<<<<<
@@ -26374,11 +26318,11 @@ static PyObject *__pyx_pw_4rdma_7ibverbs_2QP_11modify(PyObject *__pyx_v_self, Py
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_mask)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("modify", 1, 2, 2, 1); __PYX_ERR(0, 1349, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("modify", 1, 2, 2, 1); __PYX_ERR(0, 1345, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "modify") < 0)) __PYX_ERR(0, 1349, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "modify") < 0)) __PYX_ERR(0, 1345, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -26387,11 +26331,11 @@ static PyObject *__pyx_pw_4rdma_7ibverbs_2QP_11modify(PyObject *__pyx_v_self, Py
       values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
     }
     __pyx_v_attr = values[0];
-    __pyx_v_mask = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_mask == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1349, __pyx_L3_error)
+    __pyx_v_mask = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_mask == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1345, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("modify", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 1349, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("modify", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 1345, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("rdma.ibverbs.QP.modify", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -26428,7 +26372,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_10modify(struct __pyx_obj_4rdma_7ib
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("modify", 0);
 
-  /* "rdma/ibverbs.pyx":1356
+  /* "rdma/ibverbs.pyx":1352
  *         cdef int cmask
  * 
  *         memset(&cattr,0,sizeof(cattr));             # <<<<<<<<<<<<<<
@@ -26437,7 +26381,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_10modify(struct __pyx_obj_4rdma_7ib
  */
   (void)(memset((&__pyx_v_cattr), 0, (sizeof(__pyx_v_cattr))));
 
-  /* "rdma/ibverbs.pyx":1358
+  /* "rdma/ibverbs.pyx":1354
  *         memset(&cattr,0,sizeof(cattr));
  * 
  *         cmask = mask             # <<<<<<<<<<<<<<
@@ -26446,31 +26390,31 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_10modify(struct __pyx_obj_4rdma_7ib
  */
   __pyx_v_cmask = __pyx_v_mask;
 
-  /* "rdma/ibverbs.pyx":1359
+  /* "rdma/ibverbs.pyx":1355
  * 
  *         cmask = mask
  *         if debug:             # <<<<<<<<<<<<<<
  *             print 'modify qp, attr = %s mask = 0x%x' % (str(attr), cmask)
  *         if not isinstance(mask, int):
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_debug); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1359, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_debug); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1355, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 1359, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 1355, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   if (__pyx_t_2) {
 
-    /* "rdma/ibverbs.pyx":1360
+    /* "rdma/ibverbs.pyx":1356
  *         cmask = mask
  *         if debug:
  *             print 'modify qp, attr = %s mask = 0x%x' % (str(attr), cmask)             # <<<<<<<<<<<<<<
  *         if not isinstance(mask, int):
  *             raise TypeError("mask must be an int")
  */
-    __pyx_t_1 = __Pyx_PyObject_CallOneArg(((PyObject *)(&PyString_Type)), __pyx_v_attr); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1360, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_CallOneArg(((PyObject *)(&PyString_Type)), __pyx_v_attr); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1356, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_cmask); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1360, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_cmask); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1356, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_4 = PyTuple_New(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1360, __pyx_L1_error)
+    __pyx_t_4 = PyTuple_New(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1356, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_GIVEREF(__pyx_t_1);
     PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_1);
@@ -26478,13 +26422,13 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_10modify(struct __pyx_obj_4rdma_7ib
     PyTuple_SET_ITEM(__pyx_t_4, 1, __pyx_t_3);
     __pyx_t_1 = 0;
     __pyx_t_3 = 0;
-    __pyx_t_3 = __Pyx_PyString_Format(__pyx_kp_s_modify_qp_attr_s_mask_0x_x, __pyx_t_4); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1360, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyString_Format(__pyx_kp_s_modify_qp_attr_s_mask_0x_x, __pyx_t_4); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1356, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    if (__Pyx_PrintOne(0, __pyx_t_3) < 0) __PYX_ERR(0, 1360, __pyx_L1_error)
+    if (__Pyx_PrintOne(0, __pyx_t_3) < 0) __PYX_ERR(0, 1356, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-    /* "rdma/ibverbs.pyx":1359
+    /* "rdma/ibverbs.pyx":1355
  * 
  *         cmask = mask
  *         if debug:             # <<<<<<<<<<<<<<
@@ -26493,34 +26437,34 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_10modify(struct __pyx_obj_4rdma_7ib
  */
   }
 
-  /* "rdma/ibverbs.pyx":1361
+  /* "rdma/ibverbs.pyx":1357
  *         if debug:
  *             print 'modify qp, attr = %s mask = 0x%x' % (str(attr), cmask)
  *         if not isinstance(mask, int):             # <<<<<<<<<<<<<<
  *             raise TypeError("mask must be an int")
  *         if not isinstance(attr, qp_attr):
  */
-  __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_mask); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1361, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_mask); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1357, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_t_2 = PyInt_Check(__pyx_t_3); 
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_t_5 = ((!(__pyx_t_2 != 0)) != 0);
   if (unlikely(__pyx_t_5)) {
 
-    /* "rdma/ibverbs.pyx":1362
+    /* "rdma/ibverbs.pyx":1358
  *             print 'modify qp, attr = %s mask = 0x%x' % (str(attr), cmask)
  *         if not isinstance(mask, int):
  *             raise TypeError("mask must be an int")             # <<<<<<<<<<<<<<
  *         if not isinstance(attr, qp_attr):
  *             raise TypeError("attr must be a qp_attr")
  */
-    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_tuple__31, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1362, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_tuple__31, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1358, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_Raise(__pyx_t_3, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __PYX_ERR(0, 1362, __pyx_L1_error)
+    __PYX_ERR(0, 1358, __pyx_L1_error)
 
-    /* "rdma/ibverbs.pyx":1361
+    /* "rdma/ibverbs.pyx":1357
  *         if debug:
  *             print 'modify qp, attr = %s mask = 0x%x' % (str(attr), cmask)
  *         if not isinstance(mask, int):             # <<<<<<<<<<<<<<
@@ -26529,34 +26473,34 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_10modify(struct __pyx_obj_4rdma_7ib
  */
   }
 
-  /* "rdma/ibverbs.pyx":1363
+  /* "rdma/ibverbs.pyx":1359
  *         if not isinstance(mask, int):
  *             raise TypeError("mask must be an int")
  *         if not isinstance(attr, qp_attr):             # <<<<<<<<<<<<<<
  *             raise TypeError("attr must be a qp_attr")
  *         cattr.qp_state = attr.qp_state
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_qp_attr); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1363, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_qp_attr); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1359, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_5 = PyObject_IsInstance(__pyx_v_attr, __pyx_t_3); if (unlikely(__pyx_t_5 == ((int)-1))) __PYX_ERR(0, 1363, __pyx_L1_error)
+  __pyx_t_5 = PyObject_IsInstance(__pyx_v_attr, __pyx_t_3); if (unlikely(__pyx_t_5 == ((int)-1))) __PYX_ERR(0, 1359, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_t_2 = ((!(__pyx_t_5 != 0)) != 0);
   if (unlikely(__pyx_t_2)) {
 
-    /* "rdma/ibverbs.pyx":1364
+    /* "rdma/ibverbs.pyx":1360
  *             raise TypeError("mask must be an int")
  *         if not isinstance(attr, qp_attr):
  *             raise TypeError("attr must be a qp_attr")             # <<<<<<<<<<<<<<
  *         cattr.qp_state = attr.qp_state
  *         cattr.cur_qp_state = attr.cur_qp_state
  */
-    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_tuple__32, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1364, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_tuple__32, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1360, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_Raise(__pyx_t_3, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __PYX_ERR(0, 1364, __pyx_L1_error)
+    __PYX_ERR(0, 1360, __pyx_L1_error)
 
-    /* "rdma/ibverbs.pyx":1363
+    /* "rdma/ibverbs.pyx":1359
  *         if not isinstance(mask, int):
  *             raise TypeError("mask must be an int")
  *         if not isinstance(attr, qp_attr):             # <<<<<<<<<<<<<<
@@ -26565,98 +26509,98 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_10modify(struct __pyx_obj_4rdma_7ib
  */
   }
 
-  /* "rdma/ibverbs.pyx":1365
+  /* "rdma/ibverbs.pyx":1361
  *         if not isinstance(attr, qp_attr):
  *             raise TypeError("attr must be a qp_attr")
  *         cattr.qp_state = attr.qp_state             # <<<<<<<<<<<<<<
  *         cattr.cur_qp_state = attr.cur_qp_state
  *         cattr.en_sqd_async_notify = attr.en_sqd_async_notify
  */
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_attr, __pyx_n_s_qp_state); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1365, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_attr, __pyx_n_s_qp_state); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1361, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_6 = ((enum ibv_qp_state)__Pyx_PyInt_As_enum__ibv_qp_state(__pyx_t_3)); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 1365, __pyx_L1_error)
+  __pyx_t_6 = ((enum ibv_qp_state)__Pyx_PyInt_As_enum__ibv_qp_state(__pyx_t_3)); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 1361, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_v_cattr.qp_state = __pyx_t_6;
 
-  /* "rdma/ibverbs.pyx":1366
+  /* "rdma/ibverbs.pyx":1362
  *             raise TypeError("attr must be a qp_attr")
  *         cattr.qp_state = attr.qp_state
  *         cattr.cur_qp_state = attr.cur_qp_state             # <<<<<<<<<<<<<<
  *         cattr.en_sqd_async_notify = attr.en_sqd_async_notify
  *         cattr.qp_access_flags = attr.qp_access_flags
  */
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_attr, __pyx_n_s_cur_qp_state); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1366, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_attr, __pyx_n_s_cur_qp_state); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1362, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_6 = ((enum ibv_qp_state)__Pyx_PyInt_As_enum__ibv_qp_state(__pyx_t_3)); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 1366, __pyx_L1_error)
+  __pyx_t_6 = ((enum ibv_qp_state)__Pyx_PyInt_As_enum__ibv_qp_state(__pyx_t_3)); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 1362, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_v_cattr.cur_qp_state = __pyx_t_6;
 
-  /* "rdma/ibverbs.pyx":1367
+  /* "rdma/ibverbs.pyx":1363
  *         cattr.qp_state = attr.qp_state
  *         cattr.cur_qp_state = attr.cur_qp_state
  *         cattr.en_sqd_async_notify = attr.en_sqd_async_notify             # <<<<<<<<<<<<<<
  *         cattr.qp_access_flags = attr.qp_access_flags
  *         cattr.pkey_index = attr.pkey_index
  */
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_attr, __pyx_n_s_en_sqd_async_notify); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1367, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_attr, __pyx_n_s_en_sqd_async_notify); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1363, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_7 = __Pyx_PyInt_As_unsigned_int(__pyx_t_3); if (unlikely((__pyx_t_7 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1367, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyInt_As_unsigned_int(__pyx_t_3); if (unlikely((__pyx_t_7 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1363, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_v_cattr.en_sqd_async_notify = __pyx_t_7;
 
-  /* "rdma/ibverbs.pyx":1368
+  /* "rdma/ibverbs.pyx":1364
  *         cattr.cur_qp_state = attr.cur_qp_state
  *         cattr.en_sqd_async_notify = attr.en_sqd_async_notify
  *         cattr.qp_access_flags = attr.qp_access_flags             # <<<<<<<<<<<<<<
  *         cattr.pkey_index = attr.pkey_index
  *         cattr.port_num = attr.port_num
  */
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_attr, __pyx_n_s_qp_access_flags); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1368, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_attr, __pyx_n_s_qp_access_flags); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1364, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_7 = __Pyx_PyInt_As_unsigned_int(__pyx_t_3); if (unlikely((__pyx_t_7 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1368, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyInt_As_unsigned_int(__pyx_t_3); if (unlikely((__pyx_t_7 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1364, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_v_cattr.qp_access_flags = __pyx_t_7;
 
-  /* "rdma/ibverbs.pyx":1369
+  /* "rdma/ibverbs.pyx":1365
  *         cattr.en_sqd_async_notify = attr.en_sqd_async_notify
  *         cattr.qp_access_flags = attr.qp_access_flags
  *         cattr.pkey_index = attr.pkey_index             # <<<<<<<<<<<<<<
  *         cattr.port_num = attr.port_num
  *         cattr.qkey = attr.qkey
  */
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_attr, __pyx_n_s_pkey_index); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1369, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_attr, __pyx_n_s_pkey_index); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1365, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_7 = __Pyx_PyInt_As_unsigned_int(__pyx_t_3); if (unlikely((__pyx_t_7 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1369, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyInt_As_unsigned_int(__pyx_t_3); if (unlikely((__pyx_t_7 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1365, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_v_cattr.pkey_index = __pyx_t_7;
 
-  /* "rdma/ibverbs.pyx":1370
+  /* "rdma/ibverbs.pyx":1366
  *         cattr.qp_access_flags = attr.qp_access_flags
  *         cattr.pkey_index = attr.pkey_index
  *         cattr.port_num = attr.port_num             # <<<<<<<<<<<<<<
  *         cattr.qkey = attr.qkey
  * 
  */
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_attr, __pyx_n_s_port_num); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1370, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_attr, __pyx_n_s_port_num); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1366, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_7 = __Pyx_PyInt_As_unsigned_int(__pyx_t_3); if (unlikely((__pyx_t_7 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1370, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyInt_As_unsigned_int(__pyx_t_3); if (unlikely((__pyx_t_7 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1366, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_v_cattr.port_num = __pyx_t_7;
 
-  /* "rdma/ibverbs.pyx":1371
+  /* "rdma/ibverbs.pyx":1367
  *         cattr.pkey_index = attr.pkey_index
  *         cattr.port_num = attr.port_num
  *         cattr.qkey = attr.qkey             # <<<<<<<<<<<<<<
  * 
  *         if cmask & c.IBV_QP_AV:
  */
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_attr, __pyx_n_s_qkey); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1371, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_attr, __pyx_n_s_qkey); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1367, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_7 = __Pyx_PyInt_As_unsigned_int(__pyx_t_3); if (unlikely((__pyx_t_7 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1371, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyInt_As_unsigned_int(__pyx_t_3); if (unlikely((__pyx_t_7 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1367, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_v_cattr.qkey = __pyx_t_7;
 
-  /* "rdma/ibverbs.pyx":1373
+  /* "rdma/ibverbs.pyx":1369
  *         cattr.qkey = attr.qkey
  * 
  *         if cmask & c.IBV_QP_AV:             # <<<<<<<<<<<<<<
@@ -26666,21 +26610,21 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_10modify(struct __pyx_obj_4rdma_7ib
   __pyx_t_2 = ((__pyx_v_cmask & IBV_QP_AV) != 0);
   if (__pyx_t_2) {
 
-    /* "rdma/ibverbs.pyx":1374
+    /* "rdma/ibverbs.pyx":1370
  * 
  *         if cmask & c.IBV_QP_AV:
  *             to_ah_attr(&cattr.ah_attr, attr.ah_attr)             # <<<<<<<<<<<<<<
  * 
  *         cattr.path_mtu = attr.path_mtu
  */
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_attr, __pyx_n_s_ah_attr); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1374, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_attr, __pyx_n_s_ah_attr); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1370, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_4 = __pyx_f_4rdma_7ibverbs_to_ah_attr((&__pyx_v_cattr.ah_attr), __pyx_t_3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1374, __pyx_L1_error)
+    __pyx_t_4 = __pyx_f_4rdma_7ibverbs_to_ah_attr((&__pyx_v_cattr.ah_attr), __pyx_t_3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1370, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-    /* "rdma/ibverbs.pyx":1373
+    /* "rdma/ibverbs.pyx":1369
  *         cattr.qkey = attr.qkey
  * 
  *         if cmask & c.IBV_QP_AV:             # <<<<<<<<<<<<<<
@@ -26689,85 +26633,85 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_10modify(struct __pyx_obj_4rdma_7ib
  */
   }
 
-  /* "rdma/ibverbs.pyx":1376
+  /* "rdma/ibverbs.pyx":1372
  *             to_ah_attr(&cattr.ah_attr, attr.ah_attr)
  * 
  *         cattr.path_mtu = attr.path_mtu             # <<<<<<<<<<<<<<
  *         cattr.timeout = attr.timeout
  *         cattr.retry_cnt = attr.retry_cnt
  */
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_attr, __pyx_n_s_path_mtu); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1376, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_attr, __pyx_n_s_path_mtu); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1372, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_8 = ((enum ibv_mtu)__Pyx_PyInt_As_enum__ibv_mtu(__pyx_t_4)); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 1376, __pyx_L1_error)
+  __pyx_t_8 = ((enum ibv_mtu)__Pyx_PyInt_As_enum__ibv_mtu(__pyx_t_4)); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 1372, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_v_cattr.path_mtu = __pyx_t_8;
 
-  /* "rdma/ibverbs.pyx":1377
+  /* "rdma/ibverbs.pyx":1373
  * 
  *         cattr.path_mtu = attr.path_mtu
  *         cattr.timeout = attr.timeout             # <<<<<<<<<<<<<<
  *         cattr.retry_cnt = attr.retry_cnt
  *         cattr.rnr_retry = attr.rnr_retry
  */
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_attr, __pyx_n_s_timeout); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1377, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_attr, __pyx_n_s_timeout); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1373, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_7 = __Pyx_PyInt_As_unsigned_int(__pyx_t_4); if (unlikely((__pyx_t_7 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1377, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyInt_As_unsigned_int(__pyx_t_4); if (unlikely((__pyx_t_7 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1373, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_v_cattr.timeout = __pyx_t_7;
 
-  /* "rdma/ibverbs.pyx":1378
+  /* "rdma/ibverbs.pyx":1374
  *         cattr.path_mtu = attr.path_mtu
  *         cattr.timeout = attr.timeout
  *         cattr.retry_cnt = attr.retry_cnt             # <<<<<<<<<<<<<<
  *         cattr.rnr_retry = attr.rnr_retry
  *         cattr.rq_psn = attr.rq_psn
  */
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_attr, __pyx_n_s_retry_cnt); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1378, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_attr, __pyx_n_s_retry_cnt); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1374, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_7 = __Pyx_PyInt_As_unsigned_int(__pyx_t_4); if (unlikely((__pyx_t_7 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1378, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyInt_As_unsigned_int(__pyx_t_4); if (unlikely((__pyx_t_7 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1374, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_v_cattr.retry_cnt = __pyx_t_7;
 
-  /* "rdma/ibverbs.pyx":1379
+  /* "rdma/ibverbs.pyx":1375
  *         cattr.timeout = attr.timeout
  *         cattr.retry_cnt = attr.retry_cnt
  *         cattr.rnr_retry = attr.rnr_retry             # <<<<<<<<<<<<<<
  *         cattr.rq_psn = attr.rq_psn
  *         cattr.max_rd_atomic = attr.max_rd_atomic
  */
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_attr, __pyx_n_s_rnr_retry); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1379, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_attr, __pyx_n_s_rnr_retry); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1375, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_7 = __Pyx_PyInt_As_unsigned_int(__pyx_t_4); if (unlikely((__pyx_t_7 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1379, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyInt_As_unsigned_int(__pyx_t_4); if (unlikely((__pyx_t_7 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1375, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_v_cattr.rnr_retry = __pyx_t_7;
 
-  /* "rdma/ibverbs.pyx":1380
+  /* "rdma/ibverbs.pyx":1376
  *         cattr.retry_cnt = attr.retry_cnt
  *         cattr.rnr_retry = attr.rnr_retry
  *         cattr.rq_psn = attr.rq_psn             # <<<<<<<<<<<<<<
  *         cattr.max_rd_atomic = attr.max_rd_atomic
  * 
  */
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_attr, __pyx_n_s_rq_psn); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1380, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_attr, __pyx_n_s_rq_psn); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1376, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_7 = __Pyx_PyInt_As_unsigned_int(__pyx_t_4); if (unlikely((__pyx_t_7 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1380, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyInt_As_unsigned_int(__pyx_t_4); if (unlikely((__pyx_t_7 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1376, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_v_cattr.rq_psn = __pyx_t_7;
 
-  /* "rdma/ibverbs.pyx":1381
+  /* "rdma/ibverbs.pyx":1377
  *         cattr.rnr_retry = attr.rnr_retry
  *         cattr.rq_psn = attr.rq_psn
  *         cattr.max_rd_atomic = attr.max_rd_atomic             # <<<<<<<<<<<<<<
  * 
  *         if cmask & c.IBV_QP_ALT_PATH:
  */
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_attr, __pyx_n_s_max_rd_atomic); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1381, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_attr, __pyx_n_s_max_rd_atomic); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1377, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_7 = __Pyx_PyInt_As_unsigned_int(__pyx_t_4); if (unlikely((__pyx_t_7 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1381, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyInt_As_unsigned_int(__pyx_t_4); if (unlikely((__pyx_t_7 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1377, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_v_cattr.max_rd_atomic = __pyx_t_7;
 
-  /* "rdma/ibverbs.pyx":1383
+  /* "rdma/ibverbs.pyx":1379
  *         cattr.max_rd_atomic = attr.max_rd_atomic
  * 
  *         if cmask & c.IBV_QP_ALT_PATH:             # <<<<<<<<<<<<<<
@@ -26777,60 +26721,60 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_10modify(struct __pyx_obj_4rdma_7ib
   __pyx_t_2 = ((__pyx_v_cmask & IBV_QP_ALT_PATH) != 0);
   if (__pyx_t_2) {
 
-    /* "rdma/ibverbs.pyx":1384
+    /* "rdma/ibverbs.pyx":1380
  * 
  *         if cmask & c.IBV_QP_ALT_PATH:
  *             to_ah_attr(&cattr.alt_ah_attr, attr.alt_ah_attr)             # <<<<<<<<<<<<<<
  *             cattr.alt_pkey_index = attr.alt_pkey_index
  *             cattr.alt_port_num = attr.alt_port_num
  */
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_attr, __pyx_n_s_alt_ah_attr); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1384, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_attr, __pyx_n_s_alt_ah_attr); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1380, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_3 = __pyx_f_4rdma_7ibverbs_to_ah_attr((&__pyx_v_cattr.alt_ah_attr), __pyx_t_4); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1384, __pyx_L1_error)
+    __pyx_t_3 = __pyx_f_4rdma_7ibverbs_to_ah_attr((&__pyx_v_cattr.alt_ah_attr), __pyx_t_4); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1380, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-    /* "rdma/ibverbs.pyx":1385
+    /* "rdma/ibverbs.pyx":1381
  *         if cmask & c.IBV_QP_ALT_PATH:
  *             to_ah_attr(&cattr.alt_ah_attr, attr.alt_ah_attr)
  *             cattr.alt_pkey_index = attr.alt_pkey_index             # <<<<<<<<<<<<<<
  *             cattr.alt_port_num = attr.alt_port_num
  *             cattr.alt_timeout = attr.alt_timeout
  */
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_attr, __pyx_n_s_alt_pkey_index); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1385, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_attr, __pyx_n_s_alt_pkey_index); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1381, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_7 = __Pyx_PyInt_As_unsigned_int(__pyx_t_3); if (unlikely((__pyx_t_7 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1385, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyInt_As_unsigned_int(__pyx_t_3); if (unlikely((__pyx_t_7 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1381, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __pyx_v_cattr.alt_pkey_index = __pyx_t_7;
 
-    /* "rdma/ibverbs.pyx":1386
+    /* "rdma/ibverbs.pyx":1382
  *             to_ah_attr(&cattr.alt_ah_attr, attr.alt_ah_attr)
  *             cattr.alt_pkey_index = attr.alt_pkey_index
  *             cattr.alt_port_num = attr.alt_port_num             # <<<<<<<<<<<<<<
  *             cattr.alt_timeout = attr.alt_timeout
  * 
  */
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_attr, __pyx_n_s_alt_port_num); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1386, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_attr, __pyx_n_s_alt_port_num); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1382, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_7 = __Pyx_PyInt_As_unsigned_int(__pyx_t_3); if (unlikely((__pyx_t_7 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1386, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyInt_As_unsigned_int(__pyx_t_3); if (unlikely((__pyx_t_7 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1382, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __pyx_v_cattr.alt_port_num = __pyx_t_7;
 
-    /* "rdma/ibverbs.pyx":1387
+    /* "rdma/ibverbs.pyx":1383
  *             cattr.alt_pkey_index = attr.alt_pkey_index
  *             cattr.alt_port_num = attr.alt_port_num
  *             cattr.alt_timeout = attr.alt_timeout             # <<<<<<<<<<<<<<
  * 
  *         cattr.min_rnr_timer = attr.min_rnr_timer
  */
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_attr, __pyx_n_s_alt_timeout); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1387, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_attr, __pyx_n_s_alt_timeout); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1383, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_7 = __Pyx_PyInt_As_unsigned_int(__pyx_t_3); if (unlikely((__pyx_t_7 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1387, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyInt_As_unsigned_int(__pyx_t_3); if (unlikely((__pyx_t_7 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1383, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __pyx_v_cattr.alt_timeout = __pyx_t_7;
 
-    /* "rdma/ibverbs.pyx":1383
+    /* "rdma/ibverbs.pyx":1379
  *         cattr.max_rd_atomic = attr.max_rd_atomic
  * 
  *         if cmask & c.IBV_QP_ALT_PATH:             # <<<<<<<<<<<<<<
@@ -26839,59 +26783,59 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_10modify(struct __pyx_obj_4rdma_7ib
  */
   }
 
-  /* "rdma/ibverbs.pyx":1389
+  /* "rdma/ibverbs.pyx":1385
  *             cattr.alt_timeout = attr.alt_timeout
  * 
  *         cattr.min_rnr_timer = attr.min_rnr_timer             # <<<<<<<<<<<<<<
  *         cattr.sq_psn = attr.sq_psn
  *         cattr.max_dest_rd_atomic = attr.max_dest_rd_atomic
  */
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_attr, __pyx_n_s_min_rnr_timer); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1389, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_attr, __pyx_n_s_min_rnr_timer); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1385, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_7 = __Pyx_PyInt_As_unsigned_int(__pyx_t_3); if (unlikely((__pyx_t_7 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1389, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyInt_As_unsigned_int(__pyx_t_3); if (unlikely((__pyx_t_7 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1385, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_v_cattr.min_rnr_timer = __pyx_t_7;
 
-  /* "rdma/ibverbs.pyx":1390
+  /* "rdma/ibverbs.pyx":1386
  * 
  *         cattr.min_rnr_timer = attr.min_rnr_timer
  *         cattr.sq_psn = attr.sq_psn             # <<<<<<<<<<<<<<
  *         cattr.max_dest_rd_atomic = attr.max_dest_rd_atomic
  *         cattr.path_mig_state = attr.path_mig_state
  */
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_attr, __pyx_n_s_sq_psn); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1390, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_attr, __pyx_n_s_sq_psn); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1386, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_7 = __Pyx_PyInt_As_unsigned_int(__pyx_t_3); if (unlikely((__pyx_t_7 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1390, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyInt_As_unsigned_int(__pyx_t_3); if (unlikely((__pyx_t_7 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1386, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_v_cattr.sq_psn = __pyx_t_7;
 
-  /* "rdma/ibverbs.pyx":1391
+  /* "rdma/ibverbs.pyx":1387
  *         cattr.min_rnr_timer = attr.min_rnr_timer
  *         cattr.sq_psn = attr.sq_psn
  *         cattr.max_dest_rd_atomic = attr.max_dest_rd_atomic             # <<<<<<<<<<<<<<
  *         cattr.path_mig_state = attr.path_mig_state
  * 
  */
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_attr, __pyx_n_s_max_dest_rd_atomic); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1391, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_attr, __pyx_n_s_max_dest_rd_atomic); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1387, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_7 = __Pyx_PyInt_As_unsigned_int(__pyx_t_3); if (unlikely((__pyx_t_7 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1391, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyInt_As_unsigned_int(__pyx_t_3); if (unlikely((__pyx_t_7 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1387, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_v_cattr.max_dest_rd_atomic = __pyx_t_7;
 
-  /* "rdma/ibverbs.pyx":1392
+  /* "rdma/ibverbs.pyx":1388
  *         cattr.sq_psn = attr.sq_psn
  *         cattr.max_dest_rd_atomic = attr.max_dest_rd_atomic
  *         cattr.path_mig_state = attr.path_mig_state             # <<<<<<<<<<<<<<
  * 
  *         if cmask & c.IBV_QP_CAP:
  */
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_attr, __pyx_n_s_path_mig_state); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1392, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_attr, __pyx_n_s_path_mig_state); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1388, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_9 = ((enum ibv_mig_state)__Pyx_PyInt_As_enum__ibv_mig_state(__pyx_t_3)); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 1392, __pyx_L1_error)
+  __pyx_t_9 = ((enum ibv_mig_state)__Pyx_PyInt_As_enum__ibv_mig_state(__pyx_t_3)); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 1388, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_v_cattr.path_mig_state = __pyx_t_9;
 
-  /* "rdma/ibverbs.pyx":1394
+  /* "rdma/ibverbs.pyx":1390
  *         cattr.path_mig_state = attr.path_mig_state
  * 
  *         if cmask & c.IBV_QP_CAP:             # <<<<<<<<<<<<<<
@@ -26901,87 +26845,87 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_10modify(struct __pyx_obj_4rdma_7ib
   __pyx_t_2 = ((__pyx_v_cmask & IBV_QP_CAP) != 0);
   if (__pyx_t_2) {
 
-    /* "rdma/ibverbs.pyx":1395
+    /* "rdma/ibverbs.pyx":1391
  * 
  *         if cmask & c.IBV_QP_CAP:
  *             cattr.cap.max_send_wr = attr.cap.max_send_wr             # <<<<<<<<<<<<<<
  *             cattr.cap.max_recv_wr = attr.cap.max_recv_wr
  *             cattr.cap.max_send_sge = attr.cap.max_send_sge
  */
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_attr, __pyx_n_s_cap); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1395, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_attr, __pyx_n_s_cap); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1391, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_max_send_wr); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1395, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_max_send_wr); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1391, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __pyx_t_7 = __Pyx_PyInt_As_unsigned_int(__pyx_t_4); if (unlikely((__pyx_t_7 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1395, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyInt_As_unsigned_int(__pyx_t_4); if (unlikely((__pyx_t_7 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1391, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __pyx_v_cattr.cap.max_send_wr = __pyx_t_7;
 
-    /* "rdma/ibverbs.pyx":1396
+    /* "rdma/ibverbs.pyx":1392
  *         if cmask & c.IBV_QP_CAP:
  *             cattr.cap.max_send_wr = attr.cap.max_send_wr
  *             cattr.cap.max_recv_wr = attr.cap.max_recv_wr             # <<<<<<<<<<<<<<
  *             cattr.cap.max_send_sge = attr.cap.max_send_sge
  *             cattr.cap.max_recv_sge = attr.cap.max_recv_sge
  */
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_attr, __pyx_n_s_cap); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1396, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_attr, __pyx_n_s_cap); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1392, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_max_recv_wr); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1396, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_max_recv_wr); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1392, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __pyx_t_7 = __Pyx_PyInt_As_unsigned_int(__pyx_t_3); if (unlikely((__pyx_t_7 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1396, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyInt_As_unsigned_int(__pyx_t_3); if (unlikely((__pyx_t_7 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1392, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __pyx_v_cattr.cap.max_recv_wr = __pyx_t_7;
 
-    /* "rdma/ibverbs.pyx":1397
+    /* "rdma/ibverbs.pyx":1393
  *             cattr.cap.max_send_wr = attr.cap.max_send_wr
  *             cattr.cap.max_recv_wr = attr.cap.max_recv_wr
  *             cattr.cap.max_send_sge = attr.cap.max_send_sge             # <<<<<<<<<<<<<<
  *             cattr.cap.max_recv_sge = attr.cap.max_recv_sge
  *             cattr.cap.max_inline_data = attr.cap.max_inline_data
  */
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_attr, __pyx_n_s_cap); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1397, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_attr, __pyx_n_s_cap); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1393, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_max_send_sge); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1397, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_max_send_sge); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1393, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __pyx_t_7 = __Pyx_PyInt_As_unsigned_int(__pyx_t_4); if (unlikely((__pyx_t_7 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1397, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyInt_As_unsigned_int(__pyx_t_4); if (unlikely((__pyx_t_7 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1393, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __pyx_v_cattr.cap.max_send_sge = __pyx_t_7;
 
-    /* "rdma/ibverbs.pyx":1398
+    /* "rdma/ibverbs.pyx":1394
  *             cattr.cap.max_recv_wr = attr.cap.max_recv_wr
  *             cattr.cap.max_send_sge = attr.cap.max_send_sge
  *             cattr.cap.max_recv_sge = attr.cap.max_recv_sge             # <<<<<<<<<<<<<<
  *             cattr.cap.max_inline_data = attr.cap.max_inline_data
  * 
  */
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_attr, __pyx_n_s_cap); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1398, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_attr, __pyx_n_s_cap); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1394, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_max_recv_sge); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1398, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_max_recv_sge); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1394, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __pyx_t_7 = __Pyx_PyInt_As_unsigned_int(__pyx_t_3); if (unlikely((__pyx_t_7 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1398, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyInt_As_unsigned_int(__pyx_t_3); if (unlikely((__pyx_t_7 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1394, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __pyx_v_cattr.cap.max_recv_sge = __pyx_t_7;
 
-    /* "rdma/ibverbs.pyx":1399
+    /* "rdma/ibverbs.pyx":1395
  *             cattr.cap.max_send_sge = attr.cap.max_send_sge
  *             cattr.cap.max_recv_sge = attr.cap.max_recv_sge
  *             cattr.cap.max_inline_data = attr.cap.max_inline_data             # <<<<<<<<<<<<<<
  * 
  *         cattr.dest_qp_num = attr.dest_qp_num
  */
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_attr, __pyx_n_s_cap); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1399, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_attr, __pyx_n_s_cap); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1395, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_max_inline_data); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1399, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_max_inline_data); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1395, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __pyx_t_7 = __Pyx_PyInt_As_unsigned_int(__pyx_t_4); if (unlikely((__pyx_t_7 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1399, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyInt_As_unsigned_int(__pyx_t_4); if (unlikely((__pyx_t_7 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1395, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __pyx_v_cattr.cap.max_inline_data = __pyx_t_7;
 
-    /* "rdma/ibverbs.pyx":1394
+    /* "rdma/ibverbs.pyx":1390
  *         cattr.path_mig_state = attr.path_mig_state
  * 
  *         if cmask & c.IBV_QP_CAP:             # <<<<<<<<<<<<<<
@@ -26990,20 +26934,20 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_10modify(struct __pyx_obj_4rdma_7ib
  */
   }
 
-  /* "rdma/ibverbs.pyx":1401
+  /* "rdma/ibverbs.pyx":1397
  *             cattr.cap.max_inline_data = attr.cap.max_inline_data
  * 
  *         cattr.dest_qp_num = attr.dest_qp_num             # <<<<<<<<<<<<<<
  * 
  *         rc = c.ibv_modify_qp(self._qp, &cattr, cmask)
  */
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_attr, __pyx_n_s_dest_qp_num); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1401, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_attr, __pyx_n_s_dest_qp_num); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1397, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_7 = __Pyx_PyInt_As_unsigned_int(__pyx_t_4); if (unlikely((__pyx_t_7 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1401, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyInt_As_unsigned_int(__pyx_t_4); if (unlikely((__pyx_t_7 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1397, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_v_cattr.dest_qp_num = __pyx_t_7;
 
-  /* "rdma/ibverbs.pyx":1403
+  /* "rdma/ibverbs.pyx":1399
  *         cattr.dest_qp_num = attr.dest_qp_num
  * 
  *         rc = c.ibv_modify_qp(self._qp, &cattr, cmask)             # <<<<<<<<<<<<<<
@@ -27012,7 +26956,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_10modify(struct __pyx_obj_4rdma_7ib
  */
   __pyx_v_rc = ibv_modify_qp(__pyx_v_self->_qp, (&__pyx_v_cattr), __pyx_v_cmask);
 
-  /* "rdma/ibverbs.pyx":1404
+  /* "rdma/ibverbs.pyx":1400
  * 
  *         rc = c.ibv_modify_qp(self._qp, &cattr, cmask)
  *         if rc != 0:             # <<<<<<<<<<<<<<
@@ -27022,19 +26966,19 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_10modify(struct __pyx_obj_4rdma_7ib
   __pyx_t_2 = ((__pyx_v_rc != 0) != 0);
   if (unlikely(__pyx_t_2)) {
 
-    /* "rdma/ibverbs.pyx":1405
+    /* "rdma/ibverbs.pyx":1401
  *         rc = c.ibv_modify_qp(self._qp, &cattr, cmask)
  *         if rc != 0:
  *             raise rdma.SysError(errno,"ibv_modify_qp",             # <<<<<<<<<<<<<<
  *                                 "Failed to modify qp")
  * 
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_rdma); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1405, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_rdma); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1401, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_SysError); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1405, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_SysError); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1401, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __pyx_t_3 = __Pyx_PyInt_From_int(errno); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1405, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyInt_From_int(errno); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1401, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __pyx_t_10 = NULL;
     __pyx_t_11 = 0;
@@ -27051,7 +26995,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_10modify(struct __pyx_obj_4rdma_7ib
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_1)) {
       PyObject *__pyx_temp[4] = {__pyx_t_10, __pyx_t_3, __pyx_n_s_ibv_modify_qp, __pyx_kp_s_Failed_to_modify_qp};
-      __pyx_t_4 = __Pyx_PyFunction_FastCall(__pyx_t_1, __pyx_temp+1-__pyx_t_11, 3+__pyx_t_11); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1405, __pyx_L1_error)
+      __pyx_t_4 = __Pyx_PyFunction_FastCall(__pyx_t_1, __pyx_temp+1-__pyx_t_11, 3+__pyx_t_11); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1401, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_10); __pyx_t_10 = 0;
       __Pyx_GOTREF(__pyx_t_4);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -27060,14 +27004,14 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_10modify(struct __pyx_obj_4rdma_7ib
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_1)) {
       PyObject *__pyx_temp[4] = {__pyx_t_10, __pyx_t_3, __pyx_n_s_ibv_modify_qp, __pyx_kp_s_Failed_to_modify_qp};
-      __pyx_t_4 = __Pyx_PyCFunction_FastCall(__pyx_t_1, __pyx_temp+1-__pyx_t_11, 3+__pyx_t_11); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1405, __pyx_L1_error)
+      __pyx_t_4 = __Pyx_PyCFunction_FastCall(__pyx_t_1, __pyx_temp+1-__pyx_t_11, 3+__pyx_t_11); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1401, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_10); __pyx_t_10 = 0;
       __Pyx_GOTREF(__pyx_t_4);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     } else
     #endif
     {
-      __pyx_t_12 = PyTuple_New(3+__pyx_t_11); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 1405, __pyx_L1_error)
+      __pyx_t_12 = PyTuple_New(3+__pyx_t_11); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 1401, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_12);
       if (__pyx_t_10) {
         __Pyx_GIVEREF(__pyx_t_10); PyTuple_SET_ITEM(__pyx_t_12, 0, __pyx_t_10); __pyx_t_10 = NULL;
@@ -27081,16 +27025,16 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_10modify(struct __pyx_obj_4rdma_7ib
       __Pyx_GIVEREF(__pyx_kp_s_Failed_to_modify_qp);
       PyTuple_SET_ITEM(__pyx_t_12, 2+__pyx_t_11, __pyx_kp_s_Failed_to_modify_qp);
       __pyx_t_3 = 0;
-      __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_12, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1405, __pyx_L1_error)
+      __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_12, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1401, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
       __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
     }
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __Pyx_Raise(__pyx_t_4, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __PYX_ERR(0, 1405, __pyx_L1_error)
+    __PYX_ERR(0, 1401, __pyx_L1_error)
 
-    /* "rdma/ibverbs.pyx":1404
+    /* "rdma/ibverbs.pyx":1400
  * 
  *         rc = c.ibv_modify_qp(self._qp, &cattr, cmask)
  *         if rc != 0:             # <<<<<<<<<<<<<<
@@ -27099,7 +27043,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_10modify(struct __pyx_obj_4rdma_7ib
  */
   }
 
-  /* "rdma/ibverbs.pyx":1408
+  /* "rdma/ibverbs.pyx":1404
  *                                 "Failed to modify qp")
  * 
  *         if cmask & c.IBV_QP_CAP:             # <<<<<<<<<<<<<<
@@ -27109,7 +27053,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_10modify(struct __pyx_obj_4rdma_7ib
   __pyx_t_2 = ((__pyx_v_cmask & IBV_QP_CAP) != 0);
   if (__pyx_t_2) {
 
-    /* "rdma/ibverbs.pyx":1409
+    /* "rdma/ibverbs.pyx":1405
  * 
  *         if cmask & c.IBV_QP_CAP:
  *             self._cap = cattr.cap             # <<<<<<<<<<<<<<
@@ -27119,7 +27063,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_10modify(struct __pyx_obj_4rdma_7ib
     __pyx_t_13 = __pyx_v_cattr.cap;
     __pyx_v_self->_cap = __pyx_t_13;
 
-    /* "rdma/ibverbs.pyx":1408
+    /* "rdma/ibverbs.pyx":1404
  *                                 "Failed to modify qp")
  * 
  *         if cmask & c.IBV_QP_CAP:             # <<<<<<<<<<<<<<
@@ -27128,7 +27072,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_10modify(struct __pyx_obj_4rdma_7ib
  */
   }
 
-  /* "rdma/ibverbs.pyx":1349
+  /* "rdma/ibverbs.pyx":1345
  *             self._srq = None;
  * 
  *     def modify(self,attr,int mask):             # <<<<<<<<<<<<<<
@@ -27153,7 +27097,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_10modify(struct __pyx_obj_4rdma_7ib
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":1411
+/* "rdma/ibverbs.pyx":1407
  *             self._cap = cattr.cap
  * 
  *     def post_send(self, arg):             # <<<<<<<<<<<<<<
@@ -27222,23 +27166,23 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_12post_send(struct __pyx_obj_4rdma_
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("post_send", 0);
 
-  /* "rdma/ibverbs.pyx":1428
+  /* "rdma/ibverbs.pyx":1424
  *         cdef int num_sge
  * 
  *         wrlist = _post_check(arg, send_wr, self._cap.max_send_sge, &num_sge)             # <<<<<<<<<<<<<<
  * 
  *         n = len(wrlist)
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_send_wr); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1428, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_send_wr); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1424, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __pyx_f_4rdma_7ibverbs__post_check(__pyx_v_arg, __pyx_t_1, __pyx_v_self->_cap.max_send_sge, (&__pyx_v_num_sge)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1428, __pyx_L1_error)
+  __pyx_t_2 = __pyx_f_4rdma_7ibverbs__post_check(__pyx_v_arg, __pyx_t_1, __pyx_v_self->_cap.max_send_sge, (&__pyx_v_num_sge)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1424, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  if (!(likely(PyList_CheckExact(__pyx_t_2))||((__pyx_t_2) == Py_None)||(PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "list", Py_TYPE(__pyx_t_2)->tp_name), 0))) __PYX_ERR(0, 1428, __pyx_L1_error)
+  if (!(likely(PyList_CheckExact(__pyx_t_2))||((__pyx_t_2) == Py_None)||(PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "list", Py_TYPE(__pyx_t_2)->tp_name), 0))) __PYX_ERR(0, 1424, __pyx_L1_error)
   __pyx_v_wrlist = ((PyObject*)__pyx_t_2);
   __pyx_t_2 = 0;
 
-  /* "rdma/ibverbs.pyx":1430
+  /* "rdma/ibverbs.pyx":1426
  *         wrlist = _post_check(arg, send_wr, self._cap.max_send_sge, &num_sge)
  * 
  *         n = len(wrlist)             # <<<<<<<<<<<<<<
@@ -27247,12 +27191,12 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_12post_send(struct __pyx_obj_4rdma_
  */
   if (unlikely(__pyx_v_wrlist == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "object of type 'NoneType' has no len()");
-    __PYX_ERR(0, 1430, __pyx_L1_error)
+    __PYX_ERR(0, 1426, __pyx_L1_error)
   }
-  __pyx_t_3 = PyList_GET_SIZE(__pyx_v_wrlist); if (unlikely(__pyx_t_3 == ((Py_ssize_t)-1))) __PYX_ERR(0, 1430, __pyx_L1_error)
+  __pyx_t_3 = PyList_GET_SIZE(__pyx_v_wrlist); if (unlikely(__pyx_t_3 == ((Py_ssize_t)-1))) __PYX_ERR(0, 1426, __pyx_L1_error)
   __pyx_v_n = __pyx_t_3;
 
-  /* "rdma/ibverbs.pyx":1431
+  /* "rdma/ibverbs.pyx":1427
  * 
  *         n = len(wrlist)
  *         mem = <unsigned char *>calloc(1,sizeof(dummy_wr)*n + sizeof(dummy_sge)*num_sge);             # <<<<<<<<<<<<<<
@@ -27261,7 +27205,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_12post_send(struct __pyx_obj_4rdma_
  */
   __pyx_v_mem = ((unsigned char *)calloc(1, (((sizeof(__pyx_v_dummy_wr)) * __pyx_v_n) + ((sizeof(__pyx_v_dummy_sge)) * __pyx_v_num_sge))));
 
-  /* "rdma/ibverbs.pyx":1432
+  /* "rdma/ibverbs.pyx":1428
  *         n = len(wrlist)
  *         mem = <unsigned char *>calloc(1,sizeof(dummy_wr)*n + sizeof(dummy_sge)*num_sge);
  *         if mem == NULL:             # <<<<<<<<<<<<<<
@@ -27271,16 +27215,16 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_12post_send(struct __pyx_obj_4rdma_
   __pyx_t_4 = ((__pyx_v_mem == NULL) != 0);
   if (unlikely(__pyx_t_4)) {
 
-    /* "rdma/ibverbs.pyx":1433
+    /* "rdma/ibverbs.pyx":1429
  *         mem = <unsigned char *>calloc(1,sizeof(dummy_wr)*n + sizeof(dummy_sge)*num_sge);
  *         if mem == NULL:
  *             raise MemoryError()             # <<<<<<<<<<<<<<
  *         try:
  *             cwr = <c.ibv_send_wr *>(mem);
  */
-    PyErr_NoMemory(); __PYX_ERR(0, 1433, __pyx_L1_error)
+    PyErr_NoMemory(); __PYX_ERR(0, 1429, __pyx_L1_error)
 
-    /* "rdma/ibverbs.pyx":1432
+    /* "rdma/ibverbs.pyx":1428
  *         n = len(wrlist)
  *         mem = <unsigned char *>calloc(1,sizeof(dummy_wr)*n + sizeof(dummy_sge)*num_sge);
  *         if mem == NULL:             # <<<<<<<<<<<<<<
@@ -27289,7 +27233,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_12post_send(struct __pyx_obj_4rdma_
  */
   }
 
-  /* "rdma/ibverbs.pyx":1434
+  /* "rdma/ibverbs.pyx":1430
  *         if mem == NULL:
  *             raise MemoryError()
  *         try:             # <<<<<<<<<<<<<<
@@ -27298,7 +27242,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_12post_send(struct __pyx_obj_4rdma_
  */
   /*try:*/ {
 
-    /* "rdma/ibverbs.pyx":1435
+    /* "rdma/ibverbs.pyx":1431
  *             raise MemoryError()
  *         try:
  *             cwr = <c.ibv_send_wr *>(mem);             # <<<<<<<<<<<<<<
@@ -27307,7 +27251,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_12post_send(struct __pyx_obj_4rdma_
  */
     __pyx_v_cwr = ((struct ibv_send_wr *)__pyx_v_mem);
 
-    /* "rdma/ibverbs.pyx":1436
+    /* "rdma/ibverbs.pyx":1432
  *         try:
  *             cwr = <c.ibv_send_wr *>(mem);
  *             csge = <c.ibv_sge *>(cwr + n);             # <<<<<<<<<<<<<<
@@ -27316,7 +27260,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_12post_send(struct __pyx_obj_4rdma_
  */
     __pyx_v_csge = ((struct ibv_sge *)(__pyx_v_cwr + __pyx_v_n));
 
-    /* "rdma/ibverbs.pyx":1437
+    /* "rdma/ibverbs.pyx":1433
  *             cwr = <c.ibv_send_wr *>(mem);
  *             csge = <c.ibv_sge *>(cwr + n);
  *             for 0 <= i < n:             # <<<<<<<<<<<<<<
@@ -27326,7 +27270,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_12post_send(struct __pyx_obj_4rdma_
     __pyx_t_5 = __pyx_v_n;
     for (__pyx_v_i = 0; __pyx_v_i < __pyx_t_5; __pyx_v_i++) {
 
-      /* "rdma/ibverbs.pyx":1438
+      /* "rdma/ibverbs.pyx":1434
  *             csge = <c.ibv_sge *>(cwr + n);
  *             for 0 <= i < n:
  *                 wr = wrlist[i]             # <<<<<<<<<<<<<<
@@ -27335,27 +27279,27 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_12post_send(struct __pyx_obj_4rdma_
  */
       if (unlikely(__pyx_v_wrlist == Py_None)) {
         PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-        __PYX_ERR(0, 1438, __pyx_L5_error)
+        __PYX_ERR(0, 1434, __pyx_L5_error)
       }
-      __pyx_t_2 = __Pyx_GetItemInt_List(__pyx_v_wrlist, __pyx_v_i, int, 1, __Pyx_PyInt_From_int, 1, 1, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1438, __pyx_L5_error)
+      __pyx_t_2 = __Pyx_GetItemInt_List(__pyx_v_wrlist, __pyx_v_i, int, 1, __Pyx_PyInt_From_int, 1, 1, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1434, __pyx_L5_error)
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_XDECREF_SET(__pyx_v_wr, __pyx_t_2);
       __pyx_t_2 = 0;
 
-      /* "rdma/ibverbs.pyx":1439
+      /* "rdma/ibverbs.pyx":1435
  *             for 0 <= i < n:
  *                 wr = wrlist[i]
  *                 wr_id = wr.wr_id;             # <<<<<<<<<<<<<<
  *                 cwr.wr_id = <uintptr_t>wr_id
  *                 if i == n - 1:
  */
-      __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_wr, __pyx_n_s_wr_id); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1439, __pyx_L5_error)
+      __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_wr, __pyx_n_s_wr_id); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1435, __pyx_L5_error)
       __Pyx_GOTREF(__pyx_t_2);
-      __pyx_t_6 = __Pyx_PyInt_As_int(__pyx_t_2); if (unlikely((__pyx_t_6 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1439, __pyx_L5_error)
+      __pyx_t_6 = __Pyx_PyInt_As_int(__pyx_t_2); if (unlikely((__pyx_t_6 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1435, __pyx_L5_error)
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
       __pyx_v_wr_id = __pyx_t_6;
 
-      /* "rdma/ibverbs.pyx":1440
+      /* "rdma/ibverbs.pyx":1436
  *                 wr = wrlist[i]
  *                 wr_id = wr.wr_id;
  *                 cwr.wr_id = <uintptr_t>wr_id             # <<<<<<<<<<<<<<
@@ -27364,7 +27308,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_12post_send(struct __pyx_obj_4rdma_
  */
       __pyx_v_cwr->wr_id = ((uintptr_t)__pyx_v_wr_id);
 
-      /* "rdma/ibverbs.pyx":1441
+      /* "rdma/ibverbs.pyx":1437
  *                 wr_id = wr.wr_id;
  *                 cwr.wr_id = <uintptr_t>wr_id
  *                 if i == n - 1:             # <<<<<<<<<<<<<<
@@ -27374,7 +27318,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_12post_send(struct __pyx_obj_4rdma_
       __pyx_t_4 = ((__pyx_v_i == (__pyx_v_n - 1)) != 0);
       if (__pyx_t_4) {
 
-        /* "rdma/ibverbs.pyx":1442
+        /* "rdma/ibverbs.pyx":1438
  *                 cwr.wr_id = <uintptr_t>wr_id
  *                 if i == n - 1:
  *                     cwr.next = NULL             # <<<<<<<<<<<<<<
@@ -27383,7 +27327,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_12post_send(struct __pyx_obj_4rdma_
  */
         __pyx_v_cwr->next = NULL;
 
-        /* "rdma/ibverbs.pyx":1441
+        /* "rdma/ibverbs.pyx":1437
  *                 wr_id = wr.wr_id;
  *                 cwr.wr_id = <uintptr_t>wr_id
  *                 if i == n - 1:             # <<<<<<<<<<<<<<
@@ -27393,7 +27337,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_12post_send(struct __pyx_obj_4rdma_
         goto __pyx_L9;
       }
 
-      /* "rdma/ibverbs.pyx":1444
+      /* "rdma/ibverbs.pyx":1440
  *                     cwr.next = NULL
  *                 else:
  *                     cwr.next = cwr + 1             # <<<<<<<<<<<<<<
@@ -27405,7 +27349,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_12post_send(struct __pyx_obj_4rdma_
       }
       __pyx_L9:;
 
-      /* "rdma/ibverbs.pyx":1446
+      /* "rdma/ibverbs.pyx":1442
  *                     cwr.next = cwr + 1
  * 
  *                 cwr.sg_list = csge             # <<<<<<<<<<<<<<
@@ -27414,14 +27358,14 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_12post_send(struct __pyx_obj_4rdma_
  */
       __pyx_v_cwr->sg_list = __pyx_v_csge;
 
-      /* "rdma/ibverbs.pyx":1447
+      /* "rdma/ibverbs.pyx":1443
  * 
  *                 cwr.sg_list = csge
  *                 if isinstance(wr.sg_list, list) or isinstance(wr.sg_list, tuple):             # <<<<<<<<<<<<<<
  *                     cwr.num_sge = len(wr.sg_list)
  *                     for 0 <= j < cwr.num_sge:
  */
-      __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_wr, __pyx_n_s_sg_list); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1447, __pyx_L5_error)
+      __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_wr, __pyx_n_s_sg_list); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1443, __pyx_L5_error)
       __Pyx_GOTREF(__pyx_t_2);
       __pyx_t_7 = PyList_Check(__pyx_t_2); 
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -27431,7 +27375,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_12post_send(struct __pyx_obj_4rdma_
         __pyx_t_4 = __pyx_t_8;
         goto __pyx_L11_bool_binop_done;
       }
-      __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_wr, __pyx_n_s_sg_list); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1447, __pyx_L5_error)
+      __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_wr, __pyx_n_s_sg_list); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1443, __pyx_L5_error)
       __Pyx_GOTREF(__pyx_t_2);
       __pyx_t_8 = PyTuple_Check(__pyx_t_2); 
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -27440,20 +27384,20 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_12post_send(struct __pyx_obj_4rdma_
       __pyx_L11_bool_binop_done:;
       if (__pyx_t_4) {
 
-        /* "rdma/ibverbs.pyx":1448
+        /* "rdma/ibverbs.pyx":1444
  *                 cwr.sg_list = csge
  *                 if isinstance(wr.sg_list, list) or isinstance(wr.sg_list, tuple):
  *                     cwr.num_sge = len(wr.sg_list)             # <<<<<<<<<<<<<<
  *                     for 0 <= j < cwr.num_sge:
  *                         sge = wr.sg_list[j]
  */
-        __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_wr, __pyx_n_s_sg_list); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1448, __pyx_L5_error)
+        __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_wr, __pyx_n_s_sg_list); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1444, __pyx_L5_error)
         __Pyx_GOTREF(__pyx_t_2);
-        __pyx_t_3 = PyObject_Length(__pyx_t_2); if (unlikely(__pyx_t_3 == ((Py_ssize_t)-1))) __PYX_ERR(0, 1448, __pyx_L5_error)
+        __pyx_t_3 = PyObject_Length(__pyx_t_2); if (unlikely(__pyx_t_3 == ((Py_ssize_t)-1))) __PYX_ERR(0, 1444, __pyx_L5_error)
         __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
         __pyx_v_cwr->num_sge = __pyx_t_3;
 
-        /* "rdma/ibverbs.pyx":1449
+        /* "rdma/ibverbs.pyx":1445
  *                 if isinstance(wr.sg_list, list) or isinstance(wr.sg_list, tuple):
  *                     cwr.num_sge = len(wr.sg_list)
  *                     for 0 <= j < cwr.num_sge:             # <<<<<<<<<<<<<<
@@ -27463,61 +27407,61 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_12post_send(struct __pyx_obj_4rdma_
         __pyx_t_9 = __pyx_v_cwr->num_sge;
         for (__pyx_v_j = 0; __pyx_v_j < __pyx_t_9; __pyx_v_j++) {
 
-          /* "rdma/ibverbs.pyx":1450
+          /* "rdma/ibverbs.pyx":1446
  *                     cwr.num_sge = len(wr.sg_list)
  *                     for 0 <= j < cwr.num_sge:
  *                         sge = wr.sg_list[j]             # <<<<<<<<<<<<<<
  *                         csge.addr = sge.addr
  *                         csge.length = sge.length
  */
-          __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_wr, __pyx_n_s_sg_list); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1450, __pyx_L5_error)
+          __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_wr, __pyx_n_s_sg_list); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1446, __pyx_L5_error)
           __Pyx_GOTREF(__pyx_t_2);
-          __pyx_t_1 = __Pyx_GetItemInt(__pyx_t_2, __pyx_v_j, int, 1, __Pyx_PyInt_From_int, 0, 1, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1450, __pyx_L5_error)
+          __pyx_t_1 = __Pyx_GetItemInt(__pyx_t_2, __pyx_v_j, int, 1, __Pyx_PyInt_From_int, 0, 1, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1446, __pyx_L5_error)
           __Pyx_GOTREF(__pyx_t_1);
           __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
           __Pyx_XDECREF_SET(__pyx_v_sge, __pyx_t_1);
           __pyx_t_1 = 0;
 
-          /* "rdma/ibverbs.pyx":1451
+          /* "rdma/ibverbs.pyx":1447
  *                     for 0 <= j < cwr.num_sge:
  *                         sge = wr.sg_list[j]
  *                         csge.addr = sge.addr             # <<<<<<<<<<<<<<
  *                         csge.length = sge.length
  *                         csge.lkey = sge.lkey
  */
-          __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_sge, __pyx_n_s_addr); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1451, __pyx_L5_error)
+          __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_sge, __pyx_n_s_addr); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1447, __pyx_L5_error)
           __Pyx_GOTREF(__pyx_t_1);
-          __pyx_t_10 = __Pyx_PyInt_As_unsigned_long(__pyx_t_1); if (unlikely((__pyx_t_10 == (unsigned long)-1) && PyErr_Occurred())) __PYX_ERR(0, 1451, __pyx_L5_error)
+          __pyx_t_10 = __Pyx_PyInt_As_unsigned_long(__pyx_t_1); if (unlikely((__pyx_t_10 == (unsigned long)-1) && PyErr_Occurred())) __PYX_ERR(0, 1447, __pyx_L5_error)
           __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
           __pyx_v_csge->addr = __pyx_t_10;
 
-          /* "rdma/ibverbs.pyx":1452
+          /* "rdma/ibverbs.pyx":1448
  *                         sge = wr.sg_list[j]
  *                         csge.addr = sge.addr
  *                         csge.length = sge.length             # <<<<<<<<<<<<<<
  *                         csge.lkey = sge.lkey
  *                         csge += 1
  */
-          __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_sge, __pyx_n_s_length); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1452, __pyx_L5_error)
+          __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_sge, __pyx_n_s_length); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1448, __pyx_L5_error)
           __Pyx_GOTREF(__pyx_t_1);
-          __pyx_t_11 = __Pyx_PyInt_As_unsigned_int(__pyx_t_1); if (unlikely((__pyx_t_11 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1452, __pyx_L5_error)
+          __pyx_t_11 = __Pyx_PyInt_As_unsigned_int(__pyx_t_1); if (unlikely((__pyx_t_11 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1448, __pyx_L5_error)
           __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
           __pyx_v_csge->length = __pyx_t_11;
 
-          /* "rdma/ibverbs.pyx":1453
+          /* "rdma/ibverbs.pyx":1449
  *                         csge.addr = sge.addr
  *                         csge.length = sge.length
  *                         csge.lkey = sge.lkey             # <<<<<<<<<<<<<<
  *                         csge += 1
  *                 elif wr.sg_list is not None:
  */
-          __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_sge, __pyx_n_s_lkey); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1453, __pyx_L5_error)
+          __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_sge, __pyx_n_s_lkey); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1449, __pyx_L5_error)
           __Pyx_GOTREF(__pyx_t_1);
-          __pyx_t_11 = __Pyx_PyInt_As_unsigned_int(__pyx_t_1); if (unlikely((__pyx_t_11 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1453, __pyx_L5_error)
+          __pyx_t_11 = __Pyx_PyInt_As_unsigned_int(__pyx_t_1); if (unlikely((__pyx_t_11 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1449, __pyx_L5_error)
           __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
           __pyx_v_csge->lkey = __pyx_t_11;
 
-          /* "rdma/ibverbs.pyx":1454
+          /* "rdma/ibverbs.pyx":1450
  *                         csge.length = sge.length
  *                         csge.lkey = sge.lkey
  *                         csge += 1             # <<<<<<<<<<<<<<
@@ -27527,7 +27471,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_12post_send(struct __pyx_obj_4rdma_
           __pyx_v_csge = (__pyx_v_csge + 1);
         }
 
-        /* "rdma/ibverbs.pyx":1447
+        /* "rdma/ibverbs.pyx":1443
  * 
  *                 cwr.sg_list = csge
  *                 if isinstance(wr.sg_list, list) or isinstance(wr.sg_list, tuple):             # <<<<<<<<<<<<<<
@@ -27537,21 +27481,21 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_12post_send(struct __pyx_obj_4rdma_
         goto __pyx_L10;
       }
 
-      /* "rdma/ibverbs.pyx":1455
+      /* "rdma/ibverbs.pyx":1451
  *                         csge.lkey = sge.lkey
  *                         csge += 1
  *                 elif wr.sg_list is not None:             # <<<<<<<<<<<<<<
  *                     cwr.num_sge = 1
  *                     csge.addr = wr.sg_list.addr
  */
-      __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_wr, __pyx_n_s_sg_list); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1455, __pyx_L5_error)
+      __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_wr, __pyx_n_s_sg_list); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1451, __pyx_L5_error)
       __Pyx_GOTREF(__pyx_t_1);
       __pyx_t_4 = (__pyx_t_1 != Py_None);
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
       __pyx_t_7 = (__pyx_t_4 != 0);
       if (__pyx_t_7) {
 
-        /* "rdma/ibverbs.pyx":1456
+        /* "rdma/ibverbs.pyx":1452
  *                         csge += 1
  *                 elif wr.sg_list is not None:
  *                     cwr.num_sge = 1             # <<<<<<<<<<<<<<
@@ -27560,55 +27504,55 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_12post_send(struct __pyx_obj_4rdma_
  */
         __pyx_v_cwr->num_sge = 1;
 
-        /* "rdma/ibverbs.pyx":1457
+        /* "rdma/ibverbs.pyx":1453
  *                 elif wr.sg_list is not None:
  *                     cwr.num_sge = 1
  *                     csge.addr = wr.sg_list.addr             # <<<<<<<<<<<<<<
  *                     csge.length = wr.sg_list.length
  *                     csge.lkey = wr.sg_list.lkey
  */
-        __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_wr, __pyx_n_s_sg_list); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1457, __pyx_L5_error)
+        __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_wr, __pyx_n_s_sg_list); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1453, __pyx_L5_error)
         __Pyx_GOTREF(__pyx_t_1);
-        __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_addr); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1457, __pyx_L5_error)
+        __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_addr); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1453, __pyx_L5_error)
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-        __pyx_t_10 = __Pyx_PyInt_As_unsigned_long(__pyx_t_2); if (unlikely((__pyx_t_10 == (unsigned long)-1) && PyErr_Occurred())) __PYX_ERR(0, 1457, __pyx_L5_error)
+        __pyx_t_10 = __Pyx_PyInt_As_unsigned_long(__pyx_t_2); if (unlikely((__pyx_t_10 == (unsigned long)-1) && PyErr_Occurred())) __PYX_ERR(0, 1453, __pyx_L5_error)
         __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
         __pyx_v_csge->addr = __pyx_t_10;
 
-        /* "rdma/ibverbs.pyx":1458
+        /* "rdma/ibverbs.pyx":1454
  *                     cwr.num_sge = 1
  *                     csge.addr = wr.sg_list.addr
  *                     csge.length = wr.sg_list.length             # <<<<<<<<<<<<<<
  *                     csge.lkey = wr.sg_list.lkey
  *                     csge += 1
  */
-        __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_wr, __pyx_n_s_sg_list); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1458, __pyx_L5_error)
+        __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_wr, __pyx_n_s_sg_list); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1454, __pyx_L5_error)
         __Pyx_GOTREF(__pyx_t_2);
-        __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_length); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1458, __pyx_L5_error)
+        __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_length); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1454, __pyx_L5_error)
         __Pyx_GOTREF(__pyx_t_1);
         __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-        __pyx_t_9 = __Pyx_PyInt_As_unsigned_int(__pyx_t_1); if (unlikely((__pyx_t_9 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1458, __pyx_L5_error)
+        __pyx_t_9 = __Pyx_PyInt_As_unsigned_int(__pyx_t_1); if (unlikely((__pyx_t_9 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1454, __pyx_L5_error)
         __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
         __pyx_v_csge->length = __pyx_t_9;
 
-        /* "rdma/ibverbs.pyx":1459
+        /* "rdma/ibverbs.pyx":1455
  *                     csge.addr = wr.sg_list.addr
  *                     csge.length = wr.sg_list.length
  *                     csge.lkey = wr.sg_list.lkey             # <<<<<<<<<<<<<<
  *                     csge += 1
  * 
  */
-        __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_wr, __pyx_n_s_sg_list); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1459, __pyx_L5_error)
+        __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_wr, __pyx_n_s_sg_list); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1455, __pyx_L5_error)
         __Pyx_GOTREF(__pyx_t_1);
-        __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_lkey); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1459, __pyx_L5_error)
+        __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_lkey); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1455, __pyx_L5_error)
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-        __pyx_t_9 = __Pyx_PyInt_As_unsigned_int(__pyx_t_2); if (unlikely((__pyx_t_9 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1459, __pyx_L5_error)
+        __pyx_t_9 = __Pyx_PyInt_As_unsigned_int(__pyx_t_2); if (unlikely((__pyx_t_9 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1455, __pyx_L5_error)
         __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
         __pyx_v_csge->lkey = __pyx_t_9;
 
-        /* "rdma/ibverbs.pyx":1460
+        /* "rdma/ibverbs.pyx":1456
  *                     csge.length = wr.sg_list.length
  *                     csge.lkey = wr.sg_list.lkey
  *                     csge += 1             # <<<<<<<<<<<<<<
@@ -27617,7 +27561,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_12post_send(struct __pyx_obj_4rdma_
  */
         __pyx_v_csge = (__pyx_v_csge + 1);
 
-        /* "rdma/ibverbs.pyx":1455
+        /* "rdma/ibverbs.pyx":1451
  *                         csge.lkey = sge.lkey
  *                         csge += 1
  *                 elif wr.sg_list is not None:             # <<<<<<<<<<<<<<
@@ -27627,20 +27571,20 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_12post_send(struct __pyx_obj_4rdma_
       }
       __pyx_L10:;
 
-      /* "rdma/ibverbs.pyx":1462
+      /* "rdma/ibverbs.pyx":1458
  *                     csge += 1
  * 
  *                 cwr.opcode = wr.opcode             # <<<<<<<<<<<<<<
  *                 if (cwr.opcode == c.IBV_WR_RDMA_WRITE or
  *                     cwr.opcode == c.IBV_WR_RDMA_WRITE_WITH_IMM or
  */
-      __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_wr, __pyx_n_s_opcode); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1462, __pyx_L5_error)
+      __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_wr, __pyx_n_s_opcode); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1458, __pyx_L5_error)
       __Pyx_GOTREF(__pyx_t_2);
-      __pyx_t_9 = __Pyx_PyInt_As_unsigned_int(__pyx_t_2); if (unlikely((__pyx_t_9 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1462, __pyx_L5_error)
+      __pyx_t_9 = __Pyx_PyInt_As_unsigned_int(__pyx_t_2); if (unlikely((__pyx_t_9 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1458, __pyx_L5_error)
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
       __pyx_v_cwr->opcode = __pyx_t_9;
 
-      /* "rdma/ibverbs.pyx":1463
+      /* "rdma/ibverbs.pyx":1459
  * 
  *                 cwr.opcode = wr.opcode
  *                 if (cwr.opcode == c.IBV_WR_RDMA_WRITE or             # <<<<<<<<<<<<<<
@@ -27651,7 +27595,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_12post_send(struct __pyx_obj_4rdma_
         case IBV_WR_RDMA_WRITE:
         case IBV_WR_RDMA_WRITE_WITH_IMM:
 
-        /* "rdma/ibverbs.pyx":1464
+        /* "rdma/ibverbs.pyx":1460
  *                 cwr.opcode = wr.opcode
  *                 if (cwr.opcode == c.IBV_WR_RDMA_WRITE or
  *                     cwr.opcode == c.IBV_WR_RDMA_WRITE_WITH_IMM or             # <<<<<<<<<<<<<<
@@ -27660,7 +27604,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_12post_send(struct __pyx_obj_4rdma_
  */
         case IBV_WR_RDMA_READ:
 
-        /* "rdma/ibverbs.pyx":1463
+        /* "rdma/ibverbs.pyx":1459
  * 
  *                 cwr.opcode = wr.opcode
  *                 if (cwr.opcode == c.IBV_WR_RDMA_WRITE or             # <<<<<<<<<<<<<<
@@ -27675,33 +27619,33 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_12post_send(struct __pyx_obj_4rdma_
       }
       if (__pyx_t_7) {
 
-        /* "rdma/ibverbs.pyx":1466
+        /* "rdma/ibverbs.pyx":1462
  *                     cwr.opcode == c.IBV_WR_RDMA_WRITE_WITH_IMM or
  *                     cwr.opcode == c.IBV_WR_RDMA_READ):
  *                     cwr.wr.rdma.remote_addr = wr.remote_addr             # <<<<<<<<<<<<<<
  *                     cwr.wr.rdma.rkey = wr.rkey
  *                 elif (cwr.opcode == c.IBV_WR_ATOMIC_FETCH_AND_ADD or
  */
-        __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_wr, __pyx_n_s_remote_addr); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1466, __pyx_L5_error)
+        __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_wr, __pyx_n_s_remote_addr); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1462, __pyx_L5_error)
         __Pyx_GOTREF(__pyx_t_2);
-        __pyx_t_10 = __Pyx_PyInt_As_unsigned_long(__pyx_t_2); if (unlikely((__pyx_t_10 == (unsigned long)-1) && PyErr_Occurred())) __PYX_ERR(0, 1466, __pyx_L5_error)
+        __pyx_t_10 = __Pyx_PyInt_As_unsigned_long(__pyx_t_2); if (unlikely((__pyx_t_10 == (unsigned long)-1) && PyErr_Occurred())) __PYX_ERR(0, 1462, __pyx_L5_error)
         __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
         __pyx_v_cwr->wr.rdma.remote_addr = __pyx_t_10;
 
-        /* "rdma/ibverbs.pyx":1467
+        /* "rdma/ibverbs.pyx":1463
  *                     cwr.opcode == c.IBV_WR_RDMA_READ):
  *                     cwr.wr.rdma.remote_addr = wr.remote_addr
  *                     cwr.wr.rdma.rkey = wr.rkey             # <<<<<<<<<<<<<<
  *                 elif (cwr.opcode == c.IBV_WR_ATOMIC_FETCH_AND_ADD or
  *                       cwr.opcode == c.IBV_WR_ATOMIC_CMP_AND_SWP):
  */
-        __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_wr, __pyx_n_s_rkey); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1467, __pyx_L5_error)
+        __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_wr, __pyx_n_s_rkey); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1463, __pyx_L5_error)
         __Pyx_GOTREF(__pyx_t_2);
-        __pyx_t_9 = __Pyx_PyInt_As_unsigned_int(__pyx_t_2); if (unlikely((__pyx_t_9 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1467, __pyx_L5_error)
+        __pyx_t_9 = __Pyx_PyInt_As_unsigned_int(__pyx_t_2); if (unlikely((__pyx_t_9 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1463, __pyx_L5_error)
         __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
         __pyx_v_cwr->wr.rdma.rkey = __pyx_t_9;
 
-        /* "rdma/ibverbs.pyx":1463
+        /* "rdma/ibverbs.pyx":1459
  * 
  *                 cwr.opcode = wr.opcode
  *                 if (cwr.opcode == c.IBV_WR_RDMA_WRITE or             # <<<<<<<<<<<<<<
@@ -27711,7 +27655,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_12post_send(struct __pyx_obj_4rdma_
         goto __pyx_L15;
       }
 
-      /* "rdma/ibverbs.pyx":1468
+      /* "rdma/ibverbs.pyx":1464
  *                     cwr.wr.rdma.remote_addr = wr.remote_addr
  *                     cwr.wr.rdma.rkey = wr.rkey
  *                 elif (cwr.opcode == c.IBV_WR_ATOMIC_FETCH_AND_ADD or             # <<<<<<<<<<<<<<
@@ -27722,7 +27666,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_12post_send(struct __pyx_obj_4rdma_
         case IBV_WR_ATOMIC_FETCH_AND_ADD:
         case IBV_WR_ATOMIC_CMP_AND_SWP:
 
-        /* "rdma/ibverbs.pyx":1469
+        /* "rdma/ibverbs.pyx":1465
  *                     cwr.wr.rdma.rkey = wr.rkey
  *                 elif (cwr.opcode == c.IBV_WR_ATOMIC_FETCH_AND_ADD or
  *                       cwr.opcode == c.IBV_WR_ATOMIC_CMP_AND_SWP):             # <<<<<<<<<<<<<<
@@ -27731,7 +27675,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_12post_send(struct __pyx_obj_4rdma_
  */
         __pyx_t_7 = 1;
 
-        /* "rdma/ibverbs.pyx":1468
+        /* "rdma/ibverbs.pyx":1464
  *                     cwr.wr.rdma.remote_addr = wr.remote_addr
  *                     cwr.wr.rdma.rkey = wr.rkey
  *                 elif (cwr.opcode == c.IBV_WR_ATOMIC_FETCH_AND_ADD or             # <<<<<<<<<<<<<<
@@ -27745,59 +27689,59 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_12post_send(struct __pyx_obj_4rdma_
       }
       if (__pyx_t_7) {
 
-        /* "rdma/ibverbs.pyx":1470
+        /* "rdma/ibverbs.pyx":1466
  *                 elif (cwr.opcode == c.IBV_WR_ATOMIC_FETCH_AND_ADD or
  *                       cwr.opcode == c.IBV_WR_ATOMIC_CMP_AND_SWP):
  *                     cwr.wr.atomic.remote_addr = wr.remote_addr             # <<<<<<<<<<<<<<
  *                     cwr.wr.atomic.compare_add = wr.compare_add
  *                     cwr.wr.atomic.swap = wr.swap
  */
-        __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_wr, __pyx_n_s_remote_addr); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1470, __pyx_L5_error)
+        __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_wr, __pyx_n_s_remote_addr); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1466, __pyx_L5_error)
         __Pyx_GOTREF(__pyx_t_2);
-        __pyx_t_10 = __Pyx_PyInt_As_unsigned_long(__pyx_t_2); if (unlikely((__pyx_t_10 == (unsigned long)-1) && PyErr_Occurred())) __PYX_ERR(0, 1470, __pyx_L5_error)
+        __pyx_t_10 = __Pyx_PyInt_As_unsigned_long(__pyx_t_2); if (unlikely((__pyx_t_10 == (unsigned long)-1) && PyErr_Occurred())) __PYX_ERR(0, 1466, __pyx_L5_error)
         __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
         __pyx_v_cwr->wr.atomic.remote_addr = __pyx_t_10;
 
-        /* "rdma/ibverbs.pyx":1471
+        /* "rdma/ibverbs.pyx":1467
  *                       cwr.opcode == c.IBV_WR_ATOMIC_CMP_AND_SWP):
  *                     cwr.wr.atomic.remote_addr = wr.remote_addr
  *                     cwr.wr.atomic.compare_add = wr.compare_add             # <<<<<<<<<<<<<<
  *                     cwr.wr.atomic.swap = wr.swap
  *                     cwr.wr.atomic.rkey = wr.rkey
  */
-        __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_wr, __pyx_n_s_compare_add); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1471, __pyx_L5_error)
+        __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_wr, __pyx_n_s_compare_add); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1467, __pyx_L5_error)
         __Pyx_GOTREF(__pyx_t_2);
-        __pyx_t_10 = __Pyx_PyInt_As_unsigned_long(__pyx_t_2); if (unlikely((__pyx_t_10 == (unsigned long)-1) && PyErr_Occurred())) __PYX_ERR(0, 1471, __pyx_L5_error)
+        __pyx_t_10 = __Pyx_PyInt_As_unsigned_long(__pyx_t_2); if (unlikely((__pyx_t_10 == (unsigned long)-1) && PyErr_Occurred())) __PYX_ERR(0, 1467, __pyx_L5_error)
         __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
         __pyx_v_cwr->wr.atomic.compare_add = __pyx_t_10;
 
-        /* "rdma/ibverbs.pyx":1472
+        /* "rdma/ibverbs.pyx":1468
  *                     cwr.wr.atomic.remote_addr = wr.remote_addr
  *                     cwr.wr.atomic.compare_add = wr.compare_add
  *                     cwr.wr.atomic.swap = wr.swap             # <<<<<<<<<<<<<<
  *                     cwr.wr.atomic.rkey = wr.rkey
  *                 elif self._qp_type == c.IBV_QPT_UD:
  */
-        __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_wr, __pyx_n_s_swap); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1472, __pyx_L5_error)
+        __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_wr, __pyx_n_s_swap); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1468, __pyx_L5_error)
         __Pyx_GOTREF(__pyx_t_2);
-        __pyx_t_10 = __Pyx_PyInt_As_unsigned_long(__pyx_t_2); if (unlikely((__pyx_t_10 == (unsigned long)-1) && PyErr_Occurred())) __PYX_ERR(0, 1472, __pyx_L5_error)
+        __pyx_t_10 = __Pyx_PyInt_As_unsigned_long(__pyx_t_2); if (unlikely((__pyx_t_10 == (unsigned long)-1) && PyErr_Occurred())) __PYX_ERR(0, 1468, __pyx_L5_error)
         __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
         __pyx_v_cwr->wr.atomic.swap = __pyx_t_10;
 
-        /* "rdma/ibverbs.pyx":1473
+        /* "rdma/ibverbs.pyx":1469
  *                     cwr.wr.atomic.compare_add = wr.compare_add
  *                     cwr.wr.atomic.swap = wr.swap
  *                     cwr.wr.atomic.rkey = wr.rkey             # <<<<<<<<<<<<<<
  *                 elif self._qp_type == c.IBV_QPT_UD:
  *                     if not isinstance(wr.ah,AH):
  */
-        __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_wr, __pyx_n_s_rkey); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1473, __pyx_L5_error)
+        __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_wr, __pyx_n_s_rkey); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1469, __pyx_L5_error)
         __Pyx_GOTREF(__pyx_t_2);
-        __pyx_t_9 = __Pyx_PyInt_As_unsigned_int(__pyx_t_2); if (unlikely((__pyx_t_9 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1473, __pyx_L5_error)
+        __pyx_t_9 = __Pyx_PyInt_As_unsigned_int(__pyx_t_2); if (unlikely((__pyx_t_9 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1469, __pyx_L5_error)
         __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
         __pyx_v_cwr->wr.atomic.rkey = __pyx_t_9;
 
-        /* "rdma/ibverbs.pyx":1468
+        /* "rdma/ibverbs.pyx":1464
  *                     cwr.wr.rdma.remote_addr = wr.remote_addr
  *                     cwr.wr.rdma.rkey = wr.rkey
  *                 elif (cwr.opcode == c.IBV_WR_ATOMIC_FETCH_AND_ADD or             # <<<<<<<<<<<<<<
@@ -27807,7 +27751,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_12post_send(struct __pyx_obj_4rdma_
         goto __pyx_L15;
       }
 
-      /* "rdma/ibverbs.pyx":1474
+      /* "rdma/ibverbs.pyx":1470
  *                     cwr.wr.atomic.swap = wr.swap
  *                     cwr.wr.atomic.rkey = wr.rkey
  *                 elif self._qp_type == c.IBV_QPT_UD:             # <<<<<<<<<<<<<<
@@ -27817,34 +27761,34 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_12post_send(struct __pyx_obj_4rdma_
       __pyx_t_7 = ((__pyx_v_self->_qp_type == IBV_QPT_UD) != 0);
       if (__pyx_t_7) {
 
-        /* "rdma/ibverbs.pyx":1475
+        /* "rdma/ibverbs.pyx":1471
  *                     cwr.wr.atomic.rkey = wr.rkey
  *                 elif self._qp_type == c.IBV_QPT_UD:
  *                     if not isinstance(wr.ah,AH):             # <<<<<<<<<<<<<<
  *                         raise TypeError("AH must be a AH")
  *                     ah = wr.ah;
  */
-        __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_wr, __pyx_n_s_ah); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1475, __pyx_L5_error)
+        __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_wr, __pyx_n_s_ah); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1471, __pyx_L5_error)
         __Pyx_GOTREF(__pyx_t_2);
         __pyx_t_7 = __Pyx_TypeCheck(__pyx_t_2, __pyx_ptype_4rdma_7ibverbs_AH); 
         __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
         __pyx_t_4 = ((!(__pyx_t_7 != 0)) != 0);
         if (unlikely(__pyx_t_4)) {
 
-          /* "rdma/ibverbs.pyx":1476
+          /* "rdma/ibverbs.pyx":1472
  *                 elif self._qp_type == c.IBV_QPT_UD:
  *                     if not isinstance(wr.ah,AH):
  *                         raise TypeError("AH must be a AH")             # <<<<<<<<<<<<<<
  *                     ah = wr.ah;
  *                     cwr.wr.ud.ah = ah._ah
  */
-          __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_tuple__33, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1476, __pyx_L5_error)
+          __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_tuple__33, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1472, __pyx_L5_error)
           __Pyx_GOTREF(__pyx_t_2);
           __Pyx_Raise(__pyx_t_2, 0, 0, 0);
           __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-          __PYX_ERR(0, 1476, __pyx_L5_error)
+          __PYX_ERR(0, 1472, __pyx_L5_error)
 
-          /* "rdma/ibverbs.pyx":1475
+          /* "rdma/ibverbs.pyx":1471
  *                     cwr.wr.atomic.rkey = wr.rkey
  *                 elif self._qp_type == c.IBV_QPT_UD:
  *                     if not isinstance(wr.ah,AH):             # <<<<<<<<<<<<<<
@@ -27853,20 +27797,20 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_12post_send(struct __pyx_obj_4rdma_
  */
         }
 
-        /* "rdma/ibverbs.pyx":1477
+        /* "rdma/ibverbs.pyx":1473
  *                     if not isinstance(wr.ah,AH):
  *                         raise TypeError("AH must be a AH")
  *                     ah = wr.ah;             # <<<<<<<<<<<<<<
  *                     cwr.wr.ud.ah = ah._ah
  *                     cwr.wr.ud.remote_qpn = wr.remote_qpn
  */
-        __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_wr, __pyx_n_s_ah); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1477, __pyx_L5_error)
+        __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_wr, __pyx_n_s_ah); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1473, __pyx_L5_error)
         __Pyx_GOTREF(__pyx_t_2);
-        if (!(likely(((__pyx_t_2) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_2, __pyx_ptype_4rdma_7ibverbs_AH))))) __PYX_ERR(0, 1477, __pyx_L5_error)
+        if (!(likely(((__pyx_t_2) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_2, __pyx_ptype_4rdma_7ibverbs_AH))))) __PYX_ERR(0, 1473, __pyx_L5_error)
         __Pyx_XDECREF_SET(__pyx_v_ah, ((struct __pyx_obj_4rdma_7ibverbs_AH *)__pyx_t_2));
         __pyx_t_2 = 0;
 
-        /* "rdma/ibverbs.pyx":1478
+        /* "rdma/ibverbs.pyx":1474
  *                         raise TypeError("AH must be a AH")
  *                     ah = wr.ah;
  *                     cwr.wr.ud.ah = ah._ah             # <<<<<<<<<<<<<<
@@ -27876,33 +27820,33 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_12post_send(struct __pyx_obj_4rdma_
         __pyx_t_12 = __pyx_v_ah->_ah;
         __pyx_v_cwr->wr.ud.ah = __pyx_t_12;
 
-        /* "rdma/ibverbs.pyx":1479
+        /* "rdma/ibverbs.pyx":1475
  *                     ah = wr.ah;
  *                     cwr.wr.ud.ah = ah._ah
  *                     cwr.wr.ud.remote_qpn = wr.remote_qpn             # <<<<<<<<<<<<<<
  *                     cwr.wr.ud.remote_qkey = wr.remote_qkey
  * 
  */
-        __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_wr, __pyx_n_s_remote_qpn); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1479, __pyx_L5_error)
+        __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_wr, __pyx_n_s_remote_qpn); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1475, __pyx_L5_error)
         __Pyx_GOTREF(__pyx_t_2);
-        __pyx_t_9 = __Pyx_PyInt_As_unsigned_int(__pyx_t_2); if (unlikely((__pyx_t_9 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1479, __pyx_L5_error)
+        __pyx_t_9 = __Pyx_PyInt_As_unsigned_int(__pyx_t_2); if (unlikely((__pyx_t_9 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1475, __pyx_L5_error)
         __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
         __pyx_v_cwr->wr.ud.remote_qpn = __pyx_t_9;
 
-        /* "rdma/ibverbs.pyx":1480
+        /* "rdma/ibverbs.pyx":1476
  *                     cwr.wr.ud.ah = ah._ah
  *                     cwr.wr.ud.remote_qpn = wr.remote_qpn
  *                     cwr.wr.ud.remote_qkey = wr.remote_qkey             # <<<<<<<<<<<<<<
  * 
  *                 cwr.send_flags = wr.send_flags
  */
-        __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_wr, __pyx_n_s_remote_qkey); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1480, __pyx_L5_error)
+        __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_wr, __pyx_n_s_remote_qkey); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1476, __pyx_L5_error)
         __Pyx_GOTREF(__pyx_t_2);
-        __pyx_t_9 = __Pyx_PyInt_As_unsigned_int(__pyx_t_2); if (unlikely((__pyx_t_9 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1480, __pyx_L5_error)
+        __pyx_t_9 = __Pyx_PyInt_As_unsigned_int(__pyx_t_2); if (unlikely((__pyx_t_9 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1476, __pyx_L5_error)
         __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
         __pyx_v_cwr->wr.ud.remote_qkey = __pyx_t_9;
 
-        /* "rdma/ibverbs.pyx":1474
+        /* "rdma/ibverbs.pyx":1470
  *                     cwr.wr.atomic.swap = wr.swap
  *                     cwr.wr.atomic.rkey = wr.rkey
  *                 elif self._qp_type == c.IBV_QPT_UD:             # <<<<<<<<<<<<<<
@@ -27912,33 +27856,33 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_12post_send(struct __pyx_obj_4rdma_
       }
       __pyx_L15:;
 
-      /* "rdma/ibverbs.pyx":1482
+      /* "rdma/ibverbs.pyx":1478
  *                     cwr.wr.ud.remote_qkey = wr.remote_qkey
  * 
  *                 cwr.send_flags = wr.send_flags             # <<<<<<<<<<<<<<
  *                 cwr.imm_data = wr.imm_data
  *                 cwr = cwr + 1;
  */
-      __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_wr, __pyx_n_s_send_flags); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1482, __pyx_L5_error)
+      __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_wr, __pyx_n_s_send_flags); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1478, __pyx_L5_error)
       __Pyx_GOTREF(__pyx_t_2);
-      __pyx_t_9 = __Pyx_PyInt_As_unsigned_int(__pyx_t_2); if (unlikely((__pyx_t_9 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1482, __pyx_L5_error)
+      __pyx_t_9 = __Pyx_PyInt_As_unsigned_int(__pyx_t_2); if (unlikely((__pyx_t_9 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1478, __pyx_L5_error)
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
       __pyx_v_cwr->send_flags = __pyx_t_9;
 
-      /* "rdma/ibverbs.pyx":1483
+      /* "rdma/ibverbs.pyx":1479
  * 
  *                 cwr.send_flags = wr.send_flags
  *                 cwr.imm_data = wr.imm_data             # <<<<<<<<<<<<<<
  *                 cwr = cwr + 1;
  * 
  */
-      __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_wr, __pyx_n_s_imm_data); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1483, __pyx_L5_error)
+      __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_wr, __pyx_n_s_imm_data); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1479, __pyx_L5_error)
       __Pyx_GOTREF(__pyx_t_2);
-      __pyx_t_9 = __Pyx_PyInt_As_unsigned_int(__pyx_t_2); if (unlikely((__pyx_t_9 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1483, __pyx_L5_error)
+      __pyx_t_9 = __Pyx_PyInt_As_unsigned_int(__pyx_t_2); if (unlikely((__pyx_t_9 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1479, __pyx_L5_error)
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
       __pyx_v_cwr->imm_data = __pyx_t_9;
 
-      /* "rdma/ibverbs.pyx":1484
+      /* "rdma/ibverbs.pyx":1480
  *                 cwr.send_flags = wr.send_flags
  *                 cwr.imm_data = wr.imm_data
  *                 cwr = cwr + 1;             # <<<<<<<<<<<<<<
@@ -27948,7 +27892,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_12post_send(struct __pyx_obj_4rdma_
       __pyx_v_cwr = (__pyx_v_cwr + 1);
     }
 
-    /* "rdma/ibverbs.pyx":1486
+    /* "rdma/ibverbs.pyx":1482
  *                 cwr = cwr + 1;
  * 
  *             rc = c.ibv_post_send(self._qp, <c.ibv_send_wr *>mem, &cbad_wr)             # <<<<<<<<<<<<<<
@@ -27957,7 +27901,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_12post_send(struct __pyx_obj_4rdma_
  */
     __pyx_v_rc = ibv_post_send(__pyx_v_self->_qp, ((struct ibv_send_wr *)__pyx_v_mem), (&__pyx_v_cbad_wr));
 
-    /* "rdma/ibverbs.pyx":1487
+    /* "rdma/ibverbs.pyx":1483
  * 
  *             rc = c.ibv_post_send(self._qp, <c.ibv_send_wr *>mem, &cbad_wr)
  *             if rc != 0:             # <<<<<<<<<<<<<<
@@ -27967,7 +27911,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_12post_send(struct __pyx_obj_4rdma_
     __pyx_t_4 = ((__pyx_v_rc != 0) != 0);
     if (__pyx_t_4) {
 
-      /* "rdma/ibverbs.pyx":1488
+      /* "rdma/ibverbs.pyx":1484
  *             rc = c.ibv_post_send(self._qp, <c.ibv_send_wr *>mem, &cbad_wr)
  *             if rc != 0:
  *                 cwr = <c.ibv_send_wr *>(mem);             # <<<<<<<<<<<<<<
@@ -27976,7 +27920,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_12post_send(struct __pyx_obj_4rdma_
  */
       __pyx_v_cwr = ((struct ibv_send_wr *)__pyx_v_mem);
 
-      /* "rdma/ibverbs.pyx":1489
+      /* "rdma/ibverbs.pyx":1485
  *             if rc != 0:
  *                 cwr = <c.ibv_send_wr *>(mem);
  *                 for 0 <= i < n:             # <<<<<<<<<<<<<<
@@ -27986,7 +27930,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_12post_send(struct __pyx_obj_4rdma_
       __pyx_t_5 = __pyx_v_n;
       for (__pyx_v_i = 0; __pyx_v_i < __pyx_t_5; __pyx_v_i++) {
 
-        /* "rdma/ibverbs.pyx":1490
+        /* "rdma/ibverbs.pyx":1486
  *                 cwr = <c.ibv_send_wr *>(mem);
  *                 for 0 <= i < n:
  *                     if cwr+i == cbad_wr:             # <<<<<<<<<<<<<<
@@ -27996,7 +27940,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_12post_send(struct __pyx_obj_4rdma_
         __pyx_t_4 = (((__pyx_v_cwr + __pyx_v_i) == __pyx_v_cbad_wr) != 0);
         if (__pyx_t_4) {
 
-          /* "rdma/ibverbs.pyx":1491
+          /* "rdma/ibverbs.pyx":1487
  *                 for 0 <= i < n:
  *                     if cwr+i == cbad_wr:
  *                         break;             # <<<<<<<<<<<<<<
@@ -28005,7 +27949,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_12post_send(struct __pyx_obj_4rdma_
  */
           goto __pyx_L19_break;
 
-          /* "rdma/ibverbs.pyx":1490
+          /* "rdma/ibverbs.pyx":1486
  *                 cwr = <c.ibv_send_wr *>(mem);
  *                 for 0 <= i < n:
  *                     if cwr+i == cbad_wr:             # <<<<<<<<<<<<<<
@@ -28016,18 +27960,18 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_12post_send(struct __pyx_obj_4rdma_
       }
       __pyx_L19_break:;
 
-      /* "rdma/ibverbs.pyx":1492
+      /* "rdma/ibverbs.pyx":1488
  *                     if cwr+i == cbad_wr:
  *                         break;
  *                 raise WRError(rc,"ibv_post_send","Failed to post work request",n);             # <<<<<<<<<<<<<<
  *         finally:
  *             free(mem)
  */
-      __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_WRError); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1492, __pyx_L5_error)
+      __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_WRError); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1488, __pyx_L5_error)
       __Pyx_GOTREF(__pyx_t_1);
-      __pyx_t_13 = __Pyx_PyInt_From_int(__pyx_v_rc); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 1492, __pyx_L5_error)
+      __pyx_t_13 = __Pyx_PyInt_From_int(__pyx_v_rc); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 1488, __pyx_L5_error)
       __Pyx_GOTREF(__pyx_t_13);
-      __pyx_t_14 = __Pyx_PyInt_From_int(__pyx_v_n); if (unlikely(!__pyx_t_14)) __PYX_ERR(0, 1492, __pyx_L5_error)
+      __pyx_t_14 = __Pyx_PyInt_From_int(__pyx_v_n); if (unlikely(!__pyx_t_14)) __PYX_ERR(0, 1488, __pyx_L5_error)
       __Pyx_GOTREF(__pyx_t_14);
       __pyx_t_15 = NULL;
       __pyx_t_5 = 0;
@@ -28044,7 +27988,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_12post_send(struct __pyx_obj_4rdma_
       #if CYTHON_FAST_PYCALL
       if (PyFunction_Check(__pyx_t_1)) {
         PyObject *__pyx_temp[5] = {__pyx_t_15, __pyx_t_13, __pyx_n_s_ibv_post_send, __pyx_kp_s_Failed_to_post_work_request, __pyx_t_14};
-        __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_1, __pyx_temp+1-__pyx_t_5, 4+__pyx_t_5); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1492, __pyx_L5_error)
+        __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_1, __pyx_temp+1-__pyx_t_5, 4+__pyx_t_5); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1488, __pyx_L5_error)
         __Pyx_XDECREF(__pyx_t_15); __pyx_t_15 = 0;
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_13); __pyx_t_13 = 0;
@@ -28054,7 +27998,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_12post_send(struct __pyx_obj_4rdma_
       #if CYTHON_FAST_PYCCALL
       if (__Pyx_PyFastCFunction_Check(__pyx_t_1)) {
         PyObject *__pyx_temp[5] = {__pyx_t_15, __pyx_t_13, __pyx_n_s_ibv_post_send, __pyx_kp_s_Failed_to_post_work_request, __pyx_t_14};
-        __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_1, __pyx_temp+1-__pyx_t_5, 4+__pyx_t_5); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1492, __pyx_L5_error)
+        __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_1, __pyx_temp+1-__pyx_t_5, 4+__pyx_t_5); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1488, __pyx_L5_error)
         __Pyx_XDECREF(__pyx_t_15); __pyx_t_15 = 0;
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_13); __pyx_t_13 = 0;
@@ -28062,7 +28006,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_12post_send(struct __pyx_obj_4rdma_
       } else
       #endif
       {
-        __pyx_t_16 = PyTuple_New(4+__pyx_t_5); if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 1492, __pyx_L5_error)
+        __pyx_t_16 = PyTuple_New(4+__pyx_t_5); if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 1488, __pyx_L5_error)
         __Pyx_GOTREF(__pyx_t_16);
         if (__pyx_t_15) {
           __Pyx_GIVEREF(__pyx_t_15); PyTuple_SET_ITEM(__pyx_t_16, 0, __pyx_t_15); __pyx_t_15 = NULL;
@@ -28079,16 +28023,16 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_12post_send(struct __pyx_obj_4rdma_
         PyTuple_SET_ITEM(__pyx_t_16, 3+__pyx_t_5, __pyx_t_14);
         __pyx_t_13 = 0;
         __pyx_t_14 = 0;
-        __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_16, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1492, __pyx_L5_error)
+        __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_16, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1488, __pyx_L5_error)
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_16); __pyx_t_16 = 0;
       }
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
       __Pyx_Raise(__pyx_t_2, 0, 0, 0);
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-      __PYX_ERR(0, 1492, __pyx_L5_error)
+      __PYX_ERR(0, 1488, __pyx_L5_error)
 
-      /* "rdma/ibverbs.pyx":1487
+      /* "rdma/ibverbs.pyx":1483
  * 
  *             rc = c.ibv_post_send(self._qp, <c.ibv_send_wr *>mem, &cbad_wr)
  *             if rc != 0:             # <<<<<<<<<<<<<<
@@ -28098,7 +28042,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_12post_send(struct __pyx_obj_4rdma_
     }
   }
 
-  /* "rdma/ibverbs.pyx":1494
+  /* "rdma/ibverbs.pyx":1490
  *                 raise WRError(rc,"ibv_post_send","Failed to post work request",n);
  *         finally:
  *             free(mem)             # <<<<<<<<<<<<<<
@@ -28150,7 +28094,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_12post_send(struct __pyx_obj_4rdma_
     __pyx_L6:;
   }
 
-  /* "rdma/ibverbs.pyx":1411
+  /* "rdma/ibverbs.pyx":1407
  *             self._cap = cattr.cap
  * 
  *     def post_send(self, arg):             # <<<<<<<<<<<<<<
@@ -28180,7 +28124,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_12post_send(struct __pyx_obj_4rdma_
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":1496
+/* "rdma/ibverbs.pyx":1492
  *             free(mem)
  * 
  *     def post_recv(self, arg):             # <<<<<<<<<<<<<<
@@ -28247,23 +28191,23 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_14post_recv(struct __pyx_obj_4rdma_
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("post_recv", 0);
 
-  /* "rdma/ibverbs.pyx":1511
+  /* "rdma/ibverbs.pyx":1507
  * 
  *         # NOTE: A copy of this is in SRQ.post_recv
  *         wrlist = _post_check(arg, recv_wr, self._cap.max_recv_sge, &num_sge)             # <<<<<<<<<<<<<<
  * 
  *         n = len(wrlist)
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_recv_wr); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1511, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_recv_wr); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1507, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __pyx_f_4rdma_7ibverbs__post_check(__pyx_v_arg, __pyx_t_1, __pyx_v_self->_cap.max_recv_sge, (&__pyx_v_num_sge)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1511, __pyx_L1_error)
+  __pyx_t_2 = __pyx_f_4rdma_7ibverbs__post_check(__pyx_v_arg, __pyx_t_1, __pyx_v_self->_cap.max_recv_sge, (&__pyx_v_num_sge)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1507, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  if (!(likely(PyList_CheckExact(__pyx_t_2))||((__pyx_t_2) == Py_None)||(PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "list", Py_TYPE(__pyx_t_2)->tp_name), 0))) __PYX_ERR(0, 1511, __pyx_L1_error)
+  if (!(likely(PyList_CheckExact(__pyx_t_2))||((__pyx_t_2) == Py_None)||(PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "list", Py_TYPE(__pyx_t_2)->tp_name), 0))) __PYX_ERR(0, 1507, __pyx_L1_error)
   __pyx_v_wrlist = ((PyObject*)__pyx_t_2);
   __pyx_t_2 = 0;
 
-  /* "rdma/ibverbs.pyx":1513
+  /* "rdma/ibverbs.pyx":1509
  *         wrlist = _post_check(arg, recv_wr, self._cap.max_recv_sge, &num_sge)
  * 
  *         n = len(wrlist)             # <<<<<<<<<<<<<<
@@ -28272,12 +28216,12 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_14post_recv(struct __pyx_obj_4rdma_
  */
   if (unlikely(__pyx_v_wrlist == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "object of type 'NoneType' has no len()");
-    __PYX_ERR(0, 1513, __pyx_L1_error)
+    __PYX_ERR(0, 1509, __pyx_L1_error)
   }
-  __pyx_t_3 = PyList_GET_SIZE(__pyx_v_wrlist); if (unlikely(__pyx_t_3 == ((Py_ssize_t)-1))) __PYX_ERR(0, 1513, __pyx_L1_error)
+  __pyx_t_3 = PyList_GET_SIZE(__pyx_v_wrlist); if (unlikely(__pyx_t_3 == ((Py_ssize_t)-1))) __PYX_ERR(0, 1509, __pyx_L1_error)
   __pyx_v_n = __pyx_t_3;
 
-  /* "rdma/ibverbs.pyx":1514
+  /* "rdma/ibverbs.pyx":1510
  * 
  *         n = len(wrlist)
  *         mem = <unsigned char *>calloc(1,sizeof(dummy_wr)*n + sizeof(dummy_sge)*num_sge);             # <<<<<<<<<<<<<<
@@ -28286,7 +28230,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_14post_recv(struct __pyx_obj_4rdma_
  */
   __pyx_v_mem = ((unsigned char *)calloc(1, (((sizeof(__pyx_v_dummy_wr)) * __pyx_v_n) + ((sizeof(__pyx_v_dummy_sge)) * __pyx_v_num_sge))));
 
-  /* "rdma/ibverbs.pyx":1515
+  /* "rdma/ibverbs.pyx":1511
  *         n = len(wrlist)
  *         mem = <unsigned char *>calloc(1,sizeof(dummy_wr)*n + sizeof(dummy_sge)*num_sge);
  *         if mem == NULL:             # <<<<<<<<<<<<<<
@@ -28296,16 +28240,16 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_14post_recv(struct __pyx_obj_4rdma_
   __pyx_t_4 = ((__pyx_v_mem == NULL) != 0);
   if (unlikely(__pyx_t_4)) {
 
-    /* "rdma/ibverbs.pyx":1516
+    /* "rdma/ibverbs.pyx":1512
  *         mem = <unsigned char *>calloc(1,sizeof(dummy_wr)*n + sizeof(dummy_sge)*num_sge);
  *         if mem == NULL:
  *             raise MemoryError()             # <<<<<<<<<<<<<<
  *         try:
  *             cwr = <c.ibv_recv_wr *>(mem);
  */
-    PyErr_NoMemory(); __PYX_ERR(0, 1516, __pyx_L1_error)
+    PyErr_NoMemory(); __PYX_ERR(0, 1512, __pyx_L1_error)
 
-    /* "rdma/ibverbs.pyx":1515
+    /* "rdma/ibverbs.pyx":1511
  *         n = len(wrlist)
  *         mem = <unsigned char *>calloc(1,sizeof(dummy_wr)*n + sizeof(dummy_sge)*num_sge);
  *         if mem == NULL:             # <<<<<<<<<<<<<<
@@ -28314,7 +28258,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_14post_recv(struct __pyx_obj_4rdma_
  */
   }
 
-  /* "rdma/ibverbs.pyx":1517
+  /* "rdma/ibverbs.pyx":1513
  *         if mem == NULL:
  *             raise MemoryError()
  *         try:             # <<<<<<<<<<<<<<
@@ -28323,7 +28267,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_14post_recv(struct __pyx_obj_4rdma_
  */
   /*try:*/ {
 
-    /* "rdma/ibverbs.pyx":1518
+    /* "rdma/ibverbs.pyx":1514
  *             raise MemoryError()
  *         try:
  *             cwr = <c.ibv_recv_wr *>(mem);             # <<<<<<<<<<<<<<
@@ -28332,7 +28276,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_14post_recv(struct __pyx_obj_4rdma_
  */
     __pyx_v_cwr = ((struct ibv_recv_wr *)__pyx_v_mem);
 
-    /* "rdma/ibverbs.pyx":1519
+    /* "rdma/ibverbs.pyx":1515
  *         try:
  *             cwr = <c.ibv_recv_wr *>(mem);
  *             csge = <c.ibv_sge *>(cwr + n);             # <<<<<<<<<<<<<<
@@ -28341,7 +28285,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_14post_recv(struct __pyx_obj_4rdma_
  */
     __pyx_v_csge = ((struct ibv_sge *)(__pyx_v_cwr + __pyx_v_n));
 
-    /* "rdma/ibverbs.pyx":1520
+    /* "rdma/ibverbs.pyx":1516
  *             cwr = <c.ibv_recv_wr *>(mem);
  *             csge = <c.ibv_sge *>(cwr + n);
  *             for 0 <= i < n:             # <<<<<<<<<<<<<<
@@ -28351,7 +28295,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_14post_recv(struct __pyx_obj_4rdma_
     __pyx_t_5 = __pyx_v_n;
     for (__pyx_v_i = 0; __pyx_v_i < __pyx_t_5; __pyx_v_i++) {
 
-      /* "rdma/ibverbs.pyx":1521
+      /* "rdma/ibverbs.pyx":1517
  *             csge = <c.ibv_sge *>(cwr + n);
  *             for 0 <= i < n:
  *                 wr = wrlist[i]             # <<<<<<<<<<<<<<
@@ -28360,27 +28304,27 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_14post_recv(struct __pyx_obj_4rdma_
  */
       if (unlikely(__pyx_v_wrlist == Py_None)) {
         PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-        __PYX_ERR(0, 1521, __pyx_L5_error)
+        __PYX_ERR(0, 1517, __pyx_L5_error)
       }
-      __pyx_t_2 = __Pyx_GetItemInt_List(__pyx_v_wrlist, __pyx_v_i, int, 1, __Pyx_PyInt_From_int, 1, 1, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1521, __pyx_L5_error)
+      __pyx_t_2 = __Pyx_GetItemInt_List(__pyx_v_wrlist, __pyx_v_i, int, 1, __Pyx_PyInt_From_int, 1, 1, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1517, __pyx_L5_error)
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_XDECREF_SET(__pyx_v_wr, __pyx_t_2);
       __pyx_t_2 = 0;
 
-      /* "rdma/ibverbs.pyx":1522
+      /* "rdma/ibverbs.pyx":1518
  *             for 0 <= i < n:
  *                 wr = wrlist[i]
  *                 wr_id = wr.wr_id;             # <<<<<<<<<<<<<<
  *                 cwr.wr_id = <uintptr_t>wr_id
  *                 if i == n - 1:
  */
-      __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_wr, __pyx_n_s_wr_id); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1522, __pyx_L5_error)
+      __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_wr, __pyx_n_s_wr_id); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1518, __pyx_L5_error)
       __Pyx_GOTREF(__pyx_t_2);
-      __pyx_t_6 = __Pyx_PyInt_As_int(__pyx_t_2); if (unlikely((__pyx_t_6 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1522, __pyx_L5_error)
+      __pyx_t_6 = __Pyx_PyInt_As_int(__pyx_t_2); if (unlikely((__pyx_t_6 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1518, __pyx_L5_error)
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
       __pyx_v_wr_id = __pyx_t_6;
 
-      /* "rdma/ibverbs.pyx":1523
+      /* "rdma/ibverbs.pyx":1519
  *                 wr = wrlist[i]
  *                 wr_id = wr.wr_id;
  *                 cwr.wr_id = <uintptr_t>wr_id             # <<<<<<<<<<<<<<
@@ -28389,7 +28333,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_14post_recv(struct __pyx_obj_4rdma_
  */
       __pyx_v_cwr->wr_id = ((uintptr_t)__pyx_v_wr_id);
 
-      /* "rdma/ibverbs.pyx":1524
+      /* "rdma/ibverbs.pyx":1520
  *                 wr_id = wr.wr_id;
  *                 cwr.wr_id = <uintptr_t>wr_id
  *                 if i == n - 1:             # <<<<<<<<<<<<<<
@@ -28399,7 +28343,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_14post_recv(struct __pyx_obj_4rdma_
       __pyx_t_4 = ((__pyx_v_i == (__pyx_v_n - 1)) != 0);
       if (__pyx_t_4) {
 
-        /* "rdma/ibverbs.pyx":1525
+        /* "rdma/ibverbs.pyx":1521
  *                 cwr.wr_id = <uintptr_t>wr_id
  *                 if i == n - 1:
  *                     cwr.next = NULL             # <<<<<<<<<<<<<<
@@ -28408,7 +28352,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_14post_recv(struct __pyx_obj_4rdma_
  */
         __pyx_v_cwr->next = NULL;
 
-        /* "rdma/ibverbs.pyx":1524
+        /* "rdma/ibverbs.pyx":1520
  *                 wr_id = wr.wr_id;
  *                 cwr.wr_id = <uintptr_t>wr_id
  *                 if i == n - 1:             # <<<<<<<<<<<<<<
@@ -28418,7 +28362,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_14post_recv(struct __pyx_obj_4rdma_
         goto __pyx_L9;
       }
 
-      /* "rdma/ibverbs.pyx":1527
+      /* "rdma/ibverbs.pyx":1523
  *                     cwr.next = NULL
  *                 else:
  *                     cwr.next = cwr + 1             # <<<<<<<<<<<<<<
@@ -28430,7 +28374,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_14post_recv(struct __pyx_obj_4rdma_
       }
       __pyx_L9:;
 
-      /* "rdma/ibverbs.pyx":1529
+      /* "rdma/ibverbs.pyx":1525
  *                     cwr.next = cwr + 1
  * 
  *                 cwr.sg_list = csge             # <<<<<<<<<<<<<<
@@ -28439,14 +28383,14 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_14post_recv(struct __pyx_obj_4rdma_
  */
       __pyx_v_cwr->sg_list = __pyx_v_csge;
 
-      /* "rdma/ibverbs.pyx":1530
+      /* "rdma/ibverbs.pyx":1526
  * 
  *                 cwr.sg_list = csge
  *                 if isinstance(wr.sg_list, list) or isinstance(wr.sg_list, tuple):             # <<<<<<<<<<<<<<
  *                     cwr.num_sge = len(wr.sg_list)
  *                     for 0 <= j < cwr.num_sge:
  */
-      __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_wr, __pyx_n_s_sg_list); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1530, __pyx_L5_error)
+      __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_wr, __pyx_n_s_sg_list); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1526, __pyx_L5_error)
       __Pyx_GOTREF(__pyx_t_2);
       __pyx_t_7 = PyList_Check(__pyx_t_2); 
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -28456,7 +28400,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_14post_recv(struct __pyx_obj_4rdma_
         __pyx_t_4 = __pyx_t_8;
         goto __pyx_L11_bool_binop_done;
       }
-      __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_wr, __pyx_n_s_sg_list); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1530, __pyx_L5_error)
+      __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_wr, __pyx_n_s_sg_list); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1526, __pyx_L5_error)
       __Pyx_GOTREF(__pyx_t_2);
       __pyx_t_8 = PyTuple_Check(__pyx_t_2); 
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -28465,20 +28409,20 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_14post_recv(struct __pyx_obj_4rdma_
       __pyx_L11_bool_binop_done:;
       if (__pyx_t_4) {
 
-        /* "rdma/ibverbs.pyx":1531
+        /* "rdma/ibverbs.pyx":1527
  *                 cwr.sg_list = csge
  *                 if isinstance(wr.sg_list, list) or isinstance(wr.sg_list, tuple):
  *                     cwr.num_sge = len(wr.sg_list)             # <<<<<<<<<<<<<<
  *                     for 0 <= j < cwr.num_sge:
  *                         sge = wr.sg_list[j]
  */
-        __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_wr, __pyx_n_s_sg_list); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1531, __pyx_L5_error)
+        __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_wr, __pyx_n_s_sg_list); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1527, __pyx_L5_error)
         __Pyx_GOTREF(__pyx_t_2);
-        __pyx_t_3 = PyObject_Length(__pyx_t_2); if (unlikely(__pyx_t_3 == ((Py_ssize_t)-1))) __PYX_ERR(0, 1531, __pyx_L5_error)
+        __pyx_t_3 = PyObject_Length(__pyx_t_2); if (unlikely(__pyx_t_3 == ((Py_ssize_t)-1))) __PYX_ERR(0, 1527, __pyx_L5_error)
         __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
         __pyx_v_cwr->num_sge = __pyx_t_3;
 
-        /* "rdma/ibverbs.pyx":1532
+        /* "rdma/ibverbs.pyx":1528
  *                 if isinstance(wr.sg_list, list) or isinstance(wr.sg_list, tuple):
  *                     cwr.num_sge = len(wr.sg_list)
  *                     for 0 <= j < cwr.num_sge:             # <<<<<<<<<<<<<<
@@ -28488,61 +28432,61 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_14post_recv(struct __pyx_obj_4rdma_
         __pyx_t_9 = __pyx_v_cwr->num_sge;
         for (__pyx_v_j = 0; __pyx_v_j < __pyx_t_9; __pyx_v_j++) {
 
-          /* "rdma/ibverbs.pyx":1533
+          /* "rdma/ibverbs.pyx":1529
  *                     cwr.num_sge = len(wr.sg_list)
  *                     for 0 <= j < cwr.num_sge:
  *                         sge = wr.sg_list[j]             # <<<<<<<<<<<<<<
  *                         csge.addr = sge.addr
  *                         csge.length = sge.length
  */
-          __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_wr, __pyx_n_s_sg_list); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1533, __pyx_L5_error)
+          __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_wr, __pyx_n_s_sg_list); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1529, __pyx_L5_error)
           __Pyx_GOTREF(__pyx_t_2);
-          __pyx_t_1 = __Pyx_GetItemInt(__pyx_t_2, __pyx_v_j, int, 1, __Pyx_PyInt_From_int, 0, 1, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1533, __pyx_L5_error)
+          __pyx_t_1 = __Pyx_GetItemInt(__pyx_t_2, __pyx_v_j, int, 1, __Pyx_PyInt_From_int, 0, 1, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1529, __pyx_L5_error)
           __Pyx_GOTREF(__pyx_t_1);
           __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
           __Pyx_XDECREF_SET(__pyx_v_sge, __pyx_t_1);
           __pyx_t_1 = 0;
 
-          /* "rdma/ibverbs.pyx":1534
+          /* "rdma/ibverbs.pyx":1530
  *                     for 0 <= j < cwr.num_sge:
  *                         sge = wr.sg_list[j]
  *                         csge.addr = sge.addr             # <<<<<<<<<<<<<<
  *                         csge.length = sge.length
  *                         csge.lkey = sge.lkey
  */
-          __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_sge, __pyx_n_s_addr); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1534, __pyx_L5_error)
+          __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_sge, __pyx_n_s_addr); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1530, __pyx_L5_error)
           __Pyx_GOTREF(__pyx_t_1);
-          __pyx_t_10 = __Pyx_PyInt_As_unsigned_long(__pyx_t_1); if (unlikely((__pyx_t_10 == (unsigned long)-1) && PyErr_Occurred())) __PYX_ERR(0, 1534, __pyx_L5_error)
+          __pyx_t_10 = __Pyx_PyInt_As_unsigned_long(__pyx_t_1); if (unlikely((__pyx_t_10 == (unsigned long)-1) && PyErr_Occurred())) __PYX_ERR(0, 1530, __pyx_L5_error)
           __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
           __pyx_v_csge->addr = __pyx_t_10;
 
-          /* "rdma/ibverbs.pyx":1535
+          /* "rdma/ibverbs.pyx":1531
  *                         sge = wr.sg_list[j]
  *                         csge.addr = sge.addr
  *                         csge.length = sge.length             # <<<<<<<<<<<<<<
  *                         csge.lkey = sge.lkey
  *                         csge += 1
  */
-          __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_sge, __pyx_n_s_length); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1535, __pyx_L5_error)
+          __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_sge, __pyx_n_s_length); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1531, __pyx_L5_error)
           __Pyx_GOTREF(__pyx_t_1);
-          __pyx_t_11 = __Pyx_PyInt_As_unsigned_int(__pyx_t_1); if (unlikely((__pyx_t_11 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1535, __pyx_L5_error)
+          __pyx_t_11 = __Pyx_PyInt_As_unsigned_int(__pyx_t_1); if (unlikely((__pyx_t_11 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1531, __pyx_L5_error)
           __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
           __pyx_v_csge->length = __pyx_t_11;
 
-          /* "rdma/ibverbs.pyx":1536
+          /* "rdma/ibverbs.pyx":1532
  *                         csge.addr = sge.addr
  *                         csge.length = sge.length
  *                         csge.lkey = sge.lkey             # <<<<<<<<<<<<<<
  *                         csge += 1
  *                 elif wr.sg_list is not None:
  */
-          __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_sge, __pyx_n_s_lkey); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1536, __pyx_L5_error)
+          __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_sge, __pyx_n_s_lkey); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1532, __pyx_L5_error)
           __Pyx_GOTREF(__pyx_t_1);
-          __pyx_t_11 = __Pyx_PyInt_As_unsigned_int(__pyx_t_1); if (unlikely((__pyx_t_11 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1536, __pyx_L5_error)
+          __pyx_t_11 = __Pyx_PyInt_As_unsigned_int(__pyx_t_1); if (unlikely((__pyx_t_11 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1532, __pyx_L5_error)
           __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
           __pyx_v_csge->lkey = __pyx_t_11;
 
-          /* "rdma/ibverbs.pyx":1537
+          /* "rdma/ibverbs.pyx":1533
  *                         csge.length = sge.length
  *                         csge.lkey = sge.lkey
  *                         csge += 1             # <<<<<<<<<<<<<<
@@ -28552,7 +28496,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_14post_recv(struct __pyx_obj_4rdma_
           __pyx_v_csge = (__pyx_v_csge + 1);
         }
 
-        /* "rdma/ibverbs.pyx":1530
+        /* "rdma/ibverbs.pyx":1526
  * 
  *                 cwr.sg_list = csge
  *                 if isinstance(wr.sg_list, list) or isinstance(wr.sg_list, tuple):             # <<<<<<<<<<<<<<
@@ -28562,21 +28506,21 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_14post_recv(struct __pyx_obj_4rdma_
         goto __pyx_L10;
       }
 
-      /* "rdma/ibverbs.pyx":1538
+      /* "rdma/ibverbs.pyx":1534
  *                         csge.lkey = sge.lkey
  *                         csge += 1
  *                 elif wr.sg_list is not None:             # <<<<<<<<<<<<<<
  *                     cwr.num_sge = 1
  *                     sge = wr.sg_list;
  */
-      __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_wr, __pyx_n_s_sg_list); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1538, __pyx_L5_error)
+      __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_wr, __pyx_n_s_sg_list); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1534, __pyx_L5_error)
       __Pyx_GOTREF(__pyx_t_1);
       __pyx_t_4 = (__pyx_t_1 != Py_None);
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
       __pyx_t_7 = (__pyx_t_4 != 0);
       if (__pyx_t_7) {
 
-        /* "rdma/ibverbs.pyx":1539
+        /* "rdma/ibverbs.pyx":1535
  *                         csge += 1
  *                 elif wr.sg_list is not None:
  *                     cwr.num_sge = 1             # <<<<<<<<<<<<<<
@@ -28585,58 +28529,58 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_14post_recv(struct __pyx_obj_4rdma_
  */
         __pyx_v_cwr->num_sge = 1;
 
-        /* "rdma/ibverbs.pyx":1540
+        /* "rdma/ibverbs.pyx":1536
  *                 elif wr.sg_list is not None:
  *                     cwr.num_sge = 1
  *                     sge = wr.sg_list;             # <<<<<<<<<<<<<<
  *                     csge.addr = sge.addr
  *                     csge.length = sge.length
  */
-        __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_wr, __pyx_n_s_sg_list); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1540, __pyx_L5_error)
+        __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_wr, __pyx_n_s_sg_list); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1536, __pyx_L5_error)
         __Pyx_GOTREF(__pyx_t_1);
         __Pyx_XDECREF_SET(__pyx_v_sge, __pyx_t_1);
         __pyx_t_1 = 0;
 
-        /* "rdma/ibverbs.pyx":1541
+        /* "rdma/ibverbs.pyx":1537
  *                     cwr.num_sge = 1
  *                     sge = wr.sg_list;
  *                     csge.addr = sge.addr             # <<<<<<<<<<<<<<
  *                     csge.length = sge.length
  *                     csge.lkey = sge.lkey
  */
-        __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_sge, __pyx_n_s_addr); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1541, __pyx_L5_error)
+        __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_sge, __pyx_n_s_addr); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1537, __pyx_L5_error)
         __Pyx_GOTREF(__pyx_t_1);
-        __pyx_t_10 = __Pyx_PyInt_As_unsigned_long(__pyx_t_1); if (unlikely((__pyx_t_10 == (unsigned long)-1) && PyErr_Occurred())) __PYX_ERR(0, 1541, __pyx_L5_error)
+        __pyx_t_10 = __Pyx_PyInt_As_unsigned_long(__pyx_t_1); if (unlikely((__pyx_t_10 == (unsigned long)-1) && PyErr_Occurred())) __PYX_ERR(0, 1537, __pyx_L5_error)
         __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
         __pyx_v_csge->addr = __pyx_t_10;
 
-        /* "rdma/ibverbs.pyx":1542
+        /* "rdma/ibverbs.pyx":1538
  *                     sge = wr.sg_list;
  *                     csge.addr = sge.addr
  *                     csge.length = sge.length             # <<<<<<<<<<<<<<
  *                     csge.lkey = sge.lkey
  *                     csge += 1
  */
-        __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_sge, __pyx_n_s_length); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1542, __pyx_L5_error)
+        __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_sge, __pyx_n_s_length); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1538, __pyx_L5_error)
         __Pyx_GOTREF(__pyx_t_1);
-        __pyx_t_9 = __Pyx_PyInt_As_unsigned_int(__pyx_t_1); if (unlikely((__pyx_t_9 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1542, __pyx_L5_error)
+        __pyx_t_9 = __Pyx_PyInt_As_unsigned_int(__pyx_t_1); if (unlikely((__pyx_t_9 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1538, __pyx_L5_error)
         __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
         __pyx_v_csge->length = __pyx_t_9;
 
-        /* "rdma/ibverbs.pyx":1543
+        /* "rdma/ibverbs.pyx":1539
  *                     csge.addr = sge.addr
  *                     csge.length = sge.length
  *                     csge.lkey = sge.lkey             # <<<<<<<<<<<<<<
  *                     csge += 1
  *                 cwr = cwr + 1;
  */
-        __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_sge, __pyx_n_s_lkey); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1543, __pyx_L5_error)
+        __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_sge, __pyx_n_s_lkey); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1539, __pyx_L5_error)
         __Pyx_GOTREF(__pyx_t_1);
-        __pyx_t_9 = __Pyx_PyInt_As_unsigned_int(__pyx_t_1); if (unlikely((__pyx_t_9 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1543, __pyx_L5_error)
+        __pyx_t_9 = __Pyx_PyInt_As_unsigned_int(__pyx_t_1); if (unlikely((__pyx_t_9 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1539, __pyx_L5_error)
         __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
         __pyx_v_csge->lkey = __pyx_t_9;
 
-        /* "rdma/ibverbs.pyx":1544
+        /* "rdma/ibverbs.pyx":1540
  *                     csge.length = sge.length
  *                     csge.lkey = sge.lkey
  *                     csge += 1             # <<<<<<<<<<<<<<
@@ -28645,7 +28589,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_14post_recv(struct __pyx_obj_4rdma_
  */
         __pyx_v_csge = (__pyx_v_csge + 1);
 
-        /* "rdma/ibverbs.pyx":1538
+        /* "rdma/ibverbs.pyx":1534
  *                         csge.lkey = sge.lkey
  *                         csge += 1
  *                 elif wr.sg_list is not None:             # <<<<<<<<<<<<<<
@@ -28655,7 +28599,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_14post_recv(struct __pyx_obj_4rdma_
       }
       __pyx_L10:;
 
-      /* "rdma/ibverbs.pyx":1545
+      /* "rdma/ibverbs.pyx":1541
  *                     csge.lkey = sge.lkey
  *                     csge += 1
  *                 cwr = cwr + 1;             # <<<<<<<<<<<<<<
@@ -28665,7 +28609,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_14post_recv(struct __pyx_obj_4rdma_
       __pyx_v_cwr = (__pyx_v_cwr + 1);
     }
 
-    /* "rdma/ibverbs.pyx":1547
+    /* "rdma/ibverbs.pyx":1543
  *                 cwr = cwr + 1;
  * 
  *             rc = c.ibv_post_recv(self._qp, <c.ibv_recv_wr *>mem, &cbad_wr)             # <<<<<<<<<<<<<<
@@ -28674,7 +28618,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_14post_recv(struct __pyx_obj_4rdma_
  */
     __pyx_v_rc = ibv_post_recv(__pyx_v_self->_qp, ((struct ibv_recv_wr *)__pyx_v_mem), (&__pyx_v_cbad_wr));
 
-    /* "rdma/ibverbs.pyx":1548
+    /* "rdma/ibverbs.pyx":1544
  * 
  *             rc = c.ibv_post_recv(self._qp, <c.ibv_recv_wr *>mem, &cbad_wr)
  *             if rc != 0:             # <<<<<<<<<<<<<<
@@ -28684,7 +28628,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_14post_recv(struct __pyx_obj_4rdma_
     __pyx_t_7 = ((__pyx_v_rc != 0) != 0);
     if (__pyx_t_7) {
 
-      /* "rdma/ibverbs.pyx":1549
+      /* "rdma/ibverbs.pyx":1545
  *             rc = c.ibv_post_recv(self._qp, <c.ibv_recv_wr *>mem, &cbad_wr)
  *             if rc != 0:
  *                 cwr = <c.ibv_recv_wr *>(mem);             # <<<<<<<<<<<<<<
@@ -28693,7 +28637,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_14post_recv(struct __pyx_obj_4rdma_
  */
       __pyx_v_cwr = ((struct ibv_recv_wr *)__pyx_v_mem);
 
-      /* "rdma/ibverbs.pyx":1550
+      /* "rdma/ibverbs.pyx":1546
  *             if rc != 0:
  *                 cwr = <c.ibv_recv_wr *>(mem);
  *                 for 0 <= i < n:             # <<<<<<<<<<<<<<
@@ -28703,7 +28647,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_14post_recv(struct __pyx_obj_4rdma_
       __pyx_t_5 = __pyx_v_n;
       for (__pyx_v_i = 0; __pyx_v_i < __pyx_t_5; __pyx_v_i++) {
 
-        /* "rdma/ibverbs.pyx":1551
+        /* "rdma/ibverbs.pyx":1547
  *                 cwr = <c.ibv_recv_wr *>(mem);
  *                 for 0 <= i < n:
  *                     if cwr+i == cbad_wr:             # <<<<<<<<<<<<<<
@@ -28713,7 +28657,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_14post_recv(struct __pyx_obj_4rdma_
         __pyx_t_7 = (((__pyx_v_cwr + __pyx_v_i) == __pyx_v_cbad_wr) != 0);
         if (__pyx_t_7) {
 
-          /* "rdma/ibverbs.pyx":1552
+          /* "rdma/ibverbs.pyx":1548
  *                 for 0 <= i < n:
  *                     if cwr+i == cbad_wr:
  *                         break;             # <<<<<<<<<<<<<<
@@ -28722,7 +28666,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_14post_recv(struct __pyx_obj_4rdma_
  */
           goto __pyx_L17_break;
 
-          /* "rdma/ibverbs.pyx":1551
+          /* "rdma/ibverbs.pyx":1547
  *                 cwr = <c.ibv_recv_wr *>(mem);
  *                 for 0 <= i < n:
  *                     if cwr+i == cbad_wr:             # <<<<<<<<<<<<<<
@@ -28733,18 +28677,18 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_14post_recv(struct __pyx_obj_4rdma_
       }
       __pyx_L17_break:;
 
-      /* "rdma/ibverbs.pyx":1553
+      /* "rdma/ibverbs.pyx":1549
  *                     if cwr+i == cbad_wr:
  *                         break;
  *                 raise WRError(rc,"ibv_post_recv","Failed to post work request",n);             # <<<<<<<<<<<<<<
  *         finally:
  *             free(mem)
  */
-      __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_WRError); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1553, __pyx_L5_error)
+      __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_WRError); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1549, __pyx_L5_error)
       __Pyx_GOTREF(__pyx_t_2);
-      __pyx_t_12 = __Pyx_PyInt_From_int(__pyx_v_rc); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 1553, __pyx_L5_error)
+      __pyx_t_12 = __Pyx_PyInt_From_int(__pyx_v_rc); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 1549, __pyx_L5_error)
       __Pyx_GOTREF(__pyx_t_12);
-      __pyx_t_13 = __Pyx_PyInt_From_int(__pyx_v_n); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 1553, __pyx_L5_error)
+      __pyx_t_13 = __Pyx_PyInt_From_int(__pyx_v_n); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 1549, __pyx_L5_error)
       __Pyx_GOTREF(__pyx_t_13);
       __pyx_t_14 = NULL;
       __pyx_t_5 = 0;
@@ -28761,7 +28705,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_14post_recv(struct __pyx_obj_4rdma_
       #if CYTHON_FAST_PYCALL
       if (PyFunction_Check(__pyx_t_2)) {
         PyObject *__pyx_temp[5] = {__pyx_t_14, __pyx_t_12, __pyx_n_s_ibv_post_recv, __pyx_kp_s_Failed_to_post_work_request, __pyx_t_13};
-        __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_5, 4+__pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1553, __pyx_L5_error)
+        __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_5, 4+__pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1549, __pyx_L5_error)
         __Pyx_XDECREF(__pyx_t_14); __pyx_t_14 = 0;
         __Pyx_GOTREF(__pyx_t_1);
         __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
@@ -28771,7 +28715,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_14post_recv(struct __pyx_obj_4rdma_
       #if CYTHON_FAST_PYCCALL
       if (__Pyx_PyFastCFunction_Check(__pyx_t_2)) {
         PyObject *__pyx_temp[5] = {__pyx_t_14, __pyx_t_12, __pyx_n_s_ibv_post_recv, __pyx_kp_s_Failed_to_post_work_request, __pyx_t_13};
-        __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_5, 4+__pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1553, __pyx_L5_error)
+        __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_5, 4+__pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1549, __pyx_L5_error)
         __Pyx_XDECREF(__pyx_t_14); __pyx_t_14 = 0;
         __Pyx_GOTREF(__pyx_t_1);
         __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
@@ -28779,7 +28723,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_14post_recv(struct __pyx_obj_4rdma_
       } else
       #endif
       {
-        __pyx_t_15 = PyTuple_New(4+__pyx_t_5); if (unlikely(!__pyx_t_15)) __PYX_ERR(0, 1553, __pyx_L5_error)
+        __pyx_t_15 = PyTuple_New(4+__pyx_t_5); if (unlikely(!__pyx_t_15)) __PYX_ERR(0, 1549, __pyx_L5_error)
         __Pyx_GOTREF(__pyx_t_15);
         if (__pyx_t_14) {
           __Pyx_GIVEREF(__pyx_t_14); PyTuple_SET_ITEM(__pyx_t_15, 0, __pyx_t_14); __pyx_t_14 = NULL;
@@ -28796,16 +28740,16 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_14post_recv(struct __pyx_obj_4rdma_
         PyTuple_SET_ITEM(__pyx_t_15, 3+__pyx_t_5, __pyx_t_13);
         __pyx_t_12 = 0;
         __pyx_t_13 = 0;
-        __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_15, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1553, __pyx_L5_error)
+        __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_15, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1549, __pyx_L5_error)
         __Pyx_GOTREF(__pyx_t_1);
         __Pyx_DECREF(__pyx_t_15); __pyx_t_15 = 0;
       }
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
       __Pyx_Raise(__pyx_t_1, 0, 0, 0);
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-      __PYX_ERR(0, 1553, __pyx_L5_error)
+      __PYX_ERR(0, 1549, __pyx_L5_error)
 
-      /* "rdma/ibverbs.pyx":1548
+      /* "rdma/ibverbs.pyx":1544
  * 
  *             rc = c.ibv_post_recv(self._qp, <c.ibv_recv_wr *>mem, &cbad_wr)
  *             if rc != 0:             # <<<<<<<<<<<<<<
@@ -28815,7 +28759,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_14post_recv(struct __pyx_obj_4rdma_
     }
   }
 
-  /* "rdma/ibverbs.pyx":1555
+  /* "rdma/ibverbs.pyx":1551
  *                 raise WRError(rc,"ibv_post_recv","Failed to post work request",n);
  *         finally:
  *             free(mem)             # <<<<<<<<<<<<<<
@@ -28867,7 +28811,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_14post_recv(struct __pyx_obj_4rdma_
     __pyx_L6:;
   }
 
-  /* "rdma/ibverbs.pyx":1496
+  /* "rdma/ibverbs.pyx":1492
  *             free(mem)
  * 
  *     def post_recv(self, arg):             # <<<<<<<<<<<<<<
@@ -28896,7 +28840,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_14post_recv(struct __pyx_obj_4rdma_
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":1557
+/* "rdma/ibverbs.pyx":1553
  *             free(mem)
  * 
  *     def query(self,int mask):             # <<<<<<<<<<<<<<
@@ -28916,7 +28860,7 @@ static PyObject *__pyx_pw_4rdma_7ibverbs_2QP_17query(PyObject *__pyx_v_self, PyO
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("query (wrapper)", 0);
   assert(__pyx_arg_mask); {
-    __pyx_v_mask = __Pyx_PyInt_As_int(__pyx_arg_mask); if (unlikely((__pyx_v_mask == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1557, __pyx_L3_error)
+    __pyx_v_mask = __Pyx_PyInt_As_int(__pyx_arg_mask); if (unlikely((__pyx_v_mask == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1553, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -28953,7 +28897,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_16query(struct __pyx_obj_4rdma_7ibv
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("query", 0);
 
-  /* "rdma/ibverbs.pyx":1567
+  /* "rdma/ibverbs.pyx":1563
  *         cdef int rc
  * 
  *         rc = c.ibv_query_qp(self._qp, &cattr, mask, &cinit)             # <<<<<<<<<<<<<<
@@ -28962,7 +28906,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_16query(struct __pyx_obj_4rdma_7ibv
  */
   __pyx_v_rc = ibv_query_qp(__pyx_v_self->_qp, (&__pyx_v_cattr), __pyx_v_mask, (&__pyx_v_cinit));
 
-  /* "rdma/ibverbs.pyx":1568
+  /* "rdma/ibverbs.pyx":1564
  * 
  *         rc = c.ibv_query_qp(self._qp, &cattr, mask, &cinit)
  *         if rc != 0:             # <<<<<<<<<<<<<<
@@ -28972,19 +28916,19 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_16query(struct __pyx_obj_4rdma_7ibv
   __pyx_t_1 = ((__pyx_v_rc != 0) != 0);
   if (unlikely(__pyx_t_1)) {
 
-    /* "rdma/ibverbs.pyx":1569
+    /* "rdma/ibverbs.pyx":1565
  *         rc = c.ibv_query_qp(self._qp, &cattr, mask, &cinit)
  *         if rc != 0:
  *             raise rdma.SysError(rc,"ibv_query_qp",             # <<<<<<<<<<<<<<
  *                                 "Failed to query queue pair")
  * 
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_rdma); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1569, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_rdma); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1565, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_SysError); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1569, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_SysError); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1565, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_rc); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1569, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_rc); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1565, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __pyx_t_5 = NULL;
     __pyx_t_6 = 0;
@@ -29001,7 +28945,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_16query(struct __pyx_obj_4rdma_7ibv
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_4)) {
       PyObject *__pyx_temp[4] = {__pyx_t_5, __pyx_t_3, __pyx_n_s_ibv_query_qp, __pyx_kp_s_Failed_to_query_queue_pair};
-      __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_6, 3+__pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1569, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_6, 3+__pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1565, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -29010,14 +28954,14 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_16query(struct __pyx_obj_4rdma_7ibv
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_4)) {
       PyObject *__pyx_temp[4] = {__pyx_t_5, __pyx_t_3, __pyx_n_s_ibv_query_qp, __pyx_kp_s_Failed_to_query_queue_pair};
-      __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_6, 3+__pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1569, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_6, 3+__pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1565, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     } else
     #endif
     {
-      __pyx_t_7 = PyTuple_New(3+__pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1569, __pyx_L1_error)
+      __pyx_t_7 = PyTuple_New(3+__pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1565, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_7);
       if (__pyx_t_5) {
         __Pyx_GIVEREF(__pyx_t_5); PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_t_5); __pyx_t_5 = NULL;
@@ -29031,16 +28975,16 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_16query(struct __pyx_obj_4rdma_7ibv
       __Pyx_GIVEREF(__pyx_kp_s_Failed_to_query_queue_pair);
       PyTuple_SET_ITEM(__pyx_t_7, 2+__pyx_t_6, __pyx_kp_s_Failed_to_query_queue_pair);
       __pyx_t_3 = 0;
-      __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_7, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1569, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_7, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1565, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
     }
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_Raise(__pyx_t_2, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __PYX_ERR(0, 1569, __pyx_L1_error)
+    __PYX_ERR(0, 1565, __pyx_L1_error)
 
-    /* "rdma/ibverbs.pyx":1568
+    /* "rdma/ibverbs.pyx":1564
  * 
  *         rc = c.ibv_query_qp(self._qp, &cattr, mask, &cinit)
  *         if rc != 0:             # <<<<<<<<<<<<<<
@@ -29049,547 +28993,547 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_16query(struct __pyx_obj_4rdma_7ibv
  */
   }
 
-  /* "rdma/ibverbs.pyx":1572
+  /* "rdma/ibverbs.pyx":1568
  *                                 "Failed to query queue pair")
  * 
  *         cap = qp_cap(max_send_wr=cattr.cap.max_send_wr,             # <<<<<<<<<<<<<<
  *                      max_recv_wr=cattr.cap.max_recv_wr,
  *                      max_send_sge=cattr.cap.max_send_sge,
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_qp_cap); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1572, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_qp_cap); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1568, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_4 = __Pyx_PyDict_NewPresized(5); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1572, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyDict_NewPresized(5); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1568, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.cap.max_send_wr); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1572, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.cap.max_send_wr); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1568, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_send_wr, __pyx_t_7) < 0) __PYX_ERR(0, 1572, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_send_wr, __pyx_t_7) < 0) __PYX_ERR(0, 1568, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-  /* "rdma/ibverbs.pyx":1573
+  /* "rdma/ibverbs.pyx":1569
  * 
  *         cap = qp_cap(max_send_wr=cattr.cap.max_send_wr,
  *                      max_recv_wr=cattr.cap.max_recv_wr,             # <<<<<<<<<<<<<<
  *                      max_send_sge=cattr.cap.max_send_sge,
  *                      max_recv_sge=cattr.cap.max_recv_sge,
  */
-  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.cap.max_recv_wr); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1573, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.cap.max_recv_wr); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1569, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_recv_wr, __pyx_t_7) < 0) __PYX_ERR(0, 1572, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_recv_wr, __pyx_t_7) < 0) __PYX_ERR(0, 1568, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-  /* "rdma/ibverbs.pyx":1574
+  /* "rdma/ibverbs.pyx":1570
  *         cap = qp_cap(max_send_wr=cattr.cap.max_send_wr,
  *                      max_recv_wr=cattr.cap.max_recv_wr,
  *                      max_send_sge=cattr.cap.max_send_sge,             # <<<<<<<<<<<<<<
  *                      max_recv_sge=cattr.cap.max_recv_sge,
  *                      max_inline_data=cattr.cap.max_inline_data);
  */
-  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.cap.max_send_sge); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1574, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.cap.max_send_sge); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1570, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_send_sge, __pyx_t_7) < 0) __PYX_ERR(0, 1572, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_send_sge, __pyx_t_7) < 0) __PYX_ERR(0, 1568, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-  /* "rdma/ibverbs.pyx":1575
+  /* "rdma/ibverbs.pyx":1571
  *                      max_recv_wr=cattr.cap.max_recv_wr,
  *                      max_send_sge=cattr.cap.max_send_sge,
  *                      max_recv_sge=cattr.cap.max_recv_sge,             # <<<<<<<<<<<<<<
  *                      max_inline_data=cattr.cap.max_inline_data);
  *         attr = qp_attr(qp_state=cattr.qp_state,
  */
-  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.cap.max_recv_sge); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1575, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.cap.max_recv_sge); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1571, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_recv_sge, __pyx_t_7) < 0) __PYX_ERR(0, 1572, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_recv_sge, __pyx_t_7) < 0) __PYX_ERR(0, 1568, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-  /* "rdma/ibverbs.pyx":1576
+  /* "rdma/ibverbs.pyx":1572
  *                      max_send_sge=cattr.cap.max_send_sge,
  *                      max_recv_sge=cattr.cap.max_recv_sge,
  *                      max_inline_data=cattr.cap.max_inline_data);             # <<<<<<<<<<<<<<
  *         attr = qp_attr(qp_state=cattr.qp_state,
  *                        cur_qp_state=cattr.cur_qp_state,
  */
-  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.cap.max_inline_data); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1576, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.cap.max_inline_data); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1572, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_inline_data, __pyx_t_7) < 0) __PYX_ERR(0, 1572, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_inline_data, __pyx_t_7) < 0) __PYX_ERR(0, 1568, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-  /* "rdma/ibverbs.pyx":1572
+  /* "rdma/ibverbs.pyx":1568
  *                                 "Failed to query queue pair")
  * 
  *         cap = qp_cap(max_send_wr=cattr.cap.max_send_wr,             # <<<<<<<<<<<<<<
  *                      max_recv_wr=cattr.cap.max_recv_wr,
  *                      max_send_sge=cattr.cap.max_send_sge,
  */
-  __pyx_t_7 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_empty_tuple, __pyx_t_4); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1572, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_empty_tuple, __pyx_t_4); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1568, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_v_cap = __pyx_t_7;
   __pyx_t_7 = 0;
 
-  /* "rdma/ibverbs.pyx":1577
+  /* "rdma/ibverbs.pyx":1573
  *                      max_recv_sge=cattr.cap.max_recv_sge,
  *                      max_inline_data=cattr.cap.max_inline_data);
  *         attr = qp_attr(qp_state=cattr.qp_state,             # <<<<<<<<<<<<<<
  *                        cur_qp_state=cattr.cur_qp_state,
  *                        path_mtu=cattr.path_mtu,
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_qp_attr); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1577, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_qp_attr); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1573, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  __pyx_t_4 = __Pyx_PyDict_NewPresized(25); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1577, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyDict_NewPresized(25); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1573, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_2 = __Pyx_PyInt_From_enum__ibv_qp_state(__pyx_v_cattr.qp_state); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1577, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyInt_From_enum__ibv_qp_state(__pyx_v_cattr.qp_state); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1573, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_qp_state, __pyx_t_2) < 0) __PYX_ERR(0, 1577, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_qp_state, __pyx_t_2) < 0) __PYX_ERR(0, 1573, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "rdma/ibverbs.pyx":1578
+  /* "rdma/ibverbs.pyx":1574
  *                      max_inline_data=cattr.cap.max_inline_data);
  *         attr = qp_attr(qp_state=cattr.qp_state,
  *                        cur_qp_state=cattr.cur_qp_state,             # <<<<<<<<<<<<<<
  *                        path_mtu=cattr.path_mtu,
  *                        path_mig_state=cattr.path_mig_state,
  */
-  __pyx_t_2 = __Pyx_PyInt_From_enum__ibv_qp_state(__pyx_v_cattr.cur_qp_state); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1578, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyInt_From_enum__ibv_qp_state(__pyx_v_cattr.cur_qp_state); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1574, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_cur_qp_state, __pyx_t_2) < 0) __PYX_ERR(0, 1577, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_cur_qp_state, __pyx_t_2) < 0) __PYX_ERR(0, 1573, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "rdma/ibverbs.pyx":1579
+  /* "rdma/ibverbs.pyx":1575
  *         attr = qp_attr(qp_state=cattr.qp_state,
  *                        cur_qp_state=cattr.cur_qp_state,
  *                        path_mtu=cattr.path_mtu,             # <<<<<<<<<<<<<<
  *                        path_mig_state=cattr.path_mig_state,
  *                        qkey=cattr.qkey,
  */
-  __pyx_t_2 = __Pyx_PyInt_From_enum__ibv_mtu(__pyx_v_cattr.path_mtu); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1579, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyInt_From_enum__ibv_mtu(__pyx_v_cattr.path_mtu); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1575, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_path_mtu, __pyx_t_2) < 0) __PYX_ERR(0, 1577, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_path_mtu, __pyx_t_2) < 0) __PYX_ERR(0, 1573, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "rdma/ibverbs.pyx":1580
+  /* "rdma/ibverbs.pyx":1576
  *                        cur_qp_state=cattr.cur_qp_state,
  *                        path_mtu=cattr.path_mtu,
  *                        path_mig_state=cattr.path_mig_state,             # <<<<<<<<<<<<<<
  *                        qkey=cattr.qkey,
  *                        rq_psn=cattr.rq_psn,
  */
-  __pyx_t_2 = __Pyx_PyInt_From_enum__ibv_mig_state(__pyx_v_cattr.path_mig_state); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1580, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyInt_From_enum__ibv_mig_state(__pyx_v_cattr.path_mig_state); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1576, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_path_mig_state, __pyx_t_2) < 0) __PYX_ERR(0, 1577, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_path_mig_state, __pyx_t_2) < 0) __PYX_ERR(0, 1573, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "rdma/ibverbs.pyx":1581
+  /* "rdma/ibverbs.pyx":1577
  *                        path_mtu=cattr.path_mtu,
  *                        path_mig_state=cattr.path_mig_state,
  *                        qkey=cattr.qkey,             # <<<<<<<<<<<<<<
  *                        rq_psn=cattr.rq_psn,
  *                        sq_psn=cattr.sq_psn,
  */
-  __pyx_t_2 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.qkey); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1581, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.qkey); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1577, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_qkey, __pyx_t_2) < 0) __PYX_ERR(0, 1577, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_qkey, __pyx_t_2) < 0) __PYX_ERR(0, 1573, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "rdma/ibverbs.pyx":1582
+  /* "rdma/ibverbs.pyx":1578
  *                        path_mig_state=cattr.path_mig_state,
  *                        qkey=cattr.qkey,
  *                        rq_psn=cattr.rq_psn,             # <<<<<<<<<<<<<<
  *                        sq_psn=cattr.sq_psn,
  *                        dest_qp_num=cattr.dest_qp_num,
  */
-  __pyx_t_2 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.rq_psn); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1582, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.rq_psn); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1578, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_rq_psn, __pyx_t_2) < 0) __PYX_ERR(0, 1577, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_rq_psn, __pyx_t_2) < 0) __PYX_ERR(0, 1573, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "rdma/ibverbs.pyx":1583
+  /* "rdma/ibverbs.pyx":1579
  *                        qkey=cattr.qkey,
  *                        rq_psn=cattr.rq_psn,
  *                        sq_psn=cattr.sq_psn,             # <<<<<<<<<<<<<<
  *                        dest_qp_num=cattr.dest_qp_num,
  *                        qp_access_flags=cattr.qp_access_flags,
  */
-  __pyx_t_2 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.sq_psn); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1583, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.sq_psn); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1579, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_sq_psn, __pyx_t_2) < 0) __PYX_ERR(0, 1577, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_sq_psn, __pyx_t_2) < 0) __PYX_ERR(0, 1573, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "rdma/ibverbs.pyx":1584
+  /* "rdma/ibverbs.pyx":1580
  *                        rq_psn=cattr.rq_psn,
  *                        sq_psn=cattr.sq_psn,
  *                        dest_qp_num=cattr.dest_qp_num,             # <<<<<<<<<<<<<<
  *                        qp_access_flags=cattr.qp_access_flags,
  *                        cap=cap,
  */
-  __pyx_t_2 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.dest_qp_num); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1584, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.dest_qp_num); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1580, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_dest_qp_num, __pyx_t_2) < 0) __PYX_ERR(0, 1577, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_dest_qp_num, __pyx_t_2) < 0) __PYX_ERR(0, 1573, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "rdma/ibverbs.pyx":1585
+  /* "rdma/ibverbs.pyx":1581
  *                        sq_psn=cattr.sq_psn,
  *                        dest_qp_num=cattr.dest_qp_num,
  *                        qp_access_flags=cattr.qp_access_flags,             # <<<<<<<<<<<<<<
  *                        cap=cap,
  *                        ah_attr=from_ah_attr(&cattr.ah_attr),
  */
-  __pyx_t_2 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.qp_access_flags); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1585, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.qp_access_flags); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1581, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_qp_access_flags, __pyx_t_2) < 0) __PYX_ERR(0, 1577, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_qp_access_flags, __pyx_t_2) < 0) __PYX_ERR(0, 1573, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "rdma/ibverbs.pyx":1586
+  /* "rdma/ibverbs.pyx":1582
  *                        dest_qp_num=cattr.dest_qp_num,
  *                        qp_access_flags=cattr.qp_access_flags,
  *                        cap=cap,             # <<<<<<<<<<<<<<
  *                        ah_attr=from_ah_attr(&cattr.ah_attr),
  *                        alt_ah_attr=from_ah_attr(&cattr.alt_ah_attr),
  */
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_cap, __pyx_v_cap) < 0) __PYX_ERR(0, 1577, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_cap, __pyx_v_cap) < 0) __PYX_ERR(0, 1573, __pyx_L1_error)
 
-  /* "rdma/ibverbs.pyx":1587
+  /* "rdma/ibverbs.pyx":1583
  *                        qp_access_flags=cattr.qp_access_flags,
  *                        cap=cap,
  *                        ah_attr=from_ah_attr(&cattr.ah_attr),             # <<<<<<<<<<<<<<
  *                        alt_ah_attr=from_ah_attr(&cattr.alt_ah_attr),
  *                        pkey_index=cattr.pkey_index,
  */
-  __pyx_t_2 = __pyx_f_4rdma_7ibverbs_from_ah_attr((&__pyx_v_cattr.ah_attr)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1587, __pyx_L1_error)
+  __pyx_t_2 = __pyx_f_4rdma_7ibverbs_from_ah_attr((&__pyx_v_cattr.ah_attr)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1583, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_ah_attr, __pyx_t_2) < 0) __PYX_ERR(0, 1577, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_ah_attr, __pyx_t_2) < 0) __PYX_ERR(0, 1573, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "rdma/ibverbs.pyx":1588
+  /* "rdma/ibverbs.pyx":1584
  *                        cap=cap,
  *                        ah_attr=from_ah_attr(&cattr.ah_attr),
  *                        alt_ah_attr=from_ah_attr(&cattr.alt_ah_attr),             # <<<<<<<<<<<<<<
  *                        pkey_index=cattr.pkey_index,
  *                        alt_pkey_index=cattr.alt_pkey_index,
  */
-  __pyx_t_2 = __pyx_f_4rdma_7ibverbs_from_ah_attr((&__pyx_v_cattr.alt_ah_attr)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1588, __pyx_L1_error)
+  __pyx_t_2 = __pyx_f_4rdma_7ibverbs_from_ah_attr((&__pyx_v_cattr.alt_ah_attr)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1584, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_alt_ah_attr, __pyx_t_2) < 0) __PYX_ERR(0, 1577, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_alt_ah_attr, __pyx_t_2) < 0) __PYX_ERR(0, 1573, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "rdma/ibverbs.pyx":1589
+  /* "rdma/ibverbs.pyx":1585
  *                        ah_attr=from_ah_attr(&cattr.ah_attr),
  *                        alt_ah_attr=from_ah_attr(&cattr.alt_ah_attr),
  *                        pkey_index=cattr.pkey_index,             # <<<<<<<<<<<<<<
  *                        alt_pkey_index=cattr.alt_pkey_index,
  *                        en_sqd_async_notify=cattr.en_sqd_async_notify,
  */
-  __pyx_t_2 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.pkey_index); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1589, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.pkey_index); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1585, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_pkey_index, __pyx_t_2) < 0) __PYX_ERR(0, 1577, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_pkey_index, __pyx_t_2) < 0) __PYX_ERR(0, 1573, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "rdma/ibverbs.pyx":1590
+  /* "rdma/ibverbs.pyx":1586
  *                        alt_ah_attr=from_ah_attr(&cattr.alt_ah_attr),
  *                        pkey_index=cattr.pkey_index,
  *                        alt_pkey_index=cattr.alt_pkey_index,             # <<<<<<<<<<<<<<
  *                        en_sqd_async_notify=cattr.en_sqd_async_notify,
  *                        sq_draining=cattr.sq_draining,
  */
-  __pyx_t_2 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.alt_pkey_index); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1590, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.alt_pkey_index); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1586, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_alt_pkey_index, __pyx_t_2) < 0) __PYX_ERR(0, 1577, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_alt_pkey_index, __pyx_t_2) < 0) __PYX_ERR(0, 1573, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "rdma/ibverbs.pyx":1591
+  /* "rdma/ibverbs.pyx":1587
  *                        pkey_index=cattr.pkey_index,
  *                        alt_pkey_index=cattr.alt_pkey_index,
  *                        en_sqd_async_notify=cattr.en_sqd_async_notify,             # <<<<<<<<<<<<<<
  *                        sq_draining=cattr.sq_draining,
  *                        max_rd_atomic=cattr.max_rd_atomic,
  */
-  __pyx_t_2 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.en_sqd_async_notify); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1591, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.en_sqd_async_notify); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1587, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_en_sqd_async_notify, __pyx_t_2) < 0) __PYX_ERR(0, 1577, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_en_sqd_async_notify, __pyx_t_2) < 0) __PYX_ERR(0, 1573, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "rdma/ibverbs.pyx":1592
+  /* "rdma/ibverbs.pyx":1588
  *                        alt_pkey_index=cattr.alt_pkey_index,
  *                        en_sqd_async_notify=cattr.en_sqd_async_notify,
  *                        sq_draining=cattr.sq_draining,             # <<<<<<<<<<<<<<
  *                        max_rd_atomic=cattr.max_rd_atomic,
  *                        max_dest_rd_atomic=cattr.max_dest_rd_atomic,
  */
-  __pyx_t_2 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.sq_draining); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1592, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.sq_draining); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1588, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_sq_draining, __pyx_t_2) < 0) __PYX_ERR(0, 1577, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_sq_draining, __pyx_t_2) < 0) __PYX_ERR(0, 1573, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "rdma/ibverbs.pyx":1593
+  /* "rdma/ibverbs.pyx":1589
  *                        en_sqd_async_notify=cattr.en_sqd_async_notify,
  *                        sq_draining=cattr.sq_draining,
  *                        max_rd_atomic=cattr.max_rd_atomic,             # <<<<<<<<<<<<<<
  *                        max_dest_rd_atomic=cattr.max_dest_rd_atomic,
  *                        min_rnr_timer=cattr.min_rnr_timer,
  */
-  __pyx_t_2 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.max_rd_atomic); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1593, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.max_rd_atomic); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1589, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_rd_atomic, __pyx_t_2) < 0) __PYX_ERR(0, 1577, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_rd_atomic, __pyx_t_2) < 0) __PYX_ERR(0, 1573, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "rdma/ibverbs.pyx":1594
+  /* "rdma/ibverbs.pyx":1590
  *                        sq_draining=cattr.sq_draining,
  *                        max_rd_atomic=cattr.max_rd_atomic,
  *                        max_dest_rd_atomic=cattr.max_dest_rd_atomic,             # <<<<<<<<<<<<<<
  *                        min_rnr_timer=cattr.min_rnr_timer,
  *                        port_num=cattr.port_num,
  */
-  __pyx_t_2 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.max_dest_rd_atomic); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1594, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.max_dest_rd_atomic); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1590, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_dest_rd_atomic, __pyx_t_2) < 0) __PYX_ERR(0, 1577, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_dest_rd_atomic, __pyx_t_2) < 0) __PYX_ERR(0, 1573, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "rdma/ibverbs.pyx":1595
+  /* "rdma/ibverbs.pyx":1591
  *                        max_rd_atomic=cattr.max_rd_atomic,
  *                        max_dest_rd_atomic=cattr.max_dest_rd_atomic,
  *                        min_rnr_timer=cattr.min_rnr_timer,             # <<<<<<<<<<<<<<
  *                        port_num=cattr.port_num,
  *                        timeout=cattr.timeout,
  */
-  __pyx_t_2 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.min_rnr_timer); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1595, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.min_rnr_timer); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1591, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_min_rnr_timer, __pyx_t_2) < 0) __PYX_ERR(0, 1577, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_min_rnr_timer, __pyx_t_2) < 0) __PYX_ERR(0, 1573, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "rdma/ibverbs.pyx":1596
+  /* "rdma/ibverbs.pyx":1592
  *                        max_dest_rd_atomic=cattr.max_dest_rd_atomic,
  *                        min_rnr_timer=cattr.min_rnr_timer,
  *                        port_num=cattr.port_num,             # <<<<<<<<<<<<<<
  *                        timeout=cattr.timeout,
  *                        retry_cnt=cattr.retry_cnt,
  */
-  __pyx_t_2 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.port_num); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1596, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.port_num); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1592, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_port_num, __pyx_t_2) < 0) __PYX_ERR(0, 1577, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_port_num, __pyx_t_2) < 0) __PYX_ERR(0, 1573, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "rdma/ibverbs.pyx":1597
+  /* "rdma/ibverbs.pyx":1593
  *                        min_rnr_timer=cattr.min_rnr_timer,
  *                        port_num=cattr.port_num,
  *                        timeout=cattr.timeout,             # <<<<<<<<<<<<<<
  *                        retry_cnt=cattr.retry_cnt,
  *                        rnr_retry=cattr.rnr_retry,
  */
-  __pyx_t_2 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.timeout); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1597, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.timeout); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1593, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_timeout, __pyx_t_2) < 0) __PYX_ERR(0, 1577, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_timeout, __pyx_t_2) < 0) __PYX_ERR(0, 1573, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "rdma/ibverbs.pyx":1598
+  /* "rdma/ibverbs.pyx":1594
  *                        port_num=cattr.port_num,
  *                        timeout=cattr.timeout,
  *                        retry_cnt=cattr.retry_cnt,             # <<<<<<<<<<<<<<
  *                        rnr_retry=cattr.rnr_retry,
  *                        alt_port_num=cattr.alt_port_num,
  */
-  __pyx_t_2 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.retry_cnt); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1598, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.retry_cnt); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1594, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_retry_cnt, __pyx_t_2) < 0) __PYX_ERR(0, 1577, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_retry_cnt, __pyx_t_2) < 0) __PYX_ERR(0, 1573, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "rdma/ibverbs.pyx":1599
+  /* "rdma/ibverbs.pyx":1595
  *                        timeout=cattr.timeout,
  *                        retry_cnt=cattr.retry_cnt,
  *                        rnr_retry=cattr.rnr_retry,             # <<<<<<<<<<<<<<
  *                        alt_port_num=cattr.alt_port_num,
  *                        alt_timeout=cattr.alt_timeout);
  */
-  __pyx_t_2 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.rnr_retry); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1599, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.rnr_retry); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1595, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_rnr_retry, __pyx_t_2) < 0) __PYX_ERR(0, 1577, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_rnr_retry, __pyx_t_2) < 0) __PYX_ERR(0, 1573, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "rdma/ibverbs.pyx":1600
+  /* "rdma/ibverbs.pyx":1596
  *                        retry_cnt=cattr.retry_cnt,
  *                        rnr_retry=cattr.rnr_retry,
  *                        alt_port_num=cattr.alt_port_num,             # <<<<<<<<<<<<<<
  *                        alt_timeout=cattr.alt_timeout);
  *         icap = qp_cap(max_send_wr=cinit.cap.max_send_wr,
  */
-  __pyx_t_2 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.alt_port_num); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1600, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.alt_port_num); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1596, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_alt_port_num, __pyx_t_2) < 0) __PYX_ERR(0, 1577, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_alt_port_num, __pyx_t_2) < 0) __PYX_ERR(0, 1573, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "rdma/ibverbs.pyx":1601
+  /* "rdma/ibverbs.pyx":1597
  *                        rnr_retry=cattr.rnr_retry,
  *                        alt_port_num=cattr.alt_port_num,
  *                        alt_timeout=cattr.alt_timeout);             # <<<<<<<<<<<<<<
  *         icap = qp_cap(max_send_wr=cinit.cap.max_send_wr,
  *                      max_recv_wr=cinit.cap.max_recv_wr,
  */
-  __pyx_t_2 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.alt_timeout); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1601, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cattr.alt_timeout); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1597, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_alt_timeout, __pyx_t_2) < 0) __PYX_ERR(0, 1577, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_alt_timeout, __pyx_t_2) < 0) __PYX_ERR(0, 1573, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "rdma/ibverbs.pyx":1577
+  /* "rdma/ibverbs.pyx":1573
  *                      max_recv_sge=cattr.cap.max_recv_sge,
  *                      max_inline_data=cattr.cap.max_inline_data);
  *         attr = qp_attr(qp_state=cattr.qp_state,             # <<<<<<<<<<<<<<
  *                        cur_qp_state=cattr.cur_qp_state,
  *                        path_mtu=cattr.path_mtu,
  */
-  __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_7, __pyx_empty_tuple, __pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1577, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_7, __pyx_empty_tuple, __pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1573, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_v_attr = __pyx_t_2;
   __pyx_t_2 = 0;
 
-  /* "rdma/ibverbs.pyx":1602
+  /* "rdma/ibverbs.pyx":1598
  *                        alt_port_num=cattr.alt_port_num,
  *                        alt_timeout=cattr.alt_timeout);
  *         icap = qp_cap(max_send_wr=cinit.cap.max_send_wr,             # <<<<<<<<<<<<<<
  *                      max_recv_wr=cinit.cap.max_recv_wr,
  *                      max_send_sge=cinit.cap.max_send_sge,
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_qp_cap); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1602, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_qp_cap); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1598, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_4 = __Pyx_PyDict_NewPresized(5); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1602, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyDict_NewPresized(5); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1598, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cinit.cap.max_send_wr); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1602, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cinit.cap.max_send_wr); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1598, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_send_wr, __pyx_t_7) < 0) __PYX_ERR(0, 1602, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_send_wr, __pyx_t_7) < 0) __PYX_ERR(0, 1598, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-  /* "rdma/ibverbs.pyx":1603
+  /* "rdma/ibverbs.pyx":1599
  *                        alt_timeout=cattr.alt_timeout);
  *         icap = qp_cap(max_send_wr=cinit.cap.max_send_wr,
  *                      max_recv_wr=cinit.cap.max_recv_wr,             # <<<<<<<<<<<<<<
  *                      max_send_sge=cinit.cap.max_send_sge,
  *                      max_recv_sge=cinit.cap.max_recv_sge,
  */
-  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cinit.cap.max_recv_wr); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1603, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cinit.cap.max_recv_wr); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1599, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_recv_wr, __pyx_t_7) < 0) __PYX_ERR(0, 1602, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_recv_wr, __pyx_t_7) < 0) __PYX_ERR(0, 1598, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-  /* "rdma/ibverbs.pyx":1604
+  /* "rdma/ibverbs.pyx":1600
  *         icap = qp_cap(max_send_wr=cinit.cap.max_send_wr,
  *                      max_recv_wr=cinit.cap.max_recv_wr,
  *                      max_send_sge=cinit.cap.max_send_sge,             # <<<<<<<<<<<<<<
  *                      max_recv_sge=cinit.cap.max_recv_sge,
  *                      max_inline_data=cinit.cap.max_inline_data);
  */
-  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cinit.cap.max_send_sge); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1604, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cinit.cap.max_send_sge); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1600, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_send_sge, __pyx_t_7) < 0) __PYX_ERR(0, 1602, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_send_sge, __pyx_t_7) < 0) __PYX_ERR(0, 1598, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-  /* "rdma/ibverbs.pyx":1605
+  /* "rdma/ibverbs.pyx":1601
  *                      max_recv_wr=cinit.cap.max_recv_wr,
  *                      max_send_sge=cinit.cap.max_send_sge,
  *                      max_recv_sge=cinit.cap.max_recv_sge,             # <<<<<<<<<<<<<<
  *                      max_inline_data=cinit.cap.max_inline_data);
  *         init = qp_init_attr(send_cq=self._scq,
  */
-  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cinit.cap.max_recv_sge); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1605, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cinit.cap.max_recv_sge); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1601, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_recv_sge, __pyx_t_7) < 0) __PYX_ERR(0, 1602, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_recv_sge, __pyx_t_7) < 0) __PYX_ERR(0, 1598, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-  /* "rdma/ibverbs.pyx":1606
+  /* "rdma/ibverbs.pyx":1602
  *                      max_send_sge=cinit.cap.max_send_sge,
  *                      max_recv_sge=cinit.cap.max_recv_sge,
  *                      max_inline_data=cinit.cap.max_inline_data);             # <<<<<<<<<<<<<<
  *         init = qp_init_attr(send_cq=self._scq,
  *                             recv_cq=self._rcq,
  */
-  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cinit.cap.max_inline_data); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1606, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cinit.cap.max_inline_data); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1602, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_inline_data, __pyx_t_7) < 0) __PYX_ERR(0, 1602, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_max_inline_data, __pyx_t_7) < 0) __PYX_ERR(0, 1598, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-  /* "rdma/ibverbs.pyx":1602
+  /* "rdma/ibverbs.pyx":1598
  *                        alt_port_num=cattr.alt_port_num,
  *                        alt_timeout=cattr.alt_timeout);
  *         icap = qp_cap(max_send_wr=cinit.cap.max_send_wr,             # <<<<<<<<<<<<<<
  *                      max_recv_wr=cinit.cap.max_recv_wr,
  *                      max_send_sge=cinit.cap.max_send_sge,
  */
-  __pyx_t_7 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_empty_tuple, __pyx_t_4); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1602, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_empty_tuple, __pyx_t_4); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1598, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_v_icap = __pyx_t_7;
   __pyx_t_7 = 0;
 
-  /* "rdma/ibverbs.pyx":1607
+  /* "rdma/ibverbs.pyx":1603
  *                      max_recv_sge=cinit.cap.max_recv_sge,
  *                      max_inline_data=cinit.cap.max_inline_data);
  *         init = qp_init_attr(send_cq=self._scq,             # <<<<<<<<<<<<<<
  *                             recv_cq=self._rcq,
  *                             cap=icap,
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_qp_init_attr); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1607, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_qp_init_attr); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1603, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  __pyx_t_4 = __Pyx_PyDict_NewPresized(5); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1607, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyDict_NewPresized(5); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1603, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_send_cq, ((PyObject *)__pyx_v_self->_scq)) < 0) __PYX_ERR(0, 1607, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_send_cq, ((PyObject *)__pyx_v_self->_scq)) < 0) __PYX_ERR(0, 1603, __pyx_L1_error)
 
-  /* "rdma/ibverbs.pyx":1608
+  /* "rdma/ibverbs.pyx":1604
  *                      max_inline_data=cinit.cap.max_inline_data);
  *         init = qp_init_attr(send_cq=self._scq,
  *                             recv_cq=self._rcq,             # <<<<<<<<<<<<<<
  *                             cap=icap,
  *                             qp_type=cinit.qp_type,
  */
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_recv_cq, ((PyObject *)__pyx_v_self->_rcq)) < 0) __PYX_ERR(0, 1607, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_recv_cq, ((PyObject *)__pyx_v_self->_rcq)) < 0) __PYX_ERR(0, 1603, __pyx_L1_error)
 
-  /* "rdma/ibverbs.pyx":1609
+  /* "rdma/ibverbs.pyx":1605
  *         init = qp_init_attr(send_cq=self._scq,
  *                             recv_cq=self._rcq,
  *                             cap=icap,             # <<<<<<<<<<<<<<
  *                             qp_type=cinit.qp_type,
  *                             sq_sig_all=cinit.sq_sig_all);
  */
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_cap, __pyx_v_icap) < 0) __PYX_ERR(0, 1607, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_cap, __pyx_v_icap) < 0) __PYX_ERR(0, 1603, __pyx_L1_error)
 
-  /* "rdma/ibverbs.pyx":1610
+  /* "rdma/ibverbs.pyx":1606
  *                             recv_cq=self._rcq,
  *                             cap=icap,
  *                             qp_type=cinit.qp_type,             # <<<<<<<<<<<<<<
  *                             sq_sig_all=cinit.sq_sig_all);
  *         return (attr, init)
  */
-  __pyx_t_2 = __Pyx_PyInt_From_enum__ibv_qp_type(__pyx_v_cinit.qp_type); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1610, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyInt_From_enum__ibv_qp_type(__pyx_v_cinit.qp_type); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1606, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_qp_type, __pyx_t_2) < 0) __PYX_ERR(0, 1607, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_qp_type, __pyx_t_2) < 0) __PYX_ERR(0, 1603, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "rdma/ibverbs.pyx":1611
+  /* "rdma/ibverbs.pyx":1607
  *                             cap=icap,
  *                             qp_type=cinit.qp_type,
  *                             sq_sig_all=cinit.sq_sig_all);             # <<<<<<<<<<<<<<
  *         return (attr, init)
  * 
  */
-  __pyx_t_2 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cinit.sq_sig_all); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1611, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyInt_From_unsigned_int(__pyx_v_cinit.sq_sig_all); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1607, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_sq_sig_all, __pyx_t_2) < 0) __PYX_ERR(0, 1607, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_sq_sig_all, __pyx_t_2) < 0) __PYX_ERR(0, 1603, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "rdma/ibverbs.pyx":1607
+  /* "rdma/ibverbs.pyx":1603
  *                      max_recv_sge=cinit.cap.max_recv_sge,
  *                      max_inline_data=cinit.cap.max_inline_data);
  *         init = qp_init_attr(send_cq=self._scq,             # <<<<<<<<<<<<<<
  *                             recv_cq=self._rcq,
  *                             cap=icap,
  */
-  __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_7, __pyx_empty_tuple, __pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1607, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_7, __pyx_empty_tuple, __pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1603, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_v_init = __pyx_t_2;
   __pyx_t_2 = 0;
 
-  /* "rdma/ibverbs.pyx":1612
+  /* "rdma/ibverbs.pyx":1608
  *                             qp_type=cinit.qp_type,
  *                             sq_sig_all=cinit.sq_sig_all);
  *         return (attr, init)             # <<<<<<<<<<<<<<
@@ -29597,7 +29541,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_16query(struct __pyx_obj_4rdma_7ibv
  *     def attach_mcast(self,path):
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1612, __pyx_L1_error)
+  __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1608, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_INCREF(__pyx_v_attr);
   __Pyx_GIVEREF(__pyx_v_attr);
@@ -29609,7 +29553,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_16query(struct __pyx_obj_4rdma_7ibv
   __pyx_t_2 = 0;
   goto __pyx_L0;
 
-  /* "rdma/ibverbs.pyx":1557
+  /* "rdma/ibverbs.pyx":1553
  *             free(mem)
  * 
  *     def query(self,int mask):             # <<<<<<<<<<<<<<
@@ -29636,7 +29580,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_16query(struct __pyx_obj_4rdma_7ibv
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":1614
+/* "rdma/ibverbs.pyx":1610
  *         return (attr, init)
  * 
  *     def attach_mcast(self,path):             # <<<<<<<<<<<<<<
@@ -29680,17 +29624,17 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_18attach_mcast(struct __pyx_obj_4rd
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("attach_mcast", 0);
 
-  /* "rdma/ibverbs.pyx":1620
+  /* "rdma/ibverbs.pyx":1616
  *         cdef void *dgid
  *         cdef Py_ssize_t length
  *         if PyObject_AsReadBuffer(path.DGID, <const_void_ptr_ptr>&dgid,             # <<<<<<<<<<<<<<
  *                                  &length) != 0 or length != 16:
  *             raise TypeError("Expected buffer")
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_path, __pyx_n_s_DGID); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1620, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_path, __pyx_n_s_DGID); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1616, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
 
-  /* "rdma/ibverbs.pyx":1621
+  /* "rdma/ibverbs.pyx":1617
  *         cdef Py_ssize_t length
  *         if PyObject_AsReadBuffer(path.DGID, <const_void_ptr_ptr>&dgid,
  *                                  &length) != 0 or length != 16:             # <<<<<<<<<<<<<<
@@ -29708,7 +29652,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_18attach_mcast(struct __pyx_obj_4rd
   __pyx_t_1 = __pyx_t_3;
   __pyx_L4_bool_binop_done:;
 
-  /* "rdma/ibverbs.pyx":1620
+  /* "rdma/ibverbs.pyx":1616
  *         cdef void *dgid
  *         cdef Py_ssize_t length
  *         if PyObject_AsReadBuffer(path.DGID, <const_void_ptr_ptr>&dgid,             # <<<<<<<<<<<<<<
@@ -29717,20 +29661,20 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_18attach_mcast(struct __pyx_obj_4rd
  */
   if (unlikely(__pyx_t_1)) {
 
-    /* "rdma/ibverbs.pyx":1622
+    /* "rdma/ibverbs.pyx":1618
  *         if PyObject_AsReadBuffer(path.DGID, <const_void_ptr_ptr>&dgid,
  *                                  &length) != 0 or length != 16:
  *             raise TypeError("Expected buffer")             # <<<<<<<<<<<<<<
  *         rc = c.ibv_attach_mcast(self._qp,<c.ibv_gid *>dgid,path.DLID);
  *         if rc != 0:
  */
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_tuple__9, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1622, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_tuple__9, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1618, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_Raise(__pyx_t_2, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __PYX_ERR(0, 1622, __pyx_L1_error)
+    __PYX_ERR(0, 1618, __pyx_L1_error)
 
-    /* "rdma/ibverbs.pyx":1620
+    /* "rdma/ibverbs.pyx":1616
  *         cdef void *dgid
  *         cdef Py_ssize_t length
  *         if PyObject_AsReadBuffer(path.DGID, <const_void_ptr_ptr>&dgid,             # <<<<<<<<<<<<<<
@@ -29739,20 +29683,20 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_18attach_mcast(struct __pyx_obj_4rd
  */
   }
 
-  /* "rdma/ibverbs.pyx":1623
+  /* "rdma/ibverbs.pyx":1619
  *                                  &length) != 0 or length != 16:
  *             raise TypeError("Expected buffer")
  *         rc = c.ibv_attach_mcast(self._qp,<c.ibv_gid *>dgid,path.DLID);             # <<<<<<<<<<<<<<
  *         if rc != 0:
  *             raise rdma.SysError(rc,"ibv_attach_mcast",
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_path, __pyx_n_s_DLID); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1623, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_path, __pyx_n_s_DLID); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1619, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_4 = __Pyx_PyInt_As_unsigned_int(__pyx_t_2); if (unlikely((__pyx_t_4 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1623, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyInt_As_unsigned_int(__pyx_t_2); if (unlikely((__pyx_t_4 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1619, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_rc = ibv_attach_mcast(__pyx_v_self->_qp, ((union ibv_gid *)__pyx_v_dgid), __pyx_t_4);
 
-  /* "rdma/ibverbs.pyx":1624
+  /* "rdma/ibverbs.pyx":1620
  *             raise TypeError("Expected buffer")
  *         rc = c.ibv_attach_mcast(self._qp,<c.ibv_gid *>dgid,path.DLID);
  *         if rc != 0:             # <<<<<<<<<<<<<<
@@ -29762,29 +29706,29 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_18attach_mcast(struct __pyx_obj_4rd
   __pyx_t_1 = ((__pyx_v_rc != 0) != 0);
   if (unlikely(__pyx_t_1)) {
 
-    /* "rdma/ibverbs.pyx":1625
+    /* "rdma/ibverbs.pyx":1621
  *         rc = c.ibv_attach_mcast(self._qp,<c.ibv_gid *>dgid,path.DLID);
  *         if rc != 0:
  *             raise rdma.SysError(rc,"ibv_attach_mcast",             # <<<<<<<<<<<<<<
  *                                 "Failed to attach to %r"%(path));
  *         if self._groups is None:
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_rdma); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 1625, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_rdma); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 1621, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_SysError); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 1625, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_SysError); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 1621, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    __pyx_t_5 = __Pyx_PyInt_From_int(__pyx_v_rc); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 1625, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyInt_From_int(__pyx_v_rc); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 1621, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
 
-    /* "rdma/ibverbs.pyx":1626
+    /* "rdma/ibverbs.pyx":1622
  *         if rc != 0:
  *             raise rdma.SysError(rc,"ibv_attach_mcast",
  *                                 "Failed to attach to %r"%(path));             # <<<<<<<<<<<<<<
  *         if self._groups is None:
  *             self._groups = [];
  */
-    __pyx_t_7 = __Pyx_PyString_FormatSafe(__pyx_kp_s_Failed_to_attach_to_r, __pyx_v_path); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1626, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyString_FormatSafe(__pyx_kp_s_Failed_to_attach_to_r, __pyx_v_path); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1622, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __pyx_t_8 = NULL;
     __pyx_t_9 = 0;
@@ -29801,7 +29745,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_18attach_mcast(struct __pyx_obj_4rd
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_6)) {
       PyObject *__pyx_temp[4] = {__pyx_t_8, __pyx_t_5, __pyx_n_s_ibv_attach_mcast, __pyx_t_7};
-      __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_6, __pyx_temp+1-__pyx_t_9, 3+__pyx_t_9); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1625, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_6, __pyx_temp+1-__pyx_t_9, 3+__pyx_t_9); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1621, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_8); __pyx_t_8 = 0;
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
@@ -29811,7 +29755,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_18attach_mcast(struct __pyx_obj_4rd
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_6)) {
       PyObject *__pyx_temp[4] = {__pyx_t_8, __pyx_t_5, __pyx_n_s_ibv_attach_mcast, __pyx_t_7};
-      __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_6, __pyx_temp+1-__pyx_t_9, 3+__pyx_t_9); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1625, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_6, __pyx_temp+1-__pyx_t_9, 3+__pyx_t_9); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1621, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_8); __pyx_t_8 = 0;
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
@@ -29819,7 +29763,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_18attach_mcast(struct __pyx_obj_4rd
     } else
     #endif
     {
-      __pyx_t_10 = PyTuple_New(3+__pyx_t_9); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 1625, __pyx_L1_error)
+      __pyx_t_10 = PyTuple_New(3+__pyx_t_9); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 1621, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_10);
       if (__pyx_t_8) {
         __Pyx_GIVEREF(__pyx_t_8); PyTuple_SET_ITEM(__pyx_t_10, 0, __pyx_t_8); __pyx_t_8 = NULL;
@@ -29833,16 +29777,16 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_18attach_mcast(struct __pyx_obj_4rd
       PyTuple_SET_ITEM(__pyx_t_10, 2+__pyx_t_9, __pyx_t_7);
       __pyx_t_5 = 0;
       __pyx_t_7 = 0;
-      __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_6, __pyx_t_10, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1625, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_6, __pyx_t_10, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1621, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
     }
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __Pyx_Raise(__pyx_t_2, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __PYX_ERR(0, 1625, __pyx_L1_error)
+    __PYX_ERR(0, 1621, __pyx_L1_error)
 
-    /* "rdma/ibverbs.pyx":1624
+    /* "rdma/ibverbs.pyx":1620
  *             raise TypeError("Expected buffer")
  *         rc = c.ibv_attach_mcast(self._qp,<c.ibv_gid *>dgid,path.DLID);
  *         if rc != 0:             # <<<<<<<<<<<<<<
@@ -29851,7 +29795,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_18attach_mcast(struct __pyx_obj_4rd
  */
   }
 
-  /* "rdma/ibverbs.pyx":1627
+  /* "rdma/ibverbs.pyx":1623
  *             raise rdma.SysError(rc,"ibv_attach_mcast",
  *                                 "Failed to attach to %r"%(path));
  *         if self._groups is None:             # <<<<<<<<<<<<<<
@@ -29862,14 +29806,14 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_18attach_mcast(struct __pyx_obj_4rd
   __pyx_t_3 = (__pyx_t_1 != 0);
   if (__pyx_t_3) {
 
-    /* "rdma/ibverbs.pyx":1628
+    /* "rdma/ibverbs.pyx":1624
  *                                 "Failed to attach to %r"%(path));
  *         if self._groups is None:
  *             self._groups = [];             # <<<<<<<<<<<<<<
  *         # Relying on verbs to fail on double add
  *         self._groups.append((path.DGID,path.DLID))
  */
-    __pyx_t_2 = PyList_New(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1628, __pyx_L1_error)
+    __pyx_t_2 = PyList_New(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1624, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_GIVEREF(__pyx_t_2);
     __Pyx_GOTREF(__pyx_v_self->_groups);
@@ -29877,7 +29821,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_18attach_mcast(struct __pyx_obj_4rd
     __pyx_v_self->_groups = ((PyObject*)__pyx_t_2);
     __pyx_t_2 = 0;
 
-    /* "rdma/ibverbs.pyx":1627
+    /* "rdma/ibverbs.pyx":1623
  *             raise rdma.SysError(rc,"ibv_attach_mcast",
  *                                 "Failed to attach to %r"%(path));
  *         if self._groups is None:             # <<<<<<<<<<<<<<
@@ -29886,7 +29830,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_18attach_mcast(struct __pyx_obj_4rd
  */
   }
 
-  /* "rdma/ibverbs.pyx":1630
+  /* "rdma/ibverbs.pyx":1626
  *             self._groups = [];
  *         # Relying on verbs to fail on double add
  *         self._groups.append((path.DGID,path.DLID))             # <<<<<<<<<<<<<<
@@ -29895,13 +29839,13 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_18attach_mcast(struct __pyx_obj_4rd
  */
   if (unlikely(__pyx_v_self->_groups == Py_None)) {
     PyErr_Format(PyExc_AttributeError, "'NoneType' object has no attribute '%.30s'", "append");
-    __PYX_ERR(0, 1630, __pyx_L1_error)
+    __PYX_ERR(0, 1626, __pyx_L1_error)
   }
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_path, __pyx_n_s_DGID); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1630, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_path, __pyx_n_s_DGID); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1626, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_path, __pyx_n_s_DLID); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 1630, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_path, __pyx_n_s_DLID); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 1626, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  __pyx_t_10 = PyTuple_New(2); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 1630, __pyx_L1_error)
+  __pyx_t_10 = PyTuple_New(2); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 1626, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
   __Pyx_GIVEREF(__pyx_t_2);
   PyTuple_SET_ITEM(__pyx_t_10, 0, __pyx_t_2);
@@ -29909,10 +29853,10 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_18attach_mcast(struct __pyx_obj_4rd
   PyTuple_SET_ITEM(__pyx_t_10, 1, __pyx_t_6);
   __pyx_t_2 = 0;
   __pyx_t_6 = 0;
-  __pyx_t_11 = __Pyx_PyList_Append(__pyx_v_self->_groups, __pyx_t_10); if (unlikely(__pyx_t_11 == ((int)-1))) __PYX_ERR(0, 1630, __pyx_L1_error)
+  __pyx_t_11 = __Pyx_PyList_Append(__pyx_v_self->_groups, __pyx_t_10); if (unlikely(__pyx_t_11 == ((int)-1))) __PYX_ERR(0, 1626, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
 
-  /* "rdma/ibverbs.pyx":1614
+  /* "rdma/ibverbs.pyx":1610
  *         return (attr, init)
  * 
  *     def attach_mcast(self,path):             # <<<<<<<<<<<<<<
@@ -29938,7 +29882,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_18attach_mcast(struct __pyx_obj_4rd
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":1632
+/* "rdma/ibverbs.pyx":1628
  *         self._groups.append((path.DGID,path.DLID))
  * 
  *     def detach_mcast(self,path):             # <<<<<<<<<<<<<<
@@ -29981,17 +29925,17 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_20detach_mcast(struct __pyx_obj_4rd
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("detach_mcast", 0);
 
-  /* "rdma/ibverbs.pyx":1639
+  /* "rdma/ibverbs.pyx":1635
  *         cdef Py_ssize_t length
  *         cdef object gid
  *         if PyObject_AsReadBuffer(path.DGID, <const_void_ptr_ptr>&dgid,             # <<<<<<<<<<<<<<
  *                                  &length) != 0 or length != 16:
  *             raise TypeError("Expected buffer")
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_path, __pyx_n_s_DGID); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1639, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_path, __pyx_n_s_DGID); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1635, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
 
-  /* "rdma/ibverbs.pyx":1640
+  /* "rdma/ibverbs.pyx":1636
  *         cdef object gid
  *         if PyObject_AsReadBuffer(path.DGID, <const_void_ptr_ptr>&dgid,
  *                                  &length) != 0 or length != 16:             # <<<<<<<<<<<<<<
@@ -30009,7 +29953,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_20detach_mcast(struct __pyx_obj_4rd
   __pyx_t_1 = __pyx_t_3;
   __pyx_L4_bool_binop_done:;
 
-  /* "rdma/ibverbs.pyx":1639
+  /* "rdma/ibverbs.pyx":1635
  *         cdef Py_ssize_t length
  *         cdef object gid
  *         if PyObject_AsReadBuffer(path.DGID, <const_void_ptr_ptr>&dgid,             # <<<<<<<<<<<<<<
@@ -30018,20 +29962,20 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_20detach_mcast(struct __pyx_obj_4rd
  */
   if (unlikely(__pyx_t_1)) {
 
-    /* "rdma/ibverbs.pyx":1641
+    /* "rdma/ibverbs.pyx":1637
  *         if PyObject_AsReadBuffer(path.DGID, <const_void_ptr_ptr>&dgid,
  *                                  &length) != 0 or length != 16:
  *             raise TypeError("Expected buffer")             # <<<<<<<<<<<<<<
  *         rc = c.ibv_detach_mcast(self._qp,<c.ibv_gid *>dgid,path.DLID);
  *         if rc != 0:
  */
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_tuple__9, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1641, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_tuple__9, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1637, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_Raise(__pyx_t_2, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __PYX_ERR(0, 1641, __pyx_L1_error)
+    __PYX_ERR(0, 1637, __pyx_L1_error)
 
-    /* "rdma/ibverbs.pyx":1639
+    /* "rdma/ibverbs.pyx":1635
  *         cdef Py_ssize_t length
  *         cdef object gid
  *         if PyObject_AsReadBuffer(path.DGID, <const_void_ptr_ptr>&dgid,             # <<<<<<<<<<<<<<
@@ -30040,20 +29984,20 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_20detach_mcast(struct __pyx_obj_4rd
  */
   }
 
-  /* "rdma/ibverbs.pyx":1642
+  /* "rdma/ibverbs.pyx":1638
  *                                  &length) != 0 or length != 16:
  *             raise TypeError("Expected buffer")
  *         rc = c.ibv_detach_mcast(self._qp,<c.ibv_gid *>dgid,path.DLID);             # <<<<<<<<<<<<<<
  *         if rc != 0:
  *             raise rdma.SysError(rc,"ibv_detach_mcast",
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_path, __pyx_n_s_DLID); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1642, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_path, __pyx_n_s_DLID); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1638, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_4 = __Pyx_PyInt_As_unsigned_int(__pyx_t_2); if (unlikely((__pyx_t_4 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1642, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyInt_As_unsigned_int(__pyx_t_2); if (unlikely((__pyx_t_4 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1638, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_rc = ibv_detach_mcast(__pyx_v_self->_qp, ((union ibv_gid *)__pyx_v_dgid), __pyx_t_4);
 
-  /* "rdma/ibverbs.pyx":1643
+  /* "rdma/ibverbs.pyx":1639
  *             raise TypeError("Expected buffer")
  *         rc = c.ibv_detach_mcast(self._qp,<c.ibv_gid *>dgid,path.DLID);
  *         if rc != 0:             # <<<<<<<<<<<<<<
@@ -30063,29 +30007,29 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_20detach_mcast(struct __pyx_obj_4rd
   __pyx_t_1 = ((__pyx_v_rc != 0) != 0);
   if (unlikely(__pyx_t_1)) {
 
-    /* "rdma/ibverbs.pyx":1644
+    /* "rdma/ibverbs.pyx":1640
  *         rc = c.ibv_detach_mcast(self._qp,<c.ibv_gid *>dgid,path.DLID);
  *         if rc != 0:
  *             raise rdma.SysError(rc,"ibv_detach_mcast",             # <<<<<<<<<<<<<<
  *                                 "Failed to detach to %r"%(path));
  *         # Relying on verbs to fail on double remove
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_rdma); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 1644, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_rdma); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 1640, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_SysError); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 1644, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_SysError); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 1640, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    __pyx_t_5 = __Pyx_PyInt_From_int(__pyx_v_rc); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 1644, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyInt_From_int(__pyx_v_rc); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 1640, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
 
-    /* "rdma/ibverbs.pyx":1645
+    /* "rdma/ibverbs.pyx":1641
  *         if rc != 0:
  *             raise rdma.SysError(rc,"ibv_detach_mcast",
  *                                 "Failed to detach to %r"%(path));             # <<<<<<<<<<<<<<
  *         # Relying on verbs to fail on double remove
  *         self._groups.remove((path.DGID,path.DLID))
  */
-    __pyx_t_7 = __Pyx_PyString_FormatSafe(__pyx_kp_s_Failed_to_detach_to_r, __pyx_v_path); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1645, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyString_FormatSafe(__pyx_kp_s_Failed_to_detach_to_r, __pyx_v_path); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1641, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __pyx_t_8 = NULL;
     __pyx_t_9 = 0;
@@ -30102,7 +30046,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_20detach_mcast(struct __pyx_obj_4rd
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_6)) {
       PyObject *__pyx_temp[4] = {__pyx_t_8, __pyx_t_5, __pyx_n_s_ibv_detach_mcast, __pyx_t_7};
-      __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_6, __pyx_temp+1-__pyx_t_9, 3+__pyx_t_9); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1644, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_6, __pyx_temp+1-__pyx_t_9, 3+__pyx_t_9); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1640, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_8); __pyx_t_8 = 0;
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
@@ -30112,7 +30056,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_20detach_mcast(struct __pyx_obj_4rd
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_6)) {
       PyObject *__pyx_temp[4] = {__pyx_t_8, __pyx_t_5, __pyx_n_s_ibv_detach_mcast, __pyx_t_7};
-      __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_6, __pyx_temp+1-__pyx_t_9, 3+__pyx_t_9); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1644, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_6, __pyx_temp+1-__pyx_t_9, 3+__pyx_t_9); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1640, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_8); __pyx_t_8 = 0;
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
@@ -30120,7 +30064,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_20detach_mcast(struct __pyx_obj_4rd
     } else
     #endif
     {
-      __pyx_t_10 = PyTuple_New(3+__pyx_t_9); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 1644, __pyx_L1_error)
+      __pyx_t_10 = PyTuple_New(3+__pyx_t_9); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 1640, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_10);
       if (__pyx_t_8) {
         __Pyx_GIVEREF(__pyx_t_8); PyTuple_SET_ITEM(__pyx_t_10, 0, __pyx_t_8); __pyx_t_8 = NULL;
@@ -30134,16 +30078,16 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_20detach_mcast(struct __pyx_obj_4rd
       PyTuple_SET_ITEM(__pyx_t_10, 2+__pyx_t_9, __pyx_t_7);
       __pyx_t_5 = 0;
       __pyx_t_7 = 0;
-      __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_6, __pyx_t_10, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1644, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_6, __pyx_t_10, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1640, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
     }
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __Pyx_Raise(__pyx_t_2, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __PYX_ERR(0, 1644, __pyx_L1_error)
+    __PYX_ERR(0, 1640, __pyx_L1_error)
 
-    /* "rdma/ibverbs.pyx":1643
+    /* "rdma/ibverbs.pyx":1639
  *             raise TypeError("Expected buffer")
  *         rc = c.ibv_detach_mcast(self._qp,<c.ibv_gid *>dgid,path.DLID);
  *         if rc != 0:             # <<<<<<<<<<<<<<
@@ -30152,20 +30096,20 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_20detach_mcast(struct __pyx_obj_4rd
  */
   }
 
-  /* "rdma/ibverbs.pyx":1647
+  /* "rdma/ibverbs.pyx":1643
  *                                 "Failed to detach to %r"%(path));
  *         # Relying on verbs to fail on double remove
  *         self._groups.remove((path.DGID,path.DLID))             # <<<<<<<<<<<<<<
  * 
  *     def modify_to_init(self,path,int qp_access_flags=0):
  */
-  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->_groups, __pyx_n_s_remove); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 1647, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->_groups, __pyx_n_s_remove); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 1643, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_v_path, __pyx_n_s_DGID); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 1647, __pyx_L1_error)
+  __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_v_path, __pyx_n_s_DGID); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 1643, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
-  __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_v_path, __pyx_n_s_DLID); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1647, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_v_path, __pyx_n_s_DLID); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1643, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  __pyx_t_5 = PyTuple_New(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 1647, __pyx_L1_error)
+  __pyx_t_5 = PyTuple_New(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 1643, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_GIVEREF(__pyx_t_10);
   PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_10);
@@ -30186,12 +30130,12 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_20detach_mcast(struct __pyx_obj_4rd
   __pyx_t_2 = (__pyx_t_7) ? __Pyx_PyObject_Call2Args(__pyx_t_6, __pyx_t_7, __pyx_t_5) : __Pyx_PyObject_CallOneArg(__pyx_t_6, __pyx_t_5);
   __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1647, __pyx_L1_error)
+  if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1643, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "rdma/ibverbs.pyx":1632
+  /* "rdma/ibverbs.pyx":1628
  *         self._groups.append((path.DGID,path.DLID))
  * 
  *     def detach_mcast(self,path):             # <<<<<<<<<<<<<<
@@ -30217,7 +30161,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_20detach_mcast(struct __pyx_obj_4rd
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":1649
+/* "rdma/ibverbs.pyx":1645
  *         self._groups.remove((path.DGID,path.DLID))
  * 
  *     def modify_to_init(self,path,int qp_access_flags=0):             # <<<<<<<<<<<<<<
@@ -30264,7 +30208,7 @@ static PyObject *__pyx_pw_4rdma_7ibverbs_2QP_23modify_to_init(PyObject *__pyx_v_
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "modify_to_init") < 0)) __PYX_ERR(0, 1649, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "modify_to_init") < 0)) __PYX_ERR(0, 1645, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -30277,14 +30221,14 @@ static PyObject *__pyx_pw_4rdma_7ibverbs_2QP_23modify_to_init(PyObject *__pyx_v_
     }
     __pyx_v_path = values[0];
     if (values[1]) {
-      __pyx_v_qp_access_flags = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_qp_access_flags == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1649, __pyx_L3_error)
+      __pyx_v_qp_access_flags = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_qp_access_flags == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1645, __pyx_L3_error)
     } else {
       __pyx_v_qp_access_flags = ((int)0);
     }
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("modify_to_init", 0, 1, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 1649, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("modify_to_init", 0, 1, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 1645, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("rdma.ibverbs.QP.modify_to_init", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -30313,7 +30257,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_22modify_to_init(struct __pyx_obj_4
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("modify_to_init", 0);
 
-  /* "rdma/ibverbs.pyx":1651
+  /* "rdma/ibverbs.pyx":1647
  *     def modify_to_init(self,path,int qp_access_flags=0):
  *         """Modify the QP to the INIT state."""
  *         if self._qp_type == c.IBV_QPT_UD:             # <<<<<<<<<<<<<<
@@ -30323,76 +30267,76 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_22modify_to_init(struct __pyx_obj_4
   __pyx_t_1 = ((__pyx_v_self->_qp_type == IBV_QPT_UD) != 0);
   if (__pyx_t_1) {
 
-    /* "rdma/ibverbs.pyx":1652
+    /* "rdma/ibverbs.pyx":1648
  *         """Modify the QP to the INIT state."""
  *         if self._qp_type == c.IBV_QPT_UD:
  *             attr = qp_attr(qp_state=c.IBV_QPS_INIT,             # <<<<<<<<<<<<<<
  *                            pkey_index=path.pkey_index,
  *                            port_num=path.end_port.port_id,
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_qp_attr); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1652, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_qp_attr); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1648, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_3 = __Pyx_PyDict_NewPresized(4); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1652, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyDict_NewPresized(4); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1648, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_4 = __Pyx_PyInt_From_enum__ibv_qp_state(IBV_QPS_INIT); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1652, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyInt_From_enum__ibv_qp_state(IBV_QPS_INIT); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1648, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_qp_state, __pyx_t_4) < 0) __PYX_ERR(0, 1652, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_qp_state, __pyx_t_4) < 0) __PYX_ERR(0, 1648, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-    /* "rdma/ibverbs.pyx":1653
+    /* "rdma/ibverbs.pyx":1649
  *         if self._qp_type == c.IBV_QPT_UD:
  *             attr = qp_attr(qp_state=c.IBV_QPS_INIT,
  *                            pkey_index=path.pkey_index,             # <<<<<<<<<<<<<<
  *                            port_num=path.end_port.port_id,
  *                            qkey=path.qkey);
  */
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_path, __pyx_n_s_pkey_index); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1653, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_path, __pyx_n_s_pkey_index); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1649, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_pkey_index, __pyx_t_4) < 0) __PYX_ERR(0, 1652, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_pkey_index, __pyx_t_4) < 0) __PYX_ERR(0, 1648, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-    /* "rdma/ibverbs.pyx":1654
+    /* "rdma/ibverbs.pyx":1650
  *             attr = qp_attr(qp_state=c.IBV_QPS_INIT,
  *                            pkey_index=path.pkey_index,
  *                            port_num=path.end_port.port_id,             # <<<<<<<<<<<<<<
  *                            qkey=path.qkey);
  *         else:
  */
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_path, __pyx_n_s_end_port); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1654, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_path, __pyx_n_s_end_port); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1650, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_port_id); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 1654, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_port_id); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 1650, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_port_num, __pyx_t_5) < 0) __PYX_ERR(0, 1652, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_port_num, __pyx_t_5) < 0) __PYX_ERR(0, 1648, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-    /* "rdma/ibverbs.pyx":1655
+    /* "rdma/ibverbs.pyx":1651
  *                            pkey_index=path.pkey_index,
  *                            port_num=path.end_port.port_id,
  *                            qkey=path.qkey);             # <<<<<<<<<<<<<<
  *         else:
  *             attr = qp_attr(qp_state=c.IBV_QPS_INIT,
  */
-    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_path, __pyx_n_s_qkey); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 1655, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_path, __pyx_n_s_qkey); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 1651, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_qkey, __pyx_t_5) < 0) __PYX_ERR(0, 1652, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_qkey, __pyx_t_5) < 0) __PYX_ERR(0, 1648, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-    /* "rdma/ibverbs.pyx":1652
+    /* "rdma/ibverbs.pyx":1648
  *         """Modify the QP to the INIT state."""
  *         if self._qp_type == c.IBV_QPT_UD:
  *             attr = qp_attr(qp_state=c.IBV_QPS_INIT,             # <<<<<<<<<<<<<<
  *                            pkey_index=path.pkey_index,
  *                            port_num=path.end_port.port_id,
  */
-    __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_empty_tuple, __pyx_t_3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 1652, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_empty_tuple, __pyx_t_3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 1648, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __pyx_v_attr = __pyx_t_5;
     __pyx_t_5 = 0;
 
-    /* "rdma/ibverbs.pyx":1651
+    /* "rdma/ibverbs.pyx":1647
  *     def modify_to_init(self,path,int qp_access_flags=0):
  *         """Modify the QP to the INIT state."""
  *         if self._qp_type == c.IBV_QPT_UD:             # <<<<<<<<<<<<<<
@@ -30402,7 +30346,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_22modify_to_init(struct __pyx_obj_4
     goto __pyx_L3;
   }
 
-  /* "rdma/ibverbs.pyx":1657
+  /* "rdma/ibverbs.pyx":1653
  *                            qkey=path.qkey);
  *         else:
  *             attr = qp_attr(qp_state=c.IBV_QPS_INIT,             # <<<<<<<<<<<<<<
@@ -30410,62 +30354,62 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_22modify_to_init(struct __pyx_obj_4
  *                            port_num=path.end_port.port_id,
  */
   /*else*/ {
-    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_qp_attr); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 1657, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_qp_attr); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 1653, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_3 = __Pyx_PyDict_NewPresized(4); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1657, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyDict_NewPresized(4); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1653, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_2 = __Pyx_PyInt_From_enum__ibv_qp_state(IBV_QPS_INIT); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1657, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyInt_From_enum__ibv_qp_state(IBV_QPS_INIT); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1653, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_qp_state, __pyx_t_2) < 0) __PYX_ERR(0, 1657, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_qp_state, __pyx_t_2) < 0) __PYX_ERR(0, 1653, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-    /* "rdma/ibverbs.pyx":1658
+    /* "rdma/ibverbs.pyx":1654
  *         else:
  *             attr = qp_attr(qp_state=c.IBV_QPS_INIT,
  *                            pkey_index=path.pkey_index,             # <<<<<<<<<<<<<<
  *                            port_num=path.end_port.port_id,
  *                            qp_access_flags=qp_access_flags);
  */
-    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_path, __pyx_n_s_pkey_index); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1658, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_path, __pyx_n_s_pkey_index); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1654, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_pkey_index, __pyx_t_2) < 0) __PYX_ERR(0, 1657, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_pkey_index, __pyx_t_2) < 0) __PYX_ERR(0, 1653, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-    /* "rdma/ibverbs.pyx":1659
+    /* "rdma/ibverbs.pyx":1655
  *             attr = qp_attr(qp_state=c.IBV_QPS_INIT,
  *                            pkey_index=path.pkey_index,
  *                            port_num=path.end_port.port_id,             # <<<<<<<<<<<<<<
  *                            qp_access_flags=qp_access_flags);
  *         self.modify(attr,attr.MASK)
  */
-    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_path, __pyx_n_s_end_port); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1659, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_path, __pyx_n_s_end_port); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1655, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_port_id); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1659, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_port_id); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1655, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_port_num, __pyx_t_4) < 0) __PYX_ERR(0, 1657, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_port_num, __pyx_t_4) < 0) __PYX_ERR(0, 1653, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-    /* "rdma/ibverbs.pyx":1660
+    /* "rdma/ibverbs.pyx":1656
  *                            pkey_index=path.pkey_index,
  *                            port_num=path.end_port.port_id,
  *                            qp_access_flags=qp_access_flags);             # <<<<<<<<<<<<<<
  *         self.modify(attr,attr.MASK)
  * 
  */
-    __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_qp_access_flags); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1660, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_qp_access_flags); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1656, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_qp_access_flags, __pyx_t_4) < 0) __PYX_ERR(0, 1657, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_qp_access_flags, __pyx_t_4) < 0) __PYX_ERR(0, 1653, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-    /* "rdma/ibverbs.pyx":1657
+    /* "rdma/ibverbs.pyx":1653
  *                            qkey=path.qkey);
  *         else:
  *             attr = qp_attr(qp_state=c.IBV_QPS_INIT,             # <<<<<<<<<<<<<<
  *                            pkey_index=path.pkey_index,
  *                            port_num=path.end_port.port_id,
  */
-    __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_empty_tuple, __pyx_t_3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1657, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_empty_tuple, __pyx_t_3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1653, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -30474,16 +30418,16 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_22modify_to_init(struct __pyx_obj_4
   }
   __pyx_L3:;
 
-  /* "rdma/ibverbs.pyx":1661
+  /* "rdma/ibverbs.pyx":1657
  *                            port_num=path.end_port.port_id,
  *                            qp_access_flags=qp_access_flags);
  *         self.modify(attr,attr.MASK)             # <<<<<<<<<<<<<<
  * 
  *     def modify_to_rtr(self,path):
  */
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_modify); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1661, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_modify); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1657, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_attr, __pyx_n_s_MASK); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 1661, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_attr, __pyx_n_s_MASK); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 1657, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __pyx_t_2 = NULL;
   __pyx_t_6 = 0;
@@ -30500,7 +30444,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_22modify_to_init(struct __pyx_obj_4
   #if CYTHON_FAST_PYCALL
   if (PyFunction_Check(__pyx_t_3)) {
     PyObject *__pyx_temp[3] = {__pyx_t_2, __pyx_v_attr, __pyx_t_5};
-    __pyx_t_4 = __Pyx_PyFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1661, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1657, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
@@ -30509,14 +30453,14 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_22modify_to_init(struct __pyx_obj_4
   #if CYTHON_FAST_PYCCALL
   if (__Pyx_PyFastCFunction_Check(__pyx_t_3)) {
     PyObject *__pyx_temp[3] = {__pyx_t_2, __pyx_v_attr, __pyx_t_5};
-    __pyx_t_4 = __Pyx_PyCFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1661, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyCFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1657, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   } else
   #endif
   {
-    __pyx_t_7 = PyTuple_New(2+__pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1661, __pyx_L1_error)
+    __pyx_t_7 = PyTuple_New(2+__pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1657, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     if (__pyx_t_2) {
       __Pyx_GIVEREF(__pyx_t_2); PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_t_2); __pyx_t_2 = NULL;
@@ -30527,14 +30471,14 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_22modify_to_init(struct __pyx_obj_4
     __Pyx_GIVEREF(__pyx_t_5);
     PyTuple_SET_ITEM(__pyx_t_7, 1+__pyx_t_6, __pyx_t_5);
     __pyx_t_5 = 0;
-    __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_7, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1661, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_7, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1657, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
   }
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "rdma/ibverbs.pyx":1649
+  /* "rdma/ibverbs.pyx":1645
  *         self._groups.remove((path.DGID,path.DLID))
  * 
  *     def modify_to_init(self,path,int qp_access_flags=0):             # <<<<<<<<<<<<<<
@@ -30560,7 +30504,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_22modify_to_init(struct __pyx_obj_4
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":1663
+/* "rdma/ibverbs.pyx":1659
  *         self.modify(attr,attr.MASK)
  * 
  *     def modify_to_rtr(self,path):             # <<<<<<<<<<<<<<
@@ -30597,7 +30541,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_24modify_to_rtr(struct __pyx_obj_4r
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("modify_to_rtr", 0);
 
-  /* "rdma/ibverbs.pyx":1665
+  /* "rdma/ibverbs.pyx":1661
  *     def modify_to_rtr(self,path):
  *         """Modify the QP to the RTR state."""
  *         if self._qp_type == c.IBV_QPT_UD:             # <<<<<<<<<<<<<<
@@ -30607,29 +30551,29 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_24modify_to_rtr(struct __pyx_obj_4r
   switch (__pyx_v_self->_qp_type) {
     case IBV_QPT_UD:
 
-    /* "rdma/ibverbs.pyx":1666
+    /* "rdma/ibverbs.pyx":1662
  *         """Modify the QP to the RTR state."""
  *         if self._qp_type == c.IBV_QPT_UD:
  *             attr = qp_attr(qp_state=c.IBV_QPS_RTR);             # <<<<<<<<<<<<<<
  *         elif self._qp_type == c.IBV_QPT_UC:
  *             attr = qp_attr(qp_state=c.IBV_QPS_RTR,
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_qp_attr); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1666, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_qp_attr); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1662, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1666, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1662, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_3 = __Pyx_PyInt_From_enum__ibv_qp_state(IBV_QPS_RTR); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1666, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyInt_From_enum__ibv_qp_state(IBV_QPS_RTR); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1662, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_qp_state, __pyx_t_3) < 0) __PYX_ERR(0, 1666, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_qp_state, __pyx_t_3) < 0) __PYX_ERR(0, 1662, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_empty_tuple, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1666, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_empty_tuple, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1662, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __pyx_v_attr = __pyx_t_3;
     __pyx_t_3 = 0;
 
-    /* "rdma/ibverbs.pyx":1665
+    /* "rdma/ibverbs.pyx":1661
  *     def modify_to_rtr(self,path):
  *         """Modify the QP to the RTR state."""
  *         if self._qp_type == c.IBV_QPT_UD:             # <<<<<<<<<<<<<<
@@ -30639,82 +30583,82 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_24modify_to_rtr(struct __pyx_obj_4r
     break;
     case IBV_QPT_UC:
 
-    /* "rdma/ibverbs.pyx":1668
+    /* "rdma/ibverbs.pyx":1664
  *             attr = qp_attr(qp_state=c.IBV_QPS_RTR);
  *         elif self._qp_type == c.IBV_QPT_UC:
  *             attr = qp_attr(qp_state=c.IBV_QPS_RTR,             # <<<<<<<<<<<<<<
  *                            path_mtu=path.MTU,
  *                            dest_qp_num=path.dqpn,
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_qp_attr); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1668, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_qp_attr); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1664, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_2 = __Pyx_PyDict_NewPresized(5); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1668, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyDict_NewPresized(5); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1664, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_1 = __Pyx_PyInt_From_enum__ibv_qp_state(IBV_QPS_RTR); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1668, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyInt_From_enum__ibv_qp_state(IBV_QPS_RTR); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1664, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_qp_state, __pyx_t_1) < 0) __PYX_ERR(0, 1668, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_qp_state, __pyx_t_1) < 0) __PYX_ERR(0, 1664, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "rdma/ibverbs.pyx":1669
+    /* "rdma/ibverbs.pyx":1665
  *         elif self._qp_type == c.IBV_QPT_UC:
  *             attr = qp_attr(qp_state=c.IBV_QPS_RTR,
  *                            path_mtu=path.MTU,             # <<<<<<<<<<<<<<
  *                            dest_qp_num=path.dqpn,
  *                            rq_psn=path.dqpsn,
  */
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_path, __pyx_n_s_MTU); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1669, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_path, __pyx_n_s_MTU); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1665, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_path_mtu, __pyx_t_1) < 0) __PYX_ERR(0, 1668, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_path_mtu, __pyx_t_1) < 0) __PYX_ERR(0, 1664, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "rdma/ibverbs.pyx":1670
+    /* "rdma/ibverbs.pyx":1666
  *             attr = qp_attr(qp_state=c.IBV_QPS_RTR,
  *                            path_mtu=path.MTU,
  *                            dest_qp_num=path.dqpn,             # <<<<<<<<<<<<<<
  *                            rq_psn=path.dqpsn,
  *                            ah_attr=path)
  */
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_path, __pyx_n_s_dqpn); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1670, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_path, __pyx_n_s_dqpn); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1666, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_dest_qp_num, __pyx_t_1) < 0) __PYX_ERR(0, 1668, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_dest_qp_num, __pyx_t_1) < 0) __PYX_ERR(0, 1664, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "rdma/ibverbs.pyx":1671
+    /* "rdma/ibverbs.pyx":1667
  *                            path_mtu=path.MTU,
  *                            dest_qp_num=path.dqpn,
  *                            rq_psn=path.dqpsn,             # <<<<<<<<<<<<<<
  *                            ah_attr=path)
  *         else:
  */
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_path, __pyx_n_s_dqpsn); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1671, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_path, __pyx_n_s_dqpsn); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1667, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_rq_psn, __pyx_t_1) < 0) __PYX_ERR(0, 1668, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_rq_psn, __pyx_t_1) < 0) __PYX_ERR(0, 1664, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "rdma/ibverbs.pyx":1672
+    /* "rdma/ibverbs.pyx":1668
  *                            dest_qp_num=path.dqpn,
  *                            rq_psn=path.dqpsn,
  *                            ah_attr=path)             # <<<<<<<<<<<<<<
  *         else:
  *             attr = qp_attr(qp_state=c.IBV_QPS_RTR,
  */
-    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_ah_attr, __pyx_v_path) < 0) __PYX_ERR(0, 1668, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_ah_attr, __pyx_v_path) < 0) __PYX_ERR(0, 1664, __pyx_L1_error)
 
-    /* "rdma/ibverbs.pyx":1668
+    /* "rdma/ibverbs.pyx":1664
  *             attr = qp_attr(qp_state=c.IBV_QPS_RTR);
  *         elif self._qp_type == c.IBV_QPT_UC:
  *             attr = qp_attr(qp_state=c.IBV_QPS_RTR,             # <<<<<<<<<<<<<<
  *                            path_mtu=path.MTU,
  *                            dest_qp_num=path.dqpn,
  */
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_empty_tuple, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1668, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_empty_tuple, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1664, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __pyx_v_attr = __pyx_t_1;
     __pyx_t_1 = 0;
 
-    /* "rdma/ibverbs.pyx":1667
+    /* "rdma/ibverbs.pyx":1663
  *         if self._qp_type == c.IBV_QPT_UD:
  *             attr = qp_attr(qp_state=c.IBV_QPS_RTR);
  *         elif self._qp_type == c.IBV_QPT_UC:             # <<<<<<<<<<<<<<
@@ -30724,99 +30668,99 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_24modify_to_rtr(struct __pyx_obj_4r
     break;
     default:
 
-    /* "rdma/ibverbs.pyx":1674
+    /* "rdma/ibverbs.pyx":1670
  *                            ah_attr=path)
  *         else:
  *             attr = qp_attr(qp_state=c.IBV_QPS_RTR,             # <<<<<<<<<<<<<<
  *                            path_mtu=path.MTU,
  *                            dest_qp_num=path.dqpn,
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_qp_attr); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1674, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_qp_attr); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1670, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_2 = __Pyx_PyDict_NewPresized(7); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1674, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyDict_NewPresized(7); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1670, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_3 = __Pyx_PyInt_From_enum__ibv_qp_state(IBV_QPS_RTR); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1674, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyInt_From_enum__ibv_qp_state(IBV_QPS_RTR); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1670, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_qp_state, __pyx_t_3) < 0) __PYX_ERR(0, 1674, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_qp_state, __pyx_t_3) < 0) __PYX_ERR(0, 1670, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-    /* "rdma/ibverbs.pyx":1675
+    /* "rdma/ibverbs.pyx":1671
  *         else:
  *             attr = qp_attr(qp_state=c.IBV_QPS_RTR,
  *                            path_mtu=path.MTU,             # <<<<<<<<<<<<<<
  *                            dest_qp_num=path.dqpn,
  *                            rq_psn=path.dqpsn,
  */
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_path, __pyx_n_s_MTU); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1675, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_path, __pyx_n_s_MTU); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1671, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_path_mtu, __pyx_t_3) < 0) __PYX_ERR(0, 1674, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_path_mtu, __pyx_t_3) < 0) __PYX_ERR(0, 1670, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-    /* "rdma/ibverbs.pyx":1676
+    /* "rdma/ibverbs.pyx":1672
  *             attr = qp_attr(qp_state=c.IBV_QPS_RTR,
  *                            path_mtu=path.MTU,
  *                            dest_qp_num=path.dqpn,             # <<<<<<<<<<<<<<
  *                            rq_psn=path.dqpsn,
  *                            max_dest_rd_atomic=path.drdatomic,
  */
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_path, __pyx_n_s_dqpn); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1676, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_path, __pyx_n_s_dqpn); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1672, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_dest_qp_num, __pyx_t_3) < 0) __PYX_ERR(0, 1674, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_dest_qp_num, __pyx_t_3) < 0) __PYX_ERR(0, 1670, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-    /* "rdma/ibverbs.pyx":1677
+    /* "rdma/ibverbs.pyx":1673
  *                            path_mtu=path.MTU,
  *                            dest_qp_num=path.dqpn,
  *                            rq_psn=path.dqpsn,             # <<<<<<<<<<<<<<
  *                            max_dest_rd_atomic=path.drdatomic,
  *                            # Hmm, where does this come from?
  */
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_path, __pyx_n_s_dqpsn); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1677, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_path, __pyx_n_s_dqpsn); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1673, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_rq_psn, __pyx_t_3) < 0) __PYX_ERR(0, 1674, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_rq_psn, __pyx_t_3) < 0) __PYX_ERR(0, 1670, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-    /* "rdma/ibverbs.pyx":1678
+    /* "rdma/ibverbs.pyx":1674
  *                            dest_qp_num=path.dqpn,
  *                            rq_psn=path.dqpsn,
  *                            max_dest_rd_atomic=path.drdatomic,             # <<<<<<<<<<<<<<
  *                            # Hmm, where does this come from?
  *                            min_rnr_timer=path.min_rnr_timer,
  */
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_path, __pyx_n_s_drdatomic); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1678, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_path, __pyx_n_s_drdatomic); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1674, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_max_dest_rd_atomic, __pyx_t_3) < 0) __PYX_ERR(0, 1674, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_max_dest_rd_atomic, __pyx_t_3) < 0) __PYX_ERR(0, 1670, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-    /* "rdma/ibverbs.pyx":1680
+    /* "rdma/ibverbs.pyx":1676
  *                            max_dest_rd_atomic=path.drdatomic,
  *                            # Hmm, where does this come from?
  *                            min_rnr_timer=path.min_rnr_timer,             # <<<<<<<<<<<<<<
  *                            ah_attr=path)
  *         self.modify(attr,attr.MASK)
  */
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_path, __pyx_n_s_min_rnr_timer); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1680, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_path, __pyx_n_s_min_rnr_timer); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1676, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_min_rnr_timer, __pyx_t_3) < 0) __PYX_ERR(0, 1674, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_min_rnr_timer, __pyx_t_3) < 0) __PYX_ERR(0, 1670, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-    /* "rdma/ibverbs.pyx":1681
+    /* "rdma/ibverbs.pyx":1677
  *                            # Hmm, where does this come from?
  *                            min_rnr_timer=path.min_rnr_timer,
  *                            ah_attr=path)             # <<<<<<<<<<<<<<
  *         self.modify(attr,attr.MASK)
  * 
  */
-    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_ah_attr, __pyx_v_path) < 0) __PYX_ERR(0, 1674, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_ah_attr, __pyx_v_path) < 0) __PYX_ERR(0, 1670, __pyx_L1_error)
 
-    /* "rdma/ibverbs.pyx":1674
+    /* "rdma/ibverbs.pyx":1670
  *                            ah_attr=path)
  *         else:
  *             attr = qp_attr(qp_state=c.IBV_QPS_RTR,             # <<<<<<<<<<<<<<
  *                            path_mtu=path.MTU,
  *                            dest_qp_num=path.dqpn,
  */
-    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_empty_tuple, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1674, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_empty_tuple, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1670, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -30825,16 +30769,16 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_24modify_to_rtr(struct __pyx_obj_4r
     break;
   }
 
-  /* "rdma/ibverbs.pyx":1682
+  /* "rdma/ibverbs.pyx":1678
  *                            min_rnr_timer=path.min_rnr_timer,
  *                            ah_attr=path)
  *         self.modify(attr,attr.MASK)             # <<<<<<<<<<<<<<
  * 
  *     def modify_to_rts(self,path):
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_modify); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1682, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_modify); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1678, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_attr, __pyx_n_s_MASK); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1682, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_attr, __pyx_n_s_MASK); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1678, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_t_4 = NULL;
   __pyx_t_5 = 0;
@@ -30851,7 +30795,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_24modify_to_rtr(struct __pyx_obj_4r
   #if CYTHON_FAST_PYCALL
   if (PyFunction_Check(__pyx_t_2)) {
     PyObject *__pyx_temp[3] = {__pyx_t_4, __pyx_v_attr, __pyx_t_1};
-    __pyx_t_3 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_5, 2+__pyx_t_5); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1682, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_5, 2+__pyx_t_5); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1678, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -30860,14 +30804,14 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_24modify_to_rtr(struct __pyx_obj_4r
   #if CYTHON_FAST_PYCCALL
   if (__Pyx_PyFastCFunction_Check(__pyx_t_2)) {
     PyObject *__pyx_temp[3] = {__pyx_t_4, __pyx_v_attr, __pyx_t_1};
-    __pyx_t_3 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_5, 2+__pyx_t_5); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1682, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_5, 2+__pyx_t_5); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1678, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   } else
   #endif
   {
-    __pyx_t_6 = PyTuple_New(2+__pyx_t_5); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 1682, __pyx_L1_error)
+    __pyx_t_6 = PyTuple_New(2+__pyx_t_5); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 1678, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     if (__pyx_t_4) {
       __Pyx_GIVEREF(__pyx_t_4); PyTuple_SET_ITEM(__pyx_t_6, 0, __pyx_t_4); __pyx_t_4 = NULL;
@@ -30878,14 +30822,14 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_24modify_to_rtr(struct __pyx_obj_4r
     __Pyx_GIVEREF(__pyx_t_1);
     PyTuple_SET_ITEM(__pyx_t_6, 1+__pyx_t_5, __pyx_t_1);
     __pyx_t_1 = 0;
-    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_6, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1682, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_6, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1678, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   }
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "rdma/ibverbs.pyx":1663
+  /* "rdma/ibverbs.pyx":1659
  *         self.modify(attr,attr.MASK)
  * 
  *     def modify_to_rtr(self,path):             # <<<<<<<<<<<<<<
@@ -30911,7 +30855,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_24modify_to_rtr(struct __pyx_obj_4r
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":1684
+/* "rdma/ibverbs.pyx":1680
  *         self.modify(attr,attr.MASK)
  * 
  *     def modify_to_rts(self,path):             # <<<<<<<<<<<<<<
@@ -30949,7 +30893,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_26modify_to_rts(struct __pyx_obj_4r
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("modify_to_rts", 0);
 
-  /* "rdma/ibverbs.pyx":1686
+  /* "rdma/ibverbs.pyx":1682
  *     def modify_to_rts(self,path):
  *         """Modify the QP to the RTS state."""
  *         if self._qp_type == c.IBV_QPT_UD or self._qp_type == c.IBV_QPT_UC:             # <<<<<<<<<<<<<<
@@ -30960,49 +30904,49 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_26modify_to_rts(struct __pyx_obj_4r
     case IBV_QPT_UD:
     case IBV_QPT_UC:
 
-    /* "rdma/ibverbs.pyx":1687
+    /* "rdma/ibverbs.pyx":1683
  *         """Modify the QP to the RTS state."""
  *         if self._qp_type == c.IBV_QPT_UD or self._qp_type == c.IBV_QPT_UC:
  *             attr = qp_attr(qp_state=c.IBV_QPS_RTS,             # <<<<<<<<<<<<<<
  *                            sq_psn=path.sqpsn);
  *         else:
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_qp_attr); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1687, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_qp_attr); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1683, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_2 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1687, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1683, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_3 = __Pyx_PyInt_From_enum__ibv_qp_state(IBV_QPS_RTS); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1687, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyInt_From_enum__ibv_qp_state(IBV_QPS_RTS); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1683, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_qp_state, __pyx_t_3) < 0) __PYX_ERR(0, 1687, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_qp_state, __pyx_t_3) < 0) __PYX_ERR(0, 1683, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-    /* "rdma/ibverbs.pyx":1688
+    /* "rdma/ibverbs.pyx":1684
  *         if self._qp_type == c.IBV_QPT_UD or self._qp_type == c.IBV_QPT_UC:
  *             attr = qp_attr(qp_state=c.IBV_QPS_RTS,
  *                            sq_psn=path.sqpsn);             # <<<<<<<<<<<<<<
  *         else:
  *             attr = qp_attr(qp_state=c.IBV_QPS_RTS,
  */
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_path, __pyx_n_s_sqpsn); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1688, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_path, __pyx_n_s_sqpsn); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1684, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_sq_psn, __pyx_t_3) < 0) __PYX_ERR(0, 1687, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_sq_psn, __pyx_t_3) < 0) __PYX_ERR(0, 1683, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-    /* "rdma/ibverbs.pyx":1687
+    /* "rdma/ibverbs.pyx":1683
  *         """Modify the QP to the RTS state."""
  *         if self._qp_type == c.IBV_QPT_UD or self._qp_type == c.IBV_QPT_UC:
  *             attr = qp_attr(qp_state=c.IBV_QPS_RTS,             # <<<<<<<<<<<<<<
  *                            sq_psn=path.sqpsn);
  *         else:
  */
-    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_empty_tuple, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1687, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_empty_tuple, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1683, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __pyx_v_attr = __pyx_t_3;
     __pyx_t_3 = 0;
 
-    /* "rdma/ibverbs.pyx":1686
+    /* "rdma/ibverbs.pyx":1682
  *     def modify_to_rts(self,path):
  *         """Modify the QP to the RTS state."""
  *         if self._qp_type == c.IBV_QPT_UD or self._qp_type == c.IBV_QPT_UC:             # <<<<<<<<<<<<<<
@@ -31012,38 +30956,38 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_26modify_to_rts(struct __pyx_obj_4r
     break;
     default:
 
-    /* "rdma/ibverbs.pyx":1690
+    /* "rdma/ibverbs.pyx":1686
  *                            sq_psn=path.sqpsn);
  *         else:
  *             attr = qp_attr(qp_state=c.IBV_QPS_RTS,             # <<<<<<<<<<<<<<
  *                            timeout=rdma.IBA.to_timer(path.qp_timeout),
  *                            retry_cnt=path.retries,
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_qp_attr); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1690, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_qp_attr); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1686, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_2 = __Pyx_PyDict_NewPresized(6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1690, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyDict_NewPresized(6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1686, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_1 = __Pyx_PyInt_From_enum__ibv_qp_state(IBV_QPS_RTS); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1690, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyInt_From_enum__ibv_qp_state(IBV_QPS_RTS); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1686, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_qp_state, __pyx_t_1) < 0) __PYX_ERR(0, 1690, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_qp_state, __pyx_t_1) < 0) __PYX_ERR(0, 1686, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "rdma/ibverbs.pyx":1691
+    /* "rdma/ibverbs.pyx":1687
  *         else:
  *             attr = qp_attr(qp_state=c.IBV_QPS_RTS,
  *                            timeout=rdma.IBA.to_timer(path.qp_timeout),             # <<<<<<<<<<<<<<
  *                            retry_cnt=path.retries,
  *                            # FIXME
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_rdma); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1691, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_rdma); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1687, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_IBA); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 1691, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_IBA); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 1687, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_to_timer); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1691, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_to_timer); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1687, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_path, __pyx_n_s_qp_timeout); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 1691, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_path, __pyx_n_s_qp_timeout); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 1687, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __pyx_t_6 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_4))) {
@@ -31058,57 +31002,57 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_26modify_to_rts(struct __pyx_obj_4r
     __pyx_t_1 = (__pyx_t_6) ? __Pyx_PyObject_Call2Args(__pyx_t_4, __pyx_t_6, __pyx_t_5) : __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_5);
     __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1691, __pyx_L1_error)
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1687, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_timeout, __pyx_t_1) < 0) __PYX_ERR(0, 1690, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_timeout, __pyx_t_1) < 0) __PYX_ERR(0, 1686, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "rdma/ibverbs.pyx":1692
+    /* "rdma/ibverbs.pyx":1688
  *             attr = qp_attr(qp_state=c.IBV_QPS_RTS,
  *                            timeout=rdma.IBA.to_timer(path.qp_timeout),
  *                            retry_cnt=path.retries,             # <<<<<<<<<<<<<<
  *                            # FIXME
  *                            rnr_retry=7,
  */
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_path, __pyx_n_s_retries); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1692, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_path, __pyx_n_s_retries); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1688, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_retry_cnt, __pyx_t_1) < 0) __PYX_ERR(0, 1690, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_retry_cnt, __pyx_t_1) < 0) __PYX_ERR(0, 1686, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_rnr_retry, __pyx_int_7) < 0) __PYX_ERR(0, 1690, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_rnr_retry, __pyx_int_7) < 0) __PYX_ERR(0, 1686, __pyx_L1_error)
 
-    /* "rdma/ibverbs.pyx":1695
+    /* "rdma/ibverbs.pyx":1691
  *                            # FIXME
  *                            rnr_retry=7,
  *                            sq_psn=path.sqpsn,             # <<<<<<<<<<<<<<
  *                            max_rd_atomic=path.srdatomic);
  *         self.modify(attr,attr.MASK)
  */
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_path, __pyx_n_s_sqpsn); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1695, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_path, __pyx_n_s_sqpsn); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1691, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_sq_psn, __pyx_t_1) < 0) __PYX_ERR(0, 1690, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_sq_psn, __pyx_t_1) < 0) __PYX_ERR(0, 1686, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "rdma/ibverbs.pyx":1696
+    /* "rdma/ibverbs.pyx":1692
  *                            rnr_retry=7,
  *                            sq_psn=path.sqpsn,
  *                            max_rd_atomic=path.srdatomic);             # <<<<<<<<<<<<<<
  *         self.modify(attr,attr.MASK)
  * 
  */
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_path, __pyx_n_s_srdatomic); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1696, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_path, __pyx_n_s_srdatomic); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1692, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_max_rd_atomic, __pyx_t_1) < 0) __PYX_ERR(0, 1690, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_max_rd_atomic, __pyx_t_1) < 0) __PYX_ERR(0, 1686, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "rdma/ibverbs.pyx":1690
+    /* "rdma/ibverbs.pyx":1686
  *                            sq_psn=path.sqpsn);
  *         else:
  *             attr = qp_attr(qp_state=c.IBV_QPS_RTS,             # <<<<<<<<<<<<<<
  *                            timeout=rdma.IBA.to_timer(path.qp_timeout),
  *                            retry_cnt=path.retries,
  */
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_empty_tuple, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1690, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_empty_tuple, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1686, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -31117,16 +31061,16 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_26modify_to_rts(struct __pyx_obj_4r
     break;
   }
 
-  /* "rdma/ibverbs.pyx":1697
+  /* "rdma/ibverbs.pyx":1693
  *                            sq_psn=path.sqpsn,
  *                            max_rd_atomic=path.srdatomic);
  *         self.modify(attr,attr.MASK)             # <<<<<<<<<<<<<<
  * 
  *     def establish(self,path,int qp_access_flags=0):
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_modify); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1697, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_modify); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1693, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_attr, __pyx_n_s_MASK); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1697, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_attr, __pyx_n_s_MASK); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1693, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_t_4 = NULL;
   __pyx_t_7 = 0;
@@ -31143,7 +31087,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_26modify_to_rts(struct __pyx_obj_4r
   #if CYTHON_FAST_PYCALL
   if (PyFunction_Check(__pyx_t_2)) {
     PyObject *__pyx_temp[3] = {__pyx_t_4, __pyx_v_attr, __pyx_t_3};
-    __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_7, 2+__pyx_t_7); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1697, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_7, 2+__pyx_t_7); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1693, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -31152,14 +31096,14 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_26modify_to_rts(struct __pyx_obj_4r
   #if CYTHON_FAST_PYCCALL
   if (__Pyx_PyFastCFunction_Check(__pyx_t_2)) {
     PyObject *__pyx_temp[3] = {__pyx_t_4, __pyx_v_attr, __pyx_t_3};
-    __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_7, 2+__pyx_t_7); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1697, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_7, 2+__pyx_t_7); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1693, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   } else
   #endif
   {
-    __pyx_t_5 = PyTuple_New(2+__pyx_t_7); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 1697, __pyx_L1_error)
+    __pyx_t_5 = PyTuple_New(2+__pyx_t_7); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 1693, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     if (__pyx_t_4) {
       __Pyx_GIVEREF(__pyx_t_4); PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_4); __pyx_t_4 = NULL;
@@ -31170,14 +31114,14 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_26modify_to_rts(struct __pyx_obj_4r
     __Pyx_GIVEREF(__pyx_t_3);
     PyTuple_SET_ITEM(__pyx_t_5, 1+__pyx_t_7, __pyx_t_3);
     __pyx_t_3 = 0;
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_5, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1697, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_5, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1693, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   }
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "rdma/ibverbs.pyx":1684
+  /* "rdma/ibverbs.pyx":1680
  *         self.modify(attr,attr.MASK)
  * 
  *     def modify_to_rts(self,path):             # <<<<<<<<<<<<<<
@@ -31204,7 +31148,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_26modify_to_rts(struct __pyx_obj_4r
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":1699
+/* "rdma/ibverbs.pyx":1695
  *         self.modify(attr,attr.MASK)
  * 
  *     def establish(self,path,int qp_access_flags=0):             # <<<<<<<<<<<<<<
@@ -31251,7 +31195,7 @@ static PyObject *__pyx_pw_4rdma_7ibverbs_2QP_29establish(PyObject *__pyx_v_self,
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "establish") < 0)) __PYX_ERR(0, 1699, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "establish") < 0)) __PYX_ERR(0, 1695, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -31264,14 +31208,14 @@ static PyObject *__pyx_pw_4rdma_7ibverbs_2QP_29establish(PyObject *__pyx_v_self,
     }
     __pyx_v_path = values[0];
     if (values[1]) {
-      __pyx_v_qp_access_flags = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_qp_access_flags == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1699, __pyx_L3_error)
+      __pyx_v_qp_access_flags = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_qp_access_flags == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1695, __pyx_L3_error)
     } else {
       __pyx_v_qp_access_flags = ((int)0);
     }
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("establish", 0, 1, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 1699, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("establish", 0, 1, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 1695, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("rdma.ibverbs.QP.establish", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -31298,16 +31242,16 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_28establish(struct __pyx_obj_4rdma_
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("establish", 0);
 
-  /* "rdma/ibverbs.pyx":1703
+  /* "rdma/ibverbs.pyx":1699
  *         :meth`modify_to_rts`.  This function is most useful for UD QPs which
  *         do not require any external sequencing."""
  *         self.modify_to_init(path,qp_access_flags);             # <<<<<<<<<<<<<<
  *         self.modify_to_rtr(path);
  *         self.modify_to_rts(path);
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_modify_to_init); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1703, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_modify_to_init); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1699, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_qp_access_flags); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1703, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_qp_access_flags); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1699, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_t_4 = NULL;
   __pyx_t_5 = 0;
@@ -31324,7 +31268,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_28establish(struct __pyx_obj_4rdma_
   #if CYTHON_FAST_PYCALL
   if (PyFunction_Check(__pyx_t_2)) {
     PyObject *__pyx_temp[3] = {__pyx_t_4, __pyx_v_path, __pyx_t_3};
-    __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_5, 2+__pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1703, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_5, 2+__pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1699, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -31333,14 +31277,14 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_28establish(struct __pyx_obj_4rdma_
   #if CYTHON_FAST_PYCCALL
   if (__Pyx_PyFastCFunction_Check(__pyx_t_2)) {
     PyObject *__pyx_temp[3] = {__pyx_t_4, __pyx_v_path, __pyx_t_3};
-    __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_5, 2+__pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1703, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_5, 2+__pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1699, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   } else
   #endif
   {
-    __pyx_t_6 = PyTuple_New(2+__pyx_t_5); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 1703, __pyx_L1_error)
+    __pyx_t_6 = PyTuple_New(2+__pyx_t_5); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 1699, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     if (__pyx_t_4) {
       __Pyx_GIVEREF(__pyx_t_4); PyTuple_SET_ITEM(__pyx_t_6, 0, __pyx_t_4); __pyx_t_4 = NULL;
@@ -31351,21 +31295,21 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_28establish(struct __pyx_obj_4rdma_
     __Pyx_GIVEREF(__pyx_t_3);
     PyTuple_SET_ITEM(__pyx_t_6, 1+__pyx_t_5, __pyx_t_3);
     __pyx_t_3 = 0;
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_6, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1703, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_6, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1699, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   }
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "rdma/ibverbs.pyx":1704
+  /* "rdma/ibverbs.pyx":1700
  *         do not require any external sequencing."""
  *         self.modify_to_init(path,qp_access_flags);
  *         self.modify_to_rtr(path);             # <<<<<<<<<<<<<<
  *         self.modify_to_rts(path);
  * 
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_modify_to_rtr); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1704, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_modify_to_rtr); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1700, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_t_6 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
@@ -31379,19 +31323,19 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_28establish(struct __pyx_obj_4rdma_
   }
   __pyx_t_1 = (__pyx_t_6) ? __Pyx_PyObject_Call2Args(__pyx_t_2, __pyx_t_6, __pyx_v_path) : __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_v_path);
   __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
-  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1704, __pyx_L1_error)
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1700, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "rdma/ibverbs.pyx":1705
+  /* "rdma/ibverbs.pyx":1701
  *         self.modify_to_init(path,qp_access_flags);
  *         self.modify_to_rtr(path);
  *         self.modify_to_rts(path);             # <<<<<<<<<<<<<<
  * 
  *     def __str__(self):
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_modify_to_rts); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1705, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_modify_to_rts); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1701, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_t_6 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
@@ -31405,12 +31349,12 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_28establish(struct __pyx_obj_4rdma_
   }
   __pyx_t_1 = (__pyx_t_6) ? __Pyx_PyObject_Call2Args(__pyx_t_2, __pyx_t_6, __pyx_v_path) : __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_v_path);
   __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
-  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1705, __pyx_L1_error)
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1701, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "rdma/ibverbs.pyx":1699
+  /* "rdma/ibverbs.pyx":1695
  *         self.modify(attr,attr.MASK)
  * 
  *     def establish(self,path,int qp_access_flags=0):             # <<<<<<<<<<<<<<
@@ -31435,7 +31379,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_28establish(struct __pyx_obj_4rdma_
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":1707
+/* "rdma/ibverbs.pyx":1703
  *         self.modify_to_rts(path);
  * 
  *     def __str__(self):             # <<<<<<<<<<<<<<
@@ -31466,7 +31410,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_30__str__(struct __pyx_obj_4rdma_7i
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__str__", 0);
 
-  /* "rdma/ibverbs.pyx":1708
+  /* "rdma/ibverbs.pyx":1704
  * 
  *     def __str__(self):
  *         return "qp:%u:%s"%(self._qp.qp_num,self._pd);             # <<<<<<<<<<<<<<
@@ -31474,9 +31418,9 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_30__str__(struct __pyx_obj_4rdma_7i
  *         return "QP(%r,0x%x,%u,qp_type=%s)"%(
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->_qp->qp_num); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1708, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->_qp->qp_num); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1704, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1708, __pyx_L1_error)
+  __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1704, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_GIVEREF(__pyx_t_1);
   PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_t_1);
@@ -31484,14 +31428,14 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_30__str__(struct __pyx_obj_4rdma_7i
   __Pyx_GIVEREF(((PyObject *)__pyx_v_self->_pd));
   PyTuple_SET_ITEM(__pyx_t_2, 1, ((PyObject *)__pyx_v_self->_pd));
   __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyString_Format(__pyx_kp_s_qp_u_s, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1708, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyString_Format(__pyx_kp_s_qp_u_s, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1704, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "rdma/ibverbs.pyx":1707
+  /* "rdma/ibverbs.pyx":1703
  *         self.modify_to_rts(path);
  * 
  *     def __str__(self):             # <<<<<<<<<<<<<<
@@ -31511,7 +31455,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_30__str__(struct __pyx_obj_4rdma_7i
   return __pyx_r;
 }
 
-/* "rdma/ibverbs.pyx":1709
+/* "rdma/ibverbs.pyx":1705
  *     def __str__(self):
  *         return "qp:%u:%s"%(self._qp.qp_num,self._pd);
  *     def __repr__(self):             # <<<<<<<<<<<<<<
@@ -31549,7 +31493,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_32__repr__(struct __pyx_obj_4rdma_7
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__repr__", 0);
 
-  /* "rdma/ibverbs.pyx":1710
+  /* "rdma/ibverbs.pyx":1706
  *         return "qp:%u:%s"%(self._qp.qp_num,self._pd);
  *     def __repr__(self):
  *         return "QP(%r,0x%x,%u,qp_type=%s)"%(             # <<<<<<<<<<<<<<
@@ -31558,43 +31502,43 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_32__repr__(struct __pyx_obj_4rdma_7
  */
   __Pyx_XDECREF(__pyx_r);
 
-  /* "rdma/ibverbs.pyx":1711
+  /* "rdma/ibverbs.pyx":1707
  *     def __repr__(self):
  *         return "QP(%r,0x%x,%u,qp_type=%s)"%(
  *             self._pd,self._qp.handle,self._qp.qp_num,             # <<<<<<<<<<<<<<
  *             IBA.const_str("IBV_QPT_",self._qp.qp_type,True,
  *                           sys.modules["rdma.ibverbs"]));
  */
-  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->_qp->handle); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1711, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->_qp->handle); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1707, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->_qp->qp_num); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1711, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->_qp->qp_num); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1707, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
 
-  /* "rdma/ibverbs.pyx":1712
+  /* "rdma/ibverbs.pyx":1708
  *         return "QP(%r,0x%x,%u,qp_type=%s)"%(
  *             self._pd,self._qp.handle,self._qp.qp_num,
  *             IBA.const_str("IBV_QPT_",self._qp.qp_type,True,             # <<<<<<<<<<<<<<
  *                           sys.modules["rdma.ibverbs"]));
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_IBA); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1712, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_IBA); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1708, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_const_str); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 1712, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_const_str); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 1708, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_4 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->_qp->qp_type); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1712, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->_qp->qp_type); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1708, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
 
-  /* "rdma/ibverbs.pyx":1713
+  /* "rdma/ibverbs.pyx":1709
  *             self._pd,self._qp.handle,self._qp.qp_num,
  *             IBA.const_str("IBV_QPT_",self._qp.qp_type,True,
  *                           sys.modules["rdma.ibverbs"]));             # <<<<<<<<<<<<<<
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_sys); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 1713, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_sys); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 1709, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_modules); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1713, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_modules); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1709, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-  __pyx_t_6 = __Pyx_PyObject_Dict_GetItem(__pyx_t_7, __pyx_kp_s_rdma_ibverbs); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 1713, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_Dict_GetItem(__pyx_t_7, __pyx_kp_s_rdma_ibverbs); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 1709, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
   __pyx_t_7 = NULL;
@@ -31612,7 +31556,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_32__repr__(struct __pyx_obj_4rdma_7
   #if CYTHON_FAST_PYCALL
   if (PyFunction_Check(__pyx_t_5)) {
     PyObject *__pyx_temp[5] = {__pyx_t_7, __pyx_n_s_IBV_QPT, __pyx_t_4, Py_True, __pyx_t_6};
-    __pyx_t_3 = __Pyx_PyFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_8, 4+__pyx_t_8); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1712, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_8, 4+__pyx_t_8); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1708, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -31622,7 +31566,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_32__repr__(struct __pyx_obj_4rdma_7
   #if CYTHON_FAST_PYCCALL
   if (__Pyx_PyFastCFunction_Check(__pyx_t_5)) {
     PyObject *__pyx_temp[5] = {__pyx_t_7, __pyx_n_s_IBV_QPT, __pyx_t_4, Py_True, __pyx_t_6};
-    __pyx_t_3 = __Pyx_PyCFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_8, 4+__pyx_t_8); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1712, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyCFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_8, 4+__pyx_t_8); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1708, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -31630,7 +31574,7 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_32__repr__(struct __pyx_obj_4rdma_7
   } else
   #endif
   {
-    __pyx_t_9 = PyTuple_New(4+__pyx_t_8); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 1712, __pyx_L1_error)
+    __pyx_t_9 = PyTuple_New(4+__pyx_t_8); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 1708, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_9);
     if (__pyx_t_7) {
       __Pyx_GIVEREF(__pyx_t_7); PyTuple_SET_ITEM(__pyx_t_9, 0, __pyx_t_7); __pyx_t_7 = NULL;
@@ -31647,20 +31591,20 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_32__repr__(struct __pyx_obj_4rdma_7
     PyTuple_SET_ITEM(__pyx_t_9, 3+__pyx_t_8, __pyx_t_6);
     __pyx_t_4 = 0;
     __pyx_t_6 = 0;
-    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_9, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1712, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_9, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1708, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
   }
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-  /* "rdma/ibverbs.pyx":1711
+  /* "rdma/ibverbs.pyx":1707
  *     def __repr__(self):
  *         return "QP(%r,0x%x,%u,qp_type=%s)"%(
  *             self._pd,self._qp.handle,self._qp.qp_num,             # <<<<<<<<<<<<<<
  *             IBA.const_str("IBV_QPT_",self._qp.qp_type,True,
  *                           sys.modules["rdma.ibverbs"]));
  */
-  __pyx_t_5 = PyTuple_New(4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 1711, __pyx_L1_error)
+  __pyx_t_5 = PyTuple_New(4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 1707, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_INCREF(((PyObject *)__pyx_v_self->_pd));
   __Pyx_GIVEREF(((PyObject *)__pyx_v_self->_pd));
@@ -31675,21 +31619,21 @@ static PyObject *__pyx_pf_4rdma_7ibverbs_2QP_32__repr__(struct __pyx_obj_4rdma_7
   __pyx_t_2 = 0;
   __pyx_t_3 = 0;
 
-  /* "rdma/ibverbs.pyx":1710
+  /* "rdma/ibverbs.pyx":1706
  *         return "qp:%u:%s"%(self._qp.qp_num,self._pd);
  *     def __repr__(self):
  *         return "QP(%r,0x%x,%u,qp_type=%s)"%(             # <<<<<<<<<<<<<<
  *             self._pd,self._qp.handle,self._qp.qp_num,
  *             IBA.const_str("IBV_QPT_",self._qp.qp_type,True,
  */
-  __pyx_t_3 = __Pyx_PyString_Format(__pyx_kp_s_QP_r_0x_x_u_qp_type_s, __pyx_t_5); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1710, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyString_Format(__pyx_kp_s_QP_r_0x_x_u_qp_type_s, __pyx_t_5); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1706, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __pyx_r = __pyx_t_3;
   __pyx_t_3 = 0;
   goto __pyx_L0;
 
-  /* "rdma/ibverbs.pyx":1709
+  /* "rdma/ibverbs.pyx":1705
  *     def __str__(self):
  *         return "qp:%u:%s"%(self._qp.qp_num,self._pd);
  *     def __repr__(self):             # <<<<<<<<<<<<<<
@@ -33751,7 +33695,6 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_IBV_XRCD_INIT_ATTR_FD, __pyx_k_IBV_XRCD_INIT_ATTR_FD, sizeof(__pyx_k_IBV_XRCD_INIT_ATTR_FD), 0, 0, 1, 1},
   {&__pyx_n_s_IBV_XRCD_INIT_ATTR_OFLAGS, __pyx_k_IBV_XRCD_INIT_ATTR_OFLAGS, sizeof(__pyx_k_IBV_XRCD_INIT_ATTR_OFLAGS), 0, 0, 1, 1},
   {&__pyx_n_s_IBV_XRCD_INIT_ATTR_RESERVED, __pyx_k_IBV_XRCD_INIT_ATTR_RESERVED, sizeof(__pyx_k_IBV_XRCD_INIT_ATTR_RESERVED), 0, 0, 1, 1},
-  {&__pyx_kp_s_Is_RDMA_Device, __pyx_k_Is_RDMA_Device, sizeof(__pyx_k_Is_RDMA_Device), 0, 0, 1, 0},
   {&__pyx_kp_s_Length_is_too_long_u_u, __pyx_k_Length_is_too_long_u_u, sizeof(__pyx_k_Length_is_too_long_u_u), 0, 0, 1, 0},
   {&__pyx_n_s_MASK, __pyx_k_MASK, sizeof(__pyx_k_MASK), 0, 0, 1, 1},
   {&__pyx_n_s_MR, __pyx_k_MR, sizeof(__pyx_k_MR), 0, 0, 1, 1},
@@ -33984,7 +33927,7 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_my_weakset_add, __pyx_k_my_weakset_add, sizeof(__pyx_k_my_weakset_add), 0, 0, 1, 1},
   {&__pyx_n_s_my_weakset_pop, __pyx_k_my_weakset_pop, sizeof(__pyx_k_my_weakset_pop), 0, 0, 1, 1},
   {&__pyx_n_s_name, __pyx_k_name, sizeof(__pyx_k_name), 0, 0, 1, 1},
-  {&__pyx_n_s_name_2, __pyx_k_name_2, sizeof(__pyx_k_name_2), 0, 0, 1, 1},
+  {&__pyx_n_s_name_bytes, __pyx_k_name_bytes, sizeof(__pyx_k_name_bytes), 0, 0, 1, 1},
   {&__pyx_n_s_namedtuple, __pyx_k_namedtuple, sizeof(__pyx_k_namedtuple), 0, 0, 1, 1},
   {&__pyx_n_s_nelems, __pyx_k_nelems, sizeof(__pyx_k_nelems), 0, 0, 1, 1},
   {&__pyx_kp_s_no_default___reduce___due_to_non, __pyx_k_no_default___reduce___due_to_non, sizeof(__pyx_k_no_default___reduce___due_to_non), 0, 0, 1, 0},
@@ -34122,8 +34065,8 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
 static CYTHON_SMALL_CODE int __Pyx_InitCachedBuiltins(void) {
   __pyx_builtin_TypeError = __Pyx_GetBuiltinName(__pyx_n_s_TypeError); if (!__pyx_builtin_TypeError) __PYX_ERR(0, 109, __pyx_L1_error)
   __pyx_builtin_ValueError = __Pyx_GetBuiltinName(__pyx_n_s_ValueError); if (!__pyx_builtin_ValueError) __PYX_ERR(0, 187, __pyx_L1_error)
-  __pyx_builtin_id = __Pyx_GetBuiltinName(__pyx_n_s_id); if (!__pyx_builtin_id) __PYX_ERR(0, 627, __pyx_L1_error)
-  __pyx_builtin_MemoryError = __Pyx_GetBuiltinName(__pyx_n_s_MemoryError); if (!__pyx_builtin_MemoryError) __PYX_ERR(0, 1088, __pyx_L1_error)
+  __pyx_builtin_id = __Pyx_GetBuiltinName(__pyx_n_s_id); if (!__pyx_builtin_id) __PYX_ERR(0, 623, __pyx_L1_error)
+  __pyx_builtin_MemoryError = __Pyx_GetBuiltinName(__pyx_n_s_MemoryError); if (!__pyx_builtin_MemoryError) __PYX_ERR(0, 1084, __pyx_L1_error)
   return 0;
   __pyx_L1_error:;
   return -1;
@@ -34346,14 +34289,14 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__22);
   __Pyx_GIVEREF(__pyx_tuple__22);
 
-  /* "rdma/ibverbs.pyx":1174
+  /* "rdma/ibverbs.pyx":1170
  *             rc = PyObject_AsWriteBuffer(buf, &addr, &length)
  *             if rc != 0:
  *                 raise TypeError("Expected mutable buffer")             # <<<<<<<<<<<<<<
  *         else:
  *             rc = PyObject_AsReadBuffer(buf, <const_void_ptr_ptr>&addr, &length)
  */
-  __pyx_tuple__23 = PyTuple_Pack(1, __pyx_kp_s_Expected_mutable_buffer); if (unlikely(!__pyx_tuple__23)) __PYX_ERR(0, 1174, __pyx_L1_error)
+  __pyx_tuple__23 = PyTuple_Pack(1, __pyx_kp_s_Expected_mutable_buffer); if (unlikely(!__pyx_tuple__23)) __PYX_ERR(0, 1170, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__23);
   __Pyx_GIVEREF(__pyx_tuple__23);
 
@@ -34376,91 +34319,91 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__25);
   __Pyx_GIVEREF(__pyx_tuple__25);
 
-  /* "rdma/ibverbs.pyx":1287
+  /* "rdma/ibverbs.pyx":1283
  * 
  *         if not isinstance(init.send_cq, CQ):
  *             raise TypeError("send_cq must be a cq")             # <<<<<<<<<<<<<<
  *         if not isinstance(init.recv_cq, CQ):
  *             raise TypeError("recv_cq must be a cq")
  */
-  __pyx_tuple__26 = PyTuple_Pack(1, __pyx_kp_s_send_cq_must_be_a_cq); if (unlikely(!__pyx_tuple__26)) __PYX_ERR(0, 1287, __pyx_L1_error)
+  __pyx_tuple__26 = PyTuple_Pack(1, __pyx_kp_s_send_cq_must_be_a_cq); if (unlikely(!__pyx_tuple__26)) __PYX_ERR(0, 1283, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__26);
   __Pyx_GIVEREF(__pyx_tuple__26);
 
-  /* "rdma/ibverbs.pyx":1289
+  /* "rdma/ibverbs.pyx":1285
  *             raise TypeError("send_cq must be a cq")
  *         if not isinstance(init.recv_cq, CQ):
  *             raise TypeError("recv_cq must be a cq")             # <<<<<<<<<<<<<<
  *         if not isinstance(init.cap, qp_cap):
  *             raise TypeError("cap must be a qp_cap")
  */
-  __pyx_tuple__27 = PyTuple_Pack(1, __pyx_kp_s_recv_cq_must_be_a_cq); if (unlikely(!__pyx_tuple__27)) __PYX_ERR(0, 1289, __pyx_L1_error)
+  __pyx_tuple__27 = PyTuple_Pack(1, __pyx_kp_s_recv_cq_must_be_a_cq); if (unlikely(!__pyx_tuple__27)) __PYX_ERR(0, 1285, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__27);
   __Pyx_GIVEREF(__pyx_tuple__27);
 
-  /* "rdma/ibverbs.pyx":1291
+  /* "rdma/ibverbs.pyx":1287
  *             raise TypeError("recv_cq must be a cq")
  *         if not isinstance(init.cap, qp_cap):
  *             raise TypeError("cap must be a qp_cap")             # <<<<<<<<<<<<<<
  *         if init.srq is not None and not isinstance(init.srq, SRQ):
  *             raise TypeError("srq must be a SRQ")
  */
-  __pyx_tuple__28 = PyTuple_Pack(1, __pyx_kp_s_cap_must_be_a_qp_cap); if (unlikely(!__pyx_tuple__28)) __PYX_ERR(0, 1291, __pyx_L1_error)
+  __pyx_tuple__28 = PyTuple_Pack(1, __pyx_kp_s_cap_must_be_a_qp_cap); if (unlikely(!__pyx_tuple__28)) __PYX_ERR(0, 1287, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__28);
   __Pyx_GIVEREF(__pyx_tuple__28);
 
-  /* "rdma/ibverbs.pyx":1293
+  /* "rdma/ibverbs.pyx":1289
  *             raise TypeError("cap must be a qp_cap")
  *         if init.srq is not None and not isinstance(init.srq, SRQ):
  *             raise TypeError("srq must be a SRQ")             # <<<<<<<<<<<<<<
  * 
  *         self._scq = init.send_cq
  */
-  __pyx_tuple__29 = PyTuple_Pack(1, __pyx_kp_s_srq_must_be_a_SRQ); if (unlikely(!__pyx_tuple__29)) __PYX_ERR(0, 1293, __pyx_L1_error)
+  __pyx_tuple__29 = PyTuple_Pack(1, __pyx_kp_s_srq_must_be_a_SRQ); if (unlikely(!__pyx_tuple__29)) __PYX_ERR(0, 1289, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__29);
   __Pyx_GIVEREF(__pyx_tuple__29);
 
-  /* "rdma/ibverbs.pyx":1338
+  /* "rdma/ibverbs.pyx":1334
  *             while self._groups:
  *                 g = self._groups[0];
  *                 self.detach_mcast(rdma.path.IBPath(None,DGID=g[0],DLID=g[1]));             # <<<<<<<<<<<<<<
  *             rc = c.ibv_destroy_qp(self._qp)
  *             if rc != 0:
  */
-  __pyx_tuple__30 = PyTuple_Pack(1, Py_None); if (unlikely(!__pyx_tuple__30)) __PYX_ERR(0, 1338, __pyx_L1_error)
+  __pyx_tuple__30 = PyTuple_Pack(1, Py_None); if (unlikely(!__pyx_tuple__30)) __PYX_ERR(0, 1334, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__30);
   __Pyx_GIVEREF(__pyx_tuple__30);
 
-  /* "rdma/ibverbs.pyx":1362
+  /* "rdma/ibverbs.pyx":1358
  *             print 'modify qp, attr = %s mask = 0x%x' % (str(attr), cmask)
  *         if not isinstance(mask, int):
  *             raise TypeError("mask must be an int")             # <<<<<<<<<<<<<<
  *         if not isinstance(attr, qp_attr):
  *             raise TypeError("attr must be a qp_attr")
  */
-  __pyx_tuple__31 = PyTuple_Pack(1, __pyx_kp_s_mask_must_be_an_int); if (unlikely(!__pyx_tuple__31)) __PYX_ERR(0, 1362, __pyx_L1_error)
+  __pyx_tuple__31 = PyTuple_Pack(1, __pyx_kp_s_mask_must_be_an_int); if (unlikely(!__pyx_tuple__31)) __PYX_ERR(0, 1358, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__31);
   __Pyx_GIVEREF(__pyx_tuple__31);
 
-  /* "rdma/ibverbs.pyx":1364
+  /* "rdma/ibverbs.pyx":1360
  *             raise TypeError("mask must be an int")
  *         if not isinstance(attr, qp_attr):
  *             raise TypeError("attr must be a qp_attr")             # <<<<<<<<<<<<<<
  *         cattr.qp_state = attr.qp_state
  *         cattr.cur_qp_state = attr.cur_qp_state
  */
-  __pyx_tuple__32 = PyTuple_Pack(1, __pyx_kp_s_attr_must_be_a_qp_attr); if (unlikely(!__pyx_tuple__32)) __PYX_ERR(0, 1364, __pyx_L1_error)
+  __pyx_tuple__32 = PyTuple_Pack(1, __pyx_kp_s_attr_must_be_a_qp_attr); if (unlikely(!__pyx_tuple__32)) __PYX_ERR(0, 1360, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__32);
   __Pyx_GIVEREF(__pyx_tuple__32);
 
-  /* "rdma/ibverbs.pyx":1476
+  /* "rdma/ibverbs.pyx":1472
  *                 elif self._qp_type == c.IBV_QPT_UD:
  *                     if not isinstance(wr.ah,AH):
  *                         raise TypeError("AH must be a AH")             # <<<<<<<<<<<<<<
  *                     ah = wr.ah;
  *                     cwr.wr.ud.ah = ah._ah
  */
-  __pyx_tuple__33 = PyTuple_Pack(1, __pyx_kp_s_AH_must_be_a_AH); if (unlikely(!__pyx_tuple__33)) __PYX_ERR(0, 1476, __pyx_L1_error)
+  __pyx_tuple__33 = PyTuple_Pack(1, __pyx_kp_s_AH_must_be_a_AH); if (unlikely(!__pyx_tuple__33)) __PYX_ERR(0, 1472, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__33);
   __Pyx_GIVEREF(__pyx_tuple__33);
 
@@ -34736,101 +34679,101 @@ static int __Pyx_modinit_type_init_code(void) {
   __pyx_ptype_4rdma_7ibverbs_Context = &__pyx_type_4rdma_7ibverbs_Context;
   __pyx_vtabptr_4rdma_7ibverbs_PD = &__pyx_vtable_4rdma_7ibverbs_PD;
   __pyx_vtable_4rdma_7ibverbs_PD._close = (PyObject *(*)(struct __pyx_obj_4rdma_7ibverbs_PD *))__pyx_f_4rdma_7ibverbs_2PD__close;
-  if (PyType_Ready(&__pyx_type_4rdma_7ibverbs_PD) < 0) __PYX_ERR(0, 602, __pyx_L1_error)
+  if (PyType_Ready(&__pyx_type_4rdma_7ibverbs_PD) < 0) __PYX_ERR(0, 598, __pyx_L1_error)
   #if PY_VERSION_HEX < 0x030800B1
   __pyx_type_4rdma_7ibverbs_PD.tp_print = 0;
   #endif
   if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_4rdma_7ibverbs_PD.tp_dictoffset && __pyx_type_4rdma_7ibverbs_PD.tp_getattro == PyObject_GenericGetAttr)) {
     __pyx_type_4rdma_7ibverbs_PD.tp_getattro = __Pyx_PyObject_GenericGetAttr;
   }
-  if (__Pyx_SetVtable(__pyx_type_4rdma_7ibverbs_PD.tp_dict, __pyx_vtabptr_4rdma_7ibverbs_PD) < 0) __PYX_ERR(0, 602, __pyx_L1_error)
-  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_PD, (PyObject *)&__pyx_type_4rdma_7ibverbs_PD) < 0) __PYX_ERR(0, 602, __pyx_L1_error)
+  if (__Pyx_SetVtable(__pyx_type_4rdma_7ibverbs_PD.tp_dict, __pyx_vtabptr_4rdma_7ibverbs_PD) < 0) __PYX_ERR(0, 598, __pyx_L1_error)
+  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_PD, (PyObject *)&__pyx_type_4rdma_7ibverbs_PD) < 0) __PYX_ERR(0, 598, __pyx_L1_error)
   if (__pyx_type_4rdma_7ibverbs_PD.tp_weaklistoffset == 0) __pyx_type_4rdma_7ibverbs_PD.tp_weaklistoffset = offsetof(struct __pyx_obj_4rdma_7ibverbs_PD, __weakref__);
-  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_4rdma_7ibverbs_PD) < 0) __PYX_ERR(0, 602, __pyx_L1_error)
+  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_4rdma_7ibverbs_PD) < 0) __PYX_ERR(0, 598, __pyx_L1_error)
   __pyx_ptype_4rdma_7ibverbs_PD = &__pyx_type_4rdma_7ibverbs_PD;
   __pyx_vtabptr_4rdma_7ibverbs_AH = &__pyx_vtable_4rdma_7ibverbs_AH;
   __pyx_vtable_4rdma_7ibverbs_AH._close = (PyObject *(*)(struct __pyx_obj_4rdma_7ibverbs_AH *))__pyx_f_4rdma_7ibverbs_2AH__close;
-  if (PyType_Ready(&__pyx_type_4rdma_7ibverbs_AH) < 0) __PYX_ERR(0, 748, __pyx_L1_error)
+  if (PyType_Ready(&__pyx_type_4rdma_7ibverbs_AH) < 0) __PYX_ERR(0, 744, __pyx_L1_error)
   #if PY_VERSION_HEX < 0x030800B1
   __pyx_type_4rdma_7ibverbs_AH.tp_print = 0;
   #endif
   if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_4rdma_7ibverbs_AH.tp_dictoffset && __pyx_type_4rdma_7ibverbs_AH.tp_getattro == PyObject_GenericGetAttr)) {
     __pyx_type_4rdma_7ibverbs_AH.tp_getattro = __Pyx_PyObject_GenericGetAttr;
   }
-  if (__Pyx_SetVtable(__pyx_type_4rdma_7ibverbs_AH.tp_dict, __pyx_vtabptr_4rdma_7ibverbs_AH) < 0) __PYX_ERR(0, 748, __pyx_L1_error)
-  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_AH, (PyObject *)&__pyx_type_4rdma_7ibverbs_AH) < 0) __PYX_ERR(0, 748, __pyx_L1_error)
+  if (__Pyx_SetVtable(__pyx_type_4rdma_7ibverbs_AH.tp_dict, __pyx_vtabptr_4rdma_7ibverbs_AH) < 0) __PYX_ERR(0, 744, __pyx_L1_error)
+  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_AH, (PyObject *)&__pyx_type_4rdma_7ibverbs_AH) < 0) __PYX_ERR(0, 744, __pyx_L1_error)
   if (__pyx_type_4rdma_7ibverbs_AH.tp_weaklistoffset == 0) __pyx_type_4rdma_7ibverbs_AH.tp_weaklistoffset = offsetof(struct __pyx_obj_4rdma_7ibverbs_AH, __weakref__);
-  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_4rdma_7ibverbs_AH) < 0) __PYX_ERR(0, 748, __pyx_L1_error)
+  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_4rdma_7ibverbs_AH) < 0) __PYX_ERR(0, 744, __pyx_L1_error)
   __pyx_ptype_4rdma_7ibverbs_AH = &__pyx_type_4rdma_7ibverbs_AH;
   __pyx_vtabptr_4rdma_7ibverbs_CompChannel = &__pyx_vtable_4rdma_7ibverbs_CompChannel;
   __pyx_vtable_4rdma_7ibverbs_CompChannel._close = (PyObject *(*)(struct __pyx_obj_4rdma_7ibverbs_CompChannel *))__pyx_f_4rdma_7ibverbs_11CompChannel__close;
-  if (PyType_Ready(&__pyx_type_4rdma_7ibverbs_CompChannel) < 0) __PYX_ERR(0, 790, __pyx_L1_error)
+  if (PyType_Ready(&__pyx_type_4rdma_7ibverbs_CompChannel) < 0) __PYX_ERR(0, 786, __pyx_L1_error)
   #if PY_VERSION_HEX < 0x030800B1
   __pyx_type_4rdma_7ibverbs_CompChannel.tp_print = 0;
   #endif
   if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_4rdma_7ibverbs_CompChannel.tp_dictoffset && __pyx_type_4rdma_7ibverbs_CompChannel.tp_getattro == PyObject_GenericGetAttr)) {
     __pyx_type_4rdma_7ibverbs_CompChannel.tp_getattro = __Pyx_PyObject_GenericGetAttr;
   }
-  if (__Pyx_SetVtable(__pyx_type_4rdma_7ibverbs_CompChannel.tp_dict, __pyx_vtabptr_4rdma_7ibverbs_CompChannel) < 0) __PYX_ERR(0, 790, __pyx_L1_error)
-  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_CompChannel, (PyObject *)&__pyx_type_4rdma_7ibverbs_CompChannel) < 0) __PYX_ERR(0, 790, __pyx_L1_error)
+  if (__Pyx_SetVtable(__pyx_type_4rdma_7ibverbs_CompChannel.tp_dict, __pyx_vtabptr_4rdma_7ibverbs_CompChannel) < 0) __PYX_ERR(0, 786, __pyx_L1_error)
+  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_CompChannel, (PyObject *)&__pyx_type_4rdma_7ibverbs_CompChannel) < 0) __PYX_ERR(0, 786, __pyx_L1_error)
   if (__pyx_type_4rdma_7ibverbs_CompChannel.tp_weaklistoffset == 0) __pyx_type_4rdma_7ibverbs_CompChannel.tp_weaklistoffset = offsetof(struct __pyx_obj_4rdma_7ibverbs_CompChannel, __weakref__);
-  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_4rdma_7ibverbs_CompChannel) < 0) __PYX_ERR(0, 790, __pyx_L1_error)
+  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_4rdma_7ibverbs_CompChannel) < 0) __PYX_ERR(0, 786, __pyx_L1_error)
   __pyx_ptype_4rdma_7ibverbs_CompChannel = &__pyx_type_4rdma_7ibverbs_CompChannel;
   __pyx_vtabptr_4rdma_7ibverbs_CQ = &__pyx_vtable_4rdma_7ibverbs_CQ;
   __pyx_vtable_4rdma_7ibverbs_CQ._close = (PyObject *(*)(struct __pyx_obj_4rdma_7ibverbs_CQ *))__pyx_f_4rdma_7ibverbs_2CQ__close;
-  if (PyType_Ready(&__pyx_type_4rdma_7ibverbs_CQ) < 0) __PYX_ERR(0, 872, __pyx_L1_error)
+  if (PyType_Ready(&__pyx_type_4rdma_7ibverbs_CQ) < 0) __PYX_ERR(0, 868, __pyx_L1_error)
   #if PY_VERSION_HEX < 0x030800B1
   __pyx_type_4rdma_7ibverbs_CQ.tp_print = 0;
   #endif
   if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_4rdma_7ibverbs_CQ.tp_dictoffset && __pyx_type_4rdma_7ibverbs_CQ.tp_getattro == PyObject_GenericGetAttr)) {
     __pyx_type_4rdma_7ibverbs_CQ.tp_getattro = __Pyx_PyObject_GenericGetAttr;
   }
-  if (__Pyx_SetVtable(__pyx_type_4rdma_7ibverbs_CQ.tp_dict, __pyx_vtabptr_4rdma_7ibverbs_CQ) < 0) __PYX_ERR(0, 872, __pyx_L1_error)
-  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_CQ, (PyObject *)&__pyx_type_4rdma_7ibverbs_CQ) < 0) __PYX_ERR(0, 872, __pyx_L1_error)
+  if (__Pyx_SetVtable(__pyx_type_4rdma_7ibverbs_CQ.tp_dict, __pyx_vtabptr_4rdma_7ibverbs_CQ) < 0) __PYX_ERR(0, 868, __pyx_L1_error)
+  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_CQ, (PyObject *)&__pyx_type_4rdma_7ibverbs_CQ) < 0) __PYX_ERR(0, 868, __pyx_L1_error)
   if (__pyx_type_4rdma_7ibverbs_CQ.tp_weaklistoffset == 0) __pyx_type_4rdma_7ibverbs_CQ.tp_weaklistoffset = offsetof(struct __pyx_obj_4rdma_7ibverbs_CQ, __weakref__);
-  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_4rdma_7ibverbs_CQ) < 0) __PYX_ERR(0, 872, __pyx_L1_error)
+  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_4rdma_7ibverbs_CQ) < 0) __PYX_ERR(0, 868, __pyx_L1_error)
   __pyx_ptype_4rdma_7ibverbs_CQ = &__pyx_type_4rdma_7ibverbs_CQ;
   __pyx_vtabptr_4rdma_7ibverbs_MR = &__pyx_vtable_4rdma_7ibverbs_MR;
   __pyx_vtable_4rdma_7ibverbs_MR._close = (PyObject *(*)(struct __pyx_obj_4rdma_7ibverbs_MR *))__pyx_f_4rdma_7ibverbs_2MR__close;
-  if (PyType_Ready(&__pyx_type_4rdma_7ibverbs_MR) < 0) __PYX_ERR(0, 1135, __pyx_L1_error)
+  if (PyType_Ready(&__pyx_type_4rdma_7ibverbs_MR) < 0) __PYX_ERR(0, 1131, __pyx_L1_error)
   #if PY_VERSION_HEX < 0x030800B1
   __pyx_type_4rdma_7ibverbs_MR.tp_print = 0;
   #endif
   if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_4rdma_7ibverbs_MR.tp_dictoffset && __pyx_type_4rdma_7ibverbs_MR.tp_getattro == PyObject_GenericGetAttr)) {
     __pyx_type_4rdma_7ibverbs_MR.tp_getattro = __Pyx_PyObject_GenericGetAttr;
   }
-  if (__Pyx_SetVtable(__pyx_type_4rdma_7ibverbs_MR.tp_dict, __pyx_vtabptr_4rdma_7ibverbs_MR) < 0) __PYX_ERR(0, 1135, __pyx_L1_error)
-  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_MR, (PyObject *)&__pyx_type_4rdma_7ibverbs_MR) < 0) __PYX_ERR(0, 1135, __pyx_L1_error)
+  if (__Pyx_SetVtable(__pyx_type_4rdma_7ibverbs_MR.tp_dict, __pyx_vtabptr_4rdma_7ibverbs_MR) < 0) __PYX_ERR(0, 1131, __pyx_L1_error)
+  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_MR, (PyObject *)&__pyx_type_4rdma_7ibverbs_MR) < 0) __PYX_ERR(0, 1131, __pyx_L1_error)
   if (__pyx_type_4rdma_7ibverbs_MR.tp_weaklistoffset == 0) __pyx_type_4rdma_7ibverbs_MR.tp_weaklistoffset = offsetof(struct __pyx_obj_4rdma_7ibverbs_MR, __weakref__);
-  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_4rdma_7ibverbs_MR) < 0) __PYX_ERR(0, 1135, __pyx_L1_error)
+  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_4rdma_7ibverbs_MR) < 0) __PYX_ERR(0, 1131, __pyx_L1_error)
   __pyx_ptype_4rdma_7ibverbs_MR = &__pyx_type_4rdma_7ibverbs_MR;
   __pyx_vtabptr_4rdma_7ibverbs_QP = &__pyx_vtable_4rdma_7ibverbs_QP;
   __pyx_vtable_4rdma_7ibverbs_QP._close = (PyObject *(*)(struct __pyx_obj_4rdma_7ibverbs_QP *))__pyx_f_4rdma_7ibverbs_2QP__close;
-  if (PyType_Ready(&__pyx_type_4rdma_7ibverbs_QP) < 0) __PYX_ERR(0, 1236, __pyx_L1_error)
+  if (PyType_Ready(&__pyx_type_4rdma_7ibverbs_QP) < 0) __PYX_ERR(0, 1232, __pyx_L1_error)
   #if PY_VERSION_HEX < 0x030800B1
   __pyx_type_4rdma_7ibverbs_QP.tp_print = 0;
   #endif
   if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_4rdma_7ibverbs_QP.tp_dictoffset && __pyx_type_4rdma_7ibverbs_QP.tp_getattro == PyObject_GenericGetAttr)) {
     __pyx_type_4rdma_7ibverbs_QP.tp_getattro = __Pyx_PyObject_GenericGetAttr;
   }
-  if (__Pyx_SetVtable(__pyx_type_4rdma_7ibverbs_QP.tp_dict, __pyx_vtabptr_4rdma_7ibverbs_QP) < 0) __PYX_ERR(0, 1236, __pyx_L1_error)
-  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_QP, (PyObject *)&__pyx_type_4rdma_7ibverbs_QP) < 0) __PYX_ERR(0, 1236, __pyx_L1_error)
+  if (__Pyx_SetVtable(__pyx_type_4rdma_7ibverbs_QP.tp_dict, __pyx_vtabptr_4rdma_7ibverbs_QP) < 0) __PYX_ERR(0, 1232, __pyx_L1_error)
+  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_QP, (PyObject *)&__pyx_type_4rdma_7ibverbs_QP) < 0) __PYX_ERR(0, 1232, __pyx_L1_error)
   if (__pyx_type_4rdma_7ibverbs_QP.tp_weaklistoffset == 0) __pyx_type_4rdma_7ibverbs_QP.tp_weaklistoffset = offsetof(struct __pyx_obj_4rdma_7ibverbs_QP, __weakref__);
-  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_4rdma_7ibverbs_QP) < 0) __PYX_ERR(0, 1236, __pyx_L1_error)
+  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_4rdma_7ibverbs_QP) < 0) __PYX_ERR(0, 1232, __pyx_L1_error)
   __pyx_ptype_4rdma_7ibverbs_QP = &__pyx_type_4rdma_7ibverbs_QP;
   __pyx_vtabptr_4rdma_7ibverbs_SRQ = &__pyx_vtable_4rdma_7ibverbs_SRQ;
   __pyx_vtable_4rdma_7ibverbs_SRQ._close = (PyObject *(*)(struct __pyx_obj_4rdma_7ibverbs_SRQ *))__pyx_f_4rdma_7ibverbs_3SRQ__close;
-  if (PyType_Ready(&__pyx_type_4rdma_7ibverbs_SRQ) < 0) __PYX_ERR(0, 983, __pyx_L1_error)
+  if (PyType_Ready(&__pyx_type_4rdma_7ibverbs_SRQ) < 0) __PYX_ERR(0, 979, __pyx_L1_error)
   #if PY_VERSION_HEX < 0x030800B1
   __pyx_type_4rdma_7ibverbs_SRQ.tp_print = 0;
   #endif
   if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_4rdma_7ibverbs_SRQ.tp_dictoffset && __pyx_type_4rdma_7ibverbs_SRQ.tp_getattro == PyObject_GenericGetAttr)) {
     __pyx_type_4rdma_7ibverbs_SRQ.tp_getattro = __Pyx_PyObject_GenericGetAttr;
   }
-  if (__Pyx_SetVtable(__pyx_type_4rdma_7ibverbs_SRQ.tp_dict, __pyx_vtabptr_4rdma_7ibverbs_SRQ) < 0) __PYX_ERR(0, 983, __pyx_L1_error)
-  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_SRQ, (PyObject *)&__pyx_type_4rdma_7ibverbs_SRQ) < 0) __PYX_ERR(0, 983, __pyx_L1_error)
+  if (__Pyx_SetVtable(__pyx_type_4rdma_7ibverbs_SRQ.tp_dict, __pyx_vtabptr_4rdma_7ibverbs_SRQ) < 0) __PYX_ERR(0, 979, __pyx_L1_error)
+  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_SRQ, (PyObject *)&__pyx_type_4rdma_7ibverbs_SRQ) < 0) __PYX_ERR(0, 979, __pyx_L1_error)
   if (__pyx_type_4rdma_7ibverbs_SRQ.tp_weaklistoffset == 0) __pyx_type_4rdma_7ibverbs_SRQ.tp_weaklistoffset = offsetof(struct __pyx_obj_4rdma_7ibverbs_SRQ, __weakref__);
-  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_4rdma_7ibverbs_SRQ) < 0) __PYX_ERR(0, 983, __pyx_L1_error)
+  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_4rdma_7ibverbs_SRQ) < 0) __PYX_ERR(0, 979, __pyx_L1_error)
   __pyx_ptype_4rdma_7ibverbs_SRQ = &__pyx_type_4rdma_7ibverbs_SRQ;
   __Pyx_RefNannyFinishContext();
   return 0;

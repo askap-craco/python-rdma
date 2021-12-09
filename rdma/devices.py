@@ -309,6 +309,7 @@ class RDMADevice(SysFSCache):
         """*name* is the kernel's name for this device in sysfs."""
         SysFSCache.__init__(self,SYS_INFINIBAND + name + "/");
         self.name = name;
+        self.name_bytes = name.encode('utf8')
 
         self.end_ports = DemandList2(self._dir + "ports/",
                                      lambda x:EndPort(self,x));
