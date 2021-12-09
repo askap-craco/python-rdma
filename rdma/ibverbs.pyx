@@ -11,7 +11,8 @@ import rdma.devices
 import rdma.IBA as IBA;
 import rdma.path;
 
-from cpython.string cimport PyString_AsString
+#from cpython.string cimport PyString_AsString
+from cpython.bytes cimport PyBytes_AsString as PyString_AsString
 from libc.stdint cimport uint8_t
 
 cimport libibverbs as c
@@ -313,9 +314,12 @@ cdef class Context:
         cdef int i
         cdef int count
 
+        print(parent, type(parent))
+
         if isinstance(parent,rdma.devices.RDMADevice):
             self.node = parent
             self.end_port = None
+            print('Is RDMA Device')
         else:
             self.node = parent.parent
             self.end_port = parent
@@ -327,6 +331,7 @@ cdef class Context:
 
         try:
             for 0 <= i < count:
+                print(i, dev_list[i].name, self.node.name)
                 if dev_list[i].name == self.node.name:
                     break
             else:
