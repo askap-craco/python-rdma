@@ -64,7 +64,7 @@ class SysFSCache(object):
             except KeyError:
                 pass;
 
-class DemandList(collections.Iterable):
+class DemandList(collections.abc.Iterable):
     """Present an ordered list interface with a non-integer index for
     a set of values that are demand created. The list indexes must be known
     in advance."""
@@ -137,7 +137,7 @@ class DemandList2(DemandList):
 
 class EndPort(SysFSCache):
     '''A RDMA end port. An end port can issue RDMA operations, has a port GID,
-    LID, etc. For an IB switch this will be port 0, for a \*CA it will be port
+    LID, etc. For an IB switch this will be port 0, for a *CA it will be port
     1 or higher.'''
     #: Port number
     port_id = None
@@ -148,7 +148,7 @@ class EndPort(SysFSCache):
 
     def __init__(self,parent,port_id):
         """*parent* is the owning :class:`RDMADevice` and port_id is the port
-        ID number, 0 for switches and > 1 for \*CAs"""
+        ID number, 0 for switches and > 1 for *CAs"""
         SysFSCache.__init__(self,parent._dir + "ports/%u/"%(port_id));
         self.parent = parent;
         self.port_id = port_id;
@@ -188,7 +188,7 @@ class EndPort(SysFSCache):
         return self._cached_sysfs("phys_state",_conv_int_desc);
     @property
     def state(self):
-        """The port state, one of `IBA.PORT_STATE_\*`"""
+        """The port state, one of `IBA.PORT_STATE_*`"""
         return self._cached_sysfs("state",_conv_int_desc);
     @property
     def sm_lid(self): return self._cached_sysfs("sm_lid",_conv_hex);
@@ -324,7 +324,7 @@ class RDMADevice(SysFSCache):
 
     @property
     def node_type(self):
-        """The node type, one of `IBA.NODE_\*`."""
+        """The node type, one of `IBA.NODE_*`."""
         return self._cached_sysfs("node_type",_conv_int_desc);
     @property
     def node_guid(self): return self._cached_sysfs("node_guid",IBA.GUID);

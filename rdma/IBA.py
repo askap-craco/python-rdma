@@ -5,6 +5,7 @@
 
 import socket,sys;
 import rdma.binstruct;
+import codecs
 
 #: Node Type Constants
 # see NodeInfo.nodeType
@@ -241,17 +242,21 @@ class GUID(bytes):
         if isinstance(s,GUID):
             return s;
         if isinstance(s,int) or isinstance(s,int):
-            s = ("%016x"%(s)).decode("hex");
+            s = codecs.decode("%016x"%(s), "hex");
             raw = True;
         if raw:
             assert(len(s) == 8);
-            return bytes.__new__(self,s,encoding='utf8');
+            if isinstance(s, bytes):
+                return bytes.__new__(self, s)
+            else:
+                assert isinstance(s, str)
+                return bytes.__new__(self,s, encoding='utf8');
 
         v = ''.join(I.zfill(4) for I in s.strip().split(':'));
         if len(v) != 16:
             raise ValueError("%r is not a valid GUID"%(s));
         try:
-            return bytes.__new__(self,v.decode("hex"));
+            return bytes.__new__(self,codecs.decode(v, "hex"));
         except TypeError:
             raise ValueError("%r is not a valid GUID"%(s));
 
@@ -261,12 +266,15 @@ class GUID(bytes):
 
     def __str__(self):
         """Return a printable string of the GUID."""
-        tmp = self.encode("hex");
-        return "%s:%s:%s:%s"%(tmp[0:4],tmp[4:8],tmp[8:12],tmp[12:16]);
+        tmp = str(codecs.encode(self, "hex"), 'utf8')
+        s =  "%s:%s:%s:%s"%(tmp[0:4],tmp[4:8],tmp[8:12],tmp[12:16]);
+        return s
+
+    
     def __repr__(self):
         return "GUID('%s')"%(self.__str__());
     def __int__(self):
-        return int(bytes.__str__(self).encode("hex"),16);
+        return int(codecs.encode(bytes.__str__(self), "hex"),16);
 
     def __reduce__(self):
         return (GUID,(bytes.__str__(self),True));
@@ -300,7 +308,7 @@ class GID(bytes):
             elif isinstance(prefix,GUID):
                 prefix = bytes.__str__(prefix);
             elif isinstance(prefix,int) or isinstance(prefix,int):
-                prefix = ("%016x"%(prefix)).decode("hex");
+                prefix = codecs.decode("%016x"%(prefix),"hex");
             return bytes.__new__(self,prefix + bytes.__str__(guid))
 
         if isinstance(s,GID):
@@ -319,15 +327,17 @@ class GID(bytes):
 
     def __str__(self):
         """Return a printable string of the GID."""
-        return socket.inet_ntop(socket.AF_INET6,bytes.__str__(self));
+        s = socket.inet_ntop(socket.AF_INET6, self);
+        return s
+
     def __repr__(self):
         return "GID('%s')"%(self.__str__());
     def guid(self):
         """Return the GUID portion of the GID."""
-        return GUID(bytes.__getslice__(self,8,16),raw=True);
+        return GUID(bytes.__getitem__(self,slice(8,16)),raw=True);
     def prefix(self):
         """Return the prefix portion of the GID."""
-        return GUID(bytes.__getslice__(self,0,8),raw=True);
+        return GUID(bytes.__getitem__(self,slice(0,8)),raw=True);
     def __int__(self):
         return int(bytes.__str__(self).encode("hex"),16);
 

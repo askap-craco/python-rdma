@@ -10,6 +10,7 @@ class get_end_port_test(unittest.TestCase):
         self.assertEqual(pg,pg);
         self.assertEqual(pg,IBA.GUID("0002:c903:0000:1491"));
         self.assertEqual(pg,IBA.GUID(pg));
+        self.assertEqual(str(pg), "0002:c903:0000:1491")
 
     def test_gid(self):
         """Test IBA.GID class"""
