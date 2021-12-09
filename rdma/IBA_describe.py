@@ -222,8 +222,8 @@ def _array_dump(F,a,buf,mbits,name,offset=0):
             idx = idx + 1;
 
         print("%3u %02X%02X%02X%02X %s"%\
-              (offset + cur_dword,ord(buf[cur_dword]),ord(buf[cur_dword+1]),
-               ord(buf[cur_dword+2]),ord(buf[cur_dword+3]),
+              (offset + cur_dword,buf[cur_dword],buf[cur_dword+1],
+               buf[cur_dword+2],buf[cur_dword+3],
                ", ".join(mb)), file=F);
         cur_dword = cur_dword + 4;
 
@@ -310,8 +310,8 @@ def struct_dump(F,s,offset=0,name_prefix=''):
 
         while off > cur_dword*8:
             print("%3u %02X%02X%02X%02X %s"%\
-                (offset + cur_dword,ord(buf[cur_dword]),ord(buf[cur_dword+1]),
-                 ord(buf[cur_dword+2]),ord(buf[cur_dword+3]),
+                (offset + cur_dword,buf[cur_dword],buf[cur_dword+1],
+                 buf[cur_dword+2],buf[cur_dword+3],
                  ",".join(mb)), file=F);
             del mb[:]
             cur_dword = cur_dword + 4;

@@ -262,7 +262,7 @@ class GUID(bytes):
 
     def pack_into(self,buf,offset=0):
         """Pack the value into a byte array.""";
-        buf[offset:offset+8] = bytes.__str__(self);
+        buf[offset:offset+8] = self[:8]
 
     def __str__(self):
         """Return a printable string of the GUID."""
@@ -309,21 +309,26 @@ class GID(bytes):
                 prefix = bytes.__str__(prefix);
             elif isinstance(prefix,int) or isinstance(prefix,int):
                 prefix = codecs.decode("%016x"%(prefix),"hex");
-            return bytes.__new__(self,prefix + bytes.__str__(guid))
+            return bytes.__new__(self,prefix + guid)
 
         if isinstance(s,GID):
-            return s;
+            return s
+
         if raw:
             assert(len(s) == 16);
-            return bytes.__new__(self,s,encoding='utf8');
+            if isinstance(s, bytes):
+                return bytes.__new__(self, s)
+            else:
+                assert isinstance(s, str)
+                return bytes.__new__(self,s,encoding='utf8');
         try:
             return bytes.__new__(self,socket.inet_pton(socket.AF_INET6,s.strip()));
         except:
             raise ValueError("%r is not a valid GID"%(s));
 
     def pack_into(self,buf,offset=0):
-        """Pack the value into a byte array.""";
-        buf[offset:offset+16] = bytes.__str__(self);
+        """Pack the value into a byte array."""
+        buf[offset:offset+16] = self[:16]
 
     def __str__(self):
         """Return a printable string of the GID."""
